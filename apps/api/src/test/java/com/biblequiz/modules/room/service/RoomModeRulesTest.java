@@ -86,4 +86,16 @@ class RoomModeRulesTest {
                 RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(5, 3), true));
         assertNull(RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(3, 2), true));
     }
+
+    @Test
+    void needsAtLeastOneRealPlayer_botsAloneCannotStart() {
+        // PCV-20: người máy không tự chơi với nhau.
+        List<RoomPlayer> onlyBots = players(3);
+        onlyBots.forEach(p -> p.getUser().setIsBot(true));
+        assertEquals("Phòng cần ít nhất 1 người chơi thật", RoomModeRules.startError(Room.RoomMode.SPEED_RACE, onlyBots, false));
+
+        List<RoomPlayer> mixed = players(2);
+        mixed.get(1).getUser().setIsBot(true);
+        assertNull(RoomModeRules.startError(Room.RoomMode.SPEED_RACE, mixed, true));
+    }
 }

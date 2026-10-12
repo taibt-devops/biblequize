@@ -64,4 +64,23 @@ class MultiplayerStatsServiceTest {
         assertEquals(3, dto.totalMatches());
         verifyNoInteractions(userAchievementRepository);
     }
+
+    @Test
+    void roomsWithFewerThanTwoRealPlayers_doNotCountAsWinsOrMvp() {
+        // PCV-20: thắng/ MVP trước người máy không tính.
+        Room botRoom = room("bots");
+        RoomPlayer me = p(botRoom, "me", 900, 1);
+        RoomPlayer b1 = p(botRoom, "bot-01", 300, 2);
+        b1.getUser().setIsBot(true);
+        RoomPlayer b2 = p(botRoom, "bot-02", 200, 3);
+        b2.getUser().setIsBot(true);
+        when(roomPlayerRepository.findEndedMatchesInWindow(eq("me"), any(), any())).thenReturn(List.of(me));
+        when(roomPlayerRepository.findByRoomId("bots")).thenReturn(new ArrayList<>(List.of(me, b1, b2)));
+
+        var stats = service.getWeeklyStats("me");
+
+        assertEquals(1, stats.totalMatches());
+        assertEquals(0, stats.wins());
+        assertEquals(0, stats.mvpCount());
+    }
 }

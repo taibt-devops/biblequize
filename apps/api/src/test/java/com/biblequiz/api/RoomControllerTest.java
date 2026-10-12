@@ -33,6 +33,9 @@ class RoomControllerTest extends BaseControllerTest {
     private RoomService roomService;
 
     @MockBean
+    private com.biblequiz.modules.room.service.RoomBotService roomBotService;
+
+    @MockBean
     private RoomQuizService roomQuizService;
 
     @MockBean
@@ -161,6 +164,35 @@ class RoomControllerTest extends BaseControllerTest {
         mockMvc.perform(get("/api/rooms/non-existent"))
                 .andExpect(status().isNotFound())
                 .andExpect(jsonPath("$.success").value(false));
+    }
+
+    // ── POST /api/rooms/{id}/bots (PCV-20) ───────────────────────────────────
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void addBot_returnsRoomWithTheBot() throws Exception {
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+
+        mockMvc.perform(post("/api/rooms/room-1/bots")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"level\":\"HARD\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true));
+        verify(roomBotService).addBot("room-1", "user-1", com.biblequiz.modules.room.service.RoomBotService.BotLevel.HARD);
+    }
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void addBot_full_returns400WithReason() throws Exception {
+        when(roomBotService.addBot(anyString(), anyString(), any())).thenThrow(new Exception("Tối đa 5 người máy mỗi phòng"));
+
+        mockMvc.perform(post("/api/rooms/room-1/bots")
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"level\":\"EASY\"}"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("Tối đa 5 người máy mỗi phòng"));
     }
 
     // ── PATCH /api/rooms/{id}/settings (PCV-18) ──────────────────────────────

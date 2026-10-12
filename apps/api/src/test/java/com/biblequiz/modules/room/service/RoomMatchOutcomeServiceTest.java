@@ -76,4 +76,21 @@ class RoomMatchOutcomeServiceTest {
 
         service.recordOutcome("room-1"); // không ném lỗi
     }
+
+    @Test
+    void bots_getNoMissions_andBeatingOnlyBotsIsNotAWin() {
+        // PCV-20: người máy không có nhiệm vụ; thắng phòng chỉ tính khi có ít nhất 2 người thật.
+        RoomPlayer human = RankAssignerTest.p("h", 900, 6, 6, 3000);
+        human.setFinalRank(1);
+        RoomPlayer bot = RankAssignerTest.p("bot-01", 300, 2, 6, 6000);
+        bot.setFinalRank(2);
+        bot.getUser().setIsBot(true);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(human, bot));
+
+        service.recordOutcome("room-1");
+
+        verify(missionService).trackProgress("h", "play_multiplayer_room", 1);
+        verify(missionService, never()).trackProgress("h", "win_multiplayer_room", 1);
+        verify(missionService, never()).trackProgress(eq("bot-01"), anyString(), anyInt());
+    }
 }

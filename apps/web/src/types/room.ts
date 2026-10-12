@@ -46,6 +46,8 @@ export type PlayerScore = {
   bestStreak?: number
   matchesPlayed?: number
   predictionPoints?: number
+  /** PCV-20: người máy. */
+  isBot?: boolean
 }
 
 export interface PerPlayerAnswer {
@@ -66,6 +68,9 @@ export type RoomPlayer = {
   team?: string
   playerStatus?: string
   tier?: string
+  /** PCV-20: người máy + cấp (EASY | MEDIUM | HARD). */
+  isBot?: boolean
+  botLevel?: string | null
 }
 
 /** Room snapshot — REST GET /api/rooms/{id} (`.room`) and ROOM_STATE events. */

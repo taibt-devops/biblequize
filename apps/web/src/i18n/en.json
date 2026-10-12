@@ -1840,7 +1840,8 @@
       "ready": "Ready to start",
       "readyDetail": "{{count}}/{{max}} players · Ready",
       "groupReady": "Ready to start",
-      "groupReadyDetail": "{{count}}/{{max}} players · The leader can start"
+      "groupReadyDetail": "{{count}}/{{max}} players · The leader can start",
+      "needHuman": "At least one real player is needed"
     },
     "rules": {
       "title": "{{mode}} rules",
@@ -1908,6 +1909,17 @@
       "save": "Save",
       "failed": "Couldn't change the game, try again",
       "tooMany": "Up to {{max}} players"
+    },
+    "bot": {
+      "add": "Add a bot",
+      "suffix": "(bot)",
+      "level": {
+        "EASY": "Bot · Easy",
+        "MEDIUM": "Bot · Medium",
+        "HARD": "Bot · Hard"
+      },
+      "playWithBots": "Play with bots",
+      "addFailed": "Couldn't add a bot"
     }
   },
   "groups": {

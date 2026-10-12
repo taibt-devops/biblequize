@@ -15,6 +15,9 @@ public interface UserRepository extends JpaRepository<User, String> {
 
     Optional<User> findByEmail(String email);
 
+    /** PCV-20: các tài khoản người máy (bot-01..06). */
+    List<User> findByIsBotTrueOrderByIdAsc();
+
     @Query("SELECT u FROM User u JOIN u.authIdentities ai WHERE ai.provider = :provider AND ai.providerUserId = :providerUserId")
     Optional<User> findByProviderAndProviderUserId(@Param("provider") String provider, @Param("providerUserId") String providerUserId);
 

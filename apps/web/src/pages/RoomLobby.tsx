@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useRef } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { lobbyStartCheck } from './room/lobbyRules';
-import { MODE_META, modeMetaOf, modeRulesSlug } from './create-room/modeMeta';
+import { MODE_META, modeMetaOf, modeRulesSlug, playerLimits } from './create-room/modeMeta';
 import { useTeamNames } from './room/teamNames';
 import ChangeSettingsModal, { type RoomSettings } from './room/ChangeSettingsModal';
 import { useRoomChannel } from '../hooks/useRoomChannel';
@@ -75,6 +75,9 @@ const RoomLobby: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [countdown, setCountdown] = useState<number | null>(null);
   const [switchingTeam, setSwitchingTeam] = useState(false);
+  // PCV-20: người máy.
+  const [botMenuOpen, setBotMenuOpen] = useState(false);
+  const [addingBot, setAddingBot] = useState(false);
   // PCV-18: hộp "Đổi cách chơi" của chủ phòng.
   const [showSettings, setShowSettings] = useState(false);
   const [savingSettings, setSavingSettings] = useState(false);
@@ -320,6 +323,39 @@ const RoomLobby: React.FC = () => {
     } catch { setError(t('room.errorSwitchTeam')); }
     finally { setSwitchingTeam(false); }
   };
+  // PCV-20: thêm một người máy (chủ phòng; Đấu nhanh: người trong phòng).
+  const addBot = async (level: 'EASY' | 'MEDIUM' | 'HARD') => {
+    if (!roomId) return false;
+    try {
+      const res = await api.post(`/api/rooms/${roomId}/bots`, { level });
+      if (res.data?.success && res.data.room) setRoom(res.data.room);
+      return true;
+    } catch (err: any) {
+      setError(err?.response?.data?.message || t('room.bot.addFailed'));
+      return false;
+    }
+  };
+  const handleAddBot = async (level: 'EASY' | 'MEDIUM' | 'HARD') => {
+    setBotMenuOpen(false);
+    setAddingBot(true);
+    await addBot(level);
+    setAddingBot(false);
+  };
+  // PCV-20: Đấu nhanh thiếu người — thêm người máy cho đủ số tối thiểu của mode rồi bắt đầu luôn.
+  const handlePlayWithBots = async () => {
+    if (!roomId || !room) return;
+    setAddingBot(true);
+    const need = Math.max(1, playerLimits(room.mode).min - (room.players?.length ?? 0));
+    for (let i = 0; i < need; i++) {
+      if (!(await addBot('MEDIUM'))) { setAddingBot(false); return; }
+    }
+    setAddingBot(false);
+    try {
+      await api.post(`/api/rooms/${roomId}/start`);
+    } catch (err: any) {
+      setError(err?.response?.data?.message || t('room.errorStartRoom'));
+    }
+  };
   // PCV-18: chủ phòng đổi cách chơi ngay trong sảnh; máy chủ kẹp giá trị và báo cả phòng.
   const handleSaveSettings = async (settings: RoomSettings) => {
     if (!roomId) return;
@@ -392,6 +428,10 @@ const RoomLobby: React.FC = () => {
   const isHost = (myPlayer?.userId === room?.hostId)
       || (!hostPlaysGame && viewerUserId != null && viewerUserId === room?.hostId);
   const isOrganizerMode = isHost && !hostPlaysGame;
+  // PCV-20: ai được thêm người máy: chủ phòng (phòng thường) hoặc người trong phòng (Đấu nhanh); còn chỗ, tối đa 5 máy.
+  const botCount = room?.players?.filter(p => p.isBot).length ?? 0;
+  const canManageBots = !!room && (isQuickMatch ? !!myPlayer : isHost) && botCount < 5
+    && (room.players?.length ?? 0) < room.maxPlayers;
   const emptySlots = room ? Math.max(0, room.maxPlayers - room.currentPlayers) : 0;
   const modeMeta = modeMetaOf(room?.mode);
   const rulesSlug = modeRulesSlug(room?.mode);
@@ -907,6 +947,53 @@ const RoomLobby: React.FC = () => {
                 ))}
               </div>
             )}
+
+            {/* PCV-20: người máy — chủ phòng thêm theo cấp; Đấu nhanh thiếu người thì chơi với người máy. */}
+            {room.status === 'LOBBY' && !isGroupLive && (
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                {canManageBots && (
+                  <div className="relative">
+                    <button
+                      type="button"
+                      data-testid="lobby-add-bot"
+                      disabled={addingBot}
+                      onClick={() => setBotMenuOpen(o => !o)}
+                      className="px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 disabled:opacity-50 text-[13.5px] font-extrabold text-bq-ink bg-bq-white border-2 border-bq-ink hover:bg-bq-cream"
+                    >
+                      <span className="material-symbols-outlined text-[16px]">smart_toy</span>
+                      {t('room.bot.add')}
+                    </button>
+                    {botMenuOpen && (
+                      <div className="absolute left-0 top-10 z-20 rounded-xl overflow-hidden bg-bq-white border-2 border-bq-ink shadow-[0_3px_0_#1D2B22]" style={{ minWidth: 150 }}>
+                        {(['EASY', 'MEDIUM', 'HARD'] as const).map(level => (
+                          <button
+                            key={level}
+                            type="button"
+                            data-testid={`lobby-add-bot-${level}`}
+                            onClick={() => handleAddBot(level)}
+                            className="block w-full text-left px-3 py-2 text-[13.5px] font-bold text-bq-ink hover:bg-bq-cream"
+                          >
+                            {t(`room.bot.level.${level}`)}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+                {isQuickMatch && myPlayer && (room.players?.length ?? 0) < playerLimits(room.mode).min && (
+                  <button
+                    type="button"
+                    data-testid="lobby-play-with-bots"
+                    disabled={addingBot}
+                    onClick={handlePlayWithBots}
+                    className="px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 disabled:opacity-50 text-[13.5px] font-extrabold text-bq-ink bg-bq-amber border-2 border-bq-ink"
+                  >
+                    <span className="material-symbols-outlined text-[16px]">smart_toy</span>
+                    {t('room.bot.playWithBots')}
+                  </button>
+                )}
+              </div>
+            )}
           </section>
 
           {/* ─── RULES ─── */}
@@ -1183,6 +1270,7 @@ const PlayerSlot: React.FC<{
   onKickConfirm: () => void;
 }> = ({ player, hostId, myUserId, suddenDeathOrder, canKick, kickOpen, onKickToggle, onKickConfirm }) => {
   const isHost = player.userId === hostId;
+  const isBot = player.isBot === true;
   // FMR-7 identity sweep: "(bạn)" marker keys off userId only (F-web-2).
   const isMe = !!myUserId && player.userId === myUserId;
   const isReady = isHost ? true : player.isReady;
@@ -1248,11 +1336,18 @@ const PlayerSlot: React.FC<{
       </div>
 
       <div className="text-[14px] font-extrabold mb-0.5 truncate text-bq-ink">
-        {player.username}{isMe ? ' (bạn)' : ''}
+        {player.username}{isMe ? ' (bạn)' : ''}{isBot ? ` ${t('room.bot.suffix')}` : ''}
       </div>
-      <div className="text-[12px] font-bold mb-1.5 text-bq-ink2">
-        {player.tier ?? 'Tân Tín Hữu'}
-      </div>
+      {isBot ? (
+        <div data-testid={`lobby-bot-badge-${player.userId}`} className="text-[12px] font-bold mb-1.5 text-bq-ink2 inline-flex items-center gap-1">
+          <span className="material-symbols-outlined text-[14px]" aria-hidden>smart_toy</span>
+          {t(`room.bot.level.${player.botLevel ?? 'MEDIUM'}`)}
+        </div>
+      ) : (
+        <div className="text-[12px] font-bold mb-1.5 text-bq-ink2">
+          {player.tier ?? 'Tân Tín Hữu'}
+        </div>
+      )}
       <div className={`inline-block px-2.5 py-0.5 rounded-full border-2 border-bq-ink text-[12.5px] font-extrabold ${look.chip}`}>
         {suddenDeathOrder !== undefined && suddenDeathOrder >= 2
           ? `Chờ #${suddenDeathOrder + 1}`

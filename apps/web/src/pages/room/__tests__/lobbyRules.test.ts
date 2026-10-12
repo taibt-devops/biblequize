@@ -64,3 +64,17 @@ describe('lobbyStartCheck (PCV-5 — giống RoomModeRules phía máy chủ)', (
     expect(r2.canStart).toBe(false)
   })
 })
+
+describe('lobbyStartCheck — người máy (PCV-20)', () => {
+  it('toàn người máy thì không bắt đầu được', () => {
+    const bots = [{ userId: 'bot-01', isReady: true, isBot: true }, { userId: 'bot-02', isReady: true, isBot: true }]
+    const r = lobbyStartCheck({ mode: 'SPEED_RACE', players: bots, hostId: 'host', hostPlaysGame: false, quickMatch: false })
+    expect(r.canStart).toBe(false)
+    expect(r.reason).toBe('room.lobbyRules.needHuman')
+  })
+
+  it('một người thật + người máy là đủ', () => {
+    const ps = [{ userId: 'h', isReady: true }, { userId: 'bot-01', isReady: true, isBot: true }]
+    expect(lobbyStartCheck({ mode: 'SPEED_RACE', players: ps, hostId: 'h', hostPlaysGame: true, quickMatch: false }).canStart).toBe(true)
+  })
+})

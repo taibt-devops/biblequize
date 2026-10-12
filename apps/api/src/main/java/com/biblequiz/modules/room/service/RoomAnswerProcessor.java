@@ -245,7 +245,7 @@ public class RoomAnswerProcessor {
     }
 
     private void trackMission(User user, Question.Difficulty difficulty, String book, boolean isCorrect, int ms) {
-        if (dailyMissionService == null) return;
+        if (dailyMissionService == null || user.isBot()) return; // PCV-20: người máy không có nhiệm vụ
         try {
             dailyMissionService.onAnswer(user.getId(), new com.biblequiz.modules.quiz.service.DailyMissionService.AnswerEvent(
                     isCorrect, difficulty, book, ms));

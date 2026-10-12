@@ -451,3 +451,39 @@ describe('RoomLobby — đổi cách chơi (PCV-18)', () => {
     expect(screen.queryByTestId('lobby-change-settings')).toBeNull()
   })
 })
+
+describe('RoomLobby — người máy (PCV-20)', () => {
+  const withBot = {
+    ...baseRoom,
+    players: [
+      { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: true, score: 0 },
+      { id: 'p2', userId: 'bot-01', username: 'Máy An', isReady: true, score: 0, isBot: true, botLevel: 'MEDIUM' },
+    ],
+    currentPlayers: 2,
+  }
+
+  it('người máy hiện nhãn "(máy)" và cấp', async () => {
+    await renderLobby(withBot)
+    const badge = await screen.findByTestId('lobby-bot-badge-bot-01')
+    expect(badge.textContent).toMatch(/Vừa/)
+    expect(screen.getByTestId('lobby-slot-bot-01').textContent).toMatch(/\(máy\)/)
+  })
+
+  it('chủ phòng thêm người máy theo cấp', async () => {
+    mockApiPost.mockResolvedValue({ data: { success: true, room: withBot, viewerUserId: 'host-1' } })
+    await renderLobby()
+    fireEvent.click(await screen.findByTestId('lobby-add-bot'))
+    fireEvent.click(screen.getByTestId('lobby-add-bot-HARD'))
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms/room-1/bots', { level: 'HARD' }))
+  })
+
+  it('Đấu nhanh thiếu người: "Chơi với người máy" thêm máy cho đủ rồi bắt đầu', async () => {
+    const qm = { ...baseRoom, quickMatch: true, mode: 'BATTLE_ROYALE', players: [{ id: 'p1', userId: 'host-1', username: 'WS Host', isReady: true, score: 0 }] }
+    mockApiPost.mockResolvedValue({ data: { success: true, room: qm, viewerUserId: 'host-1' } })
+    await renderLobby(qm)
+    fireEvent.click(await screen.findByTestId('lobby-play-with-bots'))
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms/room-1/start'))
+    const botCalls = mockApiPost.mock.calls.filter(c => c[0] === '/api/rooms/room-1/bots')
+    expect(botCalls).toHaveLength(2) // Sinh tồn cần 3 người
+  })
+})

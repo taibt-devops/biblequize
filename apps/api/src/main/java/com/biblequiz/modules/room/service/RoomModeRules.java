@@ -70,6 +70,10 @@ public final class RoomModeRules {
      * @param hostPlaysGame false = Quản trò mode (thông báo ghi rõ "không tính Quản trò")
      */
     public static String startError(Room.RoomMode mode, List<RoomPlayer> players, boolean hostPlaysGame) {
+        // PCV-20: người máy không tự chơi với nhau — cần ít nhất một người thật trong trận.
+        if (!players.isEmpty() && players.stream().allMatch(RoomPlayer::isBot)) {
+            return "Phòng cần ít nhất 1 người chơi thật";
+        }
         int count = players.size();
         int min = minPlayers(mode);
         if (count < min) {

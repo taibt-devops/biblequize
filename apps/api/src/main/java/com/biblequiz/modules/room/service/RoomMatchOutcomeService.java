@@ -7,6 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * PCV-6 — việc làm sau khi một trận kết thúc bình thường (không tính Quản trò kết thúc sớm):
  * nhiệm vụ ngày "Chơi 1 trận Phòng chơi" cho mọi người thật còn trong trận đã trả lời ít nhất một câu,
@@ -27,8 +29,12 @@ public class RoomMatchOutcomeService {
     }
 
     public void recordOutcome(String roomId) {
-        for (RoomPlayer p : playerRepository.findByRoomId(roomId)) {
+        List<RoomPlayer> all = playerRepository.findByRoomId(roomId);
+        // PCV-20: thắng chỉ tính khi có ít nhất 2 người thật — thắng toàn người máy không phải "thắng phòng".
+        long humans = all.stream().filter(p -> !p.isBot()).count();
+        for (RoomPlayer p : all) {
             if (p.getPlayerStatus() == RoomPlayer.PlayerStatus.LEFT) continue;
+            if (p.isBot()) continue; // người máy không có nhiệm vụ
             // Ngồi im cả trận thì không tính là đã chơi — chặn "mở phòng với bạn, cùng không trả lời,
             // cùng đồng hạng 1" để lấy nhiệm vụ thắng.
             if (p.getTotalAnswered() == null || p.getTotalAnswered() == 0) continue;
@@ -37,7 +43,7 @@ public class RoomMatchOutcomeService {
                 missionService.trackProgress(userId, "play_multiplayer_room", 1);
                 missionService.trackProgress(userId, "play_any_mode", 1);
                 boolean answeredSomethingRight = p.getCorrectAnswers() != null && p.getCorrectAnswers() > 0;
-                if (p.getFinalRank() != null && p.getFinalRank() == 1 && answeredSomethingRight) {
+                if (p.getFinalRank() != null && p.getFinalRank() == 1 && answeredSomethingRight && humans >= 2) {
                     missionService.trackProgress(userId, "win_multiplayer_room", 1);
                 }
             } catch (Exception e) {

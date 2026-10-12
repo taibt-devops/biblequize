@@ -128,6 +128,10 @@ public class User {
     @Column(name = "is_banned", nullable = false)
     private Boolean isBanned = false;
 
+    /** PCV-20: người máy của Phòng chơi (V78) — không đăng nhập được, không nhiệm vụ/thống kê/XP. */
+    @Column(name = "is_bot", nullable = false)
+    private Boolean isBot = false;
+
     @Column(name = "ban_reason")
     private String banReason;
 
@@ -386,6 +390,8 @@ public class User {
     public void setBasicQuizLastAttemptAt(LocalDateTime basicQuizLastAttemptAt) { this.basicQuizLastAttemptAt = basicQuizLastAttemptAt; }
 
     public Boolean getIsBanned() { return isBanned; }
+    public boolean isBot() { return Boolean.TRUE.equals(isBot); }
+    public void setIsBot(Boolean bot) { this.isBot = bot; }
     public void setIsBanned(Boolean banned) { this.isBanned = banned; }
     public String getBanReason() { return banReason; }
     public void setBanReason(String banReason) { this.banReason = banReason; }

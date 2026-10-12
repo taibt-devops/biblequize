@@ -278,6 +278,21 @@ public class RoomService {
         if (room.isHostPlaysGame()) {
             addPlayerToRoom(newId, caller);
         }
+        // PCV-20: người máy của phòng cũ được thêm lại (cùng cấp).
+        List<RoomPlayer> fresh = new java.util.ArrayList<>(roomPlayerRepository.findByRoomId(newId));
+        for (RoomPlayer previous : roomPlayerRepository.findByRoomId(oldRoomId)) {
+            if (!previous.isBot()) continue;
+            RoomBotService.BotLevel level;
+            try { level = RoomBotService.BotLevel.valueOf(previous.getBotLevel()); }
+            catch (Exception e) { level = RoomBotService.BotLevel.MEDIUM; }
+            RoomPlayer bot = RoomBotService.newBotRow(room, previous.getUser(), level, fresh);
+            roomPlayerRepository.save(bot);
+            fresh.add(bot);
+        }
+        if (fresh.size() != room.getCurrentPlayers()) {
+            room.setCurrentPlayers(fresh.size());
+            roomRepository.save(room);
+        }
         webSocketController.broadcastRematchReady(oldRoomId, newId, roomCode);
         return new RematchResult(room, true);
     }
@@ -882,6 +897,7 @@ public class RoomService {
                 dto.bestStreak = player.getBestStreak();
                 dto.matchesPlayed = player.getMatchesPlayed();
                 dto.predictionPoints = player.getPredictionPoints();
+                dto.isBot = player.isBot();
                 return dto;
             })
             .collect(Collectors.toList());
@@ -1027,6 +1043,10 @@ public class RoomService {
                     player.getTeam(),
                     player.getPlayerStatus()
                 ))
+                .peek(dto -> roomPlayers.stream().filter(p -> p.getId().equals(dto.id)).findFirst().ifPresent(p -> {
+                    dto.isBot = p.isBot();
+                    dto.botLevel = p.getBotLevel();
+                }))
                 .collect(Collectors.toList());
         }
     }
@@ -1040,6 +1060,9 @@ public class RoomService {
         public final Integer score;
         public final RoomPlayer.Team team;
         public final RoomPlayer.PlayerStatus playerStatus;
+        /** PCV-20: người máy + cấp (giao diện hiện "(máy)"). */
+        public boolean isBot;
+        public String botLevel;
 
         public PlayerInfoDTO(String id, String userId, String username, String avatarUrl,
                              Boolean isReady, Integer score,
@@ -1075,6 +1098,8 @@ public class RoomService {
         public Integer bestStreak;
         public Integer matchesPlayed;
         public Integer predictionPoints;
+        /** PCV-20: người máy. */
+        public Boolean isBot;
 
         public LeaderboardEntryDTO(String playerId, String username, String avatarUrl,
                                    Integer score, Integer correctAnswers, Integer totalAnswered, Double accuracy,

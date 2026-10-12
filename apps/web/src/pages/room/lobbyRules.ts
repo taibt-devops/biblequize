@@ -4,6 +4,8 @@ export interface LobbyPlayer {
   userId: string
   isReady: boolean
   team?: string
+  /** PCV-20: người máy (luôn sẵn sàng). */
+  isBot?: boolean
 }
 
 export interface LobbyCheckInput {
@@ -33,6 +35,10 @@ export function lobbyStartCheck(input: LobbyCheckInput): LobbyCheck {
   const { mode, players, hostId, quickMatch, viewerUserId } = input
   const { min } = playerLimits(mode)
   const count = players.length
+  // PCV-20: người máy không tự chơi với nhau — cần ít nhất một người thật (giống RoomModeRules).
+  if (count > 0 && players.every(p => p.isBot)) {
+    return { canStart: false, reason: 'room.lobbyRules.needHuman' }
+  }
   if (count < min) {
     return { canStart: false, reason: 'room.lobbyRules.needPlayers', params: { need: min - count, min } }
   }

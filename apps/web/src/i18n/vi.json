@@ -1840,7 +1840,8 @@
       "ready": "Đủ người · Có thể bắt đầu",
       "readyDetail": "{{count}}/{{max}} người · Có thể bắt đầu",
       "groupReady": "Sẵn sàng bắt đầu",
-      "groupReadyDetail": "{{count}}/{{max}} người · Trưởng nhóm có thể bắt đầu"
+      "groupReadyDetail": "{{count}}/{{max}} người · Trưởng nhóm có thể bắt đầu",
+      "needHuman": "Phòng cần ít nhất 1 người chơi thật"
     },
     "rules": {
       "title": "Luật {{mode}}",
@@ -1908,6 +1909,17 @@
       "save": "Lưu cách chơi",
       "failed": "Chưa đổi được cách chơi, thử lại",
       "tooMany": "Tối đa {{max}} người"
+    },
+    "bot": {
+      "add": "Thêm người máy",
+      "suffix": "(máy)",
+      "level": {
+        "EASY": "Người máy · Dễ",
+        "MEDIUM": "Người máy · Vừa",
+        "HARD": "Người máy · Giỏi"
+      },
+      "playWithBots": "Chơi với người máy",
+      "addFailed": "Chưa thêm được người máy"
     }
   },
   "groups": {

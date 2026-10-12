@@ -96,6 +96,10 @@ public class RoomPlayer {
     /** Đấu vương: số lần đoán đúng người thắng khi đang xem. */
     @Column(name = "prediction_points", nullable = false)
     private Integer predictionPoints = 0;
+
+    /** PCV-20 (V78): cấp người máy (EASY | MEDIUM | HARD); null với người thật. */
+    @Column(name = "bot_level", length = 10)
+    private String botLevel;
     
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(name = "room_player_answers", joinColumns = @JoinColumn(name = "room_player_id"))
@@ -211,6 +215,10 @@ public class RoomPlayer {
     public Integer getMatchesPlayed() { return matchesPlayed != null ? matchesPlayed : 0; }
     public void setMatchesPlayed(Integer matchesPlayed) { this.matchesPlayed = matchesPlayed; }
     public Integer getPredictionPoints() { return predictionPoints != null ? predictionPoints : 0; }
+    public String getBotLevel() { return botLevel; }
+    public void setBotLevel(String botLevel) { this.botLevel = botLevel; }
+    /** PCV-20: dòng này là người máy. */
+    public boolean isBot() { return user != null && user.isBot(); }
     public void setPredictionPoints(Integer predictionPoints) { this.predictionPoints = predictionPoints; }
     public void setWinningStreak(Integer winningStreak) { this.winningStreak = winningStreak; }
 }

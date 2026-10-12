@@ -518,7 +518,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                         <div className={`text-sm font-medium truncate ${
                           isMe ? 'text-bq-amberd' : eliminated ? 'text-bq-ink2' : 'text-bq-ink'
                         }`}>
-                          {s.username}{isMe ? t('room.quiz.youSuffix') : ''}
+                          {s.username}{isMe ? t('room.quiz.youSuffix') : ''}{s.isBot ? ` ${t('room.bot.suffix')}` : ''}
                         </div>
                       </div>
                       <div className="text-right flex-shrink-0">
@@ -835,7 +835,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                         <div className={`text-sm font-medium truncate max-w-[80px] ${
                           isMe ? 'text-bq-amberd' : eliminated ? 'text-bq-ink2' : 'text-bq-ink'
                         }`}>
-                          {s.username}{isMe ? t('room.quiz.youSuffix') : ''}
+                          {s.username}{isMe ? t('room.quiz.youSuffix') : ''}{s.isBot ? ` ${t('room.bot.suffix')}` : ''}
                         </div>
                       </div>
                       <div className="text-right">

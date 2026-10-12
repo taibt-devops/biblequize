@@ -59,6 +59,10 @@ public class RoomController {
     @Autowired
     private UserTierService userTierService;
 
+    /** PCV-20: thêm người máy. */
+    @Autowired
+    private com.biblequiz.modules.room.service.RoomBotService roomBotService;
+
     /**
      * POST /api/rooms - Tạo phòng mới
      */
@@ -311,6 +315,28 @@ public class RoomController {
             return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
+     * PCV-20: POST /api/rooms/{id}/bots {@code { level: EASY | MEDIUM | HARD }} — thêm một người máy.
+     */
+    @PostMapping("/{id}/bots")
+    public ResponseEntity<?> addBot(@PathVariable String id, @RequestBody(required = false) Map<String, Object> body,
+                                    Principal principal) {
+        try {
+            User user = getUser(principal);
+            Object raw = body != null ? body.get("level") : null;
+            com.biblequiz.modules.room.service.RoomBotService.BotLevel level = raw != null
+                    ? com.biblequiz.modules.room.service.RoomBotService.BotLevel.valueOf(raw.toString())
+                    : com.biblequiz.modules.room.service.RoomBotService.BotLevel.MEDIUM;
+            roomBotService.addBot(id, user.getId(), level);
+            RoomService.RoomDetailsDTO details = roomService.getRoomDetails(id);
+            return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", "Cấp người máy không hợp lệ"));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", String.valueOf(e.getMessage())));
         }
     }
 

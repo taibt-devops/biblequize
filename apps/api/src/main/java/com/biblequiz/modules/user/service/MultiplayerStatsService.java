@@ -42,8 +42,10 @@ public class MultiplayerStatsService {
 
         List<RoomPlayer> matches = roomPlayerRepository.findEndedMatchesInWindow(userId, weekStart, now);
         long totalMatches = matches.size();
+        // PCV-20: thắng chỉ tính phòng có ít nhất 2 người thật (thắng toàn người máy không phải thắng).
         long wins = matches.stream()
                 .filter(rp -> rp.getFinalRank() != null && rp.getFinalRank() == 1)
+                .filter(rp -> humans(rp) >= 2)
                 .count();
         double winRate = totalMatches == 0 ? 0.0 : (double) wins / totalMatches;
 
@@ -64,9 +66,14 @@ public class MultiplayerStatsService {
     private boolean isMvp(RoomPlayer me) {
         if (me.getScore() == null || me.getScore() <= 0) return false;
         List<RoomPlayer> roster = roomPlayerRepository.findByRoomId(me.getRoom().getId());
-        if (roster.size() < 3) return false;
+        // PCV-20: phòng phải có ít nhất 3 người thật.
+        if (roster.stream().filter(p -> !p.isBot()).count() < 3) return false;
         int top = roster.stream().mapToInt(p -> p.getScore() != null ? p.getScore() : 0).max().orElse(0);
         return me.getScore() == top;
+    }
+
+    private long humans(RoomPlayer me) {
+        return roomPlayerRepository.findByRoomId(me.getRoom().getId()).stream().filter(p -> !p.isBot()).count();
     }
 
     /** Monday 00:00 of the current calendar week, system zone. */
