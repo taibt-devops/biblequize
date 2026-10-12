@@ -146,7 +146,8 @@ public class RoomQuizService {
             Thread.sleep(GAME_STARTING_COUNTDOWN_S * 1000L);
 
             RoomModeStrategy strategy = roomModeRegistry.get(mode);
-            List<Question> questions = loadQuestionsForRoom(roomId, questionCount);
+            LoadedQuestions loaded = loadQuestionsForRoom(roomId, questionCount, mode);
+            List<Question> questions = loaded.questions();
             if (questions.isEmpty()) {
                 roomService.endRoom(roomId);
                 wsController.broadcastQuizEnd(roomId, List.of());
@@ -157,6 +158,7 @@ public class RoomQuizService {
                     BETWEEN_QUESTION_DELAY_MS, wsController, roomService, roomStateService,
                     roomPlayerRepository, roomRoundRepository,
                     this::saveRound, this::buildQuestionDto);
+            ctx.setRegularCount(loaded.regularCount());
 
             boolean finished;
             if (strategy.hasCustomGameLoop()) {
@@ -199,7 +201,7 @@ public class RoomQuizService {
             awaitIfPaused(roomId);
             if (isRoomEnded(roomId)) break;
             long activeCount = roomPlayerRepository.countByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ACTIVE);
-            if (strategy.shouldStopBeforeRound(ctx, activeCount)) break;
+            if (strategy.shouldStopBeforeRound(ctx, activeCount, i)) break;
 
             Question q = questions.get(i);
             RoomRound round = saveRound(roomId, new RoomRound(UUID.randomUUID().toString(), null, i, q.getId(), LocalDateTime.now()));
@@ -255,7 +257,14 @@ public class RoomQuizService {
      * Priority 2: legacy RoomQuestionSelection
      * Fallback: random from Question DB by scope/difficulty
      */
-    private List<Question> loadQuestionsForRoom(String roomId, int questionCount) {
+    /** PCV-12: bộ câu của trận + số câu chính (phần sau là câu dự phòng cho câu quyết định Sinh tồn). */
+    record LoadedQuestions(List<Question> questions, int regularCount) {
+        static LoadedQuestions of(List<Question> questions) {
+            return new LoadedQuestions(questions, questions.size());
+        }
+    }
+
+    private LoadedQuestions loadQuestionsForRoom(String roomId, int questionCount, Room.RoomMode mode) {
         Room room = roomRepository.findById(roomId).orElseThrow();
 
         // Priority 0: direct question IDs stored on room (e.g., from group quiz set)
@@ -263,7 +272,7 @@ public class RoomQuizService {
             List<Question> byIds = questionRepository.findAllById(room.getCustomQuestionIds());
             if (!byIds.isEmpty()) {
                 log.info("[RoomQuizService] Room {} dùng {} questions từ customQuestionIds", roomId, byIds.size());
-                return byIds;
+                return LoadedQuestions.of(byIds);
             }
         }
 
@@ -281,7 +290,7 @@ public class RoomQuizService {
                         .toList();
                 if (!fromSet.isEmpty()) {
                     log.info("[RoomQuizService] Room {} dùng {} questions từ QuestionSet {}", roomId, fromSet.size(), room.getQuestionSetId());
-                    return fromSet;
+                    return LoadedQuestions.of(fromSet);
                 }
             }
             // Priority 2: legacy RoomQuestionSelection — same JOIN FETCH
@@ -293,12 +302,53 @@ public class RoomQuizService {
                     .toList();
             if (!custom.isEmpty()) {
                 log.info("[RoomQuizService] Room {} dùng {} custom questions (legacy)", roomId, custom.size());
-                return custom;
+                return LoadedQuestions.of(custom);
             }
             log.warn("[RoomQuizService] Room {} questionSource=CUSTOM nhưng chưa gán câu hỏi — fallback DB", roomId);
         }
 
-        return loadQuestionsFromDatabase(room, questionCount);
+        if (mode == Room.RoomMode.BATTLE_ROYALE) {
+            return loadBattleRoyaleQuestions(room, questionCount);
+        }
+        return LoadedQuestions.of(loadQuestionsFromDatabase(room, questionCount));
+    }
+
+    /**
+     * PCV-12 — Sinh tồn từ kho câu: "Hỗn hợp" thì 30/40/30 Dễ → TB → Khó + 5 câu Khó dự phòng;
+     * độ khó cố định thì giữ độ khó đó cho cả câu dự phòng.
+     */
+    private LoadedQuestions loadBattleRoyaleQuestions(Room room, int questionCount) {
+        String scope = room.getBookScope() != null ? room.getBookScope() : "ALL";
+        Room.RoomDifficulty diff = room.getDifficulty() != null ? room.getDifficulty() : Room.RoomDifficulty.MIXED;
+        String lang = room.getLanguage() != null && !room.getLanguage().isBlank() ? room.getLanguage() : "vi";
+        List<String> books = BookScopes.expand(scope);
+        Question.Difficulty fixed = toQuestionDifficulty(diff);
+        BattleRoyaleQuestionPlan.Fetcher fetcher = (d, count, exclude) ->
+                fetchRandom(lang, books, fixed != null ? fixed : d, count, exclude);
+        if (fixed != null) {
+            List<Question> regular = fetcher.fetch(fixed, questionCount, List.of());
+            List<String> used = regular.stream().map(Question::getId).toList();
+            List<Question> all = new java.util.ArrayList<>(regular);
+            all.addAll(fetcher.fetch(fixed, BattleRoyaleQuestionPlan.SHOWDOWN_RESERVE, used));
+            return new LoadedQuestions(all, regular.size());
+        }
+        BattleRoyaleQuestionPlan.Result plan = BattleRoyaleQuestionPlan.build(questionCount, fetcher);
+        return new LoadedQuestions(plan.questions(), plan.regularCount());
+    }
+
+    /** Câu ngẫu nhiên theo ngôn ngữ/sách/độ khó (null = mọi mức); phạm vi sách không có câu thì lấy cả kho. */
+    private List<Question> fetchRandom(String lang, List<String> books, Question.Difficulty d, int count, List<String> exclude) {
+        if (count <= 0) return List.of();
+        PageRequest page = PageRequest.of(0, count);
+        if (!books.isEmpty()) {
+            List<Question> scoped = d != null
+                    ? questionRepository.findRandomQuestionsByLanguageAndBooksAndDifficultyExcludingIds(lang, books, d, exclude, page)
+                    : questionRepository.findRandomQuestionsByLanguageAndBooksExcludingIds(lang, books, exclude, page);
+            if (!scoped.isEmpty()) return scoped;
+        }
+        return d != null
+                ? questionRepository.findRandomQuestionsByLanguageAndDifficultyExcludingIds(lang, d, exclude, page)
+                : questionRepository.findRandomQuestionsByLanguageExcludingIds(lang, exclude, page);
     }
 
     private List<Question> loadQuestionsFromDatabase(Room room, int questionCount) {

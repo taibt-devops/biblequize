@@ -271,7 +271,7 @@ describe('RoomLobby — rules card', () => {
   it('renders compact rule text', async () => {
     await renderLobby()
     expect(await screen.findByText(/Luật Đua tốc độ/i)).toBeInTheDocument()
-    expect(screen.getByText('Trả lời đúng và nhanh để ghi điểm.')).toBeInTheDocument()
+    expect(screen.getByText('Đúng và nhanh để ghi điểm; đúng liên tiếp được thưởng.')).toBeInTheDocument()
   })
 
   it('PCV-9: chip mode dùng icon chung — Sinh tồn = favorite, Đấu vương = swords', async () => {

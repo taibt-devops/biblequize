@@ -706,17 +706,27 @@ public class RoomService {
     public List<LeaderboardEntryDTO> buildLeaderboard(String roomId, Comparator<RoomPlayer> order) {
         return roomPlayerRepository.findByRoomId(roomId).stream()
             .sorted(order)
-            .map(player -> new LeaderboardEntryDTO(
-                player.getUser().getId(),
-                player.getUsername(),
-                player.getAvatarUrl(),
-                player.getScore(),
-                player.getCorrectAnswers(),
-                player.getTotalAnswered(),
-                player.getAccuracy(),
-                player.getFinalRank(),
-                player.getPlayerStatus()
-            ))
+            .map(player -> {
+                LeaderboardEntryDTO dto = new LeaderboardEntryDTO(
+                    player.getUser().getId(),
+                    player.getUsername(),
+                    player.getAvatarUrl(),
+                    player.getScore(),
+                    player.getCorrectAnswers(),
+                    player.getTotalAnswered(),
+                    player.getAccuracy(),
+                    player.getFinalRank(),
+                    player.getPlayerStatus()
+                );
+                dto.lives = player.getLives();
+                dto.answerStreak = player.getAnswerStreak();
+                dto.revived = player.getRevived();
+                dto.matchesWon = player.getMatchesWon();
+                dto.bestStreak = player.getBestStreak();
+                dto.matchesPlayed = player.getMatchesPlayed();
+                dto.predictionPoints = player.getPredictionPoints();
+                return dto;
+            })
             .collect(Collectors.toList());
     }
 
@@ -898,6 +908,14 @@ public class RoomService {
         public final Double accuracy;
         public final Integer finalRank;
         public final String playerStatus;
+        /** Phòng chơi v2: trạng thái theo mode (Sinh tồn: mạng; Đua tốc độ: chuỗi; Đấu vương: thống kê). */
+        public Integer lives;
+        public Integer answerStreak;
+        public Boolean revived;
+        public Integer matchesWon;
+        public Integer bestStreak;
+        public Integer matchesPlayed;
+        public Integer predictionPoints;
 
         public LeaderboardEntryDTO(String playerId, String username, String avatarUrl,
                                    Integer score, Integer correctAnswers, Integer totalAnswered, Double accuracy,

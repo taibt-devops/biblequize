@@ -1804,7 +1804,9 @@
       "feedRoundEnd": "Question {{n}} over · answer {{letter}}",
       "feedCorrect": "Correct: {{names}}",
       "networkUnstable": "Connection lost, reconnecting — try again in a moment",
-      "finalQuestion": "Final question · ×{{m}}"
+      "finalQuestion": "Final question · ×{{m}}",
+      "dangerZone": "Danger zone",
+      "showdown": "Showdown"
     },
     "reveal": {
       "reference": "Scripture",
@@ -1838,12 +1840,12 @@
       "detailAria": "Rule details",
       "detailBtn": "Details",
       "speed_race": {
-        "short": "Answer correctly and quickly to score.",
-        "detail": "Each correct answer earns 100 points, plus up to 50 more the faster you answer. Most points after the last question wins."
+        "short": "Be right and fast to score; streaks earn bonuses.",
+        "detail": "Each correct answer earns 100 points, plus up to 50 more the faster you answer. From the 2nd correct answer in a row you earn 10, then 20, then 30 bonus points per question; a wrong or missing answer breaks the streak. The last question is the final: its points are doubled. Most points at the end wins."
       },
       "battle_royale": {
-        "short": "A wrong answer knocks you out. Last one standing wins.",
-        "detail": "A wrong or missing answer knocks you out of the next rounds. If everyone misses the same question, nobody is out. If several players remain at the end, more correct answers, then faster answers, rank higher."
+        "short": "Everyone has 2 lives. Last one standing wins.",
+        "detail": "Everyone has 2 lives: a wrong or missing answer costs one, and with none left you are out. If everyone misses the same question, nobody loses a life. Questions get harder; from question 10 the danger zone shortens the timer. If several players remain at the end, showdown questions follow: one miss and you are out."
       },
       "team_vs_team": {
         "short": "Two teams compete; the higher score wins.",
@@ -2563,8 +2565,8 @@
     "creating": "Creating...",
     "create": "Create Room",
     "modeDesc": {
-      "speed_race": "Fastest correct answer wins",
-      "battle_royale": "Wrong answer eliminates you — last one standing wins",
+      "speed_race": "Right and fast to score, streak bonuses, the final question counts double",
+      "battle_royale": "Two lives each, questions get harder — last one standing wins",
       "team_vs_team": "Two teams compete, higher total score wins",
       "sudden_death": "Duel for the throne: the winner stays on; if both are correct, the faster one wins.",
       "group_live_sequential": "Everyone answers — the answer appears once all are done"

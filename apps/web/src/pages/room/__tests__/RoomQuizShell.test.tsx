@@ -84,3 +84,30 @@ describe('RoomQuizShell — Phòng chơi v2 (PCV-9/11)', () => {
     expect(screen.queryByTestId('standings-flash')).toBeNull()
   })
 })
+
+describe('RoomQuizShell — Sinh tồn (PCV-12)', () => {
+  it('bảng người chơi hiện tim (mạng) thay cho điểm', () => {
+    const scores = [
+      { playerId: 'p0', username: 'Người 0', score: 950, correctAnswers: 6, totalAnswered: 7, accuracy: 85, lives: 2, playerStatus: 'ACTIVE' },
+      { playerId: 'p1', username: 'Người 1', score: 980, correctAnswers: 6, totalAnswered: 7, accuracy: 85, lives: 1, playerStatus: 'ACTIVE' },
+      { playerId: 'p2', username: 'Người 2', score: 400, correctAnswers: 2, totalAnswered: 4, accuracy: 50, lives: 0, playerStatus: 'ELIMINATED' },
+    ]
+    render(<Harness gameMode="BATTLE_ROYALE" core={playing({ scores })} />)
+    const board = screen.getByTestId('quiz-scoreboard-left')
+    expect(board.querySelector('[data-testid="lives-p0"]')?.getAttribute('data-lives')).toBe('2')
+    expect(board.querySelector('[data-testid="lives-p1"]')?.getAttribute('data-lives')).toBe('1')
+    expect(board.textContent).not.toContain('950')
+    // còn nhiều mạng xếp trên dù ít điểm hơn
+    const rows = Array.from(board.querySelectorAll('[data-testid^="lives-"]')).map(n => n.getAttribute('data-testid'))
+    expect(rows[0]).toBe('lives-p0')
+  })
+
+  it('vùng nguy hiểm và câu quyết định có nhãn riêng', () => {
+    const { unmount } = render(<Harness gameMode="BATTLE_ROYALE" core={playing({ questionIndex: 11, dangerZone: true })} />)
+    expect(screen.getByTestId('quiz-danger-zone').textContent).toMatch(/Vùng nguy hiểm/)
+    expect(screen.queryByTestId('quiz-showdown')).toBeNull()
+    unmount()
+    render(<Harness gameMode="BATTLE_ROYALE" core={playing({ questionIndex: 15, dangerZone: true, showdown: true })} />)
+    expect(screen.getByTestId('quiz-showdown').textContent).toMatch(/Câu quyết định/)
+  })
+})

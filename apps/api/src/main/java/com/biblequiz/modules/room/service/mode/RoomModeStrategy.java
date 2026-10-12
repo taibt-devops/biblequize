@@ -69,6 +69,11 @@ public interface RoomModeStrategy {
         return false;
     }
 
+    /** PCV-12/15: như trên, kèm chỉ số câu sắp chạy (Đấu vương dừng theo ngai, Sinh tồn theo phần quyết định). */
+    default boolean shouldStopBeforeRound(GameLoopContext ctx, long activeCount, int questionIndex) {
+        return shouldStopBeforeRound(ctx, activeCount);
+    }
+
     /** Number of submissions that closes the round early (waitForRoundEnd). */
     default int expectedAnswers(GameLoopContext ctx, long activeCount) {
         return (int) activeCount;

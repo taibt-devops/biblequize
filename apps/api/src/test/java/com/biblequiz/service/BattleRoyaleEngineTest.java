@@ -138,9 +138,8 @@ class BattleRoyaleEngineTest {
         RoomPlayer p1 = createPlayer("u1", "P1"); p1.setCorrectAnswers(5); p1.setAverageReactionTime(3000.0);
         RoomPlayer p2 = createPlayer("u2", "P2"); p2.setCorrectAnswers(8); p2.setAverageReactionTime(3000.0);
         RoomPlayer p3 = createPlayer("u3", "P3"); p3.setCorrectAnswers(6); p3.setAverageReactionTime(3000.0);
-        when(roomPlayerRepository.findByRoomIdAndPlayerStatus(ROOM, RoomPlayer.PlayerStatus.ACTIVE))
+        when(roomPlayerRepository.findByRoomId(ROOM))
                 .thenReturn(new ArrayList<>(List.of(p1, p2, p3)));
-        when(roomPlayerRepository.save(any())).thenAnswer(inv -> inv.getArgument(0));
 
         engine.assignFinalRanks(ROOM);
 
@@ -158,7 +157,7 @@ class BattleRoyaleEngineTest {
         RoomPlayer p1 = createPlayer("u1", "P1"); p1.setCorrectAnswers(5); p1.setAverageReactionTime(3000.0);
         RoomPlayer p2 = createPlayer("u2", "P2"); p2.setCorrectAnswers(5); p2.setAverageReactionTime(2000.0);
         RoomPlayer p3 = createPlayer("u3", "P3"); p3.setCorrectAnswers(3); p3.setAverageReactionTime(1000.0);
-        when(roomPlayerRepository.findByRoomIdAndPlayerStatus(ROOM, RoomPlayer.PlayerStatus.ACTIVE))
+        when(roomPlayerRepository.findByRoomId(ROOM))
                 .thenReturn(new ArrayList<>(List.of(p1, p2, p3)));
 
         engine.assignFinalRanks(ROOM);

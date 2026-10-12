@@ -1804,7 +1804,9 @@
       "feedRoundEnd": "Câu {{n}} kết thúc · đáp án {{letter}}",
       "feedCorrect": "Đúng: {{names}}",
       "networkUnstable": "Mất kết nối, đang kết nối lại — thử lại sau giây lát",
-      "finalQuestion": "Câu chốt · ×{{m}}"
+      "finalQuestion": "Câu chốt · ×{{m}}",
+      "dangerZone": "Vùng nguy hiểm",
+      "showdown": "Câu quyết định"
     },
     "reveal": {
       "reference": "Câu gốc",
@@ -1838,12 +1840,12 @@
       "detailAria": "Chi tiết luật chơi",
       "detailBtn": "Chi tiết",
       "speed_race": {
-        "short": "Trả lời đúng và nhanh để ghi điểm.",
-        "detail": "Mỗi câu đúng được 100 điểm, trả lời càng nhanh càng được thêm (tối đa 50). Hết câu, ai nhiều điểm nhất thắng."
+        "short": "Đúng và nhanh để ghi điểm; đúng liên tiếp được thưởng.",
+        "detail": "Mỗi câu đúng được 100 điểm, trả lời càng nhanh càng được thêm (tối đa 50). Đúng liên tiếp từ câu thứ 2 được thưởng thêm 10, rồi 20, rồi 30 điểm mỗi câu; sai hoặc không trả lời thì mất chuỗi. Câu cuối là câu chốt: nhân đôi điểm câu đó. Hết câu, ai nhiều điểm nhất thắng."
       },
       "battle_royale": {
-        "short": "Sai là bị loại. Người trụ lại cuối cùng thắng.",
-        "detail": "Trả lời sai hoặc không kịp thì bị loại khỏi vòng sau. Nếu cả nhóm cùng sai một câu thì không ai bị loại. Hết câu mà còn nhiều người thì ai đúng nhiều hơn, rồi nhanh hơn, xếp trên."
+        "short": "Mỗi người 2 mạng. Người trụ lại cuối cùng thắng.",
+        "detail": "Mỗi người có 2 mạng: trả lời sai hoặc không kịp mất 1 mạng, hết mạng thì bị loại. Cả nhóm cùng sai một câu thì không ai mất mạng. Câu hỏi khó dần; từ câu 10 là vùng nguy hiểm, thời gian rút ngắn dần. Hết câu mà còn nhiều người thì vào Câu quyết định: sai là bị loại ngay."
       },
       "team_vs_team": {
         "short": "Hai đội đấu nhau, đội nhiều điểm hơn thắng.",
@@ -2563,8 +2565,8 @@
     "creating": "Đang tạo...",
     "create": "Tạo Phòng",
     "modeDesc": {
-      "speed_race": "Ai trả lời nhanh và đúng sẽ thắng",
-      "battle_royale": "Sai là bị loại, người còn lại cuối cùng thắng",
+      "speed_race": "Đúng và nhanh để ghi điểm, đúng liên tiếp được thưởng, câu chốt nhân đôi",
+      "battle_royale": "Mỗi người 2 mạng, câu khó dần — người trụ lại cuối cùng thắng",
       "team_vs_team": "Hai đội đấu nhau, đội có điểm cao hơn thắng",
       "sudden_death": "Đấu tay đôi giành ngai: thắng thì giữ ngai đấu tiếp, cả hai cùng đúng thì ai nhanh hơn thắng.",
       "group_live_sequential": "Mọi người cùng trả lời — chờ tất cả xong mới hiện đáp án"

@@ -23,6 +23,12 @@ public class BattleRoyaleStrategy implements RoomModeStrategy {
 
     private static final Logger log = LoggerFactory.getLogger(BattleRoyaleStrategy.class);
 
+    /** PCV-12 (design §2.2): mỗi người 2 mạng. */
+    static final int START_LIVES = 2;
+    /** Vùng nguy hiểm bắt đầu từ câu thứ 10 (đếm từ 1). */
+    static final int DANGER_FROM_QUESTION = 10;
+    static final int MIN_SECONDS = 10;
+
     private final BattleRoyaleEngine battleRoyaleEngine;
     private final SpeedRaceScoringService speedRaceScoringService;
 
@@ -53,8 +59,25 @@ public class BattleRoyaleStrategy implements RoomModeStrategy {
         return RoomService.ORDER_BY_FINAL_RANK_ASC;
     }
 
+    /**
+     * PCV-12: từ câu 10 thời gian = max(10, gốc − 2×(câu − 9)) và gắn cờ vùng nguy hiểm;
+     * câu sau phần câu chính là câu quyết định.
+     */
+    @Override
+    public RoundPlan planRound(GameLoopContext ctx, int index, com.biblequiz.modules.quiz.entity.Question question) {
+        int questionNo = index + 1;
+        boolean danger = questionNo >= DANGER_FROM_QUESTION;
+        int seconds = ctx.timePerQuestion;
+        if (danger) {
+            seconds = Math.min(ctx.timePerQuestion, Math.max(MIN_SECONDS, ctx.timePerQuestion - 2 * (questionNo - 9)));
+        }
+        return new RoundPlan(seconds, 1, danger, index >= ctx.regularCount());
+    }
+
     @Override
     public boolean beforeLoop(GameLoopContext ctx) {
+        // PCV-12: mọi người vào trận với 2 mạng.
+        battleRoyaleEngine.initLives(ctx.roomId, START_LIVES);
         int totalPlayers = (int) ctx.roomPlayerRepository
                 .countByRoomIdAndPlayerStatus(ctx.roomId, RoomPlayer.PlayerStatus.ACTIVE);
         ctx.setModeState(totalPlayers);
@@ -70,9 +93,10 @@ public class BattleRoyaleStrategy implements RoomModeStrategy {
 
     @Override
     public boolean afterRound(GameLoopContext ctx, RoomRound round, int questionIndex) {
-        // Xử lý elimination
+        // PCV-12: trượt mất 1 mạng (câu quyết định: bị loại ngay); cả nhóm cùng sai thì ân xá.
+        boolean showdown = questionIndex >= ctx.regularCount();
         List<BattleRoyaleEngine.EliminatedPlayerInfo> eliminated =
-                battleRoyaleEngine.processRoundEnd(ctx.roomId, round.getId());
+                battleRoyaleEngine.processRoundEnd(ctx.roomId, round.getId(), questionIndex, showdown).eliminated;
         long remaining = ctx.roomPlayerRepository
                 .countByRoomIdAndPlayerStatus(ctx.roomId, RoomPlayer.PlayerStatus.ACTIVE);
 

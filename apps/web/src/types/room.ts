@@ -36,6 +36,14 @@ export type PlayerScore = {
   accuracy: number
   finalRank?: number
   playerStatus?: string
+  /** Phòng chơi v2: trạng thái theo mode (Sinh tồn: mạng; Đua tốc độ: chuỗi; Đấu vương: thống kê). */
+  lives?: number
+  answerStreak?: number
+  revived?: boolean
+  matchesWon?: number
+  bestStreak?: number
+  matchesPlayed?: number
+  predictionPoints?: number
 }
 
 export interface PerPlayerAnswer {

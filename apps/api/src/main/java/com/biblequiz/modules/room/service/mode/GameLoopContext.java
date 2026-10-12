@@ -47,6 +47,9 @@ public final class GameLoopContext {
     /** Scratch slot for per-run mode state (e.g. BR's initial player count). */
     private Object modeState;
 
+    /** PCV-12: số câu chính; các câu sau đó là câu dự phòng (câu quyết định Sinh tồn). */
+    private int regularCount;
+
     public GameLoopContext(String roomId, List<Question> questions, int timePerQuestion,
                            int betweenQuestionDelayMs, RoomWebSocketController ws,
                            RoomService roomService, RoomStateService roomStateService,
@@ -64,6 +67,15 @@ public final class GameLoopContext {
         this.roomRoundRepository = roomRoundRepository;
         this.roundSaver = roundSaver;
         this.questionDtoFactory = questionDtoFactory;
+        this.regularCount = questions != null ? questions.size() : 0;
+    }
+
+    public int regularCount() {
+        return regularCount;
+    }
+
+    public void setRegularCount(int regularCount) {
+        this.regularCount = regularCount;
     }
 
     public void setModeState(Object state) {

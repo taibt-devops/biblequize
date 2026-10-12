@@ -10,15 +10,20 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * Engine xử lý logic Battle Royale:
- * - Sau mỗi round, players trả lời sai (hoặc không trả lời) bị loại
- * - Ngoại lệ: nếu TẤT CẢ active players đều sai → không ai bị loại
- * - Gán finalRank khi bị loại
+ * Engine của Sinh tồn (Battle Royale) — Phòng chơi v2 (design §2.2):
+ * <ul>
+ *   <li>mỗi người {@link #initLives 2 mạng}; sai hoặc không trả lời mất 1 mạng, hết mạng thì bị loại;</li>
+ *   <li>ân xá: cả nhóm còn trong cuộc cùng sai thì không ai mất mạng (giữ luật cũ);</li>
+ *   <li>câu quyết định (sau câu chính): sai là bị loại ngay, vẫn ân xá khi cả nhóm cùng sai;</li>
+ *   <li>câu trả lời của "bóng" (người đã bị loại, PCV-13) không bao giờ tính cho người còn sống.</li>
+ * </ul>
+ * Người chơi chưa có mạng (phòng bắt đầu trước khi có luật mạng) bị loại ngay lần trượt đầu — đúng luật cũ.
  */
 @Service
 public class BattleRoyaleEngine {
@@ -29,73 +34,133 @@ public class BattleRoyaleEngine {
     @Autowired
     private RoomAnswerRepository roomAnswerRepository;
 
-    /**
-     * Xử lý kết thúc round cho Battle Royale.
-     *
-     * @return Danh sách players bị loại, rỗng nếu không ai bị loại (all-wrong exception)
-     */
+    /** Đầu trận: mọi người còn trong cuộc có {@code lives} mạng, chưa hồi sinh, chưa bị loại. */
     @Transactional
-    public List<EliminatedPlayerInfo> processRoundEnd(String roomId, String roundId) {
-        List<RoomPlayer> activePlayers = roomPlayerRepository
+    public void initLives(String roomId, int lives) {
+        List<RoomPlayer> active = roomPlayerRepository
                 .findByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ACTIVE);
-
-        if (activePlayers.isEmpty()) return List.of();
-
-        // Lấy các userId đã trả lời đúng trong round này
-        List<RoomAnswer> answers = roomAnswerRepository.findByRoundId(roundId);
-        Set<String> correctAnswerers = answers.stream()
-                .filter(RoomAnswer::getIsCorrect)
-                .map(RoomAnswer::getUserId)
-                .collect(Collectors.toSet());
-
-        // Ai ACTIVE nhưng không có trong correct → bị loại
-        List<RoomPlayer> toEliminate = activePlayers.stream()
-                .filter(p -> !correctAnswerers.contains(p.getUser().getId()))
-                .collect(Collectors.toList());
-
-        // Ngoại lệ: tất cả đều sai → không ai bị loại
-        if (toEliminate.size() == activePlayers.size()) {
-            return List.of();
+        for (RoomPlayer p : active) {
+            p.setLives(lives);
+            p.setGhostStreak(0);
+            p.setRevived(false);
+            p.setEliminatedRound(null);
         }
-
-        // rank = số người còn sống sau khi loại + 1
-        int survivorsCount = activePlayers.size() - toEliminate.size();
-        int rank = survivorsCount + 1;
-
-        List<EliminatedPlayerInfo> eliminated = new ArrayList<>();
-        for (RoomPlayer p : toEliminate) {
-            p.setPlayerStatus(RoomPlayer.PlayerStatus.ELIMINATED);
-            p.setFinalRank(rank);
-            roomPlayerRepository.save(p);
-            eliminated.add(new EliminatedPlayerInfo(
-                    p.getUser().getId(), p.getUsername(), rank));
-        }
-
-        return eliminated;
+        roomPlayerRepository.saveAll(active);
     }
 
     /**
-     * Gán rank cuối cho những active players còn lại khi game kết thúc.
-     * Sort theo: correctAnswers DESC → averageReactionTime ASC (faster = better).
-     * Canonical per DECISIONS 2026-06-12 — KHÔNG xếp theo score (speed-bonus
-     * phi tuyến làm score không đơn điệu theo số câu đúng).
+     * Xử lý một vòng đã đóng.
+     *
+     * @param questionIndex chỉ số câu (0-based) — ghi vào người bị loại để xếp hạng
+     * @param showdown      câu quyết định: trượt là bị loại ngay
+     */
+    @Transactional
+    public RoundOutcome processRoundEnd(String roomId, String roundId, int questionIndex, boolean showdown) {
+        List<RoomPlayer> active = roomPlayerRepository
+                .findByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ACTIVE);
+        if (active.isEmpty()) return RoundOutcome.none();
+
+        Set<String> correct = roomAnswerRepository.findByRoundId(roundId).stream()
+                .filter(a -> !a.isGhost() && Boolean.TRUE.equals(a.getIsCorrect()))
+                .map(RoomAnswer::getUserId)
+                .collect(Collectors.toSet());
+        List<RoomPlayer> missed = active.stream()
+                .filter(p -> !correct.contains(p.getUser().getId()))
+                .collect(Collectors.toList());
+        if (missed.isEmpty()) return RoundOutcome.none();
+        if (missed.size() == active.size()) return new RoundOutcome(List.of(), true); // ân xá
+
+        List<RoomPlayer> out = new ArrayList<>();
+        for (RoomPlayer p : missed) {
+            int lives = showdown ? 0 : Math.max(0, p.getLives() - 1);
+            p.setLives(lives);
+            if (lives == 0) {
+                out.add(p);
+            } else {
+                roomPlayerRepository.save(p);
+            }
+        }
+
+        // Hạng tạm = số người còn lại + 1 (cùng lượt thì đồng hạng); hạng cuối chốt ở assignFinalRanks.
+        int rank = active.size() - out.size() + 1;
+        List<EliminatedPlayerInfo> eliminated = new ArrayList<>();
+        for (RoomPlayer p : out) {
+            p.setPlayerStatus(RoomPlayer.PlayerStatus.ELIMINATED);
+            p.setEliminatedRound(questionIndex);
+            p.setFinalRank(rank);
+            p.setGhostStreak(0);
+            roomPlayerRepository.save(p);
+            eliminated.add(new EliminatedPlayerInfo(p.getUser().getId(), p.getUsername(), rank));
+        }
+        return new RoundOutcome(eliminated, false);
+    }
+
+    /** Luật cũ (một lần trượt là bị loại khi người chơi chưa có mạng) — giữ cho mã gọi cũ. */
+    @Transactional
+    public List<EliminatedPlayerInfo> processRoundEnd(String roomId, String roundId) {
+        return processRoundEnd(roomId, roundId, -1, false).eliminated;
+    }
+
+    /**
+     * Hạng cuối trận:
+     * <ol>
+     *   <li>người còn lại: mạng còn nhiều hơn → nhiều câu đúng hơn → trả lời nhanh hơn (bằng hệt thì đồng hạng);</li>
+     *   <li>người bị loại: bị loại muộn hơn xếp trên; cùng lượt thì đồng hạng;</li>
+     *   <li>người đã bỏ trận: xếp cuối, đồng hạng.</li>
+     * </ol>
+     * Không xếp theo điểm — điểm tốc độ không đơn điệu theo số câu đúng (DECISIONS 2026-06-12).
      */
     @Transactional
     public void assignFinalRanks(String roomId) {
-        List<RoomPlayer> remaining = roomPlayerRepository
-                .findByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ACTIVE);
+        List<RoomPlayer> all = roomPlayerRepository.findByRoomId(roomId);
+        List<RoomPlayer> survivors = new ArrayList<>();
+        List<RoomPlayer> eliminated = new ArrayList<>();
+        List<RoomPlayer> others = new ArrayList<>();
+        for (RoomPlayer p : all) {
+            if (p.getPlayerStatus() == RoomPlayer.PlayerStatus.ACTIVE) survivors.add(p);
+            else if (p.getPlayerStatus() == RoomPlayer.PlayerStatus.ELIMINATED) eliminated.add(p);
+            else others.add(p);
+        }
 
-        // Sort: correctAnswers DESC, then averageReactionTime ASC (faster better)
-        remaining.sort((a, b) -> {
-            int cmp = Integer.compare(b.getCorrectAnswers(), a.getCorrectAnswers());
-            if (cmp != 0) return cmp;
-            return Double.compare(a.getAverageReactionTime(), b.getAverageReactionTime());
-        });
+        Comparator<RoomPlayer> survivorOrder = Comparator
+                .comparingInt((RoomPlayer p) -> p.getLives()).reversed()
+                .thenComparing(Comparator.comparingInt((RoomPlayer p) -> p.getCorrectAnswers()).reversed())
+                .thenComparingDouble(p -> p.getAverageReactionTime() != null ? p.getAverageReactionTime() : Double.MAX_VALUE);
+        survivors.sort(survivorOrder);
+        for (int i = 0; i < survivors.size(); i++) {
+            RoomPlayer p = survivors.get(i);
+            boolean tie = i > 0 && survivorOrder.compare(survivors.get(i - 1), p) == 0;
+            p.setFinalRank(tie ? survivors.get(i - 1).getFinalRank() : i + 1);
+        }
 
-        for (int i = 0; i < remaining.size(); i++) {
-            RoomPlayer p = remaining.get(i);
-            p.setFinalRank(i + 1);
-            roomPlayerRepository.save(p);
+        int offset = survivors.size();
+        Comparator<RoomPlayer> outOrder = Comparator.comparingInt(
+                (RoomPlayer p) -> p.getEliminatedRound() != null ? p.getEliminatedRound() : -1).reversed();
+        eliminated.sort(outOrder);
+        for (int i = 0; i < eliminated.size(); i++) {
+            RoomPlayer p = eliminated.get(i);
+            boolean tie = i > 0 && outOrder.compare(eliminated.get(i - 1), p) == 0;
+            p.setFinalRank(tie ? eliminated.get(i - 1).getFinalRank() : offset + i + 1);
+        }
+
+        offset += eliminated.size();
+        for (RoomPlayer p : others) p.setFinalRank(offset + 1);
+
+        roomPlayerRepository.saveAll(all);
+    }
+
+    /** Kết quả một vòng: ai bị loại, và có phải vòng ân xá (cả nhóm cùng sai) không. */
+    public static class RoundOutcome {
+        public final List<EliminatedPlayerInfo> eliminated;
+        public final boolean amnesty;
+
+        public RoundOutcome(List<EliminatedPlayerInfo> eliminated, boolean amnesty) {
+            this.eliminated = eliminated;
+            this.amnesty = amnesty;
+        }
+
+        static RoundOutcome none() {
+            return new RoundOutcome(List.of(), false);
         }
     }
 

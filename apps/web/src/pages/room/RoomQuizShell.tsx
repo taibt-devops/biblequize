@@ -25,6 +25,17 @@ import SequentialView, { SequentialRevealPanel, SequentialWaitingStrip } from '.
 // Sprint 2 Q1 — persistent live-feed sidebar entry. Each entry is one row
 // rendered in the RIGHT column; the page keeps the last 30 events so the
 // history scrolls without unbounded growth.
+/** PCV-12: số mạng còn lại của người chơi Sinh tồn. */
+const LivesHearts: React.FC<{ playerId: string; lives: number }> = ({ playerId, lives }) => (
+  <div data-testid={`lives-${playerId}`} data-lives={String(lives)} className="flex items-center justify-end gap-0.5" aria-label={`${lives} ♥`}>
+    {lives > 0
+      ? Array.from({ length: lives }, (_, i) => (
+          <span key={i} className="material-symbols-outlined text-[15px] text-bq-ruby" style={FILL_STYLE} aria-hidden>favorite</span>
+        ))
+      : <span className="material-symbols-outlined text-[15px] text-bq-ink3" aria-hidden>heart_broken</span>}
+  </div>
+);
+
 export type FeedEntry = {
   id: number;
   kind: 'answer' | 'round_end';
@@ -102,6 +113,13 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
     : null;
 
   const timerPercent = timeLimit > 0 ? (timeLeft / timeLimit) * 100 : 0;
+  // PCV-12: Sinh tồn xếp bảng theo còn trong cuộc → mạng → điểm (tim thay cho điểm).
+  const boardScores = isBattleRoyale
+    ? [...scores].sort((a, b) =>
+        Number(b.playerStatus !== 'ELIMINATED') - Number(a.playerStatus !== 'ELIMINATED')
+        || (b.lives ?? 0) - (a.lives ?? 0)
+        || b.score - a.score)
+    : scores;
   // PCV-11: kết quả câu vừa xong của chính mình (chuỗi) + bảng dẫn đầu mỗi 3 câu.
   const myRoundResult = core.reveal?.results?.find(r => r.playerId === myUserId);
   const showStandings = gameMode === 'SPEED_RACE' && correctIndex !== null && !!core.reveal
@@ -317,6 +335,22 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             <span className="text-sm font-bold text-bq-ink flex-shrink-0">
               {t('room.quiz.questionProgress', { current: questionIndex + 1, total: totalQuestions || '?' })}
             </span>
+            {/* PCV-12: Sinh tồn — vùng nguy hiểm (thời gian rút ngắn) và câu quyết định (sai là bị loại). */}
+            {core.showdown ? (
+              <span
+                data-testid="quiz-showdown"
+                className="px-2 py-0.5 rounded-full border-2 border-bq-ink bg-bq-ruby text-white text-[12px] font-extrabold flex-shrink-0"
+              >
+                {t('room.quiz.showdown')}
+              </span>
+            ) : core.dangerZone ? (
+              <span
+                data-testid="quiz-danger-zone"
+                className="px-2 py-0.5 rounded-full border-2 border-bq-ink bg-bq-ember text-white text-[12px] font-extrabold flex-shrink-0"
+              >
+                {t('room.quiz.dangerZone')}
+              </span>
+            ) : null}
             {/* PCV-11: câu chốt — câu cuối Đua tốc độ nhân đôi điểm. */}
             {core.multiplier > 1 && (
               <span
@@ -442,7 +476,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
               {scores.length === 0 ? (
                 <p className="text-bq-ink3 text-xs text-center py-6">{t('room.quiz.noScoresYet')}</p>
               ) : (
-                scores.map((s, idx) => {
+                boardScores.map((s, idx) => {
                   const isMe = s.playerId === myUserId;
                   const eliminated = s.playerStatus === 'ELIMINATED';
                   return (
@@ -474,7 +508,11 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                         </div>
                       </div>
                       <div className="text-right flex-shrink-0">
-                        <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
+                        {isBattleRoyale ? (
+                          <LivesHearts playerId={s.playerId} lives={eliminated ? 0 : (s.lives ?? 0)} />
+                        ) : (
+                          <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
+                        )}
                         <div className="text-bq-ink3 text-[10px] font-bold">{s.correctAnswers}/{s.totalAnswered}</div>
                       </div>
                     </div>
@@ -493,7 +531,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             {!isSequential && scores.length > 0 && (
               <div className="md:hidden -mx-4 px-4 pb-1 overflow-x-auto" data-testid="quiz-mobile-chip-strip">
                 <div className="flex items-center gap-2 w-max">
-                  {scores.map((s, idx) => {
+                  {boardScores.map((s, idx) => {
                     const isMe = s.playerId === myUserId;
                     const answered = roundAnswered.has(s.playerId);
                     const initial = (s.username?.[0] ?? '?').toUpperCase();
@@ -518,7 +556,9 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                         >
                           {initial}
                         </div>
-                        <span className="text-xs font-semibold text-bq-ink tabular-nums">{s.score}</span>
+                        <span className="text-xs font-semibold text-bq-ink tabular-nums">
+                          {isBattleRoyale ? `♥${s.playerStatus === 'ELIMINATED' ? 0 : (s.lives ?? 0)}` : s.score}
+                        </span>
                         {answered ? (
                           <span className="text-[10px]" style={{ color: 'var(--bq-emerald)' }}>✓</span>
                         ) : (
@@ -739,7 +779,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
               {scores.length === 0 ? (
                 <p className="text-bq-ink3 text-xs text-center py-6">{t('room.quiz.noScoresYet')}</p>
               ) : (
-                scores.map((s, idx) => {
+                boardScores.map((s, idx) => {
                   const isMe = s.playerId === myUserId;
                   const eliminated = s.playerStatus === 'ELIMINATED';
                   return (
@@ -771,7 +811,11 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                         </div>
                       </div>
                       <div className="text-right">
-                        <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
+                        {isBattleRoyale ? (
+                          <LivesHearts playerId={s.playerId} lives={eliminated ? 0 : (s.lives ?? 0)} />
+                        ) : (
+                          <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
+                        )}
                         <div className="text-bq-ink3 text-[10px] font-bold">{s.correctAnswers}/{s.totalAnswered}</div>
                       </div>
                     </div>

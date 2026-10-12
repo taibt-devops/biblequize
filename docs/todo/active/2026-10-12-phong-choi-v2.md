@@ -15,7 +15,7 @@
 - PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [~] IN PROGRESS (docs xong, chờ deploy)
 
 ### Tasks — Đợt 2 (thiết kế lại mode)
-- PCV-11 Đua tốc độ: thưởng chuỗi, câu chốt ×2, phân hạng, bảng dẫn đầu mỗi 3 câu — Status: [ ] TODO
+- PCV-11 Đua tốc độ: thưởng chuỗi, câu chốt ×2, phân hạng, bảng dẫn đầu mỗi 3 câu — Status: [x] DONE
 - PCV-12 Sinh tồn: 2 mạng, độ khó tăng dần, vùng nguy hiểm, câu quyết định — Status: [ ] TODO
 - PCV-13 Sinh tồn: bóng + hồi sinh — Status: [ ] TODO
 - PCV-14 Đội đấu đội: điểm trung bình, thưởng cả đội, xáo đội, tên đội — Status: [ ] TODO
