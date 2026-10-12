@@ -143,6 +143,24 @@ class RoundResultBuilderTest {
     }
 
     @Test
+    void ghostAnswers_areLeftOutOfCountsAndResults() {
+        RoomPlayer alive = player("u1", "An");
+        RoomPlayer ghost = player("u2", "Bình");
+        ghost.setPlayerStatus(RoomPlayer.PlayerStatus.ELIMINATED);
+        RoomAnswer ghostAnswer = answer("u2", 2, true, 0);
+        ghostAnswer.setGhost(true);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(alive, ghost));
+        when(answerRepository.findByRoundId("round-1")).thenReturn(List.of(answer("u1", 0, false, 0), ghostAnswer));
+
+        WebSocketMessage.RoundEndData data = new RoundResultBuilder(answerRepository, playerRepository, roomService)
+                .build("room-1", "round-1", question);
+
+        assertArrayEquals(new int[]{1, 0, 0, 0}, data.answerCounts, "số người chọn chỉ đếm người còn trong cuộc");
+        WebSocketMessage.RoundEndData.PlayerResult g = data.results.stream().filter(r -> r.playerId.equals("u2")).findFirst().orElseThrow();
+        assertFalse(g.answered);
+    }
+
+    @Test
     void revealPause_isLongerWhenThereIsAnExplanation() {
         assertEquals(7_000, RoundResultBuilder.revealPauseMs(question));
         question.setExplanation("  ");

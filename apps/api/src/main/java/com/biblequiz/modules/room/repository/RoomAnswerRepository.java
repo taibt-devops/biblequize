@@ -18,4 +18,7 @@ public interface RoomAnswerRepository extends JpaRepository<RoomAnswer, String> 
     boolean existsByRoundIdAndUserId(String roundId, String userId);
 
     long countByRoundId(String roundId);
+
+    /** PCV-13: số câu trả lời của người còn trong cuộc (bỏ câu của bóng) — dùng để kết thúc vòng sớm. */
+    long countByRoundIdAndGhostFalse(String roundId);
 }

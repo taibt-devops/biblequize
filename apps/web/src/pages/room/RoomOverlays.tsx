@@ -127,8 +127,10 @@ export const EliminationScreen: React.FC<{
     </div>
     <h1 className="font-display text-3xl font-black tracking-tighter text-bq-ruby mb-2"><T k="eliminated" /></h1>
     <p className="text-bq-ink2 text-lg mb-1">
-      Thu hang: <b className="text-bq-ink font-black">#{rank}</b>/{totalPlayers}
+      <T k="rankLabel" /> <b className="text-bq-ink font-black">#{rank}</b>/{totalPlayers}
     </p>
+    {/* PCV-13: Sinh tồn — trả lời tiếp dưới dạng bóng, đúng 3 câu liên tiếp trước câu 10 thì hồi sinh. */}
+    <p className="text-bq-ink2 text-[15px] max-w-sm text-center mt-2"><T k="ghostIntro" /></p>
     {correctIndex !== null && question && (
       <div className="mt-4 mb-8 bg-bq-white rounded-2xl border border-bq-hair shadow-bq-soft px-5 py-4 max-w-xs text-center">
         <span className="text-[12px] font-bold text-bq-ink2 block mb-2"><T k="correctAnswer" /></span>
@@ -137,8 +139,8 @@ export const EliminationScreen: React.FC<{
         </span>
       </div>
     )}
-    <button onClick={onSpectate} className="flex items-center gap-2 py-3 px-8 bg-bq-inset hover:bg-bq-paper text-bq-ink font-bold rounded-2xl transition-colors border border-bq-hair">
-      <span className="material-symbols-outlined text-lg">visibility</span>
+    <button onClick={onSpectate} className="mt-4 flex items-center gap-2 py-3 px-8 bg-bq-inset hover:bg-bq-paper text-bq-ink font-bold rounded-2xl transition-colors border border-bq-hair">
+      <span className="material-symbols-outlined text-lg">blur_on</span>
       <T k="spectate" />
     </button>
   </div>

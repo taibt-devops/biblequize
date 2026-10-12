@@ -111,3 +111,52 @@ describe('RoomQuizShell — Sinh tồn (PCV-12)', () => {
     expect(screen.getByTestId('quiz-showdown').textContent).toMatch(/Câu quyết định/)
   })
 })
+
+describe('RoomQuizShell — bóng Sinh tồn (PCV-13)', () => {
+  const ghostScores = (ghostStreak: number, revived = false) => [
+    { playerId: 'p1', username: 'Người 1', score: 500, correctAnswers: 4, totalAnswered: 4, accuracy: 100, lives: 2, playerStatus: 'ACTIVE' },
+    { playerId: 'p0', username: 'Người 0', score: 100, correctAnswers: 1, totalAnswered: 3, accuracy: 33, lives: 0, playerStatus: 'ELIMINATED', ghostStreak, revived },
+  ]
+
+  function GhostHarness({ core }: { core: CoreGameState }) {
+    // Người xem p0 đã bị loại và chọn trả lời tiếp dưới dạng bóng.
+    const br = useBattleRoyale('p0')
+    const team = useTeamVsTeam('p0', null)
+    const sd = useSuddenDeath('p0')
+    const seq = useSequentialMode()
+    const ghostState = { ...br.state, isEliminated: true, isSpectator: true }
+    return (
+      <QueryClientProvider client={new QueryClient()}>
+        <MemoryRouter>
+          <RoomQuizShell
+            gameMode="BATTLE_ROYALE" isBattleRoyale isTeamVsTeam={false} isSuddenDeath={false} isSequential={false} isHost={false}
+            myUserId="p0" myUsername="Người 0" showHostHint={false} connected reconnecting={false}
+            core={core} timeLeft={10} isPaused={false} skipToast={false} hostBroadcast={null}
+            reactions={[]} feedHistory={[]} roundAnswered={new Set()} comboBanner={null} onDismissCombo={() => {}}
+            revealStats={null} br={ghostState} team={team.state} sd={sd.state} seq={seq.state}
+            onDismissSdResult={() => {}} onSubmitAnswer={() => {}} onAdvance={() => {}} onSendReaction={() => {}}
+          />
+        </MemoryRouter>
+      </QueryClientProvider>
+    )
+  }
+
+  it('còn kịp: "Đúng N câu liên tiếp nữa để hồi sinh (còn M câu)"', () => {
+    render(<GhostHarness core={playing({ questionIndex: 3, scores: ghostScores(1) })} />)
+    expect(screen.getByTestId('quiz-ghost-hint').textContent).toMatch(/Đúng 2 câu liên tiếp nữa để hồi sinh \(còn 6 câu\)/)
+  })
+
+  it('không còn kịp hoặc đã hồi sinh một lần: báo vẫn trả lời được để luyện', () => {
+    const { unmount } = render(<GhostHarness core={playing({ questionIndex: 8, scores: ghostScores(0) })} />)
+    expect(screen.getByTestId('quiz-ghost-hint').textContent).toMatch(/vẫn trả lời được/)
+    unmount()
+    render(<GhostHarness core={playing({ questionIndex: 2, scores: ghostScores(2, true) })} />)
+    expect(screen.getByTestId('quiz-ghost-hint').textContent).toMatch(/đã dùng lượt hồi sinh/)
+  })
+
+  it('bóng vẫn bấm được đáp án', () => {
+    render(<GhostHarness core={playing({ questionIndex: 3, scores: ghostScores(0) })} />)
+    const answer = screen.getByText('Môi-se').closest('button')
+    expect(answer?.hasAttribute('disabled')).toBe(false)
+  })
+})

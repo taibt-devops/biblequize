@@ -721,6 +721,7 @@ public class RoomService {
                 dto.lives = player.getLives();
                 dto.answerStreak = player.getAnswerStreak();
                 dto.revived = player.getRevived();
+                dto.ghostStreak = player.getGhostStreak();
                 dto.matchesWon = player.getMatchesWon();
                 dto.bestStreak = player.getBestStreak();
                 dto.matchesPlayed = player.getMatchesPlayed();
@@ -912,6 +913,8 @@ public class RoomService {
         public Integer lives;
         public Integer answerStreak;
         public Boolean revived;
+        /** PCV-13: Sinh tồn — số câu đúng liên tiếp khi đang là bóng. */
+        public Integer ghostStreak;
         public Integer matchesWon;
         public Integer bestStreak;
         public Integer matchesPlayed;

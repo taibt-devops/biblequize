@@ -445,7 +445,8 @@ const RoomQuiz: React.FC = () => {
 
   const canAnswer = useMemo(
     () => connected && core.question && timeLeft > 0 && core.selected === null && !core.submitting
-      && !br.state.isEliminated && !(isSuddenDeath && sd.state.sdSpectating) && !seq.state.revealedData,
+      // PCV-13: người bị loại đã chọn "trả lời tiếp" (bóng) vẫn trả lời được.
+      && !(br.state.isEliminated && !br.state.isSpectator) && !(isSuddenDeath && sd.state.sdSpectating) && !seq.state.revealedData,
     [connected, core.question, timeLeft, core.selected, core.submitting,
      br.state.isEliminated, isSuddenDeath, sd.state.sdSpectating, seq.state.revealedData]
   );

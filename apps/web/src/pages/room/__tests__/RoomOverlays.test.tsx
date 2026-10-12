@@ -97,8 +97,14 @@ describe('EliminationScreen', () => {
 
   it('shows rank and total players', () => {
     render(<EliminationScreen rank={5} totalPlayers={10} correctIndex={null} question={null} onSpectate={vi.fn()} />)
-    // Rank text is split across elements: <b>#5</b>/10
+    // Rank text is split across elements: <b>#5</b>/10 — PCV-13: "Thứ hạng" có dấu (trước là "Thu hang").
     expect(screen.getByText((_, el) => el?.tagName === 'P' && el?.textContent?.includes('#5') && el?.textContent?.includes('/10') || false)).toBeInTheDocument()
+    expect(screen.getByText(/Thứ hạng/)).toBeInTheDocument()
+  })
+
+  it('PCV-13: mời trả lời tiếp dưới dạng bóng để hồi sinh', () => {
+    render(<EliminationScreen rank={5} totalPlayers={10} correctIndex={null} question={null} onSpectate={vi.fn()} />)
+    expect(screen.getByText(/Đúng 3 câu liên tiếp trước câu 10/)).toBeInTheDocument()
   })
 
   it('shows correct answer when provided', () => {
@@ -115,13 +121,13 @@ describe('EliminationScreen', () => {
   it('calls onSpectate when spectate button is clicked', () => {
     const onSpectate = vi.fn()
     render(<EliminationScreen rank={3} totalPlayers={8} correctIndex={null} question={null} onSpectate={onSpectate} />)
-    fireEvent.click(screen.getByText(/Xem tiếp/))
+    fireEvent.click(screen.getByText(/Trả lời tiếp/))
     expect(onSpectate).toHaveBeenCalledTimes(1)
   })
 
-  it('shows spectator button text', () => {
+  it('shows ghost button text', () => {
     render(<EliminationScreen rank={2} totalPlayers={5} correctIndex={null} question={null} onSpectate={vi.fn()} />)
-    expect(screen.getByText(/khán giả/)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Trả lời tiếp dưới dạng bóng/ })).toBeInTheDocument()
   })
 })
 

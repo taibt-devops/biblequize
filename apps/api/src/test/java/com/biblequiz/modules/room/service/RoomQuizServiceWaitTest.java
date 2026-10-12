@@ -32,7 +32,7 @@ class RoomQuizServiceWaitTest {
 
     @Test
     void returnsEarlyOnceExpectedSubmitted() throws Exception {
-        when(answerRepo.countByRoundId("r1")).thenReturn(3L);
+        when(answerRepo.countByRoundIdAndGhostFalse("r1")).thenReturn(3L);
         long start = System.currentTimeMillis();
 
         newService().waitForRoundEnd("r1", 5_000, 3);
@@ -44,7 +44,7 @@ class RoomQuizServiceWaitTest {
 
     @Test
     void waitsUntilDeadlineWhenAnswersNeverComplete() throws Exception {
-        when(answerRepo.countByRoundId("r1")).thenReturn(1L); // 1 of 3, never grows
+        when(answerRepo.countByRoundIdAndGhostFalse("r1")).thenReturn(1L); // 1 of 3, never grows
         long start = System.currentTimeMillis();
 
         newService().waitForRoundEnd("r1", 600, 3);

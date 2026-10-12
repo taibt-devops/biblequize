@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
 import type { RoomEvent } from '../../../types/room';
 
-export type EliminationToast = { id: number; username: string; rank: number };
+/** PCV-13: thông báo bị loại (out) hoặc hồi sinh (revived). */
+export type EliminationToast = { id: number; username: string; rank: number; kind: 'out' | 'revived' };
 
 export interface BattleRoyaleState {
   activeCount: number;
@@ -28,9 +29,9 @@ export function useBattleRoyale(myUserId: string) {
   const [toasts, setToasts] = useState<EliminationToast[]>([]);
   const toastCounter = useRef(0);
 
-  const addToast = (username: string, rank: number) => {
+  const addToast = (username: string, rank: number, kind: EliminationToast['kind'] = 'out') => {
     const id = ++toastCounter.current;
-    setToasts(prev => [...prev, { id, username, rank }]);
+    setToasts(prev => [...prev, { id, username, rank, kind }]);
     setTimeout(() => setToasts(prev => prev.filter(t => t.id !== id)), 3500);
   };
 
@@ -48,6 +49,19 @@ export function useBattleRoyale(myUserId: string) {
           setIsEliminated(true);
           setMyRank(d.rank);
           setShowEliminationScreen(true);
+        }
+        break;
+      }
+      case 'PLAYER_REVIVED': {
+        // PCV-13: bóng đúng 3 câu liên tiếp ở câu 1–9 → trở lại cuộc chơi với 1 mạng.
+        const d = msg.data;
+        addToast(d.username, 0, 'revived');
+        setActiveCount(d.activeRemaining);
+        if (d.userId === myUserId) {
+          setIsEliminated(false);
+          setIsSpectator(false);
+          setShowEliminationScreen(false);
+          setMyRank(null);
         }
         break;
       }

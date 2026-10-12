@@ -107,7 +107,8 @@ public class RoomQuizService {
         while (System.currentTimeMillis() < deadline) {
             if (roomId != null && hostControlService != null
                     && hostControlService.consumeSkipFlag(roomId)) return;
-            long submitted = roomAnswerRepository.countByRoundId(roundId);
+            // PCV-13: câu của bóng (Sinh tồn) không làm vòng kết thúc sớm.
+            long submitted = roomAnswerRepository.countByRoundIdAndGhostFalse(roundId);
             if (submitted >= expectedAnswers) return;
             // Sleep up to the poll interval, but never past the deadline.
             long remaining = deadline - System.currentTimeMillis();

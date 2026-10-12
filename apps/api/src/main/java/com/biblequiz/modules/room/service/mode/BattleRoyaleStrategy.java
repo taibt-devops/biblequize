@@ -97,6 +97,9 @@ public class BattleRoyaleStrategy implements RoomModeStrategy {
         boolean showdown = questionIndex >= ctx.regularCount();
         List<BattleRoyaleEngine.EliminatedPlayerInfo> eliminated =
                 battleRoyaleEngine.processRoundEnd(ctx.roomId, round.getId(), questionIndex, showdown).eliminated;
+        // PCV-13: chuỗi của bóng; đủ 3 câu đúng liên tiếp ở câu 1–9 thì hồi sinh.
+        List<BattleRoyaleEngine.RevivedPlayerInfo> revived =
+                battleRoyaleEngine.processGhosts(ctx.roomId, round.getId(), questionIndex);
         long remaining = ctx.roomPlayerRepository
                 .countByRoomIdAndPlayerStatus(ctx.roomId, RoomPlayer.PlayerStatus.ACTIVE);
 
@@ -104,8 +107,11 @@ public class BattleRoyaleStrategy implements RoomModeStrategy {
         for (BattleRoyaleEngine.EliminatedPlayerInfo e : eliminated) {
             ctx.ws.broadcastPlayerEliminated(ctx.roomId, e.userId, e.username, e.rank, (int) remaining);
         }
+        for (BattleRoyaleEngine.RevivedPlayerInfo r : revived) {
+            ctx.ws.broadcastPlayerRevived(ctx.roomId, r.userId, r.username, (int) remaining);
+        }
 
-        if (!eliminated.isEmpty()) {
+        if (!eliminated.isEmpty() || !revived.isEmpty()) {
             int totalPlayers = ctx.<Integer>modeState();
             ctx.ws.broadcastBattleRoyaleUpdate(ctx.roomId, (int) remaining, totalPlayers);
         }

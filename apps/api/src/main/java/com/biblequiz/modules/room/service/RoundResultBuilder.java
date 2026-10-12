@@ -67,6 +67,7 @@ public class RoundResultBuilder {
         int[] counts = new int[optionCount];
         Map<String, RoomAnswer> byUser = new HashMap<>();
         for (RoomAnswer a : answerRepository.findByRoundId(roundId)) {
+            if (a.isGhost()) continue; // PCV-13: số người chọn chỉ đếm người còn trong cuộc
             byUser.put(a.getUserId(), a);
             Integer idx = a.getAnswerIndex();
             if (idx != null && idx >= 0 && idx < optionCount) counts[idx]++;

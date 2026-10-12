@@ -120,6 +120,16 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
         || (b.lives ?? 0) - (a.lives ?? 0)
         || b.score - a.score)
     : scores;
+  // PCV-13: Sinh tồn — bóng (đã bị loại, chọn trả lời tiếp): gợi ý còn bao nhiêu câu để hồi sinh.
+  const ghostHint = (() => {
+    if (!isBattleRoyale || !br.isEliminated || !br.isSpectator) return null;
+    const me = scores.find(s => s.playerId === myUserId);
+    if (me?.revived) return t('room.quiz.ghostRevivedOnce');
+    const need = 3 - (me?.ghostStreak ?? 0);
+    const left = 9 - questionIndex; // hồi sinh được tới hết câu 9
+    if (left > 0 && need <= left) return t('room.quiz.ghostHint', { need, left });
+    return t('room.quiz.ghostTooLate');
+  })();
   // PCV-11: kết quả câu vừa xong của chính mình (chuỗi) + bảng dẫn đầu mỗi 3 câu.
   const myRoundResult = core.reveal?.results?.find(r => r.playerId === myUserId);
   const showStandings = gameMode === 'SPEED_RACE' && correctIndex !== null && !!core.reveal
@@ -524,6 +534,15 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
 
           {/* ── Question + Answers area ── */}
           <div className="space-y-6">
+            {ghostHint && (
+              <div
+                data-testid="quiz-ghost-hint"
+                className="rounded-xl border-2 border-dashed border-bq-ink/40 bg-bq-cream px-4 py-2.5 text-[14px] font-bold text-bq-ink flex items-center gap-2"
+              >
+                <span className="material-symbols-outlined text-[18px] text-bq-ink2" aria-hidden>blur_on</span>
+                {ghostHint}
+              </div>
+            )}
             {/* C3: Mobile-only scoreboard chip strip — horizontal scroll
                 bar of player score pills with ✓ (answered) or pulse
                 (still choosing) indicator. Hidden on lg+ where the

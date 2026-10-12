@@ -14,10 +14,17 @@ const BattleRoyaleView: React.FC<{ toasts: EliminationToast[] }> = ({ toasts }) 
   return (
     <div className="fixed top-20 left-1/2 -translate-x-1/2 z-30 space-y-2 w-72">
       {toasts.map(toast => (
-        <div key={toast.id} className="bg-bq-white border border-bq-ruby/30 text-bq-ruby text-sm px-4 py-2.5 rounded-xl shadow-bq-soft animate-pulse text-center flex items-center justify-center gap-2">
-          <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>person_remove</span>
-          <b>{toast.username}</b> {t('room.quiz.eliminatedSuffix', { rank: toast.rank })}
-        </div>
+        toast.kind === 'revived' ? (
+          <div key={toast.id} data-testid="br-revived-toast" className="bg-bq-white border border-bq-emerald/40 text-bq-emerald text-sm px-4 py-2.5 rounded-xl shadow-bq-soft text-center flex items-center justify-center gap-2">
+            <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>favorite</span>
+            <b>{toast.username}</b> {t('room.quiz.revivedSuffix')}
+          </div>
+        ) : (
+          <div key={toast.id} className="bg-bq-white border border-bq-ruby/30 text-bq-ruby text-sm px-4 py-2.5 rounded-xl shadow-bq-soft animate-pulse text-center flex items-center justify-center gap-2">
+            <span className="material-symbols-outlined text-sm" style={FILL_STYLE}>person_remove</span>
+            <b>{toast.username}</b> {t('room.quiz.eliminatedSuffix', { rank: toast.rank })}
+          </div>
+        )
       ))}
     </div>
   );

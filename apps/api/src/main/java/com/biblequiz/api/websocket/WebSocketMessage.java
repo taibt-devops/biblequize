@@ -37,6 +37,8 @@ public class WebSocketMessage {
 
         // Battle Royale events
         public static final String PLAYER_ELIMINATED = "PLAYER_ELIMINATED";
+        /** PCV-13: Sinh tồn — bóng hồi sinh với 1 mạng. */
+        public static final String PLAYER_REVIVED = "PLAYER_REVIVED";
         public static final String BATTLE_ROYALE_UPDATE = "BATTLE_ROYALE_UPDATE";
 
         // Scoreboard events

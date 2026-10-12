@@ -40,6 +40,8 @@ export type PlayerScore = {
   lives?: number
   answerStreak?: number
   revived?: boolean
+  /** PCV-13: Sinh tồn — số câu đúng liên tiếp khi đang là bóng. */
+  ghostStreak?: number
   matchesWon?: number
   bestStreak?: number
   matchesPlayed?: number
@@ -300,6 +302,8 @@ export type RoomEvent =
   | { type: 'NEXT_QUESTION'; data?: unknown }
   // ── Per-mode ──
   | { type: 'PLAYER_ELIMINATED'; data: PlayerEliminatedData }
+  /** PCV-13: Sinh tồn — bóng hồi sinh với 1 mạng. */
+  | { type: 'PLAYER_REVIVED'; data: { userId: string; username: string; activeRemaining: number } }
   | { type: 'BATTLE_ROYALE_UPDATE'; data: BattleRoyaleUpdateData }
   | { type: 'TEAM_ASSIGNMENT'; data: TeamAssignmentData }
   | { type: 'TEAM_SCORE_UPDATE'; data: TeamScoreUpdateData }

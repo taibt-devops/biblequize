@@ -117,9 +117,18 @@ public class RoomAnswerProcessor {
         // là tie-break của BR assignFinalRanks. Rejoin không vỡ: joinRoom flip
         // LEFT→ACTIVE trước khi họ có thể trả lời.
         Optional<RoomPlayer> playerOpt = roomPlayerRepository.findByRoomIdAndUserId(roomId, user.getId());
+        Room.RoomMode roomMode = currentRoom != null ? currentRoom.getMode() : Room.RoomMode.SPEED_RACE;
+        // PCV-13: Sinh tồn — người đã bị loại vẫn trả lời được dưới dạng "bóng" (không điểm, không
+        // tính câu đúng, không làm vòng kết thúc sớm); đúng 3 câu liên tiếp ở câu 1–9 thì hồi sinh.
+        boolean ghost = false;
         if (playerOpt.isPresent()
                 && playerOpt.get().getPlayerStatus() != RoomPlayer.PlayerStatus.ACTIVE) {
-            return AnswerResult.rejected();
+            if (roomMode == Room.RoomMode.BATTLE_ROYALE
+                    && playerOpt.get().getPlayerStatus() == RoomPlayer.PlayerStatus.ELIMINATED) {
+                ghost = true;
+            } else {
+                return AnswerResult.rejected();
+            }
         }
 
         // Server-side answer validation
@@ -129,8 +138,7 @@ public class RoomAnswerProcessor {
         // PCV-1: thời gian dùng để chấm — máy chủ kẹp số của máy (xem effectiveReactionMs).
         int scoredMs = Math.max(0, clientReactionMs);
 
-        Room.RoomMode mode = currentRoom != null ? currentRoom.getMode() : Room.RoomMode.SPEED_RACE;
-        RoomModeStrategy strategy = modeRegistry.get(mode);
+        RoomModeStrategy strategy = modeRegistry.get(roomMode);
 
         Optional<WebSocketMessage.QuestionStartData> questionState =
                 roomStateService.getCurrentQuestion(roomId);
@@ -151,14 +159,14 @@ public class RoomAnswerProcessor {
                 if (key.isPresent() && key.get().correctIndex >= 0) {
                     isCorrect = answerIndex == key.get().correctIndex;
                     pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
-                    trackMission(user, key.get().difficultyEnum(), key.get().book, isCorrect, scoredMs);
+                    if (!ghost) trackMission(user, key.get().difficultyEnum(), key.get().book, isCorrect, scoredMs);
                 } else {
                     Question question = questionRepository.findById(questionId).orElse(null);
                     if (question != null && question.getCorrectAnswer() != null
                             && !question.getCorrectAnswer().isEmpty()) {
                         isCorrect = (answerIndex == question.getCorrectAnswer().get(0));
                         pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
-                        trackMission(user, question.getDifficulty(), question.getBook(), isCorrect, scoredMs);
+                        if (!ghost) trackMission(user, question.getDifficulty(), question.getBook(), isCorrect, scoredMs);
                     }
                 }
             }
@@ -173,6 +181,8 @@ public class RoomAnswerProcessor {
         }
         int multiplier = questionState.map(s -> Math.max(1, s.multiplier)).orElse(1);
         pointsEarned *= multiplier;
+        if (ghost) pointsEarned = 0;
+        final boolean ghostAnswer = ghost;
 
         // Lưu RoomAnswer entity
         if (roundId != null) {
@@ -183,8 +193,16 @@ public class RoomAnswerProcessor {
                 RoomAnswer answer = new RoomAnswer(
                         UUID.randomUUID().toString(), round, user.getId(),
                         answerIndex, isCorrect, responseMs, pts);
+                answer.setGhost(ghostAnswer);
                 roomAnswerRepository.save(answer);
             }
+        }
+
+        // PCV-13: bóng không đổi điểm/thống kê; chuỗi hồi sinh tính lúc đóng vòng.
+        if (ghostAnswer) {
+            String ghostName = user.getName() != null ? user.getName()
+                    : playerOpt.map(RoomPlayer::getUsername).orElse("Unknown");
+            return AnswerResult.acceptedGhost(ghostName);
         }
 
         // Update RoomPlayer score
@@ -293,6 +311,8 @@ public class RoomAnswerProcessor {
         public final boolean deferredFeedback;
         /** Null when the submitter has no RoomPlayer row (no SCORE_UPDATE). */
         public final ScoreSnapshot scoreUpdate;
+        /** PCV-13: câu của bóng (Sinh tồn) — ghi nhận im lặng, không phát ANSWER_SUBMITTED. */
+        public boolean ghost;
 
         private AnswerResult(boolean accepted, String displayName, boolean broadcastIsCorrect,
                              int broadcastPoints, boolean deferredFeedback, ScoreSnapshot scoreUpdate) {
@@ -302,6 +322,12 @@ public class RoomAnswerProcessor {
             this.broadcastPoints = broadcastPoints;
             this.deferredFeedback = deferredFeedback;
             this.scoreUpdate = scoreUpdate;
+        }
+
+        static AnswerResult acceptedGhost(String displayName) {
+            AnswerResult r = new AnswerResult(true, displayName, false, 0, false, null);
+            r.ghost = true;
+            return r;
         }
 
         static AnswerResult rejected() {

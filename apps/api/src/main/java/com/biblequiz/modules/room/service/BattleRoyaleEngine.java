@@ -149,6 +149,53 @@ public class BattleRoyaleEngine {
         roomPlayerRepository.saveAll(all);
     }
 
+    /** PCV-13: số câu đúng liên tiếp (khi là bóng) để hồi sinh. */
+    static final int REVIVE_STREAK = 3;
+    /** PCV-13: câu cuối (0-based) còn hồi sinh được — câu 9; từ câu 10 là vùng nguy hiểm. */
+    static final int LAST_REVIVE_INDEX = 8;
+
+    /**
+     * PCV-13 — chuỗi đúng của bóng sau một vòng: đúng +1, sai hoặc không trả lời về 0. Đủ 3 ở câu 1–9 và
+     * chưa từng hồi sinh thì hồi sinh với 1 mạng (bỏ hạng tạm, bỏ lượt bị loại).
+     */
+    @Transactional
+    public List<RevivedPlayerInfo> processGhosts(String roomId, String roundId, int questionIndex) {
+        List<RoomPlayer> ghosts = roomPlayerRepository
+                .findByRoomIdAndPlayerStatus(roomId, RoomPlayer.PlayerStatus.ELIMINATED);
+        if (ghosts.isEmpty()) return List.of();
+        Set<String> right = roomAnswerRepository.findByRoundId(roundId).stream()
+                .filter(a -> a.isGhost() && Boolean.TRUE.equals(a.getIsCorrect()))
+                .map(RoomAnswer::getUserId)
+                .collect(Collectors.toSet());
+        List<RevivedPlayerInfo> revived = new ArrayList<>();
+        for (RoomPlayer g : ghosts) {
+            int streak = right.contains(g.getUser().getId()) ? g.getGhostStreak() + 1 : 0;
+            if (streak >= REVIVE_STREAK && questionIndex <= LAST_REVIVE_INDEX && !g.getRevived()) {
+                g.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
+                g.setLives(1);
+                g.setRevived(true);
+                g.setEliminatedRound(null);
+                g.setFinalRank(null);
+                g.setGhostStreak(0);
+                revived.add(new RevivedPlayerInfo(g.getUser().getId(), g.getUsername()));
+            } else {
+                g.setGhostStreak(streak);
+            }
+        }
+        roomPlayerRepository.saveAll(ghosts);
+        return revived;
+    }
+
+    public static class RevivedPlayerInfo {
+        public final String userId;
+        public final String username;
+
+        public RevivedPlayerInfo(String userId, String username) {
+            this.userId = userId;
+            this.username = username;
+        }
+    }
+
     /** Kết quả một vòng: ai bị loại, và có phải vòng ân xá (cả nhóm cùng sai) không. */
     public static class RoundOutcome {
         public final List<EliminatedPlayerInfo> eliminated;

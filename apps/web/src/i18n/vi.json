@@ -1702,7 +1702,7 @@
       "backToLobby": "Về phòng chờ",
       "eliminated": "Bạn đã bị loại!",
       "correctAnswer": "Đáp án đúng",
-      "spectate": "Xem tiếp (khán giả)",
+      "spectate": "Trả lời tiếp dưới dạng bóng",
       "tie": "Hòa!",
       "teamAWins": "Đội A thắng!",
       "teamBWins": "Đội B thắng!",
@@ -1715,7 +1715,9 @@
       "you": "(bạn)",
       "streak": "{{n}} trận liền",
       "waiting": "{{n}} người đang chờ",
-      "roundResults": "Kết quả vòng này"
+      "roundResults": "Kết quả vòng này",
+      "rankLabel": "Thứ hạng:",
+      "ghostIntro": "Bạn vẫn trả lời được dưới dạng bóng. Đúng 3 câu liên tiếp trước câu 10 thì được hồi sinh với 1 mạng (một lần)."
     },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
@@ -1806,7 +1808,11 @@
       "networkUnstable": "Mất kết nối, đang kết nối lại — thử lại sau giây lát",
       "finalQuestion": "Câu chốt · ×{{m}}",
       "dangerZone": "Vùng nguy hiểm",
-      "showdown": "Câu quyết định"
+      "showdown": "Câu quyết định",
+      "revivedSuffix": "đã hồi sinh với 1 mạng!",
+      "ghostHint": "Đúng {{need}} câu liên tiếp nữa để hồi sinh (còn {{left}} câu)",
+      "ghostTooLate": "Đã qua lượt hồi sinh — bạn vẫn trả lời được để luyện",
+      "ghostRevivedOnce": "Bạn đã dùng lượt hồi sinh — vẫn trả lời được để luyện"
     },
     "reveal": {
       "reference": "Câu gốc",
@@ -1845,7 +1851,7 @@
       },
       "battle_royale": {
         "short": "Mỗi người 2 mạng. Người trụ lại cuối cùng thắng.",
-        "detail": "Mỗi người có 2 mạng: trả lời sai hoặc không kịp mất 1 mạng, hết mạng thì bị loại. Cả nhóm cùng sai một câu thì không ai mất mạng. Câu hỏi khó dần; từ câu 10 là vùng nguy hiểm, thời gian rút ngắn dần. Hết câu mà còn nhiều người thì vào Câu quyết định: sai là bị loại ngay."
+        "detail": "Mỗi người có 2 mạng: trả lời sai hoặc không kịp mất 1 mạng, hết mạng thì bị loại. Cả nhóm cùng sai một câu thì không ai mất mạng. Câu hỏi khó dần; từ câu 10 là vùng nguy hiểm, thời gian rút ngắn dần. Người bị loại vẫn trả lời được dưới dạng bóng: đúng 3 câu liên tiếp trước câu 10 thì hồi sinh với 1 mạng (một lần). Hết câu mà còn nhiều người thì vào Câu quyết định: sai là bị loại ngay."
       },
       "team_vs_team": {
         "short": "Hai đội đấu nhau, đội nhiều điểm hơn thắng.",

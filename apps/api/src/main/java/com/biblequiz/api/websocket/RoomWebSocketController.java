@@ -177,6 +177,10 @@ public class RoomWebSocketController {
                 // Anti-cheat rejections stay silent (no error frame).
                 return;
             }
+            // PCV-13: câu của bóng (Sinh tồn) không báo "đã trả lời" cho cả phòng.
+            if (result.ghost) {
+                return;
+            }
 
             // PCV-2 (chống lộ đáp án): chỉ báo "đã trả lời". Phương án, đúng/sai, điểm và
             // thời gian của từng người chỉ được công bố ở ROUND_END / QUESTION_REVEALED khi
@@ -420,6 +424,16 @@ public class RoomWebSocketController {
         WebSocketMessage.Message msg = new WebSocketMessage.Message(
                 WebSocketMessage.MessageTypes.PLAYER_ELIMINATED, data);
         messagingTemplate.convertAndSend("/topic/room/" + roomId, msg);
+    }
+
+    /** PCV-13: Sinh tồn — người chơi hồi sinh (đúng 3 câu liên tiếp khi là bóng). */
+    public void broadcastPlayerRevived(String roomId, String userId, String username, int activeRemaining) {
+        Map<String, Object> data = new java.util.HashMap<>();
+        data.put("userId", userId);
+        data.put("username", username);
+        data.put("activeRemaining", activeRemaining);
+        messagingTemplate.convertAndSend("/topic/room/" + roomId,
+                new WebSocketMessage.Message(WebSocketMessage.MessageTypes.PLAYER_REVIVED, data));
     }
 
     /**

@@ -1702,7 +1702,7 @@
       "backToLobby": "Back to lobby",
       "eliminated": "You're out!",
       "correctAnswer": "Correct answer",
-      "spectate": "Keep watching (spectator)",
+      "spectate": "Keep answering as a ghost",
       "tie": "It's a tie!",
       "teamAWins": "Team A wins!",
       "teamBWins": "Team B wins!",
@@ -1715,7 +1715,9 @@
       "you": "(you)",
       "streak": "{{n}} in a row",
       "waiting": "{{n}} waiting",
-      "roundResults": "Round results"
+      "roundResults": "Round results",
+      "rankLabel": "Rank:",
+      "ghostIntro": "You can keep answering as a ghost. Get 3 in a row before question 10 to come back with 1 life (once)."
     },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
@@ -1806,7 +1808,11 @@
       "networkUnstable": "Connection lost, reconnecting — try again in a moment",
       "finalQuestion": "Final question · ×{{m}}",
       "dangerZone": "Danger zone",
-      "showdown": "Showdown"
+      "showdown": "Showdown",
+      "revivedSuffix": "is back with 1 life!",
+      "ghostHint": "{{need}} more in a row to come back ({{left}} questions left)",
+      "ghostTooLate": "Too late to come back — you can still answer for practice",
+      "ghostRevivedOnce": "You already came back once — you can still answer for practice"
     },
     "reveal": {
       "reference": "Scripture",
@@ -1845,7 +1851,7 @@
       },
       "battle_royale": {
         "short": "Everyone has 2 lives. Last one standing wins.",
-        "detail": "Everyone has 2 lives: a wrong or missing answer costs one, and with none left you are out. If everyone misses the same question, nobody loses a life. Questions get harder; from question 10 the danger zone shortens the timer. If several players remain at the end, showdown questions follow: one miss and you are out."
+        "detail": "Everyone has 2 lives: a wrong or missing answer costs one, and with none left you are out. If everyone misses the same question, nobody loses a life. Questions get harder; from question 10 the danger zone shortens the timer. Players who are out keep answering as ghosts: 3 in a row before question 10 brings them back with 1 life (once). If several players remain at the end, showdown questions follow: one miss and you are out."
       },
       "team_vs_team": {
         "short": "Two teams compete; the higher score wins.",
