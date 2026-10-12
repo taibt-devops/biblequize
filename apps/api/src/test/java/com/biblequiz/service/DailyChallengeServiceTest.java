@@ -78,6 +78,38 @@ class DailyChallengeServiceTest {
                 .thenReturn(Optional.empty());
     }
 
+    // ── Review PCV-2: endpoint chấm chỉ nhận câu của Thử thách ngày ──────────
+    // (không thành chỗ tra đáp án cho câu đang chạy ở Phòng chơi — QUESTION_START mang id câu)
+
+    private void dailyPool() {
+        when(questionRepository.countByLanguageAndIsActiveTrue("vi")).thenReturn(20L);
+        when(questionRepository.findByLanguageAndIsActiveTrue(eq("vi"), any(Pageable.class)))
+                .thenAnswer(inv -> new PageImpl<>(List.of(makeQuestion("q-" + ((Pageable) inv.getArgument(1)).getPageNumber()))));
+    }
+
+    @Test
+    void checkAnswer_questionOutsideTheDailySet_isRefused() {
+        dailyPool();
+        Question roomQuestion = makeQuestion("room-q");
+        roomQuestion.setLanguage("vi");
+        roomQuestion.setCorrectAnswer(List.of(2));
+        when(questionRepository.findById("room-q")).thenReturn(Optional.of(roomQuestion));
+
+        assertThrows(IllegalArgumentException.class, () -> dailyChallengeService.checkAnswer("room-q", 1, null));
+    }
+
+    @Test
+    void checkAnswer_questionFromTodaysSet_isChecked() {
+        dailyPool();
+        String todayId = dailyChallengeService.getTodayQuestions("vi").get(0).getId();
+        Question q = makeQuestion(todayId);
+        q.setLanguage("vi");
+        q.setCorrectAnswer(List.of(1));
+        when(questionRepository.findById(todayId)).thenReturn(Optional.of(q));
+
+        assertEquals(true, dailyChallengeService.checkAnswer(todayId, 1, null).get("isCorrect"));
+    }
+
     // ── TC-DAILY-001: getTodayQuestions returns 5 questions ──────────────────
 
     @Order(1)

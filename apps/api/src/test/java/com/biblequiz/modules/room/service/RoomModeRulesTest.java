@@ -88,6 +88,15 @@ class RoomModeRulesTest {
     }
 
     @Test
+    void suddenDeath_moreThanTwelveIncludingBots_cannotStart() {
+        List<RoomPlayer> thirteen = players(13);
+        thirteen.subList(0, 5).forEach(p -> p.getUser().setIsBot(true));
+        assertEquals("Đấu vương tối đa 12 người (tính cả người máy)",
+                RoomModeRules.startError(Room.RoomMode.SUDDEN_DEATH, thirteen, true));
+        assertNull(RoomModeRules.startError(Room.RoomMode.SUDDEN_DEATH, players(12), true));
+    }
+
+    @Test
     void needsAtLeastOneRealPlayer_botsAloneCannotStart() {
         // PCV-20: người máy không tự chơi với nhau.
         List<RoomPlayer> onlyBots = players(3);

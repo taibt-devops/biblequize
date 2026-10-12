@@ -74,9 +74,14 @@ public class SequentialScoringService {
      * @return true nếu all-answered, false nếu timeout
      */
     public boolean awaitAllAnsweredOrTimeout(String roomId, long timeoutSeconds) throws InterruptedException {
+        return awaitAllAnsweredOrTimeoutMs(roomId, timeoutSeconds * 1000L);
+    }
+
+    /** Như trên nhưng tính bằng mili giây — vòng lặp truyền thời gian câu + ân hạn. */
+    public boolean awaitAllAnsweredOrTimeoutMs(String roomId, long timeoutMs) throws InterruptedException {
         RoundState state = roundStates.get(roomId);
         if (state == null) return false;
-        return state.allAnsweredLatch.await(timeoutSeconds, TimeUnit.SECONDS);
+        return state.allAnsweredLatch.await(timeoutMs, TimeUnit.MILLISECONDS);
     }
 
     /**

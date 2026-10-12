@@ -698,8 +698,11 @@ public class RankedController {
                         // Sync session progress with database
                         udp.setLivesRemaining(p.livesRemaining);
                         udp.setQuestionsCounted(p.questionsCounted);
-                        // Update points based on computed earned score
-                        udp.setPointsCounted(p.pointsToday);
+                        // Cộng điểm câu này vào dòng hôm nay (không ghi đè bằng bản Redis của phiên):
+                        // thưởng nhiệm vụ / Thử thách ngày có thể đã cộng vào dòng này trong lúc phiên
+                        // chạy — kể cả ngay trong request này. Phiên đồng bộ lại theo DB ở dưới.
+                        int pointsBefore = udp.getPointsCounted() != null ? udp.getPointsCounted() : 0;
+                        udp.setPointsCounted(pointsBefore + earned);
 
                         // Append asked question id
                         if (questionId != null) {
@@ -932,6 +935,15 @@ public class RankedController {
         boolean awarded = false;
         if (firstTime) {
             p.matchBonusAwarded = true; // mark processed even when bonus is 0
+            // PCV-7: một trận Đấu Hạng (có ít nhất một câu) là "Chơi 1 lượt ở bất kỳ chế độ nào".
+            if (p.matchTotal > 0 && dailyMissionService != null && p.userId != null) {
+                try {
+                    dailyMissionService.onEvent(p.userId, "play_any_mode");
+                } catch (RuntimeException missionErr) {
+                    log.warn("Daily mission play_any_mode failed for user {} ({}). Ranked flow unaffected.",
+                            p.userId, missionErr.getMessage());
+                }
+            }
             if (bonusPoints > 0) {
                 p.pointsToday += bonusPoints;
                 awarded = true;
@@ -943,8 +955,12 @@ public class RankedController {
                         UserDailyProgress udp = udpRepository
                                 .findByUserIdAndDate(user.getId(), GameClock.today()).orElse(null);
                         if (udp != null) {
-                            udp.setPointsCounted(p.pointsToday);
+                            // Cộng thưởng vào dòng hôm nay rồi đồng bộ phiên theo DB (không ghi đè điểm
+                            // được cộng ngoài phiên, vd thưởng nhiệm vụ).
+                            int pointsBefore = udp.getPointsCounted() != null ? udp.getPointsCounted() : 0;
+                            udp.setPointsCounted(pointsBefore + bonusPoints);
                             udpRepository.save(udp);
+                            p.pointsToday = udp.getPointsCounted();
                             cacheService.invalidateLeaderboards();
                         }
                     }

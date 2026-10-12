@@ -218,7 +218,7 @@ public class RoomService {
             RoomPlayer p = ordered.get(i);
             if (toTeams) p.setTeam(i % 2 == 0 ? RoomPlayer.Team.A : RoomPlayer.Team.B);
             else if (mode != Room.RoomMode.TEAM_VS_TEAM) p.setTeam(null);
-            p.setIsReady(false);
+            p.setIsReady(p.isBot()); // người máy luôn sẵn sàng (không tự bấm lại)
         }
         roomPlayerRepository.saveAll(ordered);
 
@@ -295,7 +295,11 @@ public class RoomService {
             room.setQuestionSource(old.getQuestionSource());
             room.setQuestionSetId(old.getQuestionSetId());
             room.setGroupQuizSetId(old.getGroupQuizSetId());
-            if (old.getCustomQuestionIds() != null) room.setCustomQuestionIds(new java.util.ArrayList<>(old.getCustomQuestionIds()));
+            // Đấu nhanh chọn sẵn câu ngẫu nhiên vào customQuestionIds — chơi lại thì để máy chủ chọn câu mới
+            // theo phạm vi sách (không lặp lại đúng các câu vừa công bố đáp án). Bộ câu nhóm giữ nguyên.
+            if (old.getCustomQuestionIds() != null && !old.isQuickMatch()) {
+                room.setCustomQuestionIds(new java.util.ArrayList<>(old.getCustomQuestionIds()));
+            }
         }
         roomRepository.save(room);
         if (room.isHostPlaysGame()) {
@@ -362,6 +366,25 @@ public class RoomService {
     }
 
     /**
+     * Trạng thái khi vào lại giữa trận (mất kết nối > 60 giây rồi quay lại): Sinh tồn — người đã bị loại vẫn là
+     * bóng (không hồi sinh miễn phí); Đấu vương — khán giả, trừ khi đang là một trong hai người đấu; mode khác
+     * chơi tiếp.
+     */
+    RoomPlayer.PlayerStatus rejoinStatus(Room room, RoomPlayer player) {
+        if (room.getMode() == Room.RoomMode.BATTLE_ROYALE && player.getEliminatedRound() != null) {
+            return RoomPlayer.PlayerStatus.ELIMINATED;
+        }
+        if (room.getMode() == Room.RoomMode.SUDDEN_DEATH) {
+            String userId = player.getUser() != null ? player.getUser().getId() : null;
+            boolean dueling = userId != null && roomStateService != null
+                    && (userId.equals(roomStateService.getSdChampion(room.getId()))
+                        || userId.equals(roomStateService.getSdChallenger(room.getId())));
+            return dueling ? RoomPlayer.PlayerStatus.ACTIVE : RoomPlayer.PlayerStatus.SPECTATOR;
+        }
+        return RoomPlayer.PlayerStatus.ACTIVE;
+    }
+
+    /**
      * Join a room by room code
      */
     public Room joinRoom(String roomCode, User user) throws Exception {
@@ -414,7 +437,7 @@ public class RoomService {
             }
             RoomPlayer player = existing.get();
             if (player.getPlayerStatus() == RoomPlayer.PlayerStatus.LEFT) {
-                player.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
+                player.setPlayerStatus(rejoinStatus(room, player));
                 roomPlayerRepository.save(player);
                 syncPlayerCount(room);
             }
@@ -604,7 +627,7 @@ public class RoomService {
         for (int i = 0; i < players.size(); i++) {
             RoomPlayer p = players.get(i);
             p.setTeam(i % 2 == 0 ? RoomPlayer.Team.A : RoomPlayer.Team.B);
-            p.setIsReady(false);
+            p.setIsReady(p.isBot()); // người máy luôn sẵn sàng (không tự bấm lại)
         }
         roomPlayerRepository.saveAll(players);
         webSocketController.broadcastRoomState(roomId);
@@ -646,7 +669,8 @@ public class RoomService {
         });
         syncPlayerCount(room);
 
-        if (room.getCurrentPlayers() == 0 && !keepForRejoin) {
+        // Sảnh chỉ còn người máy = không còn ai (người máy không tự chơi với nhau).
+        if (!keepForRejoin && roomPlayerRepository.countOccupiedHumansByRoomId(roomId) == 0) {
             // SPEC §5.4.0 R1: announce before delete so any straggler still
             // subscribed (race condition with the FE leave navigate) gets a
             // proper redirect instead of silent topic loss.
@@ -836,9 +860,9 @@ public class RoomService {
         syncPlayerCount(room);
     }
 
-    /** Count of slot-occupying players (excludes LEFT) for a room. */
-    public long countOccupiedPlayers(String roomId) {
-        return roomPlayerRepository.countOccupiedByRoomId(roomId);
+    /** Người thật còn trong phòng (không tính LEFT, không tính người máy) — "phòng còn ai". */
+    public long countOccupiedHumans(String roomId) {
+        return roomPlayerRepository.countOccupiedHumansByRoomId(roomId);
     }
 
     /**

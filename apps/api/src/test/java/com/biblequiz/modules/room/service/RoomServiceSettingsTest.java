@@ -76,6 +76,24 @@ class RoomServiceSettingsTest {
         verify(webSocketController).broadcastSystemChat(eq("room-1"), contains("Sinh tồn"));
     }
 
+    /** Review: đổi cách chơi không được bỏ sẵn sàng của người máy (máy không tự bấm lại). */
+    @Test
+    void botsStayReady_afterChangingSettings() throws Exception {
+        addPlayers(2);
+        User botUser = new User();
+        botUser.setId("bot-01");
+        botUser.setIsBot(true);
+        RoomPlayer bot = new RoomPlayer("p-bot", room, botUser, "Máy An");
+        bot.setIsReady(true);
+        players.add(bot);
+
+        roomService.updateSettings("room-1", "u0", new RoomService.SettingsUpdate(
+                Room.RoomMode.SPEED_RACE, 15, 20, Room.RoomDifficulty.EASY));
+
+        assertTrue(bot.getIsReady(), "người máy vẫn sẵn sàng");
+        assertTrue(players.stream().filter(p -> !p.isBot()).noneMatch(RoomPlayer::getIsReady));
+    }
+
     @Test
     void switchingToTeams_splitsEvenly_switchingAway_clearsTeams() throws Exception {
         addPlayers(5);

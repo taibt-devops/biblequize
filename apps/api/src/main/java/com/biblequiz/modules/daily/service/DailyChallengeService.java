@@ -417,6 +417,11 @@ public class DailyChallengeService {
     public Map<String, Object> checkAnswer(String questionId, int selectedAnswer, String userIdOrEmail) {
         Question question = questionRepository.findById(questionId)
                 .orElseThrow(() -> new IllegalArgumentException("Question not found: " + questionId));
+        // Chỉ chấm câu của Thử thách ngày (hôm nay, hoặc hôm qua cho người làm dở qua nửa đêm) — không
+        // thành chỗ tra đáp án cho câu đang chạy ở Phòng chơi (QUESTION_START mang id câu).
+        if (!inDailySet(questionId, question.getLanguage())) {
+            throw new IllegalArgumentException("Câu này không thuộc Thử thách hôm nay");
+        }
         List<Integer> correctAnswer = question.getCorrectAnswer();
         boolean isCorrect = correctAnswer != null && correctAnswer.contains(selectedAnswer);
 
@@ -438,5 +443,21 @@ public class DailyChallengeService {
         result.put("correctAnswer", correctAnswer != null ? correctAnswer : List.of());
         result.put("explanation", question.getExplanation());
         return result;
+    }
+
+    private boolean inDailySet(String questionId, String language) {
+        String lang = language != null && !language.isBlank() ? language : "vi";
+        LocalDate today = GameClock.today();
+        return containsId(getDailyQuestions(today, lang), questionId)
+                || containsId(getDailyQuestions(today.minusDays(1), lang), questionId);
+    }
+
+    /** Bộ câu lấy từ cache có thể về dạng Map (Jackson) thay vì Question. */
+    private static boolean containsId(List<?> questions, String questionId) {
+        for (Object o : questions) {
+            Object id = o instanceof Question q ? q.getId() : o instanceof Map<?, ?> m ? m.get("id") : null;
+            if (questionId.equals(id)) return true;
+        }
+        return false;
     }
 }

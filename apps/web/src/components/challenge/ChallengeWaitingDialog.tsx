@@ -26,17 +26,37 @@ export default function ChallengeWaitingDialog({ challengeId, name, secondsLeft,
   const [left, setLeft] = useState(secondsLeft)
   const [status, setStatus] = useState<ChallengeStatus>('PENDING')
   const [cancelling, setCancelling] = useState(false)
+  // Lời thách đã ngã ngũ (nhận/từ chối/hết giờ/đã hủy) — rời hộp sau đó thì không hủy gì nữa.
+  const settled = useRef(false)
 
   const check = useCallback(async () => {
     const view = await challengeApi.get(challengeId)
     if (typeof view.secondsLeft === 'number') deadline.current = Date.now() + view.secondsLeft * 1000
     if (view.status === 'ACCEPTED' && view.roomId) {
+      settled.current = true
       navigate(`/room/${view.roomId}/lobby`)
       return view.status
     }
-    if (view.status !== 'PENDING') setStatus(view.status)
+    if (view.status !== 'PENDING') {
+      settled.current = true
+      setStatus(view.status)
+    }
     return view.status
   }, [challengeId, navigate])
+
+  // Rời hộp chờ khi còn chờ (chuyển trang trong app) = hủy lời thách, để người kia không vào sảnh một mình.
+  // Đóng thẻ/tắt máy thì máy chủ tự biết qua nhịp tim (hộp chờ hỏi mỗi 3 giây). Hoãn một nhịp để lần
+  // gỡ-gắn lại của StrictMode (bản dev) không hủy nhầm.
+  const mounted = useRef(false)
+  useEffect(() => {
+    mounted.current = true
+    return () => {
+      mounted.current = false
+      setTimeout(() => {
+        if (!mounted.current && !settled.current) challengeApi.cancel(challengeId).catch(() => { /* đã ngã ngũ */ })
+      }, 0)
+    }
+  }, [challengeId])
 
   useEffect(() => {
     if (status !== 'PENDING') return
@@ -54,6 +74,7 @@ export default function ChallengeWaitingDialog({ challengeId, name, secondsLeft,
 
   const cancel = async () => {
     if (cancelling) return
+    settled.current = true
     setCancelling(true)
     try {
       await challengeApi.cancel(challengeId)

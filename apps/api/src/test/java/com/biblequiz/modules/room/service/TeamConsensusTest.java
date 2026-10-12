@@ -49,7 +49,31 @@ class TeamConsensusTest {
         a.setUserId(id);
         a.setAnswerIndex(idx);
         a.setAnsweredAt(T0.plusSeconds(secondsAfterStart));
+        a.setResponseMs(secondsAfterStart * 1000);
         votes.add(a);
+    }
+
+    /** Review: room_answers.answered_at chỉ chính xác đến giây — hai phiếu cùng giây xét thời gian trả lời (ms). */
+    @Test
+    void tieWithinTheSameSecond_goesToTheFasterVote() {
+        member("b1", RoomPlayer.Team.B);
+        member("b2", RoomPlayer.Team.B);
+        RoomAnswer slow = new RoomAnswer();
+        slow.setUserId("b1");
+        slow.setAnswerIndex(0);
+        slow.setAnsweredAt(T0.plusSeconds(3));
+        slow.setResponseMs(3900);
+        RoomAnswer fast = new RoomAnswer();
+        fast.setUserId("b2");
+        fast.setAnswerIndex(1);
+        fast.setAnsweredAt(T0.plusSeconds(3));
+        fast.setResponseMs(3100);
+        votes.add(slow);
+        votes.add(fast);
+
+        TeamScoringService.ConsensusResult r = run(1);
+
+        assertEquals(1, r.answerB, "phương án 1 được chọn trước (3,1 giây so với 3,9 giây)");
     }
 
     private TeamScoringService.ConsensusResult run(int correctIndex) {

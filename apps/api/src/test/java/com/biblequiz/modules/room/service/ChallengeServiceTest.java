@@ -30,6 +30,8 @@ class ChallengeServiceTest {
     @Mock private UserRepository userRepository;
     @Mock private SimpMessagingTemplate messagingTemplate;
     @Mock private RoomService roomService;
+    @Mock private org.springframework.data.redis.core.StringRedisTemplate redis;
+    @Mock private org.springframework.data.redis.core.ValueOperations<String, String> redisValues;
 
     private ChallengeService service;
     private final User minh = user("minh", "Minh", false);
@@ -54,6 +56,10 @@ class ChallengeServiceTest {
     void setUp() {
         service = new ChallengeService(challengeRepository, userRepository, messagingTemplate);
         ReflectionTestUtils.setField(service, "roomService", roomService);
+        ReflectionTestUtils.setField(service, "redis", redis);
+        lenient().when(redis.opsForValue()).thenReturn(redisValues);
+        lenient().when(redis.hasKey(anyString())).thenReturn(true);
+        lenient().when(challengeRepository.transitionFromPending(anyString(), any())).thenReturn(1);
         lenient().when(userRepository.findById("minh")).thenReturn(Optional.of(minh));
         lenient().when(userRepository.findById("lan")).thenReturn(Optional.of(lan));
         lenient().when(challengeRepository.save(any(Challenge.class))).thenAnswer(i -> i.getArgument(0));
@@ -140,5 +146,82 @@ class ChallengeServiceTest {
         pending(LocalDateTime.now().plusMinutes(4));
         Object left = service.getChallenge("ch-1", "minh").get("secondsLeft");
         assertTrue(left instanceof Long && (Long) left > 230 && (Long) left <= 240, String.valueOf(left));
+    }
+
+    // ── Review: người thách đã bỏ đi / nhận và hủy chạy đua nhau / ngôn ngữ phòng ──
+
+    @Test
+    void accept_whenTheChallengerIsNoLongerWaiting_createsNoRoom() {
+        pending(LocalDateTime.now().plusMinutes(4));
+        when(redis.hasKey("challenge:seen:ch-1")).thenReturn(false);
+
+        IllegalArgumentException e = assertThrows(IllegalArgumentException.class, () -> service.acceptChallenge("ch-1", "lan"));
+        assertTrue(e.getMessage().contains("Minh"), e.getMessage());
+        verifyNoInteractions(roomService);
+    }
+
+    @Test
+    void accept_thatLosesTheRaceWithACancel_createsNoRoom() {
+        pending(LocalDateTime.now().plusMinutes(4));
+        when(challengeRepository.transitionFromPending("ch-1", Challenge.Status.ACCEPTED)).thenReturn(0);
+
+        assertThrows(IllegalArgumentException.class, () -> service.acceptChallenge("ch-1", "lan"));
+        verifyNoInteractions(roomService);
+    }
+
+    @Test
+    void cancelAndDecline_onlyWinWhileStillWaiting() {
+        pending(LocalDateTime.now().plusMinutes(4));
+        when(challengeRepository.transitionFromPending("ch-1", Challenge.Status.CANCELLED)).thenReturn(0);
+        assertThrows(IllegalArgumentException.class, () -> service.cancelChallenge("ch-1", "minh"));
+
+        when(challengeRepository.transitionFromPending("ch-1", Challenge.Status.DECLINED)).thenReturn(0);
+        assertThrows(IllegalArgumentException.class, () -> service.declineChallenge("ch-1", "lan"));
+    }
+
+    @Test
+    void challengerPolling_keepsTheChallengeAlive_theFriendPollingDoesNot() {
+        pending(LocalDateTime.now().plusMinutes(4));
+
+        service.getChallenge("ch-1", "minh");
+        verify(redisValues).set(eq("challenge:seen:ch-1"), eq("1"), any(java.time.Duration.class));
+
+        clearInvocations(redisValues);
+        service.getChallenge("ch-1", "lan");
+        verifyNoInteractions(redisValues);
+    }
+
+    @Test
+    void sendingAChallenge_marksTheChallengerAsWaiting() {
+        when(challengeRepository.findByChallengedIdAndStatus("lan", Challenge.Status.PENDING)).thenReturn(List.of());
+
+        Challenge c = service.createChallenge("minh", "lan");
+
+        verify(redisValues).set(eq("challenge:seen:" + c.getId()), eq("1"), any(java.time.Duration.class));
+    }
+
+    @Test
+    void pendingList_hidesChallengesWhoseChallengerLeft() {
+        Challenge gone = new Challenge("ch-gone", minh, lan, LocalDateTime.now().plusMinutes(4));
+        Challenge here = new Challenge("ch-here", user("hoa", "Hoa", false), lan, LocalDateTime.now().plusMinutes(4));
+        when(challengeRepository.findByChallengedIdAndStatus("lan", Challenge.Status.PENDING)).thenReturn(List.of(gone, here));
+        when(redis.hasKey("challenge:seen:ch-gone")).thenReturn(false);
+
+        assertEquals(List.of("ch-here"), service.getPendingChallenges("lan").stream().map(Challenge::getId).toList());
+    }
+
+    @Test
+    void accept_roomUsesTheAcceptingPlayersLanguage() throws Exception {
+        pending(LocalDateTime.now().plusMinutes(4));
+        Room room = new Room();
+        room.setId("room-9");
+        room.setRoomCode("DUEL99");
+        when(roomService.createRoom(anyString(), eq(minh), eq(2), eq(10), eq(20), eq(Room.RoomMode.SPEED_RACE), eq(false),
+                eq(Room.RoomDifficulty.MIXED), eq("ALL"), eq(Room.QuestionSource.DATABASE), isNull(), eq(true), eq("en")))
+                .thenReturn(room);
+
+        service.acceptChallenge("ch-1", "lan", "en");
+
+        verify(roomService).joinRoom("DUEL99", lan);
     }
 }

@@ -31,10 +31,14 @@ public interface RoomPlayerRepository extends JpaRepository<RoomPlayer, String> 
     long countByRoomId(@Param("roomId") String roomId);
 
     // Count players still occupying a slot — excludes LEFT (mid-game leavers
-    // whose row is preserved so they can rejoin while IN_PROGRESS).
-    // PCV-20: chỉ đếm người thật — phòng chỉ còn người máy coi như không còn ai.
-    @Query("SELECT COUNT(rp) FROM RoomPlayer rp WHERE rp.room.id = :roomId AND rp.playerStatus <> com.biblequiz.modules.room.entity.RoomPlayer$PlayerStatus.LEFT AND rp.user.isBot = false")
+    // whose row is preserved so they can rejoin while IN_PROGRESS). Người máy
+    // chiếm chỗ như người thật (sức chứa, "x/tối đa").
+    @Query("SELECT COUNT(rp) FROM RoomPlayer rp WHERE rp.room.id = :roomId AND rp.playerStatus <> com.biblequiz.modules.room.entity.RoomPlayer$PlayerStatus.LEFT")
     long countOccupiedByRoomId(@Param("roomId") String roomId);
+
+    // PCV-20: người thật còn trong phòng — chỉ còn người máy thì coi như không còn ai.
+    @Query("SELECT COUNT(rp) FROM RoomPlayer rp WHERE rp.room.id = :roomId AND rp.playerStatus <> com.biblequiz.modules.room.entity.RoomPlayer$PlayerStatus.LEFT AND rp.user.isBot = false")
+    long countOccupiedHumansByRoomId(@Param("roomId") String roomId);
     
     // Find top players by score
     @Query("SELECT rp FROM RoomPlayer rp WHERE rp.room.id = :roomId ORDER BY rp.score DESC LIMIT :limit")

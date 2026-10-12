@@ -89,7 +89,16 @@ public class SuddenDeathMatchService {
             roomStateService.setSdChampion(roomId, champion);
             roomStateService.setSdChallenger(roomId, challenger);
         } else {
-            // Trận tiếp: champion giữ ghế
+            // Trận tiếp: champion giữ ghế — trừ khi vua đã rời phòng: người kế trong hàng lên ngôi.
+            if (isLeft(roomId, champion)) {
+                String next = popPlayable(roomId, queue);
+                if (next == null) {
+                    roomStateService.setSdQueue(roomId, queue);
+                    return null;
+                }
+                champion = next;
+                roomStateService.setSdChampion(roomId, champion);
+            }
             String challenger = popPlayable(roomId, queue);
             roomStateService.setSdQueue(roomId, queue);
             if (challenger == null) return null;
@@ -122,6 +131,15 @@ public class SuddenDeathMatchService {
 
         if (champion == null || challenger == null) {
             return new MatchResult(MatchOutcome.NO_MATCH, null, null);
+        }
+
+        // Một bên đã rời phòng: bên đó thua ngay (không bắt người còn lại đấu với ghế trống).
+        boolean champLeft = isLeft(roomId, champion);
+        boolean challLeft = isLeft(roomId, challenger);
+        if (champLeft || challLeft) {
+            return champLeft && !challLeft
+                    ? resolveMatchEnd(roomId, challenger, champion)
+                    : resolveMatchEnd(roomId, champion, challenger);
         }
 
         boolean champCorrect = getIsCorrect(roundId, champion);
@@ -226,7 +244,7 @@ public class SuddenDeathMatchService {
             p.setMatchesWon(p.getMatchesWon() + 1);
             p.setMatchesPlayed(p.getMatchesPlayed() + 1);
             p.setBestStreak(Math.max(p.getBestStreak(), p.getWinningStreak()));
-            p.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
+            if (p.getPlayerStatus() != RoomPlayer.PlayerStatus.LEFT) p.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
             roomPlayerRepository.save(p);
         });
         boolean[] loserStillHere = { false };
@@ -321,9 +339,18 @@ public class SuddenDeathMatchService {
         return null;
     }
 
+    /** Đổi trạng thái người đấu — người đã rời phòng (LEFT) giữ nguyên, không bao giờ quay lại ACTIVE. */
     private void setStatus(String roomId, String userId, RoomPlayer.PlayerStatus status) {
         roomPlayerRepository.findByRoomIdAndUserId(roomId, userId)
+                .filter(p -> p.getPlayerStatus() != RoomPlayer.PlayerStatus.LEFT)
                 .ifPresent(p -> { p.setPlayerStatus(status); roomPlayerRepository.save(p); });
+    }
+
+    /** Người đấu đã rời phòng (giữa trận hàng người chơi chỉ chuyển LEFT, không bị xóa). */
+    private boolean isLeft(String roomId, String userId) {
+        return roomPlayerRepository.findByRoomIdAndUserId(roomId, userId)
+                .map(p -> p.getPlayerStatus() == RoomPlayer.PlayerStatus.LEFT)
+                .orElse(false);
     }
 
     private boolean getIsCorrect(String roundId, String userId) {

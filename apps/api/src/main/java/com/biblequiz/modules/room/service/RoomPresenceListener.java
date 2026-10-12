@@ -162,7 +162,8 @@ public class RoomPresenceListener {
 
         // Non-host: end the room only when no ACTIVE players remain
         // (covers "all disconnected" in IN_PROGRESS).
-        if (roomService.countOccupiedPlayers(roomId) == 0) {
+        // Chỉ đếm người thật: phòng chỉ còn người máy cũng kết thúc.
+        if (roomService.countOccupiedHumans(roomId) == 0) {
             webSocketController.broadcastRoomEnded(roomId,
                     WebSocketMessage.RoomEndedReason.ALL_DISCONNECTED);
             roomService.endRoom(roomId);

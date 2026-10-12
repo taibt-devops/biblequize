@@ -33,6 +33,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.hamcrest.Matchers.not;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @WebMvcTest(RankedController.class)
 class RankedControllerTest extends BaseControllerTest {
@@ -1391,6 +1392,89 @@ class RankedControllerTest extends BaseControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.blocked").value(true))
                 .andExpect(jsonPath("$.questionsCounted").value(100));
+    }
+
+    // ── Review PCV-7: điểm cộng ngoài phiên (thưởng nhiệm vụ, Thử thách ngày) không bị ghi đè ──
+
+    @MockBean
+    private com.biblequiz.modules.quiz.service.DailyMissionService dailyMissionService;
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void rankedAnswer_thatCompletesTheThirdMission_keepsThe50XpBonus() throws Exception {
+        RankedSessionService.Progress progress = new RankedSessionService.Progress();
+        progress.livesRemaining = 100;
+        progress.questionsCounted = 5;
+        progress.pointsToday = 100;
+        progress.currentBook = "Genesis";
+        when(rankedSessionService.getOrCreate(anyString())).thenReturn(progress);
+
+        com.biblequiz.modules.quiz.entity.Question question = new com.biblequiz.modules.quiz.entity.Question();
+        question.setId("q-1");
+        question.setType(com.biblequiz.modules.quiz.entity.Question.Type.multiple_choice_single);
+        question.setCorrectAnswer(List.of(0));
+        when(questionRepository.findById("q-1")).thenReturn(Optional.of(question));
+        when(scoringService.validateMultipleChoiceSingle(any(), any())).thenReturn(true);
+        when(scoringService.calculateRanked(any(), anyInt(), anyInt(), anyInt(), anyBoolean(), anyInt(), anyBoolean(), anyBoolean(), anyBoolean()))
+                .thenReturn(new ScoringService.ScoreResult(10, 8, 2, 100, false));
+        when(bookProgressionService.shouldAdvanceToNextBook(anyString(), anyInt(), anyInt())).thenReturn(false);
+
+        UserDailyProgress udp = new UserDailyProgress("udp-1", testUser, LocalDate.now());
+        udp.setPointsCounted(100);
+        when(udpRepository.findByUserIdAndDate(eq("user-1"), any(LocalDate.class))).thenReturn(Optional.of(udp));
+        // Nhiệm vụ thứ ba xong ngay trong câu này ⇒ MissionRewardService cộng +50 vào dòng hôm nay.
+        doAnswer(inv -> { udp.setPointsCounted(udp.getPointsCounted() + 50); return null; })
+                .when(dailyMissionService).onRankedPoints(eq("user-1"), anyInt());
+
+        mockMvc.perform(post("/api/ranked/sessions/ranked-bonus/answer")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"questionId\":\"q-1\",\"answer\":0,\"clientElapsedMs\":5000}"))
+                .andExpect(status().isOk());
+
+        org.mockito.ArgumentCaptor<UserDailyProgress> saved = org.mockito.ArgumentCaptor.forClass(UserDailyProgress.class);
+        verify(udpRepository, atLeastOnce()).save(saved.capture());
+        assertEquals(160, saved.getValue().getPointsCounted(), "100 cũ + 50 thưởng + 10 câu này");
+        assertEquals(160, progress.pointsToday, "phiên đồng bộ lại theo DB");
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void matchComplete_keepsPointsCreditedElsewhereDuringTheSession() throws Exception {
+        RankedSessionService.Progress progress = matchProgress(10, 10, 200);
+        when(rankedSessionService.get("s-mix")).thenReturn(progress);
+        UserDailyProgress udp = new UserDailyProgress("udp-2", testUser, LocalDate.now());
+        udp.setPointsCounted(250); // 200 của phiên + 50 thưởng nhiệm vụ cộng giữa phiên
+        when(udpRepository.findByUserIdAndDate(anyString(), any())).thenReturn(Optional.of(udp));
+
+        mockMvc.perform(post("/api/ranked/sessions/s-mix/match-complete"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.bonusPoints").value(30))
+                .andExpect(jsonPath("$.pointsToday").value(280));
+        assertEquals(280, udp.getPointsCounted(), "250 + 30, không ghi đè về 230");
+    }
+
+    /** Review PCV-7: một trận Đấu Hạng là "Chơi 1 lượt ở bất kỳ chế độ nào" — tính một lần mỗi trận. */
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void matchComplete_countsOnceForThePlayAnyModeMission() throws Exception {
+        RankedSessionService.Progress progress = matchProgress(10, 6, 120);
+        when(rankedSessionService.get("s-play")).thenReturn(progress);
+        when(udpRepository.findByUserIdAndDate(anyString(), any())).thenReturn(Optional.empty());
+
+        mockMvc.perform(post("/api/ranked/sessions/s-play/match-complete")).andExpect(status().isOk());
+        mockMvc.perform(post("/api/ranked/sessions/s-play/match-complete")).andExpect(status().isOk());
+
+        verify(dailyMissionService, times(1)).onEvent("user-1", "play_any_mode");
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void matchComplete_withoutAnyAnswer_doesNotCount() throws Exception {
+        when(rankedSessionService.get("s-empty")).thenReturn(matchProgress(0, 0, 0));
+
+        mockMvc.perform(post("/api/ranked/sessions/s-empty/match-complete")).andExpect(status().isOk());
+
+        verify(dailyMissionService, never()).onEvent(anyString(), eq("play_any_mode"));
     }
 
     // ── BL-26 B (LD1): POST /ranked/sessions/{id}/match-complete ──────────────

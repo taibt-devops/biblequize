@@ -31,6 +31,38 @@ public class ChallengeService {
     static final int QUESTIONS = 10;
     static final int SECONDS = 20;
 
+    /**
+     * Người thách còn đang chờ: hộp chờ hỏi trạng thái mỗi 3 giây, mỗi lần hỏi ghi một nhịp tim sống
+     * {@link #HEARTBEAT}. Hết nhịp tim (đóng thẻ, rời trang, tắt máy) thì không mở phòng cho người kia
+     * vào sảnh một mình. Redis lỗi/không có thì không chặn.
+     */
+    @org.springframework.beans.factory.annotation.Autowired(required = false)
+    private org.springframework.data.redis.core.StringRedisTemplate redis;
+
+    static final java.time.Duration HEARTBEAT = java.time.Duration.ofSeconds(12);
+
+    private static String seenKey(String challengeId) {
+        return "challenge:seen:" + challengeId;
+    }
+
+    void markChallengerWaiting(String challengeId) {
+        if (redis == null) return;
+        try {
+            redis.opsForValue().set(seenKey(challengeId), "1", HEARTBEAT);
+        } catch (RuntimeException ignored) {
+            // Redis lỗi: lời thách vẫn chạy như trước (không chặn nhận lời).
+        }
+    }
+
+    boolean challengerStillWaiting(String challengeId) {
+        if (redis == null) return true;
+        try {
+            return Boolean.TRUE.equals(redis.hasKey(seenKey(challengeId)));
+        } catch (RuntimeException e) {
+            return true;
+        }
+    }
+
     public ChallengeService(ChallengeRepository challengeRepository,
                             UserRepository userRepository,
                             SimpMessagingTemplate messagingTemplate) {
@@ -55,7 +87,10 @@ public class ChallengeService {
                 .stream()
                 .filter(c -> !c.isExpired() && c.getChallenger().getId().equals(challengerId))
                 .findFirst();
-        if (waiting.isPresent()) return waiting.get();
+        if (waiting.isPresent()) {
+            markChallengerWaiting(waiting.get().getId());
+            return waiting.get();
+        }
 
         Challenge challenge = new Challenge(
                 UUID.randomUUID().toString(),
@@ -64,6 +99,7 @@ public class ChallengeService {
                 LocalDateTime.now().plusMinutes(5)
         );
         challengeRepository.save(challenge);
+        markChallengerWaiting(challenge.getId());
 
         // Send WebSocket notification to challenged user
         messagingTemplate.convertAndSendToUser(
@@ -86,6 +122,13 @@ public class ChallengeService {
 
     @Transactional
     public Map<String, String> acceptChallenge(String challengeId, String userId) {
+        return acceptChallenge(challengeId, userId, "vi");
+    }
+
+    /** Nhận lời: phòng dùng ngôn ngữ câu hỏi của người nhận lời (vi/en). */
+    @Transactional
+    public Map<String, String> acceptChallenge(String challengeId, String userId, String language) {
+        String lang = "en".equalsIgnoreCase(language) ? "en" : "vi";
         Challenge challenge = challengeRepository.findById(challengeId)
                 .orElseThrow(() -> new IllegalArgumentException("Challenge not found"));
 
@@ -100,6 +143,14 @@ public class ChallengeService {
             challengeRepository.save(challenge);
             throw new IllegalArgumentException("Challenge has expired");
         }
+        // Người thách đã rời hộp chờ: không mở phòng để người kia vào sảnh một mình.
+        if (!challengerStillWaiting(challengeId)) {
+            throw new IllegalArgumentException(challenge.getChallenger().getName() + " không còn chờ nữa");
+        }
+        // Chỉ một trong "nhận lời" / "hủy" thắng (khóa hàng); lỗi mở phòng thì cả giao dịch quay lui.
+        if (challengeRepository.transitionFromPending(challengeId, Challenge.Status.ACCEPTED) == 0) {
+            throw new IllegalArgumentException("Lời thách không còn hiệu lực");
+        }
 
         // PCV-23: phòng Đua tốc độ riêng tư 10 câu × 20 giây; người thách làm chủ phòng và chơi cùng.
         Room room;
@@ -108,7 +159,7 @@ public class ChallengeService {
             User challenged = challenge.getChallenged();
             room = roomService.createRoom("Thách đấu: " + challenger.getName() + " – " + challenged.getName(),
                     challenger, 2, QUESTIONS, SECONDS, Room.RoomMode.SPEED_RACE, false, Room.RoomDifficulty.MIXED,
-                    "ALL", Room.QuestionSource.DATABASE, null, true, "vi");
+                    "ALL", Room.QuestionSource.DATABASE, null, true, lang);
             roomService.joinRoom(room.getRoomCode(), challenged);
         } catch (Exception e) {
             throw new IllegalArgumentException("ALREADY_IN_ANOTHER_ROOM".equals(e.getMessage())
@@ -136,9 +187,10 @@ public class ChallengeService {
         if (!challenge.getChallenged().getId().equals(userId)) {
             throw new IllegalArgumentException("Not your challenge to decline");
         }
-
+        if (challengeRepository.transitionFromPending(challengeId, Challenge.Status.DECLINED) == 0) {
+            throw new IllegalArgumentException("Lời thách không còn chờ");
+        }
         challenge.setStatus(Challenge.Status.DECLINED);
-        challengeRepository.save(challenge);
     }
 
     /** PCV-23: người thách hủy khi người kia chưa nhận. */
@@ -149,11 +201,11 @@ public class ChallengeService {
         if (!challenge.getChallenger().getId().equals(userId)) {
             throw new IllegalArgumentException("Chỉ người thách mới hủy được");
         }
-        if (challenge.getStatus() != Challenge.Status.PENDING) {
+        if (challenge.getStatus() != Challenge.Status.PENDING
+                || challengeRepository.transitionFromPending(challengeId, Challenge.Status.CANCELLED) == 0) {
             throw new IllegalArgumentException("Lời thách không còn chờ");
         }
         challenge.setStatus(Challenge.Status.CANCELLED);
-        challengeRepository.save(challenge);
     }
 
     /** PCV-23: trạng thái lời thách cho hai người trong cuộc (người thách hỏi mỗi 3 giây khi chờ). */
@@ -163,6 +215,10 @@ public class ChallengeService {
                 .orElseThrow(() -> new IllegalArgumentException("Challenge not found"));
         boolean participant = c.getChallenger().getId().equals(userId) || c.getChallenged().getId().equals(userId);
         if (!participant) throw new IllegalArgumentException("Challenge not found");
+        // Người thách hỏi trạng thái = vẫn đang chờ (nhịp tim).
+        if (c.getChallenger().getId().equals(userId) && c.getStatus() == Challenge.Status.PENDING) {
+            markChallengerWaiting(challengeId);
+        }
         String status = c.getStatus() == Challenge.Status.PENDING && c.isExpired() ? "EXPIRED" : c.getStatus().name();
         Map<String, Object> view = new java.util.HashMap<>();
         view.put("challengeId", c.getId());
@@ -179,6 +235,7 @@ public class ChallengeService {
         return challengeRepository.findByChallengedIdAndStatus(userId, Challenge.Status.PENDING)
                 .stream()
                 .filter(c -> !c.isExpired())
+                .filter(c -> challengerStillWaiting(c.getId()))
                 .toList();
     }
 

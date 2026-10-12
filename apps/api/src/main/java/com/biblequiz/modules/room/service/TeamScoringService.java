@@ -171,16 +171,18 @@ public class TeamScoringService {
                 .toList();
         if (votes.isEmpty()) return new Object[]{null, false, 0};
         Map<Integer, Long> count = votes.stream().collect(Collectors.groupingBy(RoomAnswer::getAnswerIndex, Collectors.counting()));
-        Map<Integer, java.time.LocalDateTime> first = new java.util.HashMap<>();
+        // Hòa phiếu → phương án được chọn trước, theo thời gian trả lời máy chủ đo (ms tính từ lúc phát câu);
+        // answered_at chỉ chính xác đến giây nên không dùng. Bằng hệt thì phương án đứng trước.
+        Map<Integer, Long> firstMs = new java.util.HashMap<>();
         for (RoomAnswer v : votes) {
-            java.time.LocalDateTime at = v.getAnsweredAt() != null ? v.getAnsweredAt() : java.time.LocalDateTime.MAX;
-            first.merge(v.getAnswerIndex(), at, (x, y) -> x.isBefore(y) ? x : y);
+            long ms = v.getResponseMs() != null ? v.getResponseMs() : Long.MAX_VALUE;
+            firstMs.merge(v.getAnswerIndex(), ms, Math::min);
         }
         long top = java.util.Collections.max(count.values());
         Integer answer = count.entrySet().stream()
                 .filter(e -> e.getValue() == top)
                 .map(Map.Entry::getKey)
-                .min(java.util.Comparator.comparing(first::get))
+                .min(java.util.Comparator.comparing((Integer idx) -> firstMs.get(idx)).thenComparing(idx -> idx))
                 .orElse(null);
         boolean correct = answer != null && answer == correctIndex;
         boolean unanimous = correct && votes.size() == members.size()

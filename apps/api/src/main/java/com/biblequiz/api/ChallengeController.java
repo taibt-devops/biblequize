@@ -46,10 +46,14 @@ public class ChallengeController {
     }
 
     @PostMapping("/{id}/accept")
-    public ResponseEntity<?> accept(@PathVariable String id, Authentication auth) {
+    public ResponseEntity<?> accept(@PathVariable String id,
+                                    @RequestBody(required = false) Map<String, String> body,
+                                    Authentication auth) {
         User me = resolveUser(auth);
         try {
-            Map<String, String> result = challengeService.acceptChallenge(id, me.getId());
+            // Phòng dùng ngôn ngữ câu hỏi của người nhận lời (vi/en; thiếu thì vi).
+            String language = body != null ? body.get("language") : null;
+            Map<String, String> result = challengeService.acceptChallenge(id, me.getId(), language);
             return ResponseEntity.ok(result);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));

@@ -19,6 +19,8 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.never;
 
 @ExtendWith(MockitoExtension.class)
 class RoomAnalyticsServiceTest {
@@ -34,6 +36,7 @@ class RoomAnalyticsServiceTest {
         r.setId("round-" + no);
         r.setRoundNo(no);
         r.setQuestionId(questionId);
+        r.setEndedAt(java.time.LocalDateTime.now()); // vòng đã đóng (đã công bố đáp án)
         return r;
     }
 
@@ -58,6 +61,23 @@ class RoomAnalyticsServiceTest {
 
     @BeforeEach
     void setUp() {}
+
+    /** Review PCV-2: mở trang phân tích ở thẻ khác giữa trận không được thấy đáp án câu đang chạy. */
+    @Test
+    void roundStillOpen_isNotShown() {
+        RoomRound closed = round(1, "q-1");
+        RoomRound open = round(2, "q-2");
+        open.setEndedAt(null);
+        when(roundRepository.findByRoomIdOrderByRoundNoAsc("r1")).thenReturn(List.of(closed, open));
+        when(answerRepository.findByRoundId("round-1")).thenReturn(List.of());
+        when(questionRepository.findById("q-1")).thenReturn(Optional.of(question("q-1", 2, List.of("A", "B", "C", "D"))));
+
+        var rounds = service.getRoomAnalytics("r1");
+
+        assertEquals(1, rounds.size());
+        verify(answerRepository, never()).findByRoundId("round-2");
+        verify(questionRepository, never()).findById("q-2");
+    }
 
     @Test
     void getRoomAnalytics_emptyRoom_returnsEmptyList() {

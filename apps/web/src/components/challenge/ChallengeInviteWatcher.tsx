@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { challengeApi, challengeErrorMessage, formatCountdown, type PendingChallenge } from '../../api/challenges'
+import { getQuizLanguage } from '../../utils/quizLanguage'
 
 const POLL_MS = 20_000
 
@@ -55,7 +56,7 @@ export default function ChallengeInviteWatcher() {
     if (busy) return
     setBusy(true)
     try {
-      const r = await challengeApi.accept(invite.challengeId)
+      const r = await challengeApi.accept(invite.challengeId, getQuizLanguage())
       handled.current.add(invite.challengeId)
       setInvite(null)
       navigate(`/room/${r.roomId}/lobby`)

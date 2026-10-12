@@ -190,4 +190,60 @@ class SuddenDeathRotationTest {
         assertEquals(5, e.getFinalRank());
         assertEquals(6, f.getFinalRank(), "người bỏ trận xếp cuối");
     }
+
+    // ── Review: người đã rời không bao giờ quay lại ACTIVE ──
+
+    @Test
+    void championWhoLeft_isReplacedAtTheNextMatch_andStaysLeft() {
+        RoomPlayer a = player("a");
+        a.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        player("b");
+        player("c");
+        queue.addAll(List.of("b", "c"));
+        when(state.getSdChampion(ROOM)).thenReturn("a");
+        when(state.getSdChallenger(ROOM)).thenReturn("c");
+
+        service.startNextMatch(ROOM);
+
+        verify(state).setSdChampion(ROOM, "b");
+        verify(state).setSdChallenger(ROOM, "c");
+        assertEquals(RoomPlayer.PlayerStatus.LEFT, a.getPlayerStatus(), "vua đã rời không được đưa lại");
+        assertEquals(RoomPlayer.PlayerStatus.ACTIVE, byId.get("b").getPlayerStatus());
+    }
+
+    @Test
+    void duelistWhoLeft_losesTheMatchRightAway_andStaysLeft() {
+        RoomPlayer king = player("a");
+        king.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
+        RoomPlayer gone = player("b");
+        gone.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        when(state.getSdChampion(ROOM)).thenReturn("a");
+        when(state.getSdChallenger(ROOM)).thenReturn("b");
+        lenient().when(answers.findByRoundIdAndUserId(ROUND, "a")).thenReturn(Optional.of(answer(false)));
+
+        SuddenDeathMatchService.MatchResult r = service.processRound(ROOM, ROUND);
+
+        assertEquals(SuddenDeathMatchService.MatchOutcome.MATCH_ENDED, r.outcome, "không bắt người còn lại chờ người đã rời");
+        assertEquals("a", r.winner.userId);
+        assertEquals(RoomPlayer.PlayerStatus.LEFT, gone.getPlayerStatus());
+        assertFalse(queue.contains("b"), "người đã rời không vào lại hàng chờ");
+    }
+
+    @Test
+    void absentKingDoesNotWin_whenTheChallengerMisses() {
+        RoomPlayer gone = player("a");
+        gone.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        gone.setWinningStreak(2);
+        RoomPlayer challenger = player("b");
+        challenger.setPlayerStatus(RoomPlayer.PlayerStatus.ACTIVE);
+        when(state.getSdChampion(ROOM)).thenReturn("a");
+        when(state.getSdChallenger(ROOM)).thenReturn("b");
+        lenient().when(answers.findByRoundIdAndUserId(ROUND, "b")).thenReturn(Optional.of(answer(false)));
+
+        SuddenDeathMatchService.MatchResult r = service.processRound(ROOM, ROUND);
+
+        assertEquals("b", r.winner.userId, "vua đã rời thua ngay");
+        assertEquals(RoomPlayer.PlayerStatus.LEFT, gone.getPlayerStatus());
+        assertEquals(RoomPlayer.PlayerStatus.ACTIVE, challenger.getPlayerStatus());
+    }
 }

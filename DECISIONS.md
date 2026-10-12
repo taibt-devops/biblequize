@@ -12,7 +12,8 @@
   - **Thách đấu** từ Bảng xếp hạng: lời thách sống 5 phút; nhận lời ⇒ phòng Đua tốc độ riêng 10 câu × 20 giây, người thách làm chủ phòng và cùng chơi. "Để sau" là từ chối. Đóng hộp chờ là hủy lời thách.
   - **Ôn phần đọc hôm nay:** phòng có phạm vi theo đoạn (sách + khoảng chương). Câu trong đoạn trước, thiếu thì cùng sách, rồi bất kỳ; độ khó cố định giữ ở mọi bước. App Đọc hằng ngày có liên kết "Ôn phần này cùng nhóm". Đăng nhập xong quay về đúng trang (nhớ ở trình duyệt, chỉ đường dẫn trong app).
 - **Các quyết định nhỏ khi làm** (ghi ở ledger, đưa vào báo cáo cuối): `secondsLeft` theo đồng hồ máy chủ cho lời thách (`expiresAt` không kèm múi giờ); thẻ mời thách đấu không chặn màn và ẩn khi đang chơi; nhiều đoạn thì lấy lần lượt mỗi đoạn một câu.
-- **Implementation:** PCV-20..24, migration V78; SPEC_MULTIPLAYER §0.3, SPEC_USER §22.7.
+- **Sau review toàn nhánh (13/10):** người máy chiếm chỗ (sức chứa, tối đa 12 ở Đấu vương) nhưng không tính "còn ai"; Xáo đội / Đổi cách chơi giữ máy sẵn sàng; Thách đấu có nhịp tim người thách + chuyển trạng thái có điều kiện + ngôn ngữ người nhận lời; vào lại giữa trận không hồi sinh bóng, khán giả Đấu vương không thành người đấu; điểm Đấu Hạng cộng dồn vào dòng hôm nay (không xóa thưởng nhiệm vụ / XP Thử thách ngày cộng giữa phiên) và một trận Đấu Hạng tính nhiệm vụ "Chơi 1 lượt"; trang phân tích chỉ vòng đã đóng; chấm Thử thách ngày chỉ câu trong bộ hôm nay.
+- **Implementation:** PCV-20..24, migration V78; SPEC_MULTIPLAYER §0.3, §6, SPEC_USER §22.7.
 
 ---
 

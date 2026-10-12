@@ -84,6 +84,20 @@ class ChallengeControllerTest extends BaseControllerTest {
 
     @Test
     @WithMockUser(username = "test@example.com")
+    void accept_passesTheAcceptingPlayersLanguage() throws Exception {
+        when(challengeService.acceptChallenge("ch-1", "minh", "en"))
+                .thenReturn(Map.of("status", "ACCEPTED", "roomId", "room-9", "roomCode", "DUEL99"));
+
+        mockMvc.perform(post("/api/challenges/ch-1/accept").with(csrf())
+                        .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
+                        .content("{\"language\":\"en\"}"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.roomId").value("room-9"));
+        verify(challengeService).acceptChallenge("ch-1", "minh", "en");
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
     void cancel_byTheChallenger() throws Exception {
         mockMvc.perform(post("/api/challenges/ch-1/cancel").with(csrf()))
                 .andExpect(status().isOk())

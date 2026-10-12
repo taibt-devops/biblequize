@@ -75,6 +75,8 @@ public final class RoomModeRules {
             return "Phòng cần ít nhất 1 người chơi thật";
         }
         int count = players.size();
+        int max = maxPlayers(mode);
+        if (count > max) return label(mode) + " tối đa " + max + " người (tính cả người máy)";
         int min = minPlayers(mode);
         if (count < min) {
             String suffix = hostPlaysGame ? "" : " (không tính Quản trò)";

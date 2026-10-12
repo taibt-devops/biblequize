@@ -91,8 +91,10 @@ public class SequentialStrategy implements RoomModeStrategy {
             ctx.ws.broadcastQuestionStart(roomId, i, questions.size(),
                     ctx.questionDtoFactory.build(q), ctx.timePerQuestion);
 
-            // Wait until all answered OR timeout (timer câu hỏi)
-            boolean allAnswered = sequentialScoringService.awaitAllAnsweredOrTimeout(roomId, ctx.timePerQuestion);
+            // Wait until all answered OR timeout (timer câu hỏi + 1 giây ân hạn như các mode khác — câu trả lời
+            // gửi ở giây cuối, tới trễ vì mạng, vẫn được chấm trước khi công bố đáp án).
+            boolean allAnswered = sequentialScoringService.awaitAllAnsweredOrTimeoutMs(roomId,
+                    ctx.timePerQuestion * 1000L + com.biblequiz.modules.room.service.RoomAnswerProcessor.ROUND_GRACE_MS);
             log.info("[Sequential] room={} q={} allAnswered={} answered={}/{}",
                     roomId, i, allAnswered,
                     sequentialScoringService.answeredCount(roomId),

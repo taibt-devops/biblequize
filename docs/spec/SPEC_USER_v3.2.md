@@ -346,6 +346,7 @@ Endpoints:
 
 **Endpoints:**
 - `GET /api/daily-challenge` — `{ date, questions[5], alreadyCompleted, globalStats }`.
+- `POST /api/daily-challenge/answer` — `{ questionId, answer }` → `{ isCorrect, correctAnswer, explanation }`; **chỉ nhận câu của Thử thách hôm nay** (hoặc hôm qua, cho người làm dở qua nửa đêm), câu khác → 400 — không thành chỗ tra đáp án cho câu đang chạy ở Phòng chơi (review 2026-10-13).
 - `POST /api/daily-challenge/complete` — body `{ score:0-10000, correctCount:0-5 }`. `score` client gửi bị bỏ qua (server recompute). Idempotent same-day.
 - `GET /api/daily-challenge/result` — `{ score, xpEarned, correctCount, ... }` với `score == xpEarned`.
 

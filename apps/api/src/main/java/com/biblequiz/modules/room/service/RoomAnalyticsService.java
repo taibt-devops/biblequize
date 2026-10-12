@@ -34,6 +34,9 @@ public class RoomAnalyticsService {
         List<RoundAnalyticsDTO> out = new ArrayList<>(rounds.size());
 
         for (RoomRound round : rounds) {
+            // Chỉ vòng đã đóng (đã công bố đáp án): mở trang này ở thẻ khác giữa trận không được
+            // thấy đáp án / lựa chọn của mọi người ở câu đang chạy.
+            if (round.getEndedAt() == null) continue;
             List<RoomAnswer> answers = answerRepository.findByRoundId(round.getId());
             Optional<Question> qOpt = questionRepository.findById(round.getQuestionId());
 

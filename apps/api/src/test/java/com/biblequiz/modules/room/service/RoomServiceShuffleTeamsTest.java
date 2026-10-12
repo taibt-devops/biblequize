@@ -69,6 +69,19 @@ class RoomServiceShuffleTeamsTest {
         verify(webSocketController).broadcastRoomState("room-1");
     }
 
+    /** Review: người máy luôn sẵn sàng — xáo đội mà bỏ sẵn sàng của máy thì phòng không bao giờ bắt đầu được. */
+    @Test
+    void botsStayReady_afterShuffle() throws Exception {
+        RoomPlayer bot = player("bot-01", RoomPlayer.Team.B, true);
+        bot.getUser().setIsBot(true);
+        players.add(bot);
+
+        roomService.shuffleTeams("room-1", "host");
+
+        assertTrue(bot.getIsReady(), "người máy vẫn sẵn sàng");
+        assertTrue(players.stream().filter(p -> !p.isBot()).noneMatch(RoomPlayer::getIsReady), "người thật bấm lại");
+    }
+
     @Test
     void nonHost_cannotShuffle_inANormalRoom() {
         Exception e = assertThrows(Exception.class, () -> roomService.shuffleTeams("room-1", "a1"));

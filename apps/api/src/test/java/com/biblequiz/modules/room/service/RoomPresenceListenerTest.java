@@ -92,7 +92,7 @@ class RoomPresenceListenerTest {
         when(presenceTracker.userHasActiveSession(EMAIL)).thenReturn(false);
         when(userRepository.findByEmail(EMAIL)).thenReturn(Optional.of(ghost));
         when(roomRepository.findById(ROOM_ID)).thenReturn(Optional.of(room));
-        when(roomService.countOccupiedPlayers(ROOM_ID)).thenReturn(0L);
+        when(roomService.countOccupiedHumans(ROOM_ID)).thenReturn(0L);
 
         listener.handleGraceEnd(EMAIL, Set.of(ROOM_ID));
 
@@ -111,7 +111,7 @@ class RoomPresenceListenerTest {
         when(presenceTracker.userHasActiveSession(EMAIL)).thenReturn(false);
         when(userRepository.findByEmail(EMAIL)).thenReturn(Optional.of(ghost));
         when(roomRepository.findById(ROOM_ID)).thenReturn(Optional.of(room));
-        when(roomService.countOccupiedPlayers(ROOM_ID)).thenReturn(2L);
+        when(roomService.countOccupiedHumans(ROOM_ID)).thenReturn(2L);
 
         listener.handleGraceEnd(EMAIL, Set.of(ROOM_ID));
 

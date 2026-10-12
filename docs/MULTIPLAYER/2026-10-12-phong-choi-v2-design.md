@@ -41,7 +41,7 @@ Hiện máy chủ tin số `reactionTimeMs` do máy người chơi gửi lên. C
 
 ### 1.4 Bộ luồng riêng cho trận
 
-- Vòng chơi chạy trên executor riêng `roomGameExecutor` (core 16, max 128, queue 0), tên luồng `room-game-`. Không dùng chung bộ mặc định 8 luồng.
+- Vòng chơi chạy trên executor riêng `roomGameExecutor` (core 8, max 256, queue 0), tên luồng `room-game-`. Đính chính khi làm (DECISIONS 2026-10-12): bộ mặc định không phải 8 luồng mà là `SimpleAsyncTaskExecutor` không giới hạn; executor riêng để có trần rõ ràng.
 - Nếu máy chủ hết luồng thì phòng không bắt đầu: trả về lỗi "Máy chủ đang bận, thử lại sau ít phút" và phòng giữ ở LOBBY.
 
 ### 1.5 Bắt đầu phòng an toàn

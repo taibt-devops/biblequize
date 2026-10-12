@@ -33,8 +33,9 @@ export const challengeApi = {
   get: (id: string) => api.get<ChallengeView>(`/api/challenges/${id}`).then(r => r.data),
   cancel: (id: string) => api.post(`/api/challenges/${id}/cancel`).then(r => r.data),
   pending: () => api.get<PendingChallenge[]>('/api/challenges/pending').then(r => r.data),
-  accept: (id: string) =>
-    api.post<{ roomId: string; roomCode: string }>(`/api/challenges/${id}/accept`).then(r => r.data),
+  /** language: ngôn ngữ câu hỏi của người nhận lời — phòng thách đấu dùng ngôn ngữ này. */
+  accept: (id: string, language: string) =>
+    api.post<{ roomId: string; roomCode: string }>(`/api/challenges/${id}/accept`, { language }).then(r => r.data),
   decline: (id: string) => api.post(`/api/challenges/${id}/decline`).then(r => r.data),
 }
 

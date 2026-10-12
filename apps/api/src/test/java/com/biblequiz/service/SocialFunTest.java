@@ -35,6 +35,8 @@ class SocialFunTest {
     @BeforeEach
     void setUp() {
         challengeService = new ChallengeService(challengeRepository, userRepository, messagingTemplate);
+        // Chuyển trạng thái có điều kiện (còn PENDING) — xem ChallengeServiceTest cho các nhánh thua.
+        lenient().when(challengeRepository.transitionFromPending(anyString(), any())).thenReturn(1);
 
         userA = new User();
         userA.setId("user-a");
@@ -125,7 +127,6 @@ class SocialFunTest {
     void declineChallenge_updatesStatus() {
         Challenge challenge = new Challenge("c-1", userA, userB, LocalDateTime.now().plusMinutes(5));
         when(challengeRepository.findById("c-1")).thenReturn(Optional.of(challenge));
-        when(challengeRepository.save(any())).thenAnswer(i -> i.getArgument(0));
 
         challengeService.declineChallenge("c-1", "user-b");
 

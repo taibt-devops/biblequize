@@ -37,6 +37,24 @@ describe('ChallengeWaitingDialog (PCV-23)', () => {
     await waitFor(() => expect(onClose).toHaveBeenCalled())
   })
 
+  it('rời hộp chờ (chuyển trang) khi còn chờ ⇒ tự hủy lời thách', async () => {
+    mockGet.mockResolvedValue({ data: { status: 'PENDING' } })
+    mockPost.mockResolvedValue({ data: { status: 'CANCELLED' } })
+    const { unmount } = render(<MemoryRouter><ChallengeWaitingDialog challengeId="ch-1" name="Lan" secondsLeft={240} onClose={vi.fn()} /></MemoryRouter>)
+    await waitFor(() => expect(mockGet).toHaveBeenCalled())
+    unmount()
+    await waitFor(() => expect(mockPost).toHaveBeenCalledWith('/api/challenges/ch-1/cancel'))
+  })
+
+  it('đã vào sảnh (nhận lời) thì rời hộp chờ không hủy', async () => {
+    mockGet.mockResolvedValue({ data: { status: 'ACCEPTED', roomId: 'room-9' } })
+    const { unmount } = render(<MemoryRouter><ChallengeWaitingDialog challengeId="ch-1" name="Lan" secondsLeft={240} onClose={vi.fn()} /></MemoryRouter>)
+    await waitFor(() => expect(mockNavigate).toHaveBeenCalledWith('/room/room-9/lobby'))
+    unmount()
+    await new Promise(r => setTimeout(r, 50))
+    expect(mockPost).not.toHaveBeenCalled()
+  })
+
   it('bị từ chối: báo cho người thách', async () => {
     mockGet.mockResolvedValue({ data: { status: 'DECLINED' } })
     render(<MemoryRouter><ChallengeWaitingDialog challengeId="ch-1" name="Lan" secondsLeft={240} onClose={vi.fn()} /></MemoryRouter>)
@@ -53,7 +71,8 @@ describe('ChallengeInviteWatcher (PCV-23)', () => {
     render(<MemoryRouter><ChallengeInviteWatcher /></MemoryRouter>)
     expect((await screen.findByTestId('challenge-invite')).textContent).toMatch(/Minh/)
     fireEvent.click(screen.getByTestId('challenge-accept'))
-    await waitFor(() => expect(mockPost).toHaveBeenCalledWith('/api/challenges/ch-1/accept'))
+    // Phòng dùng ngôn ngữ câu hỏi của người nhận lời.
+    await waitFor(() => expect(mockPost).toHaveBeenCalledWith('/api/challenges/ch-1/accept', { language: 'vi' }))
     await waitFor(() => expect(mockNavigate).toHaveBeenCalledWith('/room/room-9/lobby'))
   })
 

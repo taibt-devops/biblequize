@@ -125,6 +125,35 @@ class RoomServiceRematchTest {
         assertEquals("p1", r.room.getHost().getId());
     }
 
+    /** Review: Đấu nhanh chọn sẵn câu ngẫu nhiên vào customQuestionIds — chơi lại phải ra câu mới. */
+    @Test
+    void quickMatchRematch_picksFreshQuestions_groupSetRematch_keepsTheSet() throws Exception {
+        old.setQuickMatch(true);
+        old.setQuestionSource(Room.QuestionSource.DATABASE);
+        old.setCustomQuestionIds(new java.util.ArrayList<>(List.of("q1", "q2", "q3")));
+        when(roomStateService.claimRematch(eq("old"), anyString())).thenReturn(null);
+
+        Room quick = roomService.rematch("old", host).room;
+        assertTrue(quick.getCustomQuestionIds() == null || quick.getCustomQuestionIds().isEmpty(),
+                "câu mới theo phạm vi sách, không lặp lại đúng các câu vừa chơi");
+
+        Room group = new Room();
+        group.setId("old2");
+        group.setRoomCode("OLD222");
+        group.setRoomName("Bộ câu nhóm");
+        group.setHost(host);
+        group.setStatus(Room.RoomStatus.ENDED);
+        group.setMode(Room.RoomMode.SPEED_RACE);
+        group.setQuestionSource(Room.QuestionSource.DATABASE);
+        group.setGroupQuizSetId("set-1");
+        group.setCustomQuestionIds(new java.util.ArrayList<>(List.of("g1", "g2")));
+        rooms.put("old2", group);
+        when(roomStateService.claimRematch(eq("old2"), anyString())).thenReturn(null);
+
+        Room again = roomService.rematch("old2", host).room;
+        assertEquals(List.of("g1", "g2"), again.getCustomQuestionIds(), "bộ câu của nhóm giữ nguyên");
+    }
+
     @Test
     void aiQuestionSource_becomesTheQuestionBank() throws Exception {
         old.setQuestionSource(Room.QuestionSource.AI_GENERATED);
