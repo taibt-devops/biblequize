@@ -298,7 +298,8 @@ class RoomWebSocketControllerTest {
         room.setIsPublic(false);
         room.setStatus(com.biblequiz.modules.room.entity.Room.RoomStatus.IN_PROGRESS);
 
-        when(roomService.getRoomDetails("room-1")).thenReturn(new RoomService.RoomDetailsDTO(room, List.of(roomPlayer)));
+        // PCV-2: không còn SCORE_UPDATE theo câu nên getRoomDetails có thể không được gọi.
+        lenient().when(roomService.getRoomDetails("room-1")).thenReturn(new RoomService.RoomDetailsDTO(room, List.of(roomPlayer)));
 
         Map<String, Object> payload = Map.of(
                 "questionIndex", 0,
@@ -311,8 +312,18 @@ class RoomWebSocketControllerTest {
         verify(roomAnswerRepository).save(any(RoomAnswer.class));
         // Should update player score
         verify(roomPlayerRepository).save(argThat(p -> p.getScore() == 133));
-        // Should broadcast ANSWER_SUBMITTED + SCORE_UPDATE
-        verify(messagingTemplate, atLeast(2)).convertAndSend(eq("/topic/room/room-1"), any(WebSocketMessage.Message.class));
+        // PCV-2: chỉ báo "đã trả lời" — không lộ phương án/đúng sai/điểm, không SCORE_UPDATE theo câu.
+        ArgumentCaptor<WebSocketMessage.Message> sent = ArgumentCaptor.forClass(WebSocketMessage.Message.class);
+        verify(messagingTemplate, times(1)).convertAndSend(eq("/topic/room/room-1"), sent.capture());
+        assertEquals(WebSocketMessage.MessageTypes.ANSWER_SUBMITTED, sent.getValue().getType());
+        @SuppressWarnings("unchecked")
+        Map<String, Object> data = (Map<String, Object>) sent.getValue().getData();
+        assertEquals("user-1", data.get("playerId"));
+        assertEquals(Boolean.TRUE, data.get("answered"));
+        assertFalse(data.containsKey("answerIndex"));
+        assertFalse(data.containsKey("isCorrect"));
+        assertFalse(data.containsKey("pointsEarned"));
+        assertFalse(data.containsKey("reactionTimeMs"));
     }
 
     @Test

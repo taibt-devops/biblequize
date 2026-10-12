@@ -56,8 +56,11 @@ public class RoomQuizService {
     @Autowired private RoomPlayerRepository roomPlayerRepository;
     @Autowired private RoomModeRegistry roomModeRegistry;
     @Autowired private HostControlService hostControlService;
+    @Autowired private RoundResultBuilder roundResultBuilder;
 
-    private static final int BETWEEN_QUESTION_DELAY_MS = 3000;
+    /** PCV-2: nghỉ sau khi công bố đủ lâu để đọc câu gốc (5 s; có giải thích thì 7 s — xem
+     *  {@link RoundResultBuilder#revealPauseMs}). Đấu vương dùng giá trị gốc này. */
+    private static final int BETWEEN_QUESTION_DELAY_MS = 5000;
     /** Poll cadence for the early-end watcher. 250ms = up to 0.25s slack
      *  before the round ends after the last answer arrives — feels
      *  instant to players without hammering the DB. */
@@ -205,11 +208,11 @@ public class RoomQuizService {
 
             round.setEndedAt(LocalDateTime.now());
             roomRoundRepository.save(round);
-            wsController.broadcastRoundEnd(roomId, q.getCorrectAnswer().get(0));
+            wsController.broadcastRoundEnd(roomId, roundResultBuilder.build(roomId, round.getId(), q));
 
             if (strategy.afterRound(ctx, round, i)) break;
 
-            if (i < questions.size() - 1) Thread.sleep(BETWEEN_QUESTION_DELAY_MS);
+            if (i < questions.size() - 1) Thread.sleep(RoundResultBuilder.revealPauseMs(q));
         }
 
         if (isRoomEnded(roomId)) {

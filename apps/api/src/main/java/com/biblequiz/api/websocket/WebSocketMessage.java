@@ -230,10 +230,48 @@ public class WebSocketMessage {
     public static class RoundEndData {
         public final int correctIndex;
         public final Object leaderboard;
+        /** PCV-2: giải thích + câu gốc — công bố cùng đáp án (không gửi lúc phát câu). */
+        public String explanation;
+        public Reference reference;
+        /** PCV-2: số người chọn từng phương án (index = phương án). */
+        public int[] answerCounts;
+        /** PCV-2: kết quả từng người — chỉ công bố khi vòng đã đóng. */
+        public java.util.List<PlayerResult> results;
 
         public RoundEndData(int correctIndex, Object leaderboard) {
             this.correctIndex = correctIndex;
             this.leaderboard = leaderboard;
+        }
+
+        public static class Reference {
+            public final String book;
+            public final Integer chapter;
+            public final Integer verseStart;
+            public final Integer verseEnd;
+
+            public Reference(String book, Integer chapter, Integer verseStart, Integer verseEnd) {
+                this.book = book;
+                this.chapter = chapter;
+                this.verseStart = verseStart;
+                this.verseEnd = verseEnd;
+            }
+        }
+
+        public static class PlayerResult {
+            public final String playerId;
+            public final boolean answered;
+            public final boolean isCorrect;
+            public final int pointsEarned;
+            /** Chuỗi đúng liên tiếp sau câu này (Đua tốc độ, đợt 2); 0 nếu mode không dùng. */
+            public final int streak;
+
+            public PlayerResult(String playerId, boolean answered, boolean isCorrect, int pointsEarned, int streak) {
+                this.playerId = playerId;
+                this.answered = answered;
+                this.isCorrect = isCorrect;
+                this.pointsEarned = pointsEarned;
+                this.streak = streak;
+            }
         }
     }
 

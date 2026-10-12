@@ -178,22 +178,15 @@ public class RoomWebSocketController {
                 return;
             }
 
-            if (result.scoreUpdate != null) {
-                broadcastScoreUpdate(roomId, user.getId(), result.scoreUpdate.newScore,
-                        result.scoreUpdate.correctAnswers, result.scoreUpdate.totalAnswered);
-            }
-
-            // Broadcast answer submitted với pointsEarned
-            // BUG FIX 2026-05-23: HashMap (not Map.of) — must tolerate nulls
-            // so ANSWER_SUBMITTED always broadcasts (see RoomAnswerProcessor).
+            // PCV-2 (chống lộ đáp án): chỉ báo "đã trả lời". Phương án, đúng/sai, điểm và
+            // thời gian của từng người chỉ được công bố ở ROUND_END / QUESTION_REVEALED khi
+            // vòng đã đóng; không phát SCORE_UPDATE theo từng câu (điểm tăng = lộ đúng/sai).
+            // HashMap (not Map.of) — tolerate a null display name (BUG FIX 2026-05-23).
             Map<String, Object> answerData = new java.util.HashMap<>();
             answerData.put("playerId", user.getId());
             answerData.put("username", result.displayName);
             answerData.put("questionIndex", questionIndex);
-            answerData.put("answerIndex", answerIndex);
-            answerData.put("reactionTimeMs", reactionTimeMs);
-            answerData.put("isCorrect", result.broadcastIsCorrect);
-            answerData.put("pointsEarned", result.broadcastPoints);
+            answerData.put("answered", Boolean.TRUE);
             WebSocketMessage.Message message = new WebSocketMessage.Message(
                     WebSocketMessage.MessageTypes.ANSWER_SUBMITTED, answerData);
             messagingTemplate.convertAndSend("/topic/room/" + roomId, message);
@@ -266,13 +259,25 @@ public class RoomWebSocketController {
         roomStateService.closeCurrentRound(roomId);
         try {
             List<RoomService.LeaderboardEntryDTO> leaderboard = roomService.getRoomLeaderboard(roomId);
-            WebSocketMessage.RoundEndData roundEndData = new WebSocketMessage.RoundEndData(correctIndex, leaderboard);
-            WebSocketMessage.Message message = new WebSocketMessage.Message(
-                    WebSocketMessage.MessageTypes.ROUND_END, roundEndData);
-            messagingTemplate.convertAndSend("/topic/room/" + roomId, message);
+            sendRoundEnd(roomId, new WebSocketMessage.RoundEndData(correctIndex, leaderboard));
         } catch (Exception e) {
             sendError(roomId, "ROUND_END_ERROR", "Lỗi khi kết thúc câu: " + e.getMessage());
         }
+    }
+
+    /** PCV-2: công bố đầy đủ (giải thích, câu gốc, số người chọn, kết quả từng người). */
+    public void broadcastRoundEnd(String roomId, WebSocketMessage.RoundEndData data) {
+        roomStateService.closeCurrentRound(roomId);
+        try {
+            sendRoundEnd(roomId, data);
+        } catch (Exception e) {
+            sendError(roomId, "ROUND_END_ERROR", "Lỗi khi kết thúc câu: " + e.getMessage());
+        }
+    }
+
+    private void sendRoundEnd(String roomId, WebSocketMessage.RoundEndData data) {
+        messagingTemplate.convertAndSend("/topic/room/" + roomId,
+                new WebSocketMessage.Message(WebSocketMessage.MessageTypes.ROUND_END, data));
     }
 
     /**
