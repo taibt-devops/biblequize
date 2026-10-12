@@ -3613,5 +3613,21 @@
       "title": "Want to keep your streak?",
       "body": "Sign in so your next games earn XP, keep your daily streak and put your name on the ranking."
     }
+  },
+  "challenge": {
+    "button": "Challenge",
+    "buttonAria": "Challenge {{name}} to 10 questions",
+    "waitingTitle": "Waiting for {{name}} to accept",
+    "waitingBody": "Once accepted, you both enter a 10-question Speed Race, 20 seconds each.",
+    "cancel": "Cancel challenge",
+    "declined": "{{name}} will play another time.",
+    "expired": "{{name}} did not accept within 5 minutes.",
+    "close": "Close",
+    "sendFailed": "Could not send the challenge. Try again later.",
+    "inviteTitle": "{{name}} challenges you to 10 questions",
+    "inviteBody": "Speed Race, 20 seconds each · {{time}} left",
+    "accept": "Accept",
+    "later": "Not now",
+    "acceptFailed": "Could not accept the challenge. Try again later."
   }
 }

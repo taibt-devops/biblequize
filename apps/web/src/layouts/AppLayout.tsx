@@ -8,6 +8,7 @@ import NotificationBell from './components/NotificationBell'
 import UserDropdown from './components/UserDropdown'
 import MobileBottomTabs from './components/MobileBottomTabs'
 import HeaderStats from './components/HeaderStats'
+import ChallengeInviteWatcher from '../components/challenge/ChallengeInviteWatcher'
 
 // Lu Khach mockup (LKF-1): Home, Journey, Leaderboard, Groups, Profile.
 // Multiplayer rooms are entered from the Home signpost.
@@ -122,6 +123,8 @@ export default function AppLayout() {
       </main>
 
       <MobileBottomTabs />
+      {/* PCV-23: lời mời thách đấu (chỉ người đã đăng nhập). */}
+      {isAuthenticated && <ChallengeInviteWatcher />}
     </div>
   )
 }

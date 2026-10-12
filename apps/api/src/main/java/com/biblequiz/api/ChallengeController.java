@@ -37,7 +37,8 @@ public class ChallengeController {
             return ResponseEntity.ok(Map.of(
                     "challengeId", challenge.getId(),
                     "status", challenge.getStatus().name(),
-                    "expiresAt", challenge.getExpiresAt().toString()
+                    "expiresAt", challenge.getExpiresAt().toString(),
+                    "secondsLeft", challenge.secondsLeft()
             ));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
@@ -66,6 +67,29 @@ public class ChallengeController {
         }
     }
 
+    /** PCV-23: trạng thái lời thách (người thách hỏi mỗi 3 giây trong lúc chờ). */
+    @GetMapping("/{id}")
+    public ResponseEntity<?> get(@PathVariable String id, Authentication auth) {
+        User me = resolveUser(auth);
+        try {
+            return ResponseEntity.ok(challengeService.getChallenge(id, me.getId()));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(404).body(Map.of("error", e.getMessage()));
+        }
+    }
+
+    /** PCV-23: người thách hủy khi chưa được nhận. */
+    @PostMapping("/{id}/cancel")
+    public ResponseEntity<?> cancel(@PathVariable String id, Authentication auth) {
+        User me = resolveUser(auth);
+        try {
+            challengeService.cancelChallenge(id, me.getId());
+            return ResponseEntity.ok(Map.of("status", "CANCELLED"));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        }
+    }
+
     @GetMapping("/pending")
     public ResponseEntity<?> getPending(Authentication auth) {
         User me = resolveUser(auth);
@@ -74,7 +98,8 @@ public class ChallengeController {
                 "challengeId", c.getId(),
                 "challengerName", c.getChallenger().getName(),
                 "challengerId", c.getChallenger().getId(),
-                "expiresAt", c.getExpiresAt().toString()
+                "expiresAt", c.getExpiresAt().toString(),
+                "secondsLeft", c.secondsLeft()
         )).toList();
         return ResponseEntity.ok(result);
     }

@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
 @Table(name = "challenges")
 public class Challenge {
 
-    public enum Status { PENDING, ACCEPTED, DECLINED, EXPIRED }
+    /** PCV-23: CANCELLED = người thách hủy khi đang chờ (cột status là VARCHAR nên không cần migration). */
+    public enum Status { PENDING, ACCEPTED, DECLINED, EXPIRED, CANCELLED }
 
     @Id
     @Column(length = 36)
@@ -67,6 +68,11 @@ public class Challenge {
     public void setStatus(Status status) { this.status = status; }
     public String getRoomId() { return roomId; }
     public void setRoomId(String roomId) { this.roomId = roomId; }
+    /** PCV-23: số giây còn lại theo đồng hồ máy chủ — expiresAt không kèm múi giờ nên máy khách đếm theo số này. */
+    public long secondsLeft() {
+        return Math.max(0L, java.time.Duration.between(LocalDateTime.now(), expiresAt).getSeconds());
+    }
+
     public LocalDateTime getExpiresAt() { return expiresAt; }
     public void setExpiresAt(LocalDateTime expiresAt) { this.expiresAt = expiresAt; }
     public LocalDateTime getCreatedAt() { return createdAt; }

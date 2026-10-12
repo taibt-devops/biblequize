@@ -8,6 +8,8 @@ import { TIERS, getTierByPoints } from '../data/tiers'
 import PageMeta from '../components/PageMeta'
 import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { PlayerCrest, TierRibbon } from '../components/lk/PlayerCrest'
+import ChallengeWaitingDialog from '../components/challenge/ChallengeWaitingDialog'
+import { challengeApi, challengeErrorMessage } from '../api/challenges'
 
 type Tab = 'weekly' | 'season' | 'all_time'
 
@@ -113,6 +115,27 @@ export default function Leaderboard() {
   // Identify current user via my-rank API response (authStore.User has no `id` field)
   const myUserId: string | undefined = myRank?.userId
   const isCurrentUserInList = myUserId != null && list.some((e: any) => e.userId === myUserId)
+
+  // PCV-23: thách một người khác đấu 10 câu (cần biết mình là ai để không tự thách).
+  const [challenge, setChallenge] = useState<{ id: string; name: string; secondsLeft: number } | null>(null)
+  const [challengeError, setChallengeError] = useState<string | null>(null)
+  const [sendingTo, setSendingTo] = useState<string | null>(null)
+  const canChallenge = (userId?: string) => isAuthenticated && myUserId != null && !!userId && userId !== myUserId
+  const startChallenge = async (userId: string, name: string) => {
+    if (sendingTo) return
+    setSendingTo(userId)
+    setChallengeError(null)
+    try {
+      const c = await challengeApi.create(userId)
+      setChallenge({ id: c.challengeId, name, secondsLeft: c.secondsLeft ?? 300 })
+    } catch (e) {
+      setChallengeError(challengeErrorMessage(e, t('challenge.sendFailed')))
+    } finally {
+      setSendingTo(null)
+    }
+  }
+  const challengeProps = (userId: string | undefined, name: string) =>
+    canChallenge(userId) ? { onChallenge: () => startChallenge(userId as string, name), challengeKey: userId } : {}
   const showMyRankSticky = myRank != null && !isCurrentUserInList
 
   // LBF-4 (2026-06-18): around-me window — the 5 players above + you + 5 below,
@@ -201,6 +224,10 @@ export default function Leaderboard() {
                 <div className="mb-2 mt-1 max-w-full overflow-hidden flex justify-center">
                   <TierRibbon tierId={tier.id} />
                 </div>
+                {canChallenge(player.userId) && (
+                  <ChallengeButton compact name={player.name} testId={`lb-challenge-${player.userId}`}
+                                   onClick={() => startChallenge(player.userId, player.name)} />
+                )}
 
                 {/* wooden stage, height by rank */}
                 <div
@@ -220,6 +247,17 @@ export default function Leaderboard() {
       ) : null}
       {!isLoading && !lowData && top3.length >= 3 && (
         <div aria-hidden className="-mt-12 mb-8 h-3 max-w-3xl mx-auto rounded-full border-[3px] border-bq-ink bg-[#8A5A2B]" />
+      )}
+
+      {challengeError && (
+        <p data-testid="lb-challenge-error" role="alert"
+           className="max-w-3xl mx-auto mb-4 px-4 py-2.5 rounded-xl border-2 border-bq-ink bg-bq-cream text-[14px] font-bold text-bq-ink">
+          {challengeError}
+        </p>
+      )}
+      {challenge && (
+        <ChallengeWaitingDialog challengeId={challenge.id} name={challenge.name} secondsLeft={challenge.secondsLeft}
+                                onClose={() => setChallenge(null)} />
       )}
 
       {/* the rest of the board (or low-data seed-state — LBF-11) */}
@@ -252,6 +290,7 @@ export default function Leaderboard() {
                   points={entry.points}
                   avatarUrl={entry.avatarUrl}
                   isMe={isMe}
+                  {...challengeProps(entry.userId, entry.name)}
                 />
               )
             })}
@@ -275,6 +314,7 @@ export default function Leaderboard() {
                         // use authStore.user.avatar (kept in sync on edit).
                         avatarUrl={me ? (r.avatarUrl ?? user?.avatar) : r.avatarUrl}
                         isMe={me}
+                        {...challengeProps(r.userId, r.name)}
                       />
                     )
                   })}
@@ -358,9 +398,32 @@ interface LeaderboardListRowProps {
   avatarUrl?: string
   isMe?: boolean
   testId?: string
+  /** PCV-23: thách người này đấu 10 câu (không có ở dòng của mình / khi chưa đăng nhập). */
+  onChallenge?: () => void
+  challengeKey?: string
 }
 
-function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId }: LeaderboardListRowProps) {
+/** PCV-23: nút "Thách đấu" — chỉ biểu tượng trên điện thoại (hoặc ở bục vinh danh), có chữ trên màn rộng. */
+function ChallengeButton({ name, onClick, testId, compact }: { name: string; onClick: () => void; testId: string; compact?: boolean }) {
+  const { t } = useTranslation()
+  return (
+    <button
+      type="button"
+      data-testid={testId}
+      onClick={onClick}
+      aria-label={t('challenge.buttonAria', { name })}
+      title={t('challenge.buttonAria', { name })}
+      className={`shrink-0 inline-flex items-center justify-center gap-1 rounded-full border-2 border-bq-ink bg-bq-cream text-bq-ink font-extrabold hover:bg-bq-amber transition-colors ${
+        compact ? 'w-8 h-8 mb-2' : 'h-9 min-w-9 px-2 md:px-3 text-[13px]'
+      }`}
+    >
+      <span className="material-symbols-outlined text-[18px]" aria-hidden>swords</span>
+      {!compact && <span className="hidden md:inline">{t('challenge.button')}</span>}
+    </button>
+  )
+}
+
+function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId, onChallenge, challengeKey }: LeaderboardListRowProps) {
   const { t } = useTranslation()
   const tier = getTierByPoints(points)
 
@@ -382,6 +445,9 @@ function LeaderboardListRow({ rank, name, points, avatarUrl, isMe, testId }: Lea
         </div>
         <TierRibbon tierId={tier.id} className="mt-1" />
       </div>
+      {onChallenge && challengeKey && (
+        <ChallengeButton name={name} onClick={onChallenge} testId={`lb-challenge-${challengeKey}`} />
+      )}
       <div className="text-right">
         <p className="m-0 font-display text-bq-ink font-extrabold text-[17px] md:text-[19px] leading-none tabular-nums">{points.toLocaleString()}</p>
         <p className="m-0 mt-0.5 text-[12px] font-bold text-bq-ink2">{t('leaderboard.points')}</p>

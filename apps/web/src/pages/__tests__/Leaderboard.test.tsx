@@ -4,7 +4,8 @@ import { MemoryRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const mockApiGet = vi.fn()
-vi.mock('../../api/client', () => ({ api: { get: (...a: any[]) => mockApiGet(...a) } }))
+const mockApiPost = vi.fn()
+vi.mock('../../api/client', () => ({ api: { get: (...a: any[]) => mockApiGet(...a), post: (...a: any[]) => mockApiPost(...a) } }))
 
 // authStore.User has NO `id` field in production (only name/email/avatar/role/currentStreak).
 // Leaderboard now identifies current user via my-rank API response (userId field).
@@ -279,6 +280,21 @@ describe('Leaderboard', () => {
     expect(screen.getByTestId('leaderboard-my-rank-sticky')).toBeInTheDocument()
   })
 
+  it('PCV-23: nút Thách đấu ở người khác (cả bục vinh danh), không ở dòng của mình', async () => {
+    renderLeaderboard()
+    expect(await screen.findByTestId('lb-challenge-u5')).toBeInTheDocument()
+    expect(screen.getByTestId('lb-challenge-u2')).toBeInTheDocument()
+    expect(screen.queryByTestId('lb-challenge-u1')).toBeNull()
+  })
+
+  it('PCV-23: bấm Thách đấu ⇒ gửi lời thách và hiện hộp chờ người kia nhận lời', async () => {
+    mockApiPost.mockResolvedValue({ data: { challengeId: 'ch-1', status: 'PENDING', secondsLeft: 300 } })
+    renderLeaderboard()
+    fireEvent.click(await screen.findByTestId('lb-challenge-u5'))
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/challenges', { challengedUserId: 'u5' }))
+    expect((await screen.findByTestId('challenge-waiting')).textContent).toMatch(/Player 4/)
+  })
+
   it('sticky my-rank row renders current user avatar from authStore (sync after edit)', async () => {
     authState.user = { name: 'Test User', email: 'a@b.com', avatar: 'https://example.com/me.png' } as any
     // 11 players, none of them the current user (u1) → board renders (≥10) and
@@ -332,6 +348,12 @@ describe('Leaderboard — guest (logged-out)', () => {
     await waitFor(() => { expect(screen.getByText('Player 1')).toBeInTheDocument() })
     const perUser = mockApiGet.mock.calls.filter((c) => /my-rank|tier-progress|\/seasons/.test(String(c[0])))
     expect(perUser).toHaveLength(0)
+  })
+
+  it('PCV-23: khách chưa đăng nhập không thấy nút Thách đấu', async () => {
+    renderLeaderboard()
+    await screen.findByText('Player 4')
+    expect(screen.queryByTestId('lb-challenge-u5')).toBeNull()
   })
 
   it('shows a login CTA and no "current tier" highlight in the ladder', async () => {

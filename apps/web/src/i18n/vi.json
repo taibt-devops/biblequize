@@ -3613,5 +3613,21 @@
       "title": "Muốn giữ chuỗi ngày?",
       "body": "Đăng nhập để những lần chơi sau được tính XP, giữ chuỗi ngày và có tên trên bảng xếp hạng."
     }
+  },
+  "challenge": {
+    "button": "Thách đấu",
+    "buttonAria": "Thách {{name}} đấu 10 câu",
+    "waitingTitle": "Đang chờ {{name}} nhận lời",
+    "waitingBody": "Nhận lời là cả hai vào phòng Đua tốc độ 10 câu, 20 giây mỗi câu.",
+    "cancel": "Hủy lời thách",
+    "declined": "{{name}} hẹn lần sau.",
+    "expired": "Hết 5 phút mà {{name}} chưa nhận lời.",
+    "close": "Đóng",
+    "sendFailed": "Chưa gửi được lời thách. Thử lại sau.",
+    "inviteTitle": "{{name}} thách bạn đấu 10 câu",
+    "inviteBody": "Đua tốc độ, 20 giây mỗi câu · còn {{time}}",
+    "accept": "Nhận",
+    "later": "Để sau",
+    "acceptFailed": "Chưa nhận được lời thách. Thử lại sau."
   }
 }

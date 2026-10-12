@@ -26,10 +26,10 @@
 - PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [~] IN PROGRESS (docs + smoke xong, chờ deploy)
 
 ### Tasks — Đợt 3 (tính năng mới)
-- PCV-20 Người máy (dữ liệu + thêm/bớt trong sảnh) — Status: [ ] TODO
-- PCV-21 Người máy trả lời trong trận + loại trừ khỏi chủ phòng/thống kê — Status: [ ] TODO
-- PCV-22 Hội ý cho Đội đấu đội (phiếu đội + chat đội) — Status: [ ] TODO
-- PCV-23 Thách đấu bạn bè hoàn chỉnh — Status: [ ] TODO
+- PCV-20 Người máy (dữ liệu + thêm/bớt trong sảnh) — Status: [x] DONE
+- PCV-21 Người máy trả lời trong trận + loại trừ khỏi chủ phòng/thống kê — Status: [x] DONE
+- PCV-22 Hội ý cho Đội đấu đội (phiếu đội + chat đội) — Status: [x] DONE
+- PCV-23 Thách đấu bạn bè hoàn chỉnh — Status: [x] DONE
 - PCV-24 Ôn phần đọc hôm nay (phạm vi theo đoạn + liên kết từ doc.forbible.org) — Status: [ ] TODO
 - PCV-25 Spec + DECISIONS + deploy đợt 3 + review toàn nhánh — Status: [ ] TODO
 
