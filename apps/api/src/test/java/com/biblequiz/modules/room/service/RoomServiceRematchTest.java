@@ -156,13 +156,12 @@ class RoomServiceRematchTest {
 
     @Test
     void aiQuestionSource_becomesTheQuestionBank() throws Exception {
+        // Phòng cũ từ thời còn AI (dữ liệu cũ vẫn mang nguồn AI_GENERATED).
         old.setQuestionSource(Room.QuestionSource.AI_GENERATED);
-        old.setAiQuestionsPayload("[{...}]");
         when(roomStateService.claimRematch(eq("old"), anyString())).thenReturn(null);
 
         Room room = roomService.rematch("old", host).room;
 
         assertEquals(Room.QuestionSource.DATABASE, room.getQuestionSource());
-        assertNull(room.getAiQuestionsPayload());
     }
 }

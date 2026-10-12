@@ -244,6 +244,15 @@ describe('CreateRoom', () => {
   })
 })
 
+describe('CreateRoom — không còn câu do AI sinh (AIR-1)', () => {
+  it('nguồn câu "Tự tạo câu hỏi" lấy từ Bộ câu của tôi, không nhắc AI', () => {
+    renderCreateRoom()
+    const sources = screen.getByTestId('question-source-select')
+    expect(sources.textContent).not.toMatch(/AI/)
+    expect(sources.textContent).toMatch(/Bộ câu của tôi/)
+  })
+})
+
 describe('CreateRoom — Hội ý (PCV-22)', () => {
   it('chọn Đội đấu đội thì có lựa chọn Hội ý, bật lên thì gửi teamConsensus', async () => {
     mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r9', roomCode: 'TEAM99' } } })

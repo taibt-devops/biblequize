@@ -147,9 +147,8 @@ public class RoomController {
      * (mode / bookScope / questionCount / timePerQuestion / source).
      * Soft-host: creator plays like a regular player (hostPlaysGame=true)
      * but Quản trò controls reject (QP-5). PCV-8: chỉ dùng kho câu hỏi đã biên tập,
-     * không còn giới hạn theo ngày.
-     *
-     * Error codes (422): AI_SOURCE_DISABLED
+     * không còn giới hạn theo ngày. AIR-1 (13/10/2026): không còn sinh câu bằng AI — mọi nguồn đều là kho câu
+     * (app cũ còn gửi {@code source=AI_GENERATED} vẫn vào trận bình thường).
      */
     @PostMapping("/quick-match")
     public ResponseEntity<?> createQuickMatch(@RequestBody Map<String, Object> body, Principal principal) {
@@ -162,7 +161,6 @@ public class RoomController {
             int questionCount = body.get("questionCount") instanceof Number n ? n.intValue() : 10;
             int timePerQuestion = body.get("timePerQuestion") instanceof Number n ? n.intValue() : 30;
             int maxPlayers = body.get("maxPlayers") instanceof Number n ? n.intValue() : 10;
-            String sourceStr = body.get("source") instanceof String s ? s : "DATABASE";
 
             if (questionCount < 5 || questionCount > 20) questionCount = 10;
             if (timePerQuestion < 10 || timePerQuestion > 60) timePerQuestion = 30;
@@ -172,25 +170,11 @@ public class RoomController {
             try { mode = Room.RoomMode.valueOf(modeStr.toUpperCase()); }
             catch (IllegalArgumentException e) { mode = Room.RoomMode.SPEED_RACE; }
 
-            Room.QuestionSource source;
-            try { source = Room.QuestionSource.valueOf(sourceStr.toUpperCase()); }
-            catch (IllegalArgumentException e) { source = Room.QuestionSource.DATABASE; }
-
-            // PCV-8 (Phòng chơi v2): tắt nguồn câu AI cho trận trực tiếp — câu AI chưa được duyệt
-            // (đi ngược bộ câu RVV11 đã biên tập) và luồng vào trận chưa từng dùng chúng (mỗi lần
-            // chọn AI là tốn tiền gọi AI vô ích). Giới hạn 3 trận/ngày cũng chỉ dành cho AI nên bỏ.
-            if (source == Room.QuestionSource.AI_GENERATED) {
-                return ResponseEntity.unprocessableEntity().body(Map.of(
-                        "success", false,
-                        "error", "AI_SOURCE_DISABLED",
-                        "message", "Câu hỏi do AI tạo đang tạm tắt cho Đấu nhanh — trận dùng kho câu hỏi đã biên tập"));
-            }
-
             String language = body.get("language") instanceof String s && !s.isBlank() ? s : "vi";
             List<String> preselectedIds = quickMatchQuestionSource.pickDatabaseIds(bookScope, questionCount, language);
 
             Room room = roomService.createQuickMatchRoom(user, mode, bookScope, questionCount, timePerQuestion,
-                    maxPlayers, Room.QuestionSource.DATABASE, preselectedIds, null);
+                    maxPlayers, Room.QuestionSource.DATABASE, preselectedIds);
 
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
             return ResponseEntity.ok(Map.of(

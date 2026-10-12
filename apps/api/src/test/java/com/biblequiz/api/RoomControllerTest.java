@@ -343,14 +343,19 @@ class RoomControllerTest extends BaseControllerTest {
     @Test
     @Order(7)
     @WithMockUser(username = "test@example.com")
-    void quickMatch_aiSource_isDisabled() throws Exception {
-        // PCV-8: câu AI chưa duyệt + luồng vào trận chưa từng dùng chúng ⇒ tắt hẳn.
+    void quickMatch_oldClientAskingForAi_getsTheEditedQuestionBank() throws Exception {
+        // AIR-1 (13/10): bỏ hẳn sinh câu bằng AI — app cũ còn gửi nguồn AI thì vẫn vào trận bằng kho câu.
+        when(quickMatchQuestionSource.pickDatabaseIds(any(), anyInt(), any())).thenReturn(java.util.List.of("q1"));
+        when(roomService.createQuickMatchRoom(any(), any(), any(), anyInt(), anyInt(), anyInt(), any(), any()))
+                .thenReturn(testRoom);
+        when(roomService.getRoomDetails(any())).thenReturn(testRoomDetails);
+
         mockMvc.perform(post("/api/rooms/quick-match")
                         .contentType(org.springframework.http.MediaType.APPLICATION_JSON)
                         .content("{\"mode\":\"SPEED_RACE\",\"source\":\"AI_GENERATED\"}"))
-                .andExpect(status().isUnprocessableEntity())
-                .andExpect(jsonPath("$.error").value("AI_SOURCE_DISABLED"));
-        verify(quickMatchQuestionSource, never()).generateAiPayload(any(), anyInt(), anyInt(), anyInt(), anyInt(), anyInt(), any());
+                .andExpect(status().isOk());
+        verify(roomService).createQuickMatchRoom(any(), any(), any(), anyInt(), anyInt(), anyInt(),
+                eq(com.biblequiz.modules.room.entity.Room.QuestionSource.DATABASE), eq(java.util.List.of("q1")));
     }
 
     @Test
@@ -360,7 +365,7 @@ class RoomControllerTest extends BaseControllerTest {
         // PCV-8: giới hạn 3 trận/ngày chỉ dành cho nguồn AI (tốn tiền); kho câu hỏi không giới hạn.
         when(dailyQuickMatchCounter.hasReachedCap("user-1")).thenReturn(true);
         when(quickMatchQuestionSource.pickDatabaseIds(any(), anyInt(), any())).thenReturn(java.util.List.of("q1"));
-        when(roomService.createQuickMatchRoom(any(), any(), any(), anyInt(), anyInt(), anyInt(), any(), any(), any()))
+        when(roomService.createQuickMatchRoom(any(), any(), any(), anyInt(), anyInt(), anyInt(), any(), any()))
                 .thenReturn(testRoom);
         when(roomService.getRoomDetails(any())).thenReturn(testRoomDetails);
 

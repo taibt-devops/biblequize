@@ -10,14 +10,9 @@ import { useQuery } from '@tanstack/react-query'
 import { api } from '../../api/client'
 import QuickMatchConfigModal from './QuickMatchConfigModal'
 
-interface Props {
-  /** Current user tier — used to gate AI source in the config modal. */
-  userTier?: number
-}
-
 interface MultiplayerStats { quickMatchRemainingToday?: number }
 
-export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
+export default function QuickMatchEntryCard() {
   const { t } = useTranslation()
   const [modalOpen, setModalOpen] = useState(false)
   const { data } = useQuery<MultiplayerStats>({
@@ -75,7 +70,6 @@ export default function QuickMatchEntryCard({ userTier = 1 }: Props) {
       <QuickMatchConfigModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
-        userTier={userTier}
       />
     </>
   )

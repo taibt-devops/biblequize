@@ -1,8 +1,8 @@
 // QP-9 — Distinct card variant for Đấu Nhanh rooms in the active room
 // grid. Indigo accent, "Đấu Nhanh" pill badge, "Phòng #{roomCode}" title,
 // kicker shows actual mode + scope (config is creator-chosen per pivot,
-// not Speed-Race-only). Source indicator: cpu for DATABASE, auto_awesome
-// for AI_GENERATED (room.questionSource = 'AI_GENERATED' from QP-2).
+// not Speed-Race-only). Source indicator: server-run question bank (AIR-1:
+// không còn câu do AI sinh).
 
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -22,7 +22,6 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
   const [joinError, setJoinError] = useState<string | null>(null)
   const mode = MODE_META[room.mode as RoomModeId] ?? MODE_META.SPEED_RACE
   const isFull = room.currentPlayers >= room.maxPlayers
-  const isAi = (room.bookScope === '' && false) || /AI/i.test((room as { questionSource?: string }).questionSource ?? '')
 
   const handleJoin = async (e?: React.MouseEvent) => {
     e?.stopPropagation()
@@ -77,11 +76,11 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
       <div className="flex items-center gap-2 text-[11px] text-bq-ink2">
         <span
           className="material-symbols-outlined"
-          style={{ fontSize: 14, color: INDIGO_LIGHT, fontVariationSettings: isAi ? "'FILL' 1" : undefined }}
+          style={{ fontSize: 14, color: INDIGO_LIGHT, fontVariationSettings: undefined }}
         >
-          {isAi ? 'auto_awesome' : 'memory'}
+          memory
         </span>
-        <span>{isAi ? t('multiplayer.quickMatch.aiSource') : t('multiplayer.quickMatch.serverSource')}</span>
+        <span>{t('multiplayer.quickMatch.serverSource')}</span>
         <span className="w-1 h-1 rounded-full bg-bq-hair" />
         <span>{formatBookScope(t, room.bookScope)}</span>
       </div>

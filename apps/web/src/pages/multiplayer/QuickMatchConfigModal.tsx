@@ -25,8 +25,6 @@ const INDIGO = '#2F6FB0'
 interface Props {
   open: boolean
   onClose: () => void
-  /** Không còn dùng (PCV-8 bỏ nguồn AI) — giữ để không đổi chỗ gọi. */
-  userTier?: number
 }
 
 export default function QuickMatchConfigModal({ open, onClose }: Props) {
@@ -182,8 +180,7 @@ export default function QuickMatchConfigModal({ open, onClose }: Props) {
               value={maxPlayers} onChange={setMaxPlayers} />
           </Section>
 
-          {/* PCV-8: không còn chọn nguồn — Đấu nhanh luôn dùng kho câu hỏi đã biên tập
-              (câu AI chưa duyệt đã tắt; máy chủ trả AI_SOURCE_DISABLED nếu vẫn gửi). */}
+          {/* Đấu nhanh luôn dùng kho câu hỏi đã biên tập (AIR-1: không còn câu do AI sinh). */}
 
           {error && (
             <div

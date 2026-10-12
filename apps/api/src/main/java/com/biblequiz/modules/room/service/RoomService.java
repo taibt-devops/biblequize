@@ -145,14 +145,8 @@ public class RoomService {
      * creator's chosen config. Host plays like everyone (no Quản trò),
      * any player can /start when ≥2 ready (QP-5).
      *
-     * <p>Source-specific behaviour:
-     * <ul>
-     *   <li>{@code DATABASE}: pre-picked question IDs are stored in
-     *       {@code Room.customQuestionIds} JSON (anti-spoiler).
-     *   <li>{@code AI_GENERATED}: AI-generated payload stored in
-     *       {@code Room.aiQuestionsPayload} JSON (one-shot, never saved
-     *       to {@code questions} table).
-     * </ul>
+     * <p>Pre-picked question IDs are stored in {@code Room.customQuestionIds} JSON (anti-spoiler).
+     * AIR-1 (13/10/2026): không còn nguồn câu do AI sinh.
      */
     /** PCV-18: các cài đặt đổi được ở sảnh chờ; null = giữ nguyên. */
     public record SettingsUpdate(Room.RoomMode mode, Integer questionCount, Integer timePerQuestion,
@@ -327,7 +321,7 @@ public class RoomService {
     public Room createQuickMatchRoom(User host, Room.RoomMode mode, String bookScope,
                                       Integer questionCount, Integer timePerQuestion, Integer maxPlayers,
                                       Room.QuestionSource source,
-                                      List<String> preselectedIds, String aiPayloadJson) {
+                                      List<String> preselectedIds) {
         String roomId = UUID.randomUUID().toString();
         String roomCode = generateRoomCode();
         while (roomRepository.findByRoomCode(roomCode).isPresent()) {
@@ -355,9 +349,6 @@ public class RoomService {
         room.setQuickMatch(true);
         if (preselectedIds != null && !preselectedIds.isEmpty()) {
             room.setCustomQuestionIds(preselectedIds);
-        }
-        if (aiPayloadJson != null && !aiPayloadJson.isBlank()) {
-            room.setAiQuestionsPayload(aiPayloadJson);
         }
 
         roomRepository.save(room);

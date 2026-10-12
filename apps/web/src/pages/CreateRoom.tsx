@@ -299,7 +299,7 @@ export default function CreateRoom() {
               <div data-testid="question-source-select" className="grid grid-cols-2 gap-2 mb-3.5">
                 {([
                   { value: 'DATABASE' as const, icon: 'library_books', title: 'Ngân hàng hệ thống', sub: 'Toàn bộ Kinh Thánh' },
-                  { value: 'CUSTOM'   as const, icon: 'edit_note',     title: 'Tự tạo câu hỏi',     sub: 'AI hoặc thủ công trong phòng chờ' },
+                  { value: 'CUSTOM'   as const, icon: 'edit_note',     title: 'Tự tạo câu hỏi',     sub: 'Từ Bộ câu của tôi' },
                 ]).map(src => {
                   const active = formData.questionSource === src.value
                   return (

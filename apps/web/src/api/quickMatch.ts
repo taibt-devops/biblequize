@@ -7,7 +7,8 @@
 import { api } from './client'
 
 export type QuickMatchMode = 'SPEED_RACE' | 'BATTLE_ROYALE' | 'TEAM_VS_TEAM' | 'SUDDEN_DEATH'
-export type QuickMatchSource = 'DATABASE' | 'AI_GENERATED'
+/** AIR-1 (13/10/2026): chỉ còn kho câu đã biên tập — không còn câu do AI sinh. */
+export type QuickMatchSource = 'DATABASE'
 
 export interface QuickMatchConfig {
   mode: QuickMatchMode
@@ -16,11 +17,6 @@ export interface QuickMatchConfig {
   timePerQuestion: number   // 10–60
   maxPlayers?: number       // 2–100 (default 10); host cap for the lobby
   source: QuickMatchSource
-  // AI source optional scope fields — only used when source = AI_GENERATED
-  chapterFrom?: number
-  chapterTo?: number
-  verseFrom?: number
-  verseTo?: number
   language?: 'vi' | 'en'
 }
 
@@ -34,7 +30,7 @@ export interface QuickMatchResponse {
 
 export interface QuickMatchError {
   success: false
-  error: 'DAILY_CAP_REACHED' | 'AI_TIER_LOCKED' | 'AI_GENERATION_INSUFFICIENT' | 'ALREADY_IN_ANOTHER_ROOM' | string
+  error: 'ALREADY_IN_ANOTHER_ROOM' | string
   message: string
   remaining?: number
   currentTier?: number
@@ -51,12 +47,6 @@ export function describeQuickMatchError(error: unknown): { code: string; message
   const data = (error as { response?: { data?: QuickMatchError } })?.response?.data
   const code = data?.error ?? 'UNKNOWN'
   switch (code) {
-    case 'DAILY_CAP_REACHED':
-      return { code, message: data?.message ?? 'Đã hết lượt Đấu Nhanh hôm nay. Thử lại sau 0h UTC.' }
-    case 'AI_TIER_LOCKED':
-      return { code, message: data?.message ?? 'Mở khóa AI sinh câu hỏi từ Tier 4 (Hiền Triết).' }
-    case 'AI_GENERATION_INSUFFICIENT':
-      return { code, message: data?.message ?? 'AI chưa sinh đủ câu hỏi. Vui lòng thử lại hoặc dùng nguồn Hệ thống.' }
     case 'ALREADY_IN_ANOTHER_ROOM':
       return { code, message: 'Bạn đang trong phòng khác. Hãy rời phòng cũ trước.' }
     default:

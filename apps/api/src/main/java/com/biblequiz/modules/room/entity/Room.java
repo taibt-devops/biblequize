@@ -100,13 +100,6 @@ public class Room {
     @Column(name = "passage_scope", columnDefinition = "TEXT")
     private String passageScope;
 
-    // QP-1 (V57): ephemeral storage for AI-generated questions per Bùi pivot
-    // 2026-05-15 — AI questions are one-shot, NOT persisted to `questions`
-    // table. Game loads from this JSON when starting; R5 room cleanup purges
-    // it when room ENDED. NULL for DB-source rooms.
-    @Column(name = "ai_questions_payload", columnDefinition = "JSON")
-    private String aiQuestionsPayload;
-
     @Column(name = "started_at")
     private LocalDateTime startedAt;
 
@@ -147,7 +140,7 @@ public class Room {
     public enum QuestionSource {
         DATABASE,        // Dùng ngân hàng câu hỏi hệ thống
         CUSTOM,          // Host tự tạo (Quản trò flow — saved Question rows hoặc QuestionSet)
-        AI_GENERATED     // QP-2 Đấu Nhanh: AI sinh one-shot, lưu Room.aiQuestionsPayload, KHÔNG save table
+        AI_GENERATED     // Cũ (QP-2, câu AI một lần). Bỏ sinh câu bằng AI từ 13/10/2026 (AIR-1): không tạo mới, giữ để đọc phòng cũ
     }
     
     // Constructors
@@ -251,6 +244,4 @@ public LocalDateTime getCreatedAt() { return createdAt; }
     public String getPassageScope() { return passageScope; }
     public void setPassageScope(String passageScope) { this.passageScope = passageScope; }
 
-    public String getAiQuestionsPayload() { return aiQuestionsPayload; }
-    public void setAiQuestionsPayload(String aiQuestionsPayload) { this.aiQuestionsPayload = aiQuestionsPayload; }
 }

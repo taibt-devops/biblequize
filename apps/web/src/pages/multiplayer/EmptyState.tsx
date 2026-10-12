@@ -8,12 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import QuickMatchConfigModal from './QuickMatchConfigModal'
 
-interface Props {
-  /** Forward to config modal so AI source can be tier-gated. */
-  userTier?: number
-}
-
-export default function EmptyState({ userTier = 1 }: Props) {
+export default function EmptyState() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const [modalOpen, setModalOpen] = useState(false)
@@ -50,7 +45,7 @@ export default function EmptyState({ userTier = 1 }: Props) {
         </div>
       </div>
 
-      <QuickMatchConfigModal open={modalOpen} onClose={() => setModalOpen(false)} userTier={userTier} />
+      <QuickMatchConfigModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   )
 }
