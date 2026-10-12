@@ -25,22 +25,38 @@ public class TeamScoringService {
     @Autowired private RoomPlayerRepository roomPlayerRepository;
     @Autowired private RoomAnswerRepository roomAnswerRepository;
 
-    private static final int PERFECT_ROUND_BONUS = 50;
+    /** PCV-14: thưởng mỗi lần cả đội cùng đúng — cộng cho điểm đội, không cộng vào điểm cá nhân. */
+    static final int ALL_CORRECT_BONUS = 50;
 
-    /** Tính tổng điểm 2 đội */
-    public TeamScores calculateTeamScores(String roomId) {
+    /**
+     * PCV-14 (design §2.3) — điểm đội = round(trung bình điểm thành viên còn trong trận) + 50 × số lần cả
+     * đội đúng. Lấy trung bình để đội đông người không thắng chỉ vì đông; cả đội đã rời thì lấy trung bình
+     * của tất cả thành viên.
+     */
+    public TeamScores calculateTeamScores(String roomId, int allCorrectA, int allCorrectB) {
         List<RoomPlayer> players = roomPlayerRepository.findByRoomId(roomId);
-        int scoreA = 0, scoreB = 0;
-        for (RoomPlayer p : players) {
-            if (p.getTeam() == RoomPlayer.Team.A) scoreA += p.getScore();
-            else if (p.getTeam() == RoomPlayer.Team.B) scoreB += p.getScore();
-        }
-        return new TeamScores(scoreA, scoreB);
+        return new TeamScores(teamScore(players, RoomPlayer.Team.A, allCorrectA),
+                teamScore(players, RoomPlayer.Team.B, allCorrectB));
+    }
+
+    /** Không tính lần cả đội đúng (mã gọi cũ). */
+    public TeamScores calculateTeamScores(String roomId) {
+        return calculateTeamScores(roomId, 0, 0);
+    }
+
+    static int teamScore(List<RoomPlayer> players, RoomPlayer.Team team, int allCorrect) {
+        List<RoomPlayer> members = players.stream().filter(p -> p.getTeam() == team).toList();
+        if (members.isEmpty()) return 0;
+        List<RoomPlayer> active = members.stream()
+                .filter(p -> p.getPlayerStatus() == RoomPlayer.PlayerStatus.ACTIVE).toList();
+        List<RoomPlayer> base = active.isEmpty() ? members : active;
+        double avg = base.stream().mapToInt(p -> p.getScore() != null ? p.getScore() : 0).average().orElse(0);
+        return (int) Math.round(avg) + ALL_CORRECT_BONUS * allCorrect;
     }
 
     /**
-     * Kiểm tra Perfect Round: nếu cả đội đều trả lời đúng → cộng bonus.
-     * @return kết quả đội nào đạt Perfect Round
+     * PCV-14 — "cả đội đúng": mọi thành viên còn trong trận (ACTIVE) đều đúng, cần ít nhất 1 người.
+     * Không cộng điểm cá nhân; thưởng tính ở điểm đội ({@link #calculateTeamScores(String, int, int)}).
      */
     @Transactional
     public PerfectRoundResult processPerfectRound(String roomId, String roundId) {
@@ -51,18 +67,13 @@ public class TeamScoringService {
         Map<String, Boolean> correctMap = roundAnswers.stream()
                 .collect(Collectors.toMap(RoomAnswer::getUserId, a -> Boolean.TRUE.equals(a.getIsCorrect())));
 
-        boolean perfA = allCorrect(playersA, correctMap);
-        boolean perfB = allCorrect(playersB, correctMap);
-
-        if (perfA) {
-            playersA.forEach(p -> p.setScore(p.getScore() + PERFECT_ROUND_BONUS));
-            roomPlayerRepository.saveAll(playersA);
-        }
-        if (perfB) {
-            playersB.forEach(p -> p.setScore(p.getScore() + PERFECT_ROUND_BONUS));
-            roomPlayerRepository.saveAll(playersB);
-        }
+        boolean perfA = allCorrect(activeOnly(playersA), correctMap);
+        boolean perfB = allCorrect(activeOnly(playersB), correctMap);
         return new PerfectRoundResult(perfA, perfB);
+    }
+
+    private static List<RoomPlayer> activeOnly(List<RoomPlayer> players) {
+        return players.stream().filter(p -> p.getPlayerStatus() == RoomPlayer.PlayerStatus.ACTIVE).toList();
     }
 
     private boolean allCorrect(List<RoomPlayer> players, Map<String, Boolean> correctMap) {
@@ -87,7 +98,7 @@ public class TeamScoringService {
      * 3. Vẫn bằng → "TIE" thật
      */
     public TeamResult determineWinnerWithTieBreak(String roomId, int perfectRoundsA, int perfectRoundsB) {
-        TeamScores scores = calculateTeamScores(roomId);
+        TeamScores scores = calculateTeamScores(roomId, perfectRoundsA, perfectRoundsB);
 
         if (scores.teamA > scores.teamB) return new TeamResult("A", "SCORE", scores);
         if (scores.teamB > scores.teamA) return new TeamResult("B", "SCORE", scores);
@@ -96,24 +107,23 @@ public class TeamScoringService {
         if (perfectRoundsA > perfectRoundsB) return new TeamResult("A", "PERFECT_ROUNDS", scores);
         if (perfectRoundsB > perfectRoundsA) return new TeamResult("B", "PERFECT_ROUNDS", scores);
 
-        // Tie → compare total response time (lower = faster = better)
+        // PCV-14: bằng nhau nữa → thời gian trả lời trung bình của đội (trung bình của các thành viên
+        // đã trả lời ít nhất một câu) — nhanh hơn thắng.
         List<RoomPlayer> players = roomPlayerRepository.findByRoomId(roomId);
-        double totalMsA = 0, totalMsB = 0;
-        int countA = 0, countB = 0;
-        for (RoomPlayer p : players) {
-            if (p.getTeam() == RoomPlayer.Team.A) {
-                totalMsA += p.getAverageReactionTime() * p.getTotalAnswered();
-                countA++;
-            } else if (p.getTeam() == RoomPlayer.Team.B) {
-                totalMsB += p.getAverageReactionTime() * p.getTotalAnswered();
-                countB++;
-            }
-        }
-        if (countA > 0 && countB > 0 && totalMsA != totalMsB) {
-            return new TeamResult(totalMsA < totalMsB ? "A" : "B", "SPEED", scores);
+        java.util.OptionalDouble msA = teamAverageMs(players, RoomPlayer.Team.A);
+        java.util.OptionalDouble msB = teamAverageMs(players, RoomPlayer.Team.B);
+        if (msA.isPresent() && msB.isPresent() && msA.getAsDouble() != msB.getAsDouble()) {
+            return new TeamResult(msA.getAsDouble() < msB.getAsDouble() ? "A" : "B", "SPEED", scores);
         }
 
         return new TeamResult("TIE", "TIE", scores);
+    }
+
+    private static java.util.OptionalDouble teamAverageMs(List<RoomPlayer> players, RoomPlayer.Team team) {
+        return players.stream()
+                .filter(p -> p.getTeam() == team && p.getTotalAnswered() != null && p.getTotalAnswered() > 0)
+                .mapToDouble(p -> p.getAverageReactionTime() != null ? p.getAverageReactionTime() : 0)
+                .average();
     }
 
     public static class TeamResult {

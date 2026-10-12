@@ -18,6 +18,7 @@ import { useBattleRoyale } from './room/hooks/useBattleRoyale';
 import { useTeamVsTeam } from './room/hooks/useTeamVsTeam';
 import { useSuddenDeath } from './room/hooks/useSuddenDeath';
 import { useSequentialMode } from './room/hooks/useSequentialMode';
+import { useTeamNames } from './room/teamNames';
 import type {
   PlayerScore,
   QuestionStartData,
@@ -84,6 +85,8 @@ const RoomQuiz: React.FC = () => {
   const team = useTeamVsTeam(myUserId, myTeamFromState);
   const sd = useSuddenDeath(myUserId);
   const seq = useSequentialMode();
+  // PCV-14: tên hai đội theo phòng (Đội đấu đội).
+  const teamNames = useTeamNames(roomId);
 
   // Social fun state
   const [reactions, setReactions] = useState<ReactionData[]>([]);
@@ -535,6 +538,7 @@ const RoomQuiz: React.FC = () => {
         scoreA={team.state.teamWinScoreA}
         scoreB={team.state.teamWinScoreB}
         leaderboard={core.finalResults}
+        names={teamNames}
         onClose={() => navigate('/multiplayer', { replace: true })}
       />
     );
@@ -585,6 +589,7 @@ const RoomQuiz: React.FC = () => {
       onSubmitAnswer={submitAnswer}
       onAdvance={handleAdvance}
       onSendReaction={(emoji) => send(`/app/room/${roomId}/reaction`, { reaction: emoji })}
+      teamNames={teamNames}
     />
   );
 };

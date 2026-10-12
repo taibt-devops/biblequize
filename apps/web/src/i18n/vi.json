@@ -1717,7 +1717,8 @@
       "waiting": "{{n}} người đang chờ",
       "roundResults": "Kết quả vòng này",
       "rankLabel": "Thứ hạng:",
-      "ghostIntro": "Bạn vẫn trả lời được dưới dạng bóng. Đúng 3 câu liên tiếp trước câu 10 thì được hồi sinh với 1 mạng (một lần)."
+      "ghostIntro": "Bạn vẫn trả lời được dưới dạng bóng. Đúng 3 câu liên tiếp trước câu 10 thì được hồi sinh với 1 mạng (một lần).",
+      "teamWins": "{{team}} thắng!"
     },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
@@ -1831,7 +1832,7 @@
     "lobbyRules": {
       "needPlayers": "Cần thêm {{need}} người để bắt đầu {{mode}} (tối thiểu {{min}})",
       "teamTooSmall": "Mỗi đội cần ít nhất 2 người",
-      "teamsUnbalanced": "Hai đội lệch nhau {{diff}} người — hãy đổi đội cho cân",
+      "teamsUnbalanced": "Hai đội lệch nhau {{diff}} người — đổi đội hoặc bấm Xáo đội",
       "waitingReady": "{{ready}}/{{total}} người chơi đã sẵn sàng",
       "waitingPlayers": "Đang chờ thêm người chơi...",
       "waitingAllReady": "Đang chờ tất cả sẵn sàng",
@@ -1855,7 +1856,7 @@
       },
       "team_vs_team": {
         "short": "Hai đội đấu nhau, đội nhiều điểm hơn thắng.",
-        "detail": "Người chơi được chia hai đội. Điểm đội là tổng điểm thành viên; cả đội cùng đúng một câu được thưởng thêm. Hai đội phải đều người mới bắt đầu được."
+        "detail": "Người chơi được chia hai đội, đội nào cũng mang tên một cặp nhân vật Kinh Thánh. Điểm đội là trung bình điểm các thành viên, nên đội đông hơn không tự nhiên có lợi; mỗi câu cả đội cùng đúng được thưởng thêm 50 điểm đội. Hai đội phải đều người mới bắt đầu được — chủ phòng có thể bấm Xáo đội."
       },
       "sudden_death": {
         "short": "Đấu tay đôi giành ngai.",
@@ -1870,7 +1871,17 @@
       "title": "Bảng dẫn đầu",
       "points": "{{score}} điểm",
       "you": "(bạn)"
-    }
+    },
+    "team": {
+      "name": "Đội {{name}}",
+      "fallbackA": "Đội A",
+      "fallbackB": "Đội B",
+      "allCorrectShort": "Cả đội đúng!",
+      "allCorrectBanner": "{{teams}} cả đội cùng đúng · +50 điểm đội",
+      "switch": "Đổi đội",
+      "shuffle": "Xáo đội"
+    },
+    "errorShuffleTeams": "Không xáo đội được, thử lại"
   },
   "groups": {
     "noGroupTitle": "Tham gia nhóm hội thánh",
@@ -2573,7 +2584,7 @@
     "modeDesc": {
       "speed_race": "Đúng và nhanh để ghi điểm, đúng liên tiếp được thưởng, câu chốt nhân đôi",
       "battle_royale": "Mỗi người 2 mạng, câu khó dần — người trụ lại cuối cùng thắng",
-      "team_vs_team": "Hai đội đấu nhau, đội có điểm cao hơn thắng",
+      "team_vs_team": "Hai đội đấu nhau bằng điểm trung bình, cả đội cùng đúng được thưởng",
       "sudden_death": "Đấu tay đôi giành ngai: thắng thì giữ ngai đấu tiếp, cả hai cùng đúng thì ai nhanh hơn thắng.",
       "group_live_sequential": "Mọi người cùng trả lời — chờ tất cả xong mới hiện đáp án"
     },

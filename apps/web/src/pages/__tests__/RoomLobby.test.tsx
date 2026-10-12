@@ -398,3 +398,36 @@ describe('RoomLobby — player avatar', () => {
     expect(slot.querySelector('img')?.getAttribute('src')).toBe('https://example.com/a.png')
   })
 })
+
+describe('RoomLobby — Đội đấu đội (PCV-14)', () => {
+  const teamRoom = {
+    ...baseRoom,
+    mode: 'TEAM_VS_TEAM',
+    players: [
+      { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: true, score: 0, team: 'A' },
+      { id: 'p2', userId: 'u2', username: 'An', isReady: true, score: 0, team: 'A' },
+      { id: 'p3', userId: 'u3', username: 'Bình', isReady: true, score: 0, team: 'B' },
+    ],
+    currentPlayers: 3,
+  }
+
+  it('hai đội mang tên nhân vật theo phòng, không còn "Đội A/Đội B"', async () => {
+    await renderLobby(teamRoom)
+    await screen.findByTestId('lobby-room-code')
+    expect(screen.queryByText('Đội A')).toBeNull()
+    expect(screen.getAllByText(/^Đội /).length).toBeGreaterThanOrEqual(2)
+  })
+
+  it('chủ phòng có nút Xáo đội, bấm thì gọi API', async () => {
+    mockApiPost.mockResolvedValue({ data: { success: true, room: teamRoom, viewerUserId: 'host-1' } })
+    await renderLobby(teamRoom)
+    fireEvent.click(await screen.findByTestId('lobby-shuffle-teams'))
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms/room-1/shuffle-teams'))
+  })
+
+  it('người chơi thường không thấy nút Xáo đội', async () => {
+    await renderLobby(teamRoom, 'u2')
+    await screen.findByTestId('lobby-room-code')
+    expect(screen.queryByTestId('lobby-shuffle-teams')).toBeNull()
+  })
+})

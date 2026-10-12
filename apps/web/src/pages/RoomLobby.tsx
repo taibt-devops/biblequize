@@ -3,6 +3,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { lobbyStartCheck } from './room/lobbyRules';
 import { MODE_META, modeMetaOf, modeRulesSlug } from './create-room/modeMeta';
+import { useTeamNames } from './room/teamNames';
 import { useRoomChannel } from '../hooks/useRoomChannel';
 import { api } from '../api/client';
 import { QRCodeSVG } from 'qrcode.react';
@@ -315,6 +316,19 @@ const RoomLobby: React.FC = () => {
     } catch { setError(t('room.errorSwitchTeam')); }
     finally { setSwitchingTeam(false); }
   };
+  // PCV-14: chia lại hai đội cân (chủ phòng; Đấu nhanh: ai trong phòng cũng được).
+  const handleShuffleTeams = async () => {
+    if (!roomId) return;
+    setSwitchingTeam(true);
+    try {
+      const res = await api.post(`/api/rooms/${roomId}/shuffle-teams`);
+      if (res.data.success) {
+        setRoom(res.data.room);
+        if (res.data.viewerUserId) setViewerUserId(res.data.viewerUserId);
+      }
+    } catch (err: any) { setError(err?.response?.data?.message || t('room.errorShuffleTeams')); }
+    finally { setSwitchingTeam(false); }
+  };
   const handleSendChat = (text: string) => {
     if (!text.trim() || !roomId) return;
     send(`/app/room/${roomId}/chat`, { text: text.trim() });
@@ -343,6 +357,7 @@ const RoomLobby: React.FC = () => {
   const isSuddenDeath = room?.mode === 'SUDDEN_DEATH';
   const isSequential = room?.mode === 'GROUP_LIVE_SEQUENTIAL';
   const teamAPlayers = room?.players?.filter(p => p.team === 'A') ?? [];
+  const teamNames = useTeamNames(room?.id ?? roomId);
   const teamBPlayers = room?.players?.filter(p => p.team === 'B') ?? [];
   // FMR-7 identity sweep: match by server-stable userId only (F-web-2) —
   // localStorage.userName can drift/collide so it is no longer a logic key.
@@ -846,6 +861,9 @@ const RoomLobby: React.FC = () => {
                 onSwitchTeam={handleSwitchTeam}
                 switchingTeam={switchingTeam}
                 onInvite={() => setShowInvite(true)}
+                teamNames={teamNames}
+                canShuffle={room.status === 'LOBBY' && (isQuickMatch ? !!myPlayer : isHost)}
+                onShuffle={handleShuffleTeams}
               />
             ) : (
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-2.5">
@@ -1243,7 +1261,12 @@ const TeamSplit: React.FC<{
   onSwitchTeam: () => void;
   switchingTeam: boolean;
   onInvite: () => void;
-}> = ({ teamAPlayers, teamBPlayers, hostId, myUserId, isHost, myTeam, kickMenuFor, setKickMenuFor, onKick, onSwitchTeam, switchingTeam, onInvite }) => {
+  /** PCV-14: tên hai đội theo phòng + nút "Xáo đội". */
+  teamNames: { A: string; B: string };
+  canShuffle: boolean;
+  onShuffle: () => void;
+}> = ({ teamAPlayers, teamBPlayers, hostId, myUserId, isHost, myTeam, kickMenuFor, setKickMenuFor, onKick, onSwitchTeam, switchingTeam, onInvite, teamNames, canShuffle, onShuffle }) => {
+  const { t } = useTranslation();
   const renderTeam = (label: string, color: string, players: Player[]) => (
     <div>
       <div className="text-[12.5px] font-extrabold mb-2 inline-flex items-center gap-2" style={{ color }}>
@@ -1282,18 +1305,31 @@ const TeamSplit: React.FC<{
   );
   return (
     <div className="space-y-4">
-      {renderTeam('Đội A', 'var(--bq-sapphire)', teamAPlayers)}
-      {renderTeam('Đội B', 'var(--bq-ruby)', teamBPlayers)}
-      {myUserId && (
-        <button
-          onClick={onSwitchTeam}
-          disabled={switchingTeam}
-          className="px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 disabled:opacity-50 text-[13.5px] font-extrabold text-bq-ink bg-bq-white border-2 border-bq-ink hover:bg-bq-cream"
-        >
-          <span className="material-symbols-outlined text-[14px]">swap_horiz</span>
-          Đổi đội
-        </button>
-      )}
+      {renderTeam(teamNames.A, 'var(--bq-sapphire)', teamAPlayers)}
+      {renderTeam(teamNames.B, 'var(--bq-ruby)', teamBPlayers)}
+      <div className="flex flex-wrap gap-2">
+        {myUserId && (
+          <button
+            onClick={onSwitchTeam}
+            disabled={switchingTeam}
+            className="px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 disabled:opacity-50 text-[13.5px] font-extrabold text-bq-ink bg-bq-white border-2 border-bq-ink hover:bg-bq-cream"
+          >
+            <span className="material-symbols-outlined text-[14px]">swap_horiz</span>
+            {t('room.team.switch')}
+          </button>
+        )}
+        {canShuffle && (
+          <button
+            onClick={onShuffle}
+            disabled={switchingTeam}
+            data-testid="lobby-shuffle-teams"
+            className="px-3 py-1.5 rounded-full inline-flex items-center gap-1.5 disabled:opacity-50 text-[13.5px] font-extrabold text-bq-ink bg-bq-white border-2 border-bq-ink hover:bg-bq-cream"
+          >
+            <span className="material-symbols-outlined text-[14px]">shuffle</span>
+            {t('room.team.shuffle')}
+          </button>
+        )}
+      </div>
     </div>
   );
 };

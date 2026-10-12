@@ -416,6 +416,30 @@ public class RoomService {
     /**
      * Switch player's team (Team vs Team, lobby only)
      */
+    /**
+     * PCV-14 — "Xáo đội": chia lại hai đội cân (lệch ≤ 1) theo thứ tự ngẫu nhiên, ở sảnh chờ của phòng
+     * Đội đấu đội. Chủ phòng bấm được; Đấu nhanh không có chủ phòng thật nên ai trong phòng cũng bấm được.
+     * Đội thay đổi nên mọi người phải bấm sẵn sàng lại.
+     */
+    public void shuffleTeams(String roomId, String userId) throws Exception {
+        Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
+        if (room.getMode() != Room.RoomMode.TEAM_VS_TEAM) throw new Exception("Chỉ dùng cho Đội đấu đội");
+        if (room.getStatus() != Room.RoomStatus.LOBBY) throw new Exception("Chỉ xáo đội được khi đang ở sảnh chờ");
+        boolean isHost = room.getHost() != null && room.getHost().getId().equals(userId);
+        if (!isHost && !(room.isQuickMatch() && roomPlayerRepository.findByRoomIdAndUserId(roomId, userId).isPresent())) {
+            throw new Exception("Chỉ chủ phòng mới xáo đội được");
+        }
+        List<RoomPlayer> players = new java.util.ArrayList<>(roomPlayerRepository.findByRoomId(roomId));
+        java.util.Collections.shuffle(players);
+        for (int i = 0; i < players.size(); i++) {
+            RoomPlayer p = players.get(i);
+            p.setTeam(i % 2 == 0 ? RoomPlayer.Team.A : RoomPlayer.Team.B);
+            p.setIsReady(false);
+        }
+        roomPlayerRepository.saveAll(players);
+        webSocketController.broadcastRoomState(roomId);
+    }
+
     public void switchTeam(String roomId, String userId) throws Exception {
         Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
         if (room.getMode() != Room.RoomMode.TEAM_VS_TEAM) throw new Exception("Chỉ dùng cho Team vs Team");

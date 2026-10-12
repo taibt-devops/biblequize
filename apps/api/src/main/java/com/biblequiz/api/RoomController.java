@@ -315,6 +315,21 @@ public class RoomController {
     }
 
     /**
+     * PCV-14: POST /api/rooms/{id}/shuffle-teams — xáo lại hai đội cho cân (Đội đấu đội, ở sảnh chờ).
+     */
+    @PostMapping("/{id}/shuffle-teams")
+    public ResponseEntity<?> shuffleTeams(@PathVariable String id, Principal principal) {
+        try {
+            User user = getUser(principal);
+            roomService.shuffleTeams(id, user.getId());
+            RoomService.RoomDetailsDTO details = roomService.getRoomDetails(id);
+            return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", e.getMessage()));
+        }
+    }
+
+    /**
      * POST /api/rooms/{id}/kick - Kick player (host only, lobby only)
      */
     @PostMapping("/{id}/kick")

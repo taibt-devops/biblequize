@@ -84,6 +84,8 @@ export interface RoomQuizShellProps {
   onSubmitAnswer: (idx: number) => void;
   onAdvance: () => void;
   onSendReaction: (emoji: string) => void;
+  /** PCV-14: tên hai đội theo phòng (Đội đấu đội). */
+  teamNames?: { A: string; B: string };
 }
 
 /**
@@ -100,7 +102,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
   isPaused, skipToast, hostBroadcast,
   reactions, feedHistory, roundAnswered, comboBanner, onDismissCombo, revealStats,
   br, team, sd, seq, onDismissSdResult,
-  onSubmitAnswer, onAdvance, onSendReaction,
+  onSubmitAnswer, onAdvance, onSendReaction, teamNames,
 }) => {
   const { t, i18n } = useTranslation();
   const { questionIndex, totalQuestions, timeLimit, question, scores, selected, correctIndex } = core;
@@ -411,7 +413,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             )}
             {br.isSpectator && <SpectatorBadge />}
             {isSuddenDeath && sd.sdSpectating && <SdSpectatingBadge />}
-            {isTeamVsTeam && team.myTeam && <TeamHeaderBadge myTeam={team.myTeam} />}
+            {isTeamVsTeam && team.myTeam && <TeamHeaderBadge myTeam={team.myTeam} names={teamNames} />}
 
             {/* Timer ring — bigger to match mockup w-12 h-12 */}
             <div className="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
@@ -458,7 +460,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
            hidden (player list still rendered above question via mode bars). */}
       <main className="relative min-h-screen pt-20 pb-8 px-4 lg:px-6">
         {/* Mode-specific headers */}
-        {isTeamVsTeam && <TeamVsTeamView team={team} />}
+        {isTeamVsTeam && <TeamVsTeamView team={team} names={teamNames} />}
         {isSuddenDeath && sd.sdChampionName && (
           <SuddenDeathView sd={sd} myUsername={myUsername} />
         )}

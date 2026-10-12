@@ -43,17 +43,46 @@ class TeamScoringServiceTest {
     }
 
     @Test
-    void calculateTeamScores_sumsCorrectly() {
+    void teamScore_isRoundedAverageOfActiveMembers_plusFiftyPerAllCorrectRound() {
         when(roomPlayerRepository.findByRoomId(ROOM)).thenReturn(List.of(
                 createPlayer("a1", RoomPlayer.Team.A, 100),
-                createPlayer("a2", RoomPlayer.Team.A, 150),
+                createPlayer("a2", RoomPlayer.Team.A, 151),
                 createPlayer("b1", RoomPlayer.Team.B, 200)
         ));
 
-        var scores = service.calculateTeamScores(ROOM);
+        var scores = service.calculateTeamScores(ROOM, 2, 0);
 
-        assertEquals(250, scores.teamA);
+        assertEquals(126 + 100, scores.teamA, "TB 125,5 → 126, cộng 2 lần cả đội đúng");
         assertEquals(200, scores.teamB);
+    }
+
+    @Test
+    void biggerTeam_doesNotWinJustByHavingMorePlayers() {
+        when(roomPlayerRepository.findByRoomId(ROOM)).thenReturn(List.of(
+                createPlayer("a1", RoomPlayer.Team.A, 100), createPlayer("a2", RoomPlayer.Team.A, 100),
+                createPlayer("a3", RoomPlayer.Team.A, 100),
+                createPlayer("b1", RoomPlayer.Team.B, 120), createPlayer("b2", RoomPlayer.Team.B, 120)));
+
+        var scores = service.calculateTeamScores(ROOM, 0, 0);
+
+        assertTrue(scores.teamB > scores.teamA, "tổng A = 300 > B = 240, nhưng trung bình B hơn");
+    }
+
+    @Test
+    void membersWhoLeft_areNotAveraged_unlessTheWholeTeamLeft() {
+        RoomPlayer a1 = createPlayer("a1", RoomPlayer.Team.A, 300);
+        RoomPlayer a2 = createPlayer("a2", RoomPlayer.Team.A, 0);
+        a2.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        RoomPlayer b1 = createPlayer("b1", RoomPlayer.Team.B, 100);
+        b1.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        RoomPlayer b2 = createPlayer("b2", RoomPlayer.Team.B, 300);
+        b2.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        when(roomPlayerRepository.findByRoomId(ROOM)).thenReturn(List.of(a1, a2, b1, b2));
+
+        var scores = service.calculateTeamScores(ROOM, 0, 0);
+
+        assertEquals(300, scores.teamA);
+        assertEquals(200, scores.teamB, "cả đội đã rời ⇒ trung bình tất cả");
     }
 
     @Test
@@ -72,7 +101,7 @@ class TeamScoringServiceTest {
     }
 
     @Test
-    void perfectRound_allTeamACorrect_bonusAdded() {
+    void allCorrectRound_isTeamLevel_noIndividualBonus() {
         RoomPlayer a1 = createPlayer("a1", RoomPlayer.Team.A, 100);
         RoomPlayer a2 = createPlayer("a2", RoomPlayer.Team.A, 100);
         RoomPlayer b1 = createPlayer("b1", RoomPlayer.Team.B, 100);
@@ -81,15 +110,25 @@ class TeamScoringServiceTest {
         when(roomPlayerRepository.findByRoomIdAndTeam(ROOM, RoomPlayer.Team.B)).thenReturn(new ArrayList<>(List.of(b1)));
         when(roomAnswerRepository.findByRoundId(ROUND)).thenReturn(List.of(
                 createAnswer("a1", true), createAnswer("a2", true), createAnswer("b1", false)));
-        when(roomPlayerRepository.saveAll(anyList())).thenAnswer(inv -> inv.getArgument(0));
 
         var result = service.processPerfectRound(ROOM, ROUND);
 
         assertTrue(result.teamAPerfect);
         assertFalse(result.teamBPerfect);
-        assertEquals(150, a1.getScore()); // 100 + 50 bonus
-        assertEquals(150, a2.getScore());
-        assertEquals(100, b1.getScore()); // no bonus
+        assertEquals(100, a1.getScore(), "thưởng cả đội không cộng vào điểm cá nhân");
+        assertEquals(100, a2.getScore());
+    }
+
+    @Test
+    void memberWhoLeft_doesNotBlockAllCorrect() {
+        RoomPlayer a1 = createPlayer("a1", RoomPlayer.Team.A, 100);
+        RoomPlayer a2 = createPlayer("a2", RoomPlayer.Team.A, 100);
+        a2.setPlayerStatus(RoomPlayer.PlayerStatus.LEFT);
+        when(roomPlayerRepository.findByRoomIdAndTeam(ROOM, RoomPlayer.Team.A)).thenReturn(new ArrayList<>(List.of(a1, a2)));
+        when(roomPlayerRepository.findByRoomIdAndTeam(ROOM, RoomPlayer.Team.B)).thenReturn(List.of());
+        when(roomAnswerRepository.findByRoundId(ROUND)).thenReturn(List.of(createAnswer("a1", true)));
+
+        assertTrue(service.processPerfectRound(ROOM, ROUND).teamAPerfect);
     }
 
     @Test
@@ -108,25 +147,6 @@ class TeamScoringServiceTest {
         assertEquals(100, a1.getScore()); // no bonus
     }
 
-    @Test
-    void perfectRound_bothTeamsPerfect() {
-        RoomPlayer a1 = createPlayer("a1", RoomPlayer.Team.A, 100);
-        RoomPlayer b1 = createPlayer("b1", RoomPlayer.Team.B, 100);
-
-        when(roomPlayerRepository.findByRoomIdAndTeam(ROOM, RoomPlayer.Team.A)).thenReturn(new ArrayList<>(List.of(a1)));
-        when(roomPlayerRepository.findByRoomIdAndTeam(ROOM, RoomPlayer.Team.B)).thenReturn(new ArrayList<>(List.of(b1)));
-        when(roomAnswerRepository.findByRoundId(ROUND)).thenReturn(List.of(
-                createAnswer("a1", true), createAnswer("b1", true)));
-        when(roomPlayerRepository.saveAll(anyList())).thenAnswer(inv -> inv.getArgument(0));
-
-        var result = service.processPerfectRound(ROOM, ROUND);
-
-        assertTrue(result.teamAPerfect);
-        assertTrue(result.teamBPerfect);
-        assertEquals(150, a1.getScore());
-        assertEquals(150, b1.getScore());
-    }
-
     // ── Tie-break tests ──
 
     @Test
@@ -141,13 +161,14 @@ class TeamScoringServiceTest {
     }
 
     @Test
-    void tieBreak_sameScore_perfectRoundsWin() {
+    void tieBreak_sameScore_moreAllCorrectRoundsWin() {
+        // A: 200 + 50×1 = 250; B: 150 + 50×2 = 250 → bằng điểm, B nhiều lần cả đội đúng hơn.
         when(roomPlayerRepository.findByRoomId(ROOM)).thenReturn(List.of(
                 createPlayer("a1", RoomPlayer.Team.A, 200),
-                createPlayer("b1", RoomPlayer.Team.B, 200)));
+                createPlayer("b1", RoomPlayer.Team.B, 150)));
 
-        var result = service.determineWinnerWithTieBreak(ROOM, 3, 1);
-        assertEquals("A", result.winningTeam);
+        var result = service.determineWinnerWithTieBreak(ROOM, 1, 2);
+        assertEquals("B", result.winningTeam);
         assertEquals("PERFECT_ROUNDS", result.reason);
     }
 

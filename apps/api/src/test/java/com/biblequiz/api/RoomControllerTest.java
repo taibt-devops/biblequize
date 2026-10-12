@@ -163,6 +163,32 @@ class RoomControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.success").value(false));
     }
 
+    // ── POST /api/rooms/{id}/shuffle-teams (PCV-14) ──────────────────────────
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void shuffleTeams_asHost_returnsRoomState() throws Exception {
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+        doNothing().when(roomService).shuffleTeams("room-1", "user-1");
+
+        mockMvc.perform(post("/api/rooms/room-1/shuffle-teams"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true));
+        verify(roomService).shuffleTeams("room-1", "user-1");
+    }
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void shuffleTeams_notAllowed_returns400WithReason() throws Exception {
+        doThrow(new Exception("Chỉ chủ phòng mới xáo đội được")).when(roomService).shuffleTeams("room-1", "user-1");
+
+        mockMvc.perform(post("/api/rooms/room-1/shuffle-teams"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("Chỉ chủ phòng mới xáo đội được"));
+    }
+
     // ── POST /api/rooms/{id}/start ───────────────────────────────────────────
 
     @Test

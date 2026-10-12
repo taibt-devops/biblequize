@@ -90,8 +90,10 @@ public class TeamVsTeamStrategy implements RoomModeStrategy {
             if (perfect.teamBPerfect) perfectCounts[1]++;
         }
 
-        // Team score update
-        TeamScoringService.TeamScores scores = teamScoringService.calculateTeamScores(ctx.roomId);
+        // PCV-14: điểm đội = trung bình thành viên còn trong trận + 50 × số lần cả đội đúng.
+        TeamScoringService.TeamScores scores = perfectCounts != null
+                ? teamScoringService.calculateTeamScores(ctx.roomId, perfectCounts[0], perfectCounts[1])
+                : teamScoringService.calculateTeamScores(ctx.roomId);
         ctx.ws.broadcastTeamScoreUpdate(ctx.roomId, scores.teamA, scores.teamB);
         return false;
     }

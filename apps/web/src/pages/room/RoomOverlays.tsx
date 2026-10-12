@@ -147,20 +147,25 @@ export const EliminationScreen: React.FC<{
 )
 
 // ── Team score bar (Team vs Team) ──
-export const TeamScoreBar: React.FC<{ scoreA: number; scoreB: number; perfectA?: boolean; perfectB?: boolean }> = ({ scoreA, scoreB, perfectA, perfectB }) => {
+export const TeamScoreBar: React.FC<{
+  scoreA: number; scoreB: number; perfectA?: boolean; perfectB?: boolean
+  /** PCV-14: tên đội theo phòng ("Đội Giô-suê"); thiếu thì "Đội A"/"Đội B". */
+  nameA?: string; nameB?: string
+}> = ({ scoreA, scoreB, perfectA, perfectB, nameA, nameB }) => {
+  const { t } = useTranslation()
   const total = scoreA + scoreB || 1
   const pctA = (scoreA / total) * 100
   return (
     <div className="bg-bq-white rounded-2xl px-5 py-4 mb-4 border border-bq-hair shadow-bq-soft">
       <div className="flex items-center justify-between mb-2.5 text-sm font-bold">
         <span className="text-bq-sapphire flex items-center gap-1.5">
-          <span className="w-3 h-3 rounded-full bg-bq-sapphire" /> Team A
-          {perfectA && <span className="text-bq-amberd text-[12px] font-black ml-1">Perfect!</span>}
+          <span className="w-3 h-3 rounded-full bg-bq-sapphire" /> {nameA ?? t('room.team.fallbackA')}
+          {perfectA && <span className="text-bq-amberd text-[12px] font-black ml-1">{t('room.team.allCorrectShort')}</span>}
         </span>
         <span className="text-bq-ink2 text-[12.5px] font-black">VS</span>
         <span className="text-bq-ruby flex items-center gap-1.5">
-          {perfectB && <span className="text-bq-amberd text-[12px] font-black mr-1">Perfect!</span>}
-          Team B <span className="w-3 h-3 rounded-full bg-bq-ruby" />
+          {perfectB && <span className="text-bq-amberd text-[12px] font-black mr-1">{t('room.team.allCorrectShort')}</span>}
+          {nameB ?? t('room.team.fallbackB')} <span className="w-3 h-3 rounded-full bg-bq-ruby" />
         </span>
       </div>
       <div className="flex items-center gap-3">
@@ -175,10 +180,19 @@ export const TeamScoreBar: React.FC<{ scoreA: number; scoreB: number; perfectA?:
   )
 }
 
+/** PCV-14: "Đội Giăng thắng!" — thiếu tên thì giữ chữ cũ "Đội A thắng!". */
+function TeamWinsTitle({ team, winner }: { team: string | null; winner: string }) {
+  const { t } = useTranslation()
+  if (!team) return <T k={winner === 'A' ? 'teamAWins' : 'teamBWins'} />
+  return <>{t('room.overlay.teamWins', { team })}</>
+}
+
 // ── Team win screen ──
 export const TeamWinScreen: React.FC<{
   winner: string; scoreA: number; scoreB: number; leaderboard: PlayerScore[]; onClose: () => void;
-}> = ({ winner, scoreA, scoreB, leaderboard, onClose }) => (
+  /** PCV-14: tên đội theo phòng. */
+  names?: { A: string; B: string };
+}> = ({ winner, scoreA, scoreB, leaderboard, onClose, names }) => (
   <div className="fixed inset-0 bg-bq-paper flex flex-col items-center justify-center z-50 p-6 overflow-auto">
     <div className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
       <div className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[60%] h-[40%] bg-bq-amber/15 blur-[150px] rounded-full" />
@@ -189,7 +203,7 @@ export const TeamWinScreen: React.FC<{
       </span>
     </div>
     <h1 className="font-display text-3xl font-black tracking-tighter text-bq-ink mb-2">
-      <T k={winner === 'TIE' ? 'tie' : winner === 'A' ? 'teamAWins' : 'teamBWins'} />
+      {winner === 'TIE' ? <T k="tie" /> : <TeamWinsTitle team={names ? (winner === 'A' ? names.A : names.B) : null} winner={winner} />}
     </h1>
     <div className="flex gap-8 mb-8 text-lg font-bold">
       <span className="text-bq-sapphire flex items-center gap-2"><span className="w-3 h-3 rounded-full bg-bq-sapphire" /> {scoreA}</span>

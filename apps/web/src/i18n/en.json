@@ -1717,7 +1717,8 @@
       "waiting": "{{n}} waiting",
       "roundResults": "Round results",
       "rankLabel": "Rank:",
-      "ghostIntro": "You can keep answering as a ghost. Get 3 in a row before question 10 to come back with 1 life (once)."
+      "ghostIntro": "You can keep answering as a ghost. Get 3 in a row before question 10 to come back with 1 life (once).",
+      "teamWins": "{{team}} wins!"
     },
     "lobbyTitle": "BIBLE QUIZ LOBBY",
     "online": "Online",
@@ -1831,7 +1832,7 @@
     "lobbyRules": {
       "needPlayers": "Need {{need}} more to start {{mode}} (min {{min}})",
       "teamTooSmall": "Each team needs at least 2 players",
-      "teamsUnbalanced": "Teams differ by {{diff}} players — switch teams to balance",
+      "teamsUnbalanced": "Teams differ by {{diff}} players — switch teams or shuffle",
       "waitingReady": "{{ready}}/{{total}} players ready",
       "waitingPlayers": "Waiting for more players...",
       "waitingAllReady": "Waiting for everyone to be ready",
@@ -1855,7 +1856,7 @@
       },
       "team_vs_team": {
         "short": "Two teams compete; the higher score wins.",
-        "detail": "Players split into two teams. A team's score is its members' total; a round where the whole team is correct earns a bonus. Teams must be even before the game can start."
+        "detail": "Players split into two teams, each named after a pair from the Bible. A team's score is its members' average, so the bigger team has no built-in edge; each question the whole team gets right adds 50 team points. Teams must be even before starting — the host can shuffle them."
       },
       "sudden_death": {
         "short": "One-on-one duels for the throne.",
@@ -1870,7 +1871,17 @@
       "title": "Leaders",
       "points": "{{score}} pts",
       "you": "(you)"
-    }
+    },
+    "team": {
+      "name": "Team {{name}}",
+      "fallbackA": "Team A",
+      "fallbackB": "Team B",
+      "allCorrectShort": "All correct!",
+      "allCorrectBanner": "{{teams}}: everyone right · +50 team points",
+      "switch": "Switch team",
+      "shuffle": "Shuffle teams"
+    },
+    "errorShuffleTeams": "Couldn't shuffle teams, try again"
   },
   "groups": {
     "noGroupTitle": "Join a church group",
@@ -2573,7 +2584,7 @@
     "modeDesc": {
       "speed_race": "Right and fast to score, streak bonuses, the final question counts double",
       "battle_royale": "Two lives each, questions get harder — last one standing wins",
-      "team_vs_team": "Two teams compete, higher total score wins",
+      "team_vs_team": "Two teams compete on average score, with a bonus when everyone is right",
       "sudden_death": "Duel for the throne: the winner stays on; if both are correct, the faster one wins.",
       "group_live_sequential": "Everyone answers — the answer appears once all are done"
     },

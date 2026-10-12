@@ -133,10 +133,14 @@ describe('EliminationScreen', () => {
 
 // ── TeamScoreBar ──
 describe('TeamScoreBar', () => {
-  it('renders Team A and Team B labels', () => {
-    render(<TeamScoreBar scoreA={10} scoreB={5} />)
-    expect(screen.getByText('Team A')).toBeInTheDocument()
-    expect(screen.getByText('Team B')).toBeInTheDocument()
+  it('renders team labels (PCV-14: tên đội theo phòng, mặc định Đội A / Đội B)', () => {
+    const { unmount } = render(<TeamScoreBar scoreA={10} scoreB={5} />)
+    expect(screen.getByText('Đội A')).toBeInTheDocument()
+    expect(screen.getByText('Đội B')).toBeInTheDocument()
+    unmount()
+    render(<TeamScoreBar scoreA={10} scoreB={5} nameA="Đội Giô-suê" nameB="Đội Ca-lép" />)
+    expect(screen.getByText('Đội Giô-suê')).toBeInTheDocument()
+    expect(screen.getByText('Đội Ca-lép')).toBeInTheDocument()
   })
 
   it('renders VS label', () => {
@@ -152,12 +156,12 @@ describe('TeamScoreBar', () => {
 
   it('shows Perfect! for team A when perfectA is true', () => {
     render(<TeamScoreBar scoreA={10} scoreB={5} perfectA perfectB={false} />)
-    expect(screen.getByText('Perfect!')).toBeInTheDocument()
+    expect(screen.getByText('Cả đội đúng!')).toBeInTheDocument()
   })
 
   it('shows Perfect! for team B when perfectB is true', () => {
     render(<TeamScoreBar scoreA={10} scoreB={5} perfectA={false} perfectB />)
-    expect(screen.getByText('Perfect!')).toBeInTheDocument()
+    expect(screen.getByText('Cả đội đúng!')).toBeInTheDocument()
   })
 
   it('handles zero scores', () => {
@@ -353,5 +357,12 @@ describe('RoundScoreboard', () => {
     render(<RoundScoreboard scores={scores} myUsername="Alice" />)
     const aliceEl = screen.getByText('Alice')
     expect(aliceEl.className).toContain('text-bq-amberd')
+  })
+})
+
+describe('TeamWinScreen — tên đội (PCV-14)', () => {
+  it('đội thắng hiện theo tên của phòng', () => {
+    render(<TeamWinScreen winner="B" scoreA={300} scoreB={420} leaderboard={[]} names={{ A: 'Đội Phi-e-rơ', B: 'Đội Giăng' }} onClose={vi.fn()} />)
+    expect(screen.getByText('Đội Giăng thắng!')).toBeInTheDocument()
   })
 })
