@@ -192,3 +192,25 @@ describe('RoomQuizHost — tổ chức trận mới với cùng nhóm (PCV-17)',
     await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith(expect.stringMatching(/\/api\/rooms\/[^/]+\/rematch$/)))
   })
 })
+
+describe('RoomQuizHost — kết quả Đội đấu đội (PCV-19)', () => {
+  it('đọc được bảng khi máy chủ bọc kết quả đội trong finalResults', async () => {
+    await renderHost()
+    lastOnMessage!({
+      type: 'QUIZ_END',
+      data: {
+        roomId: 'r1', timestamp: 1,
+        finalResults: {
+          teamWinner: 'A', scoreA: 900, scoreB: 400,
+          leaderboard: [
+            { playerId: 'u1', username: 'An', score: 500, correctAnswers: 5, totalAnswered: 5, finalRank: 1 },
+            { playerId: 'u2', username: 'Bình', score: 450, correctAnswers: 4, totalAnswered: 5, finalRank: 1 },
+            { playerId: 'u3', username: 'Châu', score: 200, correctAnswers: 2, totalAnswered: 5, finalRank: 2 },
+          ],
+        },
+      },
+    })
+    expect(await screen.findByTestId('end-host-rankings')).toBeInTheDocument()
+    expect(screen.getByTestId('end-host-rankings').children).toHaveLength(3)
+  })
+})

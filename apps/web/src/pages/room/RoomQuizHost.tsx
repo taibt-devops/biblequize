@@ -4,6 +4,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { fetchCurrentQuestion, useRoomChannel } from '../../hooks/useRoomChannel';
 import { api } from '../../api/client';
 import { PodiumBlock } from './RoomOverlays';
+import { normalizeQuizEnd } from './roomQuizCore';
 import HeadToHead from '../../components/multiplayer/HeadToHead';
 import { PlaceBackdrop } from '../../components/lk/Place'
 import type { QuestionStartData, RoomEvent, RoomQuestion } from '../../types/room';
@@ -176,12 +177,11 @@ const RoomQuizHost: React.FC = () => {
         }
         break;
       case 'QUIZ_END': {
-        const d = msg.data;
-        let rows: FinalRanking[] = [];
-        if (Array.isArray(d)) rows = d;
-        else if (Array.isArray(d?.finalResults)) rows = d!.finalResults!;
-        else if (Array.isArray(d?.leaderboard)) rows = d!.leaderboard!;
-        rows = [...rows].sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+        // PCV-19: đọc mọi dạng QUIZ_END (Đội đấu đội bọc kết quả trong finalResults); xếp theo hạng
+        // máy chủ đã chốt (Sinh tồn/Đấu vương không xếp theo điểm), thiếu hạng thì theo điểm.
+        const rows = [...normalizeQuizEnd(msg.data).results as FinalRanking[]].sort((a, b) =>
+          ((a as { finalRank?: number }).finalRank ?? 99) - ((b as { finalRank?: number }).finalRank ?? 99)
+          || (b.score ?? 0) - (a.score ?? 0));
         setFinalRanks(rows);
         break;
       }

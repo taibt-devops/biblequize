@@ -13,7 +13,7 @@ import { useRoomChatHistory } from '../hooks/useRoomChatHistory';
 import { EliminationScreen, TeamWinScreen } from './room/RoomOverlays';
 import SequentialFinalView from './room/SequentialFinalView';
 import RoomQuizShell, { type FeedEntry } from './room/RoomQuizShell';
-import { anchorQuestionStart, coreGameReducer, initialCoreGameState } from './room/roomQuizCore';
+import { anchorQuestionStart, coreGameReducer, initialCoreGameState, normalizeQuizEnd } from './room/roomQuizCore';
 import { useBattleRoyale } from './room/hooks/useBattleRoyale';
 import { useTeamVsTeam } from './room/hooks/useTeamVsTeam';
 import { useSuddenDeath } from './room/hooks/useSuddenDeath';
@@ -263,31 +263,17 @@ const RoomQuiz: React.FC = () => {
       }
 
       case 'QUIZ_END': {
-        // Payload varies per mode — see QuizEndData in types/room.ts.
-        const d = msg.data;
-        if (isBattleRoyale) {
-          const results = Array.isArray(d) ? d : d?.finalResults;
-          if (results && results.length > 0) {
-            dispatchCore({ type: 'SHOW_PODIUM', results });
-          } else {
-            navigate(`/multiplayer`, { replace: true });
-          }
-        } else if (isTeamVsTeam) {
-          const obj: QuizEndSummary = Array.isArray(d) ? {} : (d ?? {});
-          const results = obj.leaderboard ?? obj.finalResults ?? [];
-          dispatchCore({ type: 'SET_FINAL_RESULTS', results });
-          team.applyQuizEnd(obj);
+        // PCV-19: một chỗ đọc mọi dạng QUIZ_END (Đội đấu đội bọc kết quả đội trong finalResults).
+        const end = normalizeQuizEnd(msg.data);
+        if (isTeamVsTeam) {
+          dispatchCore({ type: 'SET_FINAL_RESULTS', results: end.results });
+          team.applyQuizEnd({ teamWinner: end.teamWinner ?? 'TIE', scoreA: end.scoreA, scoreB: end.scoreB } as QuizEndSummary);
         } else if (isSuddenDeath) {
-          const results = Array.isArray(d) ? d : (d?.finalResults ?? []);
-          dispatchCore({ type: 'SHOW_PODIUM', results });
+          dispatchCore({ type: 'SHOW_PODIUM', results: end.results });
+        } else if (end.results.length > 0) {
+          dispatchCore({ type: 'SHOW_PODIUM', results: end.results });
         } else {
-          // Speed Race: show podium if results available
-          const results = Array.isArray(d) ? d : (d?.finalResults ?? []);
-          if (results.length > 0) {
-            dispatchCore({ type: 'SHOW_PODIUM', results });
-          } else {
-            navigate(`/multiplayer`, { replace: true });
-          }
+          navigate(`/multiplayer`, { replace: true });
         }
         break;
       }

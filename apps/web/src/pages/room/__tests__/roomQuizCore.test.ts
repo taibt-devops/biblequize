@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { anchorQuestionStart, coreGameReducer, initialCoreGameState } from '../roomQuizCore'
+import { anchorQuestionStart, coreGameReducer, initialCoreGameState, normalizeQuizEnd } from '../roomQuizCore'
 import type { QuestionStartData } from '../../../types/room'
 
 const NOW = 1_700_000_000_000
@@ -72,5 +72,33 @@ describe('coreGameReducer — Phòng chơi v2 đợt 2 (PCV-11)', () => {
     const s1 = coreGameReducer({ ...initialCoreGameState, scores: before }, { type: 'ROUND_END', correctIndex: 1, scores: after })
     expect(s1.previousScores).toEqual(before)
     expect(s1.scores).toEqual(after)
+  })
+})
+
+describe('normalizeQuizEnd — QUIZ_END mọi mode (PCV-19)', () => {
+  const p = (id: string, rank?: number) => ({ playerId: id, username: id, score: 100, correctAnswers: 1, totalAnswered: 2, accuracy: 50, finalRank: rank })
+
+  it('Đội đấu đội: máy chủ bọc kết quả đội trong finalResults — vẫn lấy được đội thắng + bảng', () => {
+    const data = { roomId: 'r', timestamp: 1, finalResults: { teamWinner: 'A', scoreA: 980, scoreB: 363, leaderboard: [p('a', 1), p('b', 2)] } }
+    const n = normalizeQuizEnd(data)
+    expect(n.teamWinner).toBe('A')
+    expect(n.scoreA).toBe(980)
+    expect(n.scoreB).toBe(363)
+    expect(n.results.map(r => r.playerId)).toEqual(['a', 'b'])
+  })
+
+  it('các mode khác: finalResults là danh sách', () => {
+    const n = normalizeQuizEnd({ roomId: 'r', timestamp: 1, finalResults: [p('x', 1)] })
+    expect(n.results).toHaveLength(1)
+    expect(n.teamWinner).toBeNull()
+  })
+
+  it('dạng cũ: chính là danh sách', () => {
+    expect(normalizeQuizEnd([p('y')]).results).toHaveLength(1)
+  })
+
+  it('trống hoặc hỏng: danh sách rỗng', () => {
+    expect(normalizeQuizEnd(null).results).toEqual([])
+    expect(normalizeQuizEnd({ finalResults: 'x' }).results).toEqual([])
   })
 })

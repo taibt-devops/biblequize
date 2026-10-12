@@ -62,6 +62,33 @@ export interface CoreGameState {
   previousScores: PlayerScore[];
 }
 
+/**
+ * PCV-19 — QUIZ_END có nhiều dạng: máy chủ luôn gửi {@code { roomId, timestamp, finalResults }}, trong đó
+ * Đội đấu đội đặt cả kết quả đội vào finalResults ({@code { teamWinner, scoreA, scoreB, leaderboard }});
+ * bản cũ gửi thẳng danh sách. Trước đây trang đọc teamWinner ở ngoài cùng nên màn đội thắng không hiện.
+ */
+export function normalizeQuizEnd(data: unknown): {
+  results: PlayerScore[]; teamWinner: string | null; scoreA: number; scoreB: number
+} {
+  const empty = { results: [] as PlayerScore[], teamWinner: null, scoreA: 0, scoreB: 0 }
+  if (Array.isArray(data)) return { ...empty, results: data as PlayerScore[] }
+  if (!data || typeof data !== 'object') return empty
+  const outer = data as Record<string, unknown>
+  const inner = outer.finalResults && typeof outer.finalResults === 'object' && !Array.isArray(outer.finalResults)
+    ? outer.finalResults as Record<string, unknown>
+    : outer
+  const list = Array.isArray(inner.leaderboard) ? inner.leaderboard
+    : Array.isArray(inner.finalResults) ? inner.finalResults
+    : Array.isArray(outer.finalResults) ? outer.finalResults
+    : []
+  return {
+    results: list as PlayerScore[],
+    teamWinner: typeof inner.teamWinner === 'string' ? inner.teamWinner : null,
+    scoreA: typeof inner.scoreA === 'number' ? inner.scoreA : 0,
+    scoreB: typeof inner.scoreB === 'number' ? inner.scoreB : 0,
+  }
+}
+
 /** PCV-11: thưởng chuỗi Đua tốc độ — bản sao của SpeedRaceStrategy.streakBonus phía máy chủ. */
 export function speedRaceStreakBonus(streak: number | undefined): number {
   const n = streak ?? 0
