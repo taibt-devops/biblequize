@@ -42,6 +42,32 @@ class RoomMatchOutcomeServiceTest {
     }
 
     @Test
+    void idlePlayers_getNoMissionCredit_evenWhenTiedAtRankOne() {
+        // Cả phòng không ai trả lời → mọi người đồng hạng 1. Không được tính "chơi" hay "thắng".
+        RoomPlayer idleA = RankAssignerTest.p("a", 0, 0, 0, 0);
+        idleA.setFinalRank(1);
+        RoomPlayer idleB = RankAssignerTest.p("b", 0, 0, 0, 0);
+        idleB.setFinalRank(1);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(idleA, idleB));
+
+        service.recordOutcome("room-1");
+
+        verifyNoInteractions(missionService);
+    }
+
+    @Test
+    void rankOneWithoutAnyCorrectAnswer_countsAsPlayedButNotWon() {
+        RoomPlayer answeredAllWrong = RankAssignerTest.p("x", 0, 0, 5, 4000);
+        answeredAllWrong.setFinalRank(1);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(answeredAllWrong));
+
+        service.recordOutcome("room-1");
+
+        verify(missionService).trackProgress("x", "play_multiplayer_room", 1);
+        verify(missionService, never()).trackProgress("x", "win_multiplayer_room", 1);
+    }
+
+    @Test
     void missionFailure_doesNotBreakTheGameEnd() {
         RoomPlayer winner = RankAssignerTest.p("w", 900, 6, 6, 3000);
         winner.setFinalRank(1);
