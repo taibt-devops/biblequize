@@ -220,6 +220,46 @@ export default function CreateRoom() {
                   <span>{t(selectedMode.descKey)}</span>
                 </div>
               </div>
+
+              {/* PCV-9 (HPT-2): vai trò chủ phòng — hai lựa chọn rõ ràng, mặc định dẫn chương trình. */}
+              <div className="mt-5">
+                <CardLabel>{t('createRoom.roleTitle')}</CardLabel>
+                <div role="radiogroup" aria-label={t('createRoom.roleTitle')} className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  {([
+                    { plays: false, testId: 'create-room-role-organizer', icon: 'workspace_premium', title: 'createRoom.roleOrganizer', desc: 'createRoom.roleOrganizerDesc', color: '#B7791F' },
+                    { plays: true, testId: 'create-room-role-player', icon: 'sports_esports', title: 'createRoom.rolePlayer', desc: 'createRoom.rolePlayerDesc', color: '#2F6FB0' },
+                  ] as const).map(opt => {
+                    const active = formData.hostPlaysGame === opt.plays
+                    return (
+                      <button
+                        key={opt.testId}
+                        type="button"
+                        role="radio"
+                        aria-checked={active}
+                        data-testid={opt.testId}
+                        onClick={() => setFormData(prev => ({ ...prev, hostPlaysGame: opt.plays }))}
+                        className={`flex items-start gap-3 rounded-[12px] p-3 text-left transition-all ${active ? '' : 'bg-bq-inset'}`}
+                        style={{
+                          background: active ? hexToRgba(opt.color, 0.12) : undefined,
+                          border: `1.5px solid ${active ? opt.color : '#C9B58C'}`,
+                          boxShadow: active ? `0 0 0 1px ${opt.color}` : undefined,
+                        }}
+                      >
+                        <span
+                          className="inline-flex items-center justify-center rounded-[9px] flex-shrink-0"
+                          style={{ width: 34, height: 34, background: hexToRgba(opt.color, 0.16), color: opt.color }}
+                        >
+                          <span className="material-symbols-outlined" style={{ fontSize: 18, fontVariationSettings: "'FILL' 1" }}>{opt.icon}</span>
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block text-sm font-bold text-bq-ink">{t(opt.title)}</span>
+                          <span className="block text-xs text-bq-ink2 mt-0.5 leading-snug">{t(opt.desc)}</span>
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
             </section>
 
             {/* Card 2: Question source */}
@@ -450,42 +490,6 @@ export default function CreateRoom() {
                 </button>
               </div>
 
-              {/* HPT-2: host-plays opt-in. Default off = Quản trò (không chơi). */}
-              <div className="mt-[18px] pt-[18px] border-t border-bq-hair flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span
-                    className={`inline-flex items-center justify-center rounded-[9px] ${formData.hostPlaysGame ? 'text-bq-sapphire' : 'text-bq-amber'}`}
-                    style={{ width: 36, height: 36, background: formData.hostPlaysGame ? 'rgba(37,99,235,0.12)' : 'rgba(245,158,11,0.14)' }}
-                  >
-                    <span className="material-symbols-outlined" style={{ fontSize: 18, fontVariationSettings: "'FILL' 1" }}>
-                      {formData.hostPlaysGame ? 'sports_esports' : 'workspace_premium'}
-                    </span>
-                  </span>
-                  <div>
-                    <div className="text-sm font-semibold text-bq-ink">{t('createRoom.hostPlaysTitle')}</div>
-                    <div className="text-xs text-bq-ink2 mt-0.5">
-                      {formData.hostPlaysGame ? t('createRoom.hostPlaysDescOn') : t('createRoom.hostPlaysDescOff')}
-                    </div>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  data-testid="create-room-host-plays-toggle"
-                  onClick={() => setFormData(prev => ({ ...prev, hostPlaysGame: !prev.hostPlaysGame }))}
-                  className={`relative rounded-full w-12 h-6 transition-colors flex-shrink-0 ${formData.hostPlaysGame ? 'bg-bq-action' : 'bg-bq-inset'}`}
-                  aria-pressed={formData.hostPlaysGame}
-                  aria-label={t('createRoom.hostPlaysTitle')}
-                >
-                  <span
-                    className="absolute top-0.5 w-5 h-5 rounded-full bg-white transition-transform"
-                    style={{
-                      left: 2,
-                      transform: formData.hostPlaysGame ? 'translateX(22px)' : 'translateX(0)',
-                      boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
-                    }}
-                  />
-                </button>
-              </div>
             </section>
           </div>
 

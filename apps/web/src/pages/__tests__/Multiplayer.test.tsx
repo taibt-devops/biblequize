@@ -141,7 +141,9 @@ describe('Multiplayer page', () => {
     renderPage()
     // Mode label appears in 3 places after MLR redesign: mode showcase card,
     // filter chip, and the room card itself. Assert at least one rendered.
-    const matches = await screen.findAllByText('Team vs Team')
+    // PCV-9: tên lấy từ i18n room.modes.* (t() giả trả về khóa) — không còn "Team vs Team" cứng.
+    const matches = await screen.findAllByText('room.modes.team_vs_team')
+    expect(screen.queryByText('Team vs Team')).toBeNull()
     expect(matches.length).toBeGreaterThanOrEqual(1)
   })
 

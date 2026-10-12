@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, useRef } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { lobbyStartCheck } from './room/lobbyRules';
-import { MODE_META } from './create-room/modeMeta';
+import { MODE_META, modeMetaOf, modeRulesSlug } from './create-room/modeMeta';
 import { useRoomChannel } from '../hooks/useRoomChannel';
 import { api } from '../api/client';
 import { QRCodeSVG } from 'qrcode.react';
@@ -24,47 +24,22 @@ type Player = RoomPlayer;
 type ActivityTone = 'info' | 'ok' | 'warn';
 type ActivityEntry = { text: string; time: string; tone: ActivityTone };
 
-type ModeInfo = {
-  label: string; icon: string;
-  ruleTitle: string; ruleText: string; ruleDetail?: string;
-  chipColor: string; chipBg: string; chipBorder: string;
-};
+// PCV-9: tên, icon và luật lấy từ MODE_META + i18n (room.modes.*, room.rules.*) —
+// ở đây chỉ còn bảng màu chip riêng của sảnh chờ.
+type ModeChip = { chipColor: string; chipBg: string; chipBorder: string };
 
-const MODE_INFO: Record<string, ModeInfo> = {
-  SPEED_RACE: {
-    label: 'Speed Race', icon: 'bolt',
-    ruleTitle: 'Luật Speed Race',
-    ruleText: 'Trả lời nhanh + đúng để ghi điểm cao nhất.',
-    ruleDetail: 'Tốc độ + chính xác cùng quyết định thứ hạng. Ai trả lời nhanh hơn và đúng hơn sẽ giành điểm cao nhất.',
-    chipColor: 'var(--bq-amber-deep)', chipBg: 'color-mix(in srgb, var(--bq-amber) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-amber) 40%, transparent)',
-  },
-  BATTLE_ROYALE: {
-    label: 'Battle Royale', icon: 'favorite',
-    ruleTitle: 'Luật Battle Royale',
-    ruleText: 'Sai = Loại. Người đúng cuối cùng thắng.',
-    ruleDetail: 'Mỗi câu sai sẽ bị loại khỏi vòng tiếp theo. Tối đa 30 câu/trận. Khi cả nhóm cùng sai 1 câu, không ai bị loại.',
-    chipColor: 'var(--bq-ruby)', chipBg: 'color-mix(in srgb, var(--bq-ruby) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-ruby) 40%, transparent)',
-  },
-  TEAM_VS_TEAM: {
-    label: 'Team vs Team', icon: 'groups_2',
-    ruleTitle: 'Luật Team vs Team',
-    ruleText: 'Hai đội cạnh tranh — đội nhiều điểm hơn thắng.',
-    ruleDetail: 'Hai đội cạnh tranh nhau. Đội nào ghi nhiều điểm hơn sau tất cả câu hỏi sẽ thắng. Phối hợp với đồng đội!',
-    chipColor: 'var(--bq-sapphire)', chipBg: 'color-mix(in srgb, var(--bq-sapphire) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-sapphire) 40%, transparent)',
-  },
-  SUDDEN_DEATH: {
-    label: 'Đấu vương', icon: 'swords',
-    ruleTitle: 'Luật Đấu vương',
-    ruleText: 'Sai một câu là thua. Hai người đấu tay đôi.',
-    ruleDetail: 'Chỉ 2 người đấu cùng lúc. Sai 1 câu là thua. Người chiến thắng sẽ đấu tiếp người tiếp theo trong hàng đợi.',
-    chipColor: 'var(--bq-ember)', chipBg: 'color-mix(in srgb, var(--bq-ember) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-ember) 40%, transparent)',
-  },
-  GROUP_LIVE_SEQUENTIAL: {
-    label: 'Chơi cùng nhau', icon: 'group',
-    ruleTitle: 'Luật Chơi cùng nhau',
-    ruleText: 'Mọi người trả lời tuần tự — chờ tất cả xong mới hiện đáp án.',
-    chipColor: 'var(--bq-emerald)', chipBg: 'color-mix(in srgb, var(--bq-emerald) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-emerald) 40%, transparent)',
-  },
+const chip = (cssVar: string): ModeChip => ({
+  chipColor: cssVar === '--bq-amber' ? 'var(--bq-amber-deep)' : `var(${cssVar})`,
+  chipBg: `color-mix(in srgb, var(${cssVar}) 15%, transparent)`,
+  chipBorder: `color-mix(in srgb, var(${cssVar}) 40%, transparent)`,
+});
+
+const MODE_CHIP: Record<string, ModeChip> = {
+  SPEED_RACE: chip('--bq-amber'),
+  BATTLE_ROYALE: chip('--bq-ruby'),
+  TEAM_VS_TEAM: chip('--bq-sapphire'),
+  SUDDEN_DEATH: chip('--bq-ember'),
+  GROUP_LIVE_SEQUENTIAL: chip('--bq-emerald'),
 };
 
 const DIFFICULTY_LABEL: Record<string, string> = {
@@ -384,10 +359,17 @@ const RoomLobby: React.FC = () => {
       || (!hostPlaysGame && viewerUserId != null && viewerUserId === room?.hostId);
   const isOrganizerMode = isHost && !hostPlaysGame;
   const emptySlots = room ? Math.max(0, room.maxPlayers - room.currentPlayers) : 0;
-  const modeInfo = MODE_INFO[room?.mode ?? ''] ?? {
-    label: room?.mode ?? '', icon: 'sports_esports',
-    ruleTitle: 'Luật chơi', ruleText: '', ruleDetail: '',
-    chipColor: 'var(--bq-amber-deep)', chipBg: 'color-mix(in srgb, var(--bq-amber) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-amber) 40%, transparent)',
+  const modeMeta = modeMetaOf(room?.mode);
+  const rulesSlug = modeRulesSlug(room?.mode);
+  const modeName = modeMeta ? t(modeMeta.labelKey) : (room?.mode ?? '');
+  const modeInfo = {
+    label: modeName,
+    icon: modeMeta?.icon ?? 'sports_esports',
+    emoji: modeMeta?.emoji ?? '🎮',
+    ruleTitle: t('room.rules.title', { mode: modeName }),
+    ruleText: rulesSlug ? t(`room.rules.${rulesSlug}.short`) : '',
+    ruleDetail: rulesSlug ? t(`room.rules.${rulesSlug}.detail`) : '',
+    ...(MODE_CHIP[room?.mode ?? ''] ?? MODE_CHIP.SPEED_RACE),
   };
 
   const isGroupLive = room?.mode === 'GROUP_LIVE_SEQUENTIAL';
@@ -431,7 +413,6 @@ const RoomLobby: React.FC = () => {
           ...(room.players?.filter(p => p.userId !== room.hostId) ?? []),
         ].slice(0, 6)
       : [];
-    const modeLabel = MODE_INFO[room?.mode ?? '']?.label ?? room?.mode ?? '';
     const isGo = countdown === 0;
     return (
       <div
@@ -520,7 +501,7 @@ const RoomLobby: React.FC = () => {
           <div
             className="mt-8 lg:mt-10 inline-flex items-center gap-2 px-4 py-2 rounded-full fade-in bg-bq-white border border-bq-hair shadow-bq-soft"
           >
-            <span className="text-base">{modeInfo.icon === 'bolt' ? '⚡' : modeInfo.icon === 'favorite' ? '❤️' : modeInfo.icon === 'groups_2' ? '👥' : '👑'}</span>
+            <span className="text-base">{modeInfo.emoji}</span>
             <span className="text-sm font-semibold text-bq-ink">
               {modeLabel}{room?.questionCount ? ` · ${room.questionCount} câu` : ''}
             </span>
@@ -910,7 +891,7 @@ const RoomLobby: React.FC = () => {
                   className="px-3 py-1 rounded-full border-2 border-bq-ink bg-bq-white text-[13px] font-extrabold inline-flex items-center gap-0.5 flex-shrink-0"
                   data-testid="lobby-rules-detail-btn"
                 >
-                  Chi tiết
+                  {t('room.rules.detailBtn')}
                   <span className="material-symbols-outlined text-[13px]">arrow_forward</span>
                 </button>
               )}
@@ -1006,7 +987,7 @@ const RoomLobby: React.FC = () => {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Chi tiết luật chơi"
+          aria-label={t('room.rules.detailAria')}
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
           style={{ background: 'rgba(20,20,30,0.55)', backdropFilter: 'blur(4px)' }}
           onClick={() => setShowRulesDetail(false)}

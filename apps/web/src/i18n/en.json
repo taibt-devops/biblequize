@@ -1830,6 +1830,31 @@
       "readyDetail": "{{count}}/{{max}} players · Ready",
       "groupReady": "Ready to start",
       "groupReadyDetail": "{{count}}/{{max}} players · The leader can start"
+    },
+    "rules": {
+      "title": "{{mode}} rules",
+      "detailAria": "Rule details",
+      "detailBtn": "Details",
+      "speed_race": {
+        "short": "Answer correctly and quickly to score.",
+        "detail": "Each correct answer earns 100 points, plus up to 50 more the faster you answer. Most points after the last question wins."
+      },
+      "battle_royale": {
+        "short": "A wrong answer knocks you out. Last one standing wins.",
+        "detail": "A wrong or missing answer knocks you out of the next rounds. If everyone misses the same question, nobody is out. If several players remain at the end, more correct answers, then faster answers, rank higher."
+      },
+      "team_vs_team": {
+        "short": "Two teams compete; the higher score wins.",
+        "detail": "Players split into two teams. A team's score is its members' total; a round where the whole team is correct earns a bonus. Teams must be even before the game can start."
+      },
+      "sudden_death": {
+        "short": "One-on-one duels for the throne.",
+        "detail": "Only two players duel at a time. A wrong answer loses; if both are correct, the faster one wins. The winner keeps the throne and faces the next in line."
+      },
+      "group_live_sequential": {
+        "short": "Everyone answers; the answer appears once all are done.",
+        "detail": "The whole group answers each question. The answer and explanation appear once everyone has answered or time runs out, so the group can look at them together. Nobody is knocked out."
+      }
     }
   },
   "groups": {
@@ -2534,9 +2559,14 @@
       "speed_race": "Fastest correct answer wins",
       "battle_royale": "Wrong answer eliminates you — last one standing wins",
       "team_vs_team": "Two teams compete, higher total score wins",
-      "sudden_death": "One wrong answer and you lose — for the brave",
-      "group_live_sequential": "Everyone answers in sequence — the answer reveals once all are done"
-    }
+      "sudden_death": "Duel for the throne: the winner stays on; if both are correct, the faster one wins.",
+      "group_live_sequential": "Everyone answers — the answer appears once all are done"
+    },
+    "roleTitle": "Your role",
+    "roleOrganizer": "I host the game",
+    "roleOrganizerDesc": "You run the game without answering or scoring. Good for leading a class or a big screen.",
+    "rolePlayer": "I play along",
+    "rolePlayerDesc": "You open the room and answer too, scored like everyone else."
   },
   "daily": {
     "title": "Daily Challenge",

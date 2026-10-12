@@ -163,7 +163,7 @@ export default function ModePickerModal({
 
         {/* Desktop footer tip */}
         <div className="hidden lg:flex px-8 py-4 border-t border-bq-hair items-center justify-between bg-bq-inset">
-          <div className="text-[10px] text-bq-ink3">💡 Tip: Sequential phù hợp khi nội dung cần thảo luận. Speed Race phù hợp thiếu nhi.</div>
+          <div className="text-[10px] text-bq-ink3">💡 Mẹo: Chơi cùng nhau hợp khi cần dừng lại thảo luận. Đua tốc độ hợp với thiếu nhi.</div>
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-lg bg-bq-white border border-bq-hair text-bq-ink2 text-xs font-semibold"

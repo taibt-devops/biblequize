@@ -131,7 +131,7 @@ export default function QuickMatchConfigModal({ open, onClose }: Props) {
                     }}
                   >
                     <span className="material-symbols-outlined" style={{ fontSize: 16, color: m.color }}>{m.icon}</span>
-                    {modeLabel(m.id)}
+                    {t(m.labelKey)}
                   </button>
                 )
               })}
@@ -257,15 +257,6 @@ function ChipGroup<T extends string | number>({
       })}
     </div>
   )
-}
-
-function modeLabel(id: RoomModeId): string {
-  switch (id) {
-    case 'SPEED_RACE':    return 'Speed Race'
-    case 'BATTLE_ROYALE': return 'Battle Royale'
-    case 'TEAM_VS_TEAM':  return 'Team vs Team'
-    case 'SUDDEN_DEATH':  return 'Đấu vương'
-  }
 }
 
 function hexAlpha(hex: string, alpha: number): string {

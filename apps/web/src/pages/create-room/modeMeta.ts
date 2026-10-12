@@ -17,6 +17,8 @@ export interface ModeMeta<Id extends AnyRoomModeId = RoomModeId> {
   id: Id
   /** Material Symbols icon name. */
   icon: string
+  /** PCV-9 — emoji cùng nghĩa với icon, cho chỗ không dùng font icon (đếm ngược, banner nhóm). */
+  emoji: string
   /** i18n key for the mode display label (e.g. "Đua tốc độ"). */
   labelKey: string
   /** i18n key for the per-mode description shown under the mode grid. */
@@ -37,6 +39,7 @@ export const MODE_META: { [K in AnyRoomModeId]: ModeMeta<K> } = {
   SPEED_RACE: {
     id: 'SPEED_RACE',
     icon: 'bolt',
+    emoji: '⚡',
     labelKey: 'room.modes.speed_race',
     descKey: 'createRoom.modeDesc.speed_race',
     color: '#38bdf8',
@@ -44,7 +47,9 @@ export const MODE_META: { [K in AnyRoomModeId]: ModeMeta<K> } = {
   },
   BATTLE_ROYALE: {
     id: 'BATTLE_ROYALE',
-    icon: 'swords',
+    // PCV-9: Sinh tồn = giữ mạng sống → trái tim (đợt 2 hiển thị mạng bằng tim).
+    icon: 'favorite',
+    emoji: '❤️',
     labelKey: 'room.modes.battle_royale',
     descKey: 'createRoom.modeDesc.battle_royale',
     color: '#ef4444',
@@ -53,6 +58,7 @@ export const MODE_META: { [K in AnyRoomModeId]: ModeMeta<K> } = {
   TEAM_VS_TEAM: {
     id: 'TEAM_VS_TEAM',
     icon: 'groups',
+    emoji: '👥',
     labelKey: 'room.modes.team_vs_team',
     descKey: 'createRoom.modeDesc.team_vs_team',
     color: '#a855f7',
@@ -60,7 +66,9 @@ export const MODE_META: { [K in AnyRoomModeId]: ModeMeta<K> } = {
   },
   SUDDEN_DEATH: {
     id: 'SUDDEN_DEATH',
-    icon: 'target',
+    // PCV-9: Đấu vương = đấu tay đôi → hai thanh kiếm.
+    icon: 'swords',
+    emoji: '⚔️',
     labelKey: 'room.modes.sudden_death',
     descKey: 'createRoom.modeDesc.sudden_death',
     color: '#fbbf24',
@@ -73,12 +81,31 @@ export const MODE_META: { [K in AnyRoomModeId]: ModeMeta<K> } = {
   GROUP_LIVE_SEQUENTIAL: {
     id: 'GROUP_LIVE_SEQUENTIAL',
     icon: 'group',
+    emoji: '📚',
     labelKey: 'room.modes.group_live_sequential',
     descKey: 'createRoom.modeDesc.group_live_sequential',
     color: '#a78bfa',
     badge: { bg: 'rgba(167,139,250,0.15)', fg: '#c4b5fd', border: 'rgba(167,139,250,0.35)' },
     createdViaApi: true,
   },
+}
+
+/** PCV-9 — metadata theo mã mode bất kỳ (kể cả mã lạ → undefined). */
+export function modeMetaOf(mode: string | null | undefined): ModeMeta<AnyRoomModeId> | undefined {
+  return MODE_META[(mode ?? '') as AnyRoomModeId]
+}
+
+/** PCV-9 — tên hiển thị duy nhất của một mode ở mọi màn (sảnh, danh sách phòng,
+ *  Đấu nhanh, banner nhóm). Mã lạ thì trả lại chính mã để không mất thông tin. */
+export function modeDisplayName(t: (key: string) => string, mode: string | null | undefined): string {
+  const meta = modeMetaOf(mode)
+  return meta ? t(meta.labelKey) : (mode ?? '')
+}
+
+/** PCV-9 — khóa i18n luật chơi: room.rules.<slug>.short / .detail. */
+export function modeRulesSlug(mode: string | null | undefined): string | null {
+  const meta = modeMetaOf(mode)
+  return meta ? meta.labelKey.split('.').pop() ?? null : null
 }
 
 /** User-selectable modes only — GROUP_LIVE_SEQUENTIAL (createdViaApi) is

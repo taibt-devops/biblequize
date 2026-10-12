@@ -233,11 +233,12 @@ export const MODE_LABELS: Record<RoomMode, {
   vi: string; emoji: string; min: number; even?: boolean;
   cssClass: string; tagline: string;
 }> = {
-  SPEED_RACE:           { vi: 'Speed Race',    emoji: '⚡',  min: 1,  cssClass: 'qs-mode-speed', tagline: 'Vui nhộn · Thi tốc độ trả lời đúng' },
-  GROUP_LIVE_SEQUENTIAL:{ vi: 'Sequential',    emoji: '📚',  min: 1,  cssClass: 'qs-mode-seq',   tagline: 'Lớp học sâu · Host dẫn dắt từng câu' },
-  TEAM_VS_TEAM:         { vi: 'Team vs Team',  emoji: '⚔️', min: 6, even: true, cssClass: 'qs-mode-team', tagline: 'Đối kháng · 2 đội thi với nhau' },
-  BATTLE_ROYALE:        { vi: 'Battle Royale', emoji: '💀',  min: 4,  cssClass: 'qs-mode-br',    tagline: 'Kịch tính · Sai là loại' },
-  SUDDEN_DEATH:         { vi: 'Đấu vương',     emoji: '👑',  min: 10, cssClass: 'qs-mode-sd',    tagline: 'Final 1v1 · Vua trụ tới cuối' },
+  // PCV-9: cùng tên + emoji với modeMeta (sảnh chờ, danh sách phòng).
+  SPEED_RACE:           { vi: 'Đua tốc độ',     emoji: '⚡',  min: 1,  cssClass: 'qs-mode-speed', tagline: 'Vui nhộn · Thi tốc độ trả lời đúng' },
+  GROUP_LIVE_SEQUENTIAL:{ vi: 'Chơi cùng nhau', emoji: '📚',  min: 1,  cssClass: 'qs-mode-seq',   tagline: 'Lớp học · Cả nhóm xem đáp án cùng lúc' },
+  TEAM_VS_TEAM:         { vi: 'Đội đấu đội',    emoji: '👥', min: 6, even: true, cssClass: 'qs-mode-team', tagline: 'Đối kháng · 2 đội thi với nhau' },
+  BATTLE_ROYALE:        { vi: 'Sinh tồn',       emoji: '❤️',  min: 4,  cssClass: 'qs-mode-br',    tagline: 'Kịch tính · Sai là loại' },
+  SUDDEN_DEATH:         { vi: 'Đấu vương',      emoji: '⚔️',  min: 10, cssClass: 'qs-mode-sd',    tagline: 'Tay đôi · Thắng thì giữ ngai' },
 }
 
 export function getModeAvailability(mode: RoomMode, total: number): { available: boolean; reason?: string } {

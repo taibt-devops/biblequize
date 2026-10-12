@@ -11,7 +11,7 @@
 - PCV-6 Hạng cuối mọi mode + nhiệm vụ phòng + MVP thật — Status: [ ] TODO
 - PCV-7 Nhiệm vụ ngày: đếm đủ 13 loại, thay loại không có lối vào, thưởng 50 XP thật — Status: [ ] TODO
 - PCV-8 Đấu nhanh không dùng AI, bỏ giới hạn 3 trận/ngày cho kho câu — Status: [ ] TODO
-- PCV-9 Tên/icon/mô tả mode thống nhất + chọn vai trò chủ phòng — Status: [ ] TODO
+- PCV-9 Tên/icon/mô tả mode thống nhất + chọn vai trò chủ phòng — Status: [x] DONE
 - PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [ ] TODO
 
 ### Tasks — Đợt 2 (thiết kế lại mode)

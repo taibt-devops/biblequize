@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { api } from '../../api/client'
-import { MODE_META, type RoomModeId } from '../create-room/modeMeta'
+import { MODE_META, modeDisplayName, type RoomModeId } from '../create-room/modeMeta'
 import AvatarStack from './AvatarStack'
 import { DIFFICULTY_CONFIG, formatBookScope, formatRelativeTime, type PublicRoom } from './types'
 
@@ -91,7 +91,7 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
           </div>
           <div className="min-w-0">
             <div className="text-[12px] font-bold truncate" style={{ color: mode.color }}>
-              {modeLabel(room.mode)}
+              {modeDisplayName(t, room.mode)}
             </div>
             <div className="text-sm font-bold text-bq-ink truncate">{room.roomName}</div>
           </div>
@@ -148,12 +148,3 @@ export default function RoomCard({ room }: { room: PublicRoom }) {
   )
 }
 
-function modeLabel(mode: string): string {
-  switch (mode) {
-    case 'SPEED_RACE':    return 'Speed Race'
-    case 'BATTLE_ROYALE': return 'Battle Royale'
-    case 'TEAM_VS_TEAM':  return 'Team vs Team'
-    case 'SUDDEN_DEATH':  return 'Đấu vương'
-    default:              return mode
-  }
-}

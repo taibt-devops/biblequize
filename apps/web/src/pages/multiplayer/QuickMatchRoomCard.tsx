@@ -10,20 +10,10 @@ import { useNavigate } from 'react-router-dom'
 import { api } from '../../api/client'
 import AvatarStack from './AvatarStack'
 import { formatBookScope, type PublicRoom } from './types'
-import { MODE_META, type RoomModeId } from '../create-room/modeMeta'
+import { MODE_META, modeDisplayName, type RoomModeId } from '../create-room/modeMeta'
 
 const INDIGO = '#2F6FB0'
 const INDIGO_LIGHT = '#2F6FB0'
-
-function modeShortLabel(id: string): string {
-  switch (id) {
-    case 'SPEED_RACE':    return 'Speed Race'
-    case 'BATTLE_ROYALE': return 'Battle Royale'
-    case 'TEAM_VS_TEAM':  return 'Team vs Team'
-    case 'SUDDEN_DEATH':  return 'Đấu vương'
-    default:              return id
-  }
-}
 
 export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
   const { t } = useTranslation()
@@ -77,7 +67,7 @@ export default function QuickMatchRoomCard({ room }: { room: PublicRoom }) {
         </div>
         <div className="min-w-0">
           <div className="text-[12px] font-bold" style={{ color: INDIGO_LIGHT }}>
-            {t('multiplayer.quickMatch.noHost', { mode: modeShortLabel(room.mode) })}
+            {t('multiplayer.quickMatch.noHost', { mode: modeDisplayName(t, room.mode) })}
           </div>
           <div className="text-sm font-bold text-bq-ink truncate">{t('multiplayer.quickMatch.roomCode', { code: room.roomCode })}</div>
         </div>

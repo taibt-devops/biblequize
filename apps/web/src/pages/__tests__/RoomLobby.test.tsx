@@ -124,7 +124,9 @@ describe('RoomLobby — hero block + room code', () => {
     await renderLobby()
     await screen.findByTestId('lobby-room-code')
     // Mode label appears in topbar chip + rule title — at least one match suffices.
-    expect(screen.getAllByText(/Speed Race/i).length).toBeGreaterThan(0)
+    // PCV-9: một tên tiếng Việt cho mỗi mode ở mọi màn — không còn "Speed Race".
+    expect(screen.getAllByText(/Đua tốc độ/i).length).toBeGreaterThan(0)
+    expect(screen.queryByText(/Speed Race/i)).toBeNull()
     expect(screen.getByText(/Công khai/i)).toBeInTheDocument()
     // Hero stats grid (post-redesign): values rendered without inline units;
     // labels carry the unit context.
@@ -268,7 +270,24 @@ describe('RoomLobby — chat panel (desktop always visible)', () => {
 describe('RoomLobby — rules card', () => {
   it('renders compact rule text', async () => {
     await renderLobby()
-    expect(await screen.findByText(/Luật Speed Race/i)).toBeInTheDocument()
+    expect(await screen.findByText(/Luật Đua tốc độ/i)).toBeInTheDocument()
+    expect(screen.getByText('Trả lời đúng và nhanh để ghi điểm.')).toBeInTheDocument()
+  })
+
+  it('PCV-9: chip mode dùng icon chung — Sinh tồn = favorite, Đấu vương = swords', async () => {
+    await renderLobby({ ...baseRoom, mode: 'BATTLE_ROYALE' })
+    const chip = await screen.findByTestId('lobby-topbar-mode')
+    expect(chip.textContent).toContain('favorite')
+    expect(chip.textContent).toContain('Sinh tồn')
+  })
+
+  it('PCV-9: Đấu vương có luật tay đôi giành ngai', async () => {
+    await renderLobby({ ...baseRoom, mode: 'SUDDEN_DEATH' })
+    const chip = await screen.findByTestId('lobby-topbar-mode')
+    expect(chip.textContent).toContain('swords')
+    expect(screen.getByText(/Luật Đấu vương/i)).toBeInTheDocument()
+    fireEvent.click(screen.getByTestId('lobby-rules-detail-btn'))
+    expect(await screen.findByText(/cả hai cùng đúng thì ai nhanh hơn thắng/i)).toBeInTheDocument()
   })
 
   it('clicking "Chi tiết" opens rules detail modal', async () => {

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { api } from '../../api/client';
+import { modeDisplayName, modeMetaOf } from '../../pages/create-room/modeMeta';
 
 interface ActiveRoom {
   id: string;
@@ -15,14 +16,6 @@ interface ActiveRoom {
   hostName?: string;
 }
 
-const MODE_LABELS: Record<string, string> = {
-  GROUP_LIVE_SEQUENTIAL: '📚 Sequential',
-  SPEED_RACE: '⚡ Speed Race',
-  TEAM_VS_TEAM: '⚔️ Team vs Team',
-  BATTLE_ROYALE: '💀 Battle Royale',
-  SUDDEN_DEATH: '👑 Đấu vương',
-  SEQUENTIAL: '📚 Sequential',
-};
 
 function formatRelative(iso: string, t: (k: string, v?: any) => string): string {
   const ts = Date.parse(iso);
@@ -70,7 +63,10 @@ export default function LiveNowBanner({ groupId }: { groupId: string }) {
 
   if (rooms.length === 0) return null;
   const room = rooms[0];
-  const modeLabel = MODE_LABELS[room.mode] ?? room.mode;
+  // PCV-9: cùng tên + biểu tượng với sảnh chờ; mã cũ SEQUENTIAL = Chơi cùng nhau.
+  const modeKey = room.mode === 'SEQUENTIAL' ? 'GROUP_LIVE_SEQUENTIAL' : room.mode;
+  const modeMeta = modeMetaOf(modeKey);
+  const modeLabel = modeMeta ? `${modeMeta.emoji} ${modeDisplayName(t, modeKey)}` : room.mode;
   const meta = room.hostName
     ? t('groups.liveNow.metaWithHost', {
         mode: modeLabel,

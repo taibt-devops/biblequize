@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
 import { useAuth } from '../store/authStore'
-import { MODE_LIST, MODE_META, type RoomModeId } from './create-room/modeMeta'
+import { MODE_LIST } from './create-room/modeMeta'
 import JoinByCodeBar from './multiplayer/JoinByCodeBar'
 import RoomCard from './multiplayer/RoomCard'
 import QuickMatchRoomCard from './multiplayer/QuickMatchRoomCard'
@@ -20,13 +20,6 @@ import EmptyState from './multiplayer/EmptyState'
 import QuickMatchEntryCard from './multiplayer/QuickMatchEntryCard'
 import type { PublicRoom, RoomMode, SortOption } from './multiplayer/types'
 import { PlaceBackdrop, Plaque } from '../components/lk/Place'
-
-const MODE_DISPLAY_LABEL: Record<RoomModeId, string> = {
-  SPEED_RACE: 'Speed Race',
-  BATTLE_ROYALE: 'Battle Royale',
-  TEAM_VS_TEAM: 'Team vs Team',
-  SUDDEN_DEATH: 'Đấu vương',
-}
 
 export default function Multiplayer() {
   const { t } = useTranslation()
@@ -218,7 +211,7 @@ export default function Multiplayer() {
               icon={m.icon}
               iconColor={m.color}
             >
-              {MODE_DISPLAY_LABEL[m.id]}
+              {t(m.labelKey)}
             </FilterChip>
           ))}
           <div className="w-0.5 h-6 bg-bq-ink/25 mx-1" />

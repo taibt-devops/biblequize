@@ -220,10 +220,16 @@ describe('CreateRoom', () => {
   it('host-plays toggle on sends hostPlaysGame=true and updates hint chip', async () => {
     mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r2', roomCode: 'BBB222' } } })
     renderCreateRoom()
-    const toggle = screen.getByTestId('create-room-host-plays-toggle')
-    expect(toggle).toHaveAttribute('aria-pressed', 'false')
-    fireEvent.click(toggle)
-    expect(toggle).toHaveAttribute('aria-pressed', 'true')
+    // PCV-9: hai lựa chọn rõ ràng thay cho công tắc — mặc định "Tôi dẫn chương trình".
+    const organizer = screen.getByTestId('create-room-role-organizer')
+    const player = screen.getByTestId('create-room-role-player')
+    expect(organizer).toHaveAttribute('aria-checked', 'true')
+    expect(player).toHaveAttribute('aria-checked', 'false')
+    expect(organizer.textContent).toMatch(/Tôi dẫn chương trình/)
+    expect(player.textContent).toMatch(/Tôi chơi cùng mọi người/)
+    fireEvent.click(player)
+    expect(player).toHaveAttribute('aria-checked', 'true')
+    expect(organizer).toHaveAttribute('aria-checked', 'false')
     // top hint chip switches from organizer → host-plays copy
     expect(screen.getByTestId('create-room-organizer-hint').textContent).toMatch(/cũng chơi/i)
 

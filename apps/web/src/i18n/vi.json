@@ -1830,6 +1830,31 @@
       "readyDetail": "{{count}}/{{max}} người · Có thể bắt đầu",
       "groupReady": "Sẵn sàng bắt đầu",
       "groupReadyDetail": "{{count}}/{{max}} người · Trưởng nhóm có thể bắt đầu"
+    },
+    "rules": {
+      "title": "Luật {{mode}}",
+      "detailAria": "Chi tiết luật chơi",
+      "detailBtn": "Chi tiết",
+      "speed_race": {
+        "short": "Trả lời đúng và nhanh để ghi điểm.",
+        "detail": "Mỗi câu đúng được 100 điểm, trả lời càng nhanh càng được thêm (tối đa 50). Hết câu, ai nhiều điểm nhất thắng."
+      },
+      "battle_royale": {
+        "short": "Sai là bị loại. Người trụ lại cuối cùng thắng.",
+        "detail": "Trả lời sai hoặc không kịp thì bị loại khỏi vòng sau. Nếu cả nhóm cùng sai một câu thì không ai bị loại. Hết câu mà còn nhiều người thì ai đúng nhiều hơn, rồi nhanh hơn, xếp trên."
+      },
+      "team_vs_team": {
+        "short": "Hai đội đấu nhau, đội nhiều điểm hơn thắng.",
+        "detail": "Người chơi được chia hai đội. Điểm đội là tổng điểm thành viên; cả đội cùng đúng một câu được thưởng thêm. Hai đội phải đều người mới bắt đầu được."
+      },
+      "sudden_death": {
+        "short": "Đấu tay đôi giành ngai.",
+        "detail": "Mỗi lúc chỉ hai người đấu. Một người sai là thua; cả hai cùng đúng thì ai nhanh hơn thắng. Người thắng giữ ngai và đấu tiếp người kế trong hàng."
+      },
+      "group_live_sequential": {
+        "short": "Mọi người cùng trả lời, chờ tất cả xong mới hiện đáp án.",
+        "detail": "Cả nhóm cùng trả lời từng câu. Khi mọi người đã trả lời hoặc hết giờ, đáp án và lời giải thích mới hiện ra để cả nhóm cùng xem. Không ai bị loại."
+      }
     }
   },
   "groups": {
@@ -2534,9 +2559,14 @@
       "speed_race": "Ai trả lời nhanh và đúng sẽ thắng",
       "battle_royale": "Sai là bị loại, người còn lại cuối cùng thắng",
       "team_vs_team": "Hai đội đấu nhau, đội có điểm cao hơn thắng",
-      "sudden_death": "Một câu sai là thua, dành cho người dũng cảm",
-      "group_live_sequential": "Mọi người trả lời tuần tự — chờ tất cả xong mới hiện đáp án"
-    }
+      "sudden_death": "Đấu tay đôi giành ngai: thắng thì giữ ngai đấu tiếp, cả hai cùng đúng thì ai nhanh hơn thắng.",
+      "group_live_sequential": "Mọi người cùng trả lời — chờ tất cả xong mới hiện đáp án"
+    },
+    "roleTitle": "Vai trò của bạn",
+    "roleOrganizer": "Tôi dẫn chương trình",
+    "roleOrganizerDesc": "Bạn điều khiển trận, không trả lời và không tính điểm. Hợp khi dẫn lớp hoặc chiếu lên màn hình lớn.",
+    "rolePlayer": "Tôi chơi cùng mọi người",
+    "rolePlayerDesc": "Bạn vừa mở phòng vừa trả lời, được tính điểm như mọi người."
   },
   "daily": {
     "title": "Thử Thách Hàng Ngày",
