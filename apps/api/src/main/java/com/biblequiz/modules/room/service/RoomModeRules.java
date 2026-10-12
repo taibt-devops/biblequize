@@ -85,7 +85,7 @@ public final class RoomModeRules {
             long b = players.stream().filter(p -> p.getTeam() == RoomPlayer.Team.B).count();
             if (a < 2 || b < 2) return "Mỗi đội cần ít nhất 2 người";
             long diff = Math.abs(a - b);
-            if (diff > 1) return "Hai đội đang lệch nhau " + diff + " người — đổi đội hoặc bấm Xáo đội";
+            if (diff > 1) return "Hai đội đang lệch nhau " + diff + " người — hãy đổi đội cho cân";
         }
         return null;
     }

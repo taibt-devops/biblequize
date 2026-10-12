@@ -2,6 +2,21 @@
 
 ---
 
+## 2026-10-12 — Phòng chơi v2 (đợt 1): Đấu vương tối đa 12, thưởng nhiệm vụ 50 XP thật, Đấu nhanh không dùng AI, Phòng chơi không cộng XP
+
+- **Bối cảnh:** review game design Phòng chơi 12/10 (user: "review kĩ … dưới mắt nhìn của 1 senior game design", rồi "làm hết luôn đi … cứ làm theo ý bạn"). Thiết kế: `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md`.
+- **Quyết định:**
+  - **Đấu vương tối đa 12 người.** Đấu tay đôi lần lượt nên phòng đông thì phần lớn người chơi ngồi xem cả trận; 12 người với 20 câu vẫn đủ lượt cho mọi người. Các mode khác giữ tối đa 100.
+  - **Số người tối thiểu theo mode** (máy chủ chặn, không chỉ giao diện): Sinh tồn 3, Đấu vương 3, Đội đấu đội 4 (mỗi đội ≥ 2, lệch ≤ 1), Đua tốc độ và Chơi cùng nhau 2. Quản trò không tính.
+  - **Thưởng nhiệm vụ ngày: +50 XP một lần khi xong cả 3**, cộng thật vào `user_daily_progress.points_counted` (trước đây chỉ ghi log). Nhiệm vụ lẻ không có XP. Thêm một nguồn XP nhỏ, có trần 50/ngày, bên cạnh Đấu Hạng và Thử thách ngày.
+  - **Phòng chơi không cộng XP.** Giữ nguyên tắc "XP chỉ từ Đấu Hạng + Thử thách ngày (+ thưởng nhiệm vụ)": điểm trong phòng phụ thuộc số người và mode, dễ dàn xếp giữa bạn bè. Phòng chơi được tính vào nhiệm vụ ngày (chơi/thắng 1 trận).
+  - **Đấu nhanh chỉ dùng kho câu đã biên tập**, bỏ nguồn AI và bỏ giới hạn 3 trận/ngày. Câu AI chưa qua biên tập không hợp với trận đông người ghép ngẫu nhiên; giới hạn ngày vốn chỉ để chặn chi phí sinh câu AI.
+  - **Thời gian trả lời do máy chủ đo** (dung sai mạng 1,5 giây, ân hạn 1 giây), và không công bố đúng/sai trước khi vòng đóng.
+- **Đính chính:** review 12/10 nói "máy chủ chỉ chạy được tối đa 8 trận cùng lúc" — sai. `@EnableWebSocketMessageBroker` tạo executor STOMP nên Spring Boot không tạo `applicationTaskExecutor`; `@Async` khi đó chạy trên `SimpleAsyncTaskExecutor` (không giới hạn, mỗi trận một luồng mới). Nay dùng executor riêng `roomGameExecutor` (tối đa 256 trận, hết thì trả 503 và phòng về sảnh) cho rõ ràng.
+- **Implementation:** PCV-1..10, task `docs/todo/active/2026-10-12-phong-choi-v2.md`; SPEC_MULTIPLAYER §0, SPEC_USER §13.
+
+---
+
 ## 2026-10-10 — Bộ câu tiếng Anh: Berean Standard Bible, viết mới độc lập
 
 - **Bối cảnh:** bộ tiếng Anh (`*_quiz_en.json`, 5.048 câu) là bản dịch máy (Gemini) của bộ tiếng Việt cũ, chưa từng đối chiếu Kinh Thánh. Sau khi viết lại đủ 66 sách tiếng Việt bằng RVV11, user chọn ESV rồi đổi ý ngay trong cùng câu trả lời: "lấy bản tiếng Anh hay gần gũi với giới trẻ", "dùng bản khác", "viết độc lập theo bản tiếng Anh".

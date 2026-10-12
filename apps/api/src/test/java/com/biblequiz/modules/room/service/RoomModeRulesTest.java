@@ -82,7 +82,7 @@ class RoomModeRulesTest {
                 RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(2, 1), true));
         assertEquals("Mỗi đội cần ít nhất 2 người",
                 RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(4, 0), true));
-        assertEquals("Hai đội đang lệch nhau 2 người — đổi đội hoặc bấm Xáo đội",
+        assertEquals("Hai đội đang lệch nhau 2 người — hãy đổi đội cho cân",
                 RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(5, 3), true));
         assertNull(RoomModeRules.startError(Room.RoomMode.TEAM_VS_TEAM, teams(3, 2), true));
     }

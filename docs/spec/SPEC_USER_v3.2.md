@@ -1792,17 +1792,29 @@ Modal `ComebackModal.tsx` xuất hiện trên Home sau login lần đầu sau ga
 3 micro-quest / ngày, scaled theo tier — keep daily engagement.
 
 ### 13.2 Generation
-- Sinh đầu mỗi ngày (UTC) per user.
-- Template theo tier (xem `DailyMissionService.MISSION_TEMPLATES`):
-  - Tier 1: `answer_correct_3`, `complete_daily_challenge`, `answer_combo_3`.
-  - Tier 2: `play_any_mode`, `correct_medium_5`, `ranked_score_60`.
-  - Tier 3: `answer_correct_5`, `correct_hard_3`, `win_multiplayer_room`.
-  - Tier 4: `correct_book_5`, `complete_speed_round`, `correct_hard_10`.
-  - Tier 5–6: scale lên hard/multiplayer-heavy.
+- Sinh đầu mỗi ngày (giờ `GameClock`) per user; từ 2026-10-12 cũng sinh khi người chơi trả lời câu đầu tiên trong ngày mà chưa mở trang chủ (trước đó các câu này không được đếm).
+- Template theo tier (xem `DailyMissionService.MISSION_TEMPLATES`, sửa 2026-10-12 — PCV-7):
+  - Tier 1: trả lời đúng 3 câu, hoàn thành Thử thách ngày, chuỗi đúng 3.
+  - Tier 2: chơi 1 lượt bất kỳ, đúng 5 câu trung bình, đạt 60 điểm Đấu Hạng trong ngày.
+  - Tier 3: đúng 5 câu, đúng 3 câu khó, thắng 1 trận Phòng chơi.
+  - Tier 4: đúng 5 câu cùng một sách, chơi 1 trận Phòng chơi, đúng 10 câu khó.
+  - Tier 5: ôn 3 câu Học Thuộc, chuỗi đúng 10, thắng 1 trận Phòng chơi.
+  - Tier 6: đúng 5 câu khó, đúng 5 câu khó trong ≤ 10 giây, đúng 10 câu.
+- Loại không còn lối vào được thay ngay khi đọc (tiến độ về 0): `complete_speed_round` → chơi 1 trận Phòng chơi; `complete_mystery_mode` → ôn 3 câu Học Thuộc; `leaderboard_daily_top3` → thắng 1 trận Phòng chơi; `review_ai_draft` → đúng 5 câu khó.
+
+#### Nguồn sự kiện (PCV-7)
+| Loại | Đếm từ |
+|---|---|
+| `answer_correct`, `answer_combo`, `answer_correct_difficulty`, `answer_hard_fast`, `answer_correct_book` | Mọi câu trả lời: Luyện Tập, Đấu Hạng, Thử thách ngày (không đo giờ → không tính "câu khó nhanh"), Phòng chơi. Một sự kiện `onAnswer(userId, AnswerEvent{correct, difficulty, book, responseMs})`. |
+| `ranked_score` | Điểm Đấu Hạng trong ngày (`onRankedPoints`). |
+| `play_any_mode` | Hết lượt Luyện Tập, hoàn thành Thử thách ngày, hết trận Phòng chơi. |
+| `play_multiplayer_room`, `win_multiplayer_room` | `RoomMatchOutcomeService` sau trận kết thúc bình thường (hạng 1 = thắng). |
+| `memorize_review` | Mỗi lần ôn câu Học Thuộc. |
+| `complete_daily_challenge` | Hoàn thành Thử thách ngày. |
 
 ### 13.3 Reward
-- Mỗi mission complete → **+50 XP** (`BONUS_XP = 50` `DailyMissionService:20`).
-- Hoàn thành 3/3 → bonus card claim (UI `DailyMissionsCard`).
+- Hoàn thành cả 3 nhiệm vụ trong ngày → **+50 XP một lần** (`MissionRewardService.creditBonus`, cộng vào `user_daily_progress.points_counted` hôm nay — cùng sổ với bảng xếp hạng, rồi xoá cache bảng xếp hạng). Trước 2026-10-12 chỉ ghi log, không cộng thật.
+- Từng nhiệm vụ lẻ không có XP.
 
 ### 13.4 Schema
 ```sql
@@ -1818,7 +1830,7 @@ daily_missions (
 - Confirmed callers (grep `dailyMissionService.trackProgress`):
   - `DailyChallengeService.java:251` — sau khi complete daily challenge → `trackProgress(userId, "complete_daily_challenge", 1)`
   - (Other callers: SessionService, RoomQuizService, etc — when adding new mission_type, must add corresponding caller)
-- Bonus auto-grant: khi all 3 missions completed → set `bonus_claimed=true` trên cả 3 rows + log `bonus 50 XP granted` (BONUS_XP constant). **Note:** XP addition itself happens trong scored session flow, không phải trong DailyMissionService — caller pattern.
+- Bonus auto-grant: khi all 3 missions completed → set `bonus_claimed=true` trên cả 3 rows và gọi `MissionRewardService.creditBonus(userId, 50)` (2026-10-12).
 
 ---
 

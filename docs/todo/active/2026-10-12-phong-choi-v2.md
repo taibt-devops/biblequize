@@ -3,16 +3,16 @@
 > **Source**: review game design 12/10 + user: "làm hết luôn đi, làm cho đến khi hoàn thiện, cứ làm theo ý bạn ko cần đợi ý kiến của tôi" · **Scope**: apps/api modules/room + quiz missions, apps/web room pages · Design: `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` · Plans: `docs/plans/2026-10-12-phong-choi-v2-dot-{1,2,3}.md`
 
 ### Tasks — Đợt 1 (sửa lỗi)
-- PCV-1 Máy chủ đo giờ + đóng vòng — Status: [ ] TODO
-- PCV-2 Không lộ đáp án + ROUND_END đầy đủ + nhịp nghỉ 5/7 s — Status: [ ] TODO
-- PCV-3 Giao diện màn chơi theo payload mới — Status: [ ] TODO
-- PCV-4 Bộ luồng riêng cho trận + bắt đầu nguyên tử — Status: [ ] TODO
-- PCV-5 Luật số người theo mode (BE + sảnh chờ + tạo phòng) — Status: [ ] TODO
-- PCV-6 Hạng cuối mọi mode + nhiệm vụ phòng + MVP thật — Status: [ ] TODO
-- PCV-7 Nhiệm vụ ngày: đếm đủ 13 loại, thay loại không có lối vào, thưởng 50 XP thật — Status: [ ] TODO
-- PCV-8 Đấu nhanh không dùng AI, bỏ giới hạn 3 trận/ngày cho kho câu — Status: [ ] TODO
+- PCV-1 Máy chủ đo giờ + đóng vòng — Status: [x] DONE
+- PCV-2 Không lộ đáp án + ROUND_END đầy đủ + nhịp nghỉ 5/7 s — Status: [x] DONE
+- PCV-3 Giao diện màn chơi theo payload mới — Status: [x] DONE
+- PCV-4 Bộ luồng riêng cho trận + bắt đầu nguyên tử — Status: [x] DONE
+- PCV-5 Luật số người theo mode (BE + sảnh chờ + tạo phòng) — Status: [x] DONE
+- PCV-6 Hạng cuối mọi mode + nhiệm vụ phòng + MVP thật — Status: [x] DONE
+- PCV-7 Nhiệm vụ ngày: đếm đủ 13 loại, thay loại không có lối vào, thưởng 50 XP thật — Status: [x] DONE
+- PCV-8 Đấu nhanh không dùng AI, bỏ giới hạn 3 trận/ngày cho kho câu — Status: [x] DONE
 - PCV-9 Tên/icon/mô tả mode thống nhất + chọn vai trò chủ phòng — Status: [x] DONE
-- PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [ ] TODO
+- PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [~] IN PROGRESS (docs xong, chờ deploy)
 
 ### Tasks — Đợt 2 (thiết kế lại mode)
 - PCV-11 Đua tốc độ: thưởng chuỗi, câu chốt ×2, phân hạng, bảng dẫn đầu mỗi 3 câu — Status: [ ] TODO

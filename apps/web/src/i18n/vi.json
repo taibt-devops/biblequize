@@ -1821,7 +1821,7 @@
     "lobbyRules": {
       "needPlayers": "Cần thêm {{need}} người để bắt đầu {{mode}} (tối thiểu {{min}})",
       "teamTooSmall": "Mỗi đội cần ít nhất 2 người",
-      "teamsUnbalanced": "Hai đội lệch nhau {{diff}} người — đổi đội hoặc bấm Xáo đội",
+      "teamsUnbalanced": "Hai đội lệch nhau {{diff}} người — hãy đổi đội cho cân",
       "waitingReady": "{{ready}}/{{total}} người chơi đã sẵn sàng",
       "waitingPlayers": "Đang chờ thêm người chơi...",
       "waitingAllReady": "Đang chờ tất cả sẵn sàng",
@@ -1849,7 +1849,7 @@
       },
       "sudden_death": {
         "short": "Đấu tay đôi giành ngai.",
-        "detail": "Mỗi lúc chỉ hai người đấu. Một người sai là thua; cả hai cùng đúng thì ai nhanh hơn thắng. Người thắng giữ ngai và đấu tiếp người kế trong hàng."
+        "detail": "Mỗi lúc chỉ hai người đấu. Một người sai là thua; cả hai cùng đúng thì ai nhanh hơn thắng. Cả hai cùng sai, hoặc nhanh ngang nhau (chênh dưới 0,2 giây), thì đấu thêm câu khác; sau 3 câu như vậy người đang giữ ngai thắng. Người thắng giữ ngai và đấu tiếp người kế trong hàng."
       },
       "group_live_sequential": {
         "short": "Mọi người cùng trả lời, chờ tất cả xong mới hiện đáp án.",

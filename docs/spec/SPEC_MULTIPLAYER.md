@@ -1,11 +1,29 @@
 # SPEC_MULTIPLAYER — Multiplayer & Room Lifecycle
 
-> Last updated **2026-05-09** (Sprint 4 — Host-Organizer separation) · Replaces SPEC_USER_v3 §5.4 + `docs/MULTIPLAYER/SPEC_USER_v3_PATCH_5.4.0.md`.
+> Last updated **2026-10-12** (Phòng chơi v2 đợt 1 — PCV-1..10, xem §0) · trước đó 2026-05-09 (Sprint 4 — Host-Organizer separation) · Replaces SPEC_USER_v3 §5.4 + `docs/MULTIPLAYER/SPEC_USER_v3_PATCH_5.4.0.md`.
 > Audience: backend + frontend engineers. Verified against `main` HEAD (Sprint 1 + 2.5 + 3 + 4 merged).
 > Related: SPEC_USER_v3.1 (gameplay), SPEC_GROUP_v1.2 (group quiz sets, Q-A…Q-O), BACKLOG.md (open code gaps).
 > Mockup reference: `docs/MULTIPLAYER/MOCKUP_HOST_ORGANIZER_FLOW.html` (Sprint 4 approved).
 
 ---
+
+## 0. Phòng chơi v2 — đợt 1 (2026-10-12)
+
+> Thiết kế: `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` · task `docs/todo/active/2026-10-12-phong-choi-v2.md`. Các mục bên dưới đã sửa theo; mục này là bản tóm tắt để đọc nhanh.
+
+| # | Thay đổi | Chi tiết |
+|---|---|---|
+| PCV-1 | **Máy chủ đo thời gian trả lời.** | Thời gian dùng để chấm = thời gian client gửi, kẹp trong `[max(0, serverElapsed − 1 500 ms), serverElapsed]` (`serverElapsed = now − startedAtMs`), rồi kẹp vào `[0, timeLimit]`. Trả lời sau `timeLimit + 1 000 ms` (ân hạn) bị từ chối. Hết giờ, vòng lặp chờ thêm 1 giây ân hạn rồi **đóng vòng** (`room:state:closed_round:{roomId}` = roundId); câu trả lời tới sau khi đóng vòng bị từ chối. `broadcastRoundEnd`/`broadcastQuestionRevealed` luôn đóng vòng trước khi công bố đáp án. |
+| PCV-2 | **Không lộ đáp án giữa vòng.** | `ANSWER_SUBMITTED` chỉ còn `{playerId, username, questionIndex, answered: true}` (không còn `answerIndex`, `isCorrect`, `pointsEarned`); không gửi `SCORE_UPDATE` theo từng câu trả lời nữa. Mọi kết quả công bố cùng lúc trong `ROUND_END` (§5.3). Nghỉ giữa hai câu: 5 giây, 7 giây nếu câu có lời giải thích. |
+| PCV-3 | **Màn chơi.** | Sau mỗi câu hiện câu gốc (sách chương:câu), lời giải thích (mở sẵn khi sai/không trả lời, thu gọn khi đúng), số người chọn từng đáp án, nút lưu câu. Bảng tin chỉ báo "X đã trả lời". Đồng hồ: dùng `startedAtMs` của máy chủ nếu lệch ≤ 2 giây so với đồng hồ máy người chơi, ngược lại đếm theo đồng hồ máy. Bỏ banner combo ×1,2/×1,5 (máy chủ không có hệ số này). |
+| PCV-4 | **Bắt đầu trận.** | `UPDATE rooms SET status = IN_PROGRESS WHERE id = ? AND status = LOBBY` — bấm hai lần hay hai người cùng bấm chỉ một lần thắng ("Phòng đã bắt đầu"). Vòng chơi chạy trên executor riêng `roomGameExecutor` (luồng `room-game-*`, 8 lõi, tối đa 256, không hàng đợi). Hết luồng → phòng trở lại `LOBBY`, trả `503 { code: "SERVER_BUSY" }`. |
+| PCV-5 | **Số người theo mode** (`RoomModeRules`). | Tối thiểu: Đua tốc độ 2, Sinh tồn 3, Đội đấu đội 4 (mỗi đội ≥ 2, lệch ≤ 1), Đấu vương 3, Chơi cùng nhau 2 — Quản trò không tính. Tối đa 100; **Đấu vương tối đa 12** (DECISIONS 2026-10-12). Áp ở tạo phòng, Đấu nhanh và bắt đầu trận; sảnh chờ hiện cùng luật (`lobbyRules.ts`) nên nút "Bắt đầu" chỉ sáng khi máy chủ sẽ nhận. Máy chủ kẹp số câu 5–30 và thời gian 10–60 giây. |
+| PCV-6 | **Hạng cuối + nhiệm vụ sau trận.** | Đua tốc độ, Chơi cùng nhau: hạng theo điểm → số câu đúng → thời gian trung bình; người chưa trả lời câu nào xếp cuối; bằng nhau thì đồng hạng (1, 1, 3). Đội đấu đội: đội thắng hạng 1, đội thua hạng 2, hoà thật thì cả phòng hạng 1. Trận kết thúc bình thường → mỗi người chơi (trừ người đã rời) được tính nhiệm vụ "Chơi 1 trận Phòng chơi" + "Chơi 1 lượt", hạng 1 được tính "Thắng 1 trận Phòng chơi". MVP tuần: điểm > 0, phòng ≥ 3 người. |
+| PCV-7b | **Độ khó cố định.** | Phòng chọn Dễ/Trung bình/Khó trước đây kết thúc ngay khi bắt đầu (`Question.Difficulty` viết thường); đã sửa. |
+| PCV-8 | **Đấu nhanh.** | Chỉ dùng kho câu đã biên tập (`source = AI_GENERATED` → `422 AI_SOURCE_DISABLED`); bỏ giới hạn 3 trận/ngày (`remainingToday` vẫn trả để client cũ không lỗi). |
+| PCV-9 | **Tên + biểu tượng.** | Một tên tiếng Việt cho mỗi mode ở mọi màn: Đua tốc độ (bolt ⚡), Sinh tồn (favorite ❤️), Đội đấu đội (groups 👥), Đấu vương (swords ⚔️), Chơi cùng nhau (group 📚). Tạo phòng có hai ô "Tôi dẫn chương trình" / "Tôi chơi cùng mọi người" (mặc định dẫn chương trình). |
+
+Phòng chơi **không cộng XP** (XP chỉ đến từ Đấu Hạng, Thử thách ngày và thưởng nhiệm vụ — DECISIONS 2026-10-12).
 
 ## 1. Mục đích
 
@@ -173,23 +191,16 @@ Mỗi `Room` có flag `hostPlaysGame` quyết định vai trò host trong trận
 
 #### Validation start logic
 
-```java
-// RoomService.startRoom (canonical logic post-Sprint 4):
-long playerCount;
-if (room.isHostPlaysGame()) {
-    playerCount = room.getCurrentPlayers(); // includes host
-} else {
-    // Quản trò mode: count players KHÔNG TÍNH host
-    playerCount = roomPlayerRepository.countByRoomIdAndUserIdNot(roomId, room.getHost().getId());
-}
-if (playerCount < 2) {
-    throw new BadRequestException(
-        room.isHostPlaysGame()
-            ? "Cần ít nhất 2 người chơi"
-            : "Cần ít nhất 2 người chơi (không tính Quản trò)"
-    );
-}
-```
+Từ 2026-10-12 (PCV-5) `RoomService.startRoom` gọi `RoomModeRules.startError(mode, players, hostPlaysGame)` — `players` là RoomPlayer của phòng (Quản trò không nằm trong đó):
+
+| Mode | Tối thiểu | Thêm | Thông báo |
+|---|---|---|---|
+| Đua tốc độ, Chơi cùng nhau | 2 | — | "Cần ít nhất 2 người chơi để bắt đầu" / "… (không tính Quản trò)" |
+| Sinh tồn | 3 | — | "Sinh tồn cần ít nhất 3 người chơi" (+ " (không tính Quản trò)") |
+| Đội đấu đội | 4 | mỗi đội ≥ 2, hai đội lệch ≤ 1 | "Mỗi đội cần ít nhất 2 người" · "Hai đội đang lệch nhau N người — hãy đổi đội cho cân" |
+| Đấu vương | 3 | tối đa 12 người | "Đấu vương cần ít nhất 3 người chơi" |
+
+Sau khi qua luật, trạng thái đổi bằng cập nhật có điều kiện (`markInProgressIfLobby`) — 0 dòng đổi = "Phòng đã bắt đầu".
 
 #### Naming convention
 
@@ -205,11 +216,11 @@ if (playerCount < 2) {
 - Rooms tạo trước Sprint 4 deploy: `host_plays_game = TRUE` (legacy behavior preserved).
 - Rooms tạo sau Sprint 4 deploy: `host_plays_game = FALSE` (Quản trò default).
 - KHÔNG migrate retroactive — let legacy rooms ENDED tự nhiên qua R3 retention 24h.
-- Body `POST /api/rooms` có optional field `hostPlaysGame` để override default. **Create Room UI (2026-06-23)** expose toggle "Tôi cũng chơi" (default OFF = Quản trò) → host opt-in gửi `hostPlaysGame=true` để vừa điều phối vừa chơi.
+- Body `POST /api/rooms` có optional field `hostPlaysGame` để override default. **Create Room UI (2026-10-12, PCV-9)**: hai ô chọn "Tôi dẫn chương trình" (mặc định, `hostPlaysGame=false`) / "Tôi chơi cùng mọi người" (`hostPlaysGame=true`), thay cho công tắc "Tôi cũng chơi" (2026-06-23).
 
 #### Edge cases
 
-- **Host muốn vừa điều phối vừa chơi:** bật toggle "Tôi cũng chơi" ở Create Room → `hostPlaysGame=true`, host là RoomPlayer, min players = 1 non-host (host + 1 = 2 người). Default vẫn Quản trò (không chơi).
+- **Host muốn vừa điều phối vừa chơi:** chọn "Tôi chơi cùng mọi người" ở Create Room → `hostPlaysGame=true`, host là RoomPlayer, min players = 1 non-host (host + 1 = 2 người). Default vẫn Quản trò (không chơi).
 - **Host disconnect (R4):** promote next-joined ACTIVE non-host player thành host. Player đó **dừng chơi**, score đến hiện tại được giữ lại nhưng không tính ranking. Status flips sang "host-now-organizer" — không thể quay lại làm player. (Edge case "host được promote không muốn làm" — defer Sprint 5, BACKLOG MP-9.)
 - **Phòng còn 1 player giữa game:** game tiếp tục solo, host có thể bấm "Kết thúc sớm" qua `/host/end-early`.
 - **Tournament organizer:** **KHÔNG áp dụng** Quản trò mode. Tournament organizer vẫn chơi như cũ (architectural change scope chỉ cho Multiplayer Room).
@@ -226,8 +237,9 @@ if (playerCount < 2) {
 Kahoot-style classic — tất cả player nhận cùng 1 câu, scoring theo độ chính xác **+ tốc độ**. Phổ biến nhất, mặc định cho mọi room mới.
 
 #### Rules
-- 2–10 players (FE limit; BE không hard-cap dưới 20).
-- N câu hỏi (mặc định 10), `timePerQuestion` giây / câu.
+- 2–100 players (`RoomModeRules`, 2026-10-12).
+- N câu hỏi (5–30, mặc định 10), `timePerQuestion` 10–60 giây / câu (máy chủ kẹp).
+- Thời gian trả lời do máy chủ đo (§0 PCV-1); hạng cuối theo điểm → câu đúng → thời gian trung bình (§0 PCV-6).
 - Tất cả player thấy câu cùng lúc (server emit `QUESTION_START` với `startedAtMs`).
 - Mỗi player **chỉ submit 1 lần / câu** (anti-cheat: `existsByRoundIdAndUserId` check ở `RoomWebSocketController:191`).
 - Sau timeout → `ROUND_END` với `correctIndex` + leaderboard.
@@ -245,6 +257,7 @@ isCorrect == true   → 100 + floor((timeLimit_ms - responseMs) / timeLimit_ms �
 - Sai / không trả lời = 0
 
 #### Edge cases
+- `responseMs` là thời gian đã kẹp theo đồng hồ máy chủ (§0 PCV-1), không phải số client gửi.
 - Submit < `responseMs <= 0` → coerce về 100 (boundary check line 17).
 - Submit sau `responseMs >= timeLimitMs` → 100 (vẫn ghi nhận đúng, không bonus).
 - Player đã LEFT mid-game → `RoomWebSocketController:199-202` reject answer (status check).
@@ -255,7 +268,7 @@ isCorrect == true   → 100 + floor((timeLimit_ms - responseMs) / timeLimit_ms �
 Last-man-standing. Mỗi câu loại bớt người trả lời sai. Người cuối cùng thắng.
 
 #### Rules
-- 3–100 players (cap nâng 2026-05-22, xem DECISIONS.md).
+- 3–100 players (cap nâng 2026-05-22, xem DECISIONS.md; tối thiểu 3 áp ở máy chủ từ 2026-10-12).
 - Sau mỗi `ROUND_END`: `BattleRoyaleEngine.processRoundEnd` (line 31+) chạy:
   - Lấy danh sách `ACTIVE` players + danh sách user trả lời đúng round này.
   - **Exception**: nếu **TẤT CẢ active đều sai** → không loại ai (round "ân xá").
@@ -280,7 +293,7 @@ Dùng chung `SpeedRaceScoringService` cho điểm (bonus tốc độ vẫn áp d
 Chia 2 đội A/B. Đội nào tổng điểm cao hơn thắng. Có Perfect Round bonus (cả đội đúng hết → +50 cho cả đội).
 
 #### Rules
-- 4–20 players (chẵn).
+- 4–100 players; mỗi đội ≥ 2, hai đội lệch ≤ 1 người (máy chủ chặn bắt đầu, 2026-10-12).
 - Auto-balance team khi join (`RoomService.addPlayerToRoom:249-253`): đội nào ít người hơn → join đội đó.
 - Player có thể đổi đội qua `POST /api/rooms/{id}/switch-team` **khi LOBBY** (`RoomController:190-200`). IN_PROGRESS thì không.
 - Mỗi câu: scoring giống Speed Race per-player.
@@ -296,7 +309,7 @@ Chia 2 đội A/B. Đội nào tổng điểm cao hơn thắng. Có Perfect Roun
 - **Tie-break** khi 2 đội bằng tổng điểm (`determineWinnerWithTieBreak`, wire tại `TeamVsTeamStrategy.finishGame`): (1) tổng điểm cao hơn → (2) **số Perfect Round nhiều hơn** (đếm lũy kế per đội trong `afterRound` qua `GameLoopContext.modeState`) → (3) **tổng thời gian phản hồi nhanh hơn** → vẫn bằng thì `teamWinner = "TIE"` thật. `reason` ∈ {`SCORE`, `PERFECT_ROUNDS`, `SPEED`, `TIE`} chỉ để log, KHÔNG vào payload QUIZ_END.
 
 #### Edge cases
-- Player odd-out (5 vs 4) — chấp nhận; FE warn.
+- Player odd-out (5 vs 4) — chấp nhận (lệch 1); lệch ≥ 2 thì không bắt đầu được.
 - Player rời khi LOBBY → đội còn lại; auto-balance KHÔNG re-trigger (chỉ chạy lúc insert).
 - Player rời khi IN_PROGRESS → `LEFT`, vẫn tính team membership cho perfect round (nhưng không answer được nữa, nên team đó khó perfect).
 
@@ -306,14 +319,15 @@ Chia 2 đội A/B. Đội nào tổng điểm cao hơn thắng. Có Perfect Roun
 "King of the hill" 1v1. Champion ngồi ghế nóng, challenger lần lượt từ queue. Ai sai trước thua, người thắng giữ ghế.
 
 #### Rules (`SuddenDeathMatchService.java`)
-- 3–10 players.
+- 3–12 players (tối đa 12 từ 2026-10-12 — DECISIONS).
 - Khi `startRoom`: `initializeQueue` (line 47) — sort theo `joinedAt`, set toàn bộ → `SPECTATOR`, reset `winningStreak = 0`.
 - 2 player đầu queue → ACTIVE, broadcast `MATCH_START { championId, challengerId, queueRemaining }`.
 - Mỗi câu:
   - Cả 2 trả lời. Chỉ kết quả của 2 ACTIVE được tính.
   - **Sai trước thua**: ai trả lời sai (hoặc timeout không trả lời) → loser; kia → winner.
-  - **Cả 2 đúng** hoặc **cả 2 sai** → hoà, đi tiếp câu kế trong cùng matchup.
-  - **`CLOSE_THRESHOLD_MS = 200`** (line 27): nếu cả 2 cùng đúng/sai và chênh lệch reaction < 200ms → "close call", còn `MAX_CONTINUES = 3` câu tie-break trước khi force quyết định.
+  - **Cả 2 đúng** → người nhanh hơn thắng nếu chênh ≥ `CLOSE_THRESHOLD_MS = 200`; chênh < 200 ms → đấu thêm câu.
+  - **Cả 2 sai** → đấu thêm câu.
+  - Tối đa `MAX_CONTINUES = 3` câu đấu thêm trong một cặp; hết thì người đang giữ ngai thắng. (Spec trước 2026-10-12 ghi "cả 2 đúng → hoà" — sai so với code; đã sửa theo code.)
 - Match end → `MATCH_END { winnerId, winnerStreak, loserId }`.
 - Loser → `SPECTATOR`, finalRank = vị trí khi bị loại.
 - Winner streak += 1, ngồi tiếp; challenger kế từ queue → ACTIVE.
@@ -545,8 +559,8 @@ Topic: `/topic/room/{roomId}`. Mọi message wrap bởi `WebSocketMessage.Messag
 |---|---|---|
 | `GAME_STARTING` | (defined nhưng emit ít gặp; FE nghe ROOM_STARTING là chủ yếu) | — |
 | `QUESTION_START` | `QuestionStartData { questionIndex, totalQuestions, question, timeLimit, startedAtMs }` | Mỗi câu mới. `startedAtMs` = epoch ms server, FE compute remaining = `timeLimit - (now - startedAtMs)`. Cũng cache vào Redis qua `RoomStateService.setCurrentQuestion`. **Anti-spoiler (2026-05-23 fix `fb3ecfad`)**: `question` DTO **KHÔNG chứa `correctAnswer` / `correctIndex`** — Quản trò subscribe cùng `/topic/room/{id}` nên đáp án phải đợi `ROUND_END.correctIndex` / `QUESTION_REVEALED.correctIndex`. Server-side scoring dùng `Question` entity trực tiếp, không cần leak qua WS. **DTAG (2026-06-24)**: `question` DTO thêm `difficulty` (easy/medium/hard) để FE hiển thị badge độ khó mỗi câu (đồng nhất với Luyện Tập / Daily / Đấu Hạng). |
-| `ANSWER_SUBMITTED` | `{ playerId, username, questionIndex, answerIndex, reactionTimeMs, isCorrect, pointsEarned }` | Mỗi player submit. **Sequential mode**: `isCorrect=false` + `pointsEarned=0` để không spoiler (`RoomWebSocketController:268`). |
-| `ROUND_END` | `RoundEndData { correctIndex, leaderboard }` | Hết timer câu (Speed Race / BR / TvT). |
+| `ANSWER_SUBMITTED` | `{ playerId, username, questionIndex, answered: true }` | Mỗi player submit. **Từ 2026-10-12 (PCV-2) mọi mode** chỉ báo "đã trả lời" — không còn `answerIndex`/`isCorrect`/`pointsEarned`/`reactionTimeMs` giữa vòng. |
+| `ROUND_END` | `RoundEndData { correctIndex, leaderboard, explanation, reference: { book, chapter, verseStart, verseEnd }, answerCounts: int[], results: [{ playerId, answered, isCorrect, pointsEarned, streak }] }` | Hết timer câu + 1 giây ân hạn, sau khi vòng đã đóng (Speed Race / BR / TvT / SD). `RoundResultBuilder` dựng; nghỉ 5 giây (7 giây nếu có `explanation`) trước câu kế. |
 | `QUESTION_END` | (alias-like; defined trong enum) | — |
 | `QUIZ_END` | `{ roomId, timestamp, finalResults }` | Hết câu cuối cùng. Cũng clear Redis state. |
 
@@ -579,7 +593,7 @@ Topic: `/topic/room/{roomId}`. Mọi message wrap bởi `WebSocketMessage.Messag
 
 | `type` | `data` |
 |---|---|
-| `SCORE_UPDATE` | `{ playerId, username, newScore, correctAnswers, totalAnswered }` |
+| `SCORE_UPDATE` | `{ playerId, username, newScore, correctAnswers, totalAnswered }` — **không gửi theo từng câu trả lời nữa** (2026-10-12, PCV-2); điểm cập nhật qua `ROUND_END.leaderboard`. |
 | `LEADERBOARD_UPDATE` | List<LeaderboardEntryDTO> |
 | `REACTION` | `{ senderId, senderName, reaction }` |
 | `CHALLENGE_RECEIVED` | (peer-challenge stub) |
@@ -789,7 +803,7 @@ QUIZ_END → navigate `/room/:id/results-host` (different end screen — xem 7.6
 | Method | Endpoint | Auth | Mô tả |
 |---|---|---|---|
 | POST | `/api/rooms` | Bearer | Create room. Body: `{ roomName, mode, maxPlayers, questionCount, timePerQuestion, difficulty, bookScope, isPublic, questionSource, questionSetId }`. Returns `{ success, room: RoomDetailsDTO, viewerUserId }`. |
-| POST | `/api/rooms/quick-match` | Bearer | **Đấu Nhanh** — server-orchestrated quick match (no Quản trò). Body: `{ mode, bookScope, questionCount (5-20), timePerQuestion (10-60), maxPlayers? (2-100, default 10; clamp), source (DATABASE\|AI_GENERATED), language, chapterFrom?, chapterTo?, verseFrom?, verseTo? }`. Out-of-range count/time coerced to defaults (10/30). All 4 modes supported (SPEED_RACE / BATTLE_ROYALE / TEAM_VS_TEAM / SUDDEN_DEATH). Returns `{ success, room, viewerUserId, quickMatch: true, remainingToday }` (200) hoặc `{ success: false, error, message, ... }` (422) với `error ∈ { DAILY_CAP_REACHED, AI_TIER_LOCKED, AI_GENERATION_INSUFFICIENT }`. Soft-host: `hostPlaysGame=true`, Quản trò controls reject. Daily cap 3/user/day reset 0h UTC. AI source require Tier 4+. |
+| POST | `/api/rooms/quick-match` | Bearer | **Đấu Nhanh** — server-orchestrated quick match (no Quản trò). Body: `{ mode, bookScope, questionCount (5-20), timePerQuestion (10-60), maxPlayers? (2-100, default 10; clamp), source (DATABASE\|AI_GENERATED), language, chapterFrom?, chapterTo?, verseFrom?, verseTo? }`. Out-of-range count/time coerced to defaults (10/30). All 4 modes supported (SPEED_RACE / BATTLE_ROYALE / TEAM_VS_TEAM / SUDDEN_DEATH). Returns `{ success, room, viewerUserId, quickMatch: true, remainingToday }` (200) hoặc `{ success: false, error, message, ... }` (422) với `error = AI_SOURCE_DISABLED` khi `source = AI_GENERATED`. Soft-host: `hostPlaysGame=true`, Quản trò controls reject. **Từ 2026-10-12 (PCV-8):** chỉ dùng kho câu đã biên tập (`DATABASE`), không còn giới hạn 3 trận/ngày; `remainingToday` giữ cho client cũ. Số người tối thiểu/tối đa theo §2.5. |
 | GET | `/api/rooms/public` | Optional | List public LOBBY+IN_PROGRESS rooms. Viewer-aware `joinable` field. Returns `{ success, rooms: PublicRoomDTO[] }`. |
 | GET | `/api/rooms/{id}` | Optional | Room details. Returns `{ success, room: RoomDetailsDTO, viewerUserId }`. `viewerUserId` is the caller's id (null if unauthenticated) and lives **outside** the room DTO so the same DTO can be safely multicast as a `ROOM_STATE` WS event. The DTO itself carries `groupId` (nullable) but no per-viewer field. |
 | POST | `/api/rooms/join` | Bearer | Join by code. Body: `{ roomCode }`. Returns `{ success, room, viewerUserId }`. 422 với code `ALREADY_IN_ANOTHER_ROOM` nếu user đang trong room khác. |
