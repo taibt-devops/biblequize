@@ -53,6 +53,22 @@ export interface CoreGameState {
   finalResults: PlayerScore[];
   /** PCV-3: giải thích / câu gốc / số người chọn / kết quả — có sau ROUND_END. */
   reveal: RoundRevealData | null;
+  /** PCV-11: hệ số điểm của câu đang chạy (câu chốt = 2). */
+  multiplier: number;
+  /** PCV-12: Sinh tồn — câu ở vùng nguy hiểm / câu quyết định. */
+  dangerZone: boolean;
+  showdown: boolean;
+  /** PCV-11: bảng điểm trước ROUND_END gần nhất — để tính lên/xuống hạng. */
+  previousScores: PlayerScore[];
+}
+
+/** PCV-11: thưởng chuỗi Đua tốc độ — bản sao của SpeedRaceStrategy.streakBonus phía máy chủ. */
+export function speedRaceStreakBonus(streak: number | undefined): number {
+  const n = streak ?? 0
+  if (n >= 4) return 30
+  if (n === 3) return 20
+  if (n === 2) return 10
+  return 0
 }
 
 export const initialCoreGameState: CoreGameState = {
@@ -67,6 +83,10 @@ export const initialCoreGameState: CoreGameState = {
   showPodium: false,
   finalResults: [],
   reveal: null,
+  multiplier: 1,
+  dangerZone: false,
+  showdown: false,
+  previousScores: [],
 };
 
 export type CoreGameAction =
@@ -107,10 +127,19 @@ export function coreGameReducer(state: CoreGameState, action: CoreGameAction): C
         correctIndex: null,
         submitting: false,
         reveal: null,
+        multiplier: d.multiplier && d.multiplier > 1 ? d.multiplier : 1,
+        dangerZone: d.dangerZone === true,
+        showdown: d.showdown === true,
       };
     }
     case 'ROUND_END':
-      return { ...state, correctIndex: action.correctIndex, scores: action.scores, reveal: action.reveal ?? null };
+      return {
+        ...state,
+        correctIndex: action.correctIndex,
+        previousScores: state.scores,
+        scores: action.scores,
+        reveal: action.reveal ?? null,
+      };
     case 'QUESTION_REVEALED':
       return {
         ...state,
@@ -146,6 +175,9 @@ export function coreGameReducer(state: CoreGameState, action: CoreGameAction): C
         totalQuestions: d.totalQuestions,
         question: d.question,
         timeLimit: d.timeLimit,
+        multiplier: d.multiplier && d.multiplier > 1 ? d.multiplier : 1,
+        dangerZone: d.dangerZone === true,
+        showdown: d.showdown === true,
       };
     }
     case 'SEED_ENDED':

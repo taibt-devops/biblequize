@@ -164,6 +164,16 @@ public class RoomAnswerProcessor {
             }
         }
 
+        // PCV-11: chuỗi đúng liên tiếp (mọi mode, hiện ở kết quả) + thưởng chuỗi (Đua tốc độ)
+        // + hệ số câu (câu chốt ×2) — nhân toàn bộ điểm câu: gốc + tốc độ + chuỗi.
+        int previousStreak = playerOpt.map(RoomPlayer::getAnswerStreak).orElse(0);
+        final int newStreak = isCorrect ? previousStreak + 1 : 0;
+        if (isCorrect) {
+            pointsEarned += strategy.streakBonus(newStreak);
+        }
+        int multiplier = questionState.map(s -> Math.max(1, s.multiplier)).orElse(1);
+        pointsEarned *= multiplier;
+
         // Lưu RoomAnswer entity
         if (roundId != null) {
             final int pts = pointsEarned;
@@ -186,6 +196,7 @@ public class RoomAnswerProcessor {
             // Cập nhật điểm theo Speed Race formula
             roomPlayer.setScore(roomPlayer.getScore() + finalPoints);
             roomPlayer.setTotalAnswered(roomPlayer.getTotalAnswered() + 1);
+            roomPlayer.setAnswerStreak(newStreak);
             if (answerIsCorrect) {
                 roomPlayer.setCorrectAnswers(roomPlayer.getCorrectAnswers() + 1);
             }

@@ -1803,7 +1803,8 @@
       "feedAnswered": "{{name}} answered",
       "feedRoundEnd": "Question {{n}} over · answer {{letter}}",
       "feedCorrect": "Correct: {{names}}",
-      "networkUnstable": "Connection lost, reconnecting — try again in a moment"
+      "networkUnstable": "Connection lost, reconnecting — try again in a moment",
+      "finalQuestion": "Final question · ×{{m}}"
     },
     "reveal": {
       "reference": "Scripture",
@@ -1813,7 +1814,8 @@
       "distribution": "What everyone picked",
       "people": "{{count}}",
       "save": "Save to review",
-      "saved": "Saved to review"
+      "saved": "Saved to review",
+      "streak": "Streak {{n}} · +{{bonus}}"
     },
     "host": {
       "answered": "Answered"
@@ -1855,6 +1857,11 @@
         "short": "Everyone answers; the answer appears once all are done.",
         "detail": "The whole group answers each question. The answer and explanation appear once everyone has answered or time runs out, so the group can look at them together. Nobody is knocked out."
       }
+    },
+    "standings": {
+      "title": "Leaders",
+      "points": "{{score}} pts",
+      "you": "(you)"
     }
   },
   "groups": {

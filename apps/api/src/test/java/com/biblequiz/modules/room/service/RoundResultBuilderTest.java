@@ -111,6 +111,38 @@ class RoundResultBuilderTest {
     }
 
     @Test
+    void closeRound_resetsStreakOfActivePlayersWhoDidNotAnswer() {
+        RoomPlayer answered = player("u1", "An");
+        answered.setAnswerStreak(3);
+        RoomPlayer silent = player("u2", "Bình");
+        silent.setAnswerStreak(2);
+        RoomPlayer out = player("u3", "Châu");
+        out.setAnswerStreak(1);
+        out.setPlayerStatus(RoomPlayer.PlayerStatus.ELIMINATED);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(answered, silent, out));
+        when(answerRepository.findByRoundId("round-1")).thenReturn(List.of(answer("u1", 2, true, 140)));
+
+        new RoundResultBuilder(answerRepository, playerRepository, roomService).closeRound("room-1", "round-1");
+
+        assertEquals(3, answered.getAnswerStreak());
+        assertEquals(0, silent.getAnswerStreak(), "không trả lời = mất chuỗi (design §2.1)");
+        assertEquals(1, out.getAnswerStreak(), "người không còn trong cuộc giữ nguyên");
+    }
+
+    @Test
+    void results_carryCurrentStreak() {
+        RoomPlayer an = player("u1", "An");
+        an.setAnswerStreak(3);
+        when(playerRepository.findByRoomId("room-1")).thenReturn(List.of(an));
+        when(answerRepository.findByRoundId("round-1")).thenReturn(List.of(answer("u1", 2, true, 160)));
+
+        WebSocketMessage.RoundEndData data = new RoundResultBuilder(answerRepository, playerRepository, roomService)
+                .build("room-1", "round-1", question);
+
+        assertEquals(3, data.results.get(0).streak);
+    }
+
+    @Test
     void revealPause_isLongerWhenThereIsAnExplanation() {
         assertEquals(7_000, RoundResultBuilder.revealPauseMs(question));
         question.setExplanation("  ");

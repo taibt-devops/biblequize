@@ -16,6 +16,7 @@ vi.mock('react-i18next', () => ({
         'room.reveal.saved': 'Đã lưu để ôn',
       }
       if (k === 'room.reveal.people') return `${o?.count} người`
+      if (k === 'room.reveal.streak') return `Chuỗi ${o?.n} · +${o?.bonus}`
       return map[k] ?? k
     },
   }),
@@ -61,5 +62,17 @@ describe('RoundReveal (PCV-3)', () => {
     expect(screen.queryByRole('button', { name: 'Xem giải thích' })).toBeNull()
     expect(screen.queryByText('Câu gốc')).toBeNull()
     expect(screen.getByText('Mọi người đã chọn')).toBeInTheDocument()
+  })
+})
+
+describe('RoundReveal — chuỗi đúng (PCV-11)', () => {
+  it('đúng liên tiếp từ 2 câu: hiện "Chuỗi n · +x"', () => {
+    render(<RoundReveal {...base} selected={2} streak={3} streakBonus={20} />)
+    expect(screen.getByTestId('round-reveal-streak').textContent).toBe('Chuỗi 3 · +20')
+  })
+
+  it('chuỗi < 2 hoặc không có thưởng: không hiện', () => {
+    render(<RoundReveal {...base} selected={2} streak={1} streakBonus={0} />)
+    expect(screen.queryByTestId('round-reveal-streak')).toBeNull()
   })
 })

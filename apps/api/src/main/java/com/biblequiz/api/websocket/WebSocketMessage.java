@@ -166,6 +166,12 @@ public class WebSocketMessage {
          *  unfair (audit Phase 5). Long because the field is JSON-serialised
          *  as a JS number; epoch millis fits safely in a 53-bit double. */
         public Long startedAtMs;
+        /** PCV-11: hệ số điểm của câu (câu chốt Đua tốc độ = 2). Bản lưu cũ trong Redis thiếu trường → 1. */
+        public int multiplier = 1;
+        /** PCV-12: Sinh tồn — câu ở vùng nguy hiểm (thời gian rút ngắn). */
+        public boolean dangerZone;
+        /** PCV-12: Sinh tồn — câu quyết định (sai là bị loại ngay). */
+        public boolean showdown;
 
         public QuestionStartData() {
         }

@@ -53,3 +53,24 @@ describe('coreGameReducer — dữ liệu công bố (PCV-3)', () => {
     expect(next.correctIndex).toBeNull()
   })
 })
+
+describe('coreGameReducer — Phòng chơi v2 đợt 2 (PCV-11)', () => {
+  it('QUESTION_START lưu hệ số + cờ câu; thiếu trường thì ×1, không cờ', () => {
+    const s1 = coreGameReducer(initialCoreGameState, { type: 'QUESTION_START', data: { ...q(NOW), multiplier: 2, dangerZone: true, showdown: true } })
+    expect(s1.multiplier).toBe(2)
+    expect(s1.dangerZone).toBe(true)
+    expect(s1.showdown).toBe(true)
+    const s2 = coreGameReducer(s1, { type: 'QUESTION_START', data: q(NOW) })
+    expect(s2.multiplier).toBe(1)
+    expect(s2.dangerZone).toBe(false)
+    expect(s2.showdown).toBe(false)
+  })
+
+  it('ROUND_END giữ bảng điểm trước để tính lên/xuống hạng', () => {
+    const before = [{ playerId: 'a', username: 'An', score: 300 }, { playerId: 'b', username: 'Bình', score: 200 }]
+    const after = [{ playerId: 'b', username: 'Bình', score: 450 }, { playerId: 'a', username: 'An', score: 300 }]
+    const s1 = coreGameReducer({ ...initialCoreGameState, scores: before }, { type: 'ROUND_END', correctIndex: 1, scores: after })
+    expect(s1.previousScores).toEqual(before)
+    expect(s1.scores).toEqual(after)
+  })
+})

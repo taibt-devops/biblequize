@@ -207,14 +207,18 @@ public class RoomQuizService {
             // PCV-11a: đáp án của vòng giữ ở máy chủ trước khi phát câu hỏi.
             roomStateService.setAnswerKey(roomId, RoomStateService.AnswerKey.of(q));
 
-            wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), ctx.timePerQuestion);
+            // PCV-11/12: thời gian, hệ số và cờ của câu do mode quyết (câu chốt, vùng nguy hiểm…).
+            com.biblequiz.modules.room.service.mode.RoundPlan plan = strategy.planRound(ctx, i, q);
+            wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), plan);
             // End the round as soon as every expected player has answered;
             // otherwise wait the full timer.
             // PCV-1: hạn chót = thời gian câu + 1 s ân hạn cho mạng chậm; hết vòng thì đóng ngay,
             // trước khi chấm/công bố, để câu trả lời tới muộn không lọt vào kết quả.
-            waitForRoundEnd(roomId, round.getId(), ctx.timePerQuestion * 1000L + RoomAnswerProcessor.ROUND_GRACE_MS,
+            waitForRoundEnd(roomId, round.getId(), plan.timeLimitSeconds() * 1000L + RoomAnswerProcessor.ROUND_GRACE_MS,
                     strategy.expectedAnswers(ctx, activeCount));
             roomStateService.closeCurrentRound(roomId);
+            // PCV-11: người còn trong cuộc mà không trả lời thì mất chuỗi đúng liên tiếp.
+            roundResultBuilder.closeRound(roomId, round.getId());
 
             round.setEndedAt(LocalDateTime.now());
             roomRoundRepository.save(round);

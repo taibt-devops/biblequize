@@ -59,6 +59,43 @@ public class RoomPlayer {
     
     @Column(name = "average_reaction_time", nullable = false)
     private Double averageReactionTime = 0.0;
+
+    // ── Phòng chơi v2 đợt 2 (V77) ──
+    /** Đua tốc độ: số câu đúng liên tiếp tính tới câu vừa xong. */
+    @Column(name = "answer_streak", nullable = false)
+    private Integer answerStreak = 0;
+
+    /** Sinh tồn: số mạng còn lại. */
+    @Column(name = "lives", nullable = false)
+    private Integer lives = 0;
+
+    /** Sinh tồn: số câu đúng liên tiếp khi đang là bóng. */
+    @Column(name = "ghost_streak", nullable = false)
+    private Integer ghostStreak = 0;
+
+    /** Sinh tồn: đã hồi sinh một lần. */
+    @Column(name = "revived", nullable = false)
+    private Boolean revived = false;
+
+    /** Sinh tồn: câu (0-based) lúc bị loại. */
+    @Column(name = "eliminated_round")
+    private Integer eliminatedRound;
+
+    /** Đấu vương: số trận thắng. */
+    @Column(name = "matches_won", nullable = false)
+    private Integer matchesWon = 0;
+
+    /** Đấu vương: chuỗi thắng dài nhất. */
+    @Column(name = "best_streak", nullable = false)
+    private Integer bestStreak = 0;
+
+    /** Đấu vương: số trận đã đấu. */
+    @Column(name = "matches_played", nullable = false)
+    private Integer matchesPlayed = 0;
+
+    /** Đấu vương: số lần đoán đúng người thắng khi đang xem. */
+    @Column(name = "prediction_points", nullable = false)
+    private Integer predictionPoints = 0;
     
     @ElementCollection(fetch = FetchType.LAZY)
     @CollectionTable(name = "room_player_answers", joinColumns = @JoinColumn(name = "room_player_id"))
@@ -157,5 +194,23 @@ public class RoomPlayer {
     public void setFinalRank(Integer finalRank) { this.finalRank = finalRank; }
 
     public Integer getWinningStreak() { return winningStreak; }
+    public Integer getAnswerStreak() { return answerStreak != null ? answerStreak : 0; }
+    public void setAnswerStreak(Integer answerStreak) { this.answerStreak = answerStreak; }
+    public Integer getLives() { return lives != null ? lives : 0; }
+    public void setLives(Integer lives) { this.lives = lives; }
+    public Integer getGhostStreak() { return ghostStreak != null ? ghostStreak : 0; }
+    public void setGhostStreak(Integer ghostStreak) { this.ghostStreak = ghostStreak; }
+    public Boolean getRevived() { return Boolean.TRUE.equals(revived); }
+    public void setRevived(Boolean revived) { this.revived = revived; }
+    public Integer getEliminatedRound() { return eliminatedRound; }
+    public void setEliminatedRound(Integer eliminatedRound) { this.eliminatedRound = eliminatedRound; }
+    public Integer getMatchesWon() { return matchesWon != null ? matchesWon : 0; }
+    public void setMatchesWon(Integer matchesWon) { this.matchesWon = matchesWon; }
+    public Integer getBestStreak() { return bestStreak != null ? bestStreak : 0; }
+    public void setBestStreak(Integer bestStreak) { this.bestStreak = bestStreak; }
+    public Integer getMatchesPlayed() { return matchesPlayed != null ? matchesPlayed : 0; }
+    public void setMatchesPlayed(Integer matchesPlayed) { this.matchesPlayed = matchesPlayed; }
+    public Integer getPredictionPoints() { return predictionPoints != null ? predictionPoints : 0; }
+    public void setPredictionPoints(Integer predictionPoints) { this.predictionPoints = predictionPoints; }
     public void setWinningStreak(Integer winningStreak) { this.winningStreak = winningStreak; }
 }

@@ -26,6 +26,10 @@ public class RoomAnswer {
     @Column(name = "is_correct", nullable = false)
     private Boolean isCorrect;
 
+    /** Sinh tồn (V77): câu trả lời của người đã bị loại — không điểm, không tính kết thúc vòng sớm. */
+    @Column(name = "ghost", nullable = false)
+    private Boolean ghost = false;
+
     @Column(name = "response_ms", nullable = false)
     private Integer responseMs;
 
@@ -62,6 +66,8 @@ public class RoomAnswer {
     public void setAnswerIndex(Integer answerIndex) { this.answerIndex = answerIndex; }
 
     public Boolean getIsCorrect() { return isCorrect; }
+    public boolean isGhost() { return Boolean.TRUE.equals(ghost); }
+    public void setGhost(Boolean ghost) { this.ghost = ghost; }
     public void setIsCorrect(Boolean isCorrect) { this.isCorrect = isCorrect; }
 
     public Integer getResponseMs() { return responseMs; }

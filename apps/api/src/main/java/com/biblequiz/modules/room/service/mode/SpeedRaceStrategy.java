@@ -43,6 +43,22 @@ public class SpeedRaceStrategy implements RoomModeStrategy {
         return speedRaceScoringService.calculateScore(isCorrect, timeLimitSeconds, reactionTimeMs);
     }
 
+    /** PCV-11 (design §2.1): đúng liên tiếp lần 2 +10, lần 3 +20, từ lần 4 trở đi +30. */
+    @Override
+    public int streakBonus(int streak) {
+        if (streak >= 4) return 30;
+        if (streak == 3) return 20;
+        if (streak == 2) return 10;
+        return 0;
+    }
+
+    /** PCV-11: câu chốt — câu cuối nhân đôi toàn bộ điểm của câu đó. */
+    @Override
+    public RoundPlan planRound(GameLoopContext ctx, int index, com.biblequiz.modules.quiz.entity.Question question) {
+        boolean last = index == ctx.questions.size() - 1;
+        return new RoundPlan(ctx.timePerQuestion, last ? 2 : 1, false, false);
+    }
+
     @Override
     public Comparator<RoomPlayer> leaderboardComparator() {
         return RoomService.ORDER_BY_FINAL_RANK_ASC;

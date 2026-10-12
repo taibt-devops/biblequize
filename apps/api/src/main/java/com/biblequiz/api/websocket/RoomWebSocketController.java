@@ -308,8 +308,18 @@ public class RoomWebSocketController {
      */
     public void broadcastQuestionStart(String roomId, int questionIndex, int totalQuestions,
             Object question, int timeLimit) {
+        broadcastQuestionStart(roomId, questionIndex, totalQuestions, question,
+                com.biblequiz.modules.room.service.mode.RoundPlan.standard(timeLimit));
+    }
+
+    /** PCV-11/12: câu kèm hệ số và cờ của mode (câu chốt, vùng nguy hiểm, câu quyết định). */
+    public void broadcastQuestionStart(String roomId, int questionIndex, int totalQuestions,
+            Object question, com.biblequiz.modules.room.service.mode.RoundPlan plan) {
         WebSocketMessage.QuestionStartData questionData = new WebSocketMessage.QuestionStartData(
-                questionIndex, totalQuestions, question, timeLimit);
+                questionIndex, totalQuestions, question, plan.timeLimitSeconds());
+        questionData.multiplier = Math.max(1, plan.multiplier());
+        questionData.dangerZone = plan.dangerZone();
+        questionData.showdown = plan.showdown();
         roomStateService.setCurrentQuestion(roomId, questionData);
         WebSocketMessage.Message message = new WebSocketMessage.Message(
                 WebSocketMessage.MessageTypes.QUESTION_START, questionData);

@@ -35,6 +35,25 @@ public class RoundResultBuilder {
         this.roomService = roomService;
     }
 
+    /**
+     * PCV-11 — hết vòng: người còn trong cuộc (ACTIVE) mà không trả lời thì mất chuỗi đúng liên tiếp.
+     * Người trả lời đã được cập nhật chuỗi lúc chấm.
+     */
+    public void closeRound(String roomId, String roundId) {
+        java.util.Set<String> answered = new java.util.HashSet<>();
+        for (RoomAnswer a : answerRepository.findByRoundId(roundId)) answered.add(a.getUserId());
+        List<RoomPlayer> changed = new java.util.ArrayList<>();
+        for (RoomPlayer p : playerRepository.findByRoomId(roomId)) {
+            if (p.getPlayerStatus() != RoomPlayer.PlayerStatus.ACTIVE) continue;
+            if (answered.contains(p.getUser().getId())) continue;
+            if (p.getAnswerStreak() > 0) {
+                p.setAnswerStreak(0);
+                changed.add(p);
+            }
+        }
+        if (!changed.isEmpty()) playerRepository.saveAll(changed);
+    }
+
     public WebSocketMessage.RoundEndData build(String roomId, String roundId, Question q) {
         int correctIndex = q.getCorrectAnswer() != null && !q.getCorrectAnswer().isEmpty() ? q.getCorrectAnswer().get(0) : -1;
         WebSocketMessage.RoundEndData data =
@@ -62,7 +81,7 @@ public class RoundResultBuilder {
                     a != null,
                     a != null && Boolean.TRUE.equals(a.getIsCorrect()),
                     a != null && a.getPointsEarned() != null ? a.getPointsEarned() : 0,
-                    0);
+                    p.getAnswerStreak());
         }).toList();
         return data;
     }

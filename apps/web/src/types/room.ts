@@ -109,6 +109,12 @@ export interface QuestionStartData {
   /** Server broadcast timestamp (Sprint 2 S2-5 timer anchor). Optional for
    *  older servers / dev fixtures — FE falls back to local clock. */
   startedAtMs?: number
+  /** PCV-11: hệ số điểm của câu (câu chốt Đua tốc độ = 2). */
+  multiplier?: number
+  /** PCV-12: Sinh tồn — vùng nguy hiểm (thời gian rút ngắn). */
+  dangerZone?: boolean
+  /** PCV-12: Sinh tồn — câu quyết định. */
+  showdown?: boolean
 }
 
 export interface SequentialProgressData {

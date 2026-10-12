@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import RoundReveal from '../../components/multiplayer/RoundReveal';
+import StandingsFlash from '../../components/multiplayer/StandingsFlash';
+import { modeDisplayName } from '../create-room/modeMeta';
 import { useBookName } from '../../hooks/useBookName';
 import ComboBanner from '../../components/multiplayer/ComboBanner';
 import RevealStatsCard from '../../components/multiplayer/RevealStatsCard';
@@ -8,7 +10,7 @@ import ReactionBar from '../../components/ReactionBar';
 import DifficultyBadge from '../../components/DifficultyBadge';
 import { AnswerButton, type AnswerState } from '../../components/quiz/AnswerButton';
 import { RoundScoreboard } from './RoomOverlays';
-import { ANSWER_LETTERS, FILL_STYLE, type CoreGameState } from './roomQuizCore';
+import { ANSWER_LETTERS, FILL_STYLE, speedRaceStreakBonus, type CoreGameState } from './roomQuizCore';
 import type { ReactionData } from '../../types/room';
 import type { BattleRoyaleState } from './hooks/useBattleRoyale';
 import type { TeamVsTeamState } from './hooks/useTeamVsTeam';
@@ -100,6 +102,10 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
     : null;
 
   const timerPercent = timeLimit > 0 ? (timeLeft / timeLimit) * 100 : 0;
+  // PCV-11: kết quả câu vừa xong của chính mình (chuỗi) + bảng dẫn đầu mỗi 3 câu.
+  const myRoundResult = core.reveal?.results?.find(r => r.playerId === myUserId);
+  const showStandings = gameMode === 'SPEED_RACE' && correctIndex !== null && !!core.reveal
+    && (questionIndex + 1) % 3 === 0 && questionIndex < totalQuestions - 1 && scores.length > 1;
 
   // Map core state → AnswerButton state (per-position color via component).
   // Preserves the prior visual semantics (correct=green, wrong=red, selected
@@ -288,8 +294,9 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             <span
               className="text-[12px] font-bold flex-shrink-0"
               style={{ color: 'var(--bq-emerald)' }}
+              data-testid="quiz-header-mode"
             >
-              {gameMode.replace(/_/g, ' ')}
+              {modeDisplayName(t, gameMode)}
             </span>
             {groupQuizSetName && (
               <span
@@ -310,6 +317,15 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
             <span className="text-sm font-bold text-bq-ink flex-shrink-0">
               {t('room.quiz.questionProgress', { current: questionIndex + 1, total: totalQuestions || '?' })}
             </span>
+            {/* PCV-11: câu chốt — câu cuối Đua tốc độ nhân đôi điểm. */}
+            {core.multiplier > 1 && (
+              <span
+                data-testid="quiz-final-question"
+                className="px-2 py-0.5 rounded-full border-2 border-bq-ink bg-bq-amber text-bq-ink text-[12px] font-extrabold flex-shrink-0"
+              >
+                {t('room.quiz.finalQuestion', { m: core.multiplier })}
+              </span>
+            )}
             {totalQuestions > 0 && (
               <div
                 className="hidden sm:block w-32 lg:w-48 h-1.5 rounded-full overflow-hidden flex-shrink-0 bg-bq-inset"
@@ -612,7 +628,14 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                 referenceLabel={referenceLabel}
                 explanation={core.reveal.explanation}
                 answerCounts={core.reveal.answerCounts}
+                streak={myRoundResult?.streak}
+                streakBonus={gameMode === 'SPEED_RACE' ? speedRaceStreakBonus(myRoundResult?.streak) : 0}
               />
+            )}
+
+            {/* PCV-11: Đua tốc độ — sau câu 3, 6, 9… (không phải câu cuối) hiện 5 người dẫn đầu. */}
+            {showStandings && (
+              <StandingsFlash scores={scores} previousScores={core.previousScores} myUserId={myUserId} />
             )}
 
             {/* ─── Sequential Mode: Waiting Strip (after submit, before reveal) ─── */}

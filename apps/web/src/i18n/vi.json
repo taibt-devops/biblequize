@@ -1803,7 +1803,8 @@
       "feedAnswered": "{{name}} đã trả lời",
       "feedRoundEnd": "Câu {{n}} kết thúc · đáp án {{letter}}",
       "feedCorrect": "Đúng: {{names}}",
-      "networkUnstable": "Mất kết nối, đang kết nối lại — thử lại sau giây lát"
+      "networkUnstable": "Mất kết nối, đang kết nối lại — thử lại sau giây lát",
+      "finalQuestion": "Câu chốt · ×{{m}}"
     },
     "reveal": {
       "reference": "Câu gốc",
@@ -1813,7 +1814,8 @@
       "distribution": "Mọi người đã chọn",
       "people": "{{count}} người",
       "save": "Lưu câu này để ôn",
-      "saved": "Đã lưu để ôn"
+      "saved": "Đã lưu để ôn",
+      "streak": "Chuỗi {{n}} · +{{bonus}}"
     },
     "host": {
       "answered": "Đã trả lời"
@@ -1855,6 +1857,11 @@
         "short": "Mọi người cùng trả lời, chờ tất cả xong mới hiện đáp án.",
         "detail": "Cả nhóm cùng trả lời từng câu. Khi mọi người đã trả lời hoặc hết giờ, đáp án và lời giải thích mới hiện ra để cả nhóm cùng xem. Không ai bị loại."
       }
+    },
+    "standings": {
+      "title": "Bảng dẫn đầu",
+      "points": "{{score}} điểm",
+      "you": "(bạn)"
     }
   },
   "groups": {

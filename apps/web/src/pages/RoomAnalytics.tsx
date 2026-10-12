@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { modeDisplayName } from './create-room/modeMeta';
 import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { api } from '../api/client';
 
@@ -51,6 +53,7 @@ const FILL_STYLE = { fontVariationSettings: "'FILL' 1" } as const;
  * room_rounds + room_answers as a public read; tracked for a follow-up).
  */
 export default function RoomAnalytics() {
+  const { t } = useTranslation();
   const { roomId } = useParams();
   const navigate = useNavigate();
   const [room, setRoom] = useState<RoomDetails | null>(null);
@@ -154,7 +157,7 @@ export default function RoomAnalytics() {
         {/* Title */}
         <div>
           <div className="text-[12.5px] font-bold mb-1" style={{ color: '#4D3A1F' }}>
-            {room.mode.replace(/_/g, ' ')} · {room.roomCode}
+            {modeDisplayName(t, room.mode)} · {room.roomCode}
           </div>
           <Plaque className="text-[26px] lg:text-[32px]">
             {room.roomName || 'Phân tích trận đấu'}

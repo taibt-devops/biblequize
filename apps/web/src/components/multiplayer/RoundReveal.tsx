@@ -14,6 +14,9 @@ interface Props {
   explanation?: string | null
   /** Số người chọn từng phương án. */
   answerCounts?: number[]
+  /** PCV-11: chuỗi đúng liên tiếp của mình sau câu này, và điểm thưởng chuỗi (Đua tốc độ). */
+  streak?: number
+  streakBonus?: number
 }
 
 /**
@@ -22,7 +25,7 @@ interface Props {
  * chọn từng phương án, và nút lưu câu để ôn. Chỉ hiện khi vòng đã đóng — mọi số liệu ở đây
  * đến từ ROUND_END.
  */
-export default function RoundReveal({ questionId, correctIndex, selected, referenceLabel, explanation, answerCounts }: Props) {
+export default function RoundReveal({ questionId, correctIndex, selected, referenceLabel, explanation, answerCounts, streak, streakBonus }: Props) {
   const { t } = useTranslation()
   const gotItRight = selected !== null && selected === correctIndex
   const [open, setOpen] = useState(!gotItRight)
@@ -38,6 +41,12 @@ export default function RoundReveal({ questionId, correctIndex, selected, refere
 
   return (
     <section data-testid="round-reveal" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-4 md:p-5 space-y-3">
+      {gotItRight && (streak ?? 0) >= 2 && (streakBonus ?? 0) > 0 && (
+        <div data-testid="round-reveal-streak"
+             className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border-2 border-bq-ink bg-bq-amber text-bq-ink text-[13px] font-extrabold">
+          {t('room.reveal.streak', { n: streak, bonus: streakBonus })}
+        </div>
+      )}
       {referenceLabel && (
         <div className="flex items-center gap-2 text-bq-ink">
           <span className="material-symbols-outlined text-bq-amberd text-[20px]" aria-hidden>menu_book</span>

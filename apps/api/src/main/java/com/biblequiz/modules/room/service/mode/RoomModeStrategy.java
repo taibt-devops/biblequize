@@ -35,6 +35,22 @@ public interface RoomModeStrategy {
         return false;
     }
 
+    /**
+     * PCV-11: điểm thưởng khi đúng liên tiếp {@code streak} câu (đã tính câu này).
+     * Mặc định không thưởng — chỉ Đua tốc độ dùng.
+     */
+    default int streakBonus(int streak) {
+        return 0;
+    }
+
+    /**
+     * PCV-11/12: cách chạy câu thứ {@code index} — thời gian, hệ số, cờ vùng nguy hiểm/câu quyết định.
+     * Mặc định: thời gian của phòng, ×1.
+     */
+    default RoundPlan planRound(GameLoopContext ctx, int index, com.biblequiz.modules.quiz.entity.Question question) {
+        return RoundPlan.standard(ctx.timePerQuestion);
+    }
+
     /** Ordering of this mode's final leaderboard. */
     Comparator<RoomPlayer> leaderboardComparator();
 
