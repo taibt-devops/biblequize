@@ -1883,11 +1883,16 @@
     },
     "errorShuffleTeams": "Không xáo đội được, thử lại",
     "sd": {
-      "wins": "{{n}} thắng"
+      "wins": "{{n}} thắng",
+      "predictTitle": "Bạn đoán ai thắng trận này?",
+      "predictPicked": "Bạn đoán: {{name}}",
+      "predictRight": "Đoán đúng! +1 điểm đoán",
+      "predictWrong": "Lần này đoán trật"
     },
     "end": {
       "sdMetric": "{{n}} trận thắng",
-      "brMetric": "{{c}}/{{t}} câu đúng"
+      "brMetric": "{{c}}/{{t}} câu đúng",
+      "topPredictor": "Khán giả tinh mắt: {{name}} ({{n}} lần đoán đúng)"
     }
   },
   "groups": {

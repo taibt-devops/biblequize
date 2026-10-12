@@ -11,6 +11,13 @@ export interface SuddenDeathState {
   sdMatchResult: { winnerId: string; winnerName: string; loserId: string; loserName: string } | null;
   sdSpectating: boolean;
   sdMyUserId: string;
+  /** PCV-16: khán giả đoán người thắng trận đang chuẩn bị đấu. */
+  sdMatchNo: number;
+  predictionOpen: boolean;
+  myPick: string | null;
+  /** null = chưa có kết quả cho trận hiện tại. */
+  lastPredictionCorrect: boolean | null;
+  myPredictionPoints: number;
 }
 
 /**
@@ -31,6 +38,11 @@ export function useSuddenDeath(myUserId: string) {
   // Kept for MatchResultOverlay parity with the pre-split page (it was never
   // written there either — overlay falls back to name-agnostic copy).
   const [sdMyUserId] = useState('');
+  const [sdMatchNo, setSdMatchNo] = useState(0);
+  const [predictionOpen, setPredictionOpen] = useState(false);
+  const [myPick, setMyPick] = useState<string | null>(null);
+  const [lastPredictionCorrect, setLastPredictionCorrect] = useState<boolean | null>(null);
+  const [myPredictionPoints, setMyPredictionPoints] = useState(0);
 
   const handleEvent = (msg: RoomEvent) => {
     switch (msg.type) {
@@ -46,6 +58,23 @@ export function useSuddenDeath(myUserId: string) {
         // Identity by ID — championName/challengerName là display names có thể collision.
         const inMatch = d.championId === myUserId || d.challengerId === myUserId;
         setSdSpectating(!inMatch);
+        // PCV-16: mỗi trận một lượt đoán cho khán giả, khóa khi câu đầu của trận bắt đầu.
+        setSdMatchNo(d.matchNo ?? 0);
+        setPredictionOpen(!inMatch && (d.matchNo ?? 0) > 0);
+        setMyPick(null);
+        setLastPredictionCorrect(null);
+        break;
+      }
+      case 'QUESTION_START': {
+        setPredictionOpen(false);
+        break;
+      }
+      case 'PREDICTION_RESULT': {
+        const d = msg.data;
+        if (d.matchNo !== sdMatchNo || myPick === null) break;
+        const right = d.correctUserIds.includes(myUserId);
+        setLastPredictionCorrect(right);
+        if (right) setMyPredictionPoints(n => n + 1);
         break;
       }
       case 'MATCH_END': {
@@ -60,11 +89,14 @@ export function useSuddenDeath(myUserId: string) {
   };
 
   const dismissMatchResult = () => setSdMatchResult(null);
+  /** PCV-16: ghi lựa chọn đoán (trang gửi lên máy chủ). */
+  const choosePrediction = (userId: string) => { if (predictionOpen) setMyPick(userId); };
 
   const state: SuddenDeathState = {
     sdChampionName, sdChampionId, sdChampionStreak,
     sdChallengerName, sdChallengerId, sdQueueRemaining,
     sdMatchResult, sdSpectating, sdMyUserId,
+    sdMatchNo, predictionOpen, myPick, lastPredictionCorrect, myPredictionPoints,
   };
-  return { state, handleEvent, dismissMatchResult };
+  return { state, handleEvent, dismissMatchResult, choosePrediction };
 }

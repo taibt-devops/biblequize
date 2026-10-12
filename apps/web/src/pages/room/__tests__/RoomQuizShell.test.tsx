@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import RoomQuizShell from '../RoomQuizShell'
@@ -170,5 +170,41 @@ describe('RoomQuizShell — Đấu vương (PCV-15)', () => {
     render(<Harness gameMode="SUDDEN_DEATH" core={playing({ scores })} />)
     const board = screen.getByTestId('quiz-scoreboard-left')
     expect(board.querySelector('[data-testid="sd-wins-p0"]')?.textContent).toBe('2 thắng')
+  })
+})
+
+describe('RoomQuizShell — khán giả đoán Đấu vương (PCV-16)', () => {
+  function SdHarness({ onPredict }: { onPredict: (id: string) => void }) {
+    const br = useBattleRoyale('fan')
+    const team = useTeamVsTeam('fan', null)
+    const sd = useSuddenDeath('fan')
+    const seq = useSequentialMode()
+    const sdState = {
+      ...sd.state, sdChampionId: 'king', sdChampionName: 'Vua', sdChallengerId: 'chall', sdChallengerName: 'Thách',
+      sdSpectating: true, sdMatchNo: 2, predictionOpen: true, myPick: null,
+    }
+    return (
+      <QueryClientProvider client={new QueryClient()}>
+        <MemoryRouter>
+          <RoomQuizShell
+            gameMode="SUDDEN_DEATH" isBattleRoyale={false} isTeamVsTeam={false} isSuddenDeath isSequential={false} isHost={false}
+            myUserId="fan" myUsername="Fan" showHostHint={false} connected reconnecting={false}
+            core={playing({ questionIndex: 4 })} timeLeft={10} isPaused={false} skipToast={false} hostBroadcast={null}
+            reactions={[]} feedHistory={[]} roundAnswered={new Set()} comboBanner={null} onDismissCombo={() => {}}
+            revealStats={null} br={br.state} team={team.state} sd={sdState} seq={seq.state}
+            onDismissSdResult={() => {}} onSubmitAnswer={() => {}} onAdvance={() => {}} onSendReaction={() => {}}
+            onPredict={onPredict}
+          />
+        </MemoryRouter>
+      </QueryClientProvider>
+    )
+  }
+
+  it('khán giả thấy hai nút đoán, bấm thì gửi người mình chọn', () => {
+    const onPredict = vi.fn()
+    render(<SdHarness onPredict={onPredict} />)
+    fireEvent.click(screen.getByTestId('sd-predict-chall'))
+    expect(onPredict).toHaveBeenCalledWith('chall')
+    expect(screen.getByTestId('sd-predict-king')).toBeInTheDocument()
   })
 })

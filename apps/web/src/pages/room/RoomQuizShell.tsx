@@ -86,6 +86,8 @@ export interface RoomQuizShellProps {
   onSendReaction: (emoji: string) => void;
   /** PCV-14: tên hai đội theo phòng (Đội đấu đội). */
   teamNames?: { A: string; B: string };
+  /** PCV-16: khán giả Đấu vương đoán người thắng. */
+  onPredict?: (userId: string) => void;
 }
 
 /**
@@ -102,7 +104,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
   isPaused, skipToast, hostBroadcast,
   reactions, feedHistory, roundAnswered, comboBanner, onDismissCombo, revealStats,
   br, team, sd, seq, onDismissSdResult,
-  onSubmitAnswer, onAdvance, onSendReaction, teamNames,
+  onSubmitAnswer, onAdvance, onSendReaction, teamNames, onPredict,
 }) => {
   const { t, i18n } = useTranslation();
   const { questionIndex, totalQuestions, timeLimit, question, scores, selected, correctIndex } = core;
@@ -462,7 +464,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
         {/* Mode-specific headers */}
         {isTeamVsTeam && <TeamVsTeamView team={team} names={teamNames} />}
         {isSuddenDeath && sd.sdChampionName && (
-          <SuddenDeathView sd={sd} myUsername={myUsername} />
+          <SuddenDeathView sd={sd} myUsername={myUsername} onPredict={onPredict} />
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] lg:grid-cols-[280px_1fr_320px] gap-5">

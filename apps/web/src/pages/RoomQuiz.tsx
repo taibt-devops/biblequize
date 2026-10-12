@@ -495,6 +495,15 @@ const RoomQuiz: React.FC = () => {
       ? (p: PlayerScore) => t('room.end.brMetric', { c: p.correctAnswers ?? 0, t: p.totalAnswered ?? 0 })
       : undefined;
 
+  // PCV-16: Đấu vương — "Khán giả tinh mắt": người đoán đúng nhiều nhất (từ leaderboard cuối trận).
+  const endNote = (() => {
+    if (!isSuddenDeath) return null;
+    const best = [...core.finalResults].sort((a, b) => (b.predictionPoints ?? 0) - (a.predictionPoints ?? 0))[0];
+    return best && (best.predictionPoints ?? 0) > 0
+      ? t('room.end.topPredictor', { name: best.username, n: best.predictionPoints })
+      : null;
+  })();
+
   // ── Overlays ──
   if (core.showPodium) {
     const exitTo = state?.fromGroupId ? `/groups/${state.fromGroupId}` : '/multiplayer';
@@ -534,6 +543,7 @@ const RoomQuiz: React.FC = () => {
           onHome={() => navigate('/', { replace: true })}
           onAnalytics={() => navigate(`/room/${roomId}/analytics`)}
           metric={endMetric}
+          note={endNote}
         />
         {resultsChat}
       </>
@@ -598,6 +608,11 @@ const RoomQuiz: React.FC = () => {
       onAdvance={handleAdvance}
       onSendReaction={(emoji) => send(`/app/room/${roomId}/reaction`, { reaction: emoji })}
       teamNames={teamNames}
+      onPredict={(pickUserId) => {
+        if (!roomId || !sd.state.predictionOpen) return;
+        sd.choosePrediction(pickUserId);
+        send(`/app/room/${roomId}/predict`, { matchNo: sd.state.sdMatchNo, pickUserId });
+      }}
     />
   );
 };

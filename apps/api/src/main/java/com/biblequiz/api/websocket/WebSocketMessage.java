@@ -39,6 +39,8 @@ public class WebSocketMessage {
         public static final String PLAYER_ELIMINATED = "PLAYER_ELIMINATED";
         /** PCV-13: Sinh tồn — bóng hồi sinh với 1 mạng. */
         public static final String PLAYER_REVIVED = "PLAYER_REVIVED";
+        /** PCV-16: Đấu vương — kết quả đoán của khán giả sau mỗi trận. */
+        public static final String PREDICTION_RESULT = "PREDICTION_RESULT";
         public static final String BATTLE_ROYALE_UPDATE = "BATTLE_ROYALE_UPDATE";
 
         // Scoreboard events
@@ -372,6 +374,8 @@ public class WebSocketMessage {
         public final String challengerId;
         public final String challengerName;
         public final int queueRemaining;
+        /** PCV-16: số thứ tự trận — khán giả gửi kèm khi đoán. */
+        public int matchNo;
 
         public MatchStartData(String championId, String championName, int championStreak,
                               String challengerId, String challengerName, int queueRemaining) {

@@ -104,8 +104,11 @@ public class SuddenDeathMatchService {
         String championName = getUsername(roomId, champion);
         String challengerName = getUsername(roomId, challengerId);
         int championStreak = getStreak(roomId, champion);
+        // PCV-16: đánh số trận và mở cửa sổ đoán cho khán giả (đóng khi câu đầu của trận bắt đầu).
+        int matchNo = roomStateService.nextSdMatchNo(roomId);
+        roomStateService.openSdPredictions(roomId, matchNo);
 
-        return new MatchInfo(champion, championName, championStreak, challengerId, challengerName);
+        return new MatchInfo(champion, championName, championStreak, challengerId, challengerName, matchNo);
     }
 
     /**
@@ -258,6 +261,52 @@ public class SuddenDeathMatchService {
                 .orElse(10000); // timeout = 10s
     }
 
+    // ── PCV-16: khán giả đoán ──
+
+    /**
+     * Ghi phiếu đoán của khán giả cho trận {@code matchNo}. Nhận khi: cửa sổ đoán của đúng trận đó còn mở,
+     * người đoán đang xem (SPECTATOR, không phải một trong hai người đấu), và phiếu chọn một trong hai
+     * người đang đấu. Đoán lại thì thay phiếu cũ.
+     */
+    public boolean recordPrediction(String roomId, String userId, int matchNo, String pickUserId) {
+        Integer open = roomStateService.getOpenSdPredictionMatch(roomId);
+        if (open == null || open != matchNo) return false;
+        String champion = roomStateService.getSdChampion(roomId);
+        String challenger = roomStateService.getSdChallenger(roomId);
+        if (pickUserId == null || !(pickUserId.equals(champion) || pickUserId.equals(challenger))) return false;
+        if (userId.equals(champion) || userId.equals(challenger)) return false;
+        boolean spectator = roomPlayerRepository.findByRoomIdAndUserId(roomId, userId)
+                .map(p -> p.getPlayerStatus() == RoomPlayer.PlayerStatus.SPECTATOR)
+                .orElse(false);
+        if (!spectator) return false;
+        roomStateService.putSdPrediction(roomId, matchNo, userId, pickUserId);
+        return true;
+    }
+
+    /** Đóng cửa sổ đoán — gọi ngay trước câu hỏi đầu tiên của trận. */
+    public void closePredictions(String roomId) {
+        roomStateService.closeSdPredictions(roomId);
+    }
+
+    public int currentMatchNo(String roomId) {
+        return roomStateService.currentSdMatchNo(roomId);
+    }
+
+    /** Hết trận: ai đoán đúng người thắng được +1 điểm đoán. @return id những người đoán đúng. */
+    @Transactional
+    public List<String> settlePredictions(String roomId, int matchNo, String winnerId) {
+        List<String> correct = new java.util.ArrayList<>();
+        roomStateService.getSdPredictions(roomId, matchNo).forEach((userId, pick) -> {
+            if (!pick.equals(winnerId)) return;
+            roomPlayerRepository.findByRoomIdAndUserId(roomId, userId).ifPresent(p -> {
+                p.setPredictionPoints(p.getPredictionPoints() + 1);
+                roomPlayerRepository.save(p);
+                correct.add(userId);
+            });
+        });
+        return correct;
+    }
+
     // ── Helpers ──
 
     /** Lấy người kế tiếp còn chơi được (bỏ qua người đã rời phòng/bỏ trận). */
@@ -301,14 +350,22 @@ public class SuddenDeathMatchService {
         public final int championStreak;
         public final String challengerId;
         public final String challengerName;
+        /** PCV-16: số thứ tự trận (1, 2, …) — khán giả đoán theo số này. */
+        public final int matchNo;
 
         public MatchInfo(String championId, String championName, int championStreak,
                          String challengerId, String challengerName) {
+            this(championId, championName, championStreak, challengerId, challengerName, 0);
+        }
+
+        public MatchInfo(String championId, String championName, int championStreak,
+                         String challengerId, String challengerName, int matchNo) {
             this.championId = championId;
             this.championName = championName;
             this.championStreak = championStreak;
             this.challengerId = challengerId;
             this.challengerName = challengerName;
+            this.matchNo = matchNo;
         }
     }
 

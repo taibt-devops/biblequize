@@ -19,7 +19,7 @@
 - PCV-12 Sinh tồn: 2 mạng, độ khó tăng dần, vùng nguy hiểm, câu quyết định — Status: [x] DONE
 - PCV-13 Sinh tồn: bóng + hồi sinh — Status: [x] DONE
 - PCV-14 Đội đấu đội: điểm trung bình, thưởng cả đội, xáo đội, tên đội — Status: [x] DONE
-- PCV-15 Đấu vương: xoay vòng, xếp hạng theo trận thắng, kết thúc theo ngai — Status: [ ] TODO
+- PCV-15 Đấu vương: xoay vòng, xếp hạng theo trận thắng, kết thúc theo ngai — Status: [x] DONE
 - PCV-16 Đấu vương: khán giả đoán — Status: [ ] TODO
 - PCV-17 Chơi lại với nhóm này — Status: [ ] TODO
 - PCV-18 Đổi cách chơi trong sảnh chờ — Status: [ ] TODO

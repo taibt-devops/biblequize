@@ -204,6 +204,8 @@ export interface MatchStartData {
   challengerId: string
   challengerName: string
   queueRemaining: number
+  /** PCV-16: số thứ tự trận — khán giả gửi kèm khi đoán. */
+  matchNo?: number
 }
 
 export interface MatchEndData {
@@ -302,6 +304,8 @@ export type RoomEvent =
   | { type: 'NEXT_QUESTION'; data?: unknown }
   // ── Per-mode ──
   | { type: 'PLAYER_ELIMINATED'; data: PlayerEliminatedData }
+  /** PCV-16: Đấu vương — ai đoán đúng người thắng trận. */
+  | { type: 'PREDICTION_RESULT'; data: { matchNo: number; winnerId: string; correctUserIds: string[] } }
   /** PCV-13: Sinh tồn — bóng hồi sinh với 1 mạng. */
   | { type: 'PLAYER_REVIVED'; data: { userId: string; username: string; activeRemaining: number } }
   | { type: 'BATTLE_ROYALE_UPDATE'; data: BattleRoyaleUpdateData }

@@ -1883,11 +1883,16 @@
     },
     "errorShuffleTeams": "Couldn't shuffle teams, try again",
     "sd": {
-      "wins": "{{n}} wins"
+      "wins": "{{n}} wins",
+      "predictTitle": "Who wins this duel?",
+      "predictPicked": "Your pick: {{name}}",
+      "predictRight": "Right call! +1 prediction point",
+      "predictWrong": "Missed this one"
     },
     "end": {
       "sdMetric": "{{n}} duels won",
-      "brMetric": "{{c}}/{{t}} correct"
+      "brMetric": "{{c}}/{{t}} correct",
+      "topPredictor": "Sharpest eye: {{name}} ({{n}} correct calls)"
     }
   },
   "groups": {

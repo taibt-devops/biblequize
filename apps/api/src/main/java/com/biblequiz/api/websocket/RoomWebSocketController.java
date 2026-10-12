@@ -37,6 +37,10 @@ public class RoomWebSocketController {
     @Autowired
     private RoomStateService roomStateService;
 
+    /** PCV-16: phiếu đoán của khán giả Đấu vương. */
+    @Autowired(required = false)
+    private com.biblequiz.modules.room.service.SuddenDeathMatchService suddenDeathMatchService;
+
     @Autowired
     private RoomAnswerRepository roomAnswerRepository;
 
@@ -476,9 +480,44 @@ public class RoomWebSocketController {
      */
     public void broadcastMatchStart(String roomId, String championId, String championName, int championStreak,
                                     String challengerId, String challengerName, int queueRemaining) {
+        broadcastMatchStart(roomId, championId, championName, championStreak, challengerId, challengerName, queueRemaining, 0);
+    }
+
+    /** PCV-16: kèm số thứ tự trận để khán giả đoán. */
+    public void broadcastMatchStart(String roomId, String championId, String championName, int championStreak,
+                                    String challengerId, String challengerName, int queueRemaining, int matchNo) {
         WebSocketMessage.MatchStartData data = new WebSocketMessage.MatchStartData(
                 championId, championName, championStreak, challengerId, challengerName, queueRemaining);
+        data.matchNo = matchNo;
         sendToRoom(roomId, new WebSocketMessage.Message(WebSocketMessage.MessageTypes.MATCH_START, data));
+    }
+
+    /** PCV-16: ai đoán đúng người thắng trận {@code matchNo}. */
+    public void broadcastPredictionResult(String roomId, int matchNo, String winnerId, java.util.List<String> correctUserIds) {
+        Map<String, Object> data = new java.util.HashMap<>();
+        data.put("matchNo", matchNo);
+        data.put("winnerId", winnerId);
+        data.put("correctUserIds", correctUserIds);
+        sendToRoom(roomId, new WebSocketMessage.Message(WebSocketMessage.MessageTypes.PREDICTION_RESULT, data));
+    }
+
+    /**
+     * PCV-16: khán giả Đấu vương đoán người thắng trận đang chuẩn bị đấu. Phiếu không hợp lệ (đã đóng
+     * cửa sổ, không phải khán giả, chọn người không đấu) bị bỏ qua im lặng.
+     */
+    @MessageMapping("/room/{roomId}/predict")
+    public void handlePredict(@DestinationVariable String roomId, @Payload Map<String, Object> payload,
+            Authentication authentication) {
+        try {
+            if (suddenDeathMatchService == null) return;
+            User user = userRepository.findByEmail(authentication.getName()).orElseThrow();
+            int matchNo = ((Number) payload.get("matchNo")).intValue();
+            Object pick = payload.get("pickUserId");
+            if (pick == null) return;
+            suddenDeathMatchService.recordPrediction(roomId, user.getId(), matchNo, pick.toString());
+        } catch (Exception ignored) {
+            // phiếu đoán là phụ — không gửi lỗi
+        }
     }
 
     /**

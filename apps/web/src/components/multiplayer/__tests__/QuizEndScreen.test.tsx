@@ -177,3 +177,12 @@ describe('QuizEndScreen — số liệu theo mode (PCV-15)', () => {
     expect(screen.queryByText('300 điểm')).toBeNull()
   })
 })
+
+describe('QuizEndScreen — ghi chú cuối trận (PCV-16)', () => {
+  it('hiện "Khán giả tinh mắt" khi có', () => {
+    render(<QuizEndScreen results={SAMPLE} myUsername="An" isHost totalQuestions={15}
+      onReplay={noop} onClose={noop} onShare={noop} onNewRoom={noop} onHome={noop}
+      note="Khán giả tinh mắt: Chi (3 lần đoán đúng)" />)
+    expect(screen.getByTestId('end-note').textContent).toBe('Khán giả tinh mắt: Chi (3 lần đoán đúng)')
+  })
+})

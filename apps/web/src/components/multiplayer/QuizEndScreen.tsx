@@ -26,6 +26,8 @@ interface Props {
   onAnalytics?: () => void;
   /** PCV-15: số liệu dưới tên theo mode (thiếu = điểm). */
   metric?: (p: PlayerScore) => string;
+  /** PCV-16: một dòng ghi chú dưới bục (vd "Khán giả tinh mắt: …"). */
+  note?: string | null;
 }
 
 function formatDuration(ms: number | null | undefined): string {
@@ -38,7 +40,7 @@ function formatDuration(ms: number | null | undefined): string {
 
 export function QuizEndScreen({
   results, myUsername, myUserId, isHost, totalQuestions, startedAtMs,
-  onReplay, onClose, onShare, onNewRoom, onHome, onAnalytics, metric,
+  onReplay, onClose, onShare, onNewRoom, onHome, onAnalytics, metric, note,
 }: Props) {
   // Rank order: finalRank when the mode assigns it (BR/SD), else score DESC
   // (Speed Race & co never set finalRank — deriving rank from position fixes
@@ -160,6 +162,10 @@ export function QuizEndScreen({
           {results.length <= 2
             ? <HeadToHead results={results} compact={!isHost} metric={metric as never} />
             : <Podium results={results} compact={!isHost} metric={metric} />}
+
+          {note && (
+            <p data-testid="end-note" className="mt-4 text-center text-[15px] font-bold text-bq-ink">{note}</p>
+          )}
 
           {/* Match stats — drop "Thời gian" when the match start wasn't
               captured (reload / late join) so it never shows a bare "—". */}

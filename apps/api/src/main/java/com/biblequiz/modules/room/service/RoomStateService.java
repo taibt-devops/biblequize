@@ -24,6 +24,10 @@ public class RoomStateService {
     private static final String KEY_SD_CHAMPION_PREFIX = "room:state:sd_champion:";
     private static final String KEY_SD_CHALLENGER_PREFIX = "room:state:sd_challenger:";
     private static final String KEY_CHAT_PREFIX = "room:chat:";
+    /** PCV-16: Đấu vương — số thứ tự trận, cửa sổ đoán đang mở, phiếu đoán theo trận. */
+    private static final String KEY_SD_MATCH_NO_PREFIX = "room:state:sd_match_no:";
+    private static final String KEY_SD_PREDICT_OPEN_PREFIX = "room:state:sd_predict_open:";
+    private static final String KEY_SD_PREDICT_PREFIX = "room:state:sd_predict:";
     /** PCV-11a: đáp án của câu đang chạy — chỉ ở máy chủ. */
     private static final String KEY_ANSWER_PREFIX = "room:state:answer_key:";
     private static final Duration STATE_TTL = Duration.ofHours(2);
@@ -197,8 +201,53 @@ public class RoomStateService {
         return value instanceof AnswerKey key ? Optional.of(key) : Optional.empty();
     }
 
+    /** PCV-16: số thứ tự trận Đấu vương kế tiếp (1, 2, …). */
+    public int nextSdMatchNo(String roomId) {
+        Long n = redisTemplate.opsForValue().increment(KEY_SD_MATCH_NO_PREFIX + roomId);
+        redisTemplate.expire(KEY_SD_MATCH_NO_PREFIX + roomId, STATE_TTL);
+        return n != null ? n.intValue() : 1;
+    }
+
+    /** PCV-16: số thứ tự trận Đấu vương đang/vừa đấu (0 nếu chưa có trận). */
+    public int currentSdMatchNo(String roomId) {
+        Object v = redisTemplate.opsForValue().get(KEY_SD_MATCH_NO_PREFIX + roomId);
+        if (v instanceof Number n) return n.intValue();
+        if (v instanceof String s) {
+            try { return Integer.parseInt(s); } catch (NumberFormatException ignored) { return 0; }
+        }
+        return 0;
+    }
+
+    public void openSdPredictions(String roomId, int matchNo) {
+        redisTemplate.opsForValue().set(KEY_SD_PREDICT_OPEN_PREFIX + roomId, matchNo, STATE_TTL);
+    }
+
+    public Integer getOpenSdPredictionMatch(String roomId) {
+        Object v = redisTemplate.opsForValue().get(KEY_SD_PREDICT_OPEN_PREFIX + roomId);
+        return v instanceof Number n ? n.intValue() : null;
+    }
+
+    public void closeSdPredictions(String roomId) {
+        redisTemplate.delete(KEY_SD_PREDICT_OPEN_PREFIX + roomId);
+    }
+
+    public void putSdPrediction(String roomId, int matchNo, String userId, String pickUserId) {
+        String key = KEY_SD_PREDICT_PREFIX + roomId + ":" + matchNo;
+        redisTemplate.opsForHash().put(key, userId, pickUserId);
+        redisTemplate.expire(key, STATE_TTL);
+    }
+
+    public Map<String, String> getSdPredictions(String roomId, int matchNo) {
+        Map<Object, Object> raw = redisTemplate.opsForHash().entries(KEY_SD_PREDICT_PREFIX + roomId + ":" + matchNo);
+        Map<String, String> out = new java.util.HashMap<>();
+        raw.forEach((k, v) -> { if (k != null && v != null) out.put(k.toString(), v.toString()); });
+        return out;
+    }
+
     public void clearRoomState(String roomId) {
         redisTemplate.delete(getQuestionKey(roomId));
+        redisTemplate.delete(KEY_SD_MATCH_NO_PREFIX + roomId);
+        redisTemplate.delete(KEY_SD_PREDICT_OPEN_PREFIX + roomId);
         redisTemplate.delete(KEY_ANSWER_PREFIX + roomId);
         redisTemplate.delete(KEY_ROUND_PREFIX + roomId);
         redisTemplate.delete(KEY_CLOSED_ROUND_PREFIX + roomId);

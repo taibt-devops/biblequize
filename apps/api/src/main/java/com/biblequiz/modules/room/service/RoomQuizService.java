@@ -212,6 +212,7 @@ public class RoomQuizService {
 
             // PCV-11/12: thời gian, hệ số và cờ của câu do mode quyết (câu chốt, vùng nguy hiểm…).
             com.biblequiz.modules.room.service.mode.RoundPlan plan = strategy.planRound(ctx, i, q);
+            strategy.beforeQuestion(ctx, i);
             wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), plan);
             // End the round as soon as every expected player has answered;
             // otherwise wait the full timer.

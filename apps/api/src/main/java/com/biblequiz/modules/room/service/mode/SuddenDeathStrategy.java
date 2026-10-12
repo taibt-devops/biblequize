@@ -25,6 +25,9 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
 
     private static final Logger log = LoggerFactory.getLogger(SuddenDeathStrategy.class);
 
+    /** PCV-16: giới thiệu trận đầu — khán giả có thời gian đoán. */
+    static final long MATCH_INTRO_MS = 4_000;
+
     private final SuddenDeathMatchService suddenDeathMatchService;
     private final SpeedRaceScoringService speedRaceScoringService;
 
@@ -57,7 +60,7 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
     }
 
     @Override
-    public boolean beforeLoop(GameLoopContext ctx) {
+    public boolean beforeLoop(GameLoopContext ctx) throws InterruptedException {
         // Init queue: all players to SPECTATOR, sorted by join time
         suddenDeathMatchService.initializeQueue(ctx.roomId);
 
@@ -69,8 +72,16 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
             return false;
         }
         ctx.ws.broadcastMatchStart(ctx.roomId, match.championId, match.championName, match.championStreak,
-                match.challengerId, match.challengerName, suddenDeathMatchService.getQueueSize(ctx.roomId));
+                match.challengerId, match.challengerName, suddenDeathMatchService.getQueueSize(ctx.roomId), match.matchNo);
+        // PCV-16: vài giây giới thiệu trận đầu để khán giả kịp đoán (các trận sau đã có nhịp nghỉ).
+        Thread.sleep(MATCH_INTRO_MS);
         return true;
+    }
+
+    /** PCV-16: câu đầu của trận bắt đầu ⇒ khóa phiếu đoán. */
+    @Override
+    public void beforeQuestion(GameLoopContext ctx, int index) {
+        suddenDeathMatchService.closePredictions(ctx.roomId);
     }
 
     @Override
@@ -90,6 +101,10 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
             ctx.ws.broadcastMatchEnd(ctx.roomId,
                     result.winner.userId, result.winner.username, result.winner.streak,
                     result.loser.userId, result.loser.username);
+            // PCV-16: chấm phiếu đoán của khán giả.
+            int matchNo = suddenDeathMatchService.currentMatchNo(ctx.roomId);
+            java.util.List<String> correct = suddenDeathMatchService.settlePredictions(ctx.roomId, matchNo, result.winner.userId);
+            ctx.ws.broadcastPredictionResult(ctx.roomId, matchNo, result.winner.userId, correct);
 
             Thread.sleep(2000L); // pause before next match
 
@@ -103,7 +118,7 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
                 if (match != null) {
                     ctx.ws.broadcastMatchStart(ctx.roomId, match.championId, match.championName,
                             match.championStreak, match.challengerId, match.challengerName,
-                            suddenDeathMatchService.getQueueSize(ctx.roomId));
+                            suddenDeathMatchService.getQueueSize(ctx.roomId), match.matchNo);
                 } else {
                     return true;
                 }

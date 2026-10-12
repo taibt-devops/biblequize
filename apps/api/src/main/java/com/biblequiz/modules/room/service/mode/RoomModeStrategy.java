@@ -51,6 +51,10 @@ public interface RoomModeStrategy {
         return RoundPlan.standard(ctx.timePerQuestion);
     }
 
+    /** PCV-16: chạy ngay trước khi phát câu thứ {@code index} (Đấu vương đóng cửa sổ đoán). */
+    default void beforeQuestion(GameLoopContext ctx, int index) {
+    }
+
     /** Ordering of this mode's final leaderboard. */
     Comparator<RoomPlayer> leaderboardComparator();
 
