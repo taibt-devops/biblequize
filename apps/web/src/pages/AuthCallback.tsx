@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
+import { takeReturnPath } from '../utils/returnPath'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../store/authStore'
 import { api } from '../api/client'
@@ -62,7 +63,9 @@ export default function AuthCallback() {
           });
 
           console.log('[AUTH_CALLBACK] User logged in via exchange success');
-          setTimeout(() => navigate('/'), 500);
+          // PCV-24: về trang đã nhớ trước khi sang Google (vd. /room/create?passage=…), không thì trang chủ.
+          const target = takeReturnPath() ?? '/';
+          setTimeout(() => navigate(target), 500);
         } else {
           console.error('[AUTH_CALLBACK] Exchange failed: No access token in response');
           setError('Failed to retrieve authentication tokens');

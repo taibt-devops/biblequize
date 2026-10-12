@@ -9,12 +9,13 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
  */
 
 const mockNavigate = vi.fn()
+let mockSearchParams = new URLSearchParams()
 vi.mock('react-router-dom', async () => {
   const actual = await vi.importActual('react-router-dom')
   return {
     ...actual,
     useNavigate: () => mockNavigate,
-    useSearchParams: () => [new URLSearchParams(), vi.fn()],
+    useSearchParams: () => [mockSearchParams, vi.fn()],
   }
 })
 
@@ -47,6 +48,7 @@ function renderCreateRoom() {
 describe('CreateRoom', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    mockSearchParams = new URLSearchParams()
     authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test', email: 'a@b.com' } }
   })
 
@@ -255,5 +257,53 @@ describe('CreateRoom — Hội ý (PCV-22)', () => {
     await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
       mode: 'TEAM_VS_TEAM', teamConsensus: true,
     })))
+  })
+})
+
+describe('CreateRoom — Ôn phần đọc hôm nay (PCV-24)', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+    mockSearchParams = new URLSearchParams()
+    mockApiGet.mockImplementation((url: string) => Promise.resolve({
+      data: url === '/api/books'
+        ? [{ id: 'gen', name: 'Genesis', nameVi: 'Sáng Thế Ký', testament: 'OT', orderIndex: 1 },
+           { id: 'psa', name: 'Psalms', nameVi: 'Thi Thiên', testament: 'OT', orderIndex: 19 }]
+        : { sets: [], locked: [] },
+    }))
+  })
+
+  it('?passage= điền tên phòng, hiện phạm vi theo đoạn và gửi passageScope', async () => {
+    mockSearchParams = new URLSearchParams('passage=Genesis:27-28,Psalms:7')
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r5', roomCode: 'READ55' } } })
+    renderCreateRoom()
+
+    expect((screen.getByTestId('create-room-name-input') as HTMLInputElement).value).toBe('Ôn phần đọc hôm nay')
+    await waitFor(() => expect(screen.getByTestId('create-room-passage').textContent).toMatch(/Sáng Thế Ký 27–28, Thi Thiên 7/))
+    fireEvent.click(document.querySelector('button[type="submit"]')!)
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
+      roomName: 'Ôn phần đọc hôm nay',
+      passageScope: [
+        { book: 'Genesis', fromChapter: 27, toChapter: 28 },
+        { book: 'Psalms', fromChapter: 7, toChapter: 7 },
+      ],
+    })))
+  })
+
+  it('bỏ phạm vi theo đoạn ⇒ quay lại chọn sách như thường, không gửi passageScope', async () => {
+    mockSearchParams = new URLSearchParams('passage=Genesis:27-28')
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r6', roomCode: 'READ66' } } })
+    renderCreateRoom()
+
+    fireEvent.click(screen.getByTestId('create-room-passage-clear'))
+    expect(screen.queryByTestId('create-room-passage')).toBeNull()
+    fireEvent.click(document.querySelector('button[type="submit"]')!)
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalled())
+    expect(mockApiPost.mock.calls[0][1]).not.toHaveProperty('passageScope')
+  })
+
+  it('không có ?passage= thì như cũ (tên trống, chọn sách)', () => {
+    renderCreateRoom()
+    expect(screen.queryByTestId('create-room-passage')).toBeNull()
+    expect((screen.getByTestId('create-room-name-input') as HTMLInputElement).value).toBe('')
   })
 })

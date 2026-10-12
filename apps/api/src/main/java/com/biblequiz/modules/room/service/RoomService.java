@@ -163,6 +163,13 @@ public class RoomService {
         }
     }
 
+    /** PCV-24: phạm vi theo đoạn của phòng "Ôn phần đọc hôm nay" (đã kiểm ở {@link PassageScope}). */
+    public void setPassageScope(String roomId, List<PassageScope.Segment> segments) throws Exception {
+        Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
+        room.setPassageScope(PassageScope.toJson(PassageScope.sanitize(segments)));
+        roomRepository.save(room);
+    }
+
     /** PCV-22: bật/tắt Hội ý lúc tạo phòng (chỉ Đội đấu đội). */
     public void setTeamConsensus(String roomId, boolean on) throws Exception {
         Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
@@ -1016,6 +1023,8 @@ public class RoomService {
         public final boolean quickMatch;
         /** PCV-22: Đội đấu đội chế độ Hội ý. */
         public final boolean teamConsensus;
+        /** PCV-24: phạm vi theo đoạn ("Ôn phần đọc hôm nay"); rỗng = phòng thường. */
+        public final List<PassageScope.Segment> passageScope;
         public final List<PlayerInfoDTO> players;
 
         public RoomDetailsDTO(Room room, List<RoomPlayer> roomPlayers) {
@@ -1053,6 +1062,7 @@ public class RoomService {
             this.hostPlaysGame = room.isHostPlaysGame();
             this.quickMatch = room.isQuickMatch();
             this.teamConsensus = room.isTeamConsensus();
+            this.passageScope = PassageScope.fromJson(room.getPassageScope());
 
             this.players = roomPlayers.stream()
                 .map(player -> {

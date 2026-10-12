@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate, useSearchParams, Link } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { getQuizLanguage } from '../utils/quizLanguage'
 import { useAuth } from '../store/authStore'
@@ -15,6 +15,8 @@ import PreviewPanel from './create-room/PreviewPanel'
 import BookScopeOptions, { useBookScopeLabel } from './create-room/BookScopeOptions'
 import { PlaceBackdrop, Plaque } from '../components/lk/Place'
 import { MODE_DEFAULTS, MODE_LIST, MODE_META, playerLimits, type RoomModeId } from './create-room/modeMeta'
+import { formatPassage, parsePassageParam } from './create-room/passage'
+import { useBookName } from '../hooks/useBookName'
 
 const QUESTION_COUNTS = [10, 15, 20, 30]
 const TIME_OPTIONS = [10, 15, 20, 30]
@@ -28,15 +30,19 @@ const DIFFICULTY_OPTIONS = [
 const CARD_CLASS = 'bg-bq-white border border-bq-hair shadow-bq-soft rounded-[18px]'
 
 export default function CreateRoom() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const { isAuthenticated } = useAuth()
   const resolveScopeLabel = useBookScopeLabel()
+  const getBookName = useBookName()
+  const [searchParams] = useSearchParams()
+  // PCV-24: "Ôn phần đọc hôm nay" — app Đọc hằng ngày mở /room/create?passage=Genesis:27-28,Psalms:7.
+  const [passage, setPassage] = useState(() => parsePassageParam(searchParams.get('passage')))
 
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [formData, setFormData] = useState({
-    roomName: '',
+  const [formData, setFormData] = useState(() => ({
+    roomName: passage.length > 0 ? t('createRoom.passage.roomName') : '',
     mode: 'SPEED_RACE' as RoomModeId,
     questionCount: MODE_DEFAULTS.SPEED_RACE.questionCount,
     timePerQuestion: MODE_DEFAULTS.SPEED_RACE.timePerQuestion,
@@ -52,7 +58,7 @@ export default function CreateRoom() {
     hostPlaysGame: false,
     // PCV-22: Đội đấu đội — chế độ Hội ý (đáp án đội = đa số phiếu).
     teamConsensus: false,
-  })
+  }))
 
   const { data: setsData } = useQuery({
     queryKey: ['my-sets', 'published'],
@@ -85,6 +91,9 @@ export default function CreateRoom() {
       if (formData.questionSource !== 'CUSTOM' || !formData.questionSetId) {
         delete payload.questionSetId
       }
+      if (passage.length > 0 && formData.questionSource === 'DATABASE') {
+        payload.passageScope = passage
+      }
       const res = await api.post('/api/rooms', payload)
       const room = res.data.room
       navigate(`/room/${room.id}/lobby`, { state: { room, mode: formData.mode, viewerUserId: res.data.viewerUserId } })
@@ -99,7 +108,9 @@ export default function CreateRoom() {
 
   const selectedMode = MODE_META[formData.mode]
   const difficultyLabel = t(DIFFICULTY_OPTIONS.find(d => d.value === formData.difficulty)?.labelKey ?? 'practice.mixed')
-  const bookScopeLabel = resolveScopeLabel(formData.bookScope)
+  const lang = i18n.language === 'en' ? 'en' : 'vi'
+  const passageLabel = formatPassage(passage, book => getBookName(book, lang))
+  const bookScopeLabel = passage.length > 0 ? passageLabel : resolveScopeLabel(formData.bookScope)
   const canSubmit = !(formData.questionSource === 'CUSTOM' && !formData.questionSetId)
 
   return (
@@ -413,6 +424,24 @@ export default function CreateRoom() {
                   value={formData.timePerQuestion}
                   onChange={v => setFormData(p => ({ ...p, timePerQuestion: v }))}
                 />
+                {passage.length > 0 ? (
+                  /* PCV-24: phạm vi theo đoạn thay cho chọn sách. */
+                  <div data-testid="create-room-passage">
+                    <div className="text-[12.5px] font-bold text-bq-ink2 mb-2">{t('createRoom.passage.label')}</div>
+                    <div className="px-3.5 py-2.5 rounded-[10px] text-sm font-bold bg-bq-cream border border-bq-ink text-bq-ink">
+                      {passageLabel}
+                    </div>
+                    <p className="m-0 mt-1.5 text-[12px] text-bq-ink2 leading-snug">{t('createRoom.passage.note')}</p>
+                    <button
+                      type="button"
+                      data-testid="create-room-passage-clear"
+                      onClick={() => setPassage([])}
+                      className="mt-1 text-[12.5px] font-bold text-bq-ink2 underline underline-offset-2"
+                    >
+                      {t('createRoom.passage.clear')}
+                    </button>
+                  </div>
+                ) : (
                 <div>
                   <div className="text-[12.5px] font-bold text-bq-ink2 mb-2">
                     {t('createRoom.bookScope', 'Sách Kinh Thánh')}
@@ -430,6 +459,7 @@ export default function CreateRoom() {
                     </span>
                   </div>
                 </div>
+                )}
               </div>
 
               <div

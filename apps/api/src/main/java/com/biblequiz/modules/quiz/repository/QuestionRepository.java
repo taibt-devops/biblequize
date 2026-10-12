@@ -143,6 +143,19 @@ public interface QuestionRepository extends JpaRepository<Question, String> {
                                                                                   @Param("excludeIds") List<String> excludeIds,
                                                                                   Pageable pageable);
 
+    // PCV-24: "Ôn phần đọc hôm nay" — câu trong một đoạn (sách + khoảng chương); difficulty null = mọi mức.
+    @Query("SELECT q FROM Question q WHERE q.isActive = true AND q.language = :language AND q.book = :book " +
+           "AND q.chapter BETWEEN :fromChapter AND :toChapter " +
+           "AND (:difficulty IS NULL OR q.difficulty = :difficulty) " +
+           "AND q.id NOT IN :excludeIds ORDER BY RAND()")
+    List<Question> findRandomInPassage(@Param("language") String language,
+                                       @Param("book") String book,
+                                       @Param("fromChapter") int fromChapter,
+                                       @Param("toChapter") int toChapter,
+                                       @Param("difficulty") Question.Difficulty difficulty,
+                                       @Param("excludeIds") List<String> excludeIds,
+                                       Pageable pageable);
+
     // Performance optimization: Get question count by filters
     @Query("SELECT COUNT(q) FROM Question q WHERE q.isActive = true AND " +
            "(:book IS NULL OR q.book = :book) AND " +

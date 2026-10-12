@@ -2639,7 +2639,13 @@
     "rolePlayer": "Tôi chơi cùng mọi người",
     "rolePlayerDesc": "Bạn vừa mở phòng vừa trả lời, được tính điểm như mọi người.",
     "teamConsensus": "Hội ý",
-    "teamConsensusDesc": "Cả đội thấy nhau chọn gì và nhắn riêng cho nhau; đáp án của đội là phương án nhiều người chọn nhất."
+    "teamConsensusDesc": "Cả đội thấy nhau chọn gì và nhắn riêng cho nhau; đáp án của đội là phương án nhiều người chọn nhất.",
+    "passage": {
+      "roomName": "Ôn phần đọc hôm nay",
+      "label": "Ôn phần đọc",
+      "note": "Câu hỏi lấy trong các chương này trước; thiếu thì thêm câu cùng sách.",
+      "clear": "Chọn sách khác"
+    }
   },
   "daily": {
     "title": "Thử Thách Hàng Ngày",

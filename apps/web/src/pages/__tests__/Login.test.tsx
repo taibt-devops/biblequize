@@ -77,6 +77,29 @@ describe('Login Page', () => {
       expect(mockNavigate).toHaveBeenCalledWith('/', expect.anything())
     })
 
+    it('PCV-24: vào từ một trang cần đăng nhập ⇒ đăng nhập xong về đúng trang đó', () => {
+      authState = { isAuthenticated: true, isLoading: false, user: { name: 'Test', email: 'a@b.com' } }
+      render(
+        <MemoryRouter initialEntries={[{ pathname: '/login', state: { from: { pathname: '/room/create', search: '?passage=Genesis:27-28' } } }]}>
+          <Login />
+        </MemoryRouter>
+      )
+      expect(mockNavigate).toHaveBeenCalledWith('/room/create?passage=Genesis:27-28', expect.anything())
+    })
+
+    it('PCV-24: đăng nhập Google nhớ trang cần quay lại trước khi rời app', () => {
+      sessionStorage.clear()
+      const assign = vi.spyOn(window, 'location', 'get').mockReturnValue({ ...window.location, href: '' } as Location)
+      render(
+        <MemoryRouter initialEntries={[{ pathname: '/login', state: { from: { pathname: '/room/create', search: '?passage=Psalms:7' } } }]}>
+          <Login />
+        </MemoryRouter>
+      )
+      fireEvent.click(screen.getByTestId('login-google-btn'))
+      expect(JSON.parse(sessionStorage.getItem('bq.returnPath') || '{}').path).toBe('/room/create?passage=Psalms:7')
+      assign.mockRestore()
+    })
+
     it('does NOT redirect when not authenticated', () => {
       authState = { isAuthenticated: false, isLoading: false, user: null }
       renderLogin()

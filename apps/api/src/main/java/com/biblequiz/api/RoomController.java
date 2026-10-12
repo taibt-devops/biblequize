@@ -126,6 +126,12 @@ public class RoomController {
             if (Boolean.TRUE.equals(body.get("teamConsensus")) && mode == Room.RoomMode.TEAM_VS_TEAM) {
                 roomService.setTeamConsensus(room.getId(), true);
             }
+            // PCV-24: Ôn phần đọc hôm nay — phạm vi theo đoạn (máy chủ kiểm sách, kẹp chương); chỉ kho câu.
+            List<com.biblequiz.modules.room.service.PassageScope.Segment> passage =
+                    com.biblequiz.modules.room.service.PassageScope.fromRequest(body.get("passageScope"));
+            if (!passage.isEmpty() && questionSource == Room.QuestionSource.DATABASE) {
+                roomService.setPassageScope(room.getId(), passage);
+            }
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
 
             return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));

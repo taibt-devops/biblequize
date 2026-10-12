@@ -274,7 +274,7 @@ public class RoomQuizService {
         }
     }
 
-    private LoadedQuestions loadQuestionsForRoom(String roomId, int questionCount, Room.RoomMode mode) {
+    LoadedQuestions loadQuestionsForRoom(String roomId, int questionCount, Room.RoomMode mode) {
         Room room = roomRepository.findById(roomId).orElseThrow();
 
         // Priority 0: direct question IDs stored on room (e.g., from group quiz set)
@@ -333,8 +333,11 @@ public class RoomQuizService {
         String lang = room.getLanguage() != null && !room.getLanguage().isBlank() ? room.getLanguage() : "vi";
         List<String> books = BookScopes.expand(scope);
         Question.Difficulty fixed = toQuestionDifficulty(diff);
-        BattleRoyaleQuestionPlan.Fetcher fetcher = (d, count, exclude) ->
-                fetchRandom(lang, books, fixed != null ? fixed : d, count, exclude);
+        // PCV-24: phòng ôn theo đoạn — mỗi mức độ khó đều lấy trong đoạn trước.
+        List<PassageScope.Segment> passage = PassageScope.fromJson(room.getPassageScope());
+        BattleRoyaleQuestionPlan.Fetcher fetcher = (d, count, exclude) -> passage.isEmpty()
+                ? fetchRandom(lang, books, fixed != null ? fixed : d, count, exclude)
+                : fetchPassage(lang, passage, fixed != null ? fixed : d, count, exclude);
         if (fixed != null) {
             List<Question> regular = fetcher.fetch(fixed, questionCount, List.of());
             List<String> used = regular.stream().map(Question::getId).toList();
@@ -361,12 +364,63 @@ public class RoomQuizService {
                 : questionRepository.findRandomQuestionsByLanguageExcludingIds(lang, exclude, page);
     }
 
+    /**
+     * PCV-24 — "Ôn phần đọc hôm nay": câu trong các đoạn (sách + khoảng chương) trước — các đoạn lần lượt
+     * mỗi đoạn một câu; thiếu thì bù câu khác cùng sách, rồi câu bất kỳ, để không bao giờ ra phòng rỗng.
+     * Độ khó cố định (d khác null) giữ ở mọi bước.
+     */
+    List<Question> fetchPassage(String lang, List<PassageScope.Segment> segments, Question.Difficulty d,
+                                int count, List<String> exclude) {
+        if (count <= 0) return List.of();
+        java.util.LinkedHashMap<String, Question> picked = new java.util.LinkedHashMap<>();
+        List<List<Question>> perSegment = segments.stream()
+                .map(s -> questionRepository.findRandomInPassage(lang, s.book(), s.fromChapter(), s.toChapter(), d,
+                        exclude, PageRequest.of(0, count)))
+                .toList();
+        int longest = perSegment.stream().mapToInt(List::size).max().orElse(0);
+        for (int i = 0; i < longest && picked.size() < count; i++) {
+            for (List<Question> list : perSegment) {
+                if (i < list.size() && picked.size() < count) picked.putIfAbsent(list.get(i).getId(), list.get(i));
+            }
+        }
+        if (picked.size() < count) {
+            List<String> books = segments.stream().map(PassageScope.Segment::book).distinct().toList();
+            List<String> used = usedIds(exclude, picked.keySet());
+            PageRequest rest = PageRequest.of(0, count - picked.size());
+            (d != null
+                    ? questionRepository.findRandomQuestionsByLanguageAndBooksAndDifficultyExcludingIds(lang, books, d, used, rest)
+                    : questionRepository.findRandomQuestionsByLanguageAndBooksExcludingIds(lang, books, used, rest))
+                    .forEach(q -> picked.putIfAbsent(q.getId(), q));
+        }
+        if (picked.size() < count) {
+            List<String> used = usedIds(exclude, picked.keySet());
+            PageRequest rest = PageRequest.of(0, count - picked.size());
+            (d != null
+                    ? questionRepository.findRandomQuestionsByLanguageAndDifficultyExcludingIds(lang, d, used, rest)
+                    : questionRepository.findRandomQuestionsByLanguageExcludingIds(lang, used, rest))
+                    .forEach(q -> picked.putIfAbsent(q.getId(), q));
+        }
+        return new java.util.ArrayList<>(picked.values()).subList(0, Math.min(count, picked.size()));
+    }
+
+    private static List<String> usedIds(List<String> exclude, java.util.Collection<String> picked) {
+        List<String> used = new java.util.ArrayList<>(exclude);
+        used.addAll(picked);
+        return used;
+    }
+
     private List<Question> loadQuestionsFromDatabase(Room room, int questionCount) {
         String scope = room.getBookScope() != null ? room.getBookScope() : "ALL";
         Room.RoomDifficulty diff = room.getDifficulty() != null ? room.getDifficulty() : Room.RoomDifficulty.MIXED;
         // V65: always filter by the room's language — without this, rooms
         // mixed vi/en questions in the same match.
         String lang = room.getLanguage() != null && !room.getLanguage().isBlank() ? room.getLanguage() : "vi";
+
+        // PCV-24: phòng "Ôn phần đọc hôm nay" chọn câu theo đoạn trước.
+        List<PassageScope.Segment> passage = PassageScope.fromJson(room.getPassageScope());
+        if (!passage.isEmpty()) {
+            return fetchPassage(lang, passage, toQuestionDifficulty(diff), questionCount, List.of());
+        }
         PageRequest page = PageRequest.of(0, questionCount);
         List<String> empty = List.of();
 

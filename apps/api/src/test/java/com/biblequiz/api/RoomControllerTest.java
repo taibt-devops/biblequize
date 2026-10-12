@@ -104,6 +104,39 @@ class RoomControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.room.roomCode").value("ABC123"));
     }
 
+    /** PCV-24: phòng "Ôn phần đọc hôm nay" — máy chủ kiểm phạm vi theo đoạn rồi mới lưu. */
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void createRoom_withPassage_savesTheCheckedScope() throws Exception {
+        when(roomService.createRoom(anyString(), any(User.class), anyInt(), anyInt(), anyInt(), any(), anyBoolean(), any(), any(), any(), any(), any(), anyString()))
+                .thenReturn(testRoom);
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+
+        mockMvc.perform(post("/api/rooms")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"roomName\":\"Ôn phần đọc hôm nay\",\"mode\":\"SPEED_RACE\",\"passageScope\":"
+                                + "[{\"book\":\"Genesis\",\"fromChapter\":27,\"toChapter\":28},{\"book\":\"Nowhere\",\"fromChapter\":1,\"toChapter\":1}]}"))
+                .andExpect(status().isOk());
+
+        verify(roomService).setPassageScope("room-1",
+                List.of(new com.biblequiz.modules.room.service.PassageScope.Segment("Genesis", 27, 28)));
+    }
+
+    @Test
+    @WithMockUser(username = "test@example.com")
+    void createRoom_withoutPassage_savesNoScope() throws Exception {
+        when(roomService.createRoom(anyString(), any(User.class), anyInt(), anyInt(), anyInt(), any(), anyBoolean(), any(), any(), any(), any(), any(), anyString()))
+                .thenReturn(testRoom);
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+
+        mockMvc.perform(post("/api/rooms")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content("{\"roomName\":\"My Room\",\"mode\":\"SPEED_RACE\"}"))
+                .andExpect(status().isOk());
+
+        verify(roomService, never()).setPassageScope(anyString(), anyList());
+    }
+
     @Test
     @Order(2)
     void createRoom_withoutAuth_shouldReturn401() throws Exception {

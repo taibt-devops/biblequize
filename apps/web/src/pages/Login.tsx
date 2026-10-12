@@ -1,11 +1,12 @@
 import { useState, useEffect, type FormEvent } from 'react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useAuth } from '../store/authStore'
 import PageMeta from '../components/PageMeta'
 import { PlaceBackdrop, lkClass } from '../components/lk/Place'
 import { isCapacitor } from '../platform/capacitor'
 import { googleAuthUrl } from '../utils/googleLogin'
+import { isSafeReturnPath, rememberReturnPath } from '../utils/returnPath'
 
 export default function Login() {
   const { t } = useTranslation()
@@ -41,11 +42,17 @@ export default function Login() {
     }
   }, [searchParams, t])
 
+  // PCV-24: trang cần đăng nhập (RequireAuth) gửi kèm nơi người dùng định vào — đăng nhập xong về đó.
+  const location = useLocation()
+  const from = (location.state as { from?: { pathname?: string; search?: string } } | null)?.from
+  const fromPath = from?.pathname ? `${from.pathname}${from.search ?? ''}` : null
+  const afterLogin = isSafeReturnPath(fromPath) ? fromPath : '/'
+
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/', { replace: true })
+      navigate(afterLogin, { replace: true })
     }
-  }, [isAuthenticated, navigate])
+  }, [isAuthenticated, navigate, afterLogin])
 
   const handleGoogleLogin = async () => {
     setError(null)
@@ -66,7 +73,7 @@ export default function Login() {
           avatar: result.avatar || undefined,
           role: result.role,
         })
-        navigate('/', { replace: true })
+        navigate(afterLogin, { replace: true })
       } catch (err: any) {
         setError(err?.message || t('auth.errorOAuthFailed'))
       } finally {
@@ -75,7 +82,9 @@ export default function Login() {
       return
     }
 
-    // Web: redirect to the backend's OAuth2 authorization endpoint.
+    // Web: redirect to the backend's OAuth2 authorization endpoint. Rời app nên nhớ trang cần quay lại
+    // (AuthCallback đọc lại sau khi đổi mã).
+    rememberReturnPath(fromPath)
     window.location.href = googleAuthUrl()
   }
 
@@ -96,7 +105,7 @@ export default function Login() {
           avatar: result.avatar || undefined,
           role: result.role,
         })
-        navigate('/', { replace: true })
+        navigate(afterLogin, { replace: true })
         return
       }
 
@@ -107,7 +116,7 @@ export default function Login() {
       })
       const { accessToken, name: userName, email: userEmail, avatar, role } = res.data
       login({ accessToken, name: userName, email: userEmail, avatar: avatar || undefined, role })
-      navigate('/', { replace: true })
+      navigate(afterLogin, { replace: true })
     } catch (err: any) {
       const message = err.response?.data?.message
       setError(message || t('auth.errorInvalid'))

@@ -2639,7 +2639,13 @@
     "rolePlayer": "I play along",
     "rolePlayerDesc": "You open the room and answer too, scored like everyone else.",
     "teamConsensus": "Huddle",
-    "teamConsensusDesc": "Teammates see each other's picks and can chat privately; the team's answer is the most-picked option."
+    "teamConsensusDesc": "Teammates see each other's picks and can chat privately; the team's answer is the most-picked option.",
+    "passage": {
+      "roomName": "Review today's reading",
+      "label": "Reading to review",
+      "note": "Questions come from these chapters first, then from the same book.",
+      "clear": "Choose another scope"
+    }
   },
   "daily": {
     "title": "Daily Challenge",

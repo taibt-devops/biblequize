@@ -132,6 +132,22 @@ describe('AuthCallback', () => {
     }, { timeout: 2000 })
   })
 
+  it('PCV-24: có trang cần quay lại (nhớ trước khi sang Google) thì về đúng trang đó', async () => {
+    vi.useRealTimers()
+    sessionStorage.setItem('bq.returnPath', JSON.stringify({ path: '/room/create?passage=Genesis:27-28', at: Date.now() }))
+    mockSearchParams = new URLSearchParams('code=abc123')
+    mockApiPost.mockResolvedValue({
+      data: { accessToken: 'token123', name: 'Test User', email: 'test@example.com', avatar: null, role: 'USER' },
+    })
+
+    renderAuthCallback()
+
+    await waitFor(() => {
+      expect(mockNavigate).toHaveBeenCalledWith('/room/create?passage=Genesis:27-28')
+    }, { timeout: 2000 })
+    expect(sessionStorage.getItem('bq.returnPath')).toBeNull()
+  })
+
   it('no code param shows error', async () => {
     vi.useRealTimers()
     mockSearchParams = new URLSearchParams()
