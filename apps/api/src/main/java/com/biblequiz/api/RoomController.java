@@ -122,6 +122,10 @@ public class RoomController {
 
             String language = body.get("language") instanceof String s && !s.isBlank() ? s : "vi";
             Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic, difficulty, bookScope, questionSource, questionSetId, hostPlaysGame, language);
+            // PCV-22: Hội ý cho Đội đấu đội.
+            if (Boolean.TRUE.equals(body.get("teamConsensus")) && mode == Room.RoomMode.TEAM_VS_TEAM) {
+                roomService.setTeamConsensus(room.getId(), true);
+            }
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(room.getId());
 
             return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
@@ -353,7 +357,8 @@ public class RoomController {
             Integer seconds = body.get("timePerQuestion") instanceof Number n ? n.intValue() : null;
             Room.RoomDifficulty difficulty = body.get("difficulty") != null
                     ? Room.RoomDifficulty.valueOf(body.get("difficulty").toString()) : null;
-            roomService.updateSettings(id, user.getId(), new RoomService.SettingsUpdate(mode, count, seconds, difficulty));
+            Boolean consensus = body.get("teamConsensus") instanceof Boolean b ? b : null;
+            roomService.updateSettings(id, user.getId(), new RoomService.SettingsUpdate(mode, count, seconds, difficulty, consensus));
             RoomService.RoomDetailsDTO details = roomService.getRoomDetails(id);
             return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId()));
         } catch (IllegalArgumentException e) {

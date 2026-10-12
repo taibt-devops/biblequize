@@ -37,6 +37,24 @@ public class RoomWebSocketController {
     @Autowired
     private RoomStateService roomStateService;
 
+    /** PCV-22: phiếu + chat riêng của đội. */
+    @Autowired(required = false)
+    private com.biblequiz.modules.room.service.TeamChannelService teamChannelService;
+
+    /** PCV-22: chat đội — chỉ đồng đội nhận (Đội đấu đội). */
+    @MessageMapping("/room/{roomId}/team-chat")
+    public void handleTeamChat(@DestinationVariable String roomId, @Payload Map<String, Object> payload,
+            Authentication authentication) {
+        try {
+            if (teamChannelService == null) return;
+            User user = userRepository.findByEmail(authentication.getName()).orElseThrow();
+            Object text = payload.get("text");
+            teamChannelService.sendChat(roomId, user.getId(), user.getName(), text != null ? text.toString() : "");
+        } catch (Exception ignored) {
+            // chat là phụ
+        }
+    }
+
     /** PCV-16: phiếu đoán của khán giả Đấu vương. */
     @Autowired(required = false)
     private com.biblequiz.modules.room.service.SuddenDeathMatchService suddenDeathMatchService;
@@ -184,6 +202,10 @@ public class RoomWebSocketController {
             // PCV-13: câu của bóng (Sinh tồn) không báo "đã trả lời" cho cả phòng.
             if (result.ghost) {
                 return;
+            }
+            // PCV-22: Hội ý — đồng đội thấy mình chọn phương án nào (không có đúng/sai).
+            if (teamChannelService != null) {
+                teamChannelService.sendVote(roomId, user.getId(), result.displayName, answerIndex);
             }
 
             // PCV-2 (chống lộ đáp án): chỉ báo "đã trả lời". Phương án, đúng/sai, điểm và

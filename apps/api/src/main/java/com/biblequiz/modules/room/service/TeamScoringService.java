@@ -109,14 +109,21 @@ public class TeamScoringService {
 
         // PCV-14: bằng nhau nữa → thời gian trả lời trung bình của đội (trung bình của các thành viên
         // đã trả lời ít nhất một câu) — nhanh hơn thắng.
+        String faster = fasterTeam(roomId);
+        if (faster != null) return new TeamResult(faster, "SPEED", scores);
+
+        return new TeamResult("TIE", "TIE", scores);
+    }
+
+    /** PCV-14/22: đội trả lời nhanh hơn (trung bình của thành viên đã trả lời); null nếu không so được. */
+    public String fasterTeam(String roomId) {
         List<RoomPlayer> players = roomPlayerRepository.findByRoomId(roomId);
         java.util.OptionalDouble msA = teamAverageMs(players, RoomPlayer.Team.A);
         java.util.OptionalDouble msB = teamAverageMs(players, RoomPlayer.Team.B);
         if (msA.isPresent() && msB.isPresent() && msA.getAsDouble() != msB.getAsDouble()) {
-            return new TeamResult(msA.getAsDouble() < msB.getAsDouble() ? "A" : "B", "SPEED", scores);
+            return msA.getAsDouble() < msB.getAsDouble() ? "A" : "B";
         }
-
-        return new TeamResult("TIE", "TIE", scores);
+        return null;
     }
 
     private static java.util.OptionalDouble teamAverageMs(List<RoomPlayer> players, RoomPlayer.Team team) {
@@ -124,6 +131,62 @@ public class TeamScoringService {
                 .filter(p -> p.getTeam() == team && p.getTotalAnswered() != null && p.getTotalAnswered() > 0)
                 .mapToDouble(p -> p.getAverageReactionTime() != null ? p.getAverageReactionTime() : 0)
                 .average();
+    }
+
+    /** PCV-22: kết quả Hội ý một câu cho hai đội. */
+    public static class ConsensusResult {
+        public final Integer answerA, answerB;
+        public final boolean unanimousA, unanimousB;
+        public final int pointsA, pointsB;
+
+        public ConsensusResult(Integer answerA, boolean unanimousA, int pointsA, Integer answerB, boolean unanimousB, int pointsB) {
+            this.answerA = answerA; this.unanimousA = unanimousA; this.pointsA = pointsA;
+            this.answerB = answerB; this.unanimousB = unanimousB; this.pointsB = pointsB;
+        }
+    }
+
+    static final int CONSENSUS_CORRECT = 100;
+    static final int CONSENSUS_UNANIMOUS_BONUS = 50;
+
+    /**
+     * PCV-22 — Hội ý (design §3.2): đáp án của đội = phương án nhiều phiếu nhất trong các thành viên còn
+     * trong trận; hòa thì lấy phương án có phiếu sớm nhất. Đúng 100; mọi thành viên còn trong trận cùng
+     * chọn đúng phương án thì +50.
+     */
+    public ConsensusResult consensus(String roomId, String roundId, int correctIndex) {
+        List<RoomPlayer> roster = roomPlayerRepository.findByRoomId(roomId);
+        List<RoomAnswer> answers = roomAnswerRepository.findByRoundId(roundId);
+        Object[] a = teamConsensus(roster, answers, RoomPlayer.Team.A, correctIndex);
+        Object[] b = teamConsensus(roster, answers, RoomPlayer.Team.B, correctIndex);
+        return new ConsensusResult((Integer) a[0], (Boolean) a[1], (Integer) a[2], (Integer) b[0], (Boolean) b[1], (Integer) b[2]);
+    }
+
+    private static Object[] teamConsensus(List<RoomPlayer> roster, List<RoomAnswer> answers, RoomPlayer.Team team, int correctIndex) {
+        java.util.Set<String> members = roster.stream()
+                .filter(p -> p.getTeam() == team && p.getPlayerStatus() == RoomPlayer.PlayerStatus.ACTIVE)
+                .map(p -> p.getUser().getId())
+                .collect(Collectors.toSet());
+        List<RoomAnswer> votes = answers.stream()
+                .filter(x -> members.contains(x.getUserId()) && x.getAnswerIndex() != null)
+                .toList();
+        if (votes.isEmpty()) return new Object[]{null, false, 0};
+        Map<Integer, Long> count = votes.stream().collect(Collectors.groupingBy(RoomAnswer::getAnswerIndex, Collectors.counting()));
+        Map<Integer, java.time.LocalDateTime> first = new java.util.HashMap<>();
+        for (RoomAnswer v : votes) {
+            java.time.LocalDateTime at = v.getAnsweredAt() != null ? v.getAnsweredAt() : java.time.LocalDateTime.MAX;
+            first.merge(v.getAnswerIndex(), at, (x, y) -> x.isBefore(y) ? x : y);
+        }
+        long top = java.util.Collections.max(count.values());
+        Integer answer = count.entrySet().stream()
+                .filter(e -> e.getValue() == top)
+                .map(Map.Entry::getKey)
+                .min(java.util.Comparator.comparing(first::get))
+                .orElse(null);
+        boolean correct = answer != null && answer == correctIndex;
+        boolean unanimous = correct && votes.size() == members.size()
+                && votes.stream().allMatch(v -> v.getAnswerIndex() == correctIndex);
+        int points = correct ? CONSENSUS_CORRECT + (unanimous ? CONSENSUS_UNANIMOUS_BONUS : 0) : 0;
+        return new Object[]{answer, unanimous, points};
     }
 
     public static class TeamResult {

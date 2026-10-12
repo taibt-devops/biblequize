@@ -92,6 +92,14 @@ public class Room {
     @Column(name = "quick_match", nullable = false)
     private boolean quickMatch = false;
 
+    /** PCV-22 (V78): Đội đấu đội — chế độ Hội ý (đáp án đội = đa số phiếu). */
+    @Column(name = "team_consensus", nullable = false)
+    private boolean teamConsensus = false;
+
+    /** PCV-24 (V78): Ôn phần đọc — JSON [{"book","fromChapter","toChapter"}]; null = theo bookScope. */
+    @Column(name = "passage_scope", columnDefinition = "TEXT")
+    private String passageScope;
+
     // QP-1 (V57): ephemeral storage for AI-generated questions per Bùi pivot
     // 2026-05-15 — AI questions are one-shot, NOT persisted to `questions`
     // table. Game loads from this JSON when starting; R5 room cleanup purges
@@ -238,6 +246,10 @@ public LocalDateTime getCreatedAt() { return createdAt; }
 
     public boolean isQuickMatch() { return quickMatch; }
     public void setQuickMatch(boolean quickMatch) { this.quickMatch = quickMatch; }
+    public boolean isTeamConsensus() { return teamConsensus; }
+    public void setTeamConsensus(boolean teamConsensus) { this.teamConsensus = teamConsensus; }
+    public String getPassageScope() { return passageScope; }
+    public void setPassageScope(String passageScope) { this.passageScope = passageScope; }
 
     public String getAiQuestionsPayload() { return aiQuestionsPayload; }
     public void setAiQuestionsPayload(String aiQuestionsPayload) { this.aiQuestionsPayload = aiQuestionsPayload; }

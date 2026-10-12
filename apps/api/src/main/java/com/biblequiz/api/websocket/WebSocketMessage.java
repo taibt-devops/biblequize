@@ -43,6 +43,10 @@ public class WebSocketMessage {
         public static final String PREDICTION_RESULT = "PREDICTION_RESULT";
         /** PCV-17: ván mới đã mở cho nhóm của phòng cũ. */
         public static final String REMATCH_READY = "REMATCH_READY";
+        /** PCV-22: Hội ý — phương án đồng đội vừa chọn (gửi riêng cho đồng đội). */
+        public static final String TEAM_VOTE = "TEAM_VOTE";
+        /** PCV-22: chat đội (gửi riêng cho đồng đội). */
+        public static final String TEAM_CHAT = "TEAM_CHAT";
         public static final String BATTLE_ROYALE_UPDATE = "BATTLE_ROYALE_UPDATE";
 
         // Scoreboard events
@@ -249,6 +253,8 @@ public class WebSocketMessage {
         public int[] answerCounts;
         /** PCV-2: kết quả từng người — chỉ công bố khi vòng đã đóng. */
         public java.util.List<PlayerResult> results;
+        /** PCV-22: Hội ý — đáp án của mỗi đội ({"A": idx|null, "B": idx|null}); null ở mode khác. */
+        public java.util.Map<String, Integer> teamAnswers;
 
         public RoundEndData(int correctIndex, Object leaderboard) {
             this.correctIndex = correctIndex;

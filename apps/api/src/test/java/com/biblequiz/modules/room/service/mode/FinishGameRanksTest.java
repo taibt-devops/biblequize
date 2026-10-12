@@ -83,7 +83,7 @@ class FinishGameRanksTest {
         when(teamScoring.determineWinnerWithTieBreak(eq("room-1"), anyInt(), anyInt()))
                 .thenReturn(new TeamScoringService.TeamResult("B", "SCORE", new TeamScoringService.TeamScores(500, 750)));
         GameLoopContext c = ctx();
-        c.setModeState(new int[]{0, 0});
+        c.setModeState(new TeamVsTeamStrategy.TeamState());
 
         new TeamVsTeamStrategy(teamScoring, new SpeedRaceScoringService()).finishGame(c);
 

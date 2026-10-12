@@ -52,6 +52,7 @@ public class RoomBotService {
     @Autowired @Lazy private RoomWebSocketController webSocketController;
     @Autowired private RoomStateService roomStateService;
     @Autowired private RoomAnswerProcessor answerProcessor;
+    @Autowired(required = false) private TeamChannelService teamChannelService;
 
     /** PCV-21: luồng riêng cho câu trả lời hẹn giờ của người máy (không chiếm luồng trận). */
     private final ScheduledExecutorService executor = Executors.newScheduledThreadPool(2, new java.util.concurrent.ThreadFactory() {
@@ -110,6 +111,8 @@ public class RoomBotService {
             RoomAnswerProcessor.AnswerResult r = answerProcessor.process(roomId, bot, plan.answerIndex(), plan.delayMs());
             if (r.accepted && !r.ghost) {
                 webSocketController.broadcastAnswerSubmitted(roomId, bot.getId(), name, questionIndex);
+                // PCV-22: Hội ý — người máy cũng "bỏ phiếu" cho đồng đội thấy.
+                if (teamChannelService != null) teamChannelService.sendVote(roomId, bot.getId(), name, plan.answerIndex());
             }
         } catch (Exception e) {
             log.warn("[ROOM-BOT] {} could not answer in room {}: {}", bot.getId(), roomId, e.getMessage());

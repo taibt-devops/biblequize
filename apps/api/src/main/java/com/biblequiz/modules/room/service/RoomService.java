@@ -156,7 +156,19 @@ public class RoomService {
      */
     /** PCV-18: các cài đặt đổi được ở sảnh chờ; null = giữ nguyên. */
     public record SettingsUpdate(Room.RoomMode mode, Integer questionCount, Integer timePerQuestion,
-                                 Room.RoomDifficulty difficulty) {}
+                                 Room.RoomDifficulty difficulty, Boolean teamConsensus) {
+        public SettingsUpdate(Room.RoomMode mode, Integer questionCount, Integer timePerQuestion,
+                              Room.RoomDifficulty difficulty) {
+            this(mode, questionCount, timePerQuestion, difficulty, null);
+        }
+    }
+
+    /** PCV-22: bật/tắt Hội ý lúc tạo phòng (chỉ Đội đấu đội). */
+    public void setTeamConsensus(String roomId, boolean on) throws Exception {
+        Room room = roomRepository.findById(roomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
+        room.setTeamConsensus(on && room.getMode() == Room.RoomMode.TEAM_VS_TEAM);
+        roomRepository.save(room);
+    }
 
     /**
      * PCV-18 — "Đổi cách chơi" ngay trong sảnh (design §2.6): chủ phòng, khi đang ở sảnh. Số câu/thời gian
@@ -187,6 +199,8 @@ public class RoomService {
         if (update.questionCount() != null) room.setQuestionCount(RoomModeRules.clampQuestionCount(update.questionCount()));
         if (update.timePerQuestion() != null) room.setTimePerQuestion(RoomModeRules.clampTimePerQuestion(update.timePerQuestion()));
         if (update.difficulty() != null) room.setDifficulty(update.difficulty());
+        if (update.teamConsensus() != null) room.setTeamConsensus(update.teamConsensus());
+        if (mode != Room.RoomMode.TEAM_VS_TEAM) room.setTeamConsensus(false);
         roomRepository.save(room);
 
         boolean toTeams = mode == Room.RoomMode.TEAM_VS_TEAM && previous != Room.RoomMode.TEAM_VS_TEAM;
@@ -266,6 +280,8 @@ public class RoomService {
         room.setLanguage(old.getLanguage());
         room.setHostPlaysGame(old.isHostPlaysGame());
         room.setQuickMatch(old.isQuickMatch());
+        room.setTeamConsensus(old.isTeamConsensus());
+        room.setPassageScope(old.getPassageScope());
         if (old.getQuestionSource() == Room.QuestionSource.AI_GENERATED) {
             room.setQuestionSource(Room.QuestionSource.DATABASE); // câu AI dùng một lần
         } else {
@@ -996,6 +1012,10 @@ public class RoomService {
         public final Integer quizSetTotalQuestions;
         /** Sprint 4: true = host plays (legacy); false = Quản trò mode (host orchestrates only). */
         public final boolean hostPlaysGame;
+        /** Đấu nhanh — giao diện cho mọi người trong phòng bấm bắt đầu/thêm người máy/chơi lại. */
+        public final boolean quickMatch;
+        /** PCV-22: Đội đấu đội chế độ Hội ý. */
+        public final boolean teamConsensus;
         public final List<PlayerInfoDTO> players;
 
         public RoomDetailsDTO(Room room, List<RoomPlayer> roomPlayers) {
@@ -1031,6 +1051,8 @@ public class RoomService {
             this.groupQuizSetName = groupQuizSetName;
             this.quizSetTotalQuestions = quizSetTotalQuestions;
             this.hostPlaysGame = room.isHostPlaysGame();
+            this.quickMatch = room.isQuickMatch();
+            this.teamConsensus = room.isTeamConsensus();
 
             this.players = roomPlayers.stream()
                 .map(player -> {

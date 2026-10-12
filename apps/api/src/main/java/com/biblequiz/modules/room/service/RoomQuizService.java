@@ -232,7 +232,9 @@ public class RoomQuizService {
 
             round.setEndedAt(LocalDateTime.now());
             roomRoundRepository.save(round);
-            wsController.broadcastRoundEnd(roomId, roundResultBuilder.build(roomId, round.getId(), q));
+            WebSocketMessage.RoundEndData roundEnd = roundResultBuilder.build(roomId, round.getId(), q);
+            strategy.decorateRoundEnd(ctx, round, q, roundEnd); // PCV-22: Hội ý — đáp án hai đội
+            wsController.broadcastRoundEnd(roomId, roundEnd);
 
             if (strategy.afterRound(ctx, round, i)) break;
 

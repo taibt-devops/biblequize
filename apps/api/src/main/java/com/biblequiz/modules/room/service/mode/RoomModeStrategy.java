@@ -51,6 +51,12 @@ public interface RoomModeStrategy {
         return RoundPlan.standard(ctx.timePerQuestion);
     }
 
+    /** PCV-22: thêm dữ liệu riêng của mode vào ROUND_END trước khi phát (Hội ý: đáp án hai đội). */
+    default void decorateRoundEnd(GameLoopContext ctx, com.biblequiz.modules.room.entity.RoomRound round,
+                                  com.biblequiz.modules.quiz.entity.Question question,
+                                  com.biblequiz.api.websocket.WebSocketMessage.RoundEndData data) {
+    }
+
     /** PCV-16: chạy ngay trước khi phát câu thứ {@code index} (Đấu vương đóng cửa sổ đoán). */
     default void beforeQuestion(GameLoopContext ctx, int index) {
     }
