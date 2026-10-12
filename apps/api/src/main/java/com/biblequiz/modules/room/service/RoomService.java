@@ -562,9 +562,25 @@ public class RoomService {
             }
         }
 
+        // PCV-4: cập nhật có điều kiện — hai lần bấm cùng lúc chỉ một lần thành công.
+        LocalDateTime now = LocalDateTime.now();
+        if (roomRepository.markInProgressIfLobby(roomId, now) == 0) {
+            throw new Exception("Phòng đã bắt đầu");
+        }
         room.setStatus(Room.RoomStatus.IN_PROGRESS);
-        room.setStartedAt(LocalDateTime.now());
-        roomRepository.save(room);
+        room.setStartedAt(now);
+    }
+
+    /**
+     * PCV-4 — đưa phòng về sảnh chờ khi vòng chơi không khởi động được (máy chủ hết luồng),
+     * để người chơi bấm bắt đầu lại được thay vì kẹt ở IN_PROGRESS không có vòng chơi.
+     */
+    public void revertStart(String roomId) {
+        roomRepository.findById(roomId).ifPresent(room -> {
+            room.setStatus(Room.RoomStatus.LOBBY);
+            room.setStartedAt(null);
+            roomRepository.save(room);
+        });
     }
 
     /**

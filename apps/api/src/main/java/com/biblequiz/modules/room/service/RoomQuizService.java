@@ -137,7 +137,7 @@ public class RoomQuizService {
      *  the same broadcast moment. */
     private static final int GAME_STARTING_COUNTDOWN_S = 5;
 
-    @Async
+    @Async(com.biblequiz.infrastructure.RoomGameExecutorConfig.BEAN)
     public void runQuiz(String roomId, int questionCount, int timePerQuestion, Room.RoomMode mode) {
         log.info("Quiz bắt đầu cho phòng {} | mode={} | {} câu | {}s/câu", roomId, mode, questionCount, timePerQuestion);
         try {

@@ -75,4 +75,15 @@ public interface RoomRepository extends JpaRepository<Room, String> {
      *  done by now". */
     @Query("SELECT r FROM Room r WHERE r.status = 'IN_PROGRESS' AND r.startedAt < :cutoff")
     List<Room> findStuckInProgressRooms(@Param("cutoff") LocalDateTime cutoff);
+
+    /**
+     * PCV-4 — chuyển LOBBY → IN_PROGRESS nguyên tử. Trả 0 nếu phòng không còn ở LOBBY
+     * (ví dụ đã có người bấm bắt đầu trước) — người gọi phải báo lỗi, không chạy vòng thứ hai.
+     */
+    @org.springframework.data.jpa.repository.Modifying(clearAutomatically = true, flushAutomatically = true)
+    @org.springframework.transaction.annotation.Transactional
+    @org.springframework.data.jpa.repository.Query("UPDATE Room r SET r.status = com.biblequiz.modules.room.entity.Room.RoomStatus.IN_PROGRESS, "
+            + "r.startedAt = :now WHERE r.id = :id AND r.status = com.biblequiz.modules.room.entity.Room.RoomStatus.LOBBY")
+    int markInProgressIfLobby(@org.springframework.data.repository.query.Param("id") String id,
+                              @org.springframework.data.repository.query.Param("now") java.time.LocalDateTime now);
 }

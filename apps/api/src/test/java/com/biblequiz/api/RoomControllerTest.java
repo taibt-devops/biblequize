@@ -177,6 +177,22 @@ class RoomControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.success").value(true));
     }
 
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void startRoom_serverOutOfGameThreads_returns503AndRevertsToLobby() throws Exception {
+        // PCV-4: hết luồng cho trận ⇒ không để phòng kẹt IN_PROGRESS không có vòng chơi.
+        when(roomService.getRoomDetails("room-1")).thenReturn(testRoomDetails);
+        doNothing().when(roomService).startRoom("room-1", "user-1");
+        doThrow(new org.springframework.core.task.TaskRejectedException("full"))
+                .when(roomQuizService).runQuiz(anyString(), anyInt(), anyInt(), any());
+
+        mockMvc.perform(post("/api/rooms/room-1/start"))
+                .andExpect(status().isServiceUnavailable())
+                .andExpect(jsonPath("$.code").value("SERVER_BUSY"));
+        verify(roomService).revertStart("room-1");
+    }
+
     // ── POST /api/rooms/{id}/leave ───────────────────────────────────────────
 
     @Test

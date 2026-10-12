@@ -297,7 +297,16 @@ public class RoomController {
 
             // Chạy quiz bất đồng bộ với mode
             Room.RoomMode mode = details.mode != null ? details.mode : Room.RoomMode.SPEED_RACE;
-            roomQuizService.runQuiz(id, details.questionCount, details.timePerQuestion, mode);
+            try {
+                roomQuizService.runQuiz(id, details.questionCount, details.timePerQuestion, mode);
+            } catch (org.springframework.core.task.TaskRejectedException busy) {
+                // PCV-4: hết luồng cho trận — đưa phòng về sảnh chờ để bấm lại được.
+                roomService.revertStart(id);
+                return ResponseEntity.status(503).body(Map.of(
+                        "success", false,
+                        "code", "SERVER_BUSY",
+                        "message", "Máy chủ đang bận, thử lại sau ít phút"));
+            }
 
             return ResponseEntity.ok(Map.of("success", true));
         } catch (Exception e) {

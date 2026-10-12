@@ -447,7 +447,7 @@ class RoomServiceTest {
         when(roomRepository.findById("room-1")).thenReturn(Optional.of(testRoom));
         when(roomPlayerRepository.findByRoomId("room-1"))
                 .thenReturn(List.of(hostPlayer, otherPlayer));
-        when(roomRepository.save(any(Room.class))).thenAnswer(inv -> inv.getArgument(0));
+        when(roomRepository.markInProgressIfLobby(eq("room-1"), any())).thenReturn(1);
 
         roomService.startRoom("room-1", "host-1");
 
@@ -472,6 +472,33 @@ class RoomServiceTest {
         assertEquals("Tất cả người chơi phải sẵn sàng", ex.getMessage());
     }
 
+    @Test
+    void startRoom_secondConcurrentStart_throwsAndDoesNotStartTwice() {
+        // PCV-4: hai lần bấm "Bắt đầu" cùng lúc (Đấu nhanh: hai người chơi) — lệnh cập nhật
+        // có điều kiện chỉ thành công một lần; lần sau nhận 0 dòng ⇒ báo lỗi, không chạy vòng thứ hai.
+        RoomPlayer hostPlayer = new RoomPlayer("hp-1", testRoom, hostUser, "Host");
+        RoomPlayer otherPlayer = new RoomPlayer("op-1", testRoom, playerUser, "Player");
+        otherPlayer.setIsReady(true);
+        when(roomRepository.findById("room-1")).thenReturn(Optional.of(testRoom));
+        when(roomPlayerRepository.findByRoomId("room-1")).thenReturn(List.of(hostPlayer, otherPlayer));
+        when(roomRepository.markInProgressIfLobby(eq("room-1"), any())).thenReturn(0);
+
+        Exception ex = assertThrows(Exception.class, () -> roomService.startRoom("room-1", "host-1"));
+        assertEquals("Phòng đã bắt đầu", ex.getMessage());
+    }
+
+    @Test
+    void revertStart_putsRoomBackInLobby() {
+        testRoom.setStatus(Room.RoomStatus.IN_PROGRESS);
+        when(roomRepository.findById("room-1")).thenReturn(Optional.of(testRoom));
+
+        roomService.revertStart("room-1");
+
+        assertEquals(Room.RoomStatus.LOBBY, testRoom.getStatus());
+        assertNull(testRoom.getStartedAt());
+        verify(roomRepository).save(testRoom);
+    }
+
     // ── startRoom: Sprint 4 Quản trò mode ────────────────────────────────────
 
     @Test
@@ -489,7 +516,7 @@ class RoomServiceTest {
 
         when(roomRepository.findById("room-1")).thenReturn(Optional.of(testRoom));
         when(roomPlayerRepository.findByRoomId("room-1")).thenReturn(List.of(p1, p2));
-        when(roomRepository.save(any(Room.class))).thenAnswer(inv -> inv.getArgument(0));
+        when(roomRepository.markInProgressIfLobby(eq("room-1"), any())).thenReturn(1);
 
         roomService.startRoom("room-1", "host-1");
 
