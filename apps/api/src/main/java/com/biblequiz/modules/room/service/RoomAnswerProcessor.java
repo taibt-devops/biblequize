@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 import java.util.Optional;
+import java.util.function.LongSupplier;
 import java.util.UUID;
 
 /**
@@ -43,6 +44,13 @@ public class RoomAnswerProcessor {
     private final QuestionRepository questionRepository;
     private final RoomRepository roomRepository;
     private final RoomModeRegistry modeRegistry;
+    /** Đồng hồ máy chủ (ms) — tách ra để test giả lập được. */
+    private final LongSupplier nowMs;
+
+    /** PCV-1: số của máy người chơi được tin trong khoảng 1,5 s dưới thời gian máy chủ đo. */
+    static final long LATENCY_ALLOWANCE_MS = 1_500;
+    /** PCV-1: ân hạn sau khi hết giờ cho câu trả lời đi đường mạng chậm. */
+    public static final long ROUND_GRACE_MS = 1_000;
 
     public RoomAnswerProcessor(RoomStateService roomStateService,
                                RoomAnswerRepository roomAnswerRepository,
@@ -51,6 +59,19 @@ public class RoomAnswerProcessor {
                                QuestionRepository questionRepository,
                                RoomRepository roomRepository,
                                RoomModeRegistry modeRegistry) {
+        this(roomStateService, roomAnswerRepository, roomRoundRepository, roomPlayerRepository,
+                questionRepository, roomRepository, modeRegistry, System::currentTimeMillis);
+    }
+
+    RoomAnswerProcessor(RoomStateService roomStateService,
+                        RoomAnswerRepository roomAnswerRepository,
+                        RoomRoundRepository roomRoundRepository,
+                        RoomPlayerRepository roomPlayerRepository,
+                        QuestionRepository questionRepository,
+                        RoomRepository roomRepository,
+                        RoomModeRegistry modeRegistry,
+                        LongSupplier nowMs) {
+        this.nowMs = nowMs;
         this.roomStateService = roomStateService;
         this.roomAnswerRepository = roomAnswerRepository;
         this.roomRoundRepository = roomRoundRepository;
@@ -60,12 +81,16 @@ public class RoomAnswerProcessor {
         this.modeRegistry = modeRegistry;
     }
 
-    public AnswerResult process(String roomId, User user, int answerIndex, int reactionTimeMs) {
+    public AnswerResult process(String roomId, User user, int answerIndex, int clientReactionMs) {
         // Lấy round hiện tại
         String roundId = roomStateService.getCurrentRoundId(roomId).orElse(null);
 
         // Anti-cheat: mỗi player chỉ được submit 1 lần/round
         if (roundId != null && roomAnswerRepository.existsByRoundIdAndUserId(roundId, user.getId())) {
+            return AnswerResult.rejected();
+        }
+        // PCV-1: vòng đã đóng (đáp án đã/đang được công bố) → bỏ qua câu trả lời tới muộn.
+        if (roundId != null && roomStateService.isRoundClosed(roomId, roundId)) {
             return AnswerResult.rejected();
         }
 
@@ -95,6 +120,8 @@ public class RoomAnswerProcessor {
         boolean isCorrect = false;
         int pointsEarned = 0;
         int timeLimit = 30;
+        // PCV-1: thời gian dùng để chấm — máy chủ kẹp số của máy (xem effectiveReactionMs).
+        int scoredMs = Math.max(0, clientReactionMs);
 
         Room.RoomMode mode = currentRoom != null ? currentRoom.getMode() : Room.RoomMode.SPEED_RACE;
         RoomModeStrategy strategy = modeRegistry.get(mode);
@@ -104,13 +131,18 @@ public class RoomAnswerProcessor {
         if (questionState.isPresent()) {
             WebSocketMessage.QuestionStartData state = questionState.get();
             timeLimit = state.timeLimit;
+            Integer effective = effectiveReactionMs(state, clientReactionMs);
+            if (effective == null) {
+                return AnswerResult.rejected(); // quá hạn chót + ân hạn
+            }
+            scoredMs = effective;
             String questionId = extractQuestionId(state.question);
             if (questionId != null) {
                 Question question = questionRepository.findById(questionId).orElse(null);
                 if (question != null && question.getCorrectAnswer() != null
                         && !question.getCorrectAnswer().isEmpty()) {
                     isCorrect = (answerIndex == question.getCorrectAnswer().get(0));
-                    pointsEarned = strategy.calculateScore(isCorrect, timeLimit, reactionTimeMs);
+                    pointsEarned = strategy.calculateScore(isCorrect, timeLimit, scoredMs);
                 }
             }
         }
@@ -118,11 +150,12 @@ public class RoomAnswerProcessor {
         // Lưu RoomAnswer entity
         if (roundId != null) {
             final int pts = pointsEarned;
+            final int responseMs = scoredMs;
             RoomRound round = roomRoundRepository.findById(roundId).orElse(null);
             if (round != null) {
                 RoomAnswer answer = new RoomAnswer(
                         UUID.randomUUID().toString(), round, user.getId(),
-                        answerIndex, isCorrect, reactionTimeMs, pts);
+                        answerIndex, isCorrect, responseMs, pts);
                 roomAnswerRepository.save(answer);
             }
         }
@@ -130,6 +163,7 @@ public class RoomAnswerProcessor {
         // Update RoomPlayer score
         final boolean answerIsCorrect = isCorrect;
         final int finalPoints = pointsEarned;
+        final int finalMs = scoredMs;
         ScoreSnapshot[] snapshot = new ScoreSnapshot[1];
         roomPlayerRepository.findByRoomIdAndUserId(roomId, user.getId()).ifPresent(roomPlayer -> {
             // Cập nhật điểm theo Speed Race formula
@@ -140,7 +174,7 @@ public class RoomAnswerProcessor {
             }
             // Cập nhật average reaction time
             int total = roomPlayer.getTotalAnswered();
-            double newAvg = (roomPlayer.getAverageReactionTime() * (total - 1) + reactionTimeMs) / total;
+            double newAvg = (roomPlayer.getAverageReactionTime() * (total - 1) + finalMs) / total;
             roomPlayer.setAverageReactionTime(newAvg);
             roomPlayerRepository.save(roomPlayer);
 
@@ -162,6 +196,24 @@ public class RoomAnswerProcessor {
                 : playerOpt.map(RoomPlayer::getUsername).orElse("Unknown");
 
         return AnswerResult.accepted(displayName, broadcastIsCorrect, broadcastPoints, defer, snapshot[0]);
+    }
+
+    /**
+     * PCV-1 — thời gian trả lời dùng để chấm, do máy chủ quyết:
+     * {@code clamp(client, serverElapsed − 1500, serverElapsed)} rồi kẹp vào {@code [0, timeLimit]}.
+     * Trả {@code null} khi câu trả lời tới sau hạn chót + {@link #ROUND_GRACE_MS}.
+     * Thiếu mốc bắt đầu (máy chủ vừa khởi động lại) thì chỉ kẹp số của máy vào {@code [0, timeLimit]}.
+     */
+    Integer effectiveReactionMs(WebSocketMessage.QuestionStartData state, int clientMs) {
+        long limitMs = state.timeLimit * 1000L;
+        long value = clientMs;
+        if (state.startedAtMs != null) {
+            long serverElapsed = nowMs.getAsLong() - state.startedAtMs;
+            if (serverElapsed > limitMs + ROUND_GRACE_MS) return null;
+            long floor = Math.max(0, serverElapsed - LATENCY_ALLOWANCE_MS);
+            value = Math.max(floor, Math.min(value, Math.max(0, serverElapsed)));
+        }
+        return (int) Math.max(0, Math.min(value, limitMs));
     }
 
     /**

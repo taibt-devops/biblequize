@@ -197,8 +197,11 @@ public class RoomQuizService {
             wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), ctx.timePerQuestion);
             // End the round as soon as every expected player has answered;
             // otherwise wait the full timer.
-            waitForRoundEnd(roomId, round.getId(), ctx.timePerQuestion * 1000L,
+            // PCV-1: hạn chót = thời gian câu + 1 s ân hạn cho mạng chậm; hết vòng thì đóng ngay,
+            // trước khi chấm/công bố, để câu trả lời tới muộn không lọt vào kết quả.
+            waitForRoundEnd(roomId, round.getId(), ctx.timePerQuestion * 1000L + RoomAnswerProcessor.ROUND_GRACE_MS,
                     strategy.expectedAnswers(ctx, activeCount));
+            roomStateService.closeCurrentRound(roomId);
 
             round.setEndedAt(LocalDateTime.now());
             roomRoundRepository.save(round);

@@ -262,6 +262,8 @@ public class RoomWebSocketController {
      * Broadcast ROUND_END với correctIndex và leaderboard (sau khi timer hết)
      */
     public void broadcastRoundEnd(String roomId, int correctIndex) {
+        // PCV-1: đóng vòng trước khi công bố đáp án — câu trả lời tới sau bị bỏ qua.
+        roomStateService.closeCurrentRound(roomId);
         try {
             List<RoomService.LeaderboardEntryDTO> leaderboard = roomService.getRoomLeaderboard(roomId);
             WebSocketMessage.RoundEndData roundEndData = new WebSocketMessage.RoundEndData(correctIndex, leaderboard);
@@ -571,6 +573,8 @@ public class RoomWebSocketController {
      * Includes correct answer, explanation, per-player answers, and current leaderboard.
      */
     public void broadcastQuestionRevealed(String roomId, String roundId, int correctIndex, String explanation) {
+        // PCV-1: đóng vòng trước khi công bố đáp án (Chơi cùng nhau).
+        roomStateService.closeCurrentRound(roomId);
         try {
             // Per-player answers cho round này
             List<RoomAnswer> answers = roomAnswerRepository.findByRoundId(roundId);

@@ -17,6 +17,8 @@ public class RoomStateService {
     private final RedisTemplate<String, Object> redisTemplate;
     private static final String KEY_PREFIX = "room:state:";
     private static final String KEY_ROUND_PREFIX = "room:state:current_round:";
+    /** PCV-1: id của vòng đã đóng (đã/đang công bố đáp án) — câu trả lời tới sau bị bỏ qua. */
+    private static final String KEY_CLOSED_ROUND_PREFIX = "room:state:closed_round:";
     private static final String KEY_SD_QUEUE_PREFIX = "room:state:sd_queue:";
     private static final String KEY_SD_CHAMPION_PREFIX = "room:state:sd_champion:";
     private static final String KEY_SD_CHALLENGER_PREFIX = "room:state:sd_challenger:";
@@ -59,6 +61,23 @@ public class RoomStateService {
     public Optional<String> getCurrentRoundId(String roomId) {
         Object val = redisTemplate.opsForValue().get(KEY_ROUND_PREFIX + roomId);
         return val != null ? Optional.of(val.toString()) : Optional.empty();
+    }
+
+    /**
+     * PCV-1 — đóng vòng hiện tại: gọi ngay khi vòng kết thúc (hết giờ, đủ người trả lời,
+     * Quản trò bỏ câu) và trước khi công bố đáp án. Không có vòng hiện tại thì bỏ qua.
+     */
+    @SuppressWarnings("null")
+    public void closeCurrentRound(String roomId) {
+        getCurrentRoundId(roomId).ifPresent(roundId ->
+                redisTemplate.opsForValue().set(KEY_CLOSED_ROUND_PREFIX + roomId, roundId, STATE_TTL));
+    }
+
+    /** PCV-1 — vòng {@code roundId} đã đóng chưa. */
+    @SuppressWarnings("null")
+    public boolean isRoundClosed(String roomId, String roundId) {
+        Object val = redisTemplate.opsForValue().get(KEY_CLOSED_ROUND_PREFIX + roomId);
+        return val != null && val.toString().equals(roundId);
     }
 
     // ── Sudden Death: queue ──
@@ -132,6 +151,7 @@ public class RoomStateService {
     public void clearRoomState(String roomId) {
         redisTemplate.delete(getQuestionKey(roomId));
         redisTemplate.delete(KEY_ROUND_PREFIX + roomId);
+        redisTemplate.delete(KEY_CLOSED_ROUND_PREFIX + roomId);
         redisTemplate.delete(KEY_SD_QUEUE_PREFIX + roomId);
         redisTemplate.delete(KEY_SD_CHAMPION_PREFIX + roomId);
         redisTemplate.delete(KEY_SD_CHALLENGER_PREFIX + roomId);

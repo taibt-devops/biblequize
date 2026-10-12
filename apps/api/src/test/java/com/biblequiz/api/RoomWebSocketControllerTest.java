@@ -274,8 +274,9 @@ class RoomWebSocketControllerTest {
         question.setCorrectAnswer(List.of(2));
         when(questionRepository.findById("q-1")).thenReturn(Optional.of(question));
 
+        // PCV-1: máy chủ chỉ tin 5000 ms khi câu đã chạy được khoảng đó (phát 5,5 s trước).
         WebSocketMessage.QuestionStartData questionState = new WebSocketMessage.QuestionStartData(
-                0, 10, Map.of("id", "q-1"), 30);
+                0, 10, Map.of("id", "q-1"), 30, System.currentTimeMillis() - 5_500);
         when(roomStateService.getCurrentQuestion("room-1")).thenReturn(Optional.of(questionState));
         when(speedRaceScoringService.calculateScore(true, 30, 5000)).thenReturn(133);
 
@@ -402,6 +403,36 @@ class RoomWebSocketControllerTest {
         verify(messagingTemplate).convertAndSend(eq("/topic/room/room-1"), msgCaptor.capture());
 
         assertEquals(WebSocketMessage.MessageTypes.ROUND_END, msgCaptor.getValue().getType());
+    }
+
+    @Test
+    void broadcastRoundEnd_closesRoundBeforeRevealing() {
+        when(roomService.getRoomLeaderboard("room-1")).thenReturn(List.of());
+
+        controller.broadcastRoundEnd("room-1", 2);
+
+        var order = inOrder(roomStateService, messagingTemplate);
+        order.verify(roomStateService).closeCurrentRound("room-1");
+        order.verify(messagingTemplate).convertAndSend(eq("/topic/room/room-1"), any(WebSocketMessage.Message.class));
+    }
+
+    @Test
+    void broadcastQuestionRevealed_closesRoundBeforeRevealing() throws Exception {
+        when(roomAnswerRepository.findByRoundId("round-1")).thenReturn(List.of());
+        var room = new com.biblequiz.modules.room.entity.Room();
+        room.setId("room-1");
+        room.setRoomCode("ABC");
+        room.setRoomName("Test");
+        room.setHost(testUser);
+        room.setMode(com.biblequiz.modules.room.entity.Room.RoomMode.GROUP_LIVE_SEQUENTIAL);
+        when(roomService.getRoomDetails("room-1")).thenReturn(new RoomService.RoomDetailsDTO(room, List.of()));
+        when(roomService.getRoomLeaderboard("room-1")).thenReturn(List.of());
+
+        controller.broadcastQuestionRevealed("room-1", "round-1", 1, "giải thích");
+
+        var order = inOrder(roomStateService, messagingTemplate);
+        order.verify(roomStateService).closeCurrentRound("room-1");
+        order.verify(messagingTemplate).convertAndSend(eq("/topic/room/room-1"), any(WebSocketMessage.Message.class));
     }
 
     @Test
