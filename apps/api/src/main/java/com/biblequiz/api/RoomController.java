@@ -9,6 +9,7 @@ import com.biblequiz.modules.room.service.HostControlService;
 import com.biblequiz.modules.room.service.QuickMatchQuestionSourceService;
 import com.biblequiz.modules.room.service.RoomQuizService;
 import com.biblequiz.modules.room.service.RoomAnalyticsService;
+import com.biblequiz.modules.room.service.RoomModeRules;
 import com.biblequiz.modules.room.service.RoomService;
 import com.biblequiz.modules.room.service.RoomStateService;
 import com.biblequiz.modules.user.entity.User;
@@ -107,6 +108,13 @@ public class RoomController {
             } catch (IllegalArgumentException e) {
                 questionSource = Room.QuestionSource.DATABASE;
             }
+
+            // PCV-5: máy chủ tự kẹp cài đặt (form vốn đúng; chặn gói tin sửa tay). Bộ câu tự soạn
+            // giữ số câu của bộ.
+            if (questionSource == Room.QuestionSource.DATABASE) {
+                questionCount = RoomModeRules.clampQuestionCount(questionCount);
+            }
+            timePerQuestion = RoomModeRules.clampTimePerQuestion(timePerQuestion);
 
             String language = body.get("language") instanceof String s && !s.isBlank() ? s : "vi";
             Room room = roomService.createRoom(roomName, user, maxPlayers, questionCount, timePerQuestion, mode, isPublic, difficulty, bookScope, questionSource, questionSetId, hostPlaysGame, language);

@@ -1817,6 +1817,19 @@
     },
     "host": {
       "answered": "Answered"
+    },
+    "lobbyRules": {
+      "needPlayers": "Need {{need}} more to start {{mode}} (min {{min}})",
+      "teamTooSmall": "Each team needs at least 2 players",
+      "teamsUnbalanced": "Teams differ by {{diff}} — switch teams or shuffle",
+      "waitingReady": "{{ready}}/{{total}} players ready",
+      "waitingPlayers": "Waiting for more players...",
+      "waitingAllReady": "Waiting for everyone to be ready",
+      "fixTeams": "Teams need balancing",
+      "ready": "Ready to start",
+      "readyDetail": "{{count}}/{{max}} players · Ready",
+      "groupReady": "Ready to start",
+      "groupReadyDetail": "{{count}}/{{max}} players · The leader can start"
     }
   },
   "groups": {

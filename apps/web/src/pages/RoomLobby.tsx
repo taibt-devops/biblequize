@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState, useRef } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { lobbyStartCheck } from './room/lobbyRules';
+import { MODE_META } from './create-room/modeMeta';
 import { useRoomChannel } from '../hooks/useRoomChannel';
 import { api } from '../api/client';
 import { QRCodeSVG } from 'qrcode.react';
@@ -388,39 +390,37 @@ const RoomLobby: React.FC = () => {
     chipColor: 'var(--bq-amber-deep)', chipBg: 'color-mix(in srgb, var(--bq-amber) 15%, transparent)', chipBorder: 'color-mix(in srgb, var(--bq-amber) 40%, transparent)',
   };
 
-  const nonHostPlayers = useMemo(() => room?.players?.filter(p => p.userId !== room?.hostId) ?? [], [room]);
-  const readyNonHostCount = useMemo(() => nonHostPlayers.filter(p => p.isReady).length, [nonHostPlayers]);
   const isGroupLive = room?.mode === 'GROUP_LIVE_SEQUENTIAL';
-  // Sprint 4: Quan Tro mode requires ≥2 non-host players (host doesn't play);
-  // legacy mode keeps ≥1 non-host (host + 1 = 2 total).
-  const minNonHost = !hostPlaysGame ? 2 : 1;
-  // QP-10: Quick Match has no Quản trò; require ≥2 ready players
-  // (host displayed as auto-ready via PlayerSlot) instead of host-driven start.
-  const quickMatchReadyCount = useMemo(
-    () => room?.players?.filter(p => p.isReady || p.userId === room?.hostId).length ?? 0,
-    [room],
+  // PCV-5: số người tối thiểu, cân đội và sẵn sàng theo mode — cùng luật với máy chủ
+  // (RoomModeRules + RoomService.startRoom), nên nút "Bắt đầu" chỉ sáng khi máy chủ sẽ nhận.
+  const startCheck = useMemo(
+    () => room
+      ? lobbyStartCheck({
+          mode: room.mode, players: room.players ?? [], hostId: room.hostId,
+          hostPlaysGame, quickMatch: isQuickMatch, viewerUserId,
+        })
+      : { canStart: false, reason: null },
+    [room, hostPlaysGame, isQuickMatch, viewerUserId],
   );
-  const canStart = room?.status === 'LOBBY' && (
-    isQuickMatch
-      ? quickMatchReadyCount >= 2
-      : nonHostPlayers.length >= minNonHost
-        && (isGroupLive || readyNonHostCount === nonHostPlayers.length)
-  );
+  const canStart = room?.status === 'LOBBY' && startCheck.canStart;
+  const modeLabel = room ? t(MODE_META[room.mode as keyof typeof MODE_META]?.labelKey ?? 'room.modes.speed_race') : '';
+  const playerCount = room?.players?.length ?? 0;
 
   const statusPrimary = (() => {
     if (!room) return '';
-    if (room.currentPlayers < 2) return 'Đang chờ thêm người chơi...';
-    if (isGroupLive) return 'Sẵn sàng bắt đầu';
-    if (readyNonHostCount < nonHostPlayers.length) return 'Đang chờ tất cả sẵn sàng';
-    return 'Đủ người · Có thể bắt đầu';
+    if (startCheck.canStart) return isGroupLive ? t('room.lobbyRules.groupReady') : t('room.lobbyRules.ready');
+    if (startCheck.reason === 'room.lobbyRules.needPlayers') return t('room.lobbyRules.waitingPlayers');
+    if (startCheck.reason === 'room.lobbyRules.waitingReady') return t('room.lobbyRules.waitingAllReady');
+    return t('room.lobbyRules.fixTeams');
   })();
   const statusSecondary = (() => {
     if (!room) return '';
-    const need = Math.max(0, 2 - room.currentPlayers);
-    if (room.currentPlayers < 2) return `Cần thêm ${need} người để bắt đầu`;
-    if (isGroupLive) return `${room.currentPlayers}/${room.maxPlayers} người · Trưởng nhóm có thể bắt đầu`;
-    if (readyNonHostCount < nonHostPlayers.length) return `${readyNonHostCount}/${nonHostPlayers.length} người chơi đã sẵn sàng`;
-    return `${room.currentPlayers}/${room.maxPlayers} người · Có thể bắt đầu`;
+    if (startCheck.canStart) {
+      return isGroupLive
+        ? t('room.lobbyRules.groupReadyDetail', { count: playerCount, max: room.maxPlayers })
+        : t('room.lobbyRules.readyDetail', { count: playerCount, max: room.maxPlayers });
+    }
+    return startCheck.reason ? t(startCheck.reason, { ...(startCheck.params ?? {}), mode: modeLabel }) : '';
   })();
 
   /* ── BẮT ĐẦU! countdown overlay (per MOCKUP_GAME_START_CEREMONY states c5/c3/c1/go) ── */

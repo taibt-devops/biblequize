@@ -499,6 +499,32 @@ class RoomServiceTest {
         verify(roomRepository).save(testRoom);
     }
 
+    @Test
+    void startRoom_battleRoyaleWithTwoPlayers_throwsModeMinimum() {
+        // PCV-5: Sinh tồn cần ≥ 3 người.
+        testRoom.setMode(Room.RoomMode.BATTLE_ROYALE);
+        RoomPlayer hostPlayer = new RoomPlayer("hp-1", testRoom, hostUser, "Host");
+        RoomPlayer otherPlayer = new RoomPlayer("op-1", testRoom, playerUser, "Player");
+        otherPlayer.setIsReady(true);
+        when(roomRepository.findById("room-1")).thenReturn(Optional.of(testRoom));
+        when(roomPlayerRepository.findByRoomId("room-1")).thenReturn(List.of(hostPlayer, otherPlayer));
+
+        Exception ex = assertThrows(Exception.class, () -> roomService.startRoom("room-1", "host-1"));
+        assertEquals("Sinh tồn cần ít nhất 3 người chơi", ex.getMessage());
+        verify(roomRepository, never()).markInProgressIfLobby(any(), any());
+    }
+
+    @Test
+    void createRoom_suddenDeathMaxPlayersCappedAt12() {
+        when(roomRepository.findByRoomCode(anyString())).thenReturn(Optional.empty());
+        when(roomRepository.save(any(Room.class))).thenAnswer(inv -> inv.getArgument(0));
+
+        Room r = roomService.createRoom("Phòng", hostUser, 40, 10, 20, Room.RoomMode.SUDDEN_DEATH, false,
+                Room.RoomDifficulty.MIXED, "ALL", Room.QuestionSource.DATABASE, null, Boolean.FALSE);
+
+        assertEquals(12, r.getMaxPlayers());
+    }
+
     // ── startRoom: Sprint 4 Quản trò mode ────────────────────────────────────
 
     @Test

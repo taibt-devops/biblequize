@@ -102,7 +102,8 @@ public class RoomService {
         room.setRoomCode(roomCode);
         room.setRoomName(roomName);
         room.setHost(host);
-        room.setMaxPlayers(maxPlayers != null ? maxPlayers : 4);
+        // PCV-5: trần số người theo mode (Đấu vương 12, còn lại 100), không nhỏ hơn số tối thiểu.
+        room.setMaxPlayers(RoomModeRules.clampMaxPlayers(mode, maxPlayers));
         room.setQuestionCount(questionCount != null ? questionCount : 10);
         room.setTimePerQuestion(timePerQuestion != null ? timePerQuestion : 30);
         room.setStatus(Room.RoomStatus.LOBBY);
@@ -166,7 +167,8 @@ public class RoomService {
         room.setHost(host);
         // QMP-1: host-selectable cap (default 10), clamped to the same 2–100 range
         // as normal rooms. The join cap is enforced via room.isFull() on this field.
-        room.setMaxPlayers(maxPlayers != null ? Math.max(2, Math.min(maxPlayers, 100)) : 10);
+        // PCV-5: trần theo mode (Đấu vương 12); mặc định 10 người.
+        room.setMaxPlayers(RoomModeRules.clampMaxPlayers(mode, maxPlayers != null ? maxPlayers : 10));
         room.setQuestionCount(questionCount != null ? questionCount : 10);
         room.setTimePerQuestion(timePerQuestion != null ? timePerQuestion : 30);
         room.setStatus(Room.RoomStatus.LOBBY);
@@ -537,14 +539,14 @@ public class RoomService {
         // Sprint 4: in Quản trò mode the host is NOT a RoomPlayer, so this count
         // already excludes them — same threshold (≥2) means "≥2 non-host players"
         // automatically. Legacy mode counts host + others (so ≥2 total).
-        long actualPlayers = roomPlayerRepository.findByRoomId(roomId).size();
+        List<RoomPlayer> lobbyPlayers = roomPlayerRepository.findByRoomId(roomId);
         if (room.getStatus() != Room.RoomStatus.LOBBY) {
-            throw new Exception("Cần ít nhất 2 người chơi để bắt đầu");
+            throw new Exception("Phòng đã bắt đầu");
         }
-        if (actualPlayers <= 1) {
-            throw new Exception(room.isHostPlaysGame()
-                    ? "Cần ít nhất 2 người chơi để bắt đầu"
-                    : "Cần ít nhất 2 người chơi (không tính Quản trò)");
+        // PCV-5: số người tối thiểu + cân đội theo mode (RoomModeRules).
+        String notReady = RoomModeRules.startError(room.getMode(), lobbyPlayers, room.isHostPlaysGame());
+        if (notReady != null) {
+            throw new Exception(notReady);
         }
 
         // GROUP_LIVE_SEQUENTIAL: leader dẫn dắt session, không cần ceremony "ready" như các mode khác.

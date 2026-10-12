@@ -100,6 +100,20 @@ describe('CreateRoom', () => {
     expect(slider.max).toBe('100')
   })
 
+  // PCV-5: Đấu vương tối đa 12 người, Sinh tồn tối thiểu 3.
+  it('slider follows the selected mode limits', () => {
+    renderCreateRoom()
+    fireEvent.click(screen.getByText('Đấu vương'))
+    let slider = document.querySelector('input[type="range"]') as HTMLInputElement
+    expect(slider.min).toBe('3')
+    expect(slider.max).toBe('12')
+    expect(Number(slider.value)).toBeLessThanOrEqual(12)
+    fireEvent.click(screen.getByText('Sinh tồn'))
+    slider = document.querySelector('input[type="range"]') as HTMLInputElement
+    expect(slider.min).toBe('3')
+    expect(slider.max).toBe('100')
+  })
+
   // 7. Visibility toggle
   it('toggles public/private visibility', () => {
     renderCreateRoom()

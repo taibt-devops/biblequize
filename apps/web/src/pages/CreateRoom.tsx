@@ -14,7 +14,7 @@ import { api } from '../api/client'
 import PreviewPanel from './create-room/PreviewPanel'
 import BookScopeOptions, { useBookScopeLabel } from './create-room/BookScopeOptions'
 import { PlaceBackdrop, Plaque } from '../components/lk/Place'
-import { MODE_DEFAULTS, MODE_LIST, MODE_META, type RoomModeId } from './create-room/modeMeta'
+import { MODE_DEFAULTS, MODE_LIST, MODE_META, playerLimits, type RoomModeId } from './create-room/modeMeta'
 
 const QUESTION_COUNTS = [10, 15, 20, 30]
 const TIME_OPTIONS = [10, 15, 20, 30]
@@ -170,11 +170,12 @@ export default function CreateRoom() {
                         aria-pressed={active}
                         onClick={() => {
                           const d = MODE_DEFAULTS[m.id]
+                          const lim = playerLimits(m.id)
                           setFormData(prev => ({
                             ...prev, mode: m.id,
                             questionCount: d.questionCount,
                             timePerQuestion: d.timePerQuestion,
-                            maxPlayers: d.maxPlayers,
+                            maxPlayers: Math.max(lim.min, Math.min(d.maxPlayers, lim.max)),
                           }))
                         }}
                         className={`relative rounded-[14px] p-4 pb-3.5 text-left overflow-hidden transition-all hover:-translate-y-0.5 ${active ? '' : 'bg-bq-inset'}`}
@@ -397,13 +398,15 @@ export default function CreateRoom() {
                     {formData.maxPlayers}
                   </span>
                 </div>
+                {/* PCV-5: giới hạn theo mode (Đấu vương 3–12, Sinh tồn 3–100…), cùng luật máy chủ. */}
                 <input
-                  type="range" min={2} max={100} value={formData.maxPlayers}
+                  type="range" min={playerLimits(formData.mode).min} max={playerLimits(formData.mode).max}
+                  value={formData.maxPlayers}
                   onChange={e => setFormData(prev => ({ ...prev, maxPlayers: parseInt(e.target.value) }))}
                   className="w-full accent-bq-amber h-2 rounded-full appearance-none cursor-pointer bg-bq-inset"
                 />
                 <div className="flex justify-between text-[10px] text-bq-ink3 mt-1">
-                  <span>2</span><span>100</span>
+                  <span>{playerLimits(formData.mode).min}</span><span>{playerLimits(formData.mode).max}</span>
                 </div>
               </div>
             </section>

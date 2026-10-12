@@ -1817,6 +1817,19 @@
     },
     "host": {
       "answered": "Đã trả lời"
+    },
+    "lobbyRules": {
+      "needPlayers": "Cần thêm {{need}} người để bắt đầu {{mode}} (tối thiểu {{min}})",
+      "teamTooSmall": "Mỗi đội cần ít nhất 2 người",
+      "teamsUnbalanced": "Hai đội lệch nhau {{diff}} người — đổi đội hoặc bấm Xáo đội",
+      "waitingReady": "{{ready}}/{{total}} người chơi đã sẵn sàng",
+      "waitingPlayers": "Đang chờ thêm người chơi...",
+      "waitingAllReady": "Đang chờ tất cả sẵn sàng",
+      "fixTeams": "Cần cân lại hai đội",
+      "ready": "Đủ người · Có thể bắt đầu",
+      "readyDetail": "{{count}}/{{max}} người · Có thể bắt đầu",
+      "groupReady": "Sẵn sàng bắt đầu",
+      "groupReadyDetail": "{{count}}/{{max}} người · Trưởng nhóm có thể bắt đầu"
     }
   },
   "groups": {

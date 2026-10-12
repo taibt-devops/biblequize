@@ -90,6 +90,20 @@ export const MODE_LIST: ModeMeta[] = [
   MODE_META.SUDDEN_DEATH,
 ]
 
+/** PCV-5 — số người tối thiểu/tối đa theo mode. Bản sao của RoomModeRules phía máy chủ
+ *  (Đấu vương tối đa 12 — DECISIONS 2026-10-12). */
+export const MODE_PLAYER_LIMITS: Record<AnyRoomModeId, { min: number; max: number }> = {
+  SPEED_RACE:            { min: 2, max: 100 },
+  BATTLE_ROYALE:         { min: 3, max: 100 },
+  TEAM_VS_TEAM:          { min: 4, max: 100 },
+  SUDDEN_DEATH:          { min: 3, max: 12 },
+  GROUP_LIVE_SEQUENTIAL: { min: 2, max: 100 },
+}
+
+export function playerLimits(mode: string | undefined | null): { min: number; max: number } {
+  return MODE_PLAYER_LIMITS[(mode ?? 'SPEED_RACE') as AnyRoomModeId] ?? MODE_PLAYER_LIMITS.SPEED_RACE
+}
+
 /** Default per-mode cadence + cap (SPEC §5.4). Kept in-sync with the BE
  *  expectations — values match the old MODE_DEFAULTS in CreateRoom.tsx. */
 export const MODE_DEFAULTS: Record<RoomModeId, { questionCount: number; timePerQuestion: number; maxPlayers: number }> = {

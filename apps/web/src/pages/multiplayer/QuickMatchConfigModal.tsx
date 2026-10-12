@@ -18,6 +18,8 @@ import {
 const COUNT_OPTIONS = [5, 10, 15, 20]
 const TIME_OPTIONS = [15, 20, 30]
 const MAX_PLAYER_OPTIONS = [10, 20, 50, 100]
+/** PCV-5: Đấu vương tối đa 12 người (RoomModeRules) — chọn trong khoảng đó. */
+const MAX_PLAYER_OPTIONS_SUDDEN_DEATH = [6, 8, 12]
 const INDIGO = '#2F6FB0'
 
 interface Props {
@@ -118,7 +120,11 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
                     type="button"
                     data-testid={`qm-mode-${m.id}`}
                     data-active={active}
-                    onClick={() => setMode(m.id)}
+                    onClick={() => {
+                      setMode(m.id)
+                      const opts = m.id === 'SUDDEN_DEATH' ? MAX_PLAYER_OPTIONS_SUDDEN_DEATH : MAX_PLAYER_OPTIONS
+                      setMaxPlayers(prev => (opts.includes(prev) ? prev : opts[Math.min(1, opts.length - 1)]))
+                    }}
                     className="flex items-center gap-2 px-3 h-10 rounded-lg text-[12px] font-semibold transition-colors text-left"
                     style={{
                       background: active ? hexAlpha(m.color, 0.14) : '#EFE3C3',
@@ -173,7 +179,9 @@ export default function QuickMatchConfigModal({ open, onClose, userTier = 1 }: P
 
           {/* Max players */}
           <Section label={t('multiplayer.config.sectionMaxPlayers')}>
-            <ChipGroup options={MAX_PLAYER_OPTIONS.map(n => ({ value: n, label: String(n) }))} value={maxPlayers} onChange={setMaxPlayers} />
+            <ChipGroup
+              options={(mode === 'SUDDEN_DEATH' ? MAX_PLAYER_OPTIONS_SUDDEN_DEATH : MAX_PLAYER_OPTIONS).map(n => ({ value: n, label: String(n) }))}
+              value={maxPlayers} onChange={setMaxPlayers} />
           </Section>
 
           {/* Source */}
