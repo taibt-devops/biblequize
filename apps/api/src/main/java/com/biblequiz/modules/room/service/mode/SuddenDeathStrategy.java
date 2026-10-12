@@ -93,6 +93,10 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
 
             Thread.sleep(2000L); // pause before next match
 
+            // PCV-15: mọi người đã đấu và vua đủ chuỗi ⇒ kết thúc (ngân sách câu là giới hạn còn lại).
+            if (suddenDeathMatchService.shouldEndAfterMatch(ctx.roomId)) {
+                return true;
+            }
             // Start next match if challengers remain
             if (suddenDeathMatchService.hasNextChallenger(ctx.roomId)) {
                 SuddenDeathMatchService.MatchInfo match = suddenDeathMatchService.startNextMatch(ctx.roomId);
@@ -100,6 +104,8 @@ public class SuddenDeathStrategy implements RoomModeStrategy {
                     ctx.ws.broadcastMatchStart(ctx.roomId, match.championId, match.championName,
                             match.championStreak, match.challengerId, match.challengerName,
                             suddenDeathMatchService.getQueueSize(ctx.roomId));
+                } else {
+                    return true;
                 }
             } else {
                 // No more challengers → game over (legacy kept the

@@ -488,6 +488,13 @@ const RoomQuiz: React.FC = () => {
     setTimeout(() => dispatchCore({ type: 'SUBMIT_SETTLED' }), 500);
   };
 
+  // PCV-15: số liệu dưới tên ở màn kết quả theo cách xếp hạng của mode.
+  const endMetric = isSuddenDeath
+    ? (p: PlayerScore) => t('room.end.sdMetric', { n: p.matchesWon ?? 0 })
+    : isBattleRoyale
+      ? (p: PlayerScore) => t('room.end.brMetric', { c: p.correctAnswers ?? 0, t: p.totalAnswered ?? 0 })
+      : undefined;
+
   // ── Overlays ──
   if (core.showPodium) {
     const exitTo = state?.fromGroupId ? `/groups/${state.fromGroupId}` : '/multiplayer';
@@ -526,6 +533,7 @@ const RoomQuiz: React.FC = () => {
           onNewRoom={() => navigate('/room/create', { replace: true })}
           onHome={() => navigate('/', { replace: true })}
           onAnalytics={() => navigate(`/room/${roomId}/analytics`)}
+          metric={endMetric}
         />
         {resultsChat}
       </>

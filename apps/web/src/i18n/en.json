@@ -1859,8 +1859,8 @@
         "detail": "Players split into two teams, each named after a pair from the Bible. A team's score is its members' average, so the bigger team has no built-in edge; each question the whole team gets right adds 50 team points. Teams must be even before starting — the host can shuffle them."
       },
       "sudden_death": {
-        "short": "One-on-one duels for the throne.",
-        "detail": "Only two players duel at a time. A wrong answer loses; if both are correct, the faster one wins. If both miss, or answer within 0.2 s of each other, they play another question; after 3 of those the throne holder wins. The winner keeps the throne and faces the next in line."
+        "short": "Duel for the throne; losers rejoin the line.",
+        "detail": "Only two players duel at a time, following a shuffled line. A wrong answer loses; if both are correct, the faster one wins. If both miss, or answer within 0.2 s of each other, they play another question; after 3 of those the throne holder wins. The winner keeps the throne and the loser goes to the back of the line. The game ends once everyone has dueled and the king wins 3 in a row (4 in rooms over 5 players), or when the questions run out. Ranking is by duels won, then the longest streak."
       },
       "group_live_sequential": {
         "short": "Everyone answers; the answer appears once all are done.",
@@ -1881,7 +1881,14 @@
       "switch": "Switch team",
       "shuffle": "Shuffle teams"
     },
-    "errorShuffleTeams": "Couldn't shuffle teams, try again"
+    "errorShuffleTeams": "Couldn't shuffle teams, try again",
+    "sd": {
+      "wins": "{{n}} wins"
+    },
+    "end": {
+      "sdMetric": "{{n}} duels won",
+      "brMetric": "{{c}}/{{t}} correct"
+    }
   },
   "groups": {
     "noGroupTitle": "Join a church group",
@@ -2585,7 +2592,7 @@
       "speed_race": "Right and fast to score, streak bonuses, the final question counts double",
       "battle_royale": "Two lives each, questions get harder — last one standing wins",
       "team_vs_team": "Two teams compete on average score, with a bonus when everyone is right",
-      "sudden_death": "Duel for the throne: the winner stays on; if both are correct, the faster one wins.",
+      "sudden_death": "Duel for the throne, losers rejoin the line — most duels won ranks first",
       "group_live_sequential": "Everyone answers — the answer appears once all are done"
     },
     "roleTitle": "Your role",

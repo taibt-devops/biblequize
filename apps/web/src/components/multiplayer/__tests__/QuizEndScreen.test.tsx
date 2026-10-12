@@ -162,3 +162,18 @@ describe('QuizEndScreen', () => {
     expect(screen.getByTestId('end-hero-card')).not.toHaveTextContent(/stale-old-name/)
   })
 })
+
+describe('QuizEndScreen — số liệu theo mode (PCV-15)', () => {
+  it('Đấu vương: bục vinh danh ghi số trận thắng thay cho điểm', () => {
+    const results: PlayerScore[] = [
+      { playerId: 'a', username: 'An', score: 300, correctAnswers: 6, totalAnswered: 8, accuracy: 75, finalRank: 1, matchesWon: 4 },
+      { playerId: 'b', username: 'Bình', score: 500, correctAnswers: 7, totalAnswered: 9, accuracy: 77, finalRank: 2, matchesWon: 2 },
+      { playerId: 'c', username: 'Châu', score: 100, correctAnswers: 2, totalAnswered: 5, accuracy: 40, finalRank: 3, matchesWon: 0 },
+    ]
+    render(<QuizEndScreen results={results} myUsername="An" myUserId="a" isHost totalQuestions={20}
+      onReplay={noop} onClose={noop} onShare={noop} onNewRoom={noop} onHome={noop}
+      metric={(p) => `${p.matchesWon ?? 0} trận thắng`} />)
+    expect(screen.getByText('4 trận thắng')).toBeInTheDocument()
+    expect(screen.queryByText('300 điểm')).toBeNull()
+  })
+})

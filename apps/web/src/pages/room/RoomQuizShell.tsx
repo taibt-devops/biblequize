@@ -522,6 +522,11 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                       <div className="text-right flex-shrink-0">
                         {isBattleRoyale ? (
                           <LivesHearts playerId={s.playerId} lives={eliminated ? 0 : (s.lives ?? 0)} />
+                        ) : isSuddenDeath ? (
+                          // PCV-15: Đấu vương xếp theo số trận thắng
+                          <div data-testid={`sd-wins-${s.playerId}`} className="text-sm font-black text-bq-ink">
+                            {t('room.sd.wins', { n: s.matchesWon ?? 0 })}
+                          </div>
                         ) : (
                           <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
                         )}
@@ -834,6 +839,11 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                       <div className="text-right">
                         {isBattleRoyale ? (
                           <LivesHearts playerId={s.playerId} lives={eliminated ? 0 : (s.lives ?? 0)} />
+                        ) : isSuddenDeath ? (
+                          // PCV-15: Đấu vương xếp theo số trận thắng
+                          <div data-testid={`sd-wins-${s.playerId}`} className="text-sm font-black text-bq-ink">
+                            {t('room.sd.wins', { n: s.matchesWon ?? 0 })}
+                          </div>
                         ) : (
                           <div className={`text-sm font-black ${eliminated ? 'text-bq-ink2' : 'text-bq-ink'}`}>{s.score}</div>
                         )}

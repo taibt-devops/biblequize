@@ -24,6 +24,8 @@ interface Props {
   onNewRoom: () => void;
   onHome: () => void;
   onAnalytics?: () => void;
+  /** PCV-15: số liệu dưới tên theo mode (thiếu = điểm). */
+  metric?: (p: PlayerScore) => string;
 }
 
 function formatDuration(ms: number | null | undefined): string {
@@ -36,7 +38,7 @@ function formatDuration(ms: number | null | undefined): string {
 
 export function QuizEndScreen({
   results, myUsername, myUserId, isHost, totalQuestions, startedAtMs,
-  onReplay, onClose, onShare, onNewRoom, onHome, onAnalytics,
+  onReplay, onClose, onShare, onNewRoom, onHome, onAnalytics, metric,
 }: Props) {
   // Rank order: finalRank when the mode assigns it (BR/SD), else score DESC
   // (Speed Race & co never set finalRank — deriving rank from position fixes
@@ -156,8 +158,8 @@ export function QuizEndScreen({
           {/* RES: ≤2 players get a balanced duel layout; the 3-step podium
               looks lopsided + empty with two people. */}
           {results.length <= 2
-            ? <HeadToHead results={results} compact={!isHost} />
-            : <Podium results={results} compact={!isHost} />}
+            ? <HeadToHead results={results} compact={!isHost} metric={metric as never} />
+            : <Podium results={results} compact={!isHost} metric={metric} />}
 
           {/* Match stats — drop "Thời gian" when the match start wasn't
               captured (reload / late join) so it never shows a bare "—". */}

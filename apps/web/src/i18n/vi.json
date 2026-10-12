@@ -1859,8 +1859,8 @@
         "detail": "Người chơi được chia hai đội, đội nào cũng mang tên một cặp nhân vật Kinh Thánh. Điểm đội là trung bình điểm các thành viên, nên đội đông hơn không tự nhiên có lợi; mỗi câu cả đội cùng đúng được thưởng thêm 50 điểm đội. Hai đội phải đều người mới bắt đầu được — chủ phòng có thể bấm Xáo đội."
       },
       "sudden_death": {
-        "short": "Đấu tay đôi giành ngai.",
-        "detail": "Mỗi lúc chỉ hai người đấu. Một người sai là thua; cả hai cùng đúng thì ai nhanh hơn thắng. Cả hai cùng sai, hoặc nhanh ngang nhau (chênh dưới 0,2 giây), thì đấu thêm câu khác; sau 3 câu như vậy người đang giữ ngai thắng. Người thắng giữ ngai và đấu tiếp người kế trong hàng."
+        "short": "Đấu tay đôi giành ngai, thua thì xếp hàng đấu lại.",
+        "detail": "Mỗi lúc chỉ hai người đấu, theo hàng chờ xáo ngẫu nhiên. Một người sai là thua; cả hai cùng đúng thì ai nhanh hơn thắng. Cả hai cùng sai, hoặc nhanh ngang nhau (chênh dưới 0,2 giây), thì đấu thêm câu khác; sau 3 câu như vậy người đang giữ ngai thắng. Người thắng giữ ngai, người thua về cuối hàng chờ để đấu lại. Trận kết thúc khi ai cũng đã đấu ít nhất một lần và vua thắng liền 3 trận (phòng trên 5 người: 4 trận), hoặc khi hết câu. Xếp hạng theo số trận thắng, rồi chuỗi thắng dài nhất."
       },
       "group_live_sequential": {
         "short": "Mọi người cùng trả lời, chờ tất cả xong mới hiện đáp án.",
@@ -1881,7 +1881,14 @@
       "switch": "Đổi đội",
       "shuffle": "Xáo đội"
     },
-    "errorShuffleTeams": "Không xáo đội được, thử lại"
+    "errorShuffleTeams": "Không xáo đội được, thử lại",
+    "sd": {
+      "wins": "{{n}} thắng"
+    },
+    "end": {
+      "sdMetric": "{{n}} trận thắng",
+      "brMetric": "{{c}}/{{t}} câu đúng"
+    }
   },
   "groups": {
     "noGroupTitle": "Tham gia nhóm hội thánh",
@@ -2585,7 +2592,7 @@
       "speed_race": "Đúng và nhanh để ghi điểm, đúng liên tiếp được thưởng, câu chốt nhân đôi",
       "battle_royale": "Mỗi người 2 mạng, câu khó dần — người trụ lại cuối cùng thắng",
       "team_vs_team": "Hai đội đấu nhau bằng điểm trung bình, cả đội cùng đúng được thưởng",
-      "sudden_death": "Đấu tay đôi giành ngai: thắng thì giữ ngai đấu tiếp, cả hai cùng đúng thì ai nhanh hơn thắng.",
+      "sudden_death": "Đấu tay đôi giành ngai, thua thì xếp hàng đấu lại — ai thắng nhiều trận nhất xếp đầu",
       "group_live_sequential": "Mọi người cùng trả lời — chờ tất cả xong mới hiện đáp án"
     },
     "roleTitle": "Vai trò của bạn",

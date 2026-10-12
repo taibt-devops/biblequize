@@ -5,6 +5,8 @@ interface Props {
   results: PlayerScore[];
   /** Compact variant for player view (mockup ⑥). Default = host variant. */
   compact?: boolean;
+  /** PCV-15: số liệu dưới tên theo mode (Đấu vương: trận thắng; Sinh tồn: câu đúng). Mặc định: điểm. */
+  metric?: (p: PlayerScore) => string;
 }
 
 /**
@@ -16,7 +18,7 @@ interface Props {
  * Race / Battle Royale). Falls back to score order when ranks are
  * missing.
  */
-export function Podium({ results, compact = false }: Props) {
+export function Podium({ results, compact = false, metric }: Props) {
   // Display order: 2nd, 1st, 3rd — so 1st sits in the middle and visually
   // taller. Memoized so the two sorts don't re-run on every re-render the
   // result screen triggers from late STOMP events.
@@ -137,7 +139,7 @@ export function Podium({ results, compact = false }: Props) {
               className={compact ? 'text-[10px] font-bold' : 'text-base lg:text-lg font-bold'}
               style={{ color: scoreColor(rank) }}
             >
-              {p.score}{compact ? 'đ' : ' điểm'}
+              {metric ? metric(p) : `${p.score}${compact ? 'đ' : ' điểm'}`}
             </div>
             <div
               className="w-full mt-2 rounded-t-xl flex items-center justify-center font-black"

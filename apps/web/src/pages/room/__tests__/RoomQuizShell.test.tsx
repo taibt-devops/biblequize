@@ -160,3 +160,15 @@ describe('RoomQuizShell — bóng Sinh tồn (PCV-13)', () => {
     expect(answer?.hasAttribute('disabled')).toBe(false)
   })
 })
+
+describe('RoomQuizShell — Đấu vương (PCV-15)', () => {
+  it('bảng người chơi ghi số trận thắng', () => {
+    const scores = [
+      { playerId: 'p0', username: 'Người 0', score: 200, correctAnswers: 3, totalAnswered: 4, accuracy: 75, matchesWon: 2 },
+      { playerId: 'p1', username: 'Người 1', score: 300, correctAnswers: 4, totalAnswered: 5, accuracy: 80, matchesWon: 0 },
+    ]
+    render(<Harness gameMode="SUDDEN_DEATH" core={playing({ scores })} />)
+    const board = screen.getByTestId('quiz-scoreboard-left')
+    expect(board.querySelector('[data-testid="sd-wins-p0"]')?.textContent).toBe('2 thắng')
+  })
+})

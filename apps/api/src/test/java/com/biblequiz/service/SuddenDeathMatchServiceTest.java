@@ -60,7 +60,8 @@ class SuddenDeathMatchServiceTest {
 
         service.initializeQueue(ROOM);
 
-        verify(roomStateService).setSdQueue(eq(ROOM), argThat(q -> q.get(0).equals("u1") && q.get(1).equals("u2")));
+        // PCV-15: hàng chờ xáo ngẫu nhiên (không còn theo thứ tự vào phòng).
+        verify(roomStateService).setSdQueue(eq(ROOM), argThat(q -> q.size() == 2 && q.containsAll(List.of("u1", "u2"))));
         assertEquals(RoomPlayer.PlayerStatus.SPECTATOR, p1.getPlayerStatus());
     }
 
@@ -194,17 +195,18 @@ class SuddenDeathMatchServiceTest {
     // ── assignFinalRanks ──
 
     @Test
-    void assignFinalRanks_sortsByStreakDescending() {
-        RoomPlayer p1 = createPlayer("u1", "P1"); p1.setWinningStreak(3);
-        RoomPlayer p2 = createPlayer("u2", "P2"); p2.setWinningStreak(5);
-        RoomPlayer p3 = createPlayer("u3", "P3"); p3.setWinningStreak(1);
+    void assignFinalRanks_sortsByMatchesWonDescending() {
+        // PCV-15: xếp theo số trận thắng (trước: chuỗi hiện tại — người thua về 0 nên hạng gần như ngẫu nhiên).
+        RoomPlayer p1 = createPlayer("u1", "P1"); p1.setMatchesWon(3);
+        RoomPlayer p2 = createPlayer("u2", "P2"); p2.setMatchesWon(5);
+        RoomPlayer p3 = createPlayer("u3", "P3"); p3.setMatchesWon(1);
         when(roomPlayerRepository.findByRoomId(ROOM)).thenReturn(new ArrayList<>(List.of(p1, p2, p3)));
 
         service.assignFinalRanks(ROOM);
 
-        assertEquals(1, p2.getFinalRank()); // streak 5 = rank 1
-        assertEquals(2, p1.getFinalRank()); // streak 3 = rank 2
-        assertEquals(3, p3.getFinalRank()); // streak 1 = rank 3
+        assertEquals(1, p2.getFinalRank()); // 5 trận thắng = hạng 1
+        assertEquals(2, p1.getFinalRank());
+        assertEquals(3, p3.getFinalRank());
     }
 
     // ── elapsedMs + max continues ──
