@@ -12,7 +12,7 @@
 - PCV-7 Nhiệm vụ ngày: đếm đủ 13 loại, thay loại không có lối vào, thưởng 50 XP thật — Status: [x] DONE
 - PCV-8 Đấu nhanh không dùng AI, bỏ giới hạn 3 trận/ngày cho kho câu — Status: [x] DONE
 - PCV-9 Tên/icon/mô tả mode thống nhất + chọn vai trò chủ phòng — Status: [x] DONE
-- PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [~] IN PROGRESS (docs xong, chờ deploy)
+- PCV-10 Spec + DECISIONS + deploy đợt 1 — Status: [x] DONE (deploy gộp ba đợt, prod 13/10/2026: api fbe6562b + web, V77/V78 áp, 6 người máy; dump trước migrate)
 
 ### Tasks — Đợt 2 (thiết kế lại mode)
 - PCV-11 Đua tốc độ: thưởng chuỗi, câu chốt ×2, phân hạng, bảng dẫn đầu mỗi 3 câu — Status: [x] DONE
@@ -23,7 +23,7 @@
 - PCV-16 Đấu vương: khán giả đoán — Status: [x] DONE
 - PCV-17 Chơi lại với nhóm này — Status: [x] DONE
 - PCV-18 Đổi cách chơi trong sảnh chờ — Status: [x] DONE
-- PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [~] IN PROGRESS (docs + smoke xong, chờ deploy)
+- PCV-19 Spec + DECISIONS + deploy đợt 2 — Status: [x] DONE (deploy gộp ba đợt, prod 13/10/2026: api fbe6562b + web, V77/V78 áp, 6 người máy; dump trước migrate)
 
 ### Tasks — Đợt 3 (tính năng mới)
 - PCV-20 Người máy (dữ liệu + thêm/bớt trong sảnh) — Status: [x] DONE
@@ -31,6 +31,6 @@
 - PCV-22 Hội ý cho Đội đấu đội (phiếu đội + chat đội) — Status: [x] DONE
 - PCV-23 Thách đấu bạn bè hoàn chỉnh — Status: [x] DONE
 - PCV-24 Ôn phần đọc hôm nay (phạm vi theo đoạn + liên kết từ doc.forbible.org) — Status: [x] DONE
-- PCV-25 Spec + DECISIONS + deploy đợt 3 + review toàn nhánh — Status: [~] IN PROGRESS (docs + review + sửa xong, chờ SSH để deploy)
+- PCV-25 Spec + DECISIONS + deploy đợt 3 + review toàn nhánh — Status: [x] DONE (prod 13/10/2026: api fbe6562b + web, V77/V78 áp, 6 người máy; dump trước migrate; doc.forbible.org e40123b có liên kết "Ôn phần này cùng nhóm")
 
 Mỗi task: **Spec impact** SPEC_MULTIPLAYER / SPEC_USER §13 theo design · **Spec strategy** (a) update inline · quyết định mới vào DECISIONS 2026-10-12.
