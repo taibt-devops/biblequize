@@ -50,6 +50,8 @@ export default function CreateRoom() {
     // chơi) — giữ nguyên hành vi luồng đa người chơi hiện tại. Khi true →
     // backend thêm host làm RoomPlayer (RoomController đọc body.hostPlaysGame).
     hostPlaysGame: false,
+    // PCV-22: Đội đấu đội — chế độ Hội ý (đáp án đội = đa số phiếu).
+    teamConsensus: false,
   })
 
   const { data: setsData } = useQuery({
@@ -219,6 +221,23 @@ export default function CreateRoom() {
                   <span className="material-symbols-outlined" style={{ fontSize: 16, color: selectedMode.color }}>info</span>
                   <span>{t(selectedMode.descKey)}</span>
                 </div>
+
+                {/* PCV-22: Hội ý — chỉ có ở Đội đấu đội. */}
+                {formData.mode === 'TEAM_VS_TEAM' && (
+                  <button
+                    type="button"
+                    data-testid="create-room-team-consensus"
+                    aria-pressed={formData.teamConsensus}
+                    onClick={() => setFormData(prev => ({ ...prev, teamConsensus: !prev.teamConsensus }))}
+                    className={`mt-3 w-full flex items-start gap-3 rounded-[12px] p-3 text-left border-[1.5px] ${formData.teamConsensus ? 'border-bq-ink bg-bq-cream' : 'border-[#C9B58C] bg-bq-inset'}`}
+                  >
+                    <span className="material-symbols-outlined text-[20px] text-bq-ink" aria-hidden>{formData.teamConsensus ? 'check_box' : 'check_box_outline_blank'}</span>
+                    <span className="min-w-0">
+                      <span className="block text-sm font-bold text-bq-ink">{t('createRoom.teamConsensus')}</span>
+                      <span className="block text-xs text-bq-ink2 mt-0.5 leading-snug">{t('createRoom.teamConsensusDesc')}</span>
+                    </span>
+                  </button>
+                )}
               </div>
 
               {/* PCV-9 (HPT-2): vai trò chủ phòng — hai lựa chọn rõ ràng, mặc định dẫn chương trình. */}

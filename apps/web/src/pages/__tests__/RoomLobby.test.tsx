@@ -487,3 +487,12 @@ describe('RoomLobby — người máy (PCV-20)', () => {
     expect(botCalls).toHaveLength(2) // Sinh tồn cần 3 người
   })
 })
+
+describe('RoomLobby — Hội ý (PCV-22)', () => {
+  it('phòng Đội đấu đội bật Hội ý thì ghi rõ trong luật', async () => {
+    await renderLobby({ ...baseRoom, mode: 'TEAM_VS_TEAM', teamConsensus: true, players: [
+      { id: 'p1', userId: 'host-1', username: 'WS Host', isReady: true, score: 0, team: 'A' },
+    ] })
+    expect(await screen.findByTestId('lobby-consensus-note')).toBeInTheDocument()
+  })
+})

@@ -76,6 +76,8 @@ const RoomQuiz: React.FC = () => {
   // PCV-17: ván mới của nhóm (REMATCH_READY) + phòng có phải Đấu nhanh (ai cũng mở ván mới được).
   const [rematch, setRematch] = useState<{ roomId: string; roomCode: string } | null>(null);
   const [isQuickMatchRoom, setIsQuickMatchRoom] = useState(false);
+  // PCV-22: Đội đấu đội chế độ Hội ý.
+  const [teamConsensus, setTeamConsensus] = useState(false);
   const [skipToast, setSkipToast] = useState(false);
   const [hostBroadcast, setHostBroadcast] = useState<{ hostName: string; message: string } | null>(null);
 
@@ -404,6 +406,7 @@ const RoomQuiz: React.FC = () => {
         // Authoritative viewer identity (covers reloads where nav state is gone).
         if (roomRes.data?.viewerUserId) setMyUserId(roomRes.data.viewerUserId);
         setIsQuickMatchRoom(roomRes.data?.room?.quickMatch === true);
+        setTeamConsensus(roomRes.data?.room?.teamConsensus === true);
         const status = roomRes.data?.room?.status;
         if (status === 'ENDED') {
           const lbRes = await api.get(`/api/rooms/${roomId}/leaderboard`);
@@ -628,6 +631,8 @@ const RoomQuiz: React.FC = () => {
       onAdvance={handleAdvance}
       onSendReaction={(emoji) => send(`/app/room/${roomId}/reaction`, { reaction: emoji })}
       teamNames={teamNames}
+      teamConsensus={teamConsensus}
+      onSendTeamChat={isTeamVsTeam ? (text) => { if (roomId) send(`/app/room/${roomId}/team-chat`, { text }); } : undefined}
       onPredict={(pickUserId) => {
         if (!roomId || !sd.state.predictionOpen) return;
         sd.choosePrediction(pickUserId);

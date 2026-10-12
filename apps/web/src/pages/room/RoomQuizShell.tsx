@@ -25,6 +25,43 @@ import SequentialView, { SequentialRevealPanel, SequentialWaitingStrip } from '.
 // Sprint 2 Q1 — persistent live-feed sidebar entry. Each entry is one row
 // rendered in the RIGHT column; the page keeps the last 30 events so the
 // history scrolls without unbounded growth.
+/** PCV-22: chat riêng của đội (Đội đấu đội). */
+const TeamChatPanel: React.FC<{ messages: { senderId: string; sender: string; text: string }[]; onSend: (text: string) => void }> = ({ messages, onSend }) => {
+  const { t } = useTranslation();
+  const [text, setText] = React.useState('');
+  const submit = () => {
+    const clean = text.trim();
+    if (!clean) return;
+    onSend(clean);
+    setText('');
+  };
+  return (
+    <section data-testid="team-chat" className="bg-bq-white border border-bq-hair shadow-bq-soft rounded-2xl p-3">
+      <div className="text-[12.5px] font-extrabold text-bq-ink mb-1.5">{t('room.team.chatTitle')}</div>
+      <div className="max-h-28 overflow-auto space-y-0.5 text-[13px] text-bq-ink">
+        {messages.length === 0
+          ? <div className="text-bq-ink3">{t('room.team.chatEmpty')}</div>
+          : messages.map((m, i) => <div key={i}><b>{m.sender}:</b> {m.text}</div>)}
+      </div>
+      <div className="mt-2 flex gap-2">
+        <input
+          data-testid="team-chat-input"
+          value={text}
+          maxLength={300}
+          onChange={e => setText(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') submit(); }}
+          placeholder={t('room.team.chatPlaceholder')}
+          className="flex-1 min-w-0 rounded-lg border border-bq-hair bg-bq-white px-2 py-1.5 text-[13px] text-bq-ink"
+        />
+        <button type="button" data-testid="team-chat-send" onClick={submit}
+                className="px-3 rounded-lg border-2 border-bq-ink bg-bq-amber text-[13px] font-extrabold text-bq-ink">
+          {t('room.team.chatSend')}
+        </button>
+      </div>
+    </section>
+  );
+};
+
 /** PCV-12: số mạng còn lại của người chơi Sinh tồn. */
 const LivesHearts: React.FC<{ playerId: string; lives: number }> = ({ playerId, lives }) => (
   <div data-testid={`lives-${playerId}`} data-lives={String(lives)} className="flex items-center justify-end gap-0.5" aria-label={`${lives} ♥`}>
@@ -88,6 +125,9 @@ export interface RoomQuizShellProps {
   teamNames?: { A: string; B: string };
   /** PCV-16: khán giả Đấu vương đoán người thắng. */
   onPredict?: (userId: string) => void;
+  /** PCV-22: Đội đấu đội chế độ Hội ý + gửi chat đội. */
+  teamConsensus?: boolean;
+  onSendTeamChat?: (text: string) => void;
 }
 
 /**
@@ -104,7 +144,7 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
   isPaused, skipToast, hostBroadcast,
   reactions, feedHistory, roundAnswered, comboBanner, onDismissCombo, revealStats,
   br, team, sd, seq, onDismissSdResult,
-  onSubmitAnswer, onAdvance, onSendReaction, teamNames, onPredict,
+  onSubmitAnswer, onAdvance, onSendReaction, teamNames, onPredict, teamConsensus, onSendTeamChat,
 }) => {
   const { t, i18n } = useTranslation();
   const { questionIndex, totalQuestions, timeLimit, question, scores, selected, correctIndex } = core;
@@ -659,6 +699,21 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
               ))}
             </div>
 
+            {/* PCV-22: Hội ý — đồng đội đã chọn phương án nào (chỉ đội mình thấy). */}
+            {isTeamVsTeam && teamConsensus && Object.keys(team.teamVotes).length > 0 && (
+              <div className="grid grid-cols-2 gap-2 -mt-3">
+                {question?.options.map((_, i) => {
+                  const names = Object.values(team.teamVotes).filter(v => v.answerIndex === i).map(v => v.username);
+                  return names.length > 0 ? (
+                    <div key={i} data-testid={`team-votes-${i}`} className="text-[12.5px] font-bold text-bq-ink2 flex items-center gap-1">
+                      <span className="material-symbols-outlined text-[14px]" aria-hidden>how_to_vote</span>
+                      {ANSWER_LETTERS[i]}: {names.join(', ')}
+                    </div>
+                  ) : <div key={i} />;
+                })}
+              </div>
+            )}
+
             {/* Feedback */}
             {selected !== null && correctIndex === null && !br.isSpectator && !(isSuddenDeath && sd.sdSpectating) && !isSequential && (
               <div className="text-center text-bq-ink2 text-sm animate-pulse flex items-center justify-center gap-2">
@@ -699,6 +754,27 @@ const RoomQuizShell: React.FC<RoomQuizShellProps> = ({
                 streak={myRoundResult?.streak}
                 streakBonus={gameMode === 'SPEED_RACE' ? speedRaceStreakBonus(myRoundResult?.streak) : 0}
               />
+            )}
+
+            {/* PCV-22: Hội ý — đáp án của hai đội sau khi công bố. */}
+            {isTeamVsTeam && teamConsensus && correctIndex !== null && team.teamAnswers && (
+              <div data-testid="team-answers" className="rounded-xl border-2 border-bq-ink bg-bq-cream px-4 py-2.5 text-[14px] font-bold text-bq-ink space-y-0.5">
+                {(['A', 'B'] as const).map(side => {
+                  const idx = team.teamAnswers?.[side];
+                  const name = teamNames ? teamNames[side] : `Team ${side}`;
+                  return (
+                    <div key={side}>
+                      {t('room.team.consensusAnswer', { team: name, letter: idx === null || idx === undefined ? '—' : ANSWER_LETTERS[idx] })}
+                      {idx === correctIndex ? ' ✓' : ''}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* PCV-22: chat đội — chỉ đồng đội thấy. */}
+            {isTeamVsTeam && onSendTeamChat && (
+              <TeamChatPanel messages={team.teamChat} onSend={onSendTeamChat} />
             )}
 
             {/* PCV-11: Đua tốc độ — sau câu 3, 6, 9… (không phải câu cuối) hiện 5 người dẫn đầu. */}

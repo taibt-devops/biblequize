@@ -241,3 +241,19 @@ describe('CreateRoom', () => {
     })
   })
 })
+
+describe('CreateRoom — Hội ý (PCV-22)', () => {
+  it('chọn Đội đấu đội thì có lựa chọn Hội ý, bật lên thì gửi teamConsensus', async () => {
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'r9', roomCode: 'TEAM99' } } })
+    renderCreateRoom()
+    expect(screen.queryByTestId('create-room-team-consensus')).toBeNull()
+    fireEvent.click(screen.getByText('Đội đấu đội'))
+    const toggle = screen.getByTestId('create-room-team-consensus')
+    expect(toggle).toHaveAttribute('aria-pressed', 'false')
+    fireEvent.click(toggle)
+    fireEvent.click(document.querySelector('button[type="submit"]')!)
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith('/api/rooms', expect.objectContaining({
+      mode: 'TEAM_VS_TEAM', teamConsensus: true,
+    })))
+  })
+})

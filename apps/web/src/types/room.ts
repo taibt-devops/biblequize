@@ -107,6 +107,8 @@ export type RoomDetails = {
   hostPlaysGame?: boolean
   /** QP-10 (Đấu Nhanh): true = soft-host quick match room. No Quản trò,
    *  any player can hit Start once ≥2 players are ready. */
+  /** PCV-22: Đội đấu đội chế độ Hội ý. */
+  teamConsensus?: boolean
   quickMatch?: boolean
 }
 
@@ -170,6 +172,8 @@ export interface RoundEndData {
   /** Số người chọn từng phương án (index = phương án). */
   answerCounts?: number[]
   results?: RoundPlayerResult[]
+  /** PCV-22: Hội ý — đáp án của mỗi đội. */
+  teamAnswers?: { A?: number | null; B?: number | null }
 }
 
 /** SCORE_UPDATE carries a full scoreboard row (player view merges it into
@@ -309,6 +313,10 @@ export type RoomEvent =
   | { type: 'NEXT_QUESTION'; data?: unknown }
   // ── Per-mode ──
   | { type: 'PLAYER_ELIMINATED'; data: PlayerEliminatedData }
+  /** PCV-22: Hội ý — đồng đội vừa chọn (kênh riêng của đội). */
+  | { type: 'TEAM_VOTE'; data: { playerId: string; username: string; answerIndex: number } }
+  /** PCV-22: chat đội (kênh riêng của đội). */
+  | { type: 'TEAM_CHAT'; data: { senderId: string; sender: string; text: string } }
   /** PCV-17: ván mới của nhóm đã mở. */
   | { type: 'REMATCH_READY'; data: { roomId: string; roomCode: string } }
   /** PCV-16: Đấu vương — ai đoán đúng người thắng trận. */

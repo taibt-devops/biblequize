@@ -15,6 +15,8 @@ export interface StompOptions {
 export function useStomp({ url = '/ws', roomId, onMessage, onConnect, onReconnect, onDisconnect }: StompOptions) {
   const clientRef = useRef<Client | null>(null);
   const subsRef = useRef<StompSubscription | null>(null);
+  // PCV-22: kênh riêng của đội (/user/queue/room/{id}/team).
+  const teamSubsRef = useRef<StompSubscription | null>(null);
   const [connected, setConnected] = useState(false);
   const [reconnecting, setReconnecting] = useState(false);
   const connectedOnceRef = useRef(false);
@@ -80,6 +82,13 @@ export function useStomp({ url = '/ws', roomId, onMessage, onConnect, onReconnec
               onMessageRef.current?.(body);
             } catch {}
           });
+          // PCV-22: kênh riêng của đội (Hội ý: phiếu đồng đội, chat đội) — cùng bộ xử lý sự kiện.
+          try { teamSubsRef.current?.unsubscribe(); } catch {}
+          teamSubsRef.current = client.subscribe(`/user/queue/room/${roomId}/team`, (frame: IMessage) => {
+            try {
+              onMessageRef.current?.(JSON.parse(frame.body));
+            } catch {}
+          });
         }
 
         if (isReconnect) {
@@ -96,6 +105,7 @@ export function useStomp({ url = '/ws', roomId, onMessage, onConnect, onReconnec
         // in CLOSING or CLOSED state". On reconnect, onConnect creates a
         // fresh subscription on the new WS.
         subsRef.current = null;
+        teamSubsRef.current = null;
         if (connectedOnceRef.current) setReconnecting(true);
         onDisconnectRef.current?.();
       },
@@ -106,6 +116,7 @@ export function useStomp({ url = '/ws', roomId, onMessage, onConnect, onReconnec
 
     return () => {
       try { subsRef.current?.unsubscribe(); } catch {}
+      try { teamSubsRef.current?.unsubscribe(); } catch {}
       client.deactivate();
       clientRef.current = null;
       connectedOnceRef.current = false;

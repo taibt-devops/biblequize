@@ -208,3 +208,49 @@ describe('RoomQuizShell — khán giả đoán Đấu vương (PCV-16)', () => {
     expect(screen.getByTestId('sd-predict-king')).toBeInTheDocument()
   })
 })
+
+describe('RoomQuizShell — Hội ý (PCV-22)', () => {
+  function TeamHarness({ onSendTeamChat, core }: { onSendTeamChat: (t: string) => void; core: CoreGameState }) {
+    const br = useBattleRoyale('me')
+    const team = useTeamVsTeam('me', 'A')
+    const sd = useSuddenDeath('me')
+    const seq = useSequentialMode()
+    const teamState = {
+      ...team.state, myTeam: 'A',
+      teamVotes: { an: { username: 'An', answerIndex: 1 } },
+      teamChat: [{ senderId: 'an', sender: 'An', text: 'chọn B nhé' }],
+      teamAnswers: { A: 1, B: 3 },
+    }
+    return (
+      <QueryClientProvider client={new QueryClient()}>
+        <MemoryRouter>
+          <RoomQuizShell
+            gameMode="TEAM_VS_TEAM" isBattleRoyale={false} isTeamVsTeam isSuddenDeath={false} isSequential={false} isHost={false}
+            myUserId="me" myUsername="Tôi" showHostHint={false} connected reconnecting={false}
+            core={core} timeLeft={10} isPaused={false} skipToast={false} hostBroadcast={null}
+            reactions={[]} feedHistory={[]} roundAnswered={new Set()} comboBanner={null} onDismissCombo={() => {}}
+            revealStats={null} br={br.state} team={teamState} sd={sd.state} seq={seq.state}
+            onDismissSdResult={() => {}} onSubmitAnswer={() => {}} onAdvance={() => {}} onSendReaction={() => {}}
+            teamConsensus teamNames={{ A: 'Đội Giô-suê', B: 'Đội Ca-lép' }} onSendTeamChat={onSendTeamChat}
+          />
+        </MemoryRouter>
+      </QueryClientProvider>
+    )
+  }
+
+  it('đồng đội đã chọn hiện trên phương án; chat đội gửi được', () => {
+    const send = vi.fn()
+    render(<TeamHarness onSendTeamChat={send} core={playing()} />)
+    expect(screen.getByTestId('team-votes-1').textContent).toMatch(/An/)
+    expect(screen.getByTestId('team-chat').textContent).toMatch(/chọn B nhé/)
+    fireEvent.change(screen.getByTestId('team-chat-input'), { target: { value: 'đồng ý B' } })
+    fireEvent.click(screen.getByTestId('team-chat-send'))
+    expect(send).toHaveBeenCalledWith('đồng ý B')
+  })
+
+  it('sau khi công bố: hiện đáp án của hai đội', () => {
+    render(<TeamHarness onSendTeamChat={vi.fn()} core={playing({ correctIndex: 1, reveal: { answerCounts: [0, 2, 0, 1] } })} />)
+    expect(screen.getByTestId('team-answers').textContent).toMatch(/Đội Giô-suê.*B/)
+    expect(screen.getByTestId('team-answers').textContent).toMatch(/Đội Ca-lép.*D/)
+  })
+})

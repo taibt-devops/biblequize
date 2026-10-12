@@ -10,6 +10,12 @@ export interface TeamVsTeamState {
   teamWinner: string | null;
   teamWinScoreA: number;
   teamWinScoreB: number;
+  /** PCV-22: Hội ý — đồng đội đã chọn gì ở câu này (playerId → lựa chọn). */
+  teamVotes: Record<string, { username: string; answerIndex: number }>;
+  /** PCV-22: chat đội. */
+  teamChat: { senderId: string; sender: string; text: string }[];
+  /** PCV-22: đáp án hai đội của câu vừa công bố. */
+  teamAnswers: { A?: number | null; B?: number | null } | null;
 }
 
 /**
@@ -26,6 +32,9 @@ export function useTeamVsTeam(myUserId: string, initialTeam: string | null) {
   const [teamWinner, setTeamWinner] = useState<string | null>(null);
   const [teamWinScoreA, setTeamWinScoreA] = useState(0);
   const [teamWinScoreB, setTeamWinScoreB] = useState(0);
+  const [teamVotes, setTeamVotes] = useState<TeamVsTeamState['teamVotes']>({});
+  const [teamChat, setTeamChat] = useState<TeamVsTeamState['teamChat']>([]);
+  const [teamAnswers, setTeamAnswers] = useState<TeamVsTeamState['teamAnswers']>(null);
 
   const handleEvent = (msg: RoomEvent) => {
     switch (msg.type) {
@@ -33,6 +42,22 @@ export function useTeamVsTeam(myUserId: string, initialTeam: string | null) {
         // New round — clear last round's perfect banners.
         setPerfectA(false);
         setPerfectB(false);
+        setTeamVotes({});
+        setTeamAnswers(null);
+        break;
+      }
+      case 'TEAM_VOTE': {
+        const d = msg.data;
+        setTeamVotes(prev => ({ ...prev, [d.playerId]: { username: d.username, answerIndex: d.answerIndex } }));
+        break;
+      }
+      case 'TEAM_CHAT': {
+        const d = msg.data;
+        setTeamChat(prev => [...prev.slice(-49), { senderId: d.senderId, sender: d.sender, text: d.text }]);
+        break;
+      }
+      case 'ROUND_END': {
+        if (msg.data.teamAnswers) setTeamAnswers(msg.data.teamAnswers);
         break;
       }
       case 'TEAM_ASSIGNMENT': {
@@ -64,6 +89,7 @@ export function useTeamVsTeam(myUserId: string, initialTeam: string | null) {
   const state: TeamVsTeamState = {
     myTeam, teamScoreA, teamScoreB, perfectA, perfectB,
     teamWinner, teamWinScoreA, teamWinScoreB,
+    teamVotes, teamChat, teamAnswers,
   };
   return { state, handleEvent, applyQuizEnd };
 }

@@ -1880,7 +1880,13 @@
       "allCorrectShort": "All correct!",
       "allCorrectBanner": "{{teams}}: everyone right · +50 team points",
       "switch": "Switch team",
-      "shuffle": "Shuffle teams"
+      "shuffle": "Shuffle teams",
+      "consensusAnswer": "{{team}} chose {{letter}}",
+      "chatTitle": "My team",
+      "chatEmpty": "Talk with your team here — the other team can't see it.",
+      "chatPlaceholder": "Message your team…",
+      "chatSend": "Send",
+      "consensusNote": "Huddle: teammates see each other's picks; the team's answer is the most-picked option (100 if right, +50 if everyone is right)."
     },
     "errorShuffleTeams": "Couldn't shuffle teams, try again",
     "sd": {
@@ -2631,7 +2637,9 @@
     "roleOrganizer": "I host the game",
     "roleOrganizerDesc": "You run the game without answering or scoring. Good for leading a class or a big screen.",
     "rolePlayer": "I play along",
-    "rolePlayerDesc": "You open the room and answer too, scored like everyone else."
+    "rolePlayerDesc": "You open the room and answer too, scored like everyone else.",
+    "teamConsensus": "Huddle",
+    "teamConsensusDesc": "Teammates see each other's picks and can chat privately; the team's answer is the most-picked option."
   },
   "daily": {
     "title": "Daily Challenge",

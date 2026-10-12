@@ -1007,6 +1007,12 @@ const RoomLobby: React.FC = () => {
                   {modeInfo.ruleTitle}
                 </div>
                 {modeInfo.ruleText}
+                {/* PCV-22: Hội ý */}
+                {room.teamConsensus && room.mode === 'TEAM_VS_TEAM' && (
+                  <div data-testid="lobby-consensus-note" className="mt-1 text-[13px] font-bold text-bq-ink">
+                    {t('room.team.consensusNote')}
+                  </div>
+                )}
               </div>
               {isHost && !isQuickMatch && room.status === 'LOBBY' && !isGroupLive && (
                 <button

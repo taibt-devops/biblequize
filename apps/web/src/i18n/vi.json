@@ -1880,7 +1880,13 @@
       "allCorrectShort": "Cả đội đúng!",
       "allCorrectBanner": "{{teams}} cả đội cùng đúng · +50 điểm đội",
       "switch": "Đổi đội",
-      "shuffle": "Xáo đội"
+      "shuffle": "Xáo đội",
+      "consensusAnswer": "{{team}} chọn {{letter}}",
+      "chatTitle": "Đội mình",
+      "chatEmpty": "Bàn với đồng đội ở đây — đội kia không thấy.",
+      "chatPlaceholder": "Nhắn cho đồng đội…",
+      "chatSend": "Gửi",
+      "consensusNote": "Hội ý: cả đội thấy nhau chọn gì, đáp án của đội là phương án nhiều người chọn nhất (đúng 100, cả đội cùng đúng +50)."
     },
     "errorShuffleTeams": "Không xáo đội được, thử lại",
     "sd": {
@@ -2631,7 +2637,9 @@
     "roleOrganizer": "Tôi dẫn chương trình",
     "roleOrganizerDesc": "Bạn điều khiển trận, không trả lời và không tính điểm. Hợp khi dẫn lớp hoặc chiếu lên màn hình lớn.",
     "rolePlayer": "Tôi chơi cùng mọi người",
-    "rolePlayerDesc": "Bạn vừa mở phòng vừa trả lời, được tính điểm như mọi người."
+    "rolePlayerDesc": "Bạn vừa mở phòng vừa trả lời, được tính điểm như mọi người.",
+    "teamConsensus": "Hội ý",
+    "teamConsensusDesc": "Cả đội thấy nhau chọn gì và nhắn riêng cho nhau; đáp án của đội là phương án nhiều người chọn nhất."
   },
   "daily": {
     "title": "Thử Thách Hàng Ngày",
