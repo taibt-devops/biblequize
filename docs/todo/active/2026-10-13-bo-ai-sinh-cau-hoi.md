@@ -9,6 +9,6 @@
 - AIR-2 Bộ câu của tôi: bỏ AI tạo câu, AI viết lại, hạn mức AI, API sinh câu cũ (BE + web) — Status: [x] DONE
 - AIR-3 Bộ câu nhóm: bỏ AI tạo câu, AI viết lại, hạn mức AI (BE + web) — Status: [x] DONE
 - AIR-4 Quản trị: bỏ trang "AI tạo câu hỏi", gợi ý AI khi sửa câu, KPI AI ở dashboard, kiểm tra nhà cung cấp AI ở health (BE + web) — Status: [x] DONE
-- AIR-5 Gỡ module `adminai` + cấu hình khóa AI + `aiApi`; spec + DECISIONS; cả bộ test + boot jar + smoke — Status: [ ] TODO
+- AIR-5 Gỡ module `adminai` + cấu hình khóa AI + `aiApi`; spec + DECISIONS; cả bộ test + boot jar + smoke — Status: [~] IN PROGRESS (code + docs xong, chờ boot + deploy)
 
 Mỗi task: **Spec impact** SPEC_USER (bộ câu, nhóm, quản trị), SPEC_MULTIPLAYER (nguồn câu) · **Spec strategy** (a) update inline · quyết định vào DECISIONS 2026-10-13.

@@ -2,6 +2,18 @@
 
 ---
 
+## 2026-10-13 — Bỏ sinh câu hỏi bằng AI ở mọi nơi
+
+- **Bối cảnh:** user 13/10/2026: "bỏ giúp tôi phần AI, tức là sinh câu hỏi bằng AI". Câu hỏi của app nay do biên tập soạn (bộ RVV11, BSB…); câu AI chưa duyệt không hợp với kho đã biên tập, lại tốn tiền gọi nhà cung cấp và giữ khóa API.
+- **Quyết định:**
+  - Bỏ ở cả 4 nơi: Quản trị (trang "Trình tạo AI", "Đề xuất từ AI" khi sửa câu, KPI "AI hôm nay"), Bộ câu của tôi và bộ câu nhóm ("AI tạo nháp", "AI viết lại", hạn mức AI), Phòng chơi / Đấu nhanh (nguồn câu AI), API sinh câu cũ `/api/user-questions/generate`.
+  - Gỡ module `adminai` (nhà cung cấp DeepSeek Bedrock / Gemini / Claude, hạn mức Redis), cấu hình `biblequiz.ai.*` + `gemini.*`, dependency `bedrockruntime`, axios `aiApi`, 185 khóa i18n.
+  - **Không xóa dữ liệu:** câu đã có (kể cả nguồn AI) giữ nguyên; cột `rooms.ai_questions_payload` và enum `AI_GENERATED` giữ để đọc phòng cũ. App cũ còn gửi nguồn AI cho Đấu nhanh thì vẫn vào trận bằng kho câu.
+- **Việc còn lại (prod):** biến môi trường `GEMINI_API_KEY`, `AI_BEDROCK_*`, `ANTHROPIC/CLAUDE_*` (nếu có) trong compose trên cura-dev không còn được đọc — có thể xóa khi tiện; quyền IAM Bedrock của máy chủ (nếu có) cũng không còn cần.
+- **Implementation:** AIR-1..5, task `docs/todo/active/2026-10-13-bo-ai-sinh-cau-hoi.md`.
+
+---
+
 ## 2026-10-13 — Phòng chơi v2 (đợt 3): người máy, Hội ý, Thách đấu, Ôn phần đọc hôm nay
 
 - **Bối cảnh:** thiết kế `docs/MULTIPLAYER/2026-10-12-phong-choi-v2-design.md` §3 (user 12/10: "làm hết luôn đi … cứ làm theo ý bạn").

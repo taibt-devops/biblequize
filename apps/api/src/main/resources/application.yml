@@ -70,17 +70,6 @@ biblequiz:
   auth:
     google:
       android-client-id: ${GOOGLE_ANDROID_CLIENT_ID:}
-  # AI provider config (BL-AD-7 DeepSeek Bedrock integration)
-  ai:
-    default-provider: deepseek
-    bedrock:
-      enabled: ${AI_BEDROCK_ENABLED:true}
-      region: ${AI_BEDROCK_REGION:ap-northeast-1}
-      model-id: ${AI_BEDROCK_MODEL_ID:deepseek.v3.2}
-      max-tokens: 4000
-      temperature: 0.7
-    quota:
-      daily-limit: ${AI_DAILY_QUOTA:200}
   room:
     # SPEC §5.4.0 R2 — LOBBY rooms with no activity past this window are
     # auto-ended (and deleted via R3). Mirrors the FE admin config
@@ -123,9 +112,6 @@ management:
 # FIX #2: Comma-separated list of trusted proxy IP addresses.
 # Rate limiter will trust X-Forwarded-For ONLY when the direct TCP peer is in this list.
 # Example for production behind a known load-balancer: "10.0.0.1,172.16.0.2"
-gemini:
-  api-key: ${GEMINI_API_KEY:}
-  model: ${GEMINI_MODEL:gemini-2.5-flash}
 
 app:
   trusted-proxies: ${TRUSTED_PROXIES:}

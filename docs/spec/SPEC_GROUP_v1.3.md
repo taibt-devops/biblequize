@@ -670,6 +670,8 @@ UI hiển thị mastery progress trên detail page:
 
 ### 6.A Group AI Question Generation (BL-AD-7, 2026-05-12)
 
+> **ĐÃ BỎ (13/10/2026, AIR — DECISIONS 2026-10-13):** không còn sinh câu hỏi bằng AI ở bất kỳ đâu. Phần dưới giữ làm lịch sử; mã, endpoint, cấu hình khóa AI đã gỡ. Câu đã có trong kho (kể cả nguồn `ai-generated`/`ai-group`/`AI`) giữ nguyên.
+
 LEADER/MOD có thể dùng AI để tạo draft câu hỏi cho quiz set của nhóm.
 
 **Endpoint:** `POST /api/groups/{id}/ai-generate` (`ChurchGroupController.java:932+`).

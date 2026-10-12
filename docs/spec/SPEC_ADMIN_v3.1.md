@@ -18,7 +18,7 @@
 4. User Management
 5. Question CRUD
 6. Duplicate Detection
-7. AI Question Generator
+7. AI Question Generator (đã bỏ 13/10/2026)
 8. Question Review Queue
 9. Question Quality
 10. Group Moderation
@@ -71,7 +71,7 @@ Mọi thao tác state-changing log qua SLF4J `[ADMIN]` prefix; audit DB thông q
 | 4 | `/admin/feedback` | `Feedback.tsx` | ADMIN, CONTENT_MOD (read) | Shipped |
 | 5 | `/admin/rankings` | `Rankings.tsx` | ADMIN | Shipped |
 | 6 | `/admin/events` | `Events.tsx` | ADMIN | Shipped (read-only frontend) |
-| 7 | `/admin/ai-generator` | `AIQuestionGenerator.tsx` | ADMIN | Shipped (Gemini + Claude) |
+| 7 | ~~`/admin/ai-generator`~~ | ~~`AIQuestionGenerator.tsx`~~ | ADMIN | **Đã bỏ 13/10/2026 (AIR-4)** |
 | 8 | `/admin/review-queue` | `ReviewQueue.tsx` | ADMIN, CONTENT_MOD | Shipped |
 | 9 | `/admin/groups` | `Groups.tsx` | ADMIN | Shipped |
 | 10 | `/admin/notifications` | `Notifications.tsx` | ADMIN | Stub (broadcast UI hardcoded — backlog) |
@@ -259,6 +259,8 @@ DuplicateStatus        : enum { NO_MATCH, EXACT_MATCH, SAME_VERSE_ANSWER, SIMILA
 ---
 
 ## 7. AI Question Generator
+
+> **ĐÃ BỎ (13/10/2026, AIR — DECISIONS 2026-10-13):** không còn sinh câu hỏi bằng AI ở bất kỳ đâu. Phần dưới giữ làm lịch sử; mã, endpoint, cấu hình khóa AI đã gỡ. Câu đã có trong kho (kể cả nguồn `ai-generated`/`ai-group`/`AI`) giữ nguyên.
 
 ### 7.1 Mục đích
 Generate câu hỏi từ 1 đoạn Kinh Thánh theo cấu hình (book/chapter/verse, difficulty, type, language, count) để feed Review Queue.

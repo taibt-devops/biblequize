@@ -1952,6 +1952,8 @@ bookmarks (id, user_id, question_id, created_at, UNIQUE(user_id, question_id))
 
 ## 19. Question Sets (user-created)
 
+> **ĐÃ BỎ (13/10/2026, AIR — DECISIONS 2026-10-13):** không còn sinh câu hỏi bằng AI ở bất kỳ đâu. Phần dưới giữ làm lịch sử; mã, endpoint, cấu hình khóa AI đã gỡ. Câu đã có trong kho (kể cả nguồn `ai-generated`/`ai-group`/`AI`) giữ nguyên.
+
 > **Source:** V35 `question_sets.sql` + V36 + V37 + V56 (Phase 1 metadata parity with group); entities `apps/api/src/main/java/com/biblequiz/modules/userquiz/entity/QuestionSet.java`, `QuestionSetItem`; web `apps/web/src/pages/MySets.tsx`, `apps/web/src/pages/PersonalQuizSetEditor.tsx` (wrapper) → `apps/web/src/pages/group/QuizSetEditor.tsx` (shared with group).
 
 ### 19.1 Phân biệt
@@ -1974,7 +1976,7 @@ rooms.custom_question_ids JSON  -- V36, host inline custom list
 ### 19.3 UI (Phase 1+2, 2026-05-15)
 - `/my-sets` — list user's sets + DRAFT/PUBLISHED chip; "Tạo bộ mới" navigates straight to the editor.
 - `/my-sets/new` — auto-creates DRAFT then redirects to `/my-sets/:id/edit`.
-- `/my-sets/:setId/edit` — shared `QuizSetEditor` with `ownership="personal"` + `aiEnabled`: rich metadata, DRAFT→PUBLISHED workflow (≥5 câu + name ≥3 ký tự), auto-save, **AI tạo nháp + AI viết lại** (share 200/day quota with group via `AIQuotaService`).
+- `/my-sets/:setId/edit` — shared `QuizSetEditor` with `ownership="personal"` (AIR-2 13/10/2026: không còn AI tạo nháp / viết lại): rich metadata, DRAFT→PUBLISHED workflow (≥5 câu + name ≥3 ký tự), auto-save, **AI tạo nháp + AI viết lại** (share 200/day quota with group via `AIQuotaService`).
 - `/my-sets/:setId` — legacy path, redirects into editor.
 
 ### 19.4 Use cases
@@ -2453,7 +2455,7 @@ Verified `QuestionSetController.java:22-33`:
 | Concern | Spec |
 |---|---|
 | 5 Multiplayer modes + R1–R5 lifecycle + STOMP events | [SPEC_MULTIPLAYER.md](SPEC_MULTIPLAYER.md) |
-| Admin Test Panel, AI Generator, Question Quality, Notification Campaigns, ExportCenter, EarlyUnlock metrics, Group lock | [SPEC_ADMIN_v3.1.md](SPEC_ADMIN_v3.1.md) |
+| Admin Test Panel, Question Quality, Notification Campaigns, ExportCenter, EarlyUnlock metrics, Group lock | [SPEC_ADMIN_v3.1.md](SPEC_ADMIN_v3.1.md) |
 | Church Group (Q-A…Q-O locked decisions, Group Quiz Sets, Scheduled Quizzes, Kick logs, Reports, Group Analytics) | [SPEC_GROUP_v1.2.md](SPEC_GROUP_v1.2.md) |
 | Future / non-shipped features (Friend, Premium, TV Host, Multi-leader, Seasonal UI theming, Offline full PWA) | [SPEC_ROADMAP.md](SPEC_ROADMAP.md) |
 | Code gaps vs canonical | [BACKLOG.md](BACKLOG.md) |

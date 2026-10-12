@@ -20,7 +20,7 @@
 | PCV-5 | **Số người theo mode** (`RoomModeRules`). | Tối thiểu: Đua tốc độ 2, Sinh tồn 3, Đội đấu đội 4 (mỗi đội ≥ 2, lệch ≤ 1), Đấu vương 3, Chơi cùng nhau 2 — Quản trò không tính. Tối đa 100; **Đấu vương tối đa 12** (DECISIONS 2026-10-12). Áp ở tạo phòng, Đấu nhanh và bắt đầu trận; sảnh chờ hiện cùng luật (`lobbyRules.ts`) nên nút "Bắt đầu" chỉ sáng khi máy chủ sẽ nhận. Máy chủ kẹp số câu 5–30 và thời gian 10–60 giây. |
 | PCV-6 | **Hạng cuối + nhiệm vụ sau trận.** | Đua tốc độ, Chơi cùng nhau: hạng theo điểm → số câu đúng → thời gian trung bình; người chưa trả lời câu nào xếp cuối; bằng nhau thì đồng hạng (1, 1, 3). Đội đấu đội: đội thắng hạng 1, đội thua hạng 2, hoà thật thì cả phòng hạng 1. Trận kết thúc bình thường → mỗi người chơi còn trong trận **và đã trả lời ít nhất 1 câu** được tính nhiệm vụ "Chơi 1 trận Phòng chơi" + "Chơi 1 lượt"; hạng 1 **có ít nhất 1 câu đúng** được tính "Thắng 1 trận Phòng chơi" (ngồi im cả trận thì đồng hạng 1 nhưng không được tính). MVP tuần: điểm > 0, phòng ≥ 3 người. |
 | PCV-7b | **Độ khó cố định.** | Phòng chọn Dễ/Trung bình/Khó trước đây kết thúc ngay khi bắt đầu (`Question.Difficulty` viết thường); đã sửa. |
-| PCV-8 | **Đấu nhanh.** | Chỉ dùng kho câu đã biên tập (`source = AI_GENERATED` → `422 AI_SOURCE_DISABLED`); bỏ giới hạn 3 trận/ngày (`remainingToday` vẫn trả để client cũ không lỗi). |
+| PCV-8 | **Đấu nhanh.** | Chỉ dùng kho câu đã biên tập (AIR-1 13/10/2026: `source = AI_GENERATED` của app cũ được coi như kho câu — không còn 422); bỏ giới hạn 3 trận/ngày (`remainingToday` vẫn trả để client cũ không lỗi). |
 | PCV-9 | **Tên + biểu tượng.** | Một tên tiếng Việt cho mỗi mode ở mọi màn: Đua tốc độ (bolt ⚡), Sinh tồn (favorite ❤️), Đội đấu đội (groups 👥), Đấu vương (swords ⚔️), Chơi cùng nhau (group 📚). Tạo phòng có hai ô "Tôi dẫn chương trình" / "Tôi chơi cùng mọi người" (mặc định dẫn chương trình). |
 
 Phòng chơi **không cộng XP** (XP chỉ đến từ Đấu Hạng, Thử thách ngày và thưởng nhiệm vụ — DECISIONS 2026-10-12).
@@ -102,7 +102,7 @@ Bonus entity (cùng package): `Challenge` — Thách đấu (PCV-23, §0.3): nh�
 | `questionSource` | `QuestionSource` enum | `DATABASE` | Xem 2.4. |
 | `questionSetId` | `String(36)` nullable | — | Khi `questionSource=CUSTOM` từ Question Set của user. |
 | `groupQuizSetId` | `String(36)` nullable | — | Khi room spawn từ Group Quiz Set. Dùng để derive `groupId` cho FE "Back to group" (`RoomService.getRoomDetails:484-488`). |
-| `customQuestionIds` | JSON `List<String>` | — | Inline custom (AI-gen ad-hoc). |
+| `customQuestionIds` | JSON `List<String>` | — | Câu chọn sẵn (Đấu nhanh) / bộ câu nhóm. |
 | `isPublic` | `Boolean` | `false` | TRUE → liệt kê trong `/api/rooms/public`. |
 | `startedAt` | `LocalDateTime` | null | Set khi `startRoom()` flip → IN_PROGRESS. |
 | `endedAt` | `LocalDateTime` | null | Set khi `endRoom()` flip → ENDED. Cũng là cutoff cho R3 retention. |
@@ -173,6 +173,8 @@ public enum RoomMode {
 
 ### 2.4 Question Source enum
 
+> **AIR-1 (13/10/2026):** `AI_GENERATED` không còn được tạo mới (bỏ sinh câu bằng AI); giá trị giữ trong enum để đọc phòng cũ, chơi lại → `DATABASE`. Cột `rooms.ai_questions_payload` còn trong DB nhưng không còn dùng.
+
 ```java
 public enum QuestionSource {
     DATABASE,   // Ngân hàng câu hỏi hệ thống (66 books bilingual)
@@ -184,7 +186,7 @@ public enum QuestionSource {
 >
 > - `questionSetId` (String) — set khi user-Question-Set
 > - `groupQuizSetId` (String) — set khi GroupQuizSet (Q-O từ SPEC_GROUP)
-> - `customQuestionIds` (JSON list) — inline ad-hoc (AI generator preview, etc.)
+> - `customQuestionIds` (JSON list) — câu chọn sẵn (Đấu nhanh, bộ câu nhóm)
 >
 > Cả 3 trường hợp đều mang `questionSource = CUSTOM`. `RoomQuizService.runQuiz` (line 384) phân nhánh dựa trên `questionSource == CUSTOM` để đọc UserQuestion thay vì Question repo.
 >

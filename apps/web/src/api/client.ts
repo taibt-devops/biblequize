@@ -10,13 +10,6 @@ export const api = axios.create({
   withCredentials: true // Required so httpOnly refresh_token cookie is sent
 })
 
-// Axios instance with longer timeout for AI generation calls
-export const aiApi = axios.create({
-  baseURL: getApiBaseUrl(),
-  timeout: 90000, // 90s — Gemini can be slow
-  withCredentials: true
-})
-
 // Shared request interceptor factory
 function addAuthInterceptor(instance: typeof api) {
   instance.interceptors.request.use(
@@ -36,7 +29,6 @@ function addAuthInterceptor(instance: typeof api) {
   )
 }
 addAuthInterceptor(api)
-addAuthInterceptor(aiApi)
 
 // Response interceptor to handle token refresh
 api.interceptors.response.use(
