@@ -1033,20 +1033,22 @@ public class RoomService {
             this.hostPlaysGame = room.isHostPlaysGame();
 
             this.players = roomPlayers.stream()
-                .map(player -> new PlayerInfoDTO(
-                    player.getId(),
-                    player.getUser().getId(),
-                    player.getUsername(),
-                    player.getAvatarUrl(),
-                    player.getIsReady(),
-                    player.getScore(),
-                    player.getTeam(),
-                    player.getPlayerStatus()
-                ))
-                .peek(dto -> roomPlayers.stream().filter(p -> p.getId().equals(dto.id)).findFirst().ifPresent(p -> {
-                    dto.isBot = p.isBot();
-                    dto.botLevel = p.getBotLevel();
-                }))
+                .map(player -> {
+                    PlayerInfoDTO dto = new PlayerInfoDTO(
+                        player.getId(),
+                        player.getUser().getId(),
+                        player.getUsername(),
+                        player.getAvatarUrl(),
+                        player.getIsReady(),
+                        player.getScore(),
+                        player.getTeam(),
+                        player.getPlayerStatus()
+                    );
+                    // PCV-20: người máy + cấp
+                    dto.isBot = player.isBot();
+                    dto.botLevel = player.getBotLevel();
+                    return dto;
+                })
                 .collect(Collectors.toList());
         }
     }

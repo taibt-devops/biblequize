@@ -189,15 +189,7 @@ public class RoomWebSocketController {
             // PCV-2 (chống lộ đáp án): chỉ báo "đã trả lời". Phương án, đúng/sai, điểm và
             // thời gian của từng người chỉ được công bố ở ROUND_END / QUESTION_REVEALED khi
             // vòng đã đóng; không phát SCORE_UPDATE theo từng câu (điểm tăng = lộ đúng/sai).
-            // HashMap (not Map.of) — tolerate a null display name (BUG FIX 2026-05-23).
-            Map<String, Object> answerData = new java.util.HashMap<>();
-            answerData.put("playerId", user.getId());
-            answerData.put("username", result.displayName);
-            answerData.put("questionIndex", questionIndex);
-            answerData.put("answered", Boolean.TRUE);
-            WebSocketMessage.Message message = new WebSocketMessage.Message(
-                    WebSocketMessage.MessageTypes.ANSWER_SUBMITTED, answerData);
-            messagingTemplate.convertAndSend("/topic/room/" + roomId, message);
+            broadcastAnswerSubmitted(roomId, user.getId(), result.displayName, questionIndex);
 
             // Sequential coordination + progress broadcast
             if (result.deferredFeedback) {
@@ -428,6 +420,20 @@ public class RoomWebSocketController {
         WebSocketMessage.Message msg = new WebSocketMessage.Message(
                 WebSocketMessage.MessageTypes.PLAYER_ELIMINATED, data);
         messagingTemplate.convertAndSend("/topic/room/" + roomId, msg);
+    }
+
+    /**
+     * PCV-2/21: "X đã trả lời" — không có phương án, đúng/sai hay điểm. Dùng cho người (STOMP) và người máy.
+     * HashMap (not Map.of) — tolerate a null display name (BUG FIX 2026-05-23).
+     */
+    public void broadcastAnswerSubmitted(String roomId, String playerId, String displayName, int questionIndex) {
+        Map<String, Object> answerData = new java.util.HashMap<>();
+        answerData.put("playerId", playerId);
+        answerData.put("username", displayName);
+        answerData.put("questionIndex", questionIndex);
+        answerData.put("answered", Boolean.TRUE);
+        messagingTemplate.convertAndSend("/topic/room/" + roomId,
+                new WebSocketMessage.Message(WebSocketMessage.MessageTypes.ANSWER_SUBMITTED, answerData));
     }
 
     /** PCV-13: Sinh tồn — người chơi hồi sinh (đúng 3 câu liên tiếp khi là bóng). */

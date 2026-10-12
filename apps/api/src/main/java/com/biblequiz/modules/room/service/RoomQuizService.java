@@ -58,6 +58,7 @@ public class RoomQuizService {
     @Autowired private HostControlService hostControlService;
     @Autowired private RoundResultBuilder roundResultBuilder;
     @Autowired private RoomMatchOutcomeService matchOutcomeService;
+    @Autowired(required = false) private RoomBotService roomBotService;
 
     /** PCV-2: nghỉ sau khi công bố đủ lâu để đọc câu gốc (5 s; có giải thích thì 7 s — xem
      *  {@link RoundResultBuilder#revealPauseMs}). Đấu vương dùng giá trị gốc này. */
@@ -214,6 +215,11 @@ public class RoomQuizService {
             com.biblequiz.modules.room.service.mode.RoundPlan plan = strategy.planRound(ctx, i, q);
             strategy.beforeQuestion(ctx, i);
             wsController.broadcastQuestionStart(roomId, i, questions.size(), buildQuestionDto(q), plan);
+            // PCV-21: người máy trả lời như người, hẹn giờ theo cấp và độ khó câu.
+            if (roomBotService != null) {
+                roomBotService.onQuestionStart(roomId, round.getId(), i, plan.timeLimitSeconds(),
+                        q.getOptions() != null ? q.getOptions().size() : 4);
+            }
             // End the round as soon as every expected player has answered;
             // otherwise wait the full timer.
             // PCV-1: hạn chót = thời gian câu + 1 s ân hạn cho mạng chậm; hết vòng thì đóng ngay,

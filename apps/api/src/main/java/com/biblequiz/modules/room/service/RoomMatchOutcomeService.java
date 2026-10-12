@@ -28,6 +28,8 @@ public class RoomMatchOutcomeService {
         this.missionService = missionService;
     }
 
+    /** Có giao dịch: chạy trên luồng trận (ngoài request) mà cần đọc {@code user.isBot} (lazy). */
+    @org.springframework.transaction.annotation.Transactional
     public void recordOutcome(String roomId) {
         List<RoomPlayer> all = playerRepository.findByRoomId(roomId);
         // PCV-20: thắng chỉ tính khi có ít nhất 2 người thật — thắng toàn người máy không phải "thắng phòng".
