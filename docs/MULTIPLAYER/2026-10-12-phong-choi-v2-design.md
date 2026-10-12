@@ -286,7 +286,7 @@ Giữ mặc định Quản trò (spec §2.5). Nút gạt chuyển thành lựa c
 - **Màn tạo phòng:** nhận tham số URL `?passage=Genesis:27-28,Psalms:7`, điền sẵn tên phòng "Ôn phần đọc hôm nay" và hiện phạm vi đã chọn.
 - **App Đọc hằng ngày** (repo forbible-doc):
   - Sau "Xong phần", và trên thẻ phần đã đọc, có liên kết "Ôn phần này cùng nhóm".
-  - Liên kết mở `https://www.forbible.org/room/create?passage=…`.
+  - Liên kết mở `https://forbible.org/room/create?passage=…` (www chuyển 301 về đây).
   - Nếu chưa đăng nhập Bible Quiz thì đi qua bước đăng nhập rồi quay lại đúng trang.
 
 ---
