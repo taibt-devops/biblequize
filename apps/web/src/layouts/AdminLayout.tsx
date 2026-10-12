@@ -13,7 +13,6 @@ const NAV_ITEMS = [
   { path: '/admin', end: true, icon: 'dashboard', labelKey: 'admin.nav.dashboard' },
   { path: '/admin/users', icon: 'group', labelKey: 'admin.nav.users' },
   { path: '/admin/questions', icon: 'quiz', labelKey: 'admin.nav.questions' },
-  { path: '/admin/ai-generator', icon: 'psychology', labelKey: 'admin.nav.aiGenerator' },
   { path: '/admin/review-queue', icon: 'queue', labelKey: 'admin.nav.reviewQueue' },
   { path: '/admin/feedback', icon: 'chat_bubble', labelKey: 'admin.nav.feedback' },
   { path: '/admin/groups', icon: 'groups_2', labelKey: 'admin.nav.groups' },

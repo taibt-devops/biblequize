@@ -5,7 +5,6 @@ import com.biblequiz.modules.quiz.repository.QuestionRepository;
 import com.biblequiz.modules.quiz.repository.QuizSessionRepository;
 import com.biblequiz.modules.user.repository.UserRepository;
 import com.biblequiz.modules.tournament.repository.TournamentRepository;
-import com.biblequiz.modules.adminai.quota.AIQuotaService;
 // AuditEventRepository removed — will add when audit entity is standardized
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,6 @@ public class AdminDashboardController {
     @Autowired private QuestionRepository questionRepository;
     @Autowired(required = false) private QuizSessionRepository sessionRepository;
     @Autowired(required = false) private TournamentRepository tournamentRepository;
-    @Autowired(required = false) private AIQuotaService quotaService;
     // Audit event repository removed for now
 
     @GetMapping
@@ -57,25 +55,12 @@ public class AdminDashboardController {
                 LocalDateTime.now().minusDays(7));
         } catch (Exception ignored) {}
 
-        // AI quota today (from AIQuotaService / Redis) — wired so the "AI hôm nay"
-        // KPI reflects real usage from /generate + /improve-question.
-        Object aiUsed = 0, aiLimit = 200;
-        try {
-            if (quotaService != null) {
-                AIQuotaService.Usage u = quotaService.snapshot();
-                aiUsed = u.used();
-                aiLimit = u.limit();
-            }
-        } catch (Exception ignored) {}
-
         data.put("kpis", Map.of(
             "totalUsers", totalUsers,
             "totalQuestions", totalQuestions,
             "pendingReview", pendingReview,
             "activeSessions", activeSessions,
-            "activeUsers", activeUsers,
-            "aiQuotaUsed", aiUsed,
-            "aiQuotaLimit", aiLimit
+            "activeUsers", activeUsers
         ));
 
         // Question queue — only real, backed metric (pendingReview).

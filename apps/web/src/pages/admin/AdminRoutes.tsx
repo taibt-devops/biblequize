@@ -13,7 +13,6 @@ import QuestionEditPage from './QuestionEditPage'
 import FeedbackAdmin from './Feedback'
 import RankingsAdmin from './Rankings'
 import EventsAdmin from './Events'
-import AIQuestionGenerator from './AIQuestionGenerator'
 import ReviewQueue from './ReviewQueue'
 import GroupsAdmin from './Groups'
 import NotificationsAdmin from './Notifications'
@@ -33,7 +32,6 @@ export default function AdminRoutes() {
         <Route path="feedback" element={<FeedbackAdmin />} />
         <Route path="rankings" element={<RankingsAdmin />} />
         <Route path="events" element={<EventsAdmin />} />
-        <Route path="ai-generator" element={<AIQuestionGenerator />} />
         <Route path="review-queue" element={<ReviewQueue />} />
         <Route path="groups" element={<GroupsAdmin />} />
         <Route path="notifications" element={<NotificationsAdmin />} />

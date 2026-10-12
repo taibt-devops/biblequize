@@ -22,12 +22,17 @@ describe('AdminLayout', () => {
   it('renders the 7 core + Tier B nav items (i18n VI)', () => {
     renderLayout()
     // nav labels are i18n-ized; test runs under VI
-    const items = ['Người dùng', 'Câu hỏi', 'Trình tạo AI', 'Hàng đợi duyệt',
+    const items = ['Người dùng', 'Câu hỏi', 'Hàng đợi duyệt',
       'Phản hồi', 'Nhóm']
     for (const item of items) {
       expect(screen.getByText(item)).toBeInTheDocument()
     }
     expect(screen.getByText('Tổng quan')).toBeInTheDocument()
+  })
+
+  it('AIR-4: không còn mục "Trình tạo AI" (bỏ sinh câu bằng AI)', () => {
+    renderLayout()
+    expect(screen.queryByText('Trình tạo AI')).toBeNull()
   })
 
   it('hides Tier C nav items (ADM-1)', () => {

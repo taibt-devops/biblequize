@@ -90,4 +90,10 @@ describe('Admin Dashboard', () => {
     renderDashboard()
     await waitFor(() => { expect(document.body).toBeInTheDocument() })
   })
+
+  it('AIR-4: không còn thẻ KPI "AI hôm nay"', async () => {
+    renderDashboard()
+    await waitFor(() => { expect(screen.getByText('1,247')).toBeInTheDocument() })
+    expect(screen.queryByText('AI hôm nay')).toBeNull()
+  })
 })

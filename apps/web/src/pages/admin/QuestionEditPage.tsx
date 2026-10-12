@@ -1,20 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams, useSearchParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { api, aiApi } from '../../api/client'
+import { api } from '../../api/client'
 import QuestionFields from './QuestionFields'
 import {
   Question, QuestionType, Difficulty, DuplicateWarning,
   EMPTY_QUESTION, optionDefaults, evaluateQuestionQuality,
 } from './questionTypes'
-
-interface AiSuggestion {
-  options?: string[]
-  correctAnswer?: number
-  explanation?: string
-  rationale?: string
-  weakDistractors?: string[]
-}
 
 export default function QuestionEditPage() {
   const { t } = useTranslation()
@@ -33,10 +25,6 @@ export default function QuestionEditPage() {
   const [saving, setSaving] = useState(false)
   const [saveError, setSaveError] = useState<string | null>(null)
   const [dup, setDup] = useState<DuplicateWarning | null>(null)
-
-  const [aiLoading, setAiLoading] = useState(false)
-  const [aiMsg, setAiMsg] = useState<string | null>(null)
-  const [aiSuggestion, setAiSuggestion] = useState<AiSuggestion | null>(null)
 
   useEffect(() => {
     if (isNew || draft) return
@@ -96,30 +84,6 @@ export default function QuestionEditPage() {
     } finally { setSaving(false) }
   }
 
-  const requestAiSuggestion = async () => {
-    if (!draft) return
-    setAiLoading(true); setAiMsg(null); setAiSuggestion(null)
-    try {
-      const res = await aiApi.post('/api/admin/ai/improve-question', {
-        content: draft.content, options: draft.options, correctAnswer: draft.correctAnswer,
-        explanation: draft.explanation, type: draft.type, language: draft.language, difficulty: draft.difficulty,
-        book: draft.book, chapter: draft.chapter, verseStart: draft.verseStart, verseEnd: draft.verseEnd,
-      })
-      if (res.data?.aiAvailable && res.data.suggestion) setAiSuggestion(res.data.suggestion)
-      else setAiMsg(res.data?.message ?? t('admin.questions.editor.aiUnavailable'))
-    } catch (e: any) {
-      setAiMsg(e?.response?.data?.message ?? t('admin.questions.editor.aiFailed'))
-    } finally { setAiLoading(false) }
-  }
-
-  const applySuggestion = (s: AiSuggestion) =>
-    setDraft(prev => prev ? {
-      ...prev,
-      options: Array.isArray(s.options) && s.options.length ? s.options : prev.options,
-      correctAnswer: typeof s.correctAnswer === 'number' ? [s.correctAnswer] : prev.correctAnswer,
-      explanation: typeof s.explanation === 'string' && s.explanation ? s.explanation : prev.explanation,
-    } : prev)
-
   if (loading) return <div className="p-8 text-[#6B5530]">{t('admin.questions.modal.saving')}…</div>
   if (loadError || !draft) return (
     <div className="p-8">
@@ -166,7 +130,7 @@ export default function QuestionEditPage() {
           )}
         </div>
 
-        {/* Evaluate + AI suggest */}
+        {/* Evaluate (AIR-4: không còn đề xuất AI) */}
         {isMc && (
           <div className="lg:col-span-5 space-y-4 lg:sticky lg:top-4 self-start">
             {/* Heuristic checklist (live) */}
@@ -182,36 +146,6 @@ export default function QuestionEditPage() {
               ))}
             </div>
 
-            {/* AI suggestion */}
-            <div className="bg-[#FFF8E7] rounded-xl border border-[#1D2B22]/15 p-4 space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-[#4D3A1F] uppercase tracking-wider">{t('admin.questions.editor.aiTitle')}</span>
-                <button data-testid="ai-suggest-btn" onClick={requestAiSuggestion} disabled={aiLoading}
-                  className="text-xs px-3 py-1.5 rounded bg-[#FFC93C]/15 border border-[#8A5A12]/30 text-[#8A5A12] hover:bg-[#FFC93C]/25 disabled:opacity-50 flex items-center gap-1">
-                  <span className="material-symbols-outlined text-sm">auto_awesome</span>
-                  {aiLoading ? t('admin.questions.editor.aiAnalyzing') : t('admin.questions.editor.aiSuggestBtn')}
-                </button>
-              </div>
-              {aiMsg && <p className="text-xs text-[#6B5530]">{aiMsg}</p>}
-              {aiSuggestion && (
-                <div className="space-y-2">
-                  {aiSuggestion.rationale && <p className="text-xs text-[#2F6FB0]/80 italic">{aiSuggestion.rationale}</p>}
-                  <div className="space-y-1">
-                    {(aiSuggestion.options ?? []).map((o, i) => (
-                      <div key={i} className={`text-xs px-2 py-1.5 rounded ${i === aiSuggestion.correctAnswer ? 'bg-emerald-500/10 text-[#2E7D4F] border border-emerald-500/20' : 'bg-[#1D2B22]/[0.04] text-[#4D3A1F]'}`}>
-                        <span className="font-bold mr-1">{String.fromCharCode(65 + i)}.</span>{o}
-                      </div>
-                    ))}
-                  </div>
-                  {aiSuggestion.explanation && <p className="text-[11px] text-[#6B5530] italic">{aiSuggestion.explanation}</p>}
-                  <button data-testid="ai-apply-btn" onClick={() => applySuggestion(aiSuggestion)}
-                    className="w-full mt-1 px-3 py-2 rounded bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold">
-                    {t('admin.questions.editor.applyBtn')}
-                  </button>
-                  <p className="text-[10px] text-[#6B5530]">{t('admin.questions.editor.applyHint')}</p>
-                </div>
-              )}
-            </div>
           </div>
         )}
       </div>
