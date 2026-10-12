@@ -47,6 +47,10 @@ public class RoomService {
     @Lazy
     private RoomWebSocketController webSocketController;
 
+    /** PCV-17: giữ chỗ "ván mới" (Redis). */
+    @Autowired(required = false)
+    private RoomStateService roomStateService;
+
     /** SPEC §5.4.0 R2 — single source of truth for "lobby idle ⇒ kill"
      *  threshold. Both the per-user lazy cleanup and the global scheduler
      *  sweep read this; previously the two disagreed (1h vs 2h), which the
@@ -150,6 +154,81 @@ public class RoomService {
      *       to {@code questions} table).
      * </ul>
      */
+    /** PCV-17: phòng của ván mới; {@code created} = false khi người khác đã tạo trước. */
+    public static class RematchResult {
+        public final Room room;
+        public final boolean created;
+
+        public RematchResult(Room room, boolean created) {
+            this.room = room;
+            this.created = created;
+        }
+    }
+
+    /**
+     * PCV-17 — "Chơi lại với nhóm này" (design §2.5): phòng đã kết thúc → mở phòng mới cùng mọi cài đặt
+     * (mode, số câu, thời gian, độ khó, phạm vi sách, ngôn ngữ, công khai, Quản trò/chơi cùng, Đấu nhanh,
+     * bộ câu). Nguồn AI chuyển thành kho câu. Chủ phòng bấm được; Đấu nhanh thì người đã chơi bấm được.
+     * Bấm lại không tạo phòng thứ hai: lần đầu giữ chỗ trong Redis, các lần sau trả phòng đã tạo.
+     */
+    @Transactional
+    public RematchResult rematch(String oldRoomId, User caller) throws Exception {
+        Room old = roomRepository.findById(oldRoomId).orElseThrow(() -> new Exception("Phòng không tồn tại"));
+        if (old.getStatus() != Room.RoomStatus.ENDED) throw new Exception("Trận chưa kết thúc");
+        boolean isHost = old.getHost() != null && old.getHost().getId().equals(caller.getId());
+        boolean played = roomPlayerRepository.findByRoomIdAndUserId(oldRoomId, caller.getId()).isPresent();
+        if (!isHost && !(old.isQuickMatch() && played)) {
+            throw new Exception("Chỉ chủ phòng mới mở ván mới được");
+        }
+
+        String newId = UUID.randomUUID().toString();
+        String existing = roomStateService != null ? roomStateService.claimRematch(oldRoomId, newId) : null;
+        if (existing != null) {
+            // Người khác vừa giữ chỗ — đợi phòng đó được lưu (tối đa ~2 giây).
+            for (int i = 0; i < 10; i++) {
+                Optional<Room> ready = roomRepository.findById(existing);
+                if (ready.isPresent()) return new RematchResult(ready.get(), false);
+                Thread.sleep(200);
+            }
+            throw new Exception("Ván mới đang được tạo, thử lại sau giây lát");
+        }
+
+        String roomCode = generateRoomCode();
+        while (roomRepository.findByRoomCode(roomCode).isPresent()) {
+            roomCode = generateRoomCode();
+        }
+        Room room = new Room();
+        room.setId(newId);
+        room.setRoomCode(roomCode);
+        room.setRoomName(old.getRoomName());
+        room.setHost(caller);
+        room.setMaxPlayers(old.getMaxPlayers());
+        room.setQuestionCount(old.getQuestionCount());
+        room.setTimePerQuestion(old.getTimePerQuestion());
+        room.setStatus(Room.RoomStatus.LOBBY);
+        room.setMode(old.getMode());
+        room.setIsPublic(old.getIsPublic());
+        room.setDifficulty(old.getDifficulty());
+        room.setBookScope(old.getBookScope());
+        room.setLanguage(old.getLanguage());
+        room.setHostPlaysGame(old.isHostPlaysGame());
+        room.setQuickMatch(old.isQuickMatch());
+        if (old.getQuestionSource() == Room.QuestionSource.AI_GENERATED) {
+            room.setQuestionSource(Room.QuestionSource.DATABASE); // câu AI dùng một lần
+        } else {
+            room.setQuestionSource(old.getQuestionSource());
+            room.setQuestionSetId(old.getQuestionSetId());
+            room.setGroupQuizSetId(old.getGroupQuizSetId());
+            if (old.getCustomQuestionIds() != null) room.setCustomQuestionIds(new java.util.ArrayList<>(old.getCustomQuestionIds()));
+        }
+        roomRepository.save(room);
+        if (room.isHostPlaysGame()) {
+            addPlayerToRoom(newId, caller);
+        }
+        webSocketController.broadcastRematchReady(oldRoomId, newId, roomCode);
+        return new RematchResult(room, true);
+    }
+
     public Room createQuickMatchRoom(User host, Room.RoomMode mode, String bookScope,
                                       Integer questionCount, Integer timePerQuestion, Integer maxPlayers,
                                       Room.QuestionSource source,

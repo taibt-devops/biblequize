@@ -1892,7 +1892,10 @@
     "end": {
       "sdMetric": "{{n}} duels won",
       "brMetric": "{{c}}/{{t}} correct",
-      "topPredictor": "Sharpest eye: {{name}} ({{n}} correct calls)"
+      "topPredictor": "Sharpest eye: {{name}} ({{n}} correct calls)",
+      "joinRematch": "Join the next game",
+      "playerRematch": "Play again with this group",
+      "rematchFailed": "Couldn't open the next game, try again"
     }
   },
   "groups": {

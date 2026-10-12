@@ -163,6 +163,34 @@ class RoomControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.success").value(false));
     }
 
+    // ── POST /api/rooms/{id}/rematch (PCV-17) ────────────────────────────────
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void rematch_returnsTheNewRoom() throws Exception {
+        com.biblequiz.modules.room.entity.Room fresh = new com.biblequiz.modules.room.entity.Room();
+        fresh.setId("room-2");
+        when(roomService.rematch(eq("room-1"), any())).thenReturn(new RoomService.RematchResult(fresh, true));
+        when(roomService.getRoomDetails("room-2")).thenReturn(testRoomDetails);
+
+        mockMvc.perform(post("/api/rooms/room-1/rematch"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.success").value(true))
+                .andExpect(jsonPath("$.created").value(true));
+    }
+
+    @Test
+    @Order(7)
+    @WithMockUser(username = "test@example.com")
+    void rematch_beforeTheGameEnds_returns400() throws Exception {
+        when(roomService.rematch(eq("room-1"), any())).thenThrow(new Exception("Trận chưa kết thúc"));
+
+        mockMvc.perform(post("/api/rooms/room-1/rematch"))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("Trận chưa kết thúc"));
+    }
+
     // ── POST /api/rooms/{id}/shuffle-teams (PCV-14) ──────────────────────────
 
     @Test

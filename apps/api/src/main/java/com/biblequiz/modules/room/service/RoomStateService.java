@@ -201,6 +201,18 @@ public class RoomStateService {
         return value instanceof AnswerKey key ? Optional.of(key) : Optional.empty();
     }
 
+    /**
+     * PCV-17 — giữ chỗ "ván mới" cho phòng {@code oldRoomId} (SETNX, 1 giờ). Trả null nếu lần này giữ được
+     * (người gọi tạo phòng {@code newRoomId}); ngược lại trả id phòng đã có người tạo trước.
+     */
+    public String claimRematch(String oldRoomId, String newRoomId) {
+        String key = "rematch:" + oldRoomId;
+        Boolean claimed = redisTemplate.opsForValue().setIfAbsent(key, newRoomId, Duration.ofHours(1));
+        if (Boolean.TRUE.equals(claimed)) return null;
+        Object existing = redisTemplate.opsForValue().get(key);
+        return existing != null ? existing.toString() : null;
+    }
+
     /** PCV-16: số thứ tự trận Đấu vương kế tiếp (1, 2, …). */
     public int nextSdMatchNo(String roomId) {
         Long n = redisTemplate.opsForValue().increment(KEY_SD_MATCH_NO_PREFIX + roomId);

@@ -186,3 +186,29 @@ describe('QuizEndScreen — ghi chú cuối trận (PCV-16)', () => {
     expect(screen.getByTestId('end-note').textContent).toBe('Khán giả tinh mắt: Chi (3 lần đoán đúng)')
   })
 })
+
+describe('QuizEndScreen — chơi lại với nhóm (PCV-17)', () => {
+  const props = {
+    results: SAMPLE, totalQuestions: 15, myUsername: 'An', myUserId: 'a',
+    onReplay: noop, onClose: noop, onShare: noop, onNewRoom: noop, onHome: noop,
+  }
+
+  it('chủ phòng đã mở ván mới: người chơi thấy "Vào ván mới"', () => {
+    const onJoin = vi.fn()
+    render(<QuizEndScreen {...props} isHost={false} rematchReady onJoinRematch={onJoin} />)
+    fireEvent.click(screen.getByTestId('end-join-rematch'))
+    expect(onJoin).toHaveBeenCalledOnce()
+  })
+
+  it('chưa có ván mới: không có nút vào', () => {
+    render(<QuizEndScreen {...props} isHost={false} />)
+    expect(screen.queryByTestId('end-join-rematch')).toBeNull()
+  })
+
+  it('Đấu nhanh: người chơi tự mở được ván mới', () => {
+    const onRematch = vi.fn()
+    render(<QuizEndScreen {...props} isHost={false} onPlayerRematch={onRematch} />)
+    fireEvent.click(screen.getByTestId('end-player-rematch'))
+    expect(onRematch).toHaveBeenCalledOnce()
+  })
+})

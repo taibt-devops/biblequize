@@ -304,6 +304,8 @@ export type RoomEvent =
   | { type: 'NEXT_QUESTION'; data?: unknown }
   // ── Per-mode ──
   | { type: 'PLAYER_ELIMINATED'; data: PlayerEliminatedData }
+  /** PCV-17: ván mới của nhóm đã mở. */
+  | { type: 'REMATCH_READY'; data: { roomId: string; roomCode: string } }
   /** PCV-16: Đấu vương — ai đoán đúng người thắng trận. */
   | { type: 'PREDICTION_RESULT'; data: { matchNo: number; winnerId: string; correctUserIds: string[] } }
   /** PCV-13: Sinh tồn — bóng hồi sinh với 1 mạng. */

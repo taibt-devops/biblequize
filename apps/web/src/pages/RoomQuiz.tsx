@@ -73,6 +73,9 @@ const RoomQuiz: React.FC = () => {
   const hostPlaysGameFromState = (state as { hostPlaysGame?: boolean } | null)?.hostPlaysGame;
   const showHostHint = hostPlaysGameFromState === false; // Quan Tro mode → show "đang theo dõi" hint
   const [isPaused, setIsPaused] = useState(false);
+  // PCV-17: ván mới của nhóm (REMATCH_READY) + phòng có phải Đấu nhanh (ai cũng mở ván mới được).
+  const [rematch, setRematch] = useState<{ roomId: string; roomCode: string } | null>(null);
+  const [isQuickMatchRoom, setIsQuickMatchRoom] = useState(false);
   const [skipToast, setSkipToast] = useState(false);
   const [hostBroadcast, setHostBroadcast] = useState<{ hostName: string; message: string } | null>(null);
 
@@ -295,6 +298,10 @@ const RoomQuiz: React.FC = () => {
         navigate('/multiplayer', { replace: true, state: { roomEndedReason: msg.data?.reason ?? 'GENERIC' } });
         break;
       }
+      case 'REMATCH_READY': {
+        setRematch(msg.data);
+        break;
+      }
       case 'HOST_CHANGED': {
         // SPEC §5.4.0 R4 — host promoted mid-game. We don't store
         // host details locally on this page; just log so dev tools can
@@ -410,6 +417,7 @@ const RoomQuiz: React.FC = () => {
         if (cancelled) return;
         // Authoritative viewer identity (covers reloads where nav state is gone).
         if (roomRes.data?.viewerUserId) setMyUserId(roomRes.data.viewerUserId);
+        setIsQuickMatchRoom(roomRes.data?.room?.quickMatch === true);
         const status = roomRes.data?.room?.status;
         if (status === 'ENDED') {
           const lbRes = await api.get(`/api/rooms/${roomId}/leaderboard`);
@@ -495,6 +503,29 @@ const RoomQuiz: React.FC = () => {
       ? (p: PlayerScore) => t('room.end.brMetric', { c: p.correctAnswers ?? 0, t: p.totalAnswered ?? 0 })
       : undefined;
 
+  // PCV-17: mở ván mới cùng cài đặt (chủ phòng; Đấu nhanh: người chơi) rồi vào sảnh của nó.
+  const startRematch = async () => {
+    if (!roomId) return;
+    try {
+      const res = await api.post(`/api/rooms/${roomId}/rematch`);
+      if (res.data?.success && res.data.room?.id) {
+        navigate(`/room/${res.data.room.id}/lobby`, { replace: true, state: { room: res.data.room, viewerUserId: res.data.viewerUserId } });
+      }
+    } catch (err: any) {
+      showError(err?.response?.data?.message ?? t('room.end.rematchFailed'), 'warning');
+    }
+  };
+  const joinRematch = async () => {
+    if (!rematch) return;
+    try {
+      const res = await api.post('/api/rooms/join', { roomCode: rematch.roomCode });
+      const joined = res.data?.room ?? { id: rematch.roomId };
+      navigate(`/room/${joined.id}/lobby`, { replace: true, state: { room: res.data?.room, viewerUserId: res.data?.viewerUserId } });
+    } catch {
+      navigate(`/room/${rematch.roomId}/lobby`, { replace: true });
+    }
+  };
+
   // PCV-16: Đấu vương — "Khán giả tinh mắt": người đoán đúng nhiều nhất (từ leaderboard cuối trận).
   const endNote = (() => {
     if (!isSuddenDeath) return null;
@@ -536,9 +567,12 @@ const RoomQuiz: React.FC = () => {
           isHost={isHost}
           totalQuestions={core.totalQuestions}
           startedAtMs={matchStartedAtRef.current}
-          onReplay={() => navigate(exitTo, { replace: true })}
+          onReplay={startRematch}
           onClose={() => navigate(exitTo, { replace: true })}
           onShare={() => navigate(exitTo, { replace: true })}
+          rematchReady={!!rematch}
+          onJoinRematch={joinRematch}
+          onPlayerRematch={isQuickMatchRoom ? startRematch : undefined}
           onNewRoom={() => navigate('/room/create', { replace: true })}
           onHome={() => navigate('/', { replace: true })}
           onAnalytics={() => navigate(`/room/${roomId}/analytics`)}

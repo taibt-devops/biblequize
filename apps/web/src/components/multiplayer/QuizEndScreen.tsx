@@ -1,4 +1,5 @@
 import { useMemo, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Podium from './Podium';
 import HeadToHead from './HeadToHead';
 import ConfettiBurst from './ConfettiBurst';
@@ -28,6 +29,11 @@ interface Props {
   metric?: (p: PlayerScore) => string;
   /** PCV-16: một dòng ghi chú dưới bục (vd "Khán giả tinh mắt: …"). */
   note?: string | null;
+  /** PCV-17: chủ phòng đã mở ván mới — người chơi bấm để vào. */
+  rematchReady?: boolean;
+  onJoinRematch?: () => void;
+  /** PCV-17: Đấu nhanh — người chơi tự mở ván mới cho cả nhóm. */
+  onPlayerRematch?: () => void;
 }
 
 function formatDuration(ms: number | null | undefined): string {
@@ -41,7 +47,9 @@ function formatDuration(ms: number | null | undefined): string {
 export function QuizEndScreen({
   results, myUsername, myUserId, isHost, totalQuestions, startedAtMs,
   onReplay, onClose, onShare, onNewRoom, onHome, onAnalytics, metric, note,
+  rematchReady, onJoinRematch, onPlayerRematch,
 }: Props) {
+  const { t } = useTranslation();
   // Rank order: finalRank when the mode assigns it (BR/SD), else score DESC
   // (Speed Race & co never set finalRank — deriving rank from position fixes
   // the winner being shown as "Chưa xếp hạng").
@@ -233,7 +241,18 @@ export function QuizEndScreen({
               >
                 Tiếp theo?
               </div>
-              <ActionButton primary onClick={onShare} icon="share" label="Chia sẻ kết quả" testId="end-player-share" />
+              {/* PCV-17: ván mới của cả nhóm */}
+              {rematchReady && onJoinRematch && (
+                <div className="mb-3">
+                  <ActionButton primary onClick={onJoinRematch} icon="replay" label={t('room.end.joinRematch')} testId="end-join-rematch" />
+                </div>
+              )}
+              {!rematchReady && onPlayerRematch && (
+                <div className="mb-3">
+                  <ActionButton primary onClick={onPlayerRematch} icon="replay" label={t('room.end.playerRematch')} testId="end-player-rematch" />
+                </div>
+              )}
+              <ActionButton primary={!rematchReady && !onPlayerRematch} onClick={onShare} icon="share" label="Chia sẻ kết quả" testId="end-player-share" />
               <div className="grid grid-cols-2 gap-2 mt-3">
                 <ActionButton onClick={onNewRoom} icon="swords" label="Phòng mới" testId="end-player-new-room" small />
                 <ActionButton onClick={onHome} icon="home" label="Trang chủ" testId="end-player-home" small />

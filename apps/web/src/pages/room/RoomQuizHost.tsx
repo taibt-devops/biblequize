@@ -266,17 +266,18 @@ const RoomQuizHost: React.FC = () => {
     callHost('end-early');
   };
 
-  const handleReplayWithSameGroup = () => {
-    // Sprint 4: pre-fill CreateRoom with mode + invite list. CreateRoom can
-    // ignore unknown nav-state fields safely.
-    navigate('/multiplayer/create', {
-      state: {
-        prefill: {
-          mode: navState.mode ?? 'SPEED_RACE',
-          invitePlayerIds: (finalRanks ?? []).map(r => r.playerId).filter(Boolean) as string[],
-        },
-      },
-    });
+  // PCV-17: "Tổ chức trận mới với cùng nhóm" = mở phòng mới cùng cài đặt (POST /rematch); người chơi
+  // đang ở màn kết quả nhận REMATCH_READY và bấm "Vào ván mới".
+  const handleReplayWithSameGroup = async () => {
+    if (!roomId) return;
+    try {
+      const res = await api.post(`/api/rooms/${roomId}/rematch`);
+      if (res.data?.success && res.data.room?.id) {
+        navigate(`/room/${res.data.room.id}/lobby`, { replace: true, state: { room: res.data.room, viewerUserId: res.data.viewerUserId } });
+      }
+    } catch {
+      navigate('/multiplayer/create', { state: { prefill: { mode: navState.mode ?? 'SPEED_RACE' } } });
+    }
   };
 
   const matchStats = useMemo(() => {

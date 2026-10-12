@@ -492,6 +492,14 @@ public class RoomWebSocketController {
         sendToRoom(roomId, new WebSocketMessage.Message(WebSocketMessage.MessageTypes.MATCH_START, data));
     }
 
+    /** PCV-17: ván mới đã mở — mọi người còn ở màn kết quả của phòng cũ thấy nút "Vào ván mới". */
+    public void broadcastRematchReady(String oldRoomId, String newRoomId, String roomCode) {
+        Map<String, Object> data = new java.util.HashMap<>();
+        data.put("roomId", newRoomId);
+        data.put("roomCode", roomCode);
+        sendToRoom(oldRoomId, new WebSocketMessage.Message(WebSocketMessage.MessageTypes.REMATCH_READY, data));
+    }
+
     /** PCV-16: ai đoán đúng người thắng trận {@code matchNo}. */
     public void broadcastPredictionResult(String roomId, int matchNo, String winnerId, java.util.List<String> correctUserIds) {
         Map<String, Object> data = new java.util.HashMap<>();

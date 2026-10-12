@@ -315,6 +315,22 @@ public class RoomController {
     }
 
     /**
+     * PCV-17: POST /api/rooms/{id}/rematch — "Chơi lại với nhóm này": mở (hoặc lấy) phòng mới cùng cài đặt.
+     */
+    @PostMapping("/{id}/rematch")
+    public ResponseEntity<?> rematch(@PathVariable String id, Principal principal) {
+        try {
+            User user = getUser(principal);
+            RoomService.RematchResult result = roomService.rematch(id, user);
+            RoomService.RoomDetailsDTO details = roomService.getRoomDetails(result.room.getId());
+            return ResponseEntity.ok(Map.of("success", true, "room", details, "viewerUserId", user.getId(),
+                    "created", result.created));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of("success", false, "message", String.valueOf(e.getMessage())));
+        }
+    }
+
+    /**
      * PCV-14: POST /api/rooms/{id}/shuffle-teams — xáo lại hai đội cho cân (Đội đấu đội, ở sảnh chờ).
      */
     @PostMapping("/{id}/shuffle-teams")

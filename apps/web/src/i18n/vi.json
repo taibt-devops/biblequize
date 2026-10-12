@@ -1892,7 +1892,10 @@
     "end": {
       "sdMetric": "{{n}} trận thắng",
       "brMetric": "{{c}}/{{t}} câu đúng",
-      "topPredictor": "Khán giả tinh mắt: {{name}} ({{n}} lần đoán đúng)"
+      "topPredictor": "Khán giả tinh mắt: {{name}} ({{n}} lần đoán đúng)",
+      "joinRematch": "Vào ván mới",
+      "playerRematch": "Chơi lại cùng nhóm này",
+      "rematchFailed": "Chưa mở được ván mới, thử lại"
     }
   },
   "groups": {

@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 
 // Mock STOMP so the component renders synchronously without a real WS.
@@ -174,5 +174,21 @@ describe('RoomQuizHost', () => {
     })
     expect(await screen.findByText(/✓ ĐÚNG · \+140/)).toBeInTheDocument()
     expect(screen.getByText(/✗ SAI/)).toBeInTheDocument()
+  })
+})
+
+describe('RoomQuizHost — tổ chức trận mới với cùng nhóm (PCV-17)', () => {
+  it('bấm "Tổ chức trận mới" gọi API chơi lại của phòng', async () => {
+    mockApiPost.mockResolvedValue({ data: { success: true, room: { id: 'room-2' }, viewerUserId: 'host' } })
+    await renderHost()
+    lastOnMessage!({
+      type: 'QUIZ_END',
+      data: [
+        { playerId: 'u1', username: 'An', score: 266, correctAnswers: 2, totalAnswered: 5 },
+        { playerId: 'u2', username: 'Bui', score: 0, correctAnswers: 0, totalAnswered: 5 },
+      ],
+    })
+    fireEvent.click(await screen.findByTestId('end-host-replay'))
+    await waitFor(() => expect(mockApiPost).toHaveBeenCalledWith(expect.stringMatching(/\/api\/rooms\/[^/]+\/rematch$/)))
   })
 })

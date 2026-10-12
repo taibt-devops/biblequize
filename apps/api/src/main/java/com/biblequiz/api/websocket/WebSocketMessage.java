@@ -41,6 +41,8 @@ public class WebSocketMessage {
         public static final String PLAYER_REVIVED = "PLAYER_REVIVED";
         /** PCV-16: Đấu vương — kết quả đoán của khán giả sau mỗi trận. */
         public static final String PREDICTION_RESULT = "PREDICTION_RESULT";
+        /** PCV-17: ván mới đã mở cho nhóm của phòng cũ. */
+        public static final String REMATCH_READY = "REMATCH_READY";
         public static final String BATTLE_ROYALE_UPDATE = "BATTLE_ROYALE_UPDATE";
 
         // Scoreboard events
