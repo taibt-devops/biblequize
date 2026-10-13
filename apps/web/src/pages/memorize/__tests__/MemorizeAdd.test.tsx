@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { screen, fireEvent, waitFor } from '@testing-library/react'
 import { renderWithProviders } from '../../../test/test-utils'
 import MemorizeAdd from '../MemorizeAdd'
@@ -41,6 +41,8 @@ beforeEach(() => {
   })
 })
 
+afterEach(() => window.history.pushState({}, '', '/'))
+
 const select = (id: string, value: string) => fireEvent.change(screen.getByTestId(id), { target: { value } })
 const optionsOf = (id: string) =>
   Array.from((screen.getByTestId(id) as HTMLSelectElement).options).slice(1).map(o => ({ value: o.value, label: o.text }))
@@ -61,6 +63,25 @@ async function pickJohn316to(to: string) {
 }
 
 describe('MemorizeAdd', () => {
+  it('prefills book, chapter and verses from a link (Câu hôm nay ở Làng nhỏ)', async () => {
+    window.history.pushState({}, '', '/practice/memorize/add?book=John&chapter=3&from=16&to=16')
+    renderWithProviders(<MemorizeAdd />)
+    await screen.findByRole('option', { name: 'Giăng' })
+    expect(screen.getByTestId('memorize-add-book')).toHaveValue('John')
+    expect(screen.getByTestId('memorize-add-chapter')).toHaveValue('3')
+    await waitFor(() => expect(screen.getByTestId('memorize-add-verse-from')).toHaveValue('16'))
+    expect(screen.getByTestId('memorize-add-verse-to')).toHaveValue('16')
+    expect(await screen.findByTestId('memorize-add-preview')).toHaveTextContent('fixture 16')
+  })
+
+  it('ignores a link whose book is unknown', async () => {
+    window.history.pushState({}, '', '/practice/memorize/add?book=Nope&chapter=3&from=16')
+    renderWithProviders(<MemorizeAdd />)
+    await screen.findByRole('option', { name: 'Giăng' })
+    await waitFor(() => expect(screen.getByTestId('memorize-add-book')).toHaveValue(''))
+    expect(screen.getByTestId('memorize-add-chapter')).toBeDisabled()
+  })
+
   it('lists books in canonical order and locks later pickers until earlier ones are chosen', async () => {
     renderWithProviders(<MemorizeAdd />)
     await screen.findByRole('option', { name: 'Giăng' })

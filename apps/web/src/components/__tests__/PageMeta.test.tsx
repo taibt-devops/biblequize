@@ -22,16 +22,16 @@ describe('PageMeta', () => {
     expect(content(container, 'meta[property="og:type"]')).toBe('website')
     expect(content(container, 'meta[property="og:title"]')).toBe('Thử Thách — BibleQuiz')
     expect(content(container, 'meta[property="og:description"]')).toBe('Mô tả trang')
-    expect(content(container, 'meta[property="og:url"]')).toBe('https://forbible.org/daily')
-    expect(content(container, 'meta[property="og:image"]')).toBe('https://forbible.org/og-image.png')
+    expect(content(container, 'meta[property="og:url"]')).toBe('https://quiz.forbible.org/daily')
+    expect(content(container, 'meta[property="og:image"]')).toBe('https://quiz.forbible.org/og-image.png')
 
     expect(content(container, 'meta[name="twitter:card"]')).toBe('summary_large_image')
     expect(content(container, 'meta[name="twitter:title"]')).toBe('Thử Thách — BibleQuiz')
     expect(content(container, 'meta[name="twitter:description"]')).toBe('Mô tả trang')
-    expect(content(container, 'meta[name="twitter:image"]')).toBe('https://forbible.org/og-image.png')
+    expect(content(container, 'meta[name="twitter:image"]')).toBe('https://quiz.forbible.org/og-image.png')
 
     expect(find(container, 'link[rel="canonical"]')?.getAttribute('href')).toBe(
-      'https://forbible.org/daily',
+      'https://quiz.forbible.org/daily',
     )
   })
 

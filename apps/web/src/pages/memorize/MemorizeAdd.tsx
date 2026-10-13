@@ -1,6 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Skeleton } from '../../components/Skeleton'
 import { getChapterCount } from '../../data/bibleData'
 import { useBooks } from '../../hooks/useBookName'
@@ -20,10 +20,16 @@ export default function MemorizeAdd() {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const { data: books = [] } = useBooks()
-  const [book, setBook] = useState('')
-  const [chapter, setChapter] = useState(0)
-  const [from, setFrom] = useState(0)
-  const [to, setTo] = useState(0)
+  // Link "Thuộc câu này" từ Làng nhỏ: ?book=John&chapter=3&from=16&to=16 chọn sẵn câu.
+  const [params] = useSearchParams()
+  const so = (k: string) => {
+    const v = Number(params.get(k))
+    return Number.isInteger(v) && v > 0 ? v : 0
+  }
+  const [book, setBook] = useState(() => params.get('book') ?? '')
+  const [chapter, setChapter] = useState(() => (params.get('book') ? so('chapter') : 0))
+  const [from, setFrom] = useState(() => (params.get('book') ? so('from') : 0))
+  const [to, setTo] = useState(() => (params.get('book') ? so('to') || so('from') : 0))
   const passage = usePassage(book || undefined, chapter || undefined, from || undefined, to || undefined)
   const chapterVerses = useChapterVerses(book || undefined, chapter || undefined)
   const addVerse = useAddMemoryVerse()
@@ -32,6 +38,10 @@ export default function MemorizeAdd() {
     () => (Array.isArray(books) ? [...books] : []).sort((a, b) => a.orderIndex - b.orderIndex),
     [books],
   )
+  useEffect(() => {
+    if (!book || sortedBooks.length === 0) return
+    if (!sortedBooks.some(b => b.name === book)) { setBook(''); setChapter(0); setFrom(0); setTo(0) }
+  }, [book, sortedBooks])
   const verses = chapterVerses.data ?? []
   const noVerses = !!chapter && chapterVerses.isSuccess && verses.length === 0
   const status = (addVerse.error as { response?: { status?: number } } | null)?.response?.status

@@ -33,8 +33,8 @@ describe('SEO: index.html language/locale correctness', () => {
   })
 
   it('og/twitter images point to the raster .png, not .svg', () => {
-    expect(html).toContain('property="og:image" content="https://forbible.org/og-image.png"')
-    expect(html).toContain('name="twitter:image" content="https://forbible.org/og-image.png"')
+    expect(html).toContain('property="og:image" content="https://quiz.forbible.org/og-image.png"')
+    expect(html).toContain('name="twitter:image" content="https://quiz.forbible.org/og-image.png"')
     expect(html).not.toContain('og-image.svg')
   })
 })
@@ -50,13 +50,13 @@ describe('SEO: sitemap.xml + robots.txt', () => {
     .map((l) => l.slice('disallow:'.length).trim())
     .filter(Boolean)
 
-  it('lists the core public pages, all under forbible.org', () => {
+  it('lists the core public pages, all under quiz.forbible.org (Bible Quiz since 13/10/2026)', () => {
     expect(locs.length).toBeGreaterThanOrEqual(4)
-    for (const loc of locs) expect(loc).toMatch(/^https:\/\/forbible\.org\//)
+    for (const loc of locs) expect(loc).toMatch(/^https:\/\/quiz\.forbible\.org\//)
   })
 
   it('does not advertise the /landing duplicate of /', () => {
-    expect(locs).not.toContain('https://forbible.org/landing')
+    expect(locs).not.toContain('https://quiz.forbible.org/landing')
   })
 
   it('every <url> carries a <lastmod>', () => {
@@ -67,14 +67,14 @@ describe('SEO: sitemap.xml + robots.txt', () => {
 
   it('no sitemap URL is blocked by a robots Disallow rule', () => {
     for (const loc of locs) {
-      const path = loc.replace('https://forbible.org', '') || '/'
+      const path = loc.replace('https://quiz.forbible.org', '') || '/'
       const blocked = disallows.find((d) => path.startsWith(d))
       expect(blocked, `${path} blocked by Disallow: ${blocked}`).toBeUndefined()
     }
   })
 
   it('robots points at the sitemap and drops the phantom /share/ allow', () => {
-    expect(robots).toMatch(/Sitemap:\s*https:\/\/forbible\.org\/sitemap\.xml/)
+    expect(robots).toMatch(/Sitemap:\s*https:\/\/quiz\.forbible\.org\/sitemap\.xml/)
     expect(robots).not.toContain('/share/')
     expect(robots).toContain('Disallow: /admin/')
   })

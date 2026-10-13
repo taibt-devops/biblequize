@@ -26,7 +26,7 @@ const PuppeteerRenderer = PuppeteerRendererPkg.default ?? PuppeteerRendererPkg
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = resolve(__dirname, '..', 'dist')
-const ORIGIN = 'https://forbible.org'
+const ORIGIN = 'https://quiz.forbible.org'
 
 // Deterministic, static-content public pages + their canonical path. `/` renders
 // the guest crossroads (GuestHome; checkAuth short-circuits without a session) and

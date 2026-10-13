@@ -25,7 +25,7 @@ describe('public pages set a per-page canonical', () => {
         <Page />
       </MemoryRouter>,
     )
-    expect(canonical()).toBe(`https://forbible.org${path}`)
+    expect(canonical()).toBe(`https://quiz.forbible.org${path}`)
   })
 })
 

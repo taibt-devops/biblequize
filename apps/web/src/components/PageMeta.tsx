@@ -9,7 +9,7 @@ interface PageMetaProps {
   noindex?: boolean
 }
 
-const BASE_URL = 'https://forbible.org'
+const BASE_URL = 'https://quiz.forbible.org'
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`
 
 export default function PageMeta({ title, description, ogImage, canonicalPath, noindex }: PageMetaProps) {
