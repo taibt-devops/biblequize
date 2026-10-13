@@ -2,6 +2,16 @@
 
 ---
 
+## 2026-10-13 — forbible.org thành Làng nhỏ, Bible Quiz sang quiz.forbible.org
+
+- Chủ dự án chọn thay luôn forbible.org. Đường cũ của Bible Quiz chuyển 301 sang `quiz.forbible.org`, giữ đường và query. `/api/*`, `/oauth2/*`, `/ws`, `/health`, `/.well-known/*` ở forbible.org vẫn tới API để app cũ và tab đang mở không gãy.
+- `APP_FRONTEND_URL` thành `https://quiz.forbible.org`. Thêm `APP_HOME_URL=https://forbible.org` cho `?app=home`. Không cần sửa Google Console, vì redirect URI là `be.forbible.org`, còn cookie phiên OAuth có `Domain=forbible.org`.
+- Cookie refresh của Bible Quiz là host-only (`Path=/api/auth`), nên người đang đăng nhập phải đăng nhập lại một lần ở tên miền mới. Làng dùng chung phiên `be.forbible.org` với app Đọc.
+- `GET /api/home/me` chỉ đọc và chỉ trả số. Không đếm chuỗi ngày, không có huy hiệu "Mới" cho Cầu nguyện.
+- **Implementation:** HOM-1..6, task `docs/todo/active/2026-10-13-home-forbible.md`.
+
+---
+
 ## 2026-10-13 — API cho app Cầu nguyện của làng forbible
 
 - **Bối cảnh:** chủ dự án chọn Cầu nguyện là app tiếp theo của làng forbible. App chạy trong app Đọc (`doc.forbible.org/cau-nguyen`), dữ liệu và đăng nhập dùng Bible Quiz, như tiến độ đọc (V76).

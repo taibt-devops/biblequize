@@ -9,6 +9,7 @@
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-13 | Trang chủ Làng nhỏ ở forbible.org; Bible Quiz sang quiz.forbible.org (301 từ đường cũ, API ở tên miền cũ giữ nguyên); `GET /api/home/me`, `?app=home` (HOM-1..6) | IN PROGRESS | [detail](docs/todo/active/2026-10-13-home-forbible.md) |
 | 2026-10-13 | API cho app Cầu nguyện (Nhà nguyện, doc.forbible.org/cau-nguyen): V79 `prayer_*`, `/api/prayer/me/*`, `/api/public/prayer/shares/*`, rate limit trang người nhận, dọn bia mộ (PRA-1..6) | DONE (prod 13/10: api 61780613, V79; app doc.forbible.org eefdf90) | [detail](docs/todo/active/2026-10-13-prayer-api.md) |
 | 2026-10-13 | Bỏ sinh câu hỏi bằng AI ở mọi nơi (Phòng chơi/Đấu nhanh, Bộ câu của tôi, bộ câu nhóm, Quản trị) — giữ câu và dữ liệu đã có (AIR-1..5) | DONE (prod 13/10: api fbe6562b; biến GEMINI_API_KEY trong compose prod không còn được đọc) | [detail](docs/todo/active/2026-10-13-bo-ai-sinh-cau-hoi.md) |
 | 2026-10-12 | Phòng chơi v2: máy chủ đo giờ + chống lộ đáp án, luật số người theo mode, nhiệm vụ ngày đếm đủ, thiết kế lại 4 mode (chuỗi/câu chốt, mạng + hồi sinh, điểm đội trung bình, Đấu vương xoay vòng), chơi lại, người máy, Hội ý, Thách đấu, Ôn phần đọc (PCV-1..25) | DONE (prod 13/10: V77/V78, doc.forbible.org e40123b) | [detail](docs/todo/active/2026-10-12-phong-choi-v2.md) |
