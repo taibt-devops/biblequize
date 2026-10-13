@@ -19,6 +19,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
+import java.util.Optional;
+import com.biblequiz.modules.prayer.entity.PrayerIntercession;
 
 class PrayerServiceTest {
 
@@ -159,5 +161,91 @@ class PrayerServiceTest {
         ArgumentCaptor<PrayerPrayed> row = ArgumentCaptor.forClass(PrayerPrayed.class);
         verify(prayedRepo).save(row.capture());
         assertEquals(p1, row.getValue().getId());
+    }
+
+    private PrayerItem liveItem(String id) {
+        PrayerItem it = PrayerItem.of("u1", item(id, "Ba mẹ", T0), NOW);
+        when(itemRepo.findById(id)).thenReturn(Optional.of(it));
+        return it;
+    }
+
+    @Test
+    void share_createsUrlSafeTokenOf22Chars() {
+        liveItem(A);
+        when(shareRepo.findFirstByItemIdAndRevokedAtIsNull(A)).thenReturn(Optional.empty());
+
+        PrayerService.ShareView v = service.share("u1", A, NOW);
+
+        assertTrue(PrayerInput.isToken(v.token()));
+        assertEquals("https://doc.forbible.org/cn/" + v.token(), v.url());
+        assertNotEquals(PrayerService.newToken(), PrayerService.newToken());
+        verify(shareRepo).save(any(PrayerShare.class));
+    }
+
+    @Test
+    void share_reusesOpenLink() {
+        liveItem(A);
+        PrayerShare open = new PrayerShare("AbCdEfGhIjKlMnOpQr_-12", A, "u1", T0);
+        when(shareRepo.findFirstByItemIdAndRevokedAtIsNull(A)).thenReturn(Optional.of(open));
+
+        assertEquals("AbCdEfGhIjKlMnOpQr_-12", service.share("u1", A, NOW).token());
+        verify(shareRepo, never()).save(any());
+    }
+
+    @Test
+    void share_answeredOrOver100_isConflict() {
+        PrayerItem answered = PrayerItem.of("u1",
+                new Item(A, "Ba mẹ", null, "ANSWERED", "Ba khỏe rồi", T0, T0, T0, null), NOW);
+        when(itemRepo.findById(A)).thenReturn(Optional.of(answered));
+        assertThrows(IllegalStateException.class, () -> service.share("u1", A, NOW));
+
+        liveItem(B);
+        when(shareRepo.findFirstByItemIdAndRevokedAtIsNull(B)).thenReturn(Optional.empty());
+        when(shareRepo.countByUserIdAndRevokedAtIsNull("u1")).thenReturn(100L);
+        assertThrows(IllegalStateException.class, () -> service.share("u1", B, NOW));
+    }
+
+    @Test
+    void share_foreignDeletedOrMissing_notFound() {
+        when(itemRepo.findById(A)).thenReturn(Optional.of(PrayerItem.of("u2", item(A, "Của người khác", T0), NOW)));
+        when(itemRepo.findById(B)).thenReturn(Optional.of(PrayerItem.of("u1", tomb(B, T0), NOW)));
+        assertThrows(java.util.NoSuchElementException.class, () -> service.share("u1", A, NOW));
+        assertThrows(java.util.NoSuchElementException.class, () -> service.share("u1", B, NOW));
+        assertThrows(java.util.NoSuchElementException.class,
+                () -> service.share("u1", "99999999-9999-4999-8999-999999999999", NOW));
+    }
+
+    @Test
+    void revoke_ownLink_closesIt_foreignNotFound() {
+        PrayerShare mine = new PrayerShare("AbCdEfGhIjKlMnOpQr_-12", A, "u1", T0);
+        PrayerShare theirs = new PrayerShare("ZyXwVuTsRqPoNmLkJiHg_-98", B, "u2", T0);
+        when(shareRepo.findById(mine.getToken())).thenReturn(Optional.of(mine));
+        when(shareRepo.findById(theirs.getToken())).thenReturn(Optional.of(theirs));
+
+        service.revoke("u1", mine.getToken(), NOW);
+        assertFalse(mine.isOpen());
+        assertDoesNotThrow(() -> service.revoke("u1", mine.getToken(), NOW));
+        assertThrows(java.util.NoSuchElementException.class, () -> service.revoke("u1", theirs.getToken(), NOW));
+        assertTrue(theirs.isOpen());
+    }
+
+    @Test
+    void intercessions_groupedByVisitor_latestNameKept_newestFirst() {
+        liveItem(A);
+        String v1 = "11111111-1111-4111-8111-111111111111";
+        String v2 = "22222222-2222-4222-8222-222222222222";
+        String tok = "AbCdEfGhIjKlMnOpQr_-12";
+        when(interRepo.findForItem(A)).thenReturn(List.of(
+                new PrayerIntercession(tok, v1, null, T0),
+                new PrayerIntercession(tok, v2, "Minh", T0.plusSeconds(10)),
+                new PrayerIntercession(tok, v1, "Hạnh", T0.plusSeconds(20))));
+
+        PrayerService.Intercessions r = service.intercessions("u1", A);
+
+        assertEquals(2, r.total());
+        assertEquals("Hạnh", r.people().get(0).name());
+        assertEquals(2, r.people().get(0).count());
+        assertEquals(T0.plusSeconds(20), r.people().get(0).lastPrayedAt());
+        assertEquals("Minh", r.people().get(1).name());
     }
 }

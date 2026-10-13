@@ -18,6 +18,8 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
+import com.biblequiz.modules.prayer.entity.PrayerIntercession;
+import java.security.SecureRandom;
 
 /**
  * Sổ cầu nguyện của người đã đăng nhập (forbible-doc docs/cau-nguyen/03-du-lieu-va-api.md mục 3).
@@ -111,5 +113,63 @@ public class PrayerService {
                 .sorted(Comparator.comparing(PrayerItem::createdAtInstant))
                 .map(PrayerItem::toItem)
                 .toList();
+    }
+
+    public static final int SHARES_MAX = 100;
+    private static final SecureRandom RANDOM = new SecureRandom();
+
+    public record Person(String name, int count, Instant lastPrayedAt) {}
+
+    public record Intercessions(int total, List<Person> people) {}
+
+    @Transactional
+    public ShareView share(String userId, String itemId, Instant now) {
+        PrayerItem item = ownedLive(userId, itemId);
+        if (item.isAnswered()) throw new IllegalStateException("Điều này đã được đáp lời");
+        Optional<PrayerShare> open = shareRepo.findFirstByItemIdAndRevokedAtIsNull(itemId);
+        if (open.isPresent()) return view(open.get());
+        if (shareRepo.countByUserIdAndRevokedAtIsNull(userId) >= SHARES_MAX) {
+            throw new IllegalStateException("Tối đa " + SHARES_MAX + " link đang mở");
+        }
+        return view(shareRepo.save(new PrayerShare(newToken(), itemId, userId, now)));
+    }
+
+    @Transactional
+    public void revoke(String userId, String token, Instant now) {
+        PrayerShare s = shareRepo.findById(token).filter(x -> x.getUserId().equals(userId))
+                .orElseThrow(() -> new NoSuchElementException("Không có link này"));
+        if (s.isOpen()) {
+            s.revoke(now);
+            shareRepo.save(s);
+        }
+    }
+
+    @Transactional(readOnly = true)
+    public Intercessions intercessions(String userId, String itemId) {
+        ownedLive(userId, itemId);
+        Map<String, List<PrayerIntercession>> byVisitor = interRepo.findForItem(itemId).stream()
+                .collect(Collectors.groupingBy(PrayerIntercession::getVisitorId, LinkedHashMap::new, Collectors.toList()));
+        List<Person> people = byVisitor.values().stream().map(rows -> {
+            String name = null;
+            Instant last = null;
+            for (PrayerIntercession r : rows) { // đã xếp theo giờ tăng dần
+                if (r.getVisitorName() != null) name = r.getVisitorName();
+                last = r.prayedAtInstant();
+            }
+            return new Person(name, rows.size(), last);
+        }).sorted(Comparator.comparing(Person::lastPrayedAt).reversed()).toList();
+        return new Intercessions(people.size(), people);
+    }
+
+    /** Token 16 byte ngẫu nhiên, base64url không đệm: 22 ký tự. */
+    static String newToken() {
+        byte[] b = new byte[16];
+        RANDOM.nextBytes(b);
+        return Base64.getUrlEncoder().withoutPadding().encodeToString(b);
+    }
+
+    private PrayerItem ownedLive(String userId, String itemId) {
+        return itemRepo.findById(itemId).filter(p -> p.getUserId().equals(userId) && !p.isDeleted())
+                .orElseThrow(() -> new NoSuchElementException("Không có điều này"));
     }
 }
