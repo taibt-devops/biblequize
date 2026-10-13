@@ -8,4 +8,7 @@ import java.util.List;
 
 public interface PrayerPrayedRepository extends JpaRepository<PrayerPrayed, String> {
     List<PrayerPrayed> findByUserIdAndPrayedAtAfter(String userId, LocalDateTime after);
+
+    /** Có lần "Đã cầu nguyện" nào từ mốc này (UTC): trang chủ chỉ cần biết có hay không. */
+    boolean existsByUserIdAndPrayedAtGreaterThanEqual(String userId, LocalDateTime from);
 }

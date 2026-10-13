@@ -13,6 +13,8 @@ import java.time.LocalDateTime;
 public interface PrayerItemRepository extends JpaRepository<PrayerItem, String> {
     List<PrayerItem> findByUserId(String userId);
 
+    boolean existsByUserIdAndDeletedAtIsNull(String userId);
+
     /** Xóa hẳn bia mộ cũ; prayer_prayed, prayer_shares, prayer_intercessions xóa theo khóa ngoại ON DELETE CASCADE. */
     @Modifying
     @Transactional

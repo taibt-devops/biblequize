@@ -26,6 +26,9 @@ public interface UserMemoryVerseRepository extends JpaRepository<UserMemoryVerse
     @Query("SELECT COUNT(m) FROM UserMemoryVerse m WHERE m.user.id = :userId AND m.nextReviewAt <= :now")
     long countDue(@Param("userId") String userId, @Param("now") LocalDateTime now);
 
+    @Query("SELECT COUNT(m) FROM UserMemoryVerse m WHERE m.user.id = :userId")
+    long countOwned(@Param("userId") String userId);
+
     @Query("SELECT m FROM UserMemoryVerse m WHERE m.id = :id AND m.user.id = :userId")
     Optional<UserMemoryVerse> findOwned(@Param("id") String id, @Param("userId") String userId);
 
