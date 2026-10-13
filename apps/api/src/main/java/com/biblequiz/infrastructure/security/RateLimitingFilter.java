@@ -53,7 +53,7 @@ public class RateLimitingFilter extends OncePerRequestFilter {
     @Value("${app.rate-limit.ranked.window:60}")
     private int rankedWindowSeconds;
 
-    @Value("${app.rate-limit.prayer-public.requests:30}")
+    @Value("${app.rate-limit.prayer-public.requests:300}")
     private int prayerPublicRateLimit;
 
     @Value("${app.rate-limit.prayer-public.window:3600}")

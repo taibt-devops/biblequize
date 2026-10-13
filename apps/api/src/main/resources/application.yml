@@ -126,7 +126,7 @@ app:
       requests: ${RATE_LIMIT_GENERAL_REQUESTS:1000}
       window: ${RATE_LIMIT_GENERAL_WINDOW:3600}
     prayer-public:
-      requests: ${RATE_LIMIT_PRAYER_PUBLIC_REQUESTS:30}
+      requests: ${RATE_LIMIT_PRAYER_PUBLIC_REQUESTS:300}
       window: ${RATE_LIMIT_PRAYER_PUBLIC_WINDOW:3600}
   seeding:
     bible:
