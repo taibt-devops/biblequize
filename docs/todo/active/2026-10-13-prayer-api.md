@@ -7,4 +7,4 @@ Spec ở repo forbible-doc: `docs/cau-nguyen/` (chủ dự án duyệt 13/10/202
 - PRA-3 Link nhờ cầu thay, người cầu thay, trang người nhận (service) — Status: [x] DONE
 - PRA-4 `PrayerController` `/api/prayer/me/*`, `PublicPrayerController` `/api/public/prayer/shares/*` — Status: [x] DONE
 - PRA-5 Rate limit `prayer-public` 300 POST/IP/giờ (review: 30 dễ chặn cả nhóm dùng chung Wi-Fi/NAT); việc đêm xóa bia mộ quá 90 ngày — Status: [x] DONE
-- PRA-6 Cả bộ test, boot jar thật + smoke (`smoke_prayer.mjs`), deploy prod cùng app ở M3 — Status: [~] IN PROGRESS (chờ deploy M3)
+- PRA-6 Cả bộ test, boot jar thật + smoke (`smoke_prayer.mjs`), deploy prod cùng app ở M3 — Status: [x] DONE (prod 13/10: api 61780613, V79; dump `biblequiz-20261013-1002-pre-v79.sql.gz`)
