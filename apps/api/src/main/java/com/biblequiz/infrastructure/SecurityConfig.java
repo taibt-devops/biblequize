@@ -140,6 +140,9 @@ public class SecurityConfig {
                 configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
                 configuration.setAllowedHeaders(Arrays.asList("*"));
                 configuration.setAllowCredentials(true);
+                // Làng nhỏ và app Đọc gọi be.forbible.org khác tên miền, mỗi lượt qua bastion ~0,6 s:
+                // nhớ preflight 1 giờ (Chrome giữ tối đa 2 giờ) thay vì 5 giây mặc định.
+                configuration.setMaxAge(3600L);
 
                 UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
                 source.registerCorsConfiguration("/**", configuration);
