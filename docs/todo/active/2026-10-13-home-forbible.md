@@ -7,4 +7,4 @@ Spec ở repo forbible-home: `docs/07-ra-mat-forbible-org.md` (chủ dự án du
 - HOM-3 `GET /api/home/me` (no-store, 401 khi chưa đăng nhập) — Status: [x] DONE
 - HOM-4 Trang chia sẻ dùng `APP_FRONTEND_URL` thay vì viết cứng forbible.org — Status: [x] DONE
 - HOM-5 Web sang `quiz.forbible.org` (canonical, OG, sitemap, prerender); Thêm câu nhận `?book=&chapter=&from=&to=` — Status: [x] DONE
-- HOM-6 Cả bộ test (API 1552, web 1652), boot jar + smoke `/api/home/me` 10/10, deploy prod và chuyển tên miền (M3) — Status: [~] IN PROGRESS (chờ M3)
+- HOM-6 Cả bộ test (API 1552, web 1652), boot jar + smoke `/api/home/me` 10/10, deploy prod và chuyển tên miền (M3) — Status: [x] DONE (prod 13/10: api+web e30d159e; APP_FRONTEND_URL=https://quiz.forbible.org, APP_HOME_URL=https://forbible.org, CORS có quiz, preflight 1 giờ)
