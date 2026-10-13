@@ -105,4 +105,41 @@ class RateLimitingFilterTest {
         filter.doFilter(answerRequest("10.0.0.4"), bFirst, chain);
         assertEquals(200, bFirst.getStatus());
     }
+
+    private RateLimitingFilter prayerFilter(int limit) {
+        RateLimitingFilter f = buildFilter(30, 60);
+        ReflectionTestUtils.setField(f, "prayerPublicRateLimit", limit);
+        ReflectionTestUtils.setField(f, "prayerPublicWindowSeconds", 3600);
+        return f;
+    }
+
+    private MockHttpServletRequest prayerRequest(String method, String ip) {
+        MockHttpServletRequest req = new MockHttpServletRequest();
+        req.setMethod(method);
+        req.setRequestURI("/api/public/prayer/shares/AbCdEfGhIjKlMnOpQr_-12/prayed");
+        req.setRemoteAddr(ip);
+        return req;
+    }
+
+    @Test
+    void prayerPublicPost_overLimitIs429_getAndOtherIpNotCounted() throws Exception {
+        RateLimitingFilter filter = prayerFilter(3);
+        FilterChain chain = mock(FilterChain.class);
+        for (int i = 0; i < 3; i++) {
+            MockHttpServletResponse res = new MockHttpServletResponse();
+            filter.doFilter(prayerRequest("POST", "10.0.0.9"), res, chain);
+            assertEquals(200, res.getStatus(), "lần " + (i + 1) + " phải qua");
+        }
+        MockHttpServletResponse get = new MockHttpServletResponse();
+        filter.doFilter(prayerRequest("GET", "10.0.0.9"), get, chain);
+        assertEquals(200, get.getStatus(), "GET dùng nhóm chung");
+
+        MockHttpServletResponse over = new MockHttpServletResponse();
+        filter.doFilter(prayerRequest("POST", "10.0.0.9"), over, chain);
+        assertEquals(429, over.getStatus());
+
+        MockHttpServletResponse other = new MockHttpServletResponse();
+        filter.doFilter(prayerRequest("POST", "10.0.0.10"), other, chain);
+        assertEquals(200, other.getStatus());
+    }
 }

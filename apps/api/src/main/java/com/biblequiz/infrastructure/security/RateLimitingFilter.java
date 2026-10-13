@@ -53,6 +53,12 @@ public class RateLimitingFilter extends OncePerRequestFilter {
     @Value("${app.rate-limit.ranked.window:60}")
     private int rankedWindowSeconds;
 
+    @Value("${app.rate-limit.prayer-public.requests:30}")
+    private int prayerPublicRateLimit;
+
+    @Value("${app.rate-limit.prayer-public.window:3600}")
+    private int prayerPublicWindowSeconds;
+
     /**
      * Comma-separated list of trusted proxy IP addresses.
      * Only when the direct connection comes from one of these IPs will the
@@ -86,6 +92,9 @@ public class RateLimitingFilter extends OncePerRequestFilter {
                 || requestPath.startsWith("/api/me/bootstrap-admin")
                 || requestPath.startsWith("/admin/");
         boolean isRankedEndpoint = requestPath.matches("/api/ranked/sessions/.+/answer");
+        // Trang người nhận link nhờ cầu thay: không cần đăng nhập nên giới hạn chặt hơn (chỉ POST).
+        boolean isPrayerPublic = "POST".equalsIgnoreCase(request.getMethod())
+                && requestPath.startsWith("/api/public/prayer/");
 
         int rateLimit;
         int windowSeconds;
@@ -95,6 +104,10 @@ public class RateLimitingFilter extends OncePerRequestFilter {
             rateLimit = rankedRateLimit;
             windowSeconds = rankedWindowSeconds;
             rateLimitKey = clientIp + ":ranked";
+        } else if (isPrayerPublic) {
+            rateLimit = prayerPublicRateLimit;
+            windowSeconds = prayerPublicWindowSeconds;
+            rateLimitKey = clientIp + ":prayer";
         } else if (isAdminEndpoint) {
             rateLimit = adminRateLimit;
             windowSeconds = adminWindowSeconds;
