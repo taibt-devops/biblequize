@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-10-13 — API cho app Cầu nguyện của làng forbible
+
+- **Bối cảnh:** chủ dự án chọn Cầu nguyện là app tiếp theo của làng forbible. App chạy trong app Đọc (`doc.forbible.org/cau-nguyen`), dữ liệu và đăng nhập dùng Bible Quiz, như tiến độ đọc (V76).
+- **Quyết định:** Flyway V79 bốn bảng `prayer_*`; gộp sổ theo từng điều (`updatedAt` mới hơn thắng); xóa là bia mộ 90 ngày, máy chủ xóa chữ ngay; link nhờ cầu thay 128 bit, thu lại được; người nhận không đăng nhập, đếm theo mã máy một lần mỗi 12 giờ; không lưu IP người nhận; không có trang quản trị xem nội dung; không ghi nội dung vào log.
+- **Implementation:** PRA-1..6, task `docs/todo/active/2026-10-13-prayer-api.md`.
+
+---
+
 ## 2026-10-13 — Bỏ sinh câu hỏi bằng AI ở mọi nơi
 
 - **Bối cảnh:** user 13/10/2026: "bỏ giúp tôi phần AI, tức là sinh câu hỏi bằng AI". Câu hỏi của app nay do biên tập soạn (bộ RVV11, BSB…); câu AI chưa duyệt không hợp với kho đã biên tập, lại tốn tiền gọi nhà cung cấp và giữ khóa API.
