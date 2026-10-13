@@ -22,6 +22,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(ShareCardController.class)
+@org.springframework.test.context.TestPropertySource(properties = "app.frontend-url=https://quiz.forbible.org/")
 class ShareCardControllerTest extends BaseControllerTest {
 
     @MockBean
@@ -44,6 +45,27 @@ class ShareCardControllerTest extends BaseControllerTest {
         testUser.setRole("USER");
 
         when(userRepository.findByEmail("test@example.com")).thenReturn(Optional.of(testUser));
+    }
+
+    // ── /api/share/og/* theo tên miền của Bible Quiz (APP_FRONTEND_URL) ─────────
+
+    @Test
+    @WithMockUser
+    void ogDaily_person_isRedirectedToQuizSite() throws Exception {
+        mockMvc.perform(get("/api/share/og/daily").header("User-Agent", "Mozilla/5.0"))
+                .andExpect(status().isFound())
+                .andExpect(header().string("Location", "https://quiz.forbible.org/daily"));
+    }
+
+    @Test
+    @WithMockUser
+    void ogSession_bot_writesQuizSiteInMeta() throws Exception {
+        when(quizSessionRepository.findById("s-1")).thenReturn(Optional.empty());
+        mockMvc.perform(get("/api/share/og/session/s-1").header("User-Agent", "facebookexternalhit/1.1"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(org.hamcrest.Matchers.containsString("https://quiz.forbible.org/share/session/s-1")))
+                .andExpect(content().string(org.hamcrest.Matchers.containsString("https://quiz.forbible.org/og-image.png")))
+                .andExpect(content().string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("https://forbible.org/"))));
     }
 
     // ── GET /api/share/session/{sessionId} ───────────────────────────────────

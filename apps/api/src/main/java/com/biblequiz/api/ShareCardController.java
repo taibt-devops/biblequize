@@ -8,6 +8,7 @@ import com.biblequiz.modules.user.entity.User;
 import com.biblequiz.modules.user.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -22,6 +23,15 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/share")
 public class ShareCardController {
+
+    /** Tên miền của Bible Quiz (prod: APP_FRONTEND_URL). Chuyển từ forbible.org sang quiz.forbible.org ngày 13/10/2026. */
+    @Value("${app.frontend-url:https://quiz.forbible.org}")
+    private String frontendUrl;
+
+    private String site() {
+        String u = frontendUrl == null || frontendUrl.isBlank() ? "https://quiz.forbible.org" : frontendUrl.trim();
+        return u.endsWith("/") ? u.substring(0, u.length() - 1) : u;
+    }
 
     @Autowired
     private ShareCardService shareCardService;
@@ -64,7 +74,7 @@ public class ShareCardController {
 
         if (!isSocialBot(userAgent)) {
             return ResponseEntity.status(302)
-                    .header("Location", "https://forbible.org/share/session/" + sessionId)
+                    .header("Location", site() + "/share/session/" + sessionId)
                     .build();
         }
 
@@ -81,8 +91,8 @@ public class ShareCardController {
             description = name + " da tra loi dung " + correct + "/" + total + " cau (" + pct + "%). Ban co lam tot hon khong?";
         }
 
-        String ogHtml = buildOgHtml(title, description, "https://forbible.org/og-image.png",
-                "https://forbible.org/share/session/" + sessionId);
+        String ogHtml = buildOgHtml(title, description, site() + "/og-image.png",
+                site() + "/share/session/" + sessionId);
         return ResponseEntity.ok(ogHtml);
     }
 
@@ -93,7 +103,7 @@ public class ShareCardController {
 
         if (!isSocialBot(userAgent)) {
             return ResponseEntity.status(302)
-                    .header("Location", "https://forbible.org/share/tier-up/" + tierKey)
+                    .header("Location", site() + "/share/tier-up/" + tierKey)
                     .build();
         }
 
@@ -108,8 +118,8 @@ public class ShareCardController {
         String title = "BibleQuiz — Dat cap " + tierName + "!";
         String description = "Dat thanh tich " + tierName + " tren BibleQuiz. Hoc Kinh Thanh moi ngay!";
 
-        String ogHtml = buildOgHtml(title, description, "https://forbible.org/og-image.png",
-                "https://forbible.org/share/tier-up/" + tierKey);
+        String ogHtml = buildOgHtml(title, description, site() + "/og-image.png",
+                site() + "/share/tier-up/" + tierKey);
         return ResponseEntity.ok(ogHtml);
     }
 
@@ -119,7 +129,7 @@ public class ShareCardController {
 
         if (!isSocialBot(userAgent)) {
             return ResponseEntity.status(302)
-                    .header("Location", "https://forbible.org/daily")
+                    .header("Location", site() + "/daily")
                     .build();
         }
 
@@ -127,8 +137,8 @@ public class ShareCardController {
         String ogHtml = buildOgHtml(
                 "BibleQuiz — Thu thach ngay " + date,
                 "5 cau hoi Kinh Thanh moi ngay. Ban co the tra loi dung het khong?",
-                "https://forbible.org/og-image.png",
-                "https://forbible.org/daily");
+                site() + "/og-image.png",
+                site() + "/daily");
         return ResponseEntity.ok(ogHtml);
     }
 
