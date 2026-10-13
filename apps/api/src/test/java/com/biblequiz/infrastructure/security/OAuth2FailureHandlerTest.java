@@ -13,6 +13,7 @@ class OAuth2FailureHandlerTest {
     private String failFrom(MockHttpServletRequest req, String docUrl) throws Exception {
         OAuth2FailureHandler handler = new OAuth2FailureHandler();
         ReflectionTestUtils.setField(handler, "docUrl", docUrl);
+        ReflectionTestUtils.setField(handler, "homeUrl", "https://forbible.org");
         MockHttpServletResponse res = new MockHttpServletResponse();
         handler.onAuthenticationFailure(req, res, new BadCredentialsException("access_denied"));
         return res.getRedirectedUrl();
@@ -24,6 +25,13 @@ class OAuth2FailureHandlerTest {
         req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "doc");
         assertEquals("https://doc.forbible.org/auth/callback?error=oauth2", failFrom(req, "https://doc.forbible.org"));
         assertNull(req.getSession().getAttribute(OAuthReturnApp.SESSION_ATTR));
+    }
+
+    @Test
+    void homeLogin_cancelled_returnsToVillageCallbackWithoutCode() throws Exception {
+        MockHttpServletRequest req = new MockHttpServletRequest();
+        req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "home");
+        assertEquals("https://forbible.org/auth/callback?error=oauth2", failFrom(req, "https://doc.forbible.org"));
     }
 
     @Test

@@ -45,6 +45,10 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     @Value("${app.doc-url:}")
     private String docUrl;
 
+    /** Trang chủ Làng nhỏ (forbible.org); trống thì đăng nhập bắt đầu từ làng quay về Bible Quiz. */
+    @Value("${app.home-url:}")
+    private String homeUrl;
+
     @Autowired
     private UserRepository userRepository;
     @Autowired
@@ -118,7 +122,7 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
                     "avatar", avatarUrl != null ? avatarUrl : "",
                     "role", user.getRole()));
 
-            String frontendUrl = OAuthReturnApp.resolve(takeReturnApp(request), frontendBaseUrl, docUrl);
+            String frontendUrl = OAuthReturnApp.resolve(takeReturnApp(request), frontendBaseUrl, docUrl, homeUrl);
 
             // Only the one-time code is in the URL — tokens stay off the wire
             String redirectUrl = frontendUrl + "/auth/callback?code=" + code;

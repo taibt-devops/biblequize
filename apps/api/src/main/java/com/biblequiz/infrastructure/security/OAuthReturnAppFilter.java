@@ -27,7 +27,7 @@ public class OAuthReturnAppFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
         String app = request.getParameter("app");
-        if (OAuthReturnApp.DOC.equals(app)) {
+        if (OAuthReturnApp.isKnown(app)) {
             request.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, app);
         } else {
             HttpSession session = request.getSession(false);

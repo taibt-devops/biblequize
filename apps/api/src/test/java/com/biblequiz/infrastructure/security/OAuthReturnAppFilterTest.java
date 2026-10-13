@@ -31,6 +31,12 @@ class OAuthReturnAppFilterTest {
     }
 
     @Test
+    void appHome_isRememberedInSession() throws Exception {
+        MockHttpServletRequest req = run(start("home"));
+        assertEquals("home", req.getSession().getAttribute(OAuthReturnApp.SESSION_ATTR));
+    }
+
+    @Test
     void noApp_clearsEarlierChoice() throws Exception {
         MockHttpServletRequest req = start(null);
         req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "doc");

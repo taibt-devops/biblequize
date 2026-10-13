@@ -39,6 +39,7 @@ class OAuth2SuccessHandlerReturnAppTest {
     void setUp() {
         ReflectionTestUtils.setField(handler, "frontendBaseUrl", "https://www.forbible.org");
         ReflectionTestUtils.setField(handler, "docUrl", "https://doc.forbible.org");
+        ReflectionTestUtils.setField(handler, "homeUrl", "https://forbible.org");
         User user = new User();
         user.setId("u1");
         user.setEmail("a@example.com");
@@ -76,6 +77,22 @@ class OAuth2SuccessHandlerReturnAppTest {
     void unknownValue_returnsToQuiz() throws Exception {
         MockHttpServletRequest req = new MockHttpServletRequest();
         req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "https://evil.example");
+        assertEquals("https://www.forbible.org/auth/callback?code=c1", loginFrom(req));
+    }
+
+    @Test
+    void homeChosen_returnsToVillage_once() throws Exception {
+        MockHttpServletRequest req = new MockHttpServletRequest();
+        req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "home");
+        assertEquals("https://forbible.org/auth/callback?code=c1", loginFrom(req));
+        assertNull(req.getSession().getAttribute(OAuthReturnApp.SESSION_ATTR));
+    }
+
+    @Test
+    void homeUrlNotConfigured_returnsToQuiz() throws Exception {
+        ReflectionTestUtils.setField(handler, "homeUrl", "");
+        MockHttpServletRequest req = new MockHttpServletRequest();
+        req.getSession(true).setAttribute(OAuthReturnApp.SESSION_ATTR, "home");
         assertEquals("https://www.forbible.org/auth/callback?code=c1", loginFrom(req));
     }
 

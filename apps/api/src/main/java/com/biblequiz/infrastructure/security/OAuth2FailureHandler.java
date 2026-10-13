@@ -25,6 +25,10 @@ public class OAuth2FailureHandler extends SimpleUrlAuthenticationFailureHandler 
     @Value("${app.doc-url:}")
     private String docUrl;
 
+    /** Trang chủ Làng nhỏ; đăng nhập bắt đầu từ đó (?app=home) mà hỏng thì quay về đó. */
+    @Value("${app.home-url:}")
+    private String homeUrl;
+
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
                                         AuthenticationException exception) throws IOException, ServletException {
@@ -35,10 +39,10 @@ public class OAuth2FailureHandler extends SimpleUrlAuthenticationFailureHandler 
         HttpSession session = request.getSession(false);
         Object app = session != null ? session.getAttribute(OAuthReturnApp.SESSION_ATTR) : null;
         if (session != null) session.removeAttribute(OAuthReturnApp.SESSION_ATTR);
-        String doc = OAuthReturnApp.resolve(app, null, docUrl);
-        // App đọc coi /auth/callback không có code là đăng nhập không thành.
-        String redirect = doc != null
-                ? doc + "/auth/callback?error=oauth2"
+        String back = OAuthReturnApp.resolve(app, null, docUrl, homeUrl);
+        // App Đọc và làng coi /auth/callback không có code là đăng nhập không thành.
+        String redirect = back != null
+                ? back + "/auth/callback?error=oauth2"
                 : "/login?error=" + URLEncoder.encode(message, StandardCharsets.UTF_8);
         getRedirectStrategy().sendRedirect(request, response, redirect);
     }
