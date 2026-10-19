@@ -34,7 +34,17 @@ public class PrayerService {
 
     public record Me(List<Item> items, List<PrayerPrayed> prayed, List<ShareView> shares) {}
 
-    public record ShareView(String token, String itemId, Instant createdAt, String url, long count, Instant lastPrayedAt) {}
+    /** Link đang mở; recent = tối đa 3 người cầu thay gần nhất (mỗi máy một dòng). */
+    public record ShareView(String token, String itemId, Instant createdAt, String url, long count, Instant lastPrayedAt,
+                            List<Recent> recent) {
+        public ShareView(String token, String itemId, Instant createdAt, String url, long count, Instant lastPrayedAt) {
+            this(token, itemId, createdAt, url, count, lastPrayedAt, List.of());
+        }
+    }
+
+    public record Recent(String name, String message, Instant at) {}
+
+    public static final int RECENT_MAX = 3;
 
     private final PrayerItemRepository itemRepo;
     private final PrayerPrayedRepository prayedRepo;
@@ -95,8 +105,11 @@ public class PrayerService {
     }
 
     ShareView view(PrayerShare s) {
+        List<Recent> recent = people(s.getItemId()).stream().limit(RECENT_MAX)
+                .map(p -> new Recent(p.name(), p.message(), p.lastPrayedAt())).toList();
         return new ShareView(s.getToken(), s.getItemId(), s.createdAtInstant(), docUrl + "/cn/" + s.getToken(),
-                interRepo.countVisitorsForItem(s.getItemId()), Utc.instant(interRepo.lastPrayedForItem(s.getItemId())));
+                interRepo.countVisitorsForItem(s.getItemId()), Utc.instant(interRepo.lastPrayedForItem(s.getItemId())),
+                recent);
     }
 
     private void revokeOpenShares(String itemId, Instant now) {
@@ -118,7 +131,12 @@ public class PrayerService {
     public static final int SHARES_MAX = 100;
     private static final SecureRandom RANDOM = new SecureRandom();
 
-    public record Person(String name, int count, Instant lastPrayedAt) {}
+    /** Một máy người nhận: tên và lời nhắn là bản khác null gần nhất của máy đó. */
+    public record Person(String name, int count, Instant lastPrayedAt, String message, Instant messageAt) {
+        public Person(String name, int count, Instant lastPrayedAt) {
+            this(name, count, lastPrayedAt, null, null);
+        }
+    }
 
     public record Intercessions(int total, List<Person> people) {}
 
@@ -150,18 +168,29 @@ public class PrayerService {
     @Transactional(readOnly = true)
     public Intercessions intercessions(String userId, String itemId) {
         ownedLive(userId, itemId);
+        List<Person> people = people(itemId);
+        return new Intercessions(people.size(), people);
+    }
+
+    /** Gộp các lần cầu thay của một điều theo máy người nhận, mới nhất trước. */
+    private List<Person> people(String itemId) {
         Map<String, List<PrayerIntercession>> byVisitor = interRepo.findForItem(itemId).stream()
                 .collect(Collectors.groupingBy(PrayerIntercession::getVisitorId, LinkedHashMap::new, Collectors.toList()));
-        List<Person> people = byVisitor.values().stream().map(rows -> {
+        return byVisitor.values().stream().map(rows -> {
             String name = null;
+            String message = null;
+            Instant messageAt = null;
             Instant last = null;
             for (PrayerIntercession r : rows) { // đã xếp theo giờ tăng dần
                 if (r.getVisitorName() != null) name = r.getVisitorName();
+                if (r.getMessage() != null) {
+                    message = r.getMessage();
+                    messageAt = r.prayedAtInstant();
+                }
                 last = r.prayedAtInstant();
             }
-            return new Person(name, rows.size(), last);
+            return new Person(name, rows.size(), last, message, messageAt);
         }).sorted(Comparator.comparing(Person::lastPrayedAt).reversed()).toList();
-        return new Intercessions(people.size(), people);
     }
 
     /** Token 16 byte ngẫu nhiên, base64url không đệm: 22 ký tự. */

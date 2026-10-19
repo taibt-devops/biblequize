@@ -7,6 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 /** Đếm theo điều (qua mọi link của điều đó, kể cả link đã thu lại), không theo từng link. */
 public interface PrayerIntercessionRepository extends JpaRepository<PrayerIntercession, Long> {
@@ -24,4 +25,8 @@ public interface PrayerIntercessionRepository extends JpaRepository<PrayerInterc
     List<PrayerIntercession> findForItem(@Param("itemId") String itemId);
 
     boolean existsByShareTokenAndVisitorIdAndPrayedAtAfter(String shareToken, String visitorId, LocalDateTime after);
+
+    /** Lần bấm gần nhất của một máy trong khoảng gần đây (để gắn tên và lời nhắn gửi sau A-men). */
+    Optional<PrayerIntercession> findFirstByShareTokenAndVisitorIdAndPrayedAtAfterOrderByPrayedAtDesc(
+            String shareToken, String visitorId, LocalDateTime after);
 }

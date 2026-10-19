@@ -137,4 +137,5 @@ public class PrayerItem {
     public String getTitle() { return title; }
     public String getDetail() { return detail; }
     public String getStatus() { return status; }
+    public String getTestimony() { return testimony; }
 }

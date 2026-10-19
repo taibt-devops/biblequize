@@ -317,6 +317,48 @@ class PrayerServiceTest {
     }
 
     @Test
+    void me_shareRecent_latestPerVisitorMax3() {
+        PrayerItem live = PrayerItem.of("u1", item(A, "Còn", T0), NOW);
+        PrayerShare share = new PrayerShare(TOK, A, "u1", T0);
+        when(itemRepo.findByUserId("u1")).thenReturn(List.of(live));
+        when(prayedRepo.findByUserIdAndPrayedAtAfter(eq("u1"), any())).thenReturn(List.of());
+        when(shareRepo.findByUserIdAndRevokedAtIsNull("u1")).thenReturn(List.of(share));
+        String v1 = "11111111-1111-4111-8111-111111111111";
+        String v2 = "22222222-2222-4222-8222-222222222222";
+        String v3 = "33333333-3333-4333-8333-333333333333";
+        String v4 = "44444444-4444-4444-8444-444444444444";
+        when(interRepo.findForItem(A)).thenReturn(List.of(
+                new PrayerIntercession(TOK, v1, null, null, T0),
+                new PrayerIntercession(TOK, v2, "Minh", "Mình cầu nguyện cho bạn", T0.plusSeconds(10)),
+                new PrayerIntercession(TOK, v3, "Lan", null, T0.plusSeconds(20)),
+                new PrayerIntercession(TOK, v4, null, "Bình an", T0.plusSeconds(30)),
+                new PrayerIntercession(TOK, v1, "Hạnh", "Em cầu nguyện cho bác", T0.plusSeconds(40))));
+
+        List<PrayerService.Recent> recent = service.me("u1", NOW).shares().get(0).recent();
+
+        assertEquals(3, recent.size());
+        assertEquals(new PrayerService.Recent("Hạnh", "Em cầu nguyện cho bác", T0.plusSeconds(40)), recent.get(0));
+        assertEquals(new PrayerService.Recent(null, "Bình an", T0.plusSeconds(30)), recent.get(1));
+        assertEquals(new PrayerService.Recent("Lan", null, T0.plusSeconds(20)), recent.get(2));
+    }
+
+    @Test
+    void intercessions_includeLatestMessage() {
+        liveItem(A);
+        String v1 = "11111111-1111-4111-8111-111111111111";
+        when(interRepo.findForItem(A)).thenReturn(List.of(
+                new PrayerIntercession(TOK, v1, "Hạnh", "Em cầu nguyện cho bác", T0),
+                new PrayerIntercession(TOK, v1, null, null, T0.plusSeconds(10))));
+
+        PrayerService.Person p = service.intercessions("u1", A).people().get(0);
+
+        assertEquals("Em cầu nguyện cho bác", p.message());
+        assertEquals(T0, p.messageAt());
+        assertEquals(2, p.count());
+        assertEquals(T0.plusSeconds(10), p.lastPrayedAt());
+    }
+
+    @Test
     void intercessions_groupedByVisitor_latestNameKept_newestFirst() {
         liveItem(A);
         String v1 = "11111111-1111-4111-8111-111111111111";
