@@ -92,6 +92,8 @@ public class PrayerController {
                 m.put("name", p.name());
                 m.put("count", p.count());
                 m.put("lastPrayedAt", PrayerInput.iso(p.lastPrayedAt()));
+                m.put("message", p.message());
+                m.put("messageAt", PrayerInput.iso(p.messageAt()));
                 return m;
             }).toList();
             return ResponseEntity.ok(Map.of("total", r.total(), "people", people));
@@ -109,6 +111,15 @@ public class PrayerController {
         m.put("answeredAt", PrayerInput.iso(i.answeredAt()));
         m.put("updatedAt", PrayerInput.iso(i.updatedAt()));
         m.put("deletedAt", PrayerInput.iso(i.deletedAt()));
+        PrayerInput.V2 v = i.v2() == null ? PrayerInput.V2.EMPTY : i.v2();
+        m.put("cadence", v.cadence());
+        m.put("topic", v.topic());
+        m.put("updates", v.updates().stream()
+                .map(u -> Map.of("id", u.id(), "text", u.text(), "at", PrayerInput.iso(u.at()))).toList());
+        m.put("shareTestimony", v.shareTestimony());
+        m.put("archivedAt", PrayerInput.iso(v.archivedAt()));
+        m.put("sourceToken", v.sourceToken());
+        m.put("sourceOwner", v.sourceOwner());
         return m;
     }
 
@@ -120,6 +131,13 @@ public class PrayerController {
         m.put("url", s.url());
         m.put("count", s.count());
         m.put("lastPrayedAt", PrayerInput.iso(s.lastPrayedAt()));
+        m.put("recent", s.recent().stream().map(r -> {
+            Map<String, Object> x = new LinkedHashMap<>();
+            x.put("name", r.name());
+            x.put("message", r.message());
+            x.put("at", PrayerInput.iso(r.at()));
+            return x;
+        }).toList());
         return m;
     }
 

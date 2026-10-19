@@ -38,6 +38,11 @@ public class PublicPrayerController {
             body.put("detail", v.detail());
             body.put("status", v.status());
             body.put("count", v.count());
+            body.put("topic", v.topic());
+            body.put("updates", v.updates().stream()
+                    .map(u -> Map.of("text", u.text(), "at", PrayerInput.iso(u.at()))).toList());
+            body.put("answeredAt", PrayerInput.iso(v.answeredAt()));
+            body.put("testimony", v.testimony());
             return ResponseEntity.ok().cacheControl(CacheControl.noStore()).body(body);
         } catch (NoSuchElementException e) {
             return gone();
@@ -50,7 +55,8 @@ public class PublicPrayerController {
         try {
             Object visitor = body == null ? null : body.get("visitorId");
             String name = PrayerInput.cleanVisitorName(body == null ? null : body.get("name"));
-            long count = service.pray(token, visitor instanceof String s ? s : null, name, Instant.now());
+            String message = PrayerInput.cleanMessage(body == null ? null : body.get("message"));
+            long count = service.pray(token, visitor instanceof String s ? s : null, name, message, Instant.now());
             return ResponseEntity.ok().cacheControl(CacheControl.noStore()).body(Map.of("count", count));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().cacheControl(CacheControl.noStore()).body(Map.of("message", e.getMessage()));

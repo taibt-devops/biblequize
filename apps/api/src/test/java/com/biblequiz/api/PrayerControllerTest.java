@@ -1,6 +1,7 @@
 package com.biblequiz.api;
 
 import com.biblequiz.modules.prayer.entity.PrayerPrayed;
+import com.biblequiz.modules.prayer.service.PrayerInput;
 import com.biblequiz.modules.prayer.service.PrayerInput.Item;
 import com.biblequiz.modules.prayer.service.PrayerService;
 import com.biblequiz.modules.user.entity.User;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
+import static org.hamcrest.Matchers.hasKey;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
@@ -134,5 +136,58 @@ class PrayerControllerTest extends BaseControllerTest {
                 .andExpect(jsonPath("$.people[0].name").isEmpty())
                 .andExpect(jsonPath("$.people[0].count").value(3))
                 .andExpect(jsonPath("$.people[0].lastPrayedAt").value("2026-10-01T00:00:00.000Z"));
+    }
+
+    // ---- Bản 2 (V80) ----
+
+    private static final String U1 = "11111111-1111-4111-8111-111111111111";
+
+    @Test
+    @WithMockUser(username = EMAIL)
+    void me_itemJsonHasV2Fields() throws Exception {
+        Item it = new Item(A, "Ba mẹ", null, "ACTIVE", null, T0, null, T0, null,
+                new PrayerInput.V2("DAILY", "FAMILY", List.of(new PrayerInput.Update(U1, "Ba mổ xong", T0)), true, null,
+                        TOK, "Hạnh"));
+        when(service.me(eq("user-1"), any())).thenReturn(new PrayerService.Me(List.of(it), List.of(), List.of()));
+
+        mockMvc.perform(get("/api/prayer/me"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.items[0].cadence").value("DAILY"))
+                .andExpect(jsonPath("$.items[0].topic").value("FAMILY"))
+                .andExpect(jsonPath("$.items[0].updates[0].id").value(U1))
+                .andExpect(jsonPath("$.items[0].updates[0].text").value("Ba mổ xong"))
+                .andExpect(jsonPath("$.items[0].updates[0].at").value("2026-10-01T00:00:00.000Z"))
+                .andExpect(jsonPath("$.items[0].shareTestimony").value(true))
+                .andExpect(jsonPath("$.items[0]", hasKey("archivedAt")))
+                .andExpect(jsonPath("$.items[0].sourceToken").value(TOK))
+                .andExpect(jsonPath("$.items[0].sourceOwner").value("Hạnh"));
+    }
+
+    @Test
+    @WithMockUser(username = EMAIL)
+    void me_shareJsonHasRecent() throws Exception {
+        PrayerService.ShareView share = new PrayerService.ShareView(TOK, A, T0, "https://doc.forbible.org/cn/" + TOK, 1, T0,
+                List.of(new PrayerService.Recent("Hạnh", "Em cầu nguyện cho bác", T0), new PrayerService.Recent(null, null, T0)));
+        when(service.me(eq("user-1"), any())).thenReturn(new PrayerService.Me(List.of(), List.of(), List.of(share)));
+
+        mockMvc.perform(get("/api/prayer/me"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.shares[0].recent[0].name").value("Hạnh"))
+                .andExpect(jsonPath("$.shares[0].recent[0].message").value("Em cầu nguyện cho bác"))
+                .andExpect(jsonPath("$.shares[0].recent[0].at").value("2026-10-01T00:00:00.000Z"))
+                .andExpect(jsonPath("$.shares[0].recent[1]", hasKey("name")))
+                .andExpect(jsonPath("$.shares[0].recent[1].name").isEmpty());
+    }
+
+    @Test
+    @WithMockUser(username = EMAIL)
+    void intercessions_jsonHasMessage() throws Exception {
+        when(service.intercessions("user-1", A)).thenReturn(new PrayerService.Intercessions(1,
+                List.of(new PrayerService.Person("Hạnh", 2, T0, "Em cầu nguyện cho bác", T0))));
+
+        mockMvc.perform(get("/api/prayer/me/items/" + A + "/intercessions"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.people[0].message").value("Em cầu nguyện cho bác"))
+                .andExpect(jsonPath("$.people[0].messageAt").value("2026-10-01T00:00:00.000Z"));
     }
 }
