@@ -2,6 +2,14 @@
 
 ---
 
+## 2026-10-19 — API Cầu nguyện bản 2
+
+- **Bối cảnh:** chủ dự án nhờ phân tích nghiệp vụ app Cầu nguyện so với nhu cầu thực tế và thiết kế lại; giao Claude tự quyết. Spec ở forbible-doc `docs/cau-nguyen/05-ban-2.md` (19 quyết định ở mục 9), dữ liệu và API ở `03-du-lieu-va-api.md` mục "Bản 2".
+- **Quyết định:** Flyway V80 chỉ thêm cột (`cadence`, `topic`, `updates_json`, `share_testimony`, `archived_at`, `source_token`, `source_owner`; `prayer_intercessions.message`); `status` thêm `ARCHIVED`. Điều thiếu khóa `updates` (app bản 1 còn mở) thì giữ nguyên trường bản 2 trên máy chủ. Tin mới nằm trong điều (≤ 20 × 500), gộp theo luật "mới hơn thắng" của cả điều. Lời nhắn của người cầu thay ≤ 300 ký tự, chỉ người nhờ đọc; cùng máy trong 12 giờ thì cập nhật tên và lời nhắn vào lần đã ghi. Trang công khai trả mục, 5 tin mới nhất, `answeredAt`, và lời chứng chỉ khi người nhờ bật `shareTestimony`. Không tạo link cho điều đã cất hay lời nhờ của người khác (409).
+- **Implementation:** PRA-7..11, task `docs/todo/active/2026-10-19-prayer-v2-api.md`.
+
+---
+
 ## 2026-10-13 — forbible.org thành Làng nhỏ, Bible Quiz sang quiz.forbible.org
 
 - Chủ dự án chọn thay luôn forbible.org. Đường cũ của Bible Quiz chuyển 301 sang `quiz.forbible.org`, giữ đường và query. `/api/*`, `/oauth2/*`, `/ws`, `/health`, `/.well-known/*` ở forbible.org vẫn tới API để app cũ và tab đang mở không gãy.
