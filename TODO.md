@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (38)
+## Active (39)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-19 | API Cầu nguyện bản 2: V80 (nhịp, mục, tin mới, cất đi, lời nhờ của người khác, lời nhắn của người cầu thay), trang công khai bản 2, link kèm người cầu thay gần đây (PRA-7..11) | IN PROGRESS | [detail](docs/todo/active/2026-10-19-prayer-v2-api.md) |
 | 2026-10-13 | Trang chủ Làng nhỏ ở forbible.org; Bible Quiz sang quiz.forbible.org (301 từ đường cũ, API ở tên miền cũ giữ nguyên); `GET /api/home/me`, `?app=home` (HOM-1..6) | DONE (prod 13/10: api+web e30d159e; forbible.org = Làng nhỏ forbible-home 59a450c) | [detail](docs/todo/active/2026-10-13-home-forbible.md) |
 | 2026-10-13 | API cho app Cầu nguyện (Nhà nguyện, doc.forbible.org/cau-nguyen): V79 `prayer_*`, `/api/prayer/me/*`, `/api/public/prayer/shares/*`, rate limit trang người nhận, dọn bia mộ (PRA-1..6) | DONE (prod 13/10: api 61780613, V79; app doc.forbible.org eefdf90) | [detail](docs/todo/active/2026-10-13-prayer-api.md) |
 | 2026-10-13 | Bỏ sinh câu hỏi bằng AI ở mọi nơi (Phòng chơi/Đấu nhanh, Bộ câu của tôi, bộ câu nhóm, Quản trị) — giữ câu và dữ liệu đã có (AIR-1..5) | DONE (prod 13/10: api fbe6562b; biến GEMINI_API_KEY trong compose prod không còn được đọc) | [detail](docs/todo/active/2026-10-13-bo-ai-sinh-cau-hoi.md) |
