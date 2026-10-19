@@ -136,12 +136,16 @@ public final class PrayerInput {
         return List.copyOf(out);
     }
 
-    /** Tên người nhờ (lời nhờ của người khác): bỏ ký tự vô hình, cắt khoảng trắng; rỗng là null. */
+    /**
+     * Tên người nhờ (lời nhờ của người khác): bỏ ký tự vô hình, cắt khoảng trắng; rỗng là null.
+     * Đây là tên chính máy chủ đưa ra trên trang công khai (users.name cho 255 ký tự), nên dài quá thì cắt còn
+     * OWNER_MAX ký tự thật thay vì từ chối: từ chối làm hỏng cả lượt PUT của người giữ lời nhờ.
+     */
     private static String owner(Object raw) {
         if (raw == null) return null;
         if (!(raw instanceof String s)) throw new IllegalArgumentException("sourceOwner phải là chuỗi");
         String clean = INVISIBLE.matcher(s).replaceAll("").strip();
-        if (clean.length() > OWNER_MAX) throw new IllegalArgumentException("sourceOwner tối đa " + OWNER_MAX + " ký tự");
+        if (clean.codePointCount(0, clean.length()) > OWNER_MAX) clean = clean.substring(0, clean.offsetByCodePoints(0, OWNER_MAX));
         return clean.isEmpty() ? null : clean;
     }
 

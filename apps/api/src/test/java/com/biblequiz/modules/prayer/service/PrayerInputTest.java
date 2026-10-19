@@ -152,8 +152,17 @@ class PrayerInputTest {
         assertThrows(IllegalArgumentException.class, () -> one(v2(Map.of("updates", List.of(update("khong-uuid", "tin"))))));
         assertThrows(IllegalArgumentException.class, () -> one(v2(Map.of("updates", "khong-phai-mang"))));
         assertThrows(IllegalArgumentException.class, () -> one(v2(Map.of("sourceToken", "ngan"))));
-        assertThrows(IllegalArgumentException.class, () -> one(v2(Map.of("sourceOwner", "a".repeat(101)))));
         assertThrows(IllegalArgumentException.class, () -> one(v2(Map.of("shareTestimony", "co"))));
+    }
+
+    /** users.name cho 255 ký tự: tên người nhờ dài không được làm hỏng cả lượt PUT của người giữ lời nhờ. */
+    @Test
+    void items_sourceOwnerTooLong_isCutTo100Characters() {
+        String longName = "a".repeat(99) + "😀" + "b".repeat(50);
+        Item it = assertDoesNotThrow(() -> one(v2(Map.of("sourceOwner", longName))));
+        String owner = it.v2().sourceOwner();
+        assertEquals(100, owner.codePointCount(0, owner.length()));
+        assertTrue(owner.endsWith("😀"));
     }
 
     @Test
