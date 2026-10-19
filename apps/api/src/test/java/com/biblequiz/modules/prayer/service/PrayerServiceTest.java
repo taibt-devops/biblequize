@@ -229,6 +229,93 @@ class PrayerServiceTest {
         assertTrue(theirs.isOpen());
     }
 
+    // ---- Bản 2 (V80) ----
+
+    static final String TOK = "AbCdEfGhIjKlMnOpQr_-12";
+    static final String U1 = "11111111-1111-4111-8111-111111111111";
+
+    static PrayerInput.V2 v2(String topic, String cadence, List<PrayerInput.Update> updates) {
+        return new PrayerInput.V2(cadence, topic, updates, false, null, null, null);
+    }
+
+    static Item itemV2(String id, String title, Instant updated, PrayerInput.V2 v2) {
+        return new Item(id, title, null, "ACTIVE", null, T0, null, updated, null, v2);
+    }
+
+    @Test
+    void putItems_v2Payload_overwritesV2Fields() {
+        PrayerItem server = PrayerItem.of("u1", itemV2(A, "Ba mẹ", T0,
+                v2("FAMILY", "DAILY", List.of(new PrayerInput.Update(U1, "Tin cũ", T0)))), NOW);
+        when(itemRepo.findByUserId("u1")).thenReturn(List.of(server));
+
+        service.putItems("u1", List.of(itemV2(A, "Ba mẹ", T0.plusSeconds(5), v2("HEALTH", null, List.of()))), NOW);
+
+        Item out = server.toItem();
+        assertEquals("HEALTH", out.v2().topic());
+        assertNull(out.v2().cadence());
+        assertTrue(out.v2().updates().isEmpty());
+    }
+
+    @Test
+    void putItems_v1Payload_keepsV2Fields() {
+        PrayerItem server = PrayerItem.of("u1", itemV2(A, "Ba mẹ", T0,
+                v2("FAMILY", "DAILY", List.of(new PrayerInput.Update(U1, "Ba mổ xong", T0)))), NOW);
+        when(itemRepo.findByUserId("u1")).thenReturn(List.of(server));
+
+        service.putItems("u1", List.of(item(A, "Ba mẹ được bình an", T0.plusSeconds(5))), NOW);
+
+        Item out = server.toItem();
+        assertEquals("Ba mẹ được bình an", out.title());
+        assertEquals("FAMILY", out.v2().topic());
+        assertEquals("DAILY", out.v2().cadence());
+        assertEquals("Ba mổ xong", out.v2().updates().get(0).text());
+    }
+
+    @Test
+    void putItems_tombstone_clearsUpdatesAndSource() {
+        PrayerInput.V2 copy = new PrayerInput.V2(null, null, List.of(new PrayerInput.Update(U1, "Chuyện riêng", T0)),
+                false, null, TOK, "Hạnh");
+        PrayerItem server = PrayerItem.of("u1", itemV2(A, "Lời nhờ của Hạnh", T0, copy), NOW);
+        when(itemRepo.findByUserId("u1")).thenReturn(List.of(server));
+
+        service.putItems("u1", List.of(tomb(A, NOW)), NOW);
+
+        Item out = server.toItem();
+        assertTrue(out.deleted());
+        assertEquals(PrayerInput.V2.EMPTY, out.v2());
+        assertNull(server.getSourceToken());
+    }
+
+    @Test
+    void share_archived_409() {
+        PrayerItem archived = PrayerItem.of("u1", new Item(A, "Kỳ thi", null, "ARCHIVED", null, T0, null, T0, null,
+                new PrayerInput.V2(null, null, List.of(), false, T0, null, null)), NOW);
+        when(itemRepo.findById(A)).thenReturn(Optional.of(archived));
+        assertThrows(IllegalStateException.class, () -> service.share("u1", A, NOW));
+    }
+
+    @Test
+    void share_sourceCopy_409() {
+        PrayerItem copy = PrayerItem.of("u1", itemV2(A, "Kỳ thi của Hạnh", T0,
+                new PrayerInput.V2(null, null, List.of(), false, null, TOK, "Hạnh")), NOW);
+        when(itemRepo.findById(A)).thenReturn(Optional.of(copy));
+        assertThrows(IllegalStateException.class, () -> service.share("u1", A, NOW));
+        verify(shareRepo, never()).save(any());
+    }
+
+    @Test
+    void toItem_roundTripsV2() {
+        PrayerInput.V2 in = new PrayerInput.V2("DAILY", "SALVATION",
+                List.of(new PrayerInput.Update(U1, "Anh Tuấn đi nhóm lần đầu", T0.plusSeconds(1))), true, null, TOK, "Hạnh");
+        Item out = PrayerItem.of("u1", itemV2(A, "Anh Tuấn biết Chúa", T0, in), NOW).toItem();
+        assertEquals(in, out.v2());
+        PrayerItem archived = PrayerItem.of("u1", new Item(B, "Kỳ thi", null, "ARCHIVED", null, T0, null, T0, null,
+                new PrayerInput.V2(null, null, List.of(), false, T0.plusSeconds(9), null, null)), NOW);
+        assertEquals(T0.plusSeconds(9), archived.toItem().v2().archivedAt());
+        assertTrue(archived.isArchived());
+        assertFalse(archived.isActive());
+    }
+
     @Test
     void intercessions_groupedByVisitor_latestNameKept_newestFirst() {
         liveItem(A);

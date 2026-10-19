@@ -126,6 +126,9 @@ public class PrayerService {
     public ShareView share(String userId, String itemId, Instant now) {
         PrayerItem item = ownedLive(userId, itemId);
         if (item.isAnswered()) throw new IllegalStateException("Điều này đã được đáp lời");
+        if (!item.isActive()) throw new IllegalStateException("Điều này đã cất");
+        // Lời nhờ của người khác: muốn nhờ thêm người thì gửi lại đúng link của người nhờ (họ vẫn thu lại được).
+        if (item.getSourceToken() != null) throw new IllegalStateException("Đây là lời nhờ của người khác");
         Optional<PrayerShare> open = shareRepo.findFirstByItemIdAndRevokedAtIsNull(itemId);
         if (open.isPresent()) return view(open.get());
         if (shareRepo.countByUserIdAndRevokedAtIsNull(userId) >= SHARES_MAX) {
