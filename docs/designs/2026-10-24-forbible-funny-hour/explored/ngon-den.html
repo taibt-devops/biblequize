@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ngọn Đèn — style chung của forbible</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap">
+<style>
+  /* ---------- Ngọn Đèn tokens ---------- */
+  :root {
+    --paper: #FAF8F4; --surface: #FFFFFF; --ink: #1B1D21; --ink2: #565B63; --ink3: #6B7079; --line: #E7E3DC;
+    --lamp: #F2B630; --lamp-ink: #8A5A12; --lamp-soft: #FCEFC9; --night: #141B2D;
+    --read: #2F6FD6; --read-bg: #E8F0FC; --pray: #7446C2; --pray-bg: #F1EAFB; --memo: #C2412B; --memo-bg: #FCEAE6;
+    --quiz: #A86B12; --quiz-bg: #FBF1DF; --manna: #21865A; --manna-bg: #E4F4EC; --eng: #11817F; --eng-bg: #E3F5F5;
+    --ok: #1E7A4E; --ok-bg: #EAF6EF;
+    --sans: 'Be Vietnam Pro', system-ui, sans-serif; --serif: 'Lora', Georgia, serif;
+    --shadow: 0 1px 2px rgba(27,29,33,.05), 0 6px 18px rgba(27,29,33,.05);
+  }
+  .dark {
+    --paper: #0F1420; --surface: #171E2E; --ink: #EEF0F4; --ink2: #A8B0C0; --ink3: #8E97A8; --line: #263049;
+    --lamp-ink: #F2C25B; --lamp-soft: #2B2A20; --pray: #C9B2F5; --pray-bg: #2A2340; --shadow: none;
+  }
+
+  /* ---------- page ---------- */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ECEAE5; color: #1B1D21; font-family: var(--sans); }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  svg { display: block; flex-shrink: 0; }
+  .page { max-width: 1280px; margin: 0 auto; padding: 40px 16px 96px; }
+  .hero h1 { margin: 0; font-size: 34px; letter-spacing: -0.015em; }
+  .hero .motto { margin: 14px 0 0; font-family: var(--serif); font-size: 22px; line-height: 1.5; color: #1B1D21; max-width: 760px; }
+  .hero .motto small { display: block; margin-top: 4px; font-family: var(--sans); font-size: 14px; font-weight: 600; color: #8A5A12; }
+  .lead { margin: 14px 0 0; max-width: 820px; font-size: 16px; line-height: 1.65; color: #3F444B; }
+  .sec { margin-top: 56px; }
+  .sec > h2 { margin: 0; font-size: 24px; letter-spacing: -0.01em; }
+  .sec > p { margin: 6px 0 0; max-width: 820px; font-size: 15px; line-height: 1.6; color: #3F444B; }
+  .rules { margin: 18px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .rules li { background: #FFFFFF; border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+  .rules b { display: block; font-size: 16px; margin-bottom: 6px; }
+  .rules span { font-size: 14px; line-height: 1.55; color: #4A4F57; }
+  .board { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .panel { background: #FFFFFF; border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+  .panel h3 { margin: 0 0 12px; font-size: 15px; }
+  .sw { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+  .sw div { font-size: 11.5px; line-height: 1.35; color: #4A4F57; }
+  .sw i { display: block; height: 44px; border-radius: 10px; margin-bottom: 6px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+  .specimen .s1 { font-family: var(--serif); font-size: 22px; line-height: 1.5; }
+  .specimen .s2 { margin-top: 12px; font-size: 20px; font-weight: 700; }
+  .specimen .s3 { margin-top: 4px; font-size: 15px; color: #565B63; line-height: 1.55; }
+  .specimen .cap { margin-top: 10px; font-size: 12px; color: #6B7079; }
+  .comp { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .row-phones { margin-top: 22px; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; }
+  .shot-label { text-align: center; font-size: 13px; font-weight: 600; color: #4A4F57; }
+  .phone { width: 390px; height: 844px; overflow: hidden; border-radius: 34px; box-shadow: 0 0 0 1px rgba(0,0,0,.10), 0 18px 44px rgba(0,0,0,.14); }
+  .prompts { margin-top: 16px; background: #FFFFFF; border-radius: 16px; padding: 18px 20px; box-shadow: var(--shadow); }
+  .prompts summary { cursor: pointer; font-weight: 600; }
+  .prompts pre { margin: 12px 0 0; white-space: pre-wrap; font-size: 12.5px; line-height: 1.6; color: #3F444B; font-family: ui-monospace, Consolas, monospace; }
+
+  /* ---------- components (inside phones and board) ---------- */
+  .scr { width: 390px; height: 844px; display: flex; flex-direction: column; overflow: hidden; position: relative; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+  .bar { height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 12px 0 20px; background: var(--surface); border-bottom: 1px solid var(--line); }
+  .bar-l { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .bar-r { display: flex; align-items: center; gap: 4px; }
+  .wordmark { font-family: var(--serif); font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+  .appname { font-size: 17px; font-weight: 700; }
+  .tile { width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .tile.sm { width: 30px; height: 30px; border-radius: 9px; }
+  .lamp-tile { background: var(--lamp); color: #1B1D21; }
+  .icon-btn { width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; border-radius: 12px; position: relative; }
+  .dot { position: absolute; top: 10px; right: 11px; width: 8px; height: 8px; border-radius: 50%; background: #D2462F; border: 2px solid var(--surface); }
+  .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--read-bg); color: var(--read); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+  .chip { display: inline-flex; align-items: center; gap: 5px; height: 32px; padding: 0 10px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-size: 14px; font-weight: 600; }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 14px 20px 0; gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); }
+  .label { font-size: 13px; font-weight: 600; color: var(--lamp-ink); }
+  .muted { color: var(--ink2); }
+  .small { font-size: 13px; }
+  .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .verse { font-family: var(--serif); font-weight: 500; }
+  .ref { margin-top: 6px; font-size: 14px; font-weight: 600; color: var(--ink2); }
+  .h3 { margin: 0; font-size: 17px; font-weight: 700; }
+  .btn { height: 46px; padding: 0 16px; border-radius: 12px; border: 0; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 15px; font-weight: 600; white-space: nowrap; }
+  .btn-lamp { background: var(--lamp); color: #1B1D21; }
+  .btn-line { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost { background: transparent; color: var(--ink); }
+  .btn-sm { height: 38px; padding: 0 14px; border-radius: 999px; font-size: 14px; }
+  .btn-row { margin-top: 14px; display: flex; gap: 10px; }
+  .list { overflow: hidden; }
+  .li { height: 56px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid var(--line); }
+  .li:last-child { border-bottom: 0; }
+  .li .t { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .li .n { font-size: 15px; font-weight: 600; }
+  .li .d { font-size: 13px; color: var(--ink2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .li .c { font-size: 14px; font-weight: 600; color: var(--ink2); }
+  .track { height: 6px; border-radius: 999px; background: var(--line); overflow: hidden; }
+  .track > div { height: 100%; border-radius: 999px; background: var(--lamp); }
+  .nav { height: 72px; flex-shrink: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); background: var(--surface); border-top: 1px solid var(--line); }
+  .nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: var(--ink2); }
+  .nav a.on { color: var(--ink); font-weight: 600; }
+  .nav a.on .pill { background: var(--lamp-soft); }
+  .nav .pill { width: 48px; height: 28px; border-radius: 999px; display: flex; align-items: center; justify-content: center; }
+  .night { background: var(--night); color: #FFFFFF; border-radius: 20px; overflow: hidden; }
+  .ans { height: 58px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); font-size: 16px; font-weight: 500; text-align: left; width: 100%; }
+  .ans .k { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; color: #1B1D21; }
+  .ans.right { border: 2px solid #1E8E5A; background: var(--ok-bg); font-weight: 600; }
+  .ans.dim { opacity: .5; }
+
+  /* illustration placeholders: the mood of the picture, not the picture */
+  .art { position: relative; overflow: hidden; }
+  .art-cap { position: absolute; left: 10px; bottom: 10px; right: 10px; font-size: 11px; font-weight: 500; line-height: 1.35; color: #FFFFFF; background: rgba(15,20,32,.55); padding: 5px 8px; border-radius: 8px; }
+  .art-dawn { background: radial-gradient(circle at 72% 68%, rgba(255,214,120,.95) 0, rgba(255,190,90,.45) 12%, rgba(255,190,90,0) 34%), linear-gradient(180deg, #1F2B4D 0%, #3D4F7E 42%, #C98B5A 78%, #F1C98A 100%); }
+  .art-dusk { background: radial-gradient(circle at 30% 58%, rgba(255,206,120,.95) 0, rgba(255,180,90,.4) 10%, rgba(255,180,90,0) 30%), linear-gradient(180deg, #171C33 0%, #2E2A55 50%, #6B4A7E 82%, #B07A8F 100%); }
+  .art-path { background: radial-gradient(circle at 78% 40%, rgba(255,216,128,.95) 0, rgba(255,190,90,.45) 9%, rgba(255,190,90,0) 26%), linear-gradient(180deg, #18213D 0%, #2F3F6C 45%, #8C6A5C 80%, #D9A96E 100%); }
+  .art-summit { background: radial-gradient(circle at 50% 46%, rgba(255,226,150,1) 0, rgba(255,200,100,.55) 14%, rgba(255,200,100,0) 40%), linear-gradient(180deg, #2A3A66 0%, #6E6F9A 38%, #E3A867 72%, #F6D9A0 100%); }
+  .fade { position: absolute; left: 0; right: 0; bottom: 88px; height: 90px; background: linear-gradient(180deg, rgba(250,248,244,0) 0%, var(--paper) 100%); pointer-events: none; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <h1>Ngọn Đèn — style chung của forbible</h1>
+    <p class="motto">“Lời Chúa là ngọn đèn cho chân con, Ánh sáng cho đường lối con.”<small>Thi Thiên 119:105</small></p>
+    <p class="lead">Giao diện sáng, yên và rõ như một trang sách dưới ánh đèn. Mỗi màn chỉ có một "ngọn đèn" vàng: việc nên làm tiếp theo. Lời Chúa luôn dùng chữ có chân, còn mọi chữ giao diện dùng chữ không chân. Tranh vẽ (tạo bằng OpenAI) chỉ là cửa sổ để tạo không khí, không bao giờ là nút bấm hay bản đồ phải đoán. Cùng một bộ màu, bộ chữ và các thành phần cho mọi app: forbible.org, Đọc hằng ngày, Cầu nguyện, Học Thuộc, Bible Quiz, Manna, Tiếng Anh.</p>
+  </header>
+
+  <section class="sec">
+    <h2>5 quy tắc</h2>
+    <ul class="rules">
+      <li><b>1. Một ngọn đèn mỗi màn</b><span>Chỉ việc chính mới dùng màu vàng đèn: nút chính, thanh tiến độ, câu đang đọc. Mọi thứ khác là mực và nền sáng.</span></li>
+      <li><b>2. Lời Chúa dùng chữ có chân</b><span>Câu Kinh Thánh luôn dùng Lora. Giao diện dùng Be Vietnam Pro (font làm cho tiếng Việt). Liếc là biết đâu là Lời Chúa.</span></li>
+      <li><b>3. Tranh là cửa sổ</b><span>Tranh ở đầu màn, màn trống, màn mừng. Không đặt nút lên tranh, không định vị theo % tranh, nên cỡ màn nào cũng không đè.</span></li>
+      <li><b>4. Mỗi nhà một màu</b><span>Mỗi app có một màu nhận diện cho ô icon và tông tranh. Khung, nút, chữ dùng chung, nên qua app khác vẫn thấy quen.</span></li>
+      <li><b>5. Tĩnh cho đọc, động cho chơi</b><span>Đọc, Cầu nguyện, Học Thuộc giữ nhịp tĩnh. Bible Quiz, Manna được nhiều màu và chuyển động hơn ở khoảnh khắc thắng, nhưng vẫn cùng bộ thành phần.</span></li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <h2>Bộ nhận diện</h2>
+    <div class="board">
+      <div class="panel">
+        <h3>Màu chung</h3>
+        <div class="sw">
+          <div><i style="background:#FAF8F4"></i>Nền giấy<br>#FAF8F4</div>
+          <div><i style="background:#FFFFFF"></i>Mặt thẻ<br>#FFFFFF</div>
+          <div><i style="background:#1B1D21"></i>Mực<br>#1B1D21</div>
+          <div><i style="background:#E7E3DC"></i>Đường kẻ<br>#E7E3DC</div>
+          <div><i style="background:#F2B630"></i>Đèn<br>#F2B630</div>
+          <div><i style="background:#8A5A12"></i>Chữ vàng<br>#8A5A12</div>
+          <div><i style="background:#141B2D"></i>Đêm<br>#141B2D</div>
+          <div><i style="background:#1E7A4E"></i>Đúng<br>#1E7A4E</div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Màu từng nhà</h3>
+        <div class="sw">
+          <div><i style="background:#2F6FD6"></i>Đọc hằng ngày<br>bình minh</div>
+          <div><i style="background:#7446C2"></i>Cầu nguyện<br>chạng vạng</div>
+          <div><i style="background:#C2412B"></i>Học Thuộc<br>san hô</div>
+          <div><i style="background:#A86B12"></i>Bible Quiz<br>hổ phách</div>
+          <div><i style="background:#21865A"></i>Manna<br>lúa chín</div>
+          <div><i style="background:#11817F"></i>Tiếng Anh<br>ngọc</div>
+          <div><i style="background:#E8826A"></i>Đáp án A<br>(C5 giữ nguyên)</div>
+          <div><i style="background:linear-gradient(90deg,#6AB8E8 0 33%,#E8C76A 33% 66%,#7AB87A 66%)"></i>B · C · D<br>(C5)</div>
+        </div>
+      </div>
+      <div class="panel specimen">
+        <h3>Chữ</h3>
+        <div class="s1">Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay.</div>
+        <div class="cap">Lora 500: chỉ dùng cho Lời Chúa (và chữ "forbible")</div>
+        <div class="s2">Thử thách hôm nay</div>
+        <div class="s3">Be Vietnam Pro 400–700: tiêu đề, nút, mô tả, số liệu. Đủ dấu tiếng Việt, đọc rõ ở cỡ nhỏ.</div>
+      </div>
+      <div class="panel">
+        <h3>Thành phần</h3>
+        <div class="comp">
+          <a class="btn btn-lamp" href="#">Nút chính (đèn)</a>
+          <a class="btn btn-line" href="#">Nút phụ</a>
+          <a class="btn btn-ghost" href="#">Nút chữ</a>
+        </div>
+        <div class="comp" style="margin-top: 12px">
+          <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D2462F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>3 ngày</span>
+          <span class="tile sm" style="background: var(--read-bg); color: var(--read)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg></span>
+          <span class="tile sm" style="background: var(--pray-bg); color: var(--pray)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1.8 2.2 3 3.9 3 5.6a3 3 0 0 1-6 0C9 6.9 10.2 5.2 12 3z"/><path d="M8 14h8v7H8z"/><path d="M12 11.6V14"/></svg></span>
+          <span class="tile sm" style="background: var(--quiz-bg); color: var(--quiz)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+          <div style="flex: 1; min-width: 120px"><div class="track"><div style="width: 45%"></div></div></div>
+        </div>
+        <div class="card" style="margin-top: 12px; padding: 12px 14px; box-shadow: none; display: flex; align-items: center; gap: 10px; font-size: 14px">
+          <span style="flex: 1">Thẻ: nền trắng, viền mảnh, bo 16, bóng rất nhẹ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Áp vào các nhà</h2>
+    <p>Cùng một khung: thanh trên trắng, nền giấy sáng, thẻ trắng, một nút vàng. Khác nhau ở màu nhận diện và tranh cửa sổ. Ô tranh ở đây là bảng màu tạm, sẽ thay bằng tranh thật (câu lệnh vẽ ở cuối trang).</p>
+    <div class="row-phones">
+
+      <!-- 1. forbible.org -->
+      <div class="shot">
+        <div class="shot-label">forbible.org — cửa vào chung</div>
+        <div class="phone"><div class="scr">
+          <header class="bar">
+            <div class="bar-l">
+              <span class="tile sm lamp-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c2.2 2.6 3.4 4.5 3.4 6.4a3.4 3.4 0 0 1-6.8 0c0-1.9 1.2-3.8 3.4-6.4z"/><path d="M6 15h12l-1.6 6H7.6z"/><path d="M12 12.3V15"/></svg></span>
+              <span class="wordmark">forbible</span>
+            </div>
+            <a class="btn btn-line btn-sm" href="#">Đăng nhập</a>
+          </header>
+          <main class="main">
+            <section class="card" style="overflow: hidden">
+              <div class="art art-dawn" style="height: 104px"><span class="art-cap">Tranh: đèn dầu bên cuốn Kinh Thánh mở, rạng đông</span></div>
+              <div style="padding: 14px 18px 18px">
+                <div class="meta"><span class="label">Câu hôm nay</span><span class="muted small">Thứ Bảy, 24/10</span></div>
+                <p class="verse" style="margin: 8px 0 0; font-size: 18px; line-height: 1.55">Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+                <div class="ref">Hê-bơ-rơ 10:23</div>
+                <div class="btn-row"><a class="btn btn-lamp" style="flex: 1" href="#">Đọc chương hôm nay</a><a class="btn btn-line" href="#">Thuộc câu</a></div>
+              </div>
+            </section>
+            <h3 class="h3">Trong làng</h3>
+            <div class="card list">
+              <a class="li" href="#"><span class="tile" style="background: var(--read-bg); color: var(--read)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg></span><span class="t"><span class="n">Đọc hằng ngày</span><span class="d">Đọc trọn Kinh Thánh từng ngày</span></span></a>
+              <a class="li" href="#"><span class="tile" style="background: var(--pray-bg); color: var(--pray)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1.8 2.2 3 3.9 3 5.6a3 3 0 0 1-6 0C9 6.9 10.2 5.2 12 3z"/><path d="M8 14h8v7H8z"/><path d="M12 11.6V14"/></svg></span><span class="t"><span class="n">Cầu nguyện</span><span class="d">Sổ cầu nguyện, nhờ người cầu thay</span></span></a>
+              <a class="li" href="#"><span class="tile" style="background: var(--memo-bg); color: var(--memo)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span><span class="t"><span class="n">Học Thuộc</span><span class="d">Thuộc lòng câu gốc từng chút một</span></span></a>
+              <a class="li" href="#"><span class="tile" style="background: var(--quiz-bg); color: var(--quiz)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span><span class="t"><span class="n">Bible Quiz</span><span class="d">Câu đố Kinh Thánh, chơi cùng nhóm</span></span></a>
+              <a class="li" href="#"><span class="tile" style="background: var(--manna-bg); color: var(--manna)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.59C2.6 9.42 2 14.46 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.41-1.41A2 2 0 0 1 9.83 16h4.34a2 2 0 0 1 1.41.59L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.55-.6-6.58-.69-7.26A4 4 0 0 0 17.32 5z"/></svg></span><span class="t"><span class="n">Manna</span><span class="d">Trò chơi học thuộc câu gốc</span></span></a>
+              <a class="li" href="#"><span class="tile" style="background: var(--eng-bg); color: var(--eng)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></span><span class="t"><span class="n">Tiếng Anh</span><span class="d">Luyện nói tiếng Anh 1% mỗi ngày</span></span></a>
+            </div>
+          </main>
+        </div></div>
+      </div>
+
+      <!-- 2. Đọc hằng ngày -->
+      <div class="shot">
+        <div class="shot-label">Đọc hằng ngày — đang đọc</div>
+        <div class="phone"><div class="scr">
+          <header class="bar">
+            <div class="bar-l">
+              <button class="icon-btn" type="button" aria-label="Quay lại" style="margin-left: -12px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+              <span class="appname">Hê-bơ-rơ 10</span>
+            </div>
+            <div class="bar-r">
+              <button class="icon-btn" type="button" aria-label="Cỡ chữ" style="font-family: var(--serif); font-size: 17px; font-weight: 600">Aa</button>
+              <button class="icon-btn" type="button" aria-label="Lưu chỗ đọc"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
+            </div>
+          </header>
+          <div style="padding: 12px 20px 0">
+            <div class="meta"><span class="label" style="color: var(--read)">Phần hôm nay · khoảng 6 phút</span><span class="muted small">câu 19–25</span></div>
+            <div class="track" style="margin-top: 8px"><div style="width: 38%; background: var(--read)"></div></div>
+          </div>
+          <main style="flex: 1; min-height: 0; overflow: hidden; padding: 18px 22px 0">
+            <p class="verse" style="margin: 0; font-size: 19px; line-height: 1.8">
+              <sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">19 </sup>Vậy, thưa anh em, vì chúng ta nhờ huyết Đức Chúa Jêsus được dạn dĩ vào Nơi Chí Thánh,
+              <sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">20 </sup>bởi con đường mới và sống mà Ngài đã mở cho chúng ta ngang qua cái màn, nghĩa là ngang qua thân xác Ngài;
+              <sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">21 </sup>lại vì chúng ta có một thầy tế lễ vĩ đại được lập lên cai trị nhà Đức Chúa Trời,
+              <sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">22 </sup>nên chúng ta hãy lấy lòng chân thật với niềm tin vững chắc, lòng được tẩy sạch khỏi lương tâm ác, thân thể rửa bằng nước tinh khiết mà đến gần Chúa.
+              <mark style="background: var(--lamp-soft); color: inherit; padding: 2px 0; box-decoration-break: clone; -webkit-box-decoration-break: clone"><sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">23 </sup>Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</mark>
+              <sup style="font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--lamp-ink)">24 </sup>Chúng ta hãy quan tâm khích lệ nhau về lòng yêu thương và các việc lành.
+            </p>
+          </main>
+          <div class="fade"></div>
+          <footer style="height: 88px; flex-shrink: 0; padding: 14px 20px 28px; display: flex; gap: 10px; background: var(--paper)">
+            <a class="btn btn-lamp" style="flex: 1" href="#">Xong phần hôm nay</a>
+            <a class="btn btn-line" href="#" aria-label="Thuộc câu đã tô">Thuộc câu 23</a>
+          </footer>
+        </div></div>
+      </div>
+
+      <!-- 3. Cầu nguyện (dark) -->
+      <div class="shot">
+        <div class="shot-label">Cầu nguyện — bản tối "đêm có đèn"</div>
+        <div class="phone"><div class="scr dark">
+          <header class="bar">
+            <div class="bar-l">
+              <span class="tile sm" style="background: var(--pray-bg); color: var(--pray)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c1.8 2.2 3 3.9 3 5.6a3 3 0 0 1-6 0C9 6.9 10.2 5.2 12 3z"/><path d="M8 14h8v7H8z"/><path d="M12 11.6V14"/></svg></span>
+              <span class="appname">Cầu nguyện</span>
+            </div>
+            <a class="avatar" href="#" aria-label="Tài khoản" style="background: #263049; color: var(--lamp)">ĐB</a>
+          </header>
+          <main class="main">
+            <div class="art art-dusk" style="height: 112px; border-radius: 20px"><span class="art-cap">Tranh: ngọn nến bên khung cửa nhà nguyện, chạng vạng</span></div>
+            <div>
+              <div class="muted small">Tối thứ Bảy, 24/10</div>
+              <div style="font-size: 20px; font-weight: 700; margin-top: 2px">Tối nay, cầu nguyện cho 3 điều</div>
+            </div>
+            <section class="card" style="padding: 18px">
+              <div class="meta"><span class="label" style="color: var(--pray)">Gia đình · 1 / 3</span><span class="muted small">ghi từ 12/10</span></div>
+              <p style="margin: 8px 0 0; font-size: 17px; line-height: 1.5">Mẹ mau hồi phục sau ca mổ, các bác sĩ được sáng suốt.</p>
+              <div class="btn-row"><a class="btn btn-lamp" style="flex: 1" href="#">Đã cầu nguyện</a><a class="btn btn-line" href="#">Để sau</a></div>
+            </section>
+            <h3 class="h3">Sổ cầu nguyện</h3>
+            <div class="card list">
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Gia đình</span></span><span class="c">3</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Bản thân</span></span><span class="c">2</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Người chưa tin Chúa</span></span><span class="c">1</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Hội thánh</span></span><span class="c">2</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Sức khỏe</span></span><span class="c">1</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Công việc · học tập</span></span><span class="c">1</span></a>
+              <a class="li" href="#" style="height: 44px"><span class="t"><span class="n">Đất nước · truyền giáo</span></span><span class="c">0</span></a>
+            </div>
+          </main>
+        </div></div>
+      </div>
+
+      <!-- 4. Bible Quiz home -->
+      <div class="shot">
+        <div class="shot-label">Bible Quiz — trang chủ</div>
+        <div class="phone"><div class="scr">
+          <header class="bar">
+            <div class="bar-l">
+              <span class="tile sm" style="background: var(--quiz-bg); color: var(--quiz)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+              <span class="appname">Bible Quiz</span>
+            </div>
+            <div class="bar-r">
+              <span class="chip" aria-label="Chuỗi 0 ngày"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D2462F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>0</span>
+              <button class="icon-btn" type="button" aria-label="Thông báo"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="dot"></span></button>
+              <a class="avatar" href="#" aria-label="Trang cá nhân">ĐB</a>
+            </div>
+          </header>
+          <main class="main" style="gap: 12px">
+            <div>
+              <div style="font-size: 20px; font-weight: 700">Chào buổi sáng, Đạt</div>
+              <div class="meta" style="margin-top: 8px"><span class="small" style="font-weight: 600">Tân Tín Hữu</span><span class="small muted">0 / 1.000 XP</span></div>
+              <div class="track" style="margin-top: 6px"><div style="width: 2%"></div></div>
+            </div>
+            <section class="night">
+              <div class="art art-path" style="height: 92px"><span class="art-cap">Tranh: đèn treo bên đường núi, lúc chạng vạng</span></div>
+              <div style="padding: 14px 18px 18px">
+                <div class="label" style="color: var(--lamp)">Thử thách hôm nay</div>
+                <div style="margin-top: 4px; font-size: 20px; font-weight: 700">5 câu hỏi Kinh Thánh</div>
+                <div style="margin-top: 2px; font-size: 14px; color: #C3C8D4">Đúng hết 5 câu được 150 XP</div>
+                <a class="btn btn-lamp" style="margin-top: 14px; width: 100%" href="#">Bắt đầu</a>
+              </div>
+            </section>
+            <h3 class="h3">Chọn cách chơi</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+              <a class="card" href="#" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="tile sm" style="background: var(--read-bg); color: var(--read)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Luyện Tập</span><span class="small muted">Theo sách, câu chuyện</span></span></a>
+              <a class="card" href="#" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="tile sm" style="background: var(--memo-bg); color: var(--memo)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Đấu Hạng</span><span class="small muted">Hạng tuần cả nước</span></span></a>
+              <a class="card" href="#" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="tile sm" style="background: var(--manna-bg); color: var(--manna)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Phòng Chơi</span><span class="small muted">Cùng bạn bè, nhóm</span></span></a>
+              <a class="card" href="#" style="padding: 12px 14px; display: flex; align-items: center; gap: 10px"><span class="tile sm" style="background: var(--quiz-bg); color: var(--quiz)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Hành Trình</span><span class="small muted">Qua 66 sách</span></span></a>
+            </div>
+            <section class="card" style="padding: 12px 14px">
+              <div class="meta"><span style="font-size: 15px; font-weight: 600">Nhiệm vụ hôm nay</span><span class="small muted">0 / 3</span></div>
+              <div style="margin-top: 6px; display: flex; flex-direction: column">
+                <div class="meta small" style="height: 30px; align-items: center"><span>Trả lời đúng 5 câu</span><span class="muted">0/5</span></div>
+                <div class="meta small" style="height: 30px; align-items: center; border-top: 1px solid var(--line)"><span>Chơi 1 trận Đấu Hạng</span><span class="muted">0/1</span></div>
+                <div class="meta small" style="height: 30px; align-items: center; border-top: 1px solid var(--line)"><span>Làm thử thách hôm nay</span><span class="muted">0/1</span></div>
+              </div>
+            </section>
+          </main>
+          <nav class="nav" aria-label="Điều hướng chính">
+            <a class="on" href="#" aria-current="page"><span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>Trang chủ</a>
+            <a href="#"><span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span>Hành trình</a>
+            <a href="#"><span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4"/><path d="M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M12 14v4"/><path d="M8 21h8"/><path d="M9 18h6"/></svg></span>Xếp hạng</a>
+            <a href="#"><span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Nhóm</a>
+            <a href="#"><span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Cá nhân</a>
+          </nav>
+        </div></div>
+      </div>
+
+      <!-- 5. Bible Quiz question -->
+      <div class="shot">
+        <div class="shot-label">Bible Quiz — vừa trả lời đúng</div>
+        <div class="phone"><div class="scr">
+          <header class="bar" style="background: transparent; border: 0; padding: 0 12px 0 6px">
+            <button class="icon-btn" type="button" aria-label="Thoát lượt chơi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+            <span style="font-size: 15px; font-weight: 600">Câu 3 / 10</span>
+            <span class="chip" aria-label="Còn 12 giây" style="background: var(--surface)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>0:12</span>
+          </header>
+          <div style="padding: 0 20px"><div class="track"><div style="width: 30%"></div></div></div>
+          <main class="main" style="padding-top: 18px; gap: 12px">
+            <span class="small" style="align-self: flex-start; font-weight: 500; color: var(--read); background: var(--read-bg); border-radius: 999px; padding: 4px 10px">Luyện Tập · Sáng Thế Ký</span>
+            <h3 style="margin: 0; font-size: 21px; font-weight: 600; line-height: 1.4">Ai đã đóng tàu theo lời Đức Chúa Trời phán dặn?</h3>
+            <div style="display: flex; flex-direction: column; gap: 9px; margin-top: 4px">
+              <button class="ans right" type="button"><span class="k" style="background: #E8826A">A</span><span style="flex: 1">Nô-ê</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg></button>
+              <button class="ans dim" type="button" disabled><span class="k" style="background: #6AB8E8">B</span><span>Áp-ra-ham</span></button>
+              <button class="ans dim" type="button" disabled><span class="k" style="background: #E8C76A">C</span><span>Môi-se</span></button>
+              <button class="ans dim" type="button" disabled><span class="k" style="background: #7AB87A">D</span><span>Đa-vít</span></button>
+            </div>
+          </main>
+          <section aria-live="polite" style="flex-shrink: 0; background: var(--surface); border-top: 1px solid var(--line); border-radius: 20px 20px 0 0; padding: 16px 20px 24px">
+            <div style="display: flex; align-items: center; gap: 8px; color: var(--ok); font-size: 17px; font-weight: 700"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Chính xác!</div>
+            <p class="verse" style="margin: 8px 0 0; font-size: 16px; line-height: 1.55">“Con hãy đóng một chiếc tàu bằng gỗ gô-phe, chia thành từng phòng và trét nhựa chai cả trong lẫn ngoài.”</p>
+            <div class="small muted" style="margin-top: 4px; font-weight: 600">Sáng Thế Ký 6:14</div>
+            <a class="btn btn-lamp" style="margin-top: 14px; width: 100%" href="#">Câu tiếp theo</a>
+          </section>
+        </div></div>
+      </div>
+
+      <!-- 6. Bible Quiz result -->
+      <div class="shot">
+        <div class="shot-label">Bible Quiz — xong thử thách</div>
+        <div class="phone"><div class="scr">
+          <main class="main" style="padding-top: 20px; gap: 16px">
+            <div class="art art-summit" style="height: 290px; border-radius: 24px"><span class="art-cap">Tranh: đỉnh đồi lúc mặt trời mọc, ngọn đèn sáng rực</span></div>
+            <div style="text-align: center">
+              <div class="label">Thử thách hôm nay</div>
+              <div style="margin-top: 4px; font-size: 26px; font-weight: 700; letter-spacing: -0.01em">Đúng cả 5 câu!</div>
+              <div class="muted" style="margin-top: 4px; font-size: 15px">Hẹn bạn ngày mai với 5 câu mới.</div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+              <div class="card" style="padding: 14px; text-align: center"><div style="font-size: 24px; font-weight: 700; color: var(--lamp-ink)">+150</div><div class="small muted">XP nhận được</div></div>
+              <div class="card" style="padding: 14px; text-align: center"><div style="font-size: 24px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 6px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D2462F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>1</div><div class="small muted">ngày liên tiếp</div></div>
+            </div>
+            <div class="card" style="padding: 14px 16px">
+              <div class="meta"><span style="font-size: 15px; font-weight: 600">Tân Tín Hữu</span><span class="small muted">150 / 1.000 XP</span></div>
+              <div class="track" style="margin-top: 10px"><div style="width: 15%"></div></div>
+              <div class="small muted" style="margin-top: 8px">Còn 850 XP để lên Người Tìm Kiếm</div>
+            </div>
+          </main>
+          <footer style="flex-shrink: 0; padding: 14px 20px 28px; display: flex; gap: 10px">
+            <a class="btn btn-line" href="#">Xem lại 5 câu</a>
+            <a class="btn btn-lamp" style="flex: 1" href="#">Tiếp tục</a>
+          </footer>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Tranh minh hoạ (vẽ bằng Game Asset Studio)</h2>
+    <p>Một preset mới "Ngọn Đèn" thay cho preset Lữ Khách (id 6). Tranh tĩnh, nhiều khoảng trống, ánh vàng ấm trên nền xanh đêm; không người, không chữ, không nhân vật hoạt hình, để không bị trẻ con. Chỉ cần khoảng 6–8 tranh cho cả hệ.</p>
+    <details class="prompts" open>
+      <summary>Câu lệnh vẽ (tiếng Anh, dán vào Studio)</summary>
+<pre>STYLE = "Calm painterly gouache illustration with soft brush texture, simple shapes and minimal detail.
+Warm golden lamplight against deep dusk-blue shadows, muted natural palette (deep navy, warm gold, sage, clay),
+generous empty space, quiet and reverent mood, no outlines. "
+NO = "No people, no faces, no animals, no text, no letters, no numbers."
+
+forbible-home   = STYLE + "An oil lamp glowing on an open Bible on a wooden table by a window at dawn." + NO
+doc-reading     = STYLE + "Morning light through a tall window onto a reading desk with an open book and a cup of tea." + NO
+pray            = STYLE + "A single candle burning in the window of a small quiet stone chapel at dusk." + NO
+quiz-daily      = STYLE + "A lantern hanging on a wooden post beside a winding mountain path at twilight, the path leading toward a sunrise." + NO
+quiz-result     = STYLE + "A hilltop at sunrise with a lantern glowing brightly, warm rays of light over a calm valley." + NO
+manna           = STYLE + "A golden wheat field at sunset with a woven basket of round bread loaves in the foreground." + NO
+empty-state     = STYLE + "An unlit lantern resting on a stone step beside a closed wooden door, early morning." + NO
+english         = STYLE + "A small open notebook and a pencil on a café table by a sunny window, a distant city skyline." + NO</pre>
+    </details>
+  </section>
+
+</div>
+</body>
+</html>

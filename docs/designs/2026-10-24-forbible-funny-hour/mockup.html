@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>forbible × phong cách Funny Hour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+  /* tokens taken from funny-hour.infaxia.io */
+  :root {
+    --bg: #F3F5FB; --bg-2: #E9EDF7; --surface: #FFFFFF; --surface-2: #F6F8FC;
+    --ink: #0E1430; --ink-2: #3B4566; --muted: #5D6788; --line: #E2E7F2;
+    --brand: #FF5A3C; --brand-2: #FF8A3D; --brand-ink: #D13A17; --blue: #2E6BFF; --gold: #F5B000; --green: #12B886; --violet: #7C5CFF;
+    --dot: #0E143017; --glow-a: #FF5A3C29; --glow-b: #2E6BFF24;
+    --shadow-sm: 0 1px 2px #0E14300F; --shadow-md: 0 1px 2px #0E14300D, 0 12px 32px -14px #0E143038; --shadow-lg: 0 2px 4px #0E14300D, 0 32px 64px -24px #0E143061;
+    --display: 'Unbounded', ui-sans-serif, system-ui, sans-serif; --sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #DCE1EE; color: var(--ink); font-family: var(--sans); }
+  a { color: inherit; text-decoration: none; }
+  button, input { font: inherit; color: inherit; }
+  img { display: block; }
+  svg { display: block; flex-shrink: 0; }
+
+  .page { max-width: 1280px; margin: 0 auto; padding: 40px 16px 96px; }
+  .page > h1 { margin: 0; font-family: var(--display); font-weight: 800; font-size: 34px; letter-spacing: -0.02em; }
+  .page > h1 span { color: var(--brand); }
+  .lead { margin: 12px 0 0; max-width: 900px; font-size: 16px; line-height: 1.65; color: var(--ink-2); }
+  .label { margin: 48px 0 14px; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--brand-ink); }
+  .note { margin-top: 28px; max-width: 900px; font-size: 14px; line-height: 1.6; color: var(--ink-2); background: #FFFFFF; border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow-sm); }
+
+  /* shared pieces */
+  .dots-bg { background-color: var(--bg); background-image: radial-gradient(620px 420px at 0% 0%, var(--glow-a), transparent 70%), radial-gradient(620px 420px at 100% 0%, var(--glow-b), transparent 70%), radial-gradient(var(--dot) 1px, transparent 1.2px); background-size: auto, auto, 22px 22px; }
+  .logo { display: inline-flex; align-items: center; gap: 9px; font-family: var(--display); font-weight: 700; font-size: 17px; letter-spacing: -0.02em; }
+  .logo .tile { width: 34px; height: 34px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--brand-2), var(--brand)); box-shadow: 0 6px 14px -6px #FF5A3C99; }
+  .logo b { font-weight: 700; color: var(--brand); }
+  .kpill { display: inline-flex; align-items: center; gap: 8px; height: 30px; padding: 0 13px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow-sm); border: 1px solid var(--line); font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--ink); }
+  .kpill i { width: 7px; height: 7px; border-radius: 50%; background: var(--brand); }
+  .kick { font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--brand-ink); }
+  .o { color: var(--brand); }
+  .btn { height: 52px; padding: 0 22px; border-radius: 14px; border: 0; display: inline-flex; align-items: center; justify-content: center; gap: 9px; font-size: 16px; font-weight: 700; white-space: nowrap; cursor: pointer; }
+  .btn-p { color: #FFFFFF; font-size: 17.5px; font-weight: 800; background: linear-gradient(135deg, var(--brand-2), #F24E2E); box-shadow: 0 10px 24px -10px #FF5A3CB3, inset 0 1px 0 #FFFFFF40; }
+  .btn-w { background: var(--surface); color: var(--ink); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow-md); }
+  .e3d { filter: drop-shadow(0 10px 14px #0E143030); }
+  .sticker { position: absolute; z-index: 3; border-radius: 14px; padding: 9px 14px; box-shadow: var(--shadow-lg); }
+  .sticker small { display: block; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; opacity: .8; }
+  .sticker b { display: block; font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+  .sticker.dk { background: var(--ink); color: #FFFFFF; }
+  .sticker.wh { background: #FFFFFF; color: var(--ink); border: 1px solid var(--line); }
+  .ava { width: 38px; height: 38px; border-radius: 50%; background: #FFFFFF; border: 2px solid #FFFFFF; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .ava img { width: 30px; height: 30px; }
+  .avas { display: flex; }
+  .avas .ava + .ava { margin-left: -10px; }
+  .num { font-family: var(--display); font-weight: 600; font-size: 13px; color: #A3ACC6; }
+  .more { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 800; color: var(--brand-ink); }
+
+  /* desktop site */
+  .browser { border-radius: 18px; overflow: hidden; box-shadow: 0 0 0 1px #0E14301A, 0 30px 70px -30px #0E143066; background: #FFFFFF; }
+  .chrome { height: 40px; display: flex; align-items: center; gap: 8px; padding: 0 16px; background: #EEF1F8; border-bottom: 1px solid var(--line); }
+  .chrome i { width: 11px; height: 11px; border-radius: 50%; background: #D5DBE8; }
+  .chrome span { margin-left: 14px; height: 26px; padding: 0 14px; border-radius: 8px; background: #FFFFFF; display: flex; align-items: center; font-size: 12.5px; color: var(--muted); }
+  .site { padding: 0 64px 28px; }
+  .s-top { height: 76px; display: flex; align-items: center; gap: 28px; }
+  .s-top nav { margin-left: auto; display: flex; gap: 28px; font-size: 14.5px; font-weight: 600; color: var(--ink-2); }
+  .hero { display: grid; grid-template-columns: 1.08fr .92fr; gap: 24px; align-items: center; padding: 30px 0 46px; }
+  .hero h1 { margin: 18px 0 0; font-family: var(--display); font-weight: 800; font-size: 52px; line-height: 1.04; letter-spacing: -0.035em; }
+  .hero p { margin: 20px 0 0; max-width: 540px; font-size: 18px; line-height: 1.6; color: var(--ink-2); }
+  .art { position: relative; height: 420px; }
+  .sec { padding: 34px 0 10px; }
+  .sec-h { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 22px; }
+  .sec-h h2 { margin: 6px 0 0; font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: -0.025em; }
+  .sec-h p { margin: 0; max-width: 420px; font-size: 15px; line-height: 1.6; color: var(--muted); }
+  .grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .fcard { position: relative; padding: 20px 20px 18px; display: flex; flex-direction: column; }
+  .fcard .num { position: absolute; top: 20px; right: 20px; }
+  .fcard img { width: 72px; height: 72px; }
+  .fcard h3 { margin: 14px 0 0; font-family: var(--display); font-weight: 700; font-size: 19px; letter-spacing: -0.02em; }
+  .fcard p { margin: 8px 0 14px; font-size: 14.5px; line-height: 1.55; color: var(--muted); flex: 1; }
+  .steps { display: flex; flex-direction: column; gap: 12px; }
+  .step { display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); }
+  .step .ic { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .step b { display: block; font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+  .step b em { font-style: normal; color: #A3ACC6; }
+  .step span { font-size: 14px; color: var(--muted); }
+  .s-foot { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted); }
+
+  /* phones */
+  .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; }
+  .shot-label { text-align: center; font-size: 13px; font-weight: 700; color: var(--ink-2); }
+  .phone { width: 390px; height: 844px; overflow: hidden; border-radius: 36px; box-shadow: 0 0 0 1px #0E14301F, 0 24px 50px -16px #0E143059; }
+  .m { position: relative; width: 390px; height: 844px; display: flex; flex-direction: column; overflow: hidden; }
+  .m-top { height: 62px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+  .m-main { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 4px 16px 0; }
+  .m-h1 { margin: 12px 0 0; font-family: var(--display); font-weight: 800; font-size: 31px; line-height: 1.08; letter-spacing: -0.035em; }
+  .iconbtn { width: 42px; height: 42px; border-radius: 13px; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: center; }
+  .stat { flex: 1; min-width: 0; padding: 10px 6px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+  .stat img { width: 28px; height: 28px; }
+  .stat b { display: block; font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: -0.02em; white-space: nowrap; }
+  .stat span { display: block; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+  .grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .mcard { position: relative; padding: 13px 13px 12px; display: flex; flex-direction: column; border-radius: 20px; }
+  .mcard .num { position: absolute; top: 12px; right: 13px; font-size: 11.5px; }
+  .mcard img { width: 46px; height: 46px; }
+  .mcard h3 { margin: 8px 0 0; font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: -0.02em; }
+  .mcard p { margin: 4px 0 8px; font-size: 12.5px; line-height: 1.4; color: var(--muted); }
+  .tabbar { height: 74px; flex-shrink: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 6px 12px; background: #FFFFFFE6; border-top: 1px solid var(--line); }
+  .tabbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: var(--muted); }
+  .tabbar a.on { color: var(--brand-ink); font-weight: 800; }
+  .tabbar a.on svg { color: var(--brand); }
+  .opt { width: 100%; height: 62px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow-sm); font-size: 17px; font-weight: 700; text-align: left; cursor: pointer; }
+  .opt .k { width: 34px; height: 34px; border-radius: 11px; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 700; font-size: 15px; color: var(--ink); }
+  .bar { height: 10px; border-radius: 999px; background: var(--bg-2); overflow: hidden; }
+  .bar > i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--brand-2), var(--brand)); }
+  .float { animation: float 4s ease-in-out infinite; }
+  @keyframes float { 0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); } 50% { transform: translateY(-10px) rotate(var(--r, 0deg)); } }
+  @media (prefers-reduced-motion: reduce) { .float { animation: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>forbible × phong cách <span>Funny Hour</span></h1>
+  <p class="lead">Lấy đúng bộ nhận diện của funny-hour.infaxia.io: nền sáng xanh xám có lưới chấm và quầng màu rất nhẹ, chữ Unbounded cho tiêu đề và Plus Jakarta Sans cho nội dung (cả hai đủ dấu tiếng Việt), thẻ trắng bo tròn bóng mềm, một màu cam thương hiệu, nhãn dán nghiêng, và hình 3D bóng bẩy làm điểm vui. Giao diện vẫn sạch; cái "vui" nằm ở hình.</p>
+
+  <div class="label">forbible.org · máy tính</div>
+  <div class="browser">
+    <div class="chrome"><i></i><i></i><i></i><span>forbible.org</span></div>
+    <div class="site dots-bg">
+      <header class="s-top">
+        <span class="logo"><span class="tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M3 5.5C3 4.7 3.7 4 4.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5h-5A1.5 1.5 0 0 1 3 16z"/><path d="M21 5.5c0-.8-.7-1.5-1.5-1.5H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5h5A1.5 1.5 0 0 0 21 16z" opacity=".8"/></svg></span><span>for<b>bible</b></span></span>
+        <nav><a href="#">Đọc hằng ngày</a><a href="#">Cầu nguyện</a><a href="#">Bible Quiz</a></nav>
+        <button class="iconbtn" type="button" aria-label="Chế độ tối"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg></button>
+        <a class="btn btn-w" href="#" style="height: 42px; font-size: 14.5px">Đăng nhập</a>
+      </header>
+      <section class="hero">
+        <div>
+          <span class="kpill"><i></i>Làng nhỏ của Lời Chúa</span>
+          <h1>Mỗi ngày<br><span class="o">một chút Lời Chúa.</span></h1>
+          <p>Đọc trọn Kinh Thánh, cầu nguyện cho nhau và đố vui Kinh Thánh cùng bạn bè. Miễn phí, mở là dùng ngay trên trình duyệt.</p>
+          <div style="margin-top: 28px; display: flex; gap: 12px">
+            <a class="btn btn-p" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5C3 4.7 3.7 4 4.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5h-5A1.5 1.5 0 0 1 3 16z"/><path d="M21 5.5c0-.8-.7-1.5-1.5-1.5H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5h5A1.5 1.5 0 0 0 21 16z"/></svg>Bắt đầu hôm nay</a>
+            <a class="btn btn-w" href="#">Câu hôm nay<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          </div>
+          <div style="margin-top: 28px; display: flex; align-items: center; gap: 14px">
+            <span class="avas"><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fox/3D/fox_3d.png" alt=""></span><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Panda/3D/panda_3d.png" alt=""></span><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Cat%20face/3D/cat_face_3d.png" alt=""></span><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Owl/3D/owl_3d.png" alt=""></span><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Penguin/3D/penguin_3d.png" alt=""></span><span class="ava"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Koala/3D/koala_3d.png" alt=""></span></span>
+            <span style="font-size: 14px; line-height: 1.45; color: var(--muted)">Đăng nhập bằng Google là đủ.<br>Một tài khoản cho cả làng.</span>
+          </div>
+        </div>
+        <div class="art">
+          <div style="position: absolute; inset: 40px 30px 30px 40px; border-radius: 50%; background: radial-gradient(circle, #FFE7C2 0, #FFD7A6 30%, transparent 68%)"></div>
+          <img class="e3d float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Open%20book/3D/open_book_3d.png" alt="Cuốn Kinh Thánh mở" style="position: absolute; left: 90px; top: 92px; width: 300px; height: 300px">
+          <img class="e3d float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Dove/3D/dove_3d.png" alt="" style="--r: -8deg; position: absolute; right: 36px; top: 26px; width: 130px; height: 130px; animation-delay: .8s">
+          <img class="float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Sparkles/3D/sparkles_3d.png" alt="" style="position: absolute; left: 70px; top: 40px; width: 70px; height: 70px; animation-delay: 1.6s">
+          <img class="float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Glowing%20star/3D/glowing_star_3d.png" alt="" style="position: absolute; right: 20px; bottom: 96px; width: 60px; height: 60px; animation-delay: 2.2s">
+          <div class="sticker dk" style="right: 0; top: 168px; transform: rotate(5deg)"><small>Câu hôm nay</small><b>Hê-bơ-rơ 10:23</b></div>
+          <div class="sticker wh" style="left: 24px; bottom: 26px; transform: rotate(-5deg)"><small>Cả làng có</small><b>6 nhà · 1 tài khoản</b></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="sec-h"><div><span class="kick">Trong làng</span><h2>Chọn nhà để ghé</h2></div><p>Mỗi nhà một việc nhỏ. Ghé nhà nào trước cũng được, tiến độ của bạn đi theo bạn.</p></div>
+        <div class="grid3">
+          <a class="card fcard" href="#"><span class="num">01</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Open%20book/3D/open_book_3d.png" alt=""><h3>Đọc hằng ngày</h3><p>Đọc trọn Kinh Thánh, mỗi ngày một phần. Chọn khoảng 6 hoặc 12 phút mỗi ngày.</p><span class="more">Đọc tiếp →</span></a>
+          <a class="card fcard" href="#"><span class="num">02</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Folded%20hands/Default/3D/folded_hands_3d_default.png" alt=""><h3>Cầu nguyện</h3><p>Ghi những người và điều bạn thương. Mỗi ngày chọn sẵn vài điều, nhờ người khác cầu thay.</p><span class="more">Mở sổ →</span></a>
+          <a class="card fcard" href="#"><span class="num">03</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Trophy/3D/trophy_3d.png" alt=""><h3>Bible Quiz</h3><p>Đố vui Kinh Thánh: thử thách mỗi ngày, Đấu Hạng, phòng chơi cùng bạn bè và nhóm hội thánh.</p><span class="more">Chơi →</span></a>
+          <a class="card fcard" href="#"><span class="num">04</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Bookmark/3D/bookmark_3d.png" alt=""><h3>Học Thuộc</h3><p>Thuộc lòng câu gốc từng chút một, có nhắc ôn đúng lúc để nhớ lâu.</p><span class="more">Ôn hôm nay →</span></a>
+          <a class="card fcard" href="#"><span class="num">05</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Bread/3D/bread_3d.png" alt=""><h3>Manna</h3><p>Trò chơi học câu gốc: điền từ, xếp câu, thuộc lòng và góc ôn tập.</p><span class="more">Chơi →</span></a>
+          <a class="card fcard" href="#"><span class="num">06</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Speech%20balloon/3D/speech_balloon_3d.png" alt=""><h3>Tiếng Anh</h3><p>Luyện nói tiếng Anh 1% mỗi ngày: nghe, mẫu câu, rồi tự nói.</p><span class="more">Luyện →</span></a>
+        </div>
+      </section>
+
+      <section class="sec" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center">
+        <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; align-items: center; gap: 14px"><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Dove/3D/dove_3d.png" alt="" style="width: 64px; height: 64px"><div><span class="kick">Câu hôm nay</span><div style="font-size: 13.5px; color: var(--muted); margin-top: 2px">Thứ Bảy, 24/10</div></div></div>
+          <p style="margin: 0; font-size: 22px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em">“Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.”</p>
+          <div style="font-weight: 800; color: var(--brand-ink)">Hê-bơ-rơ 10:23</div>
+          <div style="display: flex; gap: 10px"><a class="btn btn-p" href="#" style="height: 46px; font-size: 16px">Đọc cả chương</a><a class="btn btn-w" href="#" style="height: 46px; font-size: 15px">Thuộc câu này</a></div>
+        </div>
+        <div>
+          <span class="kick">Hôm nay</span>
+          <h2 style="margin: 6px 0 18px; font-family: var(--display); font-weight: 700; font-size: 30px; letter-spacing: -0.025em">Ba việc nhỏ cho hôm nay</h2>
+          <div class="steps">
+            <a class="step" href="#"><span class="ic" style="background: #2E6BFF14"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Open%20book/3D/open_book_3d.png" alt="" style="width: 30px; height: 30px"></span><span><b><em>1.</em> Đọc Hê-bơ-rơ 10</b><span>Khoảng 6 phút, câu 19–25</span></span></a>
+            <a class="step" href="#"><span class="ic" style="background: #7C5CFF14"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Folded%20hands/Default/3D/folded_hands_3d_default.png" alt="" style="width: 30px; height: 30px"></span><span><b><em>2.</em> Cầu nguyện 3 điều</b><span>Gia đình, bản thân và hội thánh</span></span></a>
+            <a class="step" href="#"><span class="ic" style="background: #FF5A3C14"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Trophy/3D/trophy_3d.png" alt="" style="width: 30px; height: 30px"></span><span><b><em>3.</em> Thử thách 5 câu</b><span>Đúng hết nhận 150 XP trong Bible Quiz</span></span></a>
+          </div>
+        </div>
+      </section>
+      <footer class="s-foot"><span class="logo" style="font-size: 14px"><span class="tile" style="width: 26px; height: 26px; border-radius: 8px"><svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M3 5.5C3 4.7 3.7 4 4.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5h-5A1.5 1.5 0 0 1 3 16z"/><path d="M21 5.5c0-.8-.7-1.5-1.5-1.5H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5h5A1.5 1.5 0 0 0 21 16z" opacity=".8"/></svg></span><span>for<b>bible</b></span></span><span>Sắp mở: Lữ Khách · Trường Chúa nhật</span><span>forbible.org</span></footer>
+    </div>
+  </div>
+
+  <div class="label">Các app con · điện thoại</div>
+  <div class="row">
+
+    <!-- Bible Quiz home -->
+    <div class="shot"><div class="shot-label">Bible Quiz · trang chủ</div>
+      <div class="phone"><div class="m dots-bg">
+        <header class="m-top">
+          <span class="logo"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Trophy/3D/trophy_3d.png" alt="" style="width: 22px; height: 22px"></span><span>Bible<b>Quiz</b></span></span>
+          <a class="ava" href="#" aria-label="Trang cá nhân" style="width: 42px; height: 42px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fox/3D/fox_3d.png" alt="" style="width: 32px; height: 32px"></a>
+        </header>
+        <main class="m-main">
+          <span class="kpill" style="align-self: flex-start"><i></i>Thử thách hôm nay</span>
+          <h1 class="m-h1">5 câu hỏi.<br><span class="o">Bạn sẵn sàng?</span></h1>
+          <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: var(--ink-2)">Đúng hết nhận 150 XP. Mỗi ngày một bộ câu mới.</p>
+          <a class="btn btn-p" href="#" style="margin-top: 14px; width: 100%; height: 56px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4M12 14v4M8 21h8M9 18h6"/></svg>Chơi ngay</a>
+          <div style="margin-top: 12px; display: flex; gap: 8px">
+            <div class="stat"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fire/3D/fire_3d.png" alt=""><div><b>0 ngày</b><span>Chuỗi</span></div></div>
+            <div class="stat"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/High%20voltage/3D/high_voltage_3d.png" alt=""><div><b>100</b><span>Năng lượng</span></div></div>
+            <div class="stat"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Sports%20medal/3D/sports_medal_3d.png" alt=""><div><b style="font-family: var(--sans); font-weight: 800; font-size: 13.5px; letter-spacing: 0">Tân Tín Hữu</b><span>0 / 1.000</span></div></div>
+          </div>
+          <div style="margin: 18px 0 10px; display: flex; align-items: flex-end; justify-content: space-between"><div><span class="kick">Bốn cách chơi</span><div style="margin-top: 4px; font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: -0.02em">Chọn cách chơi</div></div></div>
+          <div class="grid2">
+            <a class="card mcard" href="#"><span class="num">01</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Bullseye/3D/bullseye_3d.png" alt=""><h3>Luyện Tập</h3><p>Theo sách hoặc câu chuyện, không áp lực.</p><span class="more" style="font-size: 13px">Bắt đầu →</span></a>
+            <a class="card mcard" href="#"><span class="num">02</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Crossed%20swords/3D/crossed_swords_3d.png" alt=""><h3>Đấu Hạng</h3><p>Leo hạng cả nước. Mùa Giáng Sinh còn 69 ngày.</p><span class="more" style="font-size: 13px">Vào trận →</span></a>
+            <a class="card mcard" href="#"><span class="num">03</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Video%20game/3D/video_game_3d.png" alt=""><h3>Phòng Chơi</h3><p>Sinh tồn, Đấu vương, Đội đấu đội.</p><span class="more" style="font-size: 13px">Tạo phòng →</span></a>
+            <a class="card mcard" href="#"><span class="num">04</span><img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/World%20map/3D/world_map_3d.png" alt=""><h3>Hành Trình</h3><p>Đi qua 66 sách Kinh Thánh.</p><span class="more" style="font-size: 13px">Xem đường →</span></a>
+          </div>
+        </main>
+        <nav class="tabbar" aria-label="Điều hướng chính">
+          <a class="on" href="#" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 2.5 11h2.7v9.5h5.3v-6h3v6h5.3V11h2.7z"/></svg>Trang chủ</a>
+          <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg>Hành trình</a>
+          <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4M12 14v4M8 21h8M9 18h6"/></svg>Xếp hạng</a>
+          <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Nhóm</a>
+          <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Cá nhân</a>
+        </nav>
+      </div></div>
+    </div>
+
+    <!-- Quiz question -->
+    <div class="shot"><div class="shot-label">Bible Quiz · đang trả lời</div>
+      <div class="phone"><div class="m dots-bg">
+        <header class="m-top" style="gap: 12px">
+          <button class="iconbtn" type="button" aria-label="Thoát lượt chơi"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+          <div style="flex: 1"><div style="display: flex; justify-content: space-between; font-size: 12.5px; font-weight: 700; color: var(--muted)"><span>Câu 4 / 10</span><span>Đấu Hạng</span></div><div class="bar" style="margin-top: 6px"><i style="width: 40%"></i></div></div>
+          <span class="kpill" style="height: 36px; letter-spacing: 0; font-size: 14px; text-transform: none"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M10 2h4"/></svg>12s</span>
+        </header>
+        <main class="m-main" style="padding-top: 10px">
+          <div style="display: flex; gap: 8px">
+            <span class="kpill" style="letter-spacing: 0; text-transform: none; font-size: 13px; font-weight: 700"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fire/3D/fire_3d.png" alt="" style="width: 18px; height: 18px">Combo ×1.2</span>
+            <span class="kpill" style="letter-spacing: 0; text-transform: none; font-size: 13px; font-weight: 700"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/High%20voltage/3D/high_voltage_3d.png" alt="" style="width: 18px; height: 18px">99</span>
+          </div>
+          <section class="card" style="margin-top: 14px; padding: 26px 22px; border-radius: 26px; box-shadow: var(--shadow-lg); position: relative">
+            <img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Crossed%20swords/3D/crossed_swords_3d.png" alt="" style="position: absolute; right: -6px; top: -22px; width: 64px; height: 64px; transform: rotate(10deg)">
+            <span class="kick">Câu hỏi</span>
+            <h2 style="margin: 10px 0 0; font-family: var(--display); font-weight: 700; font-size: 23px; line-height: 1.28; letter-spacing: -0.025em">Môn đồ nào đã chối Đức Chúa Jêsus ba lần?</h2>
+          </section>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px">
+            <button class="opt" type="button"><span class="k" style="background: #E8826A40">A</span>Phi-e-rơ</button>
+            <button class="opt" type="button"><span class="k" style="background: #6AB8E840">B</span>Giăng</button>
+            <button class="opt" type="button"><span class="k" style="background: #E8C76A55">C</span>Gia-cơ</button>
+            <button class="opt" type="button"><span class="k" style="background: #7AB87A45">D</span>Anh-rê</button>
+          </div>
+        </main>
+        <footer style="flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; padding: 14px 16px 26px">
+          <a class="btn btn-w" href="#" style="height: 46px; font-size: 14.5px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Light%20bulb/3D/light_bulb_3d.png" alt="" style="width: 22px; height: 22px">Gợi ý · còn 2</a>
+          <span style="font-size: 13px; font-weight: 600; color: var(--muted)">Chạm để chọn đáp án</span>
+        </footer>
+      </div></div>
+    </div>
+
+    <!-- Result -->
+    <div class="shot"><div class="shot-label">Bible Quiz · xong thử thách</div>
+      <div class="phone"><div class="m dots-bg">
+        <header class="m-top"><span class="logo"><span class="tile"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Trophy/3D/trophy_3d.png" alt="" style="width: 22px; height: 22px"></span><span>Bible<b>Quiz</b></span></span><button class="iconbtn" type="button" aria-label="Đóng"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></header>
+        <main class="m-main" style="align-items: center; text-align: center">
+          <div style="position: relative; width: 300px; height: 250px; margin-top: 4px">
+            <div style="position: absolute; inset: 10px 30px; border-radius: 50%; background: radial-gradient(circle, #FFE7C2 0, #FFD7A6 34%, transparent 70%)"></div>
+            <img class="e3d float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Trophy/3D/trophy_3d.png" alt="Cúp" style="position: absolute; left: 70px; top: 20px; width: 170px; height: 170px">
+            <img class="float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Party%20popper/3D/party_popper_3d.png" alt="" style="--r: -12deg; position: absolute; left: 6px; top: 100px; width: 76px; height: 76px; animation-delay: .7s">
+            <img class="float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Sparkles/3D/sparkles_3d.png" alt="" style="position: absolute; right: 18px; top: 18px; width: 58px; height: 58px; animation-delay: 1.3s">
+            <div class="sticker dk" style="right: 0; bottom: 18px; transform: rotate(6deg); text-align: left"><small>Thử thách hôm nay</small><b>5 / 5 câu đúng</b></div>
+          </div>
+          <h1 class="m-h1" style="margin-top: 4px; font-size: 36px">Hoàn hảo!</h1>
+          <p style="margin: 6px 0 0; font-size: 15px; color: var(--ink-2)">Không sai câu nào. Hẹn bạn ngày mai.</p>
+          <div class="card" style="margin-top: 16px; width: 100%; padding: 16px; text-align: left">
+            <div style="display: flex; align-items: center; gap: 12px">
+              <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Sports%20medal/3D/sports_medal_3d.png" alt="" style="width: 44px; height: 44px">
+              <div style="flex: 1"><div style="display: flex; justify-content: space-between; align-items: baseline"><b style="font-family: var(--display); font-weight: 700; font-size: 16px; letter-spacing: -0.02em">+150 XP</b><span style="font-size: 12.5px; font-weight: 700; color: var(--muted)">150 / 1.000</span></div><div class="bar" style="margin-top: 8px"><i style="width: 15%"></i></div><div style="margin-top: 6px; font-size: 12.5px; color: var(--muted)">Còn 850 XP để lên <b style="color: var(--ink)">Người Tìm Kiếm</b></div></div>
+            </div>
+          </div>
+          <div class="card" style="margin-top: 10px; width: 100%; padding: 12px 16px; display: flex; align-items: center; gap: 12px; text-align: left; box-shadow: var(--shadow-sm)"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fire/3D/fire_3d.png" alt="" style="width: 38px; height: 38px"><div><b style="font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: -0.02em">Chuỗi 1 ngày</b><div style="font-size: 12.5px; color: var(--muted)">Mai quay lại để giữ lửa</div></div></div>
+        </main>
+        <footer style="flex-shrink: 0; display: flex; gap: 10px; padding: 14px 16px 26px"><a class="btn btn-w" href="#" style="flex: 0 0 auto">Xem lại đáp án</a><a class="btn btn-p" href="#" style="flex: 1">Chơi tiếp</a></footer>
+      </div></div>
+    </div>
+
+    <!-- Reading -->
+    <div class="shot"><div class="shot-label">Đọc hằng ngày</div>
+      <div class="phone"><div class="m dots-bg">
+        <header class="m-top" style="gap: 10px"><button class="iconbtn" type="button" aria-label="Quay lại"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><span style="flex: 1; font-size: 14px; font-weight: 700; color: var(--muted)">Đọc hằng ngày</span><button class="iconbtn" type="button" aria-label="Cỡ chữ" style="font-weight: 800">Aa</button></header>
+        <main class="m-main">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <img class="e3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Open%20book/3D/open_book_3d.png" alt="" style="width: 70px; height: 70px">
+            <div><span class="kick">Phần hôm nay · 6 phút</span><h1 class="m-h1" style="margin-top: 4px; font-size: 28px">Hê-bơ-rơ 10</h1></div>
+          </div>
+          <div style="margin-top: 12px; display: flex; align-items: center; gap: 10px"><div class="bar" style="flex: 1"><i style="width: 38%; background: linear-gradient(90deg, #6F9BFF, var(--blue))"></i></div><span style="font-size: 12.5px; font-weight: 700; color: var(--muted)">câu 19–25</span></div>
+          <article class="card" style="margin-top: 14px; flex: 1; min-height: 0; overflow: hidden; padding: 20px 20px 0; border-radius: 24px; position: relative">
+            <p style="margin: 0; font-size: 17.5px; line-height: 1.75; color: var(--ink)">
+              <sup style="font-size: 11px; font-weight: 800; color: var(--brand-ink)">19 </sup>Vậy, thưa anh em, vì chúng ta nhờ huyết Đức Chúa Jêsus được dạn dĩ vào Nơi Chí Thánh,
+              <sup style="font-size: 11px; font-weight: 800; color: var(--brand-ink)">20 </sup>bởi con đường mới và sống mà Ngài đã mở cho chúng ta ngang qua cái màn, nghĩa là ngang qua thân xác Ngài;
+              <sup style="font-size: 11px; font-weight: 800; color: var(--brand-ink)">21 </sup>lại vì chúng ta có một thầy tế lễ vĩ đại được lập lên cai trị nhà Đức Chúa Trời,
+              <sup style="font-size: 11px; font-weight: 800; color: var(--brand-ink)">22 </sup>nên chúng ta hãy lấy lòng chân thật với niềm tin vững chắc, lòng được tẩy sạch khỏi lương tâm ác, thân thể rửa bằng nước tinh khiết mà đến gần Chúa.
+              <span style="background: #FF8A3D2E; border-radius: 6px; padding: 1px 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; font-weight: 700"><sup style="font-size: 11px; font-weight: 800; color: var(--brand-ink)">23 </sup>Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</span>
+            </p>
+            <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 70px; background: linear-gradient(180deg, #FFFFFF00, #FFFFFF)"></div>
+          </article>
+        </main>
+        <footer style="flex-shrink: 0; display: flex; gap: 10px; padding: 14px 16px 26px"><a class="btn btn-p" href="#" style="flex: 1">Xong phần hôm nay</a><a class="btn btn-w" href="#">Thuộc câu 23</a></footer>
+      </div></div>
+    </div>
+
+    <!-- Prayer -->
+    <div class="shot"><div class="shot-label">Cầu nguyện</div>
+      <div class="phone"><div class="m dots-bg">
+        <header class="m-top"><span class="logo"><span class="tile" style="background: linear-gradient(135deg, #9B84FF, var(--violet)); box-shadow: 0 6px 14px -6px #7C5CFF99"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Candle/3D/candle_3d.png" alt="" style="width: 22px; height: 22px"></span>Cầu nguyện</span><a class="ava" href="#" aria-label="Tài khoản" style="width: 42px; height: 42px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fox/3D/fox_3d.png" alt="" style="width: 32px; height: 32px"></a></header>
+        <main class="m-main">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px">
+            <div><span class="kpill"><i style="background: var(--violet)"></i>Tối nay</span><h1 class="m-h1">3 điều để<br><span style="color: var(--violet)">cầu nguyện.</span></h1></div>
+            <img class="e3d float" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Folded%20hands/Default/3D/folded_hands_3d_default.png" alt="" style="width: 96px; height: 96px">
+          </div>
+          <section class="card" style="margin-top: 18px; padding: 20px; border-radius: 24px; box-shadow: var(--shadow-lg)">
+            <div style="display: flex; justify-content: space-between; align-items: center"><span class="kpill" style="height: 28px; font-size: 11px"><i style="background: var(--gold)"></i>Gia đình</span><span style="font-size: 12.5px; font-weight: 700; color: var(--muted)">điều 2 / 3</span></div>
+            <p style="margin: 14px 0 0; font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.35; letter-spacing: -0.02em">Em trai thi đại học tháng 6 tới, được bình an và sáng suốt.</p>
+            <div style="margin-top: 16px; display: flex; gap: 10px"><a class="btn" href="#" style="flex: 1; color: #FFFFFF; font-weight: 800; background: linear-gradient(135deg, #9B84FF, #6A48F2); box-shadow: 0 10px 24px -10px #7C5CFFB3">Đã cầu nguyện</a><a class="btn btn-w" href="#">Để sau</a></div>
+          </section>
+          <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px">
+            <div class="card" style="padding: 12px 14px; display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow-sm)"><span style="width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span style="flex: 1; font-size: 14px; color: var(--muted)">Mẹ mau hồi phục sau ca mổ</span></div>
+            <div class="card" style="padding: 12px 14px; display: flex; align-items: center; gap: 12px; box-shadow: var(--shadow-sm)"><span style="width: 26px; height: 26px; border-radius: 50%; border: 2px dashed #C5CCE0"></span><span style="flex: 1; font-size: 14px; font-weight: 600">Hội thánh chuẩn bị mùa Giáng Sinh</span></div>
+          </div>
+          <a class="card" href="#" style="margin-top: auto; margin-bottom: 16px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; border-radius: 18px; box-shadow: var(--shadow-sm)">
+            <span class="avas"><span class="ava" style="width: 32px; height: 32px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Panda/3D/panda_3d.png" alt="" style="width: 24px; height: 24px"></span><span class="ava" style="width: 32px; height: 32px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Owl/3D/owl_3d.png" alt="" style="width: 24px; height: 24px"></span><span class="ava" style="width: 32px; height: 32px"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Koala/3D/koala_3d.png" alt="" style="width: 24px; height: 24px"></span></span>
+            <span style="flex: 1; font-size: 14px; font-weight: 700">3 người đã cầu thay cho bạn</span>
+            <span class="more">→</span>
+          </a>
+        </main>
+      </div></div>
+    </div>
+
+  </div>
+
+  <p class="note">Hình 3D trong trang này là bộ <b>Fluent Emoji 3D</b> của Microsoft (giấy phép MIT, dùng được cho sản phẩm) để thấy đúng chất Funny Hour. Bản thật có thể giữ bộ này, hoặc vẽ riêng bằng Game Asset Studio y như cách Funny Hour đã làm (quân cờ có mặt, cúp…) — ví dụ cuốn sách có mặt cười, chim bồ câu đưa thư, để forbible có linh vật riêng.</p>
+</div>
+</body>
+</html>

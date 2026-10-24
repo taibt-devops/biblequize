@@ -3,12 +3,13 @@
 > Task tracker. Active TODOs ở dưới. DONE/SUPERSEDED đã chuyển sang [`docs/todo/archive/`](docs/todo/archive/).
 > Format mỗi task file theo template CLAUDE.md §Quy trình quản lý Task.
 
-## Active (39)
+## Active (40)
 
 > Dọn 2026-06-22: 23 task ghi "TODO/DONE" nhưng đã verify hoàn thành → archive (xem git log + Archive bên dưới). Bảng này giờ chỉ còn việc THỰC SỰ đang mở.
 
 | Date | Title | Status | Detail |
 |---|---|---|---|
+| 2026-10-24 | Đổi giao diện cả hệ forbible từ Lữ Khách sang phong cách Funny Hour (Bible Quiz, forbible.org, rồi Đọc và Cầu nguyện); thiết kế + mockup đã duyệt ở `docs/designs/2026-10-24-forbible-funny-hour/` (FHS-0..9) | TODO (chủ dự án làm sau) | [detail](docs/todo/active/2026-10-24-forbible-funny-hour-style.md) |
 | 2026-10-19 | API Cầu nguyện bản 2: V80 (nhịp, mục, tin mới, cất đi, lời nhờ của người khác, lời nhắn của người cầu thay), trang công khai bản 2, link kèm người cầu thay gần đây (PRA-7..11) | DONE (prod 20/10: api ce4c0cbb, V80; app doc.forbible.org 3e39be7) | [detail](docs/todo/active/2026-10-19-prayer-v2-api.md) |
 | 2026-10-13 | Trang chủ Làng nhỏ ở forbible.org; Bible Quiz sang quiz.forbible.org (301 từ đường cũ, API ở tên miền cũ giữ nguyên); `GET /api/home/me`, `?app=home` (HOM-1..6) | DONE (prod 13/10: api+web e30d159e; forbible.org = Làng nhỏ forbible-home 59a450c) | [detail](docs/todo/active/2026-10-13-home-forbible.md) |
 | 2026-10-13 | API cho app Cầu nguyện (Nhà nguyện, doc.forbible.org/cau-nguyen): V79 `prayer_*`, `/api/prayer/me/*`, `/api/public/prayer/shares/*`, rate limit trang người nhận, dọn bia mộ (PRA-1..6) | DONE (prod 13/10: api 61780613, V79; app doc.forbible.org eefdf90) | [detail](docs/todo/active/2026-10-13-prayer-api.md) |

@@ -1,5 +1,7 @@
 # Design System — "Lữ Khách"
 
+> ⚠️ **Sắp thay (chốt 2026-10-24):** cả hệ forbible chuyển sang phong cách Funny Hour. Xem `DECISIONS.md` (2026-10-24), `docs/designs/2026-10-24-forbible-funny-hour/` và task `docs/todo/active/2026-10-24-forbible-funny-hour-style.md`. File này vẫn mô tả code đang chạy cho tới khi làm xong. **Không làm thêm màn mới theo Lữ Khách.**
+
 > Thay "Khung Sáng" và "Sacred Modernist" từ 2026-10-08 (DECISIONS.md). Referenced from CLAUDE.md §References.
 > Nguồn thiết kế: mockup canvas "BibleQuiz × Lữ Khách" (https://claude.ai/artifact/PGPt4eys2jWJiKPjNRu4dQ) + file này.
 > Stitch MCP không còn là nguồn thiết kế. Thay đổi → update file này, KHÔNG add lại vào CLAUDE.md.

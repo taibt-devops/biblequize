@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>forbible — 3 hướng giao diện</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Lora:wght@500;600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #E9E8E4; color: #17191C; font-family: 'Be Vietnam Pro', system-ui, sans-serif; }
+  a { text-decoration: none; color: inherit; }
+  button { font: inherit; cursor: pointer; }
+  .page { max-width: 1280px; margin: 0 auto; padding: 36px 16px 80px; }
+  .page > h1 { margin: 0; font-size: 30px; letter-spacing: -0.01em; }
+  .intro { margin: 10px 0 0; max-width: 860px; font-size: 15px; line-height: 1.65; color: #3F444B; }
+  .intro ul { margin: 8px 0 0; padding-left: 20px; }
+  .dir { margin-top: 56px; }
+  .dir-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .dir-head h2 { margin: 0; font-size: 26px; letter-spacing: -0.01em; }
+  .tag { font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: #17191C; color: #FFFFFF; }
+  .dir-desc { margin: 8px 0 0; max-width: 880px; font-size: 15px; line-height: 1.6; color: #3F444B; }
+  .row { margin-top: 22px; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; }
+  .shot-label { text-align: center; font-size: 13px; font-weight: 600; color: #4A4F57; }
+  .phone { position: relative; width: 390px; height: 844px; overflow: hidden; border-radius: 34px; box-shadow: 0 0 0 1px rgba(0,0,0,.10), 0 18px 44px rgba(0,0,0,.14); }
+  .scr { width: 390px; height: 844px; display: flex; flex-direction: column; overflow: hidden; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>forbible — 3 hướng giao diện mới</h1>
+  <div class="intro">
+    Cùng một nội dung, vẽ theo 3 phong cách để chọn. Mỗi hướng có 3 màn điện thoại: trang chủ BibleQuiz, màn câu hỏi, trang Làng nhỏ (forbible.org). Dữ liệu mẫu lấy theo ảnh bạn gửi: Đạt Bùi, hạng Tân Tín Hữu, câu hôm nay Hê-bơ-rơ 10:23.
+    <ul>
+      <li>Cả 3 hướng đều bỏ tranh nền, biển gỗ, chim bồ câu, đèn lồng. Nút nào cũng có chữ nói rõ nó làm gì.</li>
+      <li>Trang chủ chỉ còn một việc chính (Thử thách hôm nay) và 4 cách chơi có mô tả một dòng. Hàng nút tròn trùng với thanh điều hướng được bỏ.</li>
+      <li>Màu đáp án A/B/C/D giữ đúng quy định C5: san hô, xanh trời, vàng, xanh lá xám.</li>
+      <li>Bản máy tính sẽ vẽ sau khi chọn được hướng.</li>
+    </ul>
+  </div>
+
+  <!-- ===================== A · SÁNG RÕ ===================== -->
+  <section class="dir">
+    <div class="dir-head"><h2>A · Sáng rõ</h2><span class="tag">Đề xuất</span></div>
+    <p class="dir-desc">Nền sáng trung tính, thẻ trắng viền mảnh, chữ Be Vietnam Pro (font làm riêng cho tiếng Việt, app Đọc hằng ngày và Tiếng Anh đang dùng). Vàng chỉ dành cho nút chính; mỗi chế độ có một màu nhỏ ở icon. Cảm giác: app học tập ấm áp, rõ ràng, hợp mọi lứa tuổi.</p>
+    <div class="row">
+
+      <div class="shot">
+        <div class="shot-label">Trang chủ BibleQuiz</div>
+        <div class="phone">
+          <div class="scr" style="background: #F7F6F3; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #17191C">
+            <header style="height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 12px 0 20px; background: #FFFFFF; border-bottom: 1px solid #E7E5E0">
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700">
+                <span style="width: 28px; height: 28px; border-radius: 8px; background: #F2B630; display: flex; align-items: center; justify-content: center">
+                  <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#17191C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg>
+                </span>
+                <span>BibleQuiz</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 4px">
+                <span aria-label="Chuỗi 0 ngày" style="display: flex; align-items: center; gap: 4px; height: 32px; padding: 0 10px; border-radius: 999px; background: #F7F6F3; font-size: 14px; font-weight: 600">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D2462F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                  <span>0</span>
+                </span>
+                <button type="button" aria-label="Thông báo" style="position: relative; width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; color: #17191C">
+                  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                  <span style="position: absolute; top: 10px; right: 11px; width: 8px; height: 8px; border-radius: 50%; background: #D2462F; border: 2px solid #FFFFFF"></span>
+                </button>
+                <a href="#" aria-label="Trang cá nhân" style="width: 36px; height: 36px; border-radius: 50%; background: #E4ECFB; color: #1F4FD1; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">ĐB</a>
+              </div>
+            </header>
+            <main style="flex: 1; min-height: 0; padding: 14px 20px 0; display: flex; flex-direction: column; gap: 12px">
+              <div>
+                <div style="font-size: 14px; color: #5A5F66">Chào buổi sáng,</div>
+                <div style="font-size: 24px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.25">Đạt Bùi</div>
+              </div>
+              <a href="#" style="display: block; background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 14px 16px">
+                <div style="display: flex; justify-content: space-between; align-items: baseline">
+                  <span style="font-size: 15px; font-weight: 600">Tân Tín Hữu</span>
+                  <span style="font-size: 13px; color: #5A5F66">0 / 1.000 XP</span>
+                </div>
+                <div style="margin-top: 10px; height: 8px; border-radius: 999px; background: #EEECE7; overflow: hidden"><div style="width: 2%; height: 100%; border-radius: 999px; background: #F2B630"></div></div>              </a>
+              <section style="background: #17191C; color: #FFFFFF; border-radius: 20px; padding: 16px 18px">
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #F2B630">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+                  <span>Thử thách hôm nay</span>
+                </div>
+                <div style="margin-top: 6px; font-size: 20px; font-weight: 700">5 câu hỏi Kinh Thánh</div>
+                <div style="margin-top: 2px; font-size: 14px; color: #C9CCD1">Đúng hết 5 câu được 150 XP</div>
+                <button type="button" style="margin-top: 14px; width: 100%; height: 48px; border: 0; border-radius: 12px; background: #F2B630; color: #17191C; font-size: 16px; font-weight: 600">Bắt đầu</button>
+              </section>
+              <h2 style="margin: 0; font-size: 17px; font-weight: 700">Chọn cách chơi</h2>
+              <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+                <a href="#" style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+                  <span style="width: 40px; height: 40px; border-radius: 12px; background: #E8F0FC; color: #2F6FD6; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                  <span style="font-size: 16px; font-weight: 600">Luyện Tập</span>
+                  <span style="font-size: 13px; line-height: 1.35; color: #5A5F66">Theo sách hoặc theo câu chuyện</span>
+                </a>
+                <a href="#" style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+                  <span style="width: 40px; height: 40px; border-radius: 12px; background: #FCEAE6; color: #C2412B; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                  <span style="font-size: 16px; font-weight: 600">Đấu Hạng</span>
+                  <span style="font-size: 13px; line-height: 1.35; color: #5A5F66">Đấu hạng tuần cùng cả nước</span>
+                </a>
+                <a href="#" style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+                  <span style="width: 40px; height: 40px; border-radius: 12px; background: #E4F4EC; color: #21865A; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                  <span style="font-size: 16px; font-weight: 600">Phòng Chơi</span>
+                  <span style="font-size: 13px; line-height: 1.35; color: #5A5F66">Chơi cùng bạn bè, nhóm hội thánh</span>
+                </a>
+                <a href="#" style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px">
+                  <span style="width: 40px; height: 40px; border-radius: 12px; background: #FBF1DF; color: #A86B12; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span>
+                  <span style="font-size: 16px; font-weight: 600">Hành Trình</span>
+                  <span style="font-size: 13px; line-height: 1.35; color: #5A5F66">Đi qua 66 sách Kinh Thánh</span>
+                </a>
+              </div>
+              <a href="#" style="display: flex; align-items: center; gap: 12px; background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; padding: 12px 14px">
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A5F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg>
+                <span style="flex: 1; font-size: 15px; font-weight: 500">Nhiệm vụ hôm nay</span>
+                <span style="font-size: 14px; color: #5A5F66">0/3</span>
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A5F66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </main>
+            <nav aria-label="Điều hướng chính" style="height: 72px; flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #E7E5E0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr))">
+              <a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #17191C">
+                <span style="width: 48px; height: 28px; border-radius: 999px; background: #FCEFC9; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+                <span>Trang chủ</span>
+              </a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #5A5F66">
+                <span style="height: 28px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span>
+                <span>Hành trình</span>
+              </a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #5A5F66">
+                <span style="height: 28px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4"/><path d="M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M12 14v4"/><path d="M8 21h8"/><path d="M9 18h6"/></svg></span>
+                <span>Xếp hạng</span>
+              </a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #5A5F66">
+                <span style="height: 28px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span>Nhóm</span>
+              </a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; color: #5A5F66">
+                <span style="height: 28px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                <span>Cá nhân</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Màn câu hỏi (vừa trả lời đúng)</div>
+        <div class="phone">
+          <div class="scr" style="background: #F7F6F3; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #17191C">
+            <header style="height: 56px; flex-shrink: 0; padding: 0 12px 0 6px; display: flex; align-items: center; justify-content: space-between">
+              <button type="button" aria-label="Thoát lượt chơi" style="width: 44px; height: 44px; border: 0; background: transparent; color: #17191C; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+              <span style="font-size: 15px; font-weight: 600">Câu 3 / 10</span>
+              <span aria-label="Còn 12 giây" style="display: flex; align-items: center; gap: 5px; height: 32px; padding: 0 10px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E7E5E0; font-size: 14px; font-weight: 600"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>0:12</span></span>
+            </header>
+            <div style="margin: 0 20px; height: 6px; border-radius: 999px; background: #E7E5E0; overflow: hidden"><div style="width: 30%; height: 100%; border-radius: 999px; background: #F2B630"></div></div>
+            <main style="flex: 1; min-height: 0; padding: 22px 20px 0; display: flex; flex-direction: column; gap: 16px">
+              <span style="align-self: flex-start; font-size: 13px; font-weight: 500; color: #2F6FD6; background: #E8F0FC; border-radius: 999px; padding: 4px 10px">Luyện Tập · Sáng Thế Ký</span>
+              <h3 style="margin: 0; font-size: 22px; font-weight: 600; line-height: 1.4">Ai đã đóng tàu theo lời Đức Chúa Trời phán dặn?</h3>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 6px">
+                <button type="button" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 14px; border: 2px solid #1E8E5A; background: #EAF6EF; font-size: 16px; font-weight: 600; color: #17191C; text-align: left">
+                  <span style="width: 32px; height: 32px; border-radius: 10px; background: #E8826A; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">A</span>
+                  <span style="flex: 1">Nô-ê</span>
+                  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E8E5A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+                </button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 14px; border: 1px solid #E7E5E0; background: #FFFFFF; opacity: .5; font-size: 16px; font-weight: 500; color: #17191C; text-align: left">
+                  <span style="width: 32px; height: 32px; border-radius: 10px; background: #6AB8E8; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">B</span><span style="flex: 1">Áp-ra-ham</span>
+                </button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 14px; border: 1px solid #E7E5E0; background: #FFFFFF; opacity: .5; font-size: 16px; font-weight: 500; color: #17191C; text-align: left">
+                  <span style="width: 32px; height: 32px; border-radius: 10px; background: #E8C76A; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">C</span><span style="flex: 1">Môi-se</span>
+                </button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-radius: 14px; border: 1px solid #E7E5E0; background: #FFFFFF; opacity: .5; font-size: 16px; font-weight: 500; color: #17191C; text-align: left">
+                  <span style="width: 32px; height: 32px; border-radius: 10px; background: #7AB87A; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700">D</span><span style="flex: 1">Đa-vít</span>
+                </button>
+              </div>
+            </main>
+            <section aria-live="polite" style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #E7E5E0; border-radius: 20px 20px 0 0; padding: 18px 20px 24px">
+              <div style="display: flex; align-items: center; gap: 12px">
+                <span style="width: 40px; height: 40px; border-radius: 50%; background: #EAF6EF; color: #1E7A4E; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div style="flex: 1">
+                  <div style="font-size: 18px; font-weight: 700; color: #1E7A4E">Chính xác!</div>
+                  <div style="font-size: 13px; color: #5A5F66">Sáng Thế Ký 6:14</div>
+                </div>
+                <a href="#" style="font-size: 14px; font-weight: 600; color: #2F6FD6">Xem giải thích</a>
+              </div>
+              <button type="button" style="margin-top: 16px; width: 100%; height: 48px; border: 0; border-radius: 12px; background: #F2B630; color: #17191C; font-size: 16px; font-weight: 600">Câu tiếp theo</button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Làng nhỏ (forbible.org)</div>
+        <div class="phone">
+          <div class="scr" style="background: #F7F6F3; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #17191C">
+            <header style="height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 0 12px 0 20px; background: #FFFFFF; border-bottom: 1px solid #E7E5E0">
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700">
+                <span style="width: 28px; height: 28px; border-radius: 8px; background: #F2B630; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#17191C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span>
+                <span>forbible</span>
+              </div>
+              <a href="#" style="height: 40px; display: flex; align-items: center; gap: 8px; padding: 0 14px; border-radius: 999px; border: 1px solid #E7E5E0; background: #FFFFFF; font-size: 14px; font-weight: 600"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></svg><span>Đăng nhập</span></a>
+            </header>
+            <main style="flex: 1; min-height: 0; padding: 16px 20px 0; display: flex; flex-direction: column; gap: 12px">
+              <div style="font-size: 13px; color: #5A5F66">Làng nhỏ của Lời Chúa</div>
+              <section style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 20px; padding: 18px">
+                <div style="display: flex; justify-content: space-between; align-items: baseline">
+                  <span style="font-size: 13px; font-weight: 600; color: #8A5A12">Câu hôm nay</span>
+                  <span style="font-size: 13px; color: #5A5F66">Thứ Bảy, 24/10</span>
+                </div>
+                <p style="margin: 10px 0 0; font-size: 17px; font-weight: 500; line-height: 1.6">Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+                <div style="margin-top: 8px; font-size: 14px; font-weight: 600; color: #5A5F66">Hê-bơ-rơ 10:23</div>
+                <div style="margin-top: 14px; display: flex; gap: 10px">
+                  <a href="#" style="flex: 1; height: 46px; border-radius: 12px; background: #F2B630; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">Đọc chương hôm nay</a>
+                  <a href="#" style="height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #E7E5E0; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">Thuộc câu này</a>
+                </div>
+              </section>
+              <h3 style="margin: 6px 0 0; font-size: 17px; font-weight: 700">Trong làng</h3>
+              <div style="background: #FFFFFF; border: 1px solid #E7E5E0; border-radius: 16px; overflow: hidden">
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid #EFEDE8">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E8F0FC; color: #2F6FD6; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Đọc hằng ngày</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Đọc trọn Kinh Thánh từng ngày</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid #EFEDE8">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #FBF1DF; color: #A86B12; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Bible Quiz</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Câu đố Kinh Thánh, chơi cùng nhóm</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid #EFEDE8">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #FCEAE6; color: #C2412B; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Học Thuộc</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Thuộc lòng câu gốc từng chút một</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid #EFEDE8">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #F1EAFB; color: #7446C2; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Cầu nguyện</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Ghi lời cầu nguyện, nhờ cầu thay</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border-bottom: 1px solid #EFEDE8">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E4F4EC; color: #21865A; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.59C2.6 9.42 2 14.46 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.41-1.41A2 2 0 0 1 9.83 16h4.34a2 2 0 0 1 1.41.59L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.55-.6-6.58-.69-7.26A4 4 0 0 0 17.32 5z"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Manna</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Trò chơi học thuộc câu gốc</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#" style="height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px">
+                  <span style="width: 40px; height: 40px; flex-shrink: 0; border-radius: 12px; background: #E3F5F5; color: #11817F; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></span>
+                  <span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Tiếng Anh</span><span style="font-size: 13px; color: #5A5F66; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Luyện nói tiếng Anh 1% mỗi ngày</span></span>
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A8F96" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5A5F66"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span>Sắp mở: Lữ Khách · Trường Chúa nhật</span></div>
+            </main>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== B · TRẺ TRUNG ===================== -->
+  <section class="dir">
+    <div class="dir-head"><h2>B · Trẻ trung</h2></div>
+    <p class="dir-desc">Nền trắng, mỗi chế độ là một khối màu lớn, chữ Plus Jakarta Sans đậm, nút hơi nổi như phím bấm. Năng động, hợp thanh thiếu niên; vẫn là giao diện phẳng, không tranh, không linh vật. Màu tím là màu chính của app.</p>
+    <div class="row">
+
+      <div class="shot">
+        <div class="shot-label">Trang chủ BibleQuiz</div>
+        <div class="phone">
+          <div class="scr" style="background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14142B">
+            <main style="flex: 1; min-height: 0; display: flex; flex-direction: column">
+              <div style="padding: 16px 16px 0 20px; display: flex; align-items: center; gap: 12px">
+                <a href="#" aria-label="Trang cá nhân" style="width: 44px; height: 44px; border-radius: 50%; background: #EDE9FF; color: #5B3DF5; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800">ĐB</a>
+                <div style="flex: 1">
+                  <div style="font-size: 13px; color: #4E4B66">Chào buổi sáng</div>
+                  <div style="font-size: 20px; font-weight: 800; letter-spacing: -0.01em">Đạt Bùi</div>
+                </div>
+                <button type="button" aria-label="Thông báo" style="position: relative; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #F3F4F8; color: #14142B; display: flex; align-items: center; justify-content: center">
+                  <svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                  <span style="position: absolute; top: 9px; right: 10px; width: 9px; height: 9px; border-radius: 50%; background: #D03E20; border: 2px solid #F3F4F8"></span>
+                </button>
+              </div>
+              <div style="padding: 14px 20px 0; display: flex; gap: 8px">
+                <span style="height: 36px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border-radius: 999px; background: #FFF1E8; color: #B5400F; font-size: 14px; font-weight: 700"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>0 ngày</span>
+                <span style="height: 36px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border-radius: 999px; background: #FFEBEE; color: #B4233A; font-size: 14px; font-weight: 700"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8.2 3.6 4.5 7.3 4.5c2 0 3.6 1.1 4.7 2.7 1.1-1.6 2.7-2.7 4.7-2.7 3.7 0 6 3.7 4.6 7.3C19.5 16.4 12 21 12 21z"/></svg>100</span>
+                <span style="height: 36px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border-radius: 999px; background: #F1EEFF; color: #5B3DF5; font-size: 14px; font-weight: 700"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg>0 XP</span>
+              </div>
+              <section style="position: relative; overflow: hidden; margin: 16px 20px 0; padding: 20px; border-radius: 24px; background: #5B3DF5; color: #FFFFFF">
+                <span aria-hidden="true" style="position: absolute; top: -48px; right: -36px; width: 150px; height: 150px; border-radius: 50%; background: rgba(255,255,255,.12)"></span>
+                <span aria-hidden="true" style="position: absolute; bottom: -30px; right: 70px; width: 84px; height: 84px; border-radius: 50%; background: rgba(255,255,255,.09)"></span>
+                <div style="position: relative; font-size: 13px; font-weight: 700">Thử thách hôm nay</div>
+                <div style="position: relative; margin-top: 6px; font-size: 22px; font-weight: 800; line-height: 1.25">5 câu hỏi mới<br>đang chờ bạn</div>
+                <div style="position: relative; margin-top: 4px; font-size: 14px">Đúng hết được 150 XP</div>
+                <button type="button" style="position: relative; margin-top: 14px; height: 48px; padding: 0 22px; border: 0; border-radius: 14px; background: #FFFFFF; color: #5B3DF5; font-size: 16px; font-weight: 800; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 0 #3F27C9">Chơi ngay<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+              </section>
+              <h3 style="margin: 20px 20px 10px; font-size: 18px; font-weight: 800">Chọn cách chơi</h3>
+              <div style="padding: 0 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+                <a href="#" style="min-height: 128px; padding: 14px; border-radius: 20px; background: #1F6FEB; color: #FFFFFF; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 0 #1A5DC7">
+                  <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.2); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+                  <span><span style="display: block; font-size: 17px; font-weight: 800">Luyện Tập</span><span style="display: block; margin-top: 2px; font-size: 13px; font-weight: 500">Theo sách, theo câu chuyện</span></span>
+                </a>
+                <a href="#" style="min-height: 128px; padding: 14px; border-radius: 20px; background: #D03E20; color: #FFFFFF; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 0 #A9321A">
+                  <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.2); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                  <span><span style="display: block; font-size: 17px; font-weight: 800">Đấu Hạng</span><span style="display: block; margin-top: 2px; font-size: 13px; font-weight: 500">Đua hạng tuần cả nước</span></span>
+                </a>
+                <a href="#" style="min-height: 128px; padding: 14px; border-radius: 20px; background: #0C7F57; color: #FFFFFF; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 0 #096643">
+                  <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.2); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                  <span><span style="display: block; font-size: 17px; font-weight: 800">Phòng Chơi</span><span style="display: block; margin-top: 2px; font-size: 13px; font-weight: 500">Chơi cùng bạn bè, nhóm</span></span>
+                </a>
+                <a href="#" style="min-height: 128px; padding: 14px; border-radius: 20px; background: #FFB020; color: #14142B; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 0 #D48F12">
+                  <span style="width: 36px; height: 36px; border-radius: 50%; background: rgba(20,20,43,.12); display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span>
+                  <span><span style="display: block; font-size: 17px; font-weight: 800">Hành Trình</span><span style="display: block; margin-top: 2px; font-size: 13px; font-weight: 600">Đi qua 66 sách</span></span>
+                </a>
+              </div>
+              <a href="#" style="margin: 16px 20px 0; padding: 12px 14px; border-radius: 18px; background: #F3F4F8; display: flex; align-items: center; gap: 12px">
+                <span style="flex: 1; font-size: 15px; font-weight: 700">Nhiệm vụ hôm nay</span>
+                <span style="display: flex; gap: 4px"><span style="width: 26px; height: 8px; border-radius: 999px; background: #DCDDE6"></span><span style="width: 26px; height: 8px; border-radius: 999px; background: #DCDDE6"></span><span style="width: 26px; height: 8px; border-radius: 999px; background: #DCDDE6"></span></span>
+                <span style="font-size: 14px; font-weight: 700; color: #4E4B66">0/3</span>
+              </a>
+            </main>
+            <nav aria-label="Điều hướng chính" style="height: 72px; flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #ECEDF2; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr))">
+              <a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 800; color: #5B3DF5">
+                <span style="width: 52px; height: 30px; border-radius: 999px; background: #EDE9FF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg></span><span>Trang chủ</span>
+              </a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #4E4B66"><span style="height: 30px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></span><span>Hành trình</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #4E4B66"><span style="height: 30px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4"/><path d="M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M12 14v4"/><path d="M8 21h8"/><path d="M9 18h6"/></svg></span><span>Xếp hạng</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #4E4B66"><span style="height: 30px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>Nhóm</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 600; color: #4E4B66"><span style="height: 30px; display: flex; align-items: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span>Cá nhân</span></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Màn câu hỏi (vừa trả lời đúng)</div>
+        <div class="phone">
+          <div class="scr" style="position: relative; background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14142B">
+            <div style="height: 60px; flex-shrink: 0; padding: 8px 14px 0 6px; display: flex; align-items: center; gap: 8px">
+              <button type="button" aria-label="Thoát lượt chơi" style="width: 44px; height: 44px; border: 0; background: transparent; color: #4E4B66; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+              <div style="flex: 1; height: 12px; border-radius: 999px; background: #ECEAF7; overflow: hidden"><div style="width: 30%; height: 100%; border-radius: 999px; background: #5B3DF5"></div></div>
+              <span aria-label="Còn 12 giây" style="width: 42px; height: 42px; border-radius: 50%; border: 3px solid #5B3DF5; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; color: #5B3DF5">12</span>
+            </div>
+            <main style="flex: 1; min-height: 0; padding: 18px 20px 0; display: flex; flex-direction: column">
+              <span style="align-self: flex-start; font-size: 13px; font-weight: 700; color: #1F5FCC; background: #E8F0FE; border-radius: 999px; padding: 5px 12px">Luyện Tập · Câu 3/10</span>
+              <h3 style="margin: 14px 0 0; font-size: 24px; font-weight: 800; line-height: 1.3; letter-spacing: -0.01em">Ai đã đóng tàu theo lời Đức Chúa Trời phán dặn?</h3>
+              <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px">
+                <button type="button" style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 3px solid #14142B; border-radius: 18px; background: #E8826A; color: #14142B; font-size: 17px; font-weight: 800; text-align: left; box-shadow: 0 4px 0 #14142B">
+                  <span style="width: 34px; height: 34px; border-radius: 12px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center">A</span><span style="flex: 1">Nô-ê</span>
+                  <span style="width: 30px; height: 30px; border-radius: 50%; background: #FFFFFF; color: #0C7F57; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                </button>
+                <button type="button" disabled style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 0; border-radius: 18px; background: #6AB8E8; color: #14142B; font-size: 17px; font-weight: 700; text-align: left; opacity: .35; box-shadow: 0 4px 0 #4F98C6"><span style="width: 34px; height: 34px; border-radius: 12px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center">B</span><span>Áp-ra-ham</span></button>
+                <button type="button" disabled style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 0; border-radius: 18px; background: #E8C76A; color: #14142B; font-size: 17px; font-weight: 700; text-align: left; opacity: .35; box-shadow: 0 4px 0 #C4A54F"><span style="width: 34px; height: 34px; border-radius: 12px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center">C</span><span>Môi-se</span></button>
+                <button type="button" disabled style="height: 64px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 0; border-radius: 18px; background: #7AB87A; color: #14142B; font-size: 17px; font-weight: 700; text-align: left; opacity: .35; box-shadow: 0 4px 0 #5E9A5E"><span style="width: 34px; height: 34px; border-radius: 12px; background: rgba(255,255,255,.6); display: flex; align-items: center; justify-content: center">D</span><span>Đa-vít</span></button>
+              </div>
+            </main>
+            <section aria-live="polite" style="flex-shrink: 0; padding: 18px 20px 24px; border-radius: 24px 24px 0 0; background: #0C7F57; color: #FFFFFF">
+              <div style="display: flex; align-items: center; gap: 12px">
+                <span style="width: 40px; height: 40px; border-radius: 50%; background: #FFFFFF; color: #0C7F57; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+                <div style="flex: 1"><div style="font-size: 20px; font-weight: 800">Chính xác!</div><div style="font-size: 13px; font-weight: 500">Sáng Thế Ký 6:14 · Xem giải thích</div></div>
+              </div>
+              <button type="button" style="margin-top: 14px; width: 100%; height: 50px; border: 0; border-radius: 14px; background: #FFFFFF; color: #0C7F57; font-size: 16px; font-weight: 800; box-shadow: 0 4px 0 #096643">Tiếp tục</button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Làng nhỏ (forbible.org)</div>
+        <div class="phone">
+          <div class="scr" style="background: #FFFFFF; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; color: #14142B">
+            <header style="height: 64px; flex-shrink: 0; padding: 0 16px 0 20px; display: flex; align-items: center; justify-content: space-between">
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 800; letter-spacing: -0.02em"><span style="width: 12px; height: 12px; border-radius: 50%; background: #5B3DF5"></span>forbible</div>
+              <a href="#" style="height: 40px; display: flex; align-items: center; padding: 0 16px; border-radius: 999px; background: #5B3DF5; color: #FFFFFF; font-size: 14px; font-weight: 800">Đăng nhập</a>
+            </header>
+            <main style="flex: 1; min-height: 0; display: flex; flex-direction: column">
+              <section style="margin: 4px 20px 0; padding: 20px; border-radius: 24px; background: #F1EEFF">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; color: #5B3DF5">
+                  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 18v-4.5C4 9 6.5 6.3 10 5.5l.7 1.6C8.7 7.9 7.6 9.4 7.5 11.5H10V18zm9.5 0v-4.5c0-4.5 2.5-7.2 6-8l.7 1.6c-2 .8-3.1 2.3-3.2 4.4h2.5V18z"/></svg>
+                  <span>Câu hôm nay · Thứ Bảy 24/10</span>
+                </div>
+                <p style="margin: 10px 0 0; font-size: 17px; font-weight: 700; line-height: 1.5">Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+                <div style="margin-top: 6px; font-size: 14px; font-weight: 600; color: #4E4B66">Hê-bơ-rơ 10:23</div>
+                <div style="margin-top: 14px; display: flex; gap: 10px">
+                  <a href="#" style="flex: 1; height: 46px; border-radius: 14px; background: #5B3DF5; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; box-shadow: 0 4px 0 #3F27C9">Đọc chương hôm nay</a>
+                  <a href="#" style="height: 46px; padding: 0 14px; border-radius: 14px; background: #FFFFFF; color: #5B3DF5; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; box-shadow: 0 4px 0 #D9D4FF">Thuộc câu</a>
+                </div>
+              </section>
+              <h3 style="margin: 20px 20px 10px; font-size: 18px; font-weight: 800">Khám phá làng</h3>
+              <div style="padding: 0 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #E3EEFF; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1F6FEB" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Đọc hằng ngày</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Trọn Kinh Thánh, mỗi ngày</span></span>
+                </a>
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #FFF3D6; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B7791F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Bible Quiz</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Câu đố, chơi cùng nhóm</span></span>
+                </a>
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #FFE6E0; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D03E20" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Học Thuộc</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Thuộc lòng câu gốc</span></span>
+                </a>
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #EFE7FF; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6D4AFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Cầu nguyện</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Nhờ người cầu thay</span></span>
+                </a>
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #DDF5E8; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0C7F57" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.59C2.6 9.42 2 14.46 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.41-1.41A2 2 0 0 1 9.83 16h4.34a2 2 0 0 1 1.41.59L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.55-.6-6.58-.69-7.26A4 4 0 0 0 17.32 5z"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Manna</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Game học câu gốc</span></span>
+                </a>
+                <a href="#" style="height: 104px; padding: 14px; border-radius: 20px; background: #DDF4F4; display: flex; flex-direction: column; justify-content: space-between">
+                  <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F7F7D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+                  <span><span style="display: block; font-size: 16px; font-weight: 800">Tiếng Anh</span><span style="display: block; font-size: 12.5px; font-weight: 500; color: #4E4B66">Nói 1% mỗi ngày</span></span>
+                </a>
+              </div>
+              <div style="margin: 14px 20px 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; font-weight: 600; color: #4E4B66">
+                <span>Sắp mở:</span>
+                <span style="padding: 4px 10px; border-radius: 999px; background: #F3F4F8">Lữ Khách</span>
+                <span style="padding: 4px 10px; border-radius: 999px; background: #F3F4F8">Trường Chúa nhật</span>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== C · TĨNH LẶNG ===================== -->
+  <section class="dir">
+    <div class="dir-head"><h2>C · Tĩnh lặng</h2></div>
+    <p class="dir-desc">Nền tối, chữ có chân Lora cho tiêu đề và câu Kinh Thánh, vàng ấm làm điểm nhấn. Trang nghiêm, sâu lắng, gần với app Tiếng Anh hiện tại. Hợp đọc và suy ngẫm, nhưng ít cảm giác "chơi game" hơn hai hướng kia.</p>
+    <div class="row">
+
+      <div class="shot">
+        <div class="shot-label">Trang chủ BibleQuiz</div>
+        <div class="phone">
+          <div class="scr" style="background: #0E1014; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #EEF0F3">
+            <header style="height: 56px; flex-shrink: 0; padding: 0 12px 0 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #1E222A">
+              <span style="font-family: 'Lora', Georgia, serif; font-size: 19px; font-weight: 600">BibleQuiz</span>
+              <div style="display: flex; align-items: center; gap: 4px">
+                <span aria-label="Chuỗi 0 ngày" style="display: flex; align-items: center; gap: 4px; height: 32px; padding: 0 10px; border-radius: 999px; background: #171A21; border: 1px solid #2A2F3A; font-size: 14px; font-weight: 600"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg><span>0</span></span>
+                <button type="button" aria-label="Thông báo" style="position: relative; width: 44px; height: 44px; border: 0; background: transparent; color: #EEF0F3; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span style="position: absolute; top: 11px; right: 12px; width: 7px; height: 7px; border-radius: 50%; background: #E8B44C"></span></button>
+                <a href="#" aria-label="Trang cá nhân" style="width: 36px; height: 36px; border-radius: 50%; background: #2A2F3A; color: #E8B44C; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">ĐB</a>
+              </div>
+            </header>
+            <main style="flex: 1; min-height: 0; padding: 20px 20px 0; display: flex; flex-direction: column; gap: 16px">
+              <div>
+                <div style="font-size: 14px; color: #A9AFBC">Chào buổi sáng,</div>
+                <div style="font-family: 'Lora', Georgia, serif; font-size: 28px; font-weight: 600; line-height: 1.25">Đạt Bùi</div>
+              </div>
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 14px; font-weight: 600">Tân Tín Hữu</span><span style="font-size: 13px; color: #A9AFBC">0 / 1.000 XP</span></div>
+                <div style="margin-top: 10px; height: 4px; border-radius: 999px; background: #2A2F3A; overflow: hidden"><div style="width: 2%; height: 100%; background: #E8B44C"></div></div>
+              </div>
+              <section style="background: #171A21; border: 1px solid #2A2F3A; border-radius: 18px; padding: 18px">
+                <div style="font-size: 13px; font-weight: 600; color: #E8B44C">Thử thách hôm nay</div>
+                <div style="margin-top: 6px; font-family: 'Lora', Georgia, serif; font-size: 22px; font-weight: 600">5 câu hỏi Kinh Thánh</div>
+                <div style="margin-top: 4px; font-size: 14px; color: #A9AFBC">Đúng hết 5 câu được 150 XP</div>
+                <button type="button" style="margin-top: 14px; width: 100%; height: 48px; border: 0; border-radius: 12px; background: #E8B44C; color: #0E1014; font-size: 16px; font-weight: 600">Bắt đầu</button>
+              </section>
+              <div style="font-size: 15px; font-weight: 600; color: #A9AFBC">Chọn cách chơi</div>
+              <div style="margin-top: -6px; background: #171A21; border: 1px solid #2A2F3A; border-radius: 18px; overflow: hidden">
+                <a href="#" style="height: 64px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Luyện Tập</span><span style="font-size: 13px; color: #A9AFBC">Theo sách hoặc theo câu chuyện</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E7584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+                <a href="#" style="height: 64px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Đấu Hạng</span><span style="font-size: 13px; color: #A9AFBC">Đấu hạng tuần cùng cả nước</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E7584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+                <a href="#" style="height: 64px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Phòng Chơi</span><span style="font-size: 13px; color: #A9AFBC">Chơi cùng bạn bè, nhóm hội thánh</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E7584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+                <a href="#" style="height: 64px; display: flex; align-items: center; gap: 14px; padding: 0 16px"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 16px; font-weight: 600">Hành Trình</span><span style="font-size: 13px; color: #A9AFBC">Đi qua 66 sách Kinh Thánh</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E7584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+              </div>
+              <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 0 2px; font-size: 14px; color: #A9AFBC"><span style="flex: 1">Nhiệm vụ hôm nay</span><span style="color: #EEF0F3; font-weight: 600">0/3</span><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6E7584" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+            </main>
+            <nav aria-label="Điều hướng chính" style="height: 72px; flex-shrink: 0; background: #12141A; border-top: 1px solid #2A2F3A; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr))">
+              <a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 11px; font-weight: 600; color: #E8B44C"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg><span>Trang chủ</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 11px; color: #8B92A0"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg><span>Hành trình</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 11px; color: #8B92A0"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4"/><path d="M17 6h2.5a2.5 2.5 0 0 1-2.5 4"/><path d="M12 14v4"/><path d="M8 21h8"/><path d="M9 18h6"/></svg><span>Xếp hạng</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 11px; color: #8B92A0"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Nhóm</span></a>
+              <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; font-size: 11px; color: #8B92A0"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Cá nhân</span></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Màn câu hỏi (vừa trả lời đúng)</div>
+        <div class="phone">
+          <div class="scr" style="background: #0E1014; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #EEF0F3">
+            <header style="height: 56px; flex-shrink: 0; padding: 0 14px 0 6px; display: flex; align-items: center; justify-content: space-between">
+              <button type="button" aria-label="Thoát lượt chơi" style="width: 44px; height: 44px; border: 0; background: transparent; color: #EEF0F3; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+              <span style="font-size: 15px; color: #A9AFBC">3 / 10</span>
+              <span aria-label="Còn 12 giây" style="display: flex; align-items: center; gap: 5px; font-size: 15px; font-weight: 600; color: #E8B44C"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>0:12</span>
+            </header>
+            <div style="margin: 0 20px; height: 3px; border-radius: 999px; background: #2A2F3A; overflow: hidden"><div style="width: 30%; height: 100%; background: #E8B44C"></div></div>
+            <main style="flex: 1; min-height: 0; padding: 24px 20px 0; display: flex; flex-direction: column; gap: 18px">
+              <span style="align-self: flex-start; font-size: 13px; color: #A9AFBC; border: 1px solid #2A2F3A; border-radius: 999px; padding: 4px 12px">Luyện Tập · Sáng Thế Ký</span>
+              <h3 style="margin: 0; font-family: 'Lora', Georgia, serif; font-size: 25px; font-weight: 500; line-height: 1.45">Ai đã đóng tàu theo lời Đức Chúa Trời phán dặn?</h3>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 4px">
+                <button type="button" style="height: 60px; display: flex; align-items: center; gap: 14px; padding: 0 14px; border-radius: 14px; border: 2px solid #4CC38A; background: #13261D; color: #EEF0F3; font-size: 16px; font-weight: 600; text-align: left">
+                  <span style="width: 32px; height: 32px; border-radius: 50%; background: #E8826A; color: #0E1014; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700">A</span><span style="flex: 1">Nô-ê</span>
+                  <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4CC38A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+                </button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 14px; padding: 0 14px; border-radius: 14px; border: 1px solid #2A2F3A; background: #171A21; color: #EEF0F3; font-size: 16px; text-align: left; opacity: .45"><span style="width: 32px; height: 32px; border-radius: 50%; background: #6AB8E8; color: #0E1014; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700">B</span><span>Áp-ra-ham</span></button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 14px; padding: 0 14px; border-radius: 14px; border: 1px solid #2A2F3A; background: #171A21; color: #EEF0F3; font-size: 16px; text-align: left; opacity: .45"><span style="width: 32px; height: 32px; border-radius: 50%; background: #E8C76A; color: #0E1014; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700">C</span><span>Môi-se</span></button>
+                <button type="button" disabled style="height: 60px; display: flex; align-items: center; gap: 14px; padding: 0 14px; border-radius: 14px; border: 1px solid #2A2F3A; background: #171A21; color: #EEF0F3; font-size: 16px; text-align: left; opacity: .45"><span style="width: 32px; height: 32px; border-radius: 50%; background: #7AB87A; color: #0E1014; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700">D</span><span>Đa-vít</span></button>
+              </div>
+            </main>
+            <section aria-live="polite" style="flex-shrink: 0; background: #171A21; border-top: 1px solid #2A2F3A; border-radius: 20px 20px 0 0; padding: 18px 20px 24px">
+              <div style="display: flex; align-items: baseline; justify-content: space-between">
+                <span style="font-family: 'Lora', Georgia, serif; font-size: 22px; font-weight: 600; color: #4CC38A">Chính xác</span>
+                <a href="#" style="font-size: 14px; color: #A9AFBC; text-decoration: underline">Xem giải thích</a>
+              </div>
+              <div style="margin-top: 2px; font-size: 13px; font-weight: 600; color: #E8B44C">Sáng Thế Ký 6:14</div>
+              <button type="button" style="margin-top: 16px; width: 100%; height: 48px; border: 0; border-radius: 12px; background: #E8B44C; color: #0E1014; font-size: 16px; font-weight: 600">Câu tiếp theo</button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot">
+        <div class="shot-label">Làng nhỏ (forbible.org)</div>
+        <div class="phone">
+          <div class="scr" style="background: #0E1014; font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #EEF0F3">
+            <header style="height: 56px; flex-shrink: 0; padding: 0 16px 0 24px; display: flex; align-items: center; justify-content: space-between">
+              <span style="font-family: 'Lora', Georgia, serif; font-size: 21px; font-weight: 600">forbible</span>
+              <a href="#" style="height: 40px; display: flex; align-items: center; padding: 0 16px; border-radius: 999px; border: 1px solid #3A3F4B; color: #E8B44C; font-size: 14px; font-weight: 600">Đăng nhập</a>
+            </header>
+            <main style="flex: 1; min-height: 0; display: flex; flex-direction: column">
+              <section style="padding: 22px 24px 0">
+                <div style="font-size: 13px; color: #A9AFBC">Câu hôm nay · Thứ Bảy, 24/10</div>
+                <p style="margin: 12px 0 0; font-family: 'Lora', Georgia, serif; font-size: 23px; font-weight: 500; line-height: 1.5; color: #F3EFE6">Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+                <div style="margin-top: 10px; font-size: 14px; font-weight: 600; color: #E8B44C">Hê-bơ-rơ 10:23</div>
+                <div style="margin-top: 18px; display: flex; gap: 10px">
+                  <a href="#" style="flex: 1; height: 46px; border-radius: 12px; background: #E8B44C; color: #0E1014; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">Đọc chương hôm nay</a>
+                  <a href="#" style="height: 46px; padding: 0 14px; border-radius: 12px; border: 1px solid #3A3F4B; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600">Thuộc câu này</a>
+                </div>
+              </section>
+              <div style="margin: 28px 24px 4px; font-size: 15px; font-weight: 600; color: #A9AFBC">Trong làng</div>
+              <div style="padding: 0 24px">
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Đọc hằng ngày</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Đọc trọn Kinh Thánh, mỗi ngày một phần</span></span></a>
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Bible Quiz</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Câu đố Kinh Thánh, chơi cùng nhóm</span></span></a>
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Học Thuộc</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Thuộc lòng câu gốc từng chút một</span></span></a>
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M15.8 9.2a2.5 2.5 0 0 0-3.5 0l-.3.4-.35-.3a2.42 2.42 0 1 0-3.2 3.6l3.6 3.5 3.6-3.5c1.2-1.2 1.1-2.7.2-3.7"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Cầu nguyện</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Ghi lời cầu nguyện, nhờ người cầu thay</span></span></a>
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #22262F"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11h4"/><path d="M8 9v4"/><path d="M15 12h.01"/><path d="M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 0 0-3.98 3.59C2.6 9.42 2 14.46 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.41-1.41A2 2 0 0 1 9.83 16h4.34a2 2 0 0 1 1.41.59L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.55-.6-6.58-.69-7.26A4 4 0 0 0 17.32 5z"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Manna</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Trò chơi học thuộc câu gốc</span></span></a>
+                <a href="#" style="height: 56px; display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 600">Tiếng Anh</span><span style="font-size: 13px; color: #A9AFBC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">Luyện nói tiếng Anh 1% mỗi ngày</span></span></a>
+              </div>
+              <div style="margin: 12px 24px 0; font-size: 13px; color: #8B92A0">Sắp mở: Lữ Khách · Trường Chúa nhật</div>
+            </main>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+</body>
+</html>

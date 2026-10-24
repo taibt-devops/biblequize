@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>forbible — 3 bố cục mới</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --paper: #F2EFE8; --white: #FFFFFF; --ink: #111111; --ink2: #5E5B55; --line: #DCD7CC;
+    --acc: #FF5420; --acc-ink: #D63509;
+    --on-night: #F2EFE8; --on-night2: #A8A39A; --night-line: #2C2C2C;
+    --disp: 'Bricolage Grotesque', 'Be Vietnam Pro', sans-serif; --sans: 'Be Vietnam Pro', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #E4E0D7; color: var(--ink); font-family: var(--sans); }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  svg { display: block; flex-shrink: 0; }
+
+  /* page */
+  .page { max-width: 1280px; margin: 0 auto; padding: 40px 16px 96px; }
+  .page > h1 { margin: 0; font-family: var(--disp); font-weight: 800; font-stretch: 78%; font-size: 64px; line-height: .9; letter-spacing: -0.02em; }
+  .page > h1 em { font-style: normal; color: var(--acc-ink); }
+  .lead { margin: 14px 0 0; max-width: 860px; font-size: 16px; line-height: 1.65; color: #45423C; }
+  .idea { margin-top: 64px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .idea-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .idea-head .no { font-family: var(--disp); font-weight: 800; font-stretch: 75%; font-size: 56px; line-height: .8; color: var(--acc-ink); }
+  .idea-head h2 { margin: 0; font-family: var(--disp); font-weight: 800; font-stretch: 80%; font-size: 36px; line-height: 1; letter-spacing: -0.01em; }
+  .idea-head p { margin: 0; flex: 1 1 420px; font-size: 15px; line-height: 1.6; color: #45423C; }
+  .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; }
+  .shot-label { text-align: center; font-size: 13px; font-weight: 600; color: #55524B; }
+  .phone { width: 390px; height: 844px; overflow: hidden; border-radius: 36px; box-shadow: 0 0 0 1px rgba(0,0,0,.12), 0 20px 46px rgba(0,0,0,.16); }
+  .reco { margin-top: 56px; padding: 22px 24px; background: var(--ink); color: var(--paper); border-radius: 20px; display: grid; gap: 8px; max-width: 900px; }
+  .reco b { font-family: var(--disp); font-weight: 800; font-stretch: 80%; font-size: 26px; }
+  .reco p { margin: 0; font-size: 15px; line-height: 1.6; color: #D9D4CA; }
+
+  /* screens */
+  .scr { position: relative; width: 390px; height: 844px; overflow: hidden; display: flex; flex-direction: column; font-family: var(--sans); }
+  .light { background: var(--paper); color: var(--ink); }
+  .dark { background: var(--ink); color: var(--on-night); }
+  .accbg { background: var(--acc); color: var(--ink); }
+  .disp { font-family: var(--disp); font-weight: 800; font-stretch: 75%; letter-spacing: -0.02em; line-height: .9; }
+  .kicker { font-size: 13px; font-weight: 700; letter-spacing: .02em; }
+  .light .kicker { color: var(--ink2); }
+  .dark .kicker { color: var(--on-night2); }
+  .wm { font-family: var(--disp); font-weight: 800; font-stretch: 85%; font-size: 21px; letter-spacing: -0.02em; }
+  .wm i { font-style: normal; color: var(--acc); }
+  .light .wm i { color: var(--acc-ink); }
+  .pill { height: 48px; padding: 0 20px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 15px; font-weight: 700; white-space: nowrap; border: 0; }
+  .pill.ink { background: var(--ink); color: var(--paper); }
+  .pill.paper { background: var(--paper); color: var(--ink); }
+  .pill.acc { background: var(--acc); color: var(--ink); }
+  .pill.line { background: transparent; border: 1.5px solid currentColor; }
+  .av { width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--paper); background: #3A3A3A; flex-shrink: 0; }
+  .avs { display: flex; }
+  .avs .av { box-shadow: 0 0 0 2px var(--paper); }
+  .avs .av + .av { margin-left: -8px; }
+  .dark .avs .av { box-shadow: 0 0 0 2px var(--ink); }
+
+  /* 1 · stories */
+  .segs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; padding: 12px 14px 0; flex-shrink: 0; }
+  .segs i { height: 3px; border-radius: 2px; background: rgba(17,17,17,.15); overflow: hidden; }
+  .dark .segs i { background: rgba(242,239,232,.2); }
+  .segs i.done { background: var(--ink); }
+  .dark .segs i.done { background: var(--paper); }
+  .segs i.on { position: relative; }
+  .segs i.on::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 40%; background: var(--ink); animation: grow 6s linear infinite; }
+  .dark .segs i.on::after { background: var(--paper); }
+  @keyframes grow { from { width: 0; } to { width: 100%; } }
+  .stop { height: 52px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 8px 0 18px; }
+  .stop .meta { flex: 1; font-size: 13px; font-weight: 600; }
+  .light .stop .meta { color: var(--ink2); }
+  .dark .stop .meta { color: var(--on-night2); }
+  .x { width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; }
+  .next { flex-shrink: 0; height: 64px; margin: 0 14px 22px; border-radius: 18px; padding: 0 18px; display: flex; align-items: center; gap: 10px; font-size: 14px; }
+  .light .next { background: var(--white); }
+  .dark .next { background: #1E1E1E; }
+  .next span { color: var(--ink2); }
+  .dark .next span { color: var(--on-night2); }
+  .next b { flex: 1; font-weight: 700; }
+  .poster { margin: 0; font-family: var(--disp); font-weight: 750; font-stretch: 82%; font-size: 39px; line-height: 1.03; letter-spacing: -0.02em; }
+  .poster em { font-style: normal; color: var(--acc-ink); }
+  .plist { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; }
+  .plist li { display: grid; grid-template-columns: 58px 1fr 26px; align-items: start; gap: 6px; padding: 16px 0; border-top: 1.5px solid var(--line); }
+  .plist li:last-child { border-bottom: 1.5px solid var(--line); }
+  .plist .n { font-family: var(--disp); font-weight: 800; font-stretch: 75%; font-size: 40px; line-height: .85; color: var(--line); }
+  .plist .t { font-size: 17px; line-height: 1.4; color: var(--ink2); }
+  .plist li.done .t { color: var(--ink2); }
+  .plist li.cur .n { color: var(--acc-ink); font-size: 54px; }
+  .plist li.cur .t { font-family: var(--disp); font-weight: 750; font-stretch: 85%; font-size: 27px; line-height: 1.1; letter-spacing: -0.01em; color: var(--ink); }
+  .ok { width: 24px; height: 24px; border-radius: 50%; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; margin-top: 4px; }
+  .ticker { flex-shrink: 0; overflow: hidden; white-space: nowrap; border-top: 1.5px solid var(--ink); border-bottom: 1.5px solid var(--ink); padding: 7px 0; margin: 0 0 14px; font-family: var(--disp); font-weight: 800; font-stretch: 80%; font-size: 15px; letter-spacing: .02em; }
+  .ticker span { display: inline-block; animation: tick 24s linear infinite; }
+  @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* 2 · bento */
+  .bento { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 76px; gap: 8px; padding: 0 14px; }
+  .bt { position: relative; overflow: hidden; border-radius: 20px; padding: 12px 14px; display: flex; flex-direction: column; background: var(--white); }
+  .bt.ink { background: var(--ink); color: var(--paper); }
+  .bt.acc { background: var(--acc); color: var(--ink); }
+  .bt .lab { font-size: 12.5px; font-weight: 700; }
+  .bt .lab.m { color: var(--ink2); }
+  .bt.ink .lab.m { color: var(--on-night2); }
+  .bt .go { position: absolute; right: 12px; bottom: 12px; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--ink); color: var(--paper); }
+  .txtnav { flex-shrink: 0; height: 70px; display: flex; align-items: center; justify-content: space-around; padding: 0 10px 8px; border-top: 1.5px solid var(--line); font-size: 13px; font-weight: 600; color: var(--ink2); }
+  .txtnav a.on { color: var(--ink); font-weight: 800; }
+  .txtnav a.on::after { content: ""; display: block; height: 3px; margin-top: 4px; border-radius: 2px; background: var(--acc); }
+  .dark .txtnav { border-top-color: var(--night-line); color: var(--on-night2); }
+  .dark .txtnav a.on { color: var(--paper); }
+
+  /* 3 · deck + frame timer */
+  .deck { position: relative; flex: 1; min-height: 0; }
+  .card-main { position: absolute; left: 34px; right: 34px; top: 8px; bottom: 8px; border-radius: 30px; padding: 22px 22px 20px; background: var(--paper); color: var(--ink); display: flex; flex-direction: column; box-shadow: 0 24px 50px rgba(0,0,0,.45); }
+  .card-peek { position: absolute; top: 40px; bottom: 40px; width: 300px; border-radius: 28px; background: #262626; color: var(--on-night2); padding: 22px; }
+  .card-peek.l { left: -284px; transform: rotate(-3deg); }
+  .card-peek.r { right: -284px; transform: rotate(3deg); }
+  .card-peek .disp { font-size: 64px; }
+  .dots { display: flex; justify-content: center; gap: 6px; padding: 10px 0 0; flex-shrink: 0; }
+  .dots i { width: 6px; height: 6px; border-radius: 3px; background: #444444; }
+  .dots i.on { width: 22px; background: var(--paper); }
+  .strip { flex-shrink: 0; margin: 12px 14px 10px; height: 58px; border-radius: 16px; background: var(--acc); color: var(--ink); display: flex; align-items: center; gap: 10px; padding: 0 8px 0 16px; }
+  .strip b { flex: 1; font-size: 14.5px; }
+  .ansrow { display: grid; grid-template-columns: 46px 1fr; align-items: center; gap: 8px; height: 70px; border-top: 1.5px solid var(--night-line); font-size: 20px; font-weight: 600; text-align: left; width: 100%; border-left: 0; border-right: 0; border-bottom: 0; background: transparent; color: var(--paper); padding: 0; }
+  .ansrow:last-child { border-bottom: 1.5px solid var(--night-line); }
+  .ansrow .k { font-family: var(--disp); font-weight: 800; font-stretch: 75%; font-size: 42px; line-height: 1; }
+  .frame { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+  .share { width: 286px; height: 430px; border-radius: 26px; background: var(--ink); color: var(--paper); padding: 22px; display: flex; flex-direction: column; transform: rotate(-3deg); box-shadow: 0 26px 50px rgba(90,20,0,.35); }
+
+  @media (prefers-reduced-motion: reduce) { .segs i.on::after, .ticker span { animation: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>3 bố cục <em>mới</em>,<br>màu tiết chế</h1>
+  <p class="lead">Chỉ đen, trắng ngà và một màu nhấn đỏ cam; không gradient, không phát sáng. Năng động đến từ chữ to, bố cục bất đối xứng và chuyển động, không đến từ nhiều màu. Ba ý tưởng khung khác hẳn nhau. Chọn khung trước, đánh bóng sau; có thể trộn (ví dụ Story cho forbible.org, Bộ bài cho Bible Quiz). Màu đáp án A/B/C/D vẫn giữ quy định C5, chỉ dùng ở chữ cái.</p>
+
+  <!-- ============ 1 · STORY ============ -->
+  <section class="idea">
+    <div class="idea-head"><span class="no">01</span><h2>Story — "Hôm nay" có đáy</h2><p>forbible.org mở ra là chuỗi 5 khoảnh khắc toàn màn như Instagram Story: câu hôm nay, thử thách, đọc, cầu nguyện, thuộc câu. Chạm để qua, xong 5 là hết, không cuộn vô tận. Teen quen tay ngay; mỗi app con là một "loại khoảnh khắc", nên cả hệ liền một mạch.</p></div>
+    <div class="row">
+
+      <div class="shot"><div class="shot-label">1/5 · Câu hôm nay</div>
+        <div class="phone"><div class="scr light">
+          <div class="segs" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          <div class="stop"><span class="wm">for<i>bible</i></span><span class="meta">Hôm nay · Thứ Bảy 24.10</span><button class="x" type="button" aria-label="Đóng"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+          <main style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; padding: 0 20px">
+            <div class="kicker">Câu hôm nay</div>
+            <p class="poster" style="margin-top: 14px">Chúng ta hãy giữ vững lời tuyên xưng về <em>niềm hi vọng không chuyển lay</em> của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+            <div style="margin-top: 16px; font-size: 15px; font-weight: 700">— Hê-bơ-rơ 10:23</div>
+            <div style="margin-top: 22px; display: flex; gap: 10px"><a class="pill ink" href="#">Đọc cả chương<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="pill line" href="#">Thuộc câu này</a></div>
+          </main>
+          <div class="ticker" aria-hidden="true"><span>&nbsp;HÔM NAY · HÊ-BƠ-RƠ 10 · 5 CÂU HỎI · 3 ĐIỀU CẦU NGUYỆN · 1 CÂU GỐC ·&nbsp;HÔM NAY · HÊ-BƠ-RƠ 10 · 5 CÂU HỎI · 3 ĐIỀU CẦU NGUYỆN · 1 CÂU GỐC ·</span></div>
+          <a class="next" href="#"><span>Tiếp theo</span><b>Thử thách 5 câu</b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div></div>
+      </div>
+
+      <div class="shot"><div class="shot-label">2/5 · Thử thách</div>
+        <div class="phone"><div class="scr dark">
+          <div class="segs" aria-hidden="true"><i class="done"></i><i class="on"></i><i></i><i></i><i></i></div>
+          <div class="stop"><span class="wm">for<i>bible</i></span><span class="meta">Hôm nay · Thứ Bảy 24.10</span><button class="x" type="button" aria-label="Đóng" style="color: var(--paper)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+          <main style="position: relative; flex: 1; min-height: 0">
+            <div class="kicker" style="position: absolute; left: 20px; top: 8px">Thử thách hôm nay</div>
+            <div class="disp" aria-hidden="true" style="position: absolute; left: -14px; top: 30px; font-size: 440px; line-height: .78; color: var(--acc)">5</div>
+            <div style="position: absolute; right: 20px; top: 96px; text-align: right">
+              <div class="disp" style="font-size: 58px">câu<br>hỏi</div>
+              <div style="margin-top: 14px; font-size: 15px; font-weight: 700">Đúng hết +150 XP</div>
+              <div style="margin-top: 4px; font-size: 13px; color: var(--on-night2)">Bible Quiz</div>
+            </div>
+            <div style="position: absolute; left: 20px; right: 150px; bottom: 34px; display: flex; flex-direction: column; gap: 8px">
+              <span class="avs"><span class="av" style="background: #5A5A5A">MA</span><span class="av" style="background: #777">GB</span><span class="av" style="background: #4A4A4A">TV</span></span>
+              <span style="font-size: 13px; line-height: 1.4; color: var(--on-night2)">Minh Anh, Gia Bảo và 12 người khác đã chơi hôm nay</span>
+            </div>
+            <a href="#" aria-label="Chơi thử thách hôm nay" style="position: absolute; right: 20px; bottom: 24px; width: 118px; height: 118px; border-radius: 50%; background: var(--acc); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><span class="disp" style="font-size: 34px">Chơi</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </main>
+          <a class="next" href="#"><span>Tiếp theo</span><b>Đọc Hê-bơ-rơ 10</b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div></div>
+      </div>
+
+      <div class="shot"><div class="shot-label">4/5 · Cầu nguyện</div>
+        <div class="phone"><div class="scr light">
+          <div class="segs" aria-hidden="true"><i class="done"></i><i class="done"></i><i class="done"></i><i class="on"></i><i></i></div>
+          <div class="stop"><span class="wm">for<i>bible</i></span><span class="meta">Tối thứ Bảy 24.10</span><button class="x" type="button" aria-label="Đóng"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+          <main style="flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 18px 20px 0">
+            <div class="kicker">Cầu nguyện · tối nay 3 điều</div>
+            <ol class="plist">
+              <li class="done"><span class="n">01</span><span class="t">Mẹ mau hồi phục sau ca mổ.</span><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span></li>
+              <li class="cur"><span class="n">02</span><span class="t">Em trai thi đại học tháng 6, được bình an và sáng suốt.</span><span></span></li>
+              <li><span class="n">03</span><span class="t">Hội thánh chuẩn bị mùa Giáng Sinh.</span><span></span></li>
+            </ol>
+            <div style="margin-top: 20px; display: flex; gap: 10px"><a class="pill ink" href="#" style="flex: 1">Đã cầu nguyện</a><a class="pill line" href="#">Để sau</a></div>
+            <a href="#" style="margin-top: auto; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600"><span class="avs"><span class="av">MA</span><span class="av" style="background: #555">TV</span><span class="av" style="background: #777">QH</span></span>3 người đã cầu thay cho bạn tuần này</a>
+          </main>
+          <a class="next" href="#"><span>Tiếp theo</span><b>Thuộc câu gốc</b><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 2 · BENTO ============ -->
+  <section class="idea">
+    <div class="idea-head"><span class="no">02</span><h2>Bento — ô to nhỏ theo độ quan trọng</h2><p>Một màn nhìn hết: việc chính chiếm ô lớn nhất, số liệu (chuỗi, năng lượng, mùa) là ô vừa, chế độ chơi là ô nhỏ. Không lưới đều, nhìn như một bảng tin. Dễ mở rộng: thêm tính năng là thêm ô.</p></div>
+    <div class="row">
+
+      <div class="shot"><div class="shot-label">Bible Quiz · sảnh</div>
+        <div class="phone"><div class="scr light">
+          <header style="flex-shrink: 0; display: flex; align-items: flex-end; justify-content: space-between; padding: 22px 16px 14px">
+            <div><div style="font-size: 13px; font-weight: 600; color: var(--ink2)">Thứ Bảy 24.10 · Tân Tín Hữu</div><div class="disp" style="margin-top: 6px; font-size: 52px">Chào, Đạt.</div></div>
+            <a href="#" class="av" aria-label="Trang cá nhân" style="width: 44px; height: 44px; font-size: 14px; background: var(--ink)">ĐB</a>
+          </header>
+          <main class="bento" style="flex: 1; min-height: 0; align-content: start">
+            <a class="bt acc" href="#" style="grid-column: span 4; grid-row: span 2; justify-content: space-between">
+              <span class="lab">Thử thách hôm nay</span>
+              <span><span class="disp" style="font-size: 62px">5 câu</span><span style="display: block; margin-top: 4px; font-size: 14px; font-weight: 700">Đúng hết +150 XP</span></span>
+              <span style="position: absolute; right: 14px; bottom: 14px; height: 56px; padding: 0 22px; border-radius: 999px; background: var(--ink); color: var(--paper); display: flex; align-items: center; gap: 8px; font-family: var(--disp); font-weight: 800; font-stretch: 80%; font-size: 24px">Chơi<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a>
+            <div class="bt" style="grid-column: span 2; grid-row: span 2; justify-content: space-between">
+              <span class="lab m">Chuỗi ngày</span>
+              <span class="disp" style="font-size: 76px">0</span>
+              <span style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px" aria-label="Chưa có ngày nào trong tuần"><i style="height: 8px; border-radius: 2px; background: var(--line)"></i><i style="height: 8px; border-radius: 2px; background: var(--line)"></i><i style="height: 8px; border-radius: 2px; background: var(--line)"></i><i style="height: 8px; border-radius: 2px; background: var(--line)"></i><i style="height: 8px; border-radius: 2px; background: var(--line)"></i><i style="height: 8px; border-radius: 2px; background: var(--acc); opacity: .35"></i><i style="height: 8px; border-radius: 2px; background: var(--line)"></i></span>
+            </div>
+            <div class="bt" style="grid-column: span 2; justify-content: space-between"><span class="lab m">Năng lượng</span><span style="display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 34px">100</span><span style="font-size: 12px; color: var(--ink2)">/ 100</span></span></div>
+            <div class="bt ink" style="grid-column: span 2; justify-content: space-between"><span class="lab m">Mùa Giáng Sinh</span><span style="display: flex; align-items: baseline; gap: 6px"><span class="disp" style="font-size: 34px">69</span><span style="font-size: 12px; color: var(--on-night2)">ngày còn lại</span></span></div>
+            <a class="bt" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab">Luyện Tập</span><span style="font-size: 12.5px; color: var(--ink2)">Theo sách, câu chuyện</span></a>
+            <a class="bt" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab" style="display: flex; align-items: center; gap: 6px">Phòng Chơi<i style="width: 7px; height: 7px; border-radius: 50%; background: var(--acc)"></i></span><span style="font-size: 12.5px; color: var(--ink2)">Sinh tồn, Đấu vương…</span></a>
+            <a class="bt" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab">Đấu Hạng</span><span style="font-size: 12.5px; color: var(--ink2)">Chưa xếp hạng</span></a>
+            <a class="bt" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab">Hành Trình</span><span style="font-size: 12.5px; color: var(--ink2)">0 / 66 sách</span></a>
+            <a class="bt ink" href="#" style="grid-column: span 4; flex-direction: row; align-items: center; gap: 12px"><span style="flex: 1; display: flex; flex-direction: column"><span class="disp" style="font-size: 24px; font-stretch: 85%">Thách đấu bạn bè</span><span style="font-size: 12.5px; color: var(--on-night2)">10 câu · 20 giây mỗi câu</span></span><span class="avs"><span class="av" style="background: #4A4A4A">MA</span><span class="av" style="background: #666">GB</span></span></a>
+          </main>
+          <nav class="txtnav" aria-label="Điều hướng chính"><a class="on" href="#" aria-current="page">Chơi</a><a href="#">Hành trình</a><a href="#">Xếp hạng</a><a href="#">Nhóm</a><a href="#">Tôi</a></nav>
+        </div></div>
+      </div>
+
+      <div class="shot"><div class="shot-label">forbible.org · cửa vào chung</div>
+        <div class="phone"><div class="scr light">
+          <header style="flex-shrink: 0; height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px 0 18px"><span class="wm" style="font-size: 24px">for<i>bible</i></span><a class="pill line" href="#" style="height: 40px; font-size: 14px">Đăng nhập</a></header>
+          <div style="flex-shrink: 0; padding: 4px 16px 14px"><div class="disp" style="font-size: 56px">Hôm nay.</div><div style="margin-top: 6px; font-size: 13px; font-weight: 600; color: var(--ink2)">Thứ Bảy 24.10 · 3 việc nhỏ cho một ngày</div></div>
+          <main class="bento" style="flex: 1; min-height: 0; align-content: start">
+            <section class="bt ink" style="grid-column: span 4; grid-row: span 3">
+              <span class="lab m">Câu hôm nay</span>
+              <p style="margin: 10px 0 0; font-family: var(--disp); font-weight: 700; font-stretch: 85%; font-size: 23px; line-height: 1.12; letter-spacing: -0.01em">Chúng ta hãy giữ vững lời tuyên xưng về <span style="color: var(--acc)">niềm hi vọng không chuyển lay</span> của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+              <span style="margin-top: auto; display: flex; align-items: center; justify-content: space-between"><span style="font-size: 13px; font-weight: 700">Hê-bơ-rơ 10:23</span><a href="#" style="font-size: 13px; font-weight: 700; color: var(--acc)">Đọc cả chương →</a></span>
+            </section>
+            <a class="bt" href="#" style="grid-column: span 2; grid-row: span 2; justify-content: space-between"><span class="lab m">Đọc hằng ngày</span><span><span class="disp" style="font-size: 30px">Hê-bơ-rơ 10</span><span style="display: block; margin-top: 8px; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden"><span style="display: block; width: 38%; height: 100%; background: var(--ink)"></span></span><span style="display: block; margin-top: 6px; font-size: 12px; color: var(--ink2)">6 phút · còn 62%</span></span></a>
+            <a class="bt acc" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab">Bible Quiz</span><span class="disp" style="font-size: 26px">5 câu · Chơi →</span></a>
+            <a class="bt" href="#" style="grid-column: span 2; justify-content: space-between"><span class="lab m">Cầu nguyện</span><span class="disp" style="font-size: 26px">3 điều tối nay</span></a>
+            <a class="bt" href="#" style="grid-column: span 4; flex-direction: row; align-items: center; justify-content: space-between"><span style="display: flex; flex-direction: column; gap: 2px"><span class="lab">Còn trong làng</span><span style="font-size: 13px; color: var(--ink2)">Học Thuộc · Manna · Tiếng Anh</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </main>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 3 · DECK ============ -->
+  <section class="idea">
+    <div class="idea-head"><span class="no">03</span><h2>Bộ bài — quẹt chọn trận</h2><p>Sảnh Bible Quiz là bộ bài quẹt ngang như màn chọn trận trong game: mỗi lần một chế độ, chữ thật to, một nút vào trận. Màn chơi lấy viền màn hình làm đồng hồ (viền cạn dần), đáp án là các hàng lớn. Kết quả là một tấm thẻ để chia sẻ lên story.</p></div>
+    <div class="row">
+
+      <div class="shot"><div class="shot-label">Sảnh · quẹt chọn trận</div>
+        <div class="phone"><div class="scr dark">
+          <header style="flex-shrink: 0; height: 64px; display: flex; align-items: center; gap: 10px; padding: 0 16px">
+            <span class="av" style="width: 36px; height: 36px; font-size: 12px; background: var(--paper); color: var(--ink)">ĐB</span>
+            <span style="flex: 1; display: flex; flex-direction: column"><b style="font-size: 14.5px">Đạt Bùi</b><span style="font-size: 12px; color: var(--on-night2)">Tân Tín Hữu</span></span>
+            <span style="display: flex; flex-direction: column; align-items: flex-end"><span class="disp" style="font-size: 24px; color: var(--acc)">0</span><span style="font-size: 11px; color: var(--on-night2)">chuỗi ngày</span></span>
+            <span style="display: flex; flex-direction: column; align-items: flex-end; margin-left: 14px"><span class="disp" style="font-size: 24px; color: var(--acc)">100</span><span style="font-size: 11px; color: var(--on-night2)">năng lượng</span></span>
+          </header>
+          <div style="flex-shrink: 0; display: flex; align-items: baseline; justify-content: space-between; padding: 6px 18px 4px"><span class="disp" style="font-size: 30px">Chọn trận</span><span style="font-size: 13px; font-weight: 700; color: var(--on-night2)">02 / 05</span></div>
+          <div class="deck">
+            <div class="card-peek l" aria-hidden="true"><div class="disp" style="text-align: right">Luyện<br>Tập</div></div>
+            <div class="card-peek r" aria-hidden="true"><div class="disp">Phòng<br>Chơi</div></div>
+            <article class="card-main">
+              <div style="display: flex; justify-content: space-between; align-items: center"><span class="disp" style="font-size: 22px; color: var(--acc-ink)">02</span><span style="font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: var(--ink); color: var(--paper)">Mùa Giáng Sinh · còn 69 ngày</span></div>
+              <div class="disp" style="margin-top: 22px; font-size: 104px; line-height: .82">Đấu<br>Hạng</div>
+              <p style="margin: 18px 0 0; font-size: 15px; line-height: 1.5; color: var(--ink2)">Leo hạng cùng người chơi cả nước. Mỗi trận tốn năng lượng, combo càng dài điểm càng cao.</p>
+              <div style="margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px 0; border-top: 1.5px solid var(--line)">
+                <div><div style="font-size: 12px; color: var(--ink2)">Năng lượng</div><div class="disp" style="font-size: 30px">100</div></div>
+                <div><div style="font-size: 12px; color: var(--ink2)">Hạng của bạn</div><div class="disp" style="font-size: 30px">—</div></div>
+              </div>
+              <a class="pill acc" href="#" style="width: 100%; height: 56px; font-family: var(--disp); font-weight: 800; font-stretch: 80%; font-size: 24px">Vào trận →</a>
+            </article>
+          </div>
+          <div class="dots" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i><i></i></div>
+          <a class="strip" href="#"><b>Thử thách hôm nay · 5 câu · +150 XP</b><span class="pill ink" style="height: 40px; padding: 0 14px; font-size: 14px">Chơi</span></a>
+          <nav class="txtnav" aria-label="Điều hướng chính"><a class="on" href="#" aria-current="page">Chơi</a><a href="#">Hành trình</a><a href="#">Xếp hạng</a><a href="#">Nhóm</a><a href="#">Tôi</a></nav>
+        </div></div>
+      </div>
+
+      <div class="shot"><div class="shot-label">Đang chơi · viền là đồng hồ</div>
+        <div class="phone"><div class="scr dark">
+          <svg class="frame" viewBox="0 0 390 844" aria-hidden="true"><rect x="3" y="3" width="384" height="838" rx="33" fill="none" stroke="#2A2A2A" stroke-width="6"/><rect x="3" y="3" width="384" height="838" rx="33" fill="none" stroke="#FF5420" stroke-width="6" stroke-linecap="round" stroke-dasharray="2385" stroke-dashoffset="954"/></svg>
+          <header style="flex-shrink: 0; height: 64px; display: flex; align-items: center; gap: 12px; padding: 8px 18px 0">
+            <button class="x" type="button" aria-label="Thoát lượt chơi" style="color: var(--paper); margin-left: -10px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+            <span style="flex: 1; font-size: 14px; font-weight: 700">Đấu Hạng · <span style="color: var(--on-night2)">câu 4 / 10</span></span>
+            <span style="font-size: 14px; font-weight: 700">Combo <span style="color: var(--acc)">×1.2</span></span>
+            <span class="disp" style="font-size: 26px; color: var(--acc)" aria-label="Còn 12 giây">12</span>
+          </header>
+          <main style="flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0 22px">
+            <h3 style="margin: auto 0; font-family: var(--disp); font-weight: 750; font-stretch: 82%; font-size: 42px; line-height: 1.02; letter-spacing: -0.02em">Môn đồ nào đã chối Đức Chúa Jêsus ba lần?</h3>
+            <div style="display: flex; flex-direction: column">
+              <button class="ansrow" type="button"><span class="k" style="color: #E8826A">A</span>Phi-e-rơ</button>
+              <button class="ansrow" type="button"><span class="k" style="color: #6AB8E8">B</span>Giăng</button>
+              <button class="ansrow" type="button"><span class="k" style="color: #E8C76A">C</span>Gia-cơ</button>
+              <button class="ansrow" type="button"><span class="k" style="color: #7AB87A">D</span>Anh-rê</button>
+            </div>
+          </main>
+          <footer style="flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px 22px 28px; font-size: 14px; font-weight: 700"><a href="#" style="display: flex; align-items: center; gap: 8px"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--acc)"></span>Gợi ý · còn 2</a><span style="color: var(--on-night2)">Năng lượng 99</span></footer>
+        </div></div>
+      </div>
+
+      <div class="shot"><div class="shot-label">Kết quả · thẻ để chia sẻ</div>
+        <div class="phone"><div class="scr accbg">
+          <div style="flex-shrink: 0; height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 8px 8px 0 20px"><span style="font-size: 14px; font-weight: 700">Xong thử thách hôm nay</span><button class="x" type="button" aria-label="Đóng"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+          <main style="flex: 1; min-height: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px">
+            <article class="share">
+              <div style="display: flex; justify-content: space-between; align-items: center"><span class="wm" style="font-size: 18px">for<i>bible</i></span><span style="font-size: 12px; color: var(--on-night2)">24.10.2026</span></div>
+              <div class="disp" style="margin-top: 26px; font-size: 150px; line-height: .8; color: var(--acc)">5/5</div>
+              <div class="disp" style="margin-top: 14px; font-size: 34px; font-stretch: 85%">Không sai<br>câu nào.</div>
+              <div style="margin-top: auto; padding-top: 14px; border-top: 1.5px solid var(--night-line); display: flex; justify-content: space-between; font-size: 12.5px; color: var(--on-night2)"><span>Thử thách hôm nay</span><span>quiz.forbible.org</span></div>
+            </article>
+            <div style="text-align: center"><div class="disp" style="font-size: 30px">+150 XP · chuỗi 1 ngày</div><div style="margin-top: 6px; font-size: 13.5px; font-weight: 600">Còn 850 XP để lên Người Tìm Kiếm</div></div>
+          </main>
+          <footer style="flex-shrink: 0; display: flex; gap: 10px; padding: 10px 16px 28px"><a class="pill ink" href="#" style="flex: 1; height: 54px">Chia sẻ lên story</a><a class="pill paper" href="#" style="height: 54px">Tiếp tục</a></footer>
+        </div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="reco">
+    <b>Tôi đề xuất trộn: 01 cho forbible.org, 03 cho Bible Quiz.</b>
+    <p>Story biến cả hệ thành một nhịp "hôm nay" có đầu có cuối (hợp tinh thần đọc, cầu nguyện mỗi ngày); Bộ bài và viền đồng hồ cho Bible Quiz cảm giác game rõ nhất mà không cần màu mè; thẻ chia sẻ giúp teen tự lan truyền. Bento là phương án an toàn nếu muốn nhìn tổng quan một màn.</p>
+  </div>
+</div>
+</body>
+</html>

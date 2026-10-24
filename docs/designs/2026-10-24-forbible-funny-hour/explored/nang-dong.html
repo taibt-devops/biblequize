@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>forbible — hướng Năng động</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;0,800;1,700;1,800;1,900&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --bg: #0F0A26; --line: rgba(255,255,255,.10); --card: rgba(255,255,255,.06);
+    --text: #FFFFFF; --text2: #C9C3E6; --text3: #9C94C4; --ink: #1A1033;
+    --display: 'Kanit', 'Be Vietnam Pro', sans-serif; --sans: 'Be Vietnam Pro', system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #E9E7F2; color: #1A1033; font-family: var(--sans); }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  svg { display: block; flex-shrink: 0; }
+
+  /* ---------- page ---------- */
+  .page { max-width: 1280px; margin: 0 auto; padding: 40px 16px 96px; }
+  .page > h1 { margin: 0; font-family: var(--display); font-style: italic; font-weight: 900; font-size: 40px; letter-spacing: .005em; text-transform: uppercase; color: #1A1033; }
+  .page > h1 span { color: #6D28D9; }
+  .lead { margin: 10px 0 0; max-width: 880px; font-size: 16px; line-height: 1.65; color: #3D3760; }
+  .rules { margin: 18px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+  .rules li { background: #FFFFFF; border-radius: 16px; padding: 16px; box-shadow: 0 6px 20px rgba(26,16,51,.07); font-size: 14px; line-height: 1.55; color: #4A4470; }
+  .rules b { display: block; margin-bottom: 4px; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 17px; text-transform: uppercase; color: #1A1033; }
+  .row-phones { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
+  .shot { display: flex; flex-direction: column; gap: 10px; }
+  .shot-label { text-align: center; font-size: 13px; font-weight: 700; color: #4A4470; }
+  .phone { width: 390px; height: 844px; overflow: hidden; border-radius: 36px; box-shadow: 0 0 0 1px rgba(0,0,0,.12), 0 22px 50px rgba(26,16,51,.25); }
+  .note { margin: 14px 0 0; max-width: 880px; font-size: 14px; line-height: 1.55; color: #4A3A12; background: #FFF1C2; border-radius: 12px; padding: 10px 14px; }
+
+  /* ---------- screen ---------- */
+  .scr { position: relative; width: 390px; height: 844px; overflow: hidden; display: flex; flex-direction: column; color: var(--text); font-family: var(--sans);
+    background-color: var(--bg);
+    background-image: radial-gradient(420px 320px at 0% 0%, rgba(124,58,237,.42), transparent 70%), radial-gradient(380px 300px at 100% 22%, rgba(37,99,235,.30), transparent 70%), radial-gradient(440px 360px at 50% 106%, rgba(219,39,119,.24), transparent 70%); }
+  .main { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px; padding: 8px 16px 0; }
+  .hud { height: 64px; flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 14px 0 16px; }
+  .disp { font-family: var(--display); font-style: italic; font-weight: 800; text-transform: uppercase; letter-spacing: .01em; line-height: 1.05; }
+  .muted { color: var(--text2); }
+  .faint { color: var(--text3); }
+  .sec-title { margin: 4px 2px 0; display: flex; align-items: center; justify-content: space-between; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 17px; text-transform: uppercase; letter-spacing: .02em; }
+  .sec-title small { font-family: var(--sans); font-style: normal; font-weight: 700; font-size: 13px; text-transform: none; color: var(--text2); }
+  .chip { height: 34px; display: inline-flex; align-items: center; gap: 5px; padding: 0 11px 0 7px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid var(--line); font-family: var(--display); font-weight: 700; font-size: 16px; }
+  .slant { display: inline-block; transform: skewX(-12deg); padding: 3px 10px; border-radius: 6px; font-family: var(--display); font-weight: 800; font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; }
+  .slant > span { display: inline-block; transform: skewX(12deg); }
+  .slant.y { background: #FFD84D; color: var(--ink); }
+  .slant.w { background: rgba(255,255,255,.16); color: #FFFFFF; }
+  .slant.v { background: #8B5CF6; color: #FFFFFF; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+
+  /* 3D glossy buttons with a shine sweep */
+  .b3 { --t: #FFD84D; --b: #FFB300; --e: #B86E00; --g: rgba(255,179,0,.35); --c: #1A1033;
+    position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 52px; padding: 0 20px; border: 0; border-radius: 16px;
+    font-family: var(--display); font-style: italic; font-weight: 800; font-size: 19px; letter-spacing: .03em; text-transform: uppercase; color: var(--c); white-space: nowrap;
+    background: linear-gradient(180deg, var(--t), var(--b)); box-shadow: inset 0 2px 0 rgba(255,255,255,.55), 0 5px 0 var(--e), 0 12px 24px var(--g); margin-bottom: 5px; }
+  .b3::after { content: ""; position: absolute; left: 4px; right: 4px; top: 3px; height: 45%; border-radius: 13px 13px 10px 10px; background: linear-gradient(180deg, rgba(255,255,255,.45), rgba(255,255,255,0)); pointer-events: none; }
+  .b3.shine::before { content: ""; position: absolute; top: 0; bottom: 0; left: -45%; width: 32%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.75), transparent); transform: skewX(-20deg); animation: shine 3s ease-in-out infinite; z-index: 1; }
+  @keyframes shine { 0%, 55% { left: -45%; } 85%, 100% { left: 125%; } }
+  .b3.violet { --t: #A47BFF; --b: #6D28D9; --e: #3F1A8A; --g: rgba(109,40,217,.40); --c: #FFFFFF; }
+  .b3.ghost { --t: rgba(255,255,255,.18); --b: rgba(255,255,255,.10); --e: rgba(0,0,0,.35); --g: transparent; --c: #FFFFFF; }
+  .b3.sm { height: 44px; font-size: 16px; padding: 0 16px; border-radius: 14px; }
+  .b3.sm::after { border-radius: 11px 11px 8px 8px; }
+  .b3.block { width: 100%; }
+
+  /* mode tiles */
+  .tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .tile { --c1: #4C8DFF; --c2: #1D4ED8; --e: #1E3A8A;
+    position: relative; overflow: hidden; min-height: 140px; padding: 14px; border-radius: 20px; display: flex; flex-direction: column; justify-content: flex-end; color: #FFFFFF;
+    background: linear-gradient(160deg, var(--c1), var(--c2)); box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 5px 0 var(--e); margin-bottom: 5px; }
+  .tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,0) 42%); pointer-events: none; }
+  .tile .ic { position: absolute; top: 8px; right: 6px; transform: rotate(8deg); filter: drop-shadow(0 6px 8px rgba(0,0,0,.25)); }
+  .tile .tt { position: relative; z-index: 1; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 21px; text-transform: uppercase; line-height: 1.05; text-shadow: 0 2px 0 rgba(0,0,0,.22); }
+  .tile .td { position: relative; z-index: 1; margin-top: 4px; font-size: 13px; font-weight: 600; text-shadow: 0 1px 0 rgba(0,0,0,.2); }
+  .tile.red { --c1: #FF5C7A; --c2: #BE123C; --e: #7F1230; }
+  .tile.green { --c1: #2BCB6E; --c2: #166534; --e: #0B3D20; }
+  .tile.orange { --c1: #FF9A3D; --c2: #C2410C; --e: #7C2D08; }
+  .stripes { position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(255,255,255,.07) 0 12px, rgba(255,255,255,0) 12px 28px); pointer-events: none; }
+  .sticker { position: absolute; z-index: 2; transform: rotate(-8deg); padding: 3px 9px; border-radius: 8px; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; background: #FFD84D; color: var(--ink); box-shadow: 0 3px 0 #B86E00; }
+  .live { display: inline-flex; align-items: center; gap: 5px; font-family: var(--display); font-weight: 800; font-size: 12px; letter-spacing: .06em; }
+  .live i { width: 8px; height: 8px; border-radius: 50%; background: #FF3B5C; box-shadow: 0 0 0 0 rgba(255,59,92,.7); animation: live 1.6s ease-out infinite; }
+  @keyframes live { 0% { box-shadow: 0 0 0 0 rgba(255,59,92,.7); } 100% { box-shadow: 0 0 0 9px rgba(255,59,92,0); } }
+
+  /* avatars */
+  .av { position: relative; width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 15px; color: #FFFFFF; background: linear-gradient(135deg, #FF8A5B, #E11D74); flex-shrink: 0; }
+  .av.ring { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px #FFD84D; }
+  .av.sm { width: 32px; height: 32px; font-size: 12px; }
+  .av.xs { width: 26px; height: 26px; font-size: 10.5px; box-shadow: 0 0 0 2px var(--bg); }
+  .stack-av { display: flex; }
+  .stack-av .av + .av { margin-left: -8px; }
+
+  /* tab bar */
+  .tabbar { height: 78px; flex-shrink: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 8px 14px; background: rgba(12,8,32,.92); border-top: 1px solid var(--line); }
+  .tabbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 11px; font-weight: 600; color: var(--text3); }
+  .tabbar a.on { color: #FFFFFF; }
+  .tabbar a.on .pill { background: linear-gradient(180deg, #A47BFF, #6D28D9); box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 3px 0 #3F1A8A, 0 6px 16px rgba(124,58,237,.45); }
+  .tabbar .pill { width: 52px; height: 32px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+
+  /* quiz */
+  .seg { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; flex: 1; }
+  .seg i { height: 8px; border-radius: 999px; background: rgba(255,255,255,.14); }
+  .seg i.ok { background: linear-gradient(90deg, #2BCB6E, #A3E635); }
+  .seg i.now { background: #FFD84D; box-shadow: 0 0 10px rgba(255,216,77,.8); }
+  .timer { position: relative; height: 10px; margin: 0 16px; border-radius: 999px; background: rgba(255,255,255,.10); overflow: hidden; }
+  .timer > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2BCB6E, #A3E635 60%, #FFD84D); box-shadow: 0 0 12px rgba(163,230,53,.6); }
+  .ans { --hi: #F7A28D; --base: #E8826A; --sh: #A9503D; position: relative; width: 100%; height: 62px; display: flex; align-items: center; gap: 12px; padding: 0 14px; border: 0; border-radius: 18px; text-align: left;
+    font-family: var(--sans); font-size: 18px; font-weight: 800; color: #1A1033; background: linear-gradient(180deg, var(--hi), var(--base)); box-shadow: inset 0 2px 0 rgba(255,255,255,.5), 0 5px 0 var(--sh); margin-bottom: 5px; }
+  .ans::after { content: ""; position: absolute; left: 4px; right: 4px; top: 3px; height: 44%; border-radius: 15px 15px 10px 10px; background: linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,0)); pointer-events: none; }
+  .ans .k { position: relative; z-index: 1; width: 34px; height: 34px; border-radius: 11px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.6); font-family: var(--display); font-style: italic; font-weight: 800; font-size: 18px; }
+  .ans > span:not(.k) { position: relative; z-index: 1; }
+  .ans.b { --hi: #96D3F5; --base: #6AB8E8; --sh: #3E86B5; }
+  .ans.c { --hi: #F5DE98; --base: #E8C76A; --sh: #B0913C; }
+  .ans.d { --hi: #A2D4A2; --base: #7AB87A; --sh: #4E8A4E; }
+
+  /* victory */
+  .rays { position: absolute; left: 50%; top: 150px; width: 760px; height: 760px; margin-left: -380px; margin-top: -380px; background: repeating-conic-gradient(from 0deg, rgba(255,216,77,.16) 0deg 8deg, rgba(255,216,77,0) 8deg 22deg); border-radius: 50%; animation: spin 40s linear infinite; -webkit-mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.6) 30%, transparent 62%); mask-image: radial-gradient(circle, #000 0, rgba(0,0,0,.6) 30%, transparent 62%); pointer-events: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .confetti i { position: absolute; top: -20px; width: 8px; height: 14px; border-radius: 2px; opacity: .95; animation: fall 3.6s linear infinite; }
+  @keyframes fall { 0% { transform: translateY(0) rotate(0deg); } 100% { transform: translateY(900px) rotate(540deg); } }
+  .glowtext { text-shadow: 0 0 18px rgba(255,216,77,.65), 0 4px 0 #B86E00; color: #FFE27A; }
+
+  /* leaderboard */
+  .seg-ctl { display: grid; grid-template-columns: 1fr 1fr; padding: 4px; border-radius: 14px; background: rgba(255,255,255,.08); border: 1px solid var(--line); }
+  .seg-ctl a { height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 700; font-size: 15px; color: var(--text2); }
+  .seg-ctl a.on { color: var(--ink); background: linear-gradient(180deg, #FFE27A, #FFC21A); box-shadow: inset 0 1px 0 rgba(255,255,255,.6); }
+  .podium { display: grid; grid-template-columns: 1fr 1.15fr 1fr; align-items: end; gap: 8px; margin-top: 4px; }
+  .pod { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .pod .nm { margin-top: 6px; font-size: 13px; font-weight: 700; }
+  .pod .pt { font-family: var(--display); font-weight: 800; font-size: 15px; color: #FFE27A; }
+  .pod .blk { margin-top: 8px; width: 100%; border-radius: 14px 14px 0 0; display: flex; align-items: flex-start; justify-content: center; padding-top: 8px; font-family: var(--display); font-style: italic; font-weight: 900; font-size: 30px; color: rgba(255,255,255,.95); text-shadow: 0 3px 0 rgba(0,0,0,.25); }
+  .lrow { height: 54px; display: flex; align-items: center; gap: 10px; padding: 0 12px; border-bottom: 1px solid var(--line); }
+  .lrow:last-child { border-bottom: 0; }
+  .lrow .rk { width: 24px; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 17px; color: var(--text3); text-align: center; }
+  .lrow .nm { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .lrow .nm b { font-size: 14.5px; }
+  .lrow .nm span { font-size: 12px; color: var(--text3); display: flex; align-items: center; gap: 4px; }
+  .lrow .pt { font-family: var(--display); font-weight: 700; font-size: 16px; }
+  .vs-mini { height: 30px; padding: 0 10px; border-radius: 9px; border: 0; font-family: var(--display); font-style: italic; font-weight: 800; font-size: 13px; color: #FFFFFF; background: linear-gradient(180deg, #A47BFF, #6D28D9); box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 3px 0 #3F1A8A; margin-bottom: 3px; }
+
+  /* prayer card stack */
+  .stack { position: relative; height: 236px; }
+  .pcard { position: absolute; left: 0; right: 0; top: 0; border-radius: 22px; padding: 18px; background: #FFFFFF; color: #1A1033; box-shadow: 0 16px 34px rgba(0,0,0,.35); }
+  .pcard.back1 { transform: translateY(10px) rotate(-3deg) scale(.96); background: #CFC2FF; box-shadow: none; }
+  .pcard.back2 { transform: translateY(18px) rotate(3.5deg) scale(.92); background: #8F78E8; box-shadow: none; }
+
+  /* reading */
+  .ring-wrap { position: relative; width: 64px; height: 64px; flex-shrink: 0; }
+  .ring-wrap span { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 800; font-size: 15px; }
+  .week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
+  .week div { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 11px; color: var(--text3); }
+  .week i { width: 26px; height: 26px; border-radius: 9px; background: rgba(255,255,255,.08); border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .week i.ok { background: linear-gradient(180deg, #4C8DFF, #1D4ED8); border: 0; box-shadow: inset 0 1px 0 rgba(255,255,255,.35); }
+  .week i.now { border: 2px solid #FFD84D; box-shadow: 0 0 10px rgba(255,216,77,.6); }
+
+  /* apps (hub) */
+  .apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 8px; }
+  .app { display: flex; flex-direction: column; align-items: center; gap: 7px; text-align: center; }
+  .app .ico { --c1: #4C8DFF; --c2: #1D4ED8; --e: #1E3A8A; position: relative; overflow: hidden; width: 62px; height: 62px; border-radius: 19px; display: flex; align-items: center; justify-content: center; background: linear-gradient(160deg, var(--c1), var(--c2)); box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 4px 0 var(--e), 0 10px 18px rgba(0,0,0,.25); margin-bottom: 4px; }
+  .app .ico::after { content: ""; position: absolute; left: 3px; right: 3px; top: 2px; height: 46%; border-radius: 16px 16px 11px 11px; background: linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,0)); }
+  .app .ico svg { position: relative; z-index: 1; filter: drop-shadow(0 2px 0 rgba(0,0,0,.18)); }
+  .app b { font-size: 13px; font-weight: 700; line-height: 1.2; }
+  .app span { margin-top: -4px; font-size: 11.5px; color: var(--text3); line-height: 1.25; }
+  .quests { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .quest { position: relative; padding: 12px 10px 10px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
+  .quest b { font-size: 13.5px; line-height: 1.2; }
+  .quest span { font-size: 12px; color: var(--text2); }
+  .quest .bar { height: 6px; border-radius: 999px; background: rgba(255,255,255,.12); overflow: hidden; margin-top: 2px; }
+  .quest .bar > div { height: 100%; border-radius: 999px; }
+  .quest.done { background: linear-gradient(180deg, rgba(43,203,110,.22), rgba(43,203,110,.08)); border-color: rgba(43,203,110,.45); }
+  .tick { position: absolute; top: 8px; right: 8px; width: 22px; height: 22px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 0 #0B3D20; }
+
+  @media (prefers-reduced-motion: reduce) { .b3.shine::before, .live i, .rays, .confetti i, .flick { animation: none; } }
+  .flick { transform-box: fill-box; transform-origin: 50% 100%; animation: flick 1.2s ease-in-out infinite; }
+  @keyframes flick { 0%, 100% { transform: scale(1) rotate(0deg); } 50% { transform: scale(1.07, 1.1) rotate(-2deg); } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="flame-o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE066"/><stop offset=".45" stop-color="#FF9A1F"/><stop offset="1" stop-color="#F43F5E"/></linearGradient>
+    <linearGradient id="flame-i" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE066"/></linearGradient>
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9F7FF"/><stop offset=".5" stop-color="#38BDF8"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".5" stop-color="#FFC93C"/><stop offset="1" stop-color="#E08A00"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#D3DAE8"/><stop offset="1" stop-color="#8F9BB6"/></linearGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD6A8"/><stop offset=".5" stop-color="#E0955A"/><stop offset="1" stop-color="#94522A"/></linearGradient>
+    <linearGradient id="emerald" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A7F3D0"/><stop offset=".5" stop-color="#34D399"/><stop offset="1" stop-color="#047857"/></linearGradient>
+    <linearGradient id="sapphire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFDBFE"/><stop offset=".5" stop-color="#60A5FA"/><stop offset="1" stop-color="#1D4ED8"/></linearGradient>
+    <linearGradient id="amethyst" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9D5FF"/><stop offset=".5" stop-color="#A78BFA"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 1.5c.8 3.6 5.5 5.6 5.5 11a5.5 5.5 0 0 1-11 0c0-2.8 1.5-4.3 2-6.6 1.3 1.1 2 2.4 2.1 4 .9-2.4 1.4-4.9 1.4-8.4z" fill="url(#flame-o)"/><path d="M12 11.2c.4 1.6 2.5 2.5 2.5 4.6a2.5 2.5 0 0 1-5 0c0-1.3.7-2 1-3 .5.5.9 1.1 1 1.8.3-1 .5-2.1.5-3.4z" fill="url(#flame-i)"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.8 1.5 4 13.6h6.6L9.4 22.5 20 9.8h-6.7z" fill="url(#bolt)"/><path d="M13.8 1.5 4 13.6h3.2L13 4.2z" fill="#FFFFFF" opacity=".45"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1.8 20.5 5v6.8c0 5.1-3.6 9-8.5 10.6-4.9-1.6-8.5-5.5-8.5-10.6V5z"/><path d="M12 4.2 18.4 6.6v5.2c0 3.9-2.7 6.9-6.4 8.2-3.7-1.3-6.4-4.3-6.4-8.2V6.6z" fill="#FFFFFF" opacity=".22"/><path d="m12 7.2 1.5 3 3.3.5-2.4 2.3.6 3.3-3-1.6-3 1.6.6-3.3-2.4-2.3 3.3-.5z" fill="#FFFFFF"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 1.8 3.1 6.4 7 1-5.1 4.9 1.2 7-6.2-3.3-6.2 3.3 1.2-7L1.9 9.2l7-1z" fill="url(#gold)"/><path d="m12 1.8 3.1 6.4 7 1-5.1 4.9L12 12z" fill="#FFFFFF" opacity=".35"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 4l4.5 8L21 8l-2 11H5z" fill="url(#gold)"/><path d="M5 19h14v2.2H5z" fill="#E08A00"/><circle cx="12" cy="4" r="1.6" fill="#FFF3B0"/></symbol>
+  </defs>
+</svg>
+
+<div class="page">
+  <h1>forbible — hướng <span>Năng động</span></h1>
+  <p class="lead">Bỏ hẳn tranh vẽ và ý tưởng ngọn đèn. Nền tối, màu rực, chữ đậm nghiêng có lực, nút nổi khối, thứ gì cũng có tiến độ — chất game di động mà thanh thiếu niên quen (kiểu Liên Quân, Brawl Stars), nhưng nút nào cũng có chữ nói rõ làm gì. Mọi thứ vẽ bằng CSS/SVG, không cần tranh, nên làm và sửa đều nhanh.</p>
+  <ul class="rules">
+    <li><b>Màu rực trên nền tối</b>Mỗi chế độ một màu: Luyện Tập xanh dương, Đấu Hạng đỏ, Phòng Chơi xanh lá, Hành Trình cam. Vàng chỉ cho nút "chơi".</li>
+    <li><b>Chữ có lực</b>Kanit đậm nghiêng cho tiêu đề, số, nút (có đủ dấu tiếng Việt). Be Vietnam Pro cho nội dung và Lời Chúa.</li>
+    <li><b>Bấm là "đã"</b>Nút nổi khối, có vệt sáng chạy qua; ô chế độ bóng nhẹ; huy hiệu hạng dạng khiên.</li>
+    <li><b>Cái gì cũng có tiến độ</b>Combo, năng lượng, chuỗi lửa, thanh XP, mùa giải, bảng xếp hạng, thách đấu bạn bè.</li>
+    <li><b>Năng lượng có liều</b>Bible Quiz rực nhất. Đọc và Cầu nguyện cùng bộ chữ, bộ màu nhưng tiết chế, không điểm, không xếp hạng.</li>
+  </ul>
+
+  <div class="row-phones">
+
+    <!-- 1. forbible.org hub -->
+    <div class="shot">
+      <div class="shot-label">forbible.org — cửa vào chung</div>
+      <div class="phone"><div class="scr">
+        <header class="hud">
+          <span class="disp" style="font-size: 27px; font-weight: 900">for<span style="color: #FFD84D">bible</span></span>
+          <a class="b3 sm ghost" href="#" style="height: 40px; font-size: 14px; margin-bottom: 4px">Đăng nhập</a>
+        </header>
+        <main class="main">
+          <section style="position: relative; overflow: hidden; border-radius: 24px; padding: 16px 18px 14px; background: linear-gradient(140deg, #7C3AED, #2563EB); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 14px 30px rgba(76,29,149,.45)">
+            <div class="stripes"></div>
+            <div style="position: relative; display: flex; justify-content: space-between; align-items: center">
+              <span class="slant y"><span>Câu hôm nay</span></span>
+              <span style="font-size: 12.5px; font-weight: 600; opacity: .9">Thứ Bảy, 24/10</span>
+            </div>
+            <p style="position: relative; margin: 12px 0 0; font-size: 19px; font-weight: 700; line-height: 1.45">Chúng ta hãy giữ vững lời tuyên xưng về <span style="background: linear-gradient(180deg, transparent 58%, rgba(255,216,77,.75) 58%); padding: 0 2px">niềm hi vọng không chuyển lay</span> của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</p>
+            <div style="position: relative; margin-top: 6px; font-family: var(--display); font-style: italic; font-weight: 700; font-size: 15px; color: #FFE27A">Hê-bơ-rơ 10:23</div>
+            <div style="position: relative; display: flex; gap: 10px; margin-top: 12px">
+              <a class="b3 sm shine" href="#" style="flex: 1">Đọc chương</a>
+              <a class="b3 sm ghost" href="#">Thuộc câu</a>
+            </div>
+          </section>
+          <h3 class="sec-title">Hôm nay của bạn <small>1 / 3 xong</small></h3>
+          <div class="quests">
+            <a class="quest done" href="#"><span class="tick"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5C3 4.7 3.7 4 4.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5h-5A1.5 1.5 0 0 1 3 16z" fill="#7FB0FF"/><path d="M21 5.5c0-.8-.7-1.5-1.5-1.5H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5h5A1.5 1.5 0 0 0 21 16z" fill="#4C8DFF"/></svg><b>Đọc Kinh Thánh</b><span>Hê-bơ-rơ 10 · xong</span><div class="bar"><div style="width: 100%; background: #2BCB6E"></div></div></a>
+            <a class="quest" href="#"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8.2 3.6 4.5 7.3 4.5c2 0 3.6 1.1 4.7 2.7 1.1-1.6 2.7-2.7 4.7-2.7 3.7 0 6 3.7 4.6 7.3C19.5 16.4 12 21 12 21z" fill="#C084FC"/><path d="M7.3 4.5c2 0 3.6 1.1 4.7 2.7L9 13 4 9.5c.4-3 1.8-5 3.3-5z" fill="#FFFFFF" opacity=".3"/></svg><b>Cầu nguyện</b><span>0 / 3 điều</span><div class="bar"><div style="width: 6%; background: #C084FC"></div></div></a>
+            <a class="quest" href="#"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bolt"/></svg><b>Thử thách Quiz</b><span>5 câu · 150 XP</span><div class="bar"><div style="width: 6%; background: #FFD84D"></div></div></a>
+          </div>
+          <h3 class="sec-title">Khám phá</h3>
+          <div class="apps">
+            <a class="app" href="#"><span class="ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M3 5.5C3 4.7 3.7 4 4.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5h-5A1.5 1.5 0 0 1 3 16z"/><path d="M21 5.5c0-.8-.7-1.5-1.5-1.5H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5h5A1.5 1.5 0 0 0 21 16z" opacity=".8"/></svg></span><b>Đọc hằng ngày</b><span>Trọn Kinh Thánh</span></a>
+            <a class="app" href="#"><span class="ico" style="--c1: #FFE27A; --c2: #F59E0B; --e: #9A5B00"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.8 1.5 4 13.6h6.6L9.4 22.5 20 9.8h-6.7z" fill="#1A1033"/></svg></span><b>Bible Quiz</b><span>Đấu trí Kinh Thánh</span></a>
+            <a class="app" href="#"><span class="ico" style="--c1: #FF5C7A; --c2: #BE123C; --e: #7F1230"><svg width="30" height="30" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/><path d="M12 13.4s-3-1.8-3-3.9a1.6 1.6 0 0 1 3-.8 1.6 1.6 0 0 1 3 .8c0 2.1-3 3.9-3 3.9z" fill="#BE123C"/></svg></span><b>Học Thuộc</b><span>Thuộc câu gốc</span></a>
+            <a class="app" href="#"><span class="ico" style="--c1: #C084FC; --c2: #7E22CE; --e: #4A1477"><svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.3-9.2C1.3 8.2 3.6 4.5 7.3 4.5c2 0 3.6 1.1 4.7 2.7 1.1-1.6 2.7-2.7 4.7-2.7 3.7 0 6 3.7 4.6 7.3C19.5 16.4 12 21 12 21z"/></svg></span><b>Cầu nguyện</b><span>Cầu thay cho nhau</span></a>
+            <a class="app" href="#"><span class="ico" style="--c1: #2BCB6E; --c2: #166534; --e: #0B3D20"><svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M6 8h12a4 4 0 0 1 4 4v3.5a3.5 3.5 0 0 1-6.3 2.1L14.5 16h-5l-1.2 1.6A3.5 3.5 0 0 1 2 15.5V12a4 4 0 0 1 4-4z"/><path d="M7 10.5v4M5 12.5h4" stroke="#166534" stroke-width="1.8" stroke-linecap="round"/><circle cx="16.5" cy="11.5" r="1.2" fill="#166534"/><circle cx="18.5" cy="13.8" r="1.2" fill="#166534"/></svg></span><b>Manna</b><span>Game câu gốc</span></a>
+            <a class="app" href="#"><span class="ico" style="--c1: #2DD4BF; --c2: #0F766E; --e: #08433F"><svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H9l-3 3v-3H5a2 2 0 0 1-2-2z"/><path d="M17.5 8H19a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1v3l-3-3h-4a2 2 0 0 1-2-2v-1.5h5a2.5 2.5 0 0 0 2.5-2.5z" opacity=".75"/></svg></span><b>Tiếng Anh</b><span>Nói 1% mỗi ngày</span></a>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--text3)"><span class="slant w"><span>Sắp ra mắt</span></span>Lữ Khách · Trường Chúa nhật</div>
+        </main>
+      </div></div>
+    </div>
+
+    <!-- 2. Bible Quiz lobby -->
+    <div class="shot">
+      <div class="shot-label">Bible Quiz — sảnh chính</div>
+      <div class="phone"><div class="scr">
+        <header class="hud">
+          <a href="#" style="display: flex; align-items: center; gap: 10px">
+            <span class="av ring">ĐB</span>
+            <span style="display: flex; flex-direction: column">
+              <b style="font-size: 16px">Đạt Bùi</b>
+              <span style="display: flex; align-items: center; gap: 4px; font-size: 12.5px; color: var(--text2)"><svg width="15" height="15" viewBox="0 0 24 24" fill="url(#bronze)" aria-hidden="true"><use href="#i-shield"/></svg>Tân Tín Hữu</span>
+            </span>
+          </a>
+          <span style="display: flex; gap: 6px">
+            <span class="chip" aria-label="Chuỗi 0 ngày"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flame"/></svg>0</span>
+            <span class="chip" aria-label="Năng lượng 100"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bolt"/></svg>100</span>
+          </span>
+        </header>
+        <main class="main" style="gap: 12px">
+          <div class="card" style="padding: 10px 12px; display: flex; align-items: center; gap: 10px">
+            <span class="slant v"><span>Mùa Giáng Sinh</span></span>
+            <span style="flex: 1; font-size: 12.5px; color: var(--text2)">còn 69 ngày</span>
+            <span style="font-family: var(--display); font-weight: 700; font-size: 13px; color: var(--text2)">0 / 1.000 XP</span>
+          </div>
+          <section style="position: relative; overflow: hidden; border-radius: 24px; padding: 18px 18px 14px; background: linear-gradient(135deg, #8B5CF6 0%, #DB2777 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 14px 30px rgba(190,24,93,.40)">
+            <div class="stripes"></div>
+            <svg width="96" height="96" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; right: -8px; top: -6px; transform: rotate(14deg); filter: drop-shadow(0 8px 10px rgba(0,0,0,.3))"><use href="#i-star"/></svg>
+            <span class="slant y" style="position: relative"><span>Thử thách hôm nay</span></span>
+            <div class="disp" style="position: relative; margin-top: 10px; font-size: 30px; font-weight: 900; text-shadow: 0 3px 0 rgba(0,0,0,.2)">5 câu hỏi<br>mới toanh</div>
+            <div style="position: relative; margin-top: 6px; font-size: 14px; font-weight: 600">Đúng hết nhận <b style="color: #FFE27A">+150 XP</b> · giữ lửa chuỗi ngày</div>
+            <a class="b3 block shine" href="#" style="position: relative; margin-top: 14px; font-size: 21px">Chơi ngay</a>
+          </section>
+          <div class="tiles">
+            <a class="tile" href="#"><svg class="ic" width="62" height="62" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#FFFFFF"/><circle cx="12" cy="12" r="7" fill="#FF5C7A"/><circle cx="12" cy="12" r="4.2" fill="#FFFFFF"/><circle cx="12" cy="12" r="1.8" fill="#FF5C7A"/><path d="M12 12 20 4" stroke="#1A1033" stroke-width="1.6" stroke-linecap="round"/><path d="M18 3.2 21.4 2.6 20.8 6z" fill="#FFD84D"/></svg><span class="tt">Luyện Tập</span><span class="td">Theo sách, theo câu chuyện</span></a>
+            <a class="tile red" href="#"><span class="sticker" style="top: 12px; left: 10px">Mùa</span><svg class="ic" width="62" height="62" viewBox="0 0 24 24" fill="url(#gold)" aria-hidden="true"><use href="#i-shield"/></svg><span class="tt">Đấu Hạng</span><span class="td">Leo hạng cả nước</span></a>
+            <a class="tile green" href="#"><span class="live" style="position: absolute; top: 14px; left: 14px; z-index: 2"><i></i>LIVE</span><svg class="ic" width="62" height="62" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12a4 4 0 0 1 4 4v3.5a3.5 3.5 0 0 1-6.3 2.1L14.5 16h-5l-1.2 1.6A3.5 3.5 0 0 1 2 15.5V12a4 4 0 0 1 4-4z" fill="#FFFFFF"/><path d="M7 10.5v4M5 12.5h4" stroke="#166534" stroke-width="1.8" stroke-linecap="round"/><circle cx="16.5" cy="11.5" r="1.3" fill="#FF5C7A"/><circle cx="18.6" cy="13.9" r="1.3" fill="#4C8DFF"/></svg><span class="tt">Phòng Chơi</span><span class="td">Sinh tồn, Đấu vương…</span></a>
+            <a class="tile orange" href="#"><svg class="ic" width="62" height="62" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20 9 7l4 6 2-3 7 10z" fill="#FFFFFF"/><path d="M9 7l2 3-2 1.5L7.2 10.3z" fill="#FFE27A"/><path d="M15 10V3" stroke="#1A1033" stroke-width="1.5" stroke-linecap="round"/><path d="M15 3h5l-1.5 2 1.5 2h-5z" fill="#FF5C7A"/></svg><span class="tt">Hành Trình</span><span class="td">0 / 66 sách</span></a>
+          </div>
+          <a class="card" href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 12px 12px 14px; background: linear-gradient(90deg, rgba(139,92,246,.28), rgba(139,92,246,.08))">
+            <span style="width: 44px; height: 44px; border-radius: 13px; display: flex; align-items: center; justify-content: center; background: linear-gradient(180deg, #FFE27A, #F59E0B); box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 3px 0 #9A5B00; font-family: var(--display); font-style: italic; font-weight: 900; font-size: 19px; color: #1A1033">VS</span>
+            <span style="flex: 1; display: flex; flex-direction: column">
+              <b class="disp" style="font-size: 16px">Thách đấu bạn bè</b>
+              <span style="font-size: 12.5px; color: var(--text2)">10 câu · 20 giây mỗi câu</span>
+            </span>
+            <span class="stack-av"><span class="av xs" style="background: linear-gradient(135deg, #4C8DFF, #7C3AED)">MA</span><span class="av xs" style="background: linear-gradient(135deg, #2BCB6E, #0F766E)">GB</span><span class="av xs" style="background: linear-gradient(135deg, #FF9A3D, #E11D48)">TV</span></span>
+          </a>
+        </main>
+        <nav class="tabbar" aria-label="Điều hướng chính">
+          <a class="on" href="#" aria-current="page"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 2.5 11h2.7v9.5h5.3v-6h3v6h5.3V11h2.7z"/></svg></span>Sảnh</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></span>Hành trình</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4.5a2.5 2.5 0 0 0 2.5 4M17 6h2.5a2.5 2.5 0 0 1-2.5 4M12 14v4M8 21h8M9 18h6"/></svg></span>Xếp hạng</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Nhóm</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Cá nhân</a>
+        </nav>
+      </div></div>
+    </div>
+
+    <!-- 3. Quiz question -->
+    <div class="shot">
+      <div class="shot-label">Bible Quiz — đang trả lời (Đấu Hạng)</div>
+      <div class="phone"><div class="scr">
+        <header class="hud" style="gap: 10px; padding-left: 6px">
+          <button class="b3 ghost sm" type="button" aria-label="Thoát lượt chơi" style="width: 44px; padding: 0; margin-bottom: 4px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+          <div class="seg" aria-label="Câu 4 trên 10"><i class="ok"></i><i class="ok"></i><i class="ok"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="chip" style="height: 32px; color: #FFE27A"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flame"/></svg>×1.2</span>
+        </header>
+        <div style="display: flex; align-items: center; gap: 10px; padding: 0 16px 0 0">
+          <div class="timer" style="flex: 1"><div style="width: 62%"></div></div>
+          <span style="font-family: var(--display); font-weight: 800; font-size: 17px; color: #A3E635">12s</span>
+        </div>
+        <main class="main" style="padding-top: 16px; gap: 14px">
+          <div style="display: flex; align-items: center; justify-content: space-between">
+            <span class="slant" style="background: #E11D48; color: #FFFFFF"><span>Đấu Hạng</span></span>
+            <span class="disp" style="font-size: 15px; color: var(--text2)">Câu 4 / 10</span>
+          </div>
+          <section class="card" style="margin: auto 0; padding: 22px 18px; border-radius: 22px; background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04))">
+            <h3 style="margin: 0; font-size: 26px; font-weight: 800; line-height: 1.32">Môn đồ nào đã chối Đức Chúa Jêsus ba lần?</h3>
+            <div style="margin-top: 10px; font-size: 13px; color: var(--text3)">Ma-thi-ơ · Mác · Lu-ca · Giăng</div>
+          </section>
+          <div style="margin-top: auto; display: flex; flex-direction: column; gap: 9px">
+            <button class="ans" type="button"><span class="k">A</span><span>Phi-e-rơ</span></button>
+            <button class="ans b" type="button"><span class="k">B</span><span>Giăng</span></button>
+            <button class="ans c" type="button"><span class="k">C</span><span>Gia-cơ</span></button>
+            <button class="ans d" type="button"><span class="k">D</span><span>Anh-rê</span></button>
+          </div>
+        </main>
+        <footer style="flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 16px 24px">
+          <button class="b3 violet sm" type="button" style="gap: 6px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" fill="#FFE27A"/><path d="M9 19h6v1.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 20.5z" fill="#FFFFFF"/></svg>Gợi ý · còn 2</button>
+          <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-bolt"/></svg>99</span>
+        </footer>
+      </div></div>
+    </div>
+
+    <!-- 4. Victory -->
+    <div class="shot">
+      <div class="shot-label">Bible Quiz — chiến thắng</div>
+      <div class="phone"><div class="scr" style="background-image: radial-gradient(420px 360px at 50% 18%, rgba(255,201,60,.30), transparent 70%), radial-gradient(420px 320px at 0% 100%, rgba(124,58,237,.42), transparent 70%), radial-gradient(380px 300px at 100% 90%, rgba(219,39,119,.30), transparent 70%)">
+        <div class="rays"></div>
+        <div class="confetti" aria-hidden="true">
+          <i style="left: 6%; background: #FFD84D; animation-delay: 0s"></i><i style="left: 16%; background: #4C8DFF; animation-delay: 1.2s"></i><i style="left: 27%; background: #FF5C7A; animation-delay: .5s"></i><i style="left: 38%; background: #2BCB6E; animation-delay: 2s"></i><i style="left: 49%; background: #C084FC; animation-delay: .9s"></i><i style="left: 60%; background: #FFD84D; animation-delay: 2.6s"></i><i style="left: 71%; background: #2DD4BF; animation-delay: .3s"></i><i style="left: 82%; background: #FF9A3D; animation-delay: 1.7s"></i><i style="left: 92%; background: #4C8DFF; animation-delay: 2.9s"></i>
+        </div>
+        <main class="main" style="position: relative; z-index: 2; padding-top: 0; justify-content: center; align-items: center; text-align: center; gap: 12px">
+          <div style="display: flex; align-items: flex-end; gap: 4px">
+            <svg width="62" height="62" viewBox="0 0 24 24" aria-hidden="true" style="transform: rotate(-14deg)"><use href="#i-star"/></svg>
+            <svg width="86" height="86" viewBox="0 0 24 24" aria-hidden="true" style="margin-bottom: 14px; filter: drop-shadow(0 0 16px rgba(255,201,60,.7))"><use href="#i-star"/></svg>
+            <svg width="62" height="62" viewBox="0 0 24 24" aria-hidden="true" style="transform: rotate(14deg)"><use href="#i-star"/></svg>
+          </div>
+          <div class="disp glowtext" style="font-size: 58px; font-weight: 900">Hoàn hảo!</div>
+          <div style="font-size: 16px; font-weight: 700">5 / 5 câu đúng · Thử thách hôm nay</div>
+          <div class="disp" style="margin-top: 6px; font-size: 48px; font-weight: 900; color: #FFFFFF; text-shadow: 0 4px 0 rgba(0,0,0,.25)">+150 <span style="font-size: 26px; color: #FFE27A">XP</span></div>
+          <section class="card" style="width: 100%; margin-top: 6px; padding: 14px; text-align: left; display: flex; align-items: center; gap: 12px">
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="url(#bronze)" aria-hidden="true" style="filter: drop-shadow(0 4px 6px rgba(0,0,0,.35))"><use href="#i-shield"/></svg>
+            <div style="flex: 1">
+              <div style="display: flex; justify-content: space-between; align-items: baseline"><b class="disp" style="font-size: 17px">Tân Tín Hữu</b><span style="font-family: var(--display); font-weight: 700; font-size: 13.5px; color: var(--text2)">150 / 1.000</span></div>
+              <div style="margin-top: 8px; height: 10px; border-radius: 999px; background: rgba(255,255,255,.12); overflow: hidden"><div style="width: 15%; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #FFD84D, #FF9A3D); box-shadow: 0 0 10px rgba(255,216,77,.7)"></div></div>
+              <div style="margin-top: 6px; font-size: 12.5px; color: var(--text2)">Còn 850 XP để lên <b style="color: #FFFFFF">Người Tìm Kiếm</b></div>
+            </div>
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="url(#silver)" aria-hidden="true" style="opacity: .55"><use href="#i-shield"/></svg>
+          </section>
+          <section class="card" style="width: 100%; padding: 12px 14px; display: flex; align-items: center; gap: 12px; text-align: left; background: linear-gradient(90deg, rgba(255,154,31,.22), rgba(255,154,31,.06)); border-color: rgba(255,154,31,.4)">
+            <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" class="flick"><use href="#i-flame"/></svg>
+            <div style="flex: 1"><b class="disp" style="font-size: 18px">Chuỗi 1 ngày!</b><div style="font-size: 12.5px; color: var(--text2)">Mai quay lại để lửa cháy tiếp</div></div>
+          </section>
+          <a class="card" href="#" style="width: 100%; padding: 12px 14px; display: flex; align-items: center; gap: 10px; text-align: left">
+            <span style="flex: 1; font-size: 14px; font-weight: 700">Xem lại đáp án</span>
+            <span style="display: flex; gap: 4px" aria-label="Đúng cả 5 câu">
+              <i style="width: 20px; height: 20px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>
+              <i style="width: 20px; height: 20px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>
+              <i style="width: 20px; height: 20px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>
+              <i style="width: 20px; height: 20px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>
+              <i style="width: 20px; height: 20px; border-radius: 50%; background: #2BCB6E; display: flex; align-items: center; justify-content: center"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i>
+            </span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--text3)"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </main>
+        <footer style="position: relative; z-index: 2; flex-shrink: 0; display: flex; gap: 10px; padding: 10px 16px 26px">
+          <a class="b3 violet" href="#" style="flex: 0 0 auto">Chia sẻ</a>
+          <a class="b3 shine" href="#" style="flex: 1">Chơi tiếp</a>
+        </footer>
+      </div></div>
+    </div>
+
+    <!-- 5. Leaderboard -->
+    <div class="shot">
+      <div class="shot-label">Bible Quiz — bảng xếp hạng tuần</div>
+      <div class="phone"><div class="scr">
+        <header class="hud"><span class="disp" style="font-size: 24px; font-weight: 900">Bảng xếp hạng</span><span class="chip" style="font-size: 13px">còn 2 ngày</span></header>
+        <main class="main" style="gap: 12px">
+          <div class="seg-ctl"><a class="on" href="#">Tuần này</a><a href="#">Nhóm của tôi</a></div>
+          <div class="podium">
+            <div class="pod"><span class="av" style="width: 56px; height: 56px; font-size: 18px; background: linear-gradient(135deg, #4C8DFF, #7C3AED); box-shadow: 0 0 0 3px #D3DAE8">GB</span><span class="nm">Gia Bảo</span><span class="pt">1.145</span><div class="blk" style="height: 74px; background: linear-gradient(180deg, #C9D2E3, #7D89A6)">2</div></div>
+            <div class="pod"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="margin-bottom: -6px; filter: drop-shadow(0 0 10px rgba(255,201,60,.8))"><use href="#i-crown"/></svg><span class="av" style="width: 68px; height: 68px; font-size: 22px; background: linear-gradient(135deg, #FF8A5B, #E11D74); box-shadow: 0 0 0 3px #FFC93C, 0 0 22px rgba(255,201,60,.6)">MA</span><span class="nm">Minh Anh</span><span class="pt">1.280</span><div class="blk" style="height: 100px; background: linear-gradient(180deg, #FFD84D, #E08A00)">1</div></div>
+            <div class="pod"><span class="av" style="width: 56px; height: 56px; font-size: 18px; background: linear-gradient(135deg, #2BCB6E, #0F766E); box-shadow: 0 0 0 3px #E0955A">TV</span><span class="nm">Thảo Vy</span><span class="pt">990</span><div class="blk" style="height: 56px; background: linear-gradient(180deg, #E8A673, #94522A)">3</div></div>
+          </div>
+          <div class="card" style="overflow: hidden; margin-top: -4px">
+            <div class="lrow"><span class="rk">4</span><span class="av sm" style="background: linear-gradient(135deg, #FF9A3D, #E11D48)">QH</span><span class="nm"><b>Quốc Huy</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#gold)" aria-hidden="true"><use href="#i-shield"/></svg>Môn Đồ</span></span><span class="pt">870</span><button class="vs-mini" type="button">VS</button></div>
+            <div class="lrow"><span class="rk">5</span><span class="av sm" style="background: linear-gradient(135deg, #C084FC, #6D28D9)">NH</span><span class="nm"><b>Ngọc Hân</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#silver)" aria-hidden="true"><use href="#i-shield"/></svg>Người Tìm Kiếm</span></span><span class="pt">820</span><button class="vs-mini" type="button">VS</button></div>
+            <div class="lrow"><span class="rk">6</span><span class="av sm" style="background: linear-gradient(135deg, #2DD4BF, #2563EB)">TK</span><span class="nm"><b>Tuấn Kiệt</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#emerald)" aria-hidden="true"><use href="#i-shield"/></svg>Hiền Triết</span></span><span class="pt">760</span><button class="vs-mini" type="button">VS</button></div>
+            <div class="lrow"><span class="rk">7</span><span class="av sm" style="background: linear-gradient(135deg, #FFD84D, #F97316)">ĐT</span><span class="nm"><b>Đức Thịnh</b><span><svg width="13" height="13" viewBox="0 0 24 24" fill="url(#silver)" aria-hidden="true"><use href="#i-shield"/></svg>Người Tìm Kiếm</span></span><span class="pt">705</span><button class="vs-mini" type="button">VS</button></div>
+          </div>
+          <div style="text-align: center; font-size: 12px; color: var(--text3); margin-top: -2px">· · ·</div>
+          <div class="card" style="display: flex; align-items: center; gap: 10px; padding: 0 12px; height: 60px; border: 2px solid #FFD84D; background: linear-gradient(90deg, rgba(255,216,77,.20), rgba(255,216,77,.05)); box-shadow: 0 0 18px rgba(255,216,77,.25)">
+            <span class="disp" style="width: 30px; font-size: 18px; color: #FFE27A; text-align: center">12</span>
+            <span class="av sm ring" style="box-shadow: 0 0 0 2px #FFD84D">ĐB</span>
+            <span style="flex: 1; display: flex; flex-direction: column"><b style="font-size: 14.5px">Bạn · Đạt Bùi</b><span style="font-size: 12px; color: var(--text2)">Hơn hạng 11 chỉ 35 điểm</span></span>
+            <span class="disp" style="font-size: 18px">320</span>
+          </div>
+        </main>
+        <nav class="tabbar" aria-label="Điều hướng chính">
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2.5 11h2.7v9.5h5.3v-6h3v6h5.3V11h2.7z"/></svg></span>Sảnh</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></span>Hành trình</a>
+          <a class="on" href="#" aria-current="page"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 3h10v6a5 5 0 0 1-10 0z"/><path d="M7 5H4.3a2.7 2.7 0 0 0 2.9 4.6M17 5h2.7a2.7 2.7 0 0 1-2.9 4.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 13.5h3V18h-3zM7.5 18h9v3h-9z"/></svg></span>Xếp hạng</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Nhóm</a>
+          <a href="#"><span class="pill"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Cá nhân</a>
+        </nav>
+      </div></div>
+    </div>
+
+    <!-- 6. Prayer -->
+    <div class="shot">
+      <div class="shot-label">Cầu nguyện — cùng chất, tiết chế hơn</div>
+      <div class="phone"><div class="scr" style="background-image: radial-gradient(460px 360px at 50% 0%, rgba(147,51,234,.45), transparent 72%), radial-gradient(380px 320px at 100% 100%, rgba(219,39,119,.22), transparent 70%)">
+        <header class="hud">
+          <span class="disp" style="font-size: 24px; font-weight: 900">Cầu nguyện</span>
+          <span class="av sm" style="background: linear-gradient(135deg, #FF8A5B, #E11D74)">ĐB</span>
+        </header>
+        <main class="main" style="gap: 14px">
+          <div>
+            <span class="slant y"><span>Tối nay</span></span>
+            <div class="disp" style="margin-top: 8px; font-size: 30px; font-weight: 900">3 điều để<br>cầu nguyện</div>
+            <div style="margin-top: 8px; display: flex; gap: 6px" aria-label="Đã cầu nguyện 1 trong 3 điều"><span style="width: 34px; height: 6px; border-radius: 999px; background: #C084FC"></span><span style="width: 34px; height: 6px; border-radius: 999px; background: #FFFFFF"></span><span style="width: 34px; height: 6px; border-radius: 999px; background: rgba(255,255,255,.2)"></span></div>
+          </div>
+          <div class="stack">
+            <div class="pcard back2" aria-hidden="true" style="height: 200px"></div>
+            <div class="pcard back1" aria-hidden="true" style="height: 200px"></div>
+            <article class="pcard" style="height: 206px; display: flex; flex-direction: column">
+              <div style="display: flex; justify-content: space-between; align-items: center"><span class="slant v"><span>Gia đình</span></span><span style="font-size: 12.5px; color: #6B6390">điều 2 / 3</span></div>
+              <p style="margin: 12px 0 0; flex: 1; font-size: 19px; font-weight: 700; line-height: 1.4">Em trai thi đại học tháng 6 tới, được bình an và sáng suốt.</p>
+              <div style="display: flex; gap: 10px">
+                <a class="b3 violet sm shine" href="#" style="flex: 1">Đã cầu nguyện</a>
+                <a class="b3 sm" href="#" style="--t: #F1EDFF; --b: #E2DAFF; --e: #B9AEE6; --g: transparent; --c: #4C1D95">Để sau</a>
+              </div>
+            </article>
+          </div>
+          <a class="card" href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px">
+            <span class="stack-av"><span class="av xs" style="background: linear-gradient(135deg, #4C8DFF, #7C3AED)">MA</span><span class="av xs" style="background: linear-gradient(135deg, #2BCB6E, #0F766E)">TV</span><span class="av xs" style="background: linear-gradient(135deg, #FF9A3D, #E11D48)">QH</span></span>
+            <span style="flex: 1; font-size: 14px; font-weight: 600">3 người đã cầu thay cho bạn tuần này</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--text3)"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <h3 class="sec-title">Sổ cầu nguyện <small>+ Ghi điều mới</small></h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(255,216,77,.16); border-color: rgba(255,216,77,.4)">Gia đình · 3</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(76,141,255,.16); border-color: rgba(76,141,255,.4)">Bản thân · 2</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(192,132,252,.16); border-color: rgba(192,132,252,.4)">Người chưa tin Chúa · 1</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(43,203,110,.16); border-color: rgba(43,203,110,.4)">Hội thánh · 2</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(255,92,122,.16); border-color: rgba(255,92,122,.4)">Sức khỏe · 1</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(45,212,191,.16); border-color: rgba(45,212,191,.4)">Công việc · học tập · 1</a>
+            <a href="#" class="chip" style="font-family: var(--sans); font-size: 13.5px; font-weight: 600; padding: 0 12px; background: rgba(255,154,61,.16); border-color: rgba(255,154,61,.4)">Đất nước · truyền giáo · 0</a>
+          </div>
+        </main>
+      </div></div>
+    </div>
+
+    <!-- 7. Reading -->
+    <div class="shot">
+      <div class="shot-label">Đọc hằng ngày — cùng chất, tiết chế hơn</div>
+      <div class="phone"><div class="scr" style="background-image: radial-gradient(460px 340px at 0% 0%, rgba(37,99,235,.40), transparent 72%), radial-gradient(380px 300px at 100% 10%, rgba(124,58,237,.28), transparent 70%)">
+        <header class="hud" style="padding-left: 6px">
+          <button class="b3 ghost sm" type="button" aria-label="Quay lại" style="width: 44px; padding: 0; margin-bottom: 4px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+          <span class="disp" style="font-size: 16px; color: var(--text2)">Đọc hằng ngày</span>
+          <button class="b3 ghost sm" type="button" aria-label="Cỡ chữ" style="width: 44px; padding: 0; margin-bottom: 4px; font-family: var(--sans); font-style: normal; text-transform: none; font-size: 16px">Aa</button>
+        </header>
+        <section style="padding: 4px 16px 0; display: flex; align-items: center; gap: 14px">
+          <div class="ring-wrap"><svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="27" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="7"/><circle cx="32" cy="32" r="27" fill="none" stroke="#4C8DFF" stroke-width="7" stroke-linecap="round" stroke-dasharray="169.6" stroke-dashoffset="105" transform="rotate(-90 32 32)"/></svg><span>38%</span></div>
+          <div>
+            <div class="disp" style="font-size: 32px; font-weight: 900">Hê-bơ-rơ 10</div>
+            <div style="margin-top: 4px; font-size: 13px; color: var(--text2)">Phần hôm nay · khoảng 6 phút · câu 19–25</div>
+          </div>
+        </section>
+        <div class="week" style="padding: 0 16px" aria-label="Tuần này đã đọc 3 ngày">
+          <div><i class="ok"></i>T2</div><div><i class="ok"></i>T3</div><div><i></i>T4</div><div><i class="ok"></i>T5</div><div><i></i>T6</div><div><i class="now"></i>T7</div><div><i></i>CN</div>
+        </div>
+        <main style="flex: 1; min-height: 0; overflow: hidden; padding: 16px 18px 0">
+          <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #ECE9F7">
+            <sup style="font-family: var(--display); font-weight: 800; font-size: 11px; color: #FFD84D">19 </sup>Vậy, thưa anh em, vì chúng ta nhờ huyết Đức Chúa Jêsus được dạn dĩ vào Nơi Chí Thánh,
+            <sup style="font-family: var(--display); font-weight: 800; font-size: 11px; color: #FFD84D">20 </sup>bởi con đường mới và sống mà Ngài đã mở cho chúng ta ngang qua cái màn, nghĩa là ngang qua thân xác Ngài;
+            <sup style="font-family: var(--display); font-weight: 800; font-size: 11px; color: #FFD84D">21 </sup>lại vì chúng ta có một thầy tế lễ vĩ đại được lập lên cai trị nhà Đức Chúa Trời,
+            <sup style="font-family: var(--display); font-weight: 800; font-size: 11px; color: #FFD84D">22 </sup>nên chúng ta hãy lấy lòng chân thật với niềm tin vững chắc, lòng được tẩy sạch khỏi lương tâm ác, thân thể rửa bằng nước tinh khiết mà đến gần Chúa.
+            <span style="background: linear-gradient(180deg, transparent 55%, rgba(255,216,77,.45) 55%); color: #FFFFFF; font-weight: 600; box-decoration-break: clone; -webkit-box-decoration-break: clone"><sup style="font-family: var(--display); font-weight: 800; font-size: 11px; color: #FFD84D">23 </sup>Chúng ta hãy giữ vững lời tuyên xưng về niềm hi vọng không chuyển lay của chúng ta, vì Đấng đã hứa với chúng ta là thành tín.</span>
+          </p>
+        </main>
+        <div style="position: absolute; left: 0; right: 0; bottom: 92px; height: 80px; background: linear-gradient(180deg, rgba(15,10,38,0), #0F0A26); pointer-events: none"></div>
+        <footer style="position: relative; flex-shrink: 0; display: flex; gap: 10px; padding: 10px 16px 26px; background: #0F0A26">
+          <a class="b3 shine" href="#" style="flex: 1">Xong phần này</a>
+          <a class="b3 violet" href="#">Thuộc câu 23</a>
+        </footer>
+      </div></div>
+    </div>
+
+  </div>
+  <p class="note">So sánh: bản Ngọn Đèn <a href="ngon-den-v2.html" style="text-decoration: underline">ngon-den-v2.html</a>. Ở hướng này mọi hình đều vẽ bằng CSS/SVG (khiên hạng, lửa, ngôi sao, vương miện…), không cần tranh. Nếu muốn, có thể thay các icon bằng icon 3D tạo bằng OpenAI cho "đã" hơn.</p>
+</div>
+</body>
+</html>

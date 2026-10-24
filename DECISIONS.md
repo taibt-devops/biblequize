@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-10-24 — Đổi giao diện cả hệ forbible từ "Lữ Khách" sang phong cách Funny Hour
+
+- **Bối cảnh:** chủ dự án thấy Lữ Khách "khó phát triển, khó làm quen, dễ rối"; một bạn trẻ dùng thử nói giao diện "khó hiểu, kiểu con nít". Trên điện thoại, trang chủ Bible Quiz bị đè chữ (thẻ chào, bong bóng thoại, chữ biển gỗ), vì mọi thứ đặt theo % của bức tranh. forbible.org cũng bị đè ở laptop 1280px vì cùng cách làm. Đã thử 5 hướng, đều bị loại: Ngọn Đèn "simple quá", game tối "lòe loẹt", poster đen–đỏ "trẻ trâu"… File và lý do ở `docs/designs/2026-10-24-forbible-funny-hour/`.
+- **Quyết định (chủ dự án chốt):** cả hệ forbible theo phong cách **funny-hour.infaxia.io**:
+  - nền sáng `#F3F5FB` có lưới chấm, thẻ trắng bo tròn bóng mềm;
+  - chữ **Unbounded** cho tiêu đề và **Plus Jakarta Sans** cho nội dung;
+  - một màu cam thương hiệu cho nút chính;
+  - cái vui nằm ở hình 3D bóng bẩy (tạm dùng Fluent Emoji 3D, giấy phép MIT).
+  Bỏ hẳn kiểu "giao diện là bức tranh": không nút nào đặt theo % tranh. Mockup đã duyệt: `docs/designs/2026-10-24-forbible-funny-hour/mockup.html`.
+- **Phạm vi:** Bible Quiz (repo này) và forbible.org (`forbible-home`) trước, rồi đến Đọc hằng ngày và Cầu nguyện. Manna, Tiếng Anh và game Lữ Khách để ngoài cho tới khi chủ dự án nói khác.
+- **Giữ nguyên:** C1, C2, C3, **C5 màu đáp án đúng từng hex** (dùng làm nền nhạt cho ô chữ cái A/B/C/D), toàn bộ tính năng và dữ liệu. Đổi giao diện, không đổi hành vi.
+- **Còn chốt khi làm:** giữ Fluent Emoji hay vẽ linh vật riêng bằng Game Asset Studio (cần key OpenAI); bản tối; một màu thương hiệu hay mỗi app một màu; giữ tên token `--bq-*` hay làm bộ token chung cho cả hệ.
+- **Thay:** quyết định 2026-10-08 (Lữ Khách). `docs/dev/design-system.md` vẫn mô tả code hiện tại cho tới khi làm xong. Không làm thêm màn mới theo Lữ Khách.
+- **Implementation:** chưa bắt đầu; task `docs/todo/active/2026-10-24-forbible-funny-hour-style.md` (FHS-0..).
+
+---
+
 ## 2026-10-19 — API Cầu nguyện bản 2
 
 - **Bối cảnh:** chủ dự án nhờ phân tích nghiệp vụ app Cầu nguyện so với nhu cầu thực tế và thiết kế lại; giao Claude tự quyết. Spec ở forbible-doc `docs/cau-nguyen/05-ban-2.md` (19 quyết định ở mục 9), dữ liệu và API ở `03-du-lieu-va-api.md` mục "Bản 2".
